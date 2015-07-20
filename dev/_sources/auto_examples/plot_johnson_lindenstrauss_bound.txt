@@ -140,15 +140,15 @@ from 56436 down to 10000 while reasonably preserving pairwise distances.
 **Script output**::
 
   Embedding 500 samples with dim 64 using various random projections
-  Projected 500 samples from 64 to 300 in 0.010s
-  Random matrix with size: 0.028MB
-  Mean distances rate: 1.01 (0.07)
-  Projected 500 samples from 64 to 1000 in 0.023s
-  Random matrix with size: 0.094MB
-  Mean distances rate: 0.96 (0.04)
-  Projected 500 samples from 64 to 10000 in 0.384s
-  Random matrix with size: 0.962MB
-  Mean distances rate: 1.00 (0.01)
+  Projected 500 samples from 64 to 300 in 0.009s
+  Random matrix with size: 0.029MB
+  Mean distances rate: 1.04 (0.07)
+  Projected 500 samples from 64 to 1000 in 0.024s
+  Random matrix with size: 0.095MB
+  Mean distances rate: 0.97 (0.04)
+  Projected 500 samples from 64 to 10000 in 0.223s
+  Random matrix with size: 0.964MB
+  Mean distances rate: 1.01 (0.01)
 
 
 
@@ -157,6 +157,6 @@ from 56436 down to 10000 while reasonably preserving pairwise distances.
 .. literalinclude:: plot_johnson_lindenstrauss_bound.py
     :lines: 90-
 
-**Total running time of the example:**  24.86 seconds
-( 0 minutes  24.86 seconds)
+**Total running time of the example:**  19.98 seconds
+( 0 minutes  19.98 seconds)
     

@@ -82,10 +82,6 @@
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/stable/documentation.html">Scikit-learn 0.16.1 (stable)</a></li>
                 <li><a href="http://scikit-learn.org/0.15/documentation.html">Scikit-learn 0.15</a></li>
-                <li><a href="http://scikit-learn.org/0.14/documentation.html">Scikit-learn 0.14</a></li>
-                <li><a href="http://scikit-learn.org/0.13/">Scikit-learn 0.13</a></li>
-                <li><a href="http://scikit-learn.org/0.12/">Scikit-learn 0.12</a></li>
-                <li><a href="../../documentation.html">More versions...</a></li>
               </ul>
             </div>
         </li>
@@ -172,7 +168,7 @@
 <h1>3.2.4.1.2. <a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.LarsCV<a class="headerlink" href="#sklearn-linear-model-larscv" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.linear_model.LarsCV">
-<em class="property">class </em><tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">LarsCV</tt><big>(</big><em>fit_intercept=True</em>, <em>verbose=False</em>, <em>max_iter=500</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>cv=None</em>, <em>max_n_alphas=1000</em>, <em>n_jobs=1</em>, <em>eps=2.2204460492503131e-16</em>, <em>copy_X=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/linear_model/least_angle.py#L897"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">LarsCV</tt><big>(</big><em>fit_intercept=True</em>, <em>verbose=False</em>, <em>max_iter=500</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>cv=None</em>, <em>max_n_alphas=1000</em>, <em>n_jobs=1</em>, <em>eps=2.2204460492503131e-16</em>, <em>copy_X=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/linear_model/least_angle.py#L897"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV" title="Permalink to this definition">¶</a></dt>
 <dd><p>Cross-validated Least Angle Regression model</p>
 <p>Read more in the <a class="reference internal" href="../linear_model.html#least-angle-regression"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -300,12 +296,12 @@ systems.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.linear_model.LarsCV.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>fit_intercept=True</em>, <em>verbose=False</em>, <em>max_iter=500</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>cv=None</em>, <em>max_n_alphas=1000</em>, <em>n_jobs=1</em>, <em>eps=2.2204460492503131e-16</em>, <em>copy_X=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/linear_model/least_angle.py#L978"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>fit_intercept=True</em>, <em>verbose=False</em>, <em>max_iter=500</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>cv=None</em>, <em>max_n_alphas=1000</em>, <em>n_jobs=1</em>, <em>eps=2.2204460492503131e-16</em>, <em>copy_X=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/linear_model/least_angle.py#L978"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LarsCV.decision_function">
-<tt class="descname">decision_function</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.decision_function" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decision_function</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>DEPRECATED:  and will be removed in 0.19.</p>
 <p>Decision function of the linear model.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -330,7 +326,7 @@ systems.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LarsCV.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/linear_model/least_angle.py#L993"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/linear_model/least_angle.py#L993"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model using X, y as training data.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -358,7 +354,7 @@ systems.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LarsCV.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -383,7 +379,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LarsCV.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/linear_model/base.py#L145"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/linear_model/base.py#L145"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict using the linear model</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -407,7 +403,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LarsCV.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/base.py#L317"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L317"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
@@ -443,7 +439,7 @@ Best possible score is 1.0, lower values are worse.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LarsCV.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LarsCV.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form

@@ -82,10 +82,6 @@
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/stable/documentation.html">Scikit-learn 0.16.1 (stable)</a></li>
                 <li><a href="http://scikit-learn.org/0.15/documentation.html">Scikit-learn 0.15</a></li>
-                <li><a href="http://scikit-learn.org/0.14/documentation.html">Scikit-learn 0.14</a></li>
-                <li><a href="http://scikit-learn.org/0.13/">Scikit-learn 0.13</a></li>
-                <li><a href="http://scikit-learn.org/0.12/">Scikit-learn 0.12</a></li>
-                <li><a href="../../documentation.html">More versions...</a></li>
               </ul>
             </div>
         </li>
@@ -172,7 +168,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.feature_selection" title="sklearn.feature_selection"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_selection</span></tt></a>.VarianceThreshold<a class="headerlink" href="#sklearn-feature-selection-variancethreshold" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.feature_selection.VarianceThreshold">
-<em class="property">class </em><tt class="descclassname">sklearn.feature_selection.</tt><tt class="descname">VarianceThreshold</tt><big>(</big><em>threshold=0.0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/feature_selection/variance_threshold.py#L12"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.feature_selection.</tt><tt class="descname">VarianceThreshold</tt><big>(</big><em>threshold=0.0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_selection/variance_threshold.py#L12"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold" title="Permalink to this definition">¶</a></dt>
 <dd><p>Feature selector that removes all low-variance features.</p>
 <p>This feature selection algorithm looks only at the features (X), not the
 desired outputs (y), and can thus be used for unsupervised learning.</p>
@@ -240,12 +236,12 @@ in every sample. These are removed with the default setting for threshold:</p>
 </table>
 <dl class="method">
 <dt id="sklearn.feature_selection.VarianceThreshold.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>threshold=0.0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/feature_selection/variance_threshold.py#L45"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>threshold=0.0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_selection/variance_threshold.py#L45"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.VarianceThreshold.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/feature_selection/variance_threshold.py#L48"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_selection/variance_threshold.py#L48"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Learn empirical variances from X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -271,7 +267,7 @@ sklearn.pipeline.Pipeline.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.VarianceThreshold.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/base.py#L426"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L426"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -301,7 +297,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.VarianceThreshold.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -326,7 +322,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.VarianceThreshold.get_support">
-<tt class="descname">get_support</tt><big>(</big><em>indices=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/feature_selection/base.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.get_support" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_support</tt><big>(</big><em>indices=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_selection/base.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.get_support" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a mask, or integer index, of the features selected</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -356,7 +352,7 @@ values are indices into the input feature vector.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.VarianceThreshold.inverse_transform">
-<tt class="descname">inverse_transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/feature_selection/base.py#L86"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">inverse_transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_selection/base.py#L86"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reverse the transformation operation</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -381,7 +377,7 @@ been removed by <cite>transform</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.VarianceThreshold.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -399,7 +395,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.VarianceThreshold.transform">
-<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/feature_selection/base.py#L62"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_selection/base.py#L62"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.VarianceThreshold.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reduce X to the selected features.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

@@ -82,10 +82,6 @@
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/stable/documentation.html">Scikit-learn 0.16.1 (stable)</a></li>
                 <li><a href="http://scikit-learn.org/0.15/documentation.html">Scikit-learn 0.15</a></li>
-                <li><a href="http://scikit-learn.org/0.14/documentation.html">Scikit-learn 0.14</a></li>
-                <li><a href="http://scikit-learn.org/0.13/">Scikit-learn 0.13</a></li>
-                <li><a href="http://scikit-learn.org/0.12/">Scikit-learn 0.12</a></li>
-                <li><a href="documentation.html">More versions...</a></li>
               </ul>
             </div>
         </li>
@@ -376,6 +372,12 @@ By <a class="reference external" href="http://trevorstephens.com/">Trevor Stephe
 By Chih-Wei Chang.</li>
 <li>RCV1 dataset loader (<a class="reference internal" href="modules/generated/sklearn.datasets.fetch_rcv1.html#sklearn.datasets.fetch_rcv1" title="sklearn.datasets.fetch_rcv1"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.fetch_rcv1</span></tt></a>).
 By <a class="reference external" href="https://github.com/TomDLT">Tom Dupre la Tour</a>.</li>
+<li>Upgraded to joblib 0.9.0b2 to benefit from the new automatic batching of
+short tasks. This makes it possible for scikit-learn to benefit from
+parallelism when many very short tasks are executed in parallel, for
+instance by the <a class="reference internal" href="modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV" title="sklearn.grid_search.GridSearchCV"><tt class="xref py py-class docutils literal"><span class="pre">grid_search.GridSearchCV</span></tt></a> meta-estimator
+with <tt class="docutils literal"><span class="pre">n_jobs</span> <span class="pre">&gt;</span> <span class="pre">1</span></tt> used with a large grid of parameters on a small
+dataset. By <a class="reference external" href="http://vene.ro">Vlad Niculae</a>, <a class="reference external" href="http://twitter.com/ogrisel">Olivier Grisel</a> and <a class="reference external" href="https://github.com/lesteve">Loic Esteve</a>.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -393,6 +395,8 @@ multi-label output. By <a class="reference external" href="http://peekaboo-visio
 lot of memory for large discrete grids. By <a class="reference external" href="http://joelnothman.com">Joel Nothman</a>.</li>
 <li>Fixed bug in <a class="reference internal" href="modules/generated/sklearn.linear_model.LogisticRegressionCV.html#sklearn.linear_model.LogisticRegressionCV" title="sklearn.linear_model.LogisticRegressionCV"><tt class="xref py py-class docutils literal"><span class="pre">linear_model.LogisticRegressionCV</span></tt></a> where <cite>penalty</cite> was ignored
 in the final fit. By <a class="reference external" href="https://manojbits.wordpress.com">Manoj Kumar</a>.</li>
+<li>Fixed bug in <tt class="xref py py-class docutils literal"><span class="pre">ensemble.forest.ForestClassifier</span></tt> while computing
+oob_score and X is a sparse.csc_matrix. By <a href="#id70"><span class="problematic" id="id71">`Ankur Ankan`_</span></a>.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -403,7 +407,7 @@ in the final fit. By <a class="reference external" href="https://manojbits.wordp
 <div><ul class="simple">
 <li><a class="reference internal" href="modules/generated/sklearn.tree.DecisionTreeClassifier.html#sklearn.tree.DecisionTreeClassifier" title="sklearn.tree.DecisionTreeClassifier"><tt class="xref py py-class docutils literal"><span class="pre">tree.DecisionTreeClassifier</span></tt></a> now exposes an <tt class="docutils literal"><span class="pre">apply</span></tt> method
 for retrieving the leaf indices samples are predicted as. By
-<a href="#id70"><span class="problematic" id="id71">`Daniel Galvez`_</span></a> and <a class="reference external" href="http://www.montefiore.ulg.ac.be/~glouppe/">Gilles Louppe</a>.</li>
+<a href="#id72"><span class="problematic" id="id73">`Daniel Galvez`_</span></a> and <a class="reference external" href="http://www.montefiore.ulg.ac.be/~glouppe/">Gilles Louppe</a>.</li>
 <li><tt class="xref py py-class docutils literal"><span class="pre">svm.SVC`</span></tt> and <a class="reference internal" href="modules/generated/sklearn.svm.NuSVC.html#sklearn.svm.NuSVC" title="sklearn.svm.NuSVC"><tt class="xref py py-class docutils literal"><span class="pre">svm.NuSVC</span></tt></a> now have an <tt class="docutils literal"><span class="pre">decision_function_shape</span></tt>
 parameter to make their decision function of shape <tt class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_classes)</span></tt>
 by setting <tt class="docutils literal"><span class="pre">decision_function_shape='ovr'</span></tt>. This will be the default behavior
@@ -739,10 +743,10 @@ We now use the weighted average of targets (secondary method). By
 meta-estimators don&#8217;t convert pandas DataFrames into arrays any more,
 allowing DataFrame specific operations in custom estimators.</p>
 </li>
-<li><p class="first"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ovr</span></tt>, <tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ovr</span></tt>,
+<li><p class="first"><a class="reference internal" href="modules/generated/sklearn.multiclass.fit_ovr.html#sklearn.multiclass.fit_ovr" title="sklearn.multiclass.fit_ovr"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ovr</span></tt></a>, <a class="reference internal" href="modules/generated/sklearn.multiclass.predict_ovr.html#sklearn.multiclass.predict_ovr" title="sklearn.multiclass.predict_ovr"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ovr</span></tt></a>,
 <tt class="xref py py-func docutils literal"><span class="pre">predict_proba_ovr</span></tt>,
-<tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ovo</span></tt>, <tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ovo</span></tt>,
-<tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ecoc</span></tt> and <tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ecoc</span></tt>
+<a class="reference internal" href="modules/generated/sklearn.multiclass.fit_ovo.html#sklearn.multiclass.fit_ovo" title="sklearn.multiclass.fit_ovo"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ovo</span></tt></a>, <a class="reference internal" href="modules/generated/sklearn.multiclass.predict_ovo.html#sklearn.multiclass.predict_ovo" title="sklearn.multiclass.predict_ovo"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ovo</span></tt></a>,
+<a class="reference internal" href="modules/generated/sklearn.multiclass.fit_ecoc.html#sklearn.multiclass.fit_ecoc" title="sklearn.multiclass.fit_ecoc"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ecoc</span></tt></a> and <a class="reference internal" href="modules/generated/sklearn.multiclass.predict_ecoc.html#sklearn.multiclass.predict_ecoc" title="sklearn.multiclass.predict_ecoc"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ecoc</span></tt></a>
 are deprecated. Use the underlying estimators instead.</p>
 </li>
 <li><p class="first">Nearest neighbors estimators used to take arbitrary keyword arguments

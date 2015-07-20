@@ -82,10 +82,6 @@
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/stable/documentation.html">Scikit-learn 0.16.1 (stable)</a></li>
                 <li><a href="http://scikit-learn.org/0.15/documentation.html">Scikit-learn 0.15</a></li>
-                <li><a href="http://scikit-learn.org/0.14/documentation.html">Scikit-learn 0.14</a></li>
-                <li><a href="http://scikit-learn.org/0.13/">Scikit-learn 0.13</a></li>
-                <li><a href="http://scikit-learn.org/0.12/">Scikit-learn 0.12</a></li>
-                <li><a href="../../documentation.html">More versions...</a></li>
               </ul>
             </div>
         </li>
@@ -175,7 +171,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.svm" title="sklearn.svm"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></tt></a>.SVC<a class="headerlink" href="#sklearn-svm-svc" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.svm.SVC">
-<em class="property">class </em><tt class="descclassname">sklearn.svm.</tt><tt class="descname">SVC</tt><big>(</big><em>C=1.0</em>, <em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>shrinking=True</em>, <em>probability=False</em>, <em>tol=0.001</em>, <em>cache_size=200</em>, <em>class_weight=None</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>decision_function_shape=None</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/svm/classes.py#L382"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.svm.</tt><tt class="descname">SVC</tt><big>(</big><em>C=1.0</em>, <em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>shrinking=True</em>, <em>probability=False</em>, <em>tol=0.001</em>, <em>cache_size=200</em>, <em>class_weight=None</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>decision_function_shape=None</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/svm/classes.py#L382"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC" title="Permalink to this definition">¶</a></dt>
 <dd><p>C-Support Vector Classification.</p>
 <p>The implementation is based on libsvm. The fit time complexity
 is more than quadratic with the number of samples which makes it hard
@@ -284,7 +280,11 @@ shuffling the data for probability estimation.</p>
 </div></blockquote>
 <p><strong>dual_coef_</strong> : array, shape = [n_class-1, n_SV]</p>
 <blockquote>
-<div><p>Coefficients of the support vector in the decision function.         For multiclass, coefficient for all 1-vs-1 classifiers.         The layout of the coefficients in the multiclass case is somewhat         non-trivial. See the section about multi-class classification in the         SVM section of the User Guide for details.</p>
+<div><p>Coefficients of the support vector in the decision function.
+For multiclass, coefficient for all 1-vs-1 classifiers.
+The layout of the coefficients in the multiclass case is somewhat
+non-trivial. See the section about multi-class classification in the
+SVM section of the User Guide for details.</p>
 </div></blockquote>
 <p><strong>coef_</strong> : array, shape = [n_class-1, n_features]</p>
 <blockquote>
@@ -354,12 +354,12 @@ problem). This is only available in the case of a linear kernel.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.svm.SVC.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>C=1.0</em>, <em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>shrinking=True</em>, <em>probability=False</em>, <em>tol=0.001</em>, <em>cache_size=200</em>, <em>class_weight=None</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>decision_function_shape=None</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/svm/classes.py#L519"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>C=1.0</em>, <em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>shrinking=True</em>, <em>probability=False</em>, <em>tol=0.001</em>, <em>cache_size=200</em>, <em>class_weight=None</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>decision_function_shape=None</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/svm/classes.py#L519"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.decision_function">
-<tt class="descname">decision_function</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/svm/base.py#L525"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.decision_function" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decision_function</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/svm/base.py#L525"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Distance of the samples X to the separating hyperplane.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -383,7 +383,7 @@ n_classes)</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/svm/base.py#L109"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/svm/base.py#L109"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the SVM model according to the given training data.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -425,7 +425,7 @@ matrices as input.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -450,7 +450,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/svm/base.py#L550"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/svm/base.py#L550"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform classification on samples in X.</p>
 <p>For an one-class model, +1 or -1 is returned.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -544,7 +544,7 @@ datasets.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/base.py#L284"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L284"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -579,7 +579,7 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/abb31d0/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -636,7 +636,7 @@ component of a nested object.</p>
 <p class="caption"><a class="reference internal" href="../../auto_examples/classification/plot_classifier_comparison.html#example-classification-plot-classifier-comparison-py"><em>Classifier comparison</em></a></p>
 </div>
 </div><div class="thumbnailContainer" tooltip="Plot the decision boundaries of a `VotingClassifier` for two features of the Iris dataset."><div class="figure">
-<a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_voting_decision_regions.html"><img alt="../../_images/plot_voting_decision_regions1.png" src="../../_images/plot_voting_decision_regions1.png" /></a>
+<a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_voting_decision_regions.html"><img alt="../../_images/plot_voting_decision_regions.png" src="../../_images/plot_voting_decision_regions.png" /></a>
 <p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_voting_decision_regions.html#example-ensemble-plot-voting-decision-regions-py"><em>Plot the decision boundaries of a VotingClassifier</em></a></p>
 </div>
 </div><div class="thumbnailContainer" tooltip="A tutorial exercise using Cross-validation with an SVM on the Digits dataset."><div class="figure">
