@@ -82,7 +82,7 @@
 			<li><a href="../modules/classes.html">API</a></li>
 			<li><a href="../faq.html">FAQ</a></li>
 			<li class="divider"></li>
-		        <li><a href="http://scikit-learn.org/stable/documentation.html">Development</a></li>
+		        <li><a href="http://scikit-learn.org/dev/documentation.html">Development</a></li>
 			<li><a href="http://scikit-learn.org/0.15/">Scikit-learn 0.15</a></li>
 		      </ul>
 		    </div>
@@ -174,11 +174,11 @@ Best parameters set:
 <span class="kn">import</span> <span class="nn">logging</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">fetch_20newsgroups</span>
-<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer"><a href="../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer"><span class="n">CountVectorizer</span></a></a>
-<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html#sklearn.feature_extraction.text.TfidfTransformer"><a href="../modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html#sklearn.feature_extraction.text.TfidfTransformer"><span class="n">TfidfTransformer</span></a></a>
-<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier"><a href="../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier"><span class="n">SGDClassifier</span></a></a>
-<span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><span class="n">GridSearchCV</span></a></a>
-<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a></a>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer"><span class="n">CountVectorizer</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html#sklearn.feature_extraction.text.TfidfTransformer"><span class="n">TfidfTransformer</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier"><span class="n">SGDClassifier</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><span class="n">GridSearchCV</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a>
 
 <span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
@@ -207,10 +207,10 @@ Best parameters set:
 <span class="c">###############################################################################</span>
 <span class="c"># define a pipeline combining a text feature extractor with a simple</span>
 <span class="c"># classifier</span>
-<span class="n">pipeline</span> <span class="o">=</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a></a><span class="p">([</span>
-    <span class="p">(</span><span class="s">&#39;vect&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer"><a href="../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer"><span class="n">CountVectorizer</span></a></a><span class="p">()),</span>
-    <span class="p">(</span><span class="s">&#39;tfidf&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html#sklearn.feature_extraction.text.TfidfTransformer"><a href="../modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html#sklearn.feature_extraction.text.TfidfTransformer"><span class="n">TfidfTransformer</span></a></a><span class="p">()),</span>
-    <span class="p">(</span><span class="s">&#39;clf&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier"><a href="../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier"><span class="n">SGDClassifier</span></a></a><span class="p">()),</span>
+<span class="n">pipeline</span> <span class="o">=</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a><span class="p">([</span>
+    <span class="p">(</span><span class="s">&#39;vect&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer"><span class="n">CountVectorizer</span></a><span class="p">()),</span>
+    <span class="p">(</span><span class="s">&#39;tfidf&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html#sklearn.feature_extraction.text.TfidfTransformer"><span class="n">TfidfTransformer</span></a><span class="p">()),</span>
+    <span class="p">(</span><span class="s">&#39;clf&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier"><span class="n">SGDClassifier</span></a><span class="p">()),</span>
 <span class="p">])</span>
 
 <span class="c"># uncommenting more parameters will give better exploring power but will</span>
@@ -232,7 +232,7 @@ Best parameters set:
 
     <span class="c"># find the best parameters for both the feature extraction and the</span>
     <span class="c"># classifier</span>
-    <span class="n">grid_search</span> <span class="o">=</span> <a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><span class="n">GridSearchCV</span></a></a><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">grid_search</span> <span class="o">=</span> <a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><span class="n">GridSearchCV</span></a><span class="p">(</span><span class="n">pipeline</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Performing grid search...&quot;</span><span class="p">)</span>
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;pipeline:&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">name</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">pipeline</span><span class="o">.</span><span class="n">steps</span><span class="p">])</span>

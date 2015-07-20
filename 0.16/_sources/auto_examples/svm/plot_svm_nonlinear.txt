@@ -26,6 +26,6 @@ The color map illustrates the decision function learn by the SVC.
 .. literalinclude:: plot_svm_nonlinear.py
     :lines: 12-
 
-**Total running time of the example:**  1.49 seconds
-( 0 minutes  1.49 seconds)
+**Total running time of the example:**  1.47 seconds
+( 0 minutes  1.47 seconds)
     

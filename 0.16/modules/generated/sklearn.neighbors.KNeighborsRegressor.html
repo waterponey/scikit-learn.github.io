@@ -85,7 +85,7 @@
 			<li><a href="../classes.html">API</a></li>
 			<li><a href="../../faq.html">FAQ</a></li>
 			<li class="divider"></li>
-		        <li><a href="http://scikit-learn.org/stable/documentation.html">Development</a></li>
+		        <li><a href="http://scikit-learn.org/dev/documentation.html">Development</a></li>
 			<li><a href="http://scikit-learn.org/0.15/">Scikit-learn 0.15</a></li>
 		      </ul>
 		    </div>
@@ -187,7 +187,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.neighbors" title="sklearn.neighbors"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.neighbors</span></tt></a>.KNeighborsRegressor<a class="headerlink" href="#sklearn-neighbors-kneighborsregressor" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.neighbors.KNeighborsRegressor">
-<em class="property">class </em><tt class="descclassname">sklearn.neighbors.</tt><tt class="descname">KNeighborsRegressor</tt><big>(</big><em>n_neighbors=5</em>, <em>weights='uniform'</em>, <em>algorithm='auto'</em>, <em>leaf_size=30</em>, <em>p=2</em>, <em>metric='minkowski'</em>, <em>metric_params=None</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/neighbors/regression.py#L19"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.neighbors.</tt><tt class="descname">KNeighborsRegressor</tt><big>(</big><em>n_neighbors=5</em>, <em>weights='uniform'</em>, <em>algorithm='auto'</em>, <em>leaf_size=30</em>, <em>p=2</em>, <em>metric='minkowski'</em>, <em>metric_params=None</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a95203b/sklearn/neighbors/regression.py#L19"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Regression based on k-nearest neighbors.</p>
 <p>The target is predicted by local interpolation of the targets
 associated of the nearest neighbors in the training set.</p>
@@ -313,12 +313,12 @@ training data.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.neighbors.KNeighborsRegressor.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>n_neighbors=5</em>, <em>weights='uniform'</em>, <em>algorithm='auto'</em>, <em>leaf_size=30</em>, <em>p=2</em>, <em>metric='minkowski'</em>, <em>metric_params=None</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/neighbors/regression.py#L111"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>n_neighbors=5</em>, <em>weights='uniform'</em>, <em>algorithm='auto'</em>, <em>leaf_size=30</em>, <em>p=2</em>, <em>metric='minkowski'</em>, <em>metric_params=None</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a95203b/sklearn/neighbors/regression.py#L111"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.neighbors.KNeighborsRegressor.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/neighbors/base.py#L713"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a95203b/sklearn/neighbors/base.py#L713"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model using X as training data and y as target values</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -344,7 +344,7 @@ training data.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.KNeighborsRegressor.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/base.py#L189"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a95203b/sklearn/base.py#L189"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -369,7 +369,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.KNeighborsRegressor.kneighbors">
-<tt class="descname">kneighbors</tt><big>(</big><em>X=None</em>, <em>n_neighbors=None</em>, <em>return_distance=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/neighbors/base.py#L267"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.kneighbors" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">kneighbors</tt><big>(</big><em>X=None</em>, <em>n_neighbors=None</em>, <em>return_distance=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a95203b/sklearn/neighbors/base.py#L267"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.kneighbors" title="Permalink to this definition">¶</a></dt>
 <dd><p>Finds the K-neighbors of a point.</p>
 <p>Returns distance</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -432,7 +432,7 @@ element is at distance 0.5 and is the third element of samples
 
 <dl class="method">
 <dt id="sklearn.neighbors.KNeighborsRegressor.kneighbors_graph">
-<tt class="descname">kneighbors_graph</tt><big>(</big><em>X=None</em>, <em>n_neighbors=None</em>, <em>mode='connectivity'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/neighbors/base.py#L408"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.kneighbors_graph" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">kneighbors_graph</tt><big>(</big><em>X=None</em>, <em>n_neighbors=None</em>, <em>mode='connectivity'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a95203b/sklearn/neighbors/base.py#L408"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.kneighbors_graph" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes the (weighted) graph of k-Neighbors for points in X</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -487,7 +487,7 @@ A[i, j] is assigned the weight of edge that connects i to j.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.KNeighborsRegressor.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/neighbors/regression.py#L120"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a95203b/sklearn/neighbors/regression.py#L120"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict the target for the provided data</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -508,7 +508,7 @@ A[i, j] is assigned the weight of edge that connects i to j.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.KNeighborsRegressor.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/base.py#L302"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a95203b/sklearn/base.py#L302"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
@@ -544,7 +544,7 @@ Best possible score is 1.0, lower values are worse.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.KNeighborsRegressor.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/base.py#L226"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/a95203b/sklearn/base.py#L226"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.KNeighborsRegressor.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form

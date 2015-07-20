@@ -82,7 +82,7 @@
 			<li><a href="../modules/classes.html">API</a></li>
 			<li><a href="../faq.html">FAQ</a></li>
 			<li class="divider"></li>
-		        <li><a href="http://scikit-learn.org/stable/documentation.html">Development</a></li>
+		        <li><a href="http://scikit-learn.org/dev/documentation.html">Development</a></li>
 			<li><a href="http://scikit-learn.org/0.15/">Scikit-learn 0.15</a></li>
 		      </ul>
 		    </div>
@@ -139,10 +139,10 @@ sections on <a class="reference internal" href="../modules/cross_validation.html
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
-<span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split"><a href="../modules/generated/sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split"><span class="n">train_test_split</span></a></a>
-<span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><span class="n">GridSearchCV</span></a></a>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.metrics.classification_report.html#sklearn.metrics.classification_report"><a href="../modules/generated/sklearn.metrics.classification_report.html#sklearn.metrics.classification_report"><span class="n">classification_report</span></a></a>
-<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><a href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a></a>
+<span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split"><span class="n">train_test_split</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><span class="n">GridSearchCV</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.metrics.classification_report.html#sklearn.metrics.classification_report"><span class="n">classification_report</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a>
 
 <span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
@@ -156,7 +156,7 @@ sections on <a class="reference internal" href="../modules/cross_validation.html
 <span class="n">y</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">target</span>
 
 <span class="c"># Split the dataset in two equal parts</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <a href="../modules/generated/sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split"><a href="../modules/generated/sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split"><span class="n">train_test_split</span></a></a><span class="p">(</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <a href="../modules/generated/sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split"><span class="n">train_test_split</span></a><span class="p">(</span>
     <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
 <span class="c"># Set the parameters by cross-validation</span>
@@ -170,7 +170,7 @@ sections on <a class="reference internal" href="../modules/cross_validation.html
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;# Tuning hyper-parameters for </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">score</span><span class="p">)</span>
     <span class="k">print</span><span class="p">()</span>
 
-    <span class="n">clf</span> <span class="o">=</span> <a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><span class="n">GridSearchCV</span></a></a><span class="p">(</span><a href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><a href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a></a><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">tuned_parameters</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="n">score</span><span class="p">)</span>
+    <span class="n">clf</span> <span class="o">=</span> <a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><span class="n">GridSearchCV</span></a><span class="p">(</span><a href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">tuned_parameters</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="n">score</span><span class="p">)</span>
     <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;Best parameters set found on development set:&quot;</span><span class="p">)</span>
@@ -190,7 +190,7 @@ sections on <a class="reference internal" href="../modules/cross_validation.html
     <span class="k">print</span><span class="p">(</span><span class="s">&quot;The scores are computed on the full evaluation set.&quot;</span><span class="p">)</span>
     <span class="k">print</span><span class="p">()</span>
     <span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span> <span class="o">=</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
-    <span class="k">print</span><span class="p">(</span><a href="../modules/generated/sklearn.metrics.classification_report.html#sklearn.metrics.classification_report"><a href="../modules/generated/sklearn.metrics.classification_report.html#sklearn.metrics.classification_report"><span class="n">classification_report</span></a></a><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><a href="../modules/generated/sklearn.metrics.classification_report.html#sklearn.metrics.classification_report"><span class="n">classification_report</span></a><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
     <span class="k">print</span><span class="p">()</span>
 
 <span class="c"># Note the problem is too easy: the hyperparameter plateau is too flat and the</span>
