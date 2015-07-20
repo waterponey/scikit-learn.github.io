@@ -31,7 +31,7 @@ a BayesianRidge as supervised estimator.
          [ 0.275706, ..., -1.085711]]), 
   <1600x1600 sparse matrix of type '<type 'numpy.int64'>'
           with 7840 stored elements in COOrdinate format>, n_components=None, n_clusters=None)
-  ________________________________________________________ward_tree - 0.2s, 0.0min
+  ________________________________________________________ward_tree - 0.1s, 0.0min
   ________________________________________________________________________________
   [Memory] Calling sklearn.cluster.hierarchical.ward_tree...
   ward_tree(array([[ 0.905206, ...,  0.161245],
@@ -77,6 +77,6 @@ a BayesianRidge as supervised estimator.
 .. literalinclude:: plot_feature_agglomeration_vs_univariate_selection.py
     :lines: 15-
 
-**Total running time of the example:**  2.35 seconds
-( 0 minutes  2.35 seconds)
+**Total running time of the example:**  2.19 seconds
+( 0 minutes  2.19 seconds)
     

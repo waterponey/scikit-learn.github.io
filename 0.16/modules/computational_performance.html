@@ -71,8 +71,8 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../dev/index.html">Home</a></li>
-                <li><a href="../../dev/install.html">Installation</a></li>
+                <li><a href="../../stable/index.html">Home</a></li>
+                <li><a href="../../stable/install.html">Installation</a></li>
                 <li class="btn-li"><div class="btn-group">
 		      <a href="../documentation.html">Documentation</a>
 		      <a class="btn dropdown-toggle" data-toggle="dropdown">
@@ -85,11 +85,8 @@
 			<li><a href="classes.html">API</a></li>
 			<li><a href="../faq.html">FAQ</a></li>
 			<li class="divider"></li>
-		        <li><a href="http://scikit-learn.org/dev/documentation.html">Development</a></li>
+		        <li><a href="http://scikit-learn.org/stable/documentation.html">Development</a></li>
 			<li><a href="http://scikit-learn.org/0.15/">Scikit-learn 0.15</a></li>
-			<li><a href="http://scikit-learn.org/0.14/">Scikit-learn 0.14</a></li>
-		        <li><a href="http://scikit-learn.org/0.13/">Scikit-learn 0.13</a></li>
-		        <li><a href="../documentation.html">More versions...</a></li>
 		      </ul>
 		    </div>
 		</li>
@@ -241,9 +238,9 @@ linear algebra libraries optimizations etc.). Here we see on a setting
 with few features that independently of estimator choice the bulk mode is
 always faster, and for some of them by 1 to 2 orders of magnitude:</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="atomic_prediction_latency" src="../_images/plot_prediction_latency_0011.png" style="width: 800.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="atomic_prediction_latency" src="../_images/plot_prediction_latency_001.png" style="width: 800.0px; height: 480.0px;" /></a>
 </strong></p><p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="bulk_prediction_latency" src="../_images/plot_prediction_latency_0021.png" style="width: 800.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="bulk_prediction_latency" src="../_images/plot_prediction_latency_002.png" style="width: 800.0px; height: 480.0px;" /></a>
 </strong></p><p>To benchmark different estimators for your case you can simply change the
 <tt class="docutils literal"><span class="pre">n_features</span></tt> parameter in this example:
 <a class="reference internal" href="../auto_examples/applications/plot_prediction_latency.html#example-applications-plot-prediction-latency-py"><em>Prediction Latency</em></a>. This should give
@@ -259,7 +256,7 @@ From a computing perspective it also means that the number of basic operations
 too. Here is a graph of the evolution of the prediction latency with the
 number of features:</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="influence_of_n_features_on_latency" src="../_images/plot_prediction_latency_0031.png" style="width: 800.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="influence_of_n_features_on_latency" src="../_images/plot_prediction_latency_003.png" style="width: 800.0px; height: 480.0px;" /></a>
 </strong></p><p>Overall you can expect the prediction time to increase at least linearly with
 the number of features (non-linear cases can happen depending on the global
 memory footprint and estimator).</p>
@@ -317,7 +314,7 @@ describe it fully. Of course sparsity influences in turn the prediction time
 as the sparse dot-product takes time roughly proportional to the number of
 non-zero coefficients.</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="en_model_complexity" src="../_images/plot_model_complexity_influence_0011.png" style="width: 960.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="en_model_complexity" src="../_images/plot_model_complexity_influence_001.png" style="width: 960.0px; height: 480.0px;" /></a>
 </strong></p><p>For the <a class="reference internal" href="classes.html#module-sklearn.svm" title="sklearn.svm"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></tt></a> family of algorithms with a non-linear kernel,
 the latency is tied to the number of support vectors (the fewer the faster).
 Latency and throughput should (asymptotically) grow linearly with the number
@@ -327,14 +324,14 @@ support vector. In the following graph the <tt class="docutils literal"><span cl
 <tt class="xref py py-class docutils literal"><span class="pre">sklearn.svm.classes.NuSVR</span></tt> was used to influence the number of
 support vectors.</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="nusvr_model_complexity" src="../_images/plot_model_complexity_influence_0021.png" style="width: 960.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="nusvr_model_complexity" src="../_images/plot_model_complexity_influence_002.png" style="width: 960.0px; height: 480.0px;" /></a>
 </strong></p><p>For <a class="reference internal" href="classes.html#module-sklearn.ensemble" title="sklearn.ensemble"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble</span></tt></a> of trees (e.g. RandomForest, GBT,
 ExtraTrees etc) the number of trees and their depth play the most
 important role. Latency and throughput should scale linearly with the number
 of trees. In this case we used directly the <tt class="docutils literal"><span class="pre">n_estimators</span></tt> parameter of
 <tt class="xref py py-class docutils literal"><span class="pre">sklearn.ensemble.gradient_boosting.GradientBoostingRegressor</span></tt>.</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="gbt_model_complexity" src="../_images/plot_model_complexity_influence_0031.png" style="width: 960.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="gbt_model_complexity" src="../_images/plot_model_complexity_influence_003.png" style="width: 960.0px; height: 480.0px;" /></a>
 </strong></p><p>In any case be warned that decreasing model complexity can hurt accuracy as
 mentioned above. For instance a non-linearly separable problem can be handled
 with a speedy linear model but prediction power will very likely suffer in
@@ -354,7 +351,7 @@ the chosen model.</p>
 <blockquote>
 <div></div></blockquote>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_out_of_core_classification.html"><img alt="prediction_time" src="../_images/plot_out_of_core_classification_0041.png" style="width: 640.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_out_of_core_classification.html"><img alt="prediction_time" src="../_images/plot_out_of_core_classification_004.png" style="width: 640.0px; height: 480.0px;" /></a>
 </strong></p><p>In many cases it is thus recommended to carefully time and profile your
 feature extraction code as it may be a good place to start optimizing when
 your overall latency is too slow for your application.</p>
@@ -368,7 +365,7 @@ time. Here is a benchmark from the
 <a class="reference internal" href="../auto_examples/applications/plot_prediction_latency.html#example-applications-plot-prediction-latency-py"><em>Prediction Latency</em></a> example that measures
 this quantity for a number of estimators on synthetic data:</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="throughput_benchmark" src="../_images/plot_prediction_latency_0041.png" style="width: 800.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="throughput_benchmark" src="../_images/plot_prediction_latency_004.png" style="width: 800.0px; height: 480.0px;" /></a>
 </strong></p><p>These throughputs are achieved on a single process. An obvious way to
 increase the throughput of your application is to spawn additional instances
 (usually processes in Python because of the

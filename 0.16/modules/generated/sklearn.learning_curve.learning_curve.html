@@ -71,8 +71,8 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../../dev/index.html">Home</a></li>
-                <li><a href="../../../dev/install.html">Installation</a></li>
+                <li><a href="../../../stable/index.html">Home</a></li>
+                <li><a href="../../../stable/install.html">Installation</a></li>
                 <li class="btn-li"><div class="btn-group">
 		      <a href="../../documentation.html">Documentation</a>
 		      <a class="btn dropdown-toggle" data-toggle="dropdown">
@@ -85,11 +85,8 @@
 			<li><a href="../classes.html">API</a></li>
 			<li><a href="../../faq.html">FAQ</a></li>
 			<li class="divider"></li>
-		        <li><a href="http://scikit-learn.org/dev/documentation.html">Development</a></li>
+		        <li><a href="http://scikit-learn.org/stable/documentation.html">Development</a></li>
 			<li><a href="http://scikit-learn.org/0.15/">Scikit-learn 0.15</a></li>
-			<li><a href="http://scikit-learn.org/0.14/">Scikit-learn 0.14</a></li>
-		        <li><a href="http://scikit-learn.org/0.13/">Scikit-learn 0.13</a></li>
-		        <li><a href="../../documentation.html">More versions...</a></li>
 		      </ul>
 		    </div>
 		</li>
@@ -169,7 +166,10 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.16.1</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.learning_curve</span></tt>.learning_curve</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.learning_curve</span></tt>.learning_curve</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-learning-curve-learning-curve">Examples using <tt class="docutils literal"><span class="pre">sklearn.learning_curve.learning_curve</span></tt></a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -187,7 +187,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.learning_curve" title="sklearn.learning_curve"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.learning_curve</span></tt></a>.learning_curve<a class="headerlink" href="#sklearn-learning-curve-learning-curve" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.learning_curve.learning_curve">
-<tt class="descclassname">sklearn.learning_curve.</tt><tt class="descname">learning_curve</tt><big>(</big><em>estimator</em>, <em>X</em>, <em>y</em>, <em>train_sizes=array([ 0.1</em>, <em>0.325</em>, <em>0.55</em>, <em>0.775</em>, <em>1.   ])</em>, <em>cv=None</em>, <em>scoring=None</em>, <em>exploit_incremental_learning=False</em>, <em>n_jobs=1</em>, <em>pre_dispatch='all'</em>, <em>verbose=0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/learning_curve.py#L20"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.learning_curve.learning_curve" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.learning_curve.</tt><tt class="descname">learning_curve</tt><big>(</big><em>estimator</em>, <em>X</em>, <em>y</em>, <em>train_sizes=array([ 0.1</em>, <em>0.325</em>, <em>0.55</em>, <em>0.775</em>, <em>1.   ])</em>, <em>cv=None</em>, <em>scoring=None</em>, <em>exploit_incremental_learning=False</em>, <em>n_jobs=1</em>, <em>pre_dispatch='all'</em>, <em>verbose=0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/learning_curve.py#L20"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.learning_curve.learning_curve" title="Permalink to this definition">¶</a></dt>
 <dd><p>Learning curve.</p>
 <p>Determines cross-validated training and test scores for different training
 set sizes.</p>
@@ -280,7 +280,14 @@ than n_ticks because duplicate entries will be removed.</p>
 <p>See <a class="reference internal" href="../../auto_examples/model_selection/plot_learning_curve.html#example-model-selection-plot-learning-curve-py"><em>examples/model_selection/plot_learning_curve.py</em></a></p>
 </dd></dl>
 
-<div class="clearer"></div></div>
+<div class="section" id="examples-using-sklearn-learning-curve-learning-curve">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.learning_curve.learning_curve</span></tt><a class="headerlink" href="#examples-using-sklearn-learning-curve-learning-curve" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Both kernel ridge regression (KRR) and SVR learn a non-linear function by employing the kernel ..."><div class="figure">
+<a class="reference external image-reference" href="./../../auto_examples/./plot_kernel_ridge_regression.html"><img alt="../../_images/plot_kernel_ridge_regression1.png" src="../../_images/plot_kernel_ridge_regression1.png" /></a>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_kernel_ridge_regression.html#example-plot-kernel-ridge-regression-py"><em>Comparison of kernel ridge regression and SVR</em></a></p>
+</div>
+</div><div class="clearer"></div></div>
+</div>
 
 
           </div>

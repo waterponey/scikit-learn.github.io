@@ -71,8 +71,8 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../../dev/index.html">Home</a></li>
-                <li><a href="../../../dev/install.html">Installation</a></li>
+                <li><a href="../../../stable/index.html">Home</a></li>
+                <li><a href="../../../stable/install.html">Installation</a></li>
                 <li class="btn-li"><div class="btn-group">
 		      <a href="../../documentation.html">Documentation</a>
 		      <a class="btn dropdown-toggle" data-toggle="dropdown">
@@ -85,11 +85,8 @@
 			<li><a href="../classes.html">API</a></li>
 			<li><a href="../../faq.html">FAQ</a></li>
 			<li class="divider"></li>
-		        <li><a href="http://scikit-learn.org/dev/documentation.html">Development</a></li>
+		        <li><a href="http://scikit-learn.org/stable/documentation.html">Development</a></li>
 			<li><a href="http://scikit-learn.org/0.15/">Scikit-learn 0.15</a></li>
-			<li><a href="http://scikit-learn.org/0.14/">Scikit-learn 0.14</a></li>
-		        <li><a href="http://scikit-learn.org/0.13/">Scikit-learn 0.13</a></li>
-		        <li><a href="../../documentation.html">More versions...</a></li>
 		      </ul>
 		    </div>
 		</li>
@@ -190,7 +187,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.svm" title="sklearn.svm"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></tt></a>.SVR<a class="headerlink" href="#sklearn-svm-svr" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.svm.SVR">
-<em class="property">class </em><tt class="descclassname">sklearn.svm.</tt><tt class="descname">SVR</tt><big>(</big><em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma=0.0</em>, <em>coef0=0.0</em>, <em>tol=0.001</em>, <em>C=1.0</em>, <em>epsilon=0.1</em>, <em>shrinking=True</em>, <em>cache_size=200</em>, <em>verbose=False</em>, <em>max_iter=-1</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/svm/classes.py#L636"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.svm.</tt><tt class="descname">SVR</tt><big>(</big><em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma=0.0</em>, <em>coef0=0.0</em>, <em>tol=0.001</em>, <em>C=1.0</em>, <em>epsilon=0.1</em>, <em>shrinking=True</em>, <em>cache_size=200</em>, <em>verbose=False</em>, <em>max_iter=-1</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/svm/classes.py#L636"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR" title="Permalink to this definition">¶</a></dt>
 <dd><p>Epsilon-Support Vector Regression.</p>
 <p>The free parameters in the model are C and epsilon.</p>
 <p>The implementation is based on libsvm.</p>
@@ -334,12 +331,12 @@ problem). This is only available in the case of linear kernel.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.svm.SVR.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma=0.0</em>, <em>coef0=0.0</em>, <em>tol=0.001</em>, <em>C=1.0</em>, <em>epsilon=0.1</em>, <em>shrinking=True</em>, <em>cache_size=200</em>, <em>verbose=False</em>, <em>max_iter=-1</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/svm/classes.py#L734"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma=0.0</em>, <em>coef0=0.0</em>, <em>tol=0.001</em>, <em>C=1.0</em>, <em>epsilon=0.1</em>, <em>shrinking=True</em>, <em>cache_size=200</em>, <em>verbose=False</em>, <em>max_iter=-1</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/svm/classes.py#L734"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.svm.SVR.decision_function">
-<tt class="descname">decision_function</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/svm/base.py#L351"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.decision_function" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decision_function</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/svm/base.py#L351"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Distance of the samples X to the separating hyperplane.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -365,7 +362,7 @@ in the model.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVR.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/svm/base.py#L99"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/svm/base.py#L99"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the SVM model according to the given training data.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -407,7 +404,7 @@ matrices as input.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVR.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/base.py#L189"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/base.py#L189"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -432,7 +429,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVR.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/svm/base.py#L275"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/svm/base.py#L275"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform regression on samples in X.</p>
 <p>For an one-class model, +1 or -1 is returned.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -455,7 +452,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVR.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/base.py#L302"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/base.py#L302"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
@@ -491,7 +488,7 @@ Best possible score is 1.0, lower values are worse.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVR.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/base.py#L226"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/base.py#L226"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVR.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form

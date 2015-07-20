@@ -71,8 +71,8 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../dev/index.html">Home</a></li>
-                <li><a href="../../dev/install.html">Installation</a></li>
+                <li><a href="../../stable/index.html">Home</a></li>
+                <li><a href="../../stable/install.html">Installation</a></li>
                 <li class="btn-li"><div class="btn-group">
 		      <a href="../documentation.html">Documentation</a>
 		      <a class="btn dropdown-toggle" data-toggle="dropdown">
@@ -85,11 +85,8 @@
 			<li><a href="classes.html">API</a></li>
 			<li><a href="../faq.html">FAQ</a></li>
 			<li class="divider"></li>
-		        <li><a href="http://scikit-learn.org/dev/documentation.html">Development</a></li>
+		        <li><a href="http://scikit-learn.org/stable/documentation.html">Development</a></li>
 			<li><a href="http://scikit-learn.org/0.15/">Scikit-learn 0.15</a></li>
-			<li><a href="http://scikit-learn.org/0.14/">Scikit-learn 0.14</a></li>
-		        <li><a href="http://scikit-learn.org/0.13/">Scikit-learn 0.13</a></li>
-		        <li><a href="../documentation.html">More versions...</a></li>
 		      </ul>
 		    </div>
 		</li>
@@ -261,7 +258,7 @@ long as a similarity measure exists for such objects.</p>
 <div class="section" id="overview-of-clustering-methods">
 <h2>2.3.1. Overview of clustering methods<a class="headerlink" href="#overview-of-clustering-methods" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_cluster_comparison.html"><img alt="../_images/plot_cluster_comparison_0011.png" src="../_images/plot_cluster_comparison_0011.png" style="width: 950.0px; height: 475.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_cluster_comparison.html"><img alt="../_images/plot_cluster_comparison_001.png" src="../_images/plot_cluster_comparison_001.png" style="width: 950.0px; height: 475.0px;" /></a>
 <p class="caption">A comparison of the clustering algorithms in scikit-learn</p>
 </div>
 <table border="1" class="docutils">
@@ -391,7 +388,7 @@ samples assigned to each previous centroid. The difference between the old
 and the new centroids are computed and the algorithm repeats these last two
 steps until this value is less than a threshold. In other words, it repeats
 until the centroids do not move significantly.</p>
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_kmeans_digits.html"><img alt="../_images/plot_kmeans_digits_0011.png" class="align-right" src="../_images/plot_kmeans_digits_0011.png" style="width: 280.0px; height: 210.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_kmeans_digits.html"><img alt="../_images/plot_kmeans_digits_001.png" class="align-right" src="../_images/plot_kmeans_digits_001.png" style="width: 280.0px; height: 210.0px;" /></a>
 <p>K-means is equivalent to the expectation-maximization algorithm
 with a small, all-equal, diagonal covariance matrix.</p>
 <p>The algorithm can also be understood through the concept of <a class="reference external" href="https://en.wikipedia.org/wiki/Voronoi_diagram">Voronoi diagrams</a>. First the Voronoi diagram of
@@ -463,7 +460,7 @@ convergence or a predetermined number of iterations is reached.</p>
 of the results is reduced. In practice this difference in quality can be quite
 small, as shown in the example and cited reference.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_mini_batch_kmeans.html"><img alt="../_images/plot_mini_batch_kmeans_0011.png" src="../_images/plot_mini_batch_kmeans_0011.png" style="width: 800.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_mini_batch_kmeans.html"><img alt="../_images/plot_mini_batch_kmeans_001.png" src="../_images/plot_mini_batch_kmeans_001.png" style="width: 800.0px; height: 300.0px;" /></a>
 </div>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
@@ -496,7 +493,7 @@ values from other pairs. This updating happens iteratively until convergence,
 at which point the final exemplars are chosen, and hence the final clustering
 is given.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_affinity_propagation.html"><img alt="../_images/plot_affinity_propagation_0011.png" src="../_images/plot_affinity_propagation_0011.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_affinity_propagation.html"><img alt="../_images/plot_affinity_propagation_001.png" src="../_images/plot_affinity_propagation_001.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
 <p>Affinity Propagation can be interesting as it chooses the number of
 clusters based on the data provided. For this purpose, the two important
@@ -573,7 +570,7 @@ is small.</p>
 <p>Labelling a new sample is performed by finding the nearest centroid for a
 given sample.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_mean_shift.html"><img alt="../_images/plot_mean_shift_0011.png" src="../_images/plot_mean_shift_0011.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_mean_shift.html"><img alt="../_images/plot_mean_shift_001.png" src="../_images/plot_mean_shift_001.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
@@ -607,8 +604,8 @@ cluster. This criteria is especially interesting when working on images:
 graph vertices are pixels, and edges of the similarity graph are a
 function of the gradient of the image.</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/cluster/plot_segmentation_toy.html"><img alt="noisy_img" src="../_images/plot_segmentation_toy_0011.png" style="width: 300.0px; height: 300.0px;" /></a>
- <a class="reference external image-reference" href="../auto_examples/cluster/plot_segmentation_toy.html"><img alt="segmented_img" src="../_images/plot_segmentation_toy_0021.png" style="width: 300.0px; height: 300.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/cluster/plot_segmentation_toy.html"><img alt="noisy_img" src="../_images/plot_segmentation_toy_001.png" style="width: 300.0px; height: 300.0px;" /></a>
+ <a class="reference external image-reference" href="../auto_examples/cluster/plot_segmentation_toy.html"><img alt="segmented_img" src="../_images/plot_segmentation_toy_002.png" style="width: 300.0px; height: 300.0px;" /></a>
 </strong></p><div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p>Transforming distance to well-behaved similarities</p>
@@ -653,8 +650,8 @@ geometrical shape.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference external" href="../auto_examples/cluster/plot_lena_segmentation.html"><img alt="lena_kmeans" src="../_images/plot_lena_segmentation_0011.png" style="width: 325.0px; height: 325.0px;" /></a></td>
-<td><a class="reference external" href="../auto_examples/cluster/plot_lena_segmentation.html"><img alt="lena_discretize" src="../_images/plot_lena_segmentation_0021.png" style="width: 325.0px; height: 325.0px;" /></a></td>
+<tr class="row-even"><td><a class="reference external" href="../auto_examples/cluster/plot_lena_segmentation.html"><img alt="lena_kmeans" src="../_images/plot_lena_segmentation_001.png" style="width: 325.0px; height: 325.0px;" /></a></td>
+<td><a class="reference external" href="../auto_examples/cluster/plot_lena_segmentation.html"><img alt="lena_discretize" src="../_images/plot_lena_segmentation_002.png" style="width: 325.0px; height: 325.0px;" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -709,9 +706,9 @@ number of features. It is a dimensionality reduction tool, see
 <h3>2.3.6.1. Different linkage type: Ward, complete and average linkage<a class="headerlink" href="#different-linkage-type-ward-complete-and-average-linkage" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering" title="sklearn.cluster.AgglomerativeClustering"><tt class="xref py py-class docutils literal"><span class="pre">AgglomerativeClustering</span></tt></a> supports Ward, average, and complete
 linkage strategies.</p>
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_digits_linkage.html"><img alt="../_images/plot_digits_linkage_0011.png" src="../_images/plot_digits_linkage_0011.png" style="width: 258.0px; height: 172.0px;" /></a>
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_digits_linkage.html"><img alt="../_images/plot_digits_linkage_0021.png" src="../_images/plot_digits_linkage_0021.png" style="width: 258.0px; height: 172.0px;" /></a>
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_digits_linkage.html"><img alt="../_images/plot_digits_linkage_0031.png" src="../_images/plot_digits_linkage_0031.png" style="width: 258.0px; height: 172.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_digits_linkage.html"><img alt="../_images/plot_digits_linkage_001.png" src="../_images/plot_digits_linkage_001.png" style="width: 258.0px; height: 172.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_digits_linkage.html"><img alt="../_images/plot_digits_linkage_002.png" src="../_images/plot_digits_linkage_002.png" style="width: 258.0px; height: 172.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_digits_linkage.html"><img alt="../_images/plot_digits_linkage_003.png" src="../_images/plot_digits_linkage_003.png" style="width: 258.0px; height: 172.0px;" /></a>
 <p>Agglomerative cluster has a &#8220;rich get richer&#8221; behavior that leads to
 uneven cluster sizes. In this regard, complete linkage is the worst
 strategy, and Ward gives the most regular sizes. However, the affinity
@@ -736,8 +733,8 @@ constraints forbid the merging of points that are not adjacent on the swiss
 roll, and thus avoid forming clusters that extend across overlapping folds of
 the roll.</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/cluster/plot_ward_structured_vs_unstructured.html"><img alt="unstructured" src="../_images/plot_ward_structured_vs_unstructured_0011.png" style="width: 392.0px; height: 294.0px;" /></a>
- <a class="reference external image-reference" href="../auto_examples/cluster/plot_ward_structured_vs_unstructured.html"><img alt="structured" src="../_images/plot_ward_structured_vs_unstructured_0021.png" style="width: 392.0px; height: 294.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/cluster/plot_ward_structured_vs_unstructured.html"><img alt="unstructured" src="../_images/plot_ward_structured_vs_unstructured_001.png" style="width: 392.0px; height: 294.0px;" /></a>
+ <a class="reference external image-reference" href="../auto_examples/cluster/plot_ward_structured_vs_unstructured.html"><img alt="structured" src="../_images/plot_ward_structured_vs_unstructured_002.png" style="width: 392.0px; height: 294.0px;" /></a>
 </strong></p><p>These constraint are useful to impose a certain local structure, but they
 also make the algorithm faster, especially when the number of the samples
 is high.</p>
@@ -777,10 +774,10 @@ number of clusters, they tend to give a few macroscopically occupied
 clusters and almost empty ones. (see the discussion in
 <a class="reference internal" href="../auto_examples/cluster/plot_agglomerative_clustering.html#example-cluster-plot-agglomerative-clustering-py"><em>Agglomerative clustering with and without structure</em></a>).</p>
 </div>
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering.html"><img alt="../_images/plot_agglomerative_clustering_0011.png" src="../_images/plot_agglomerative_clustering_0011.png" style="width: 380.0px; height: 152.0px;" /></a>
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering.html"><img alt="../_images/plot_agglomerative_clustering_0021.png" src="../_images/plot_agglomerative_clustering_0021.png" style="width: 380.0px; height: 152.0px;" /></a>
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering.html"><img alt="../_images/plot_agglomerative_clustering_0031.png" src="../_images/plot_agglomerative_clustering_0031.png" style="width: 380.0px; height: 152.0px;" /></a>
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering.html"><img alt="../_images/plot_agglomerative_clustering_0041.png" src="../_images/plot_agglomerative_clustering_0041.png" style="width: 380.0px; height: 152.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering.html"><img alt="../_images/plot_agglomerative_clustering_001.png" src="../_images/plot_agglomerative_clustering_001.png" style="width: 380.0px; height: 152.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering.html"><img alt="../_images/plot_agglomerative_clustering_002.png" src="../_images/plot_agglomerative_clustering_002.png" style="width: 380.0px; height: 152.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering.html"><img alt="../_images/plot_agglomerative_clustering_003.png" src="../_images/plot_agglomerative_clustering_003.png" style="width: 380.0px; height: 152.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering.html"><img alt="../_images/plot_agglomerative_clustering_004.png" src="../_images/plot_agglomerative_clustering_004.png" style="width: 380.0px; height: 152.0px;" /></a>
 </div>
 <div class="section" id="varying-the-metric">
 <h3>2.3.6.3. Varying the metric<a class="headerlink" href="#varying-the-metric" title="Permalink to this headline">¶</a></h3>
@@ -798,9 +795,9 @@ scalings of the signal.</li>
 <p>The guidelines for choosing a metric is to use one that maximizes the
 distance between samples in different classes, and minimizes that within
 each class.</p>
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering_metrics.html"><img alt="../_images/plot_agglomerative_clustering_metrics_0051.png" src="../_images/plot_agglomerative_clustering_metrics_0051.png" style="width: 256.0px; height: 192.0px;" /></a>
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering_metrics.html"><img alt="../_images/plot_agglomerative_clustering_metrics_0061.png" src="../_images/plot_agglomerative_clustering_metrics_0061.png" style="width: 256.0px; height: 192.0px;" /></a>
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering_metrics.html"><img alt="../_images/plot_agglomerative_clustering_metrics_0071.png" src="../_images/plot_agglomerative_clustering_metrics_0071.png" style="width: 256.0px; height: 192.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering_metrics.html"><img alt="../_images/plot_agglomerative_clustering_metrics_005.png" src="../_images/plot_agglomerative_clustering_metrics_005.png" style="width: 256.0px; height: 192.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering_metrics.html"><img alt="../_images/plot_agglomerative_clustering_metrics_006.png" src="../_images/plot_agglomerative_clustering_metrics_006.png" style="width: 256.0px; height: 192.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering_metrics.html"><img alt="../_images/plot_agglomerative_clustering_metrics_007.png" src="../_images/plot_agglomerative_clustering_metrics_007.png" style="width: 256.0px; height: 192.0px;" /></a>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
@@ -844,7 +841,7 @@ indicating core samples found by the algorithm. Smaller circles are non-core
 samples that are still part of a cluster. Moreover, the outliers are indicated
 by black points below.</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/cluster/plot_dbscan.html"><img alt="dbscan_results" src="../_images/plot_dbscan_0011.png" style="width: 400.0px; height: 300.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/cluster/plot_dbscan.html"><img alt="dbscan_results" src="../_images/plot_dbscan_001.png" style="width: 400.0px; height: 300.0px;" /></a>
 </strong></p><div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
@@ -1330,7 +1327,7 @@ an adjusted index such as the Adjusted Rand Index (ARI)</strong>.</p>
 </li>
 </ul>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_adjusted_for_chance_measures.html"><img alt="../_images/plot_adjusted_for_chance_measures_0011.png" src="../_images/plot_adjusted_for_chance_measures_0011.png" style="width: 800.0px; height: 600.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_adjusted_for_chance_measures.html"><img alt="../_images/plot_adjusted_for_chance_measures_001.png" src="../_images/plot_adjusted_for_chance_measures_001.png" style="width: 800.0px; height: 600.0px;" /></a>
 </div>
 <ul class="simple">
 <li>These metrics <strong>require the knowledge of the ground truth classes</strong> while

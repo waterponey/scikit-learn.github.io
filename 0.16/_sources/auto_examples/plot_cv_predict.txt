@@ -24,6 +24,6 @@ errors.
 .. literalinclude:: plot_cv_predict.py
     :lines: 10-
 
-**Total running time of the example:**  6.30 seconds
-( 0 minutes  6.30 seconds)
+**Total running time of the example:**  0.33 seconds
+( 0 minutes  0.33 seconds)
     

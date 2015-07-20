@@ -71,8 +71,8 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../../dev/index.html">Home</a></li>
-                <li><a href="../../../dev/install.html">Installation</a></li>
+                <li><a href="../../../stable/index.html">Home</a></li>
+                <li><a href="../../../stable/install.html">Installation</a></li>
                 <li class="btn-li"><div class="btn-group">
 		      <a href="../../documentation.html">Documentation</a>
 		      <a class="btn dropdown-toggle" data-toggle="dropdown">
@@ -85,11 +85,8 @@
 			<li><a href="../classes.html">API</a></li>
 			<li><a href="../../faq.html">FAQ</a></li>
 			<li class="divider"></li>
-		        <li><a href="http://scikit-learn.org/dev/documentation.html">Development</a></li>
+		        <li><a href="http://scikit-learn.org/stable/documentation.html">Development</a></li>
 			<li><a href="http://scikit-learn.org/0.15/">Scikit-learn 0.15</a></li>
-			<li><a href="http://scikit-learn.org/0.14/">Scikit-learn 0.14</a></li>
-		        <li><a href="http://scikit-learn.org/0.13/">Scikit-learn 0.13</a></li>
-		        <li><a href="../../documentation.html">More versions...</a></li>
 		      </ul>
 		    </div>
 		</li>
@@ -190,7 +187,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.preprocessing" title="sklearn.preprocessing"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.preprocessing</span></tt></a>.Normalizer<a class="headerlink" href="#sklearn-preprocessing-normalizer" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.preprocessing.Normalizer">
-<em class="property">class </em><tt class="descclassname">sklearn.preprocessing.</tt><tt class="descname">Normalizer</tt><big>(</big><em>norm='l2'</em>, <em>copy=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/preprocessing/data.py#L627"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.preprocessing.</tt><tt class="descname">Normalizer</tt><big>(</big><em>norm='l2'</em>, <em>copy=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/preprocessing/data.py#L627"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Normalize samples individually to unit norm.</p>
 <p>Each sample (i.e. each row of the data matrix) with at least one
 non zero component is rescaled independently of other samples so
@@ -254,12 +251,12 @@ fit method does nothing but is useful when used in a pipeline.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.preprocessing.Normalizer.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>norm='l2'</em>, <em>copy=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/preprocessing/data.py#L665"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>norm='l2'</em>, <em>copy=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/preprocessing/data.py#L665"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.Normalizer.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/preprocessing/data.py#L669"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/preprocessing/data.py#L669"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Do nothing and return the estimator unchanged</p>
 <p>This method is just there to implement the usual API and hence
 work in pipelines.</p>
@@ -267,7 +264,7 @@ work in pipelines.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.Normalizer.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/base.py#L409"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/base.py#L409"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -297,7 +294,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.Normalizer.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/base.py#L189"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/base.py#L189"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -322,7 +319,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.Normalizer.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/base.py#L226"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/base.py#L226"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -340,7 +337,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.Normalizer.transform">
-<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>copy=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/bb39b49/sklearn/preprocessing/data.py#L678"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>copy=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/7b6118a/sklearn/preprocessing/data.py#L678"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Normalizer.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Scale each non zero row of X to unit norm</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
