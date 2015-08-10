@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Probability Cali...
+        Probability C...
         </span>
             <span class="hiddenrellink">
             Probability Calibration for 3-class classification
@@ -172,9 +172,10 @@ hand-written digits.</p>
 <a class="reference internal" href="../../tutorial/basic/tutorial.html#introduction"><em>tutorial section of the user manual</em></a>.</p>
 <img alt="../../_images/plot_digits_classification_001.png" class="align-center" src="../../_images/plot_digits_classification_001.png" />
 <p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Classification report for classifier SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0, degree=3,
-  gamma=0.001, kernel=&#39;rbf&#39;, max_iter=-1, probability=False,
-  random_state=None, shrinking=True, tol=0.001, verbose=False):
+<div class="highlight-python"><pre>Classification report for classifier SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma=0.001, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False):
              precision    recall  f1-score   support
 
           0       1.00      0.99      0.99        88
@@ -201,8 +202,7 @@ Confusion matrix:
  [ 0  1  0  0  0  0 90  0  0  0]
  [ 0  0  0  0  0  1  0 88  0  0]
  [ 0  0  0  0  0  0  0  0 88  0]
- [ 0  0  0  1  0  1  0  0  0 90]]
-</pre></div>
+ [ 0  0  0  1  0  1  0  0  0 90]]</pre>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_digits_classification.py"><tt class="xref download docutils literal"><span class="pre">plot_digits_classification.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
@@ -261,8 +261,8 @@ Confusion matrix:
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.56 seconds
-( 0 minutes  0.56 seconds)</p>
+<p><strong>Total running time of the example:</strong>  0.71 seconds
+( 0 minutes  0.71 seconds)</p>
 </div>
 
 

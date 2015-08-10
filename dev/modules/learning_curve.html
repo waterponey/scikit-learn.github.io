@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        3.4. Model persi...
+        3.4. Model pe...
         </span>
             <span class="hiddenrellink">
             3.4. Model persistence
@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        3. Model selecti...
+        3. Model sele...
         </span>
             <span class="hiddenrellink">
             3. Model selection and evaluation
@@ -175,7 +175,7 @@ can be decomposed in terms of bias, variance and noise. The <strong>bias</strong
 estimator is its average error for different training sets. The <strong>variance</strong>
 of an estimator indicates how sensitive it is to varying training sets. Noise
 is a property of the data.</p>
-<p>In the following plot, we see a function <img class="math" src="../_images/math/62c79506cd664dcdceb67df9f260f2a499265fec.png" alt="f(x) = \cos (\frac{3}{2} \pi x)"/>
+<p>In the following plot, we see a function <img class="math" src="../_images/math/f9790fde19569620e432677832867ec724ce4c90.png" alt="f(x) = \cos (\frac{3}{2} \pi x)"/>
 and some noisy samples from that function. We use three different estimators
 to fit the function: linear regression with polynomial features of degree 1,
 4 and 15. We see that the first estimator can at best provide only a poor fit
@@ -184,7 +184,7 @@ the second estimator approximates it almost perfectly and the last estimator
 approximates the training data perfectly but does not fit the true function
 very well, i.e. it is very sensitive to varying training data (high variance).</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/model_selection/plot_underfitting_overfitting.html"><img alt="../_images/plot_underfitting_overfitting_0012.png" src="../_images/plot_underfitting_overfitting_0012.png" style="width: 700.0px; height: 250.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/model_selection/plot_underfitting_overfitting.html"><img alt="../_images/plot_underfitting_overfitting_0011.png" src="../_images/plot_underfitting_overfitting_0011.png" style="width: 700.0px; height: 250.0px;" /></a>
 </div>
 <p>Bias and variance are inherent properties of estimators and we usually have to
 select learning algorithms and hyperparameters so that both bias and variance
@@ -249,9 +249,9 @@ be underfitting. If the training score is high and the validation score is low,
 the estimator is overfitting and otherwise it is working very well. A low
 training score and a high validation score is usually not possible. All three
 cases can be found in the plot below where we vary the parameter
-<img class="math" src="../_images/math/0ebb67342b546ca42a1c634b1ef03c893c4cdedb.png" alt="\gamma"/> of an SVM on the digits dataset.</p>
+<img class="math" src="../_images/math/66981fa3920210c6ad8dbe5e968783d5dd7520c3.png" alt="\gamma"/> of an SVM on the digits dataset.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/model_selection/plot_validation_curve.html"><img alt="../_images/plot_validation_curve_0012.png" src="../_images/plot_validation_curve_0012.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/model_selection/plot_validation_curve.html"><img alt="../_images/plot_validation_curve_0011.png" src="../_images/plot_validation_curve_0011.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
 </div>
 <div class="section" id="learning-curve">
@@ -265,7 +265,7 @@ size of the training set, we will not benefit much from more training data.
 In the following plot you can see an example: naive Bayes roughly converges
 to a low score.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/model_selection/plot_learning_curve.html"><img alt="../_images/plot_learning_curve_0012.png" src="../_images/plot_learning_curve_0012.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/model_selection/plot_learning_curve.html"><img alt="../_images/plot_learning_curve_0011.png" src="../_images/plot_learning_curve_0011.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
 <p>We will probably have to use an estimator or a parametrization of the
 current estimator that can learn more complex concepts (i.e. has a lower
@@ -274,7 +274,7 @@ the maximum number of training samples, adding more training samples will
 most likely increase generalization. In the following plot you can see that
 the SVM could benefit from more training examples.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/model_selection/plot_learning_curve.html"><img alt="../_images/plot_learning_curve_0022.png" src="../_images/plot_learning_curve_0022.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/model_selection/plot_learning_curve.html"><img alt="../_images/plot_learning_curve_0021.png" src="../_images/plot_learning_curve_0021.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
 <p>We can use the function <a class="reference internal" href="generated/sklearn.learning_curve.learning_curve.html#sklearn.learning_curve.learning_curve" title="sklearn.learning_curve.learning_curve"><tt class="xref py py-func docutils literal"><span class="pre">learning_curve</span></tt></a> to generate the values
 that are required to plot such a learning curve (number of samples

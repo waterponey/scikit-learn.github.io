@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        1. Supervised le...
+        1. Supervised...
         </span>
             <span class="hiddenrellink">
             1. Supervised learning
@@ -187,7 +187,7 @@ features.</p>
 approximate a sine curve with a set of if-then-else decision rules. The deeper
 the tree, the more complex the decision rules and the fitter the model.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/tree/plot_tree_regression.html"><img alt="../_images/plot_tree_regression_001.png" src="../_images/plot_tree_regression_001.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/tree/plot_tree_regression.html"><img alt="../_images/plot_tree_regression_0011.png" src="../_images/plot_tree_regression_0011.png" style="width: 600.0px; height: 450.0px;" /></a>
 </div>
 <p>Some advantages of decision trees are:</p>
 <blockquote>
@@ -331,7 +331,7 @@ fraction of training samples of the same class in a leaf:</p>
 </pre></div>
 </div>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/tree/plot_iris.html"><img alt="../_images/plot_iris_0011.png" src="../_images/plot_iris_0011.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/tree/plot_iris.html"><img alt="../_images/plot_iris_0013.png" src="../_images/plot_iris_0013.png" style="width: 600.0px; height: 450.0px;" /></a>
 </div>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
@@ -343,7 +343,7 @@ fraction of training samples of the same class in a leaf:</p>
 <div class="section" id="regression">
 <span id="tree-regression"></span><h2>1.10.2. Regression<a class="headerlink" href="#regression" title="Permalink to this headline">¶</a></h2>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/tree/plot_tree_regression.html"><img alt="../_images/plot_tree_regression_001.png" src="../_images/plot_tree_regression_001.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/tree/plot_tree_regression.html"><img alt="../_images/plot_tree_regression_0011.png" src="../_images/plot_tree_regression_0011.png" style="width: 600.0px; height: 450.0px;" /></a>
 </div>
 <p>Decision trees can also be applied to regression problems, using the
 <a class="reference internal" href="generated/sklearn.tree.DecisionTreeRegressor.html#sklearn.tree.DecisionTreeRegressor" title="sklearn.tree.DecisionTreeRegressor"><tt class="xref py py-class docutils literal"><span class="pre">DecisionTreeRegressor</span></tt></a> class.</p>
@@ -402,7 +402,7 @@ of size <tt class="docutils literal"><span class="pre">[n_samples,</span> <span 
 <a class="reference internal" href="../auto_examples/tree/plot_tree_regression_multioutput.html#example-tree-plot-tree-regression-multioutput-py"><em>Multi-output Decision Tree Regression</em></a>. In this example, the input
 X is a single real value and the outputs Y are the sine and cosine of X.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/tree/plot_tree_regression_multioutput.html"><img alt="../_images/plot_tree_regression_multioutput_001.png" src="../_images/plot_tree_regression_multioutput_001.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/tree/plot_tree_regression_multioutput.html"><img alt="../_images/plot_tree_regression_multioutput_0011.png" src="../_images/plot_tree_regression_multioutput_0011.png" style="width: 600.0px; height: 450.0px;" /></a>
 </div>
 <p>The use of multi-output trees for classification is demonstrated in
 <a class="reference internal" href="../auto_examples/plot_multioutput_face_completion.html#example-plot-multioutput-face-completion-py"><em>Face completion with a multi-output estimators</em></a>. In this example, the inputs
@@ -430,22 +430,22 @@ Computer Vision Theory and Applications 2009</li>
 <div class="section" id="complexity">
 <span id="tree-complexity"></span><h2>1.10.4. Complexity<a class="headerlink" href="#complexity" title="Permalink to this headline">¶</a></h2>
 <p>In general, the run time cost to construct a balanced binary tree is
-<img class="math" src="../_images/math/6403e505161fff020c1646c088f941b9f785c787.png" alt="O(n_{samples}n_{features}\log(n_{samples}))"/> and query time
-<img class="math" src="../_images/math/6261d9483c5a54dd480529d4dafa114d56359e2d.png" alt="O(\log(n_{samples}))"/>.  Although the tree construction algorithm attempts
+<img class="math" src="../_images/math/88efbde8a742146b124d24fe52b02011edddde79.png" alt="O(n_{samples}n_{features}\log(n_{samples}))"/> and query time
+<img class="math" src="../_images/math/10d177d32f7f91e4ddf98e3f2153c3d1fac751dd.png" alt="O(\log(n_{samples}))"/>.  Although the tree construction algorithm attempts
 to generate balanced trees, they will not always be balanced.  Assuming that the
 subtrees remain approximately balanced, the cost at each node consists of
-searching through <img class="math" src="../_images/math/1889effe941e98e922ac75fff826fc04ef489d2d.png" alt="O(n_{features})"/> to find the feature that offers the
+searching through <img class="math" src="../_images/math/6f151e3fc9d67079f9d2cf87297123d823999c44.png" alt="O(n_{features})"/> to find the feature that offers the
 largest reduction in entropy.  This has a cost of
-<img class="math" src="../_images/math/80829f750b09d54c9b15ca3e6a11408593e75440.png" alt="O(n_{features}n_{samples}\log(n_{samples}))"/> at each node, leading to a
+<img class="math" src="../_images/math/43013032a6309dd837e496e9679190402914500c.png" alt="O(n_{features}n_{samples}\log(n_{samples}))"/> at each node, leading to a
 total cost over the entire trees (by summing the cost at each node) of
-<img class="math" src="../_images/math/0dbee5337af83bf741686fc31304d338fb560e24.png" alt="O(n_{features}n_{samples}^{2}\log(n_{samples}))"/>.</p>
+<img class="math" src="../_images/math/ea6a0f79cb5f5ba93f9f70c441db01d32199c510.png" alt="O(n_{features}n_{samples}^{2}\log(n_{samples}))"/>.</p>
 <p>Scikit-learn offers a more efficient implementation for the construction of
 decision trees.  A naive implementation (as above) would recompute the class
 label histograms (for classification) or the means (for regression) at for each
 new split point along a given feature. By presorting the feature over all
 relevant samples, and retaining a running label count, we reduce the complexity
-at each node to <img class="math" src="../_images/math/9cbd32f62028fc2ffd7c49bf2436bc04d5211b1c.png" alt="O(n_{features}\log(n_{samples}))"/>, which results in a
-total cost of <img class="math" src="../_images/math/80829f750b09d54c9b15ca3e6a11408593e75440.png" alt="O(n_{features}n_{samples}\log(n_{samples}))"/>.</p>
+at each node to <img class="math" src="../_images/math/559e5c4652dcf3ef621f71a0aa4bafc9d4137ab5.png" alt="O(n_{features}\log(n_{samples}))"/>, which results in a
+total cost of <img class="math" src="../_images/math/43013032a6309dd837e496e9679190402914500c.png" alt="O(n_{features}n_{samples}\log(n_{samples}))"/>.</p>
 </div>
 <div class="section" id="tips-on-practical-use">
 <h2>1.10.5. Tips on practical use<a class="headerlink" href="#tips-on-practical-use" title="Permalink to this headline">¶</a></h2>
@@ -522,54 +522,54 @@ and threshold that yield the largest information gain at each node.</p>
 </div>
 <div class="section" id="mathematical-formulation">
 <span id="tree-mathematical-formulation"></span><h2>1.10.7. Mathematical formulation<a class="headerlink" href="#mathematical-formulation" title="Permalink to this headline">¶</a></h2>
-<p>Given training vectors <img class="math" src="../_images/math/110fea905d9ed71ce598e82f51bf26a1661f8f5c.png" alt="x_i \in R^n"/>, i=1,..., l and a label vector
-<img class="math" src="../_images/math/1ba3ffd927bbc923681949691879142eb7ddcb06.png" alt="y \in R^l"/>, a decision tree recursively partitions the space such
+<p>Given training vectors <img class="math" src="../_images/math/2ed46ef07a5512da9981a79295fbbf97bf769b0a.png" alt="x_i \in R^n"/>, i=1,..., l and a label vector
+<img class="math" src="../_images/math/3c58bccb2ba85f4ecd2a0339b151c28483aaea01.png" alt="y \in R^l"/>, a decision tree recursively partitions the space such
 that the samples with the same labels are grouped together.</p>
-<p>Let the data at node <img class="math" src="../_images/math/c4bb40dd65eae6c11b325989b14e0b8d35e4e3ef.png" alt="m"/> be represented by <img class="math" src="../_images/math/7b1816c51f7d31275cd3ad400208fb7b3ce136a0.png" alt="Q"/>. For
-each candidate split <img class="math" src="../_images/math/9d759be8e66ed0a164c0a65eb31389b7abf6de49.png" alt="\theta = (j, t_m)"/> consisting of a
-feature <img class="math" src="../_images/math/d32c78b759903e3f4bd4fd2ce0b86358f7500c5d.png" alt="j"/> and threshold <img class="math" src="../_images/math/168b41d971e0e2e6d9bf8b198eccfe76a5d71030.png" alt="t_m"/>, partition the data into
-<img class="math" src="../_images/math/e68adc400e8570b0f58d78c16290ba9bf84f0298.png" alt="Q_{left}(\theta)"/> and <img class="math" src="../_images/math/77e715cd935ec58a6793c7282b25172264dde14b.png" alt="Q_{right}(\theta)"/> subsets</p>
+<p>Let the data at node <img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/> be represented by <img class="math" src="../_images/math/9866e3a998d628ba0941eb4fea0666ac391d149a.png" alt="Q"/>. For
+each candidate split <img class="math" src="../_images/math/eb24f39dfee2ff5f1419dbb448a563b797ee5ea6.png" alt="\theta = (j, t_m)"/> consisting of a
+feature <img class="math" src="../_images/math/8122aa89ea6e80784c6513d22787ad86e36ad0cc.png" alt="j"/> and threshold <img class="math" src="../_images/math/2e931c729fbe135cd9091d8f7d805ba37836598c.png" alt="t_m"/>, partition the data into
+<img class="math" src="../_images/math/e896b3d8d5a96ce31f260cc2450626cafe913166.png" alt="Q_{left}(\theta)"/> and <img class="math" src="../_images/math/5c204ffff9e127333c5b2228c6cf370e9bc33f28.png" alt="Q_{right}(\theta)"/> subsets</p>
 <div class="math">
-<p><img src="../_images/math/1376e8e59ba3b59ff5f4f9e7dd475684017ea210.png" alt="Q_{left}(\theta) = {(x, y) | x_j &lt;= t_m}
+<p><img src="../_images/math/ff944c863740033909f82cde58d51ba84e842d49.png" alt="Q_{left}(\theta) = {(x, y) | x_j &lt;= t_m}
 
 Q_{right}(\theta) = Q \setminus Q_{left}(\theta)"/></p>
-</div><p>The impurity at <img class="math" src="../_images/math/c4bb40dd65eae6c11b325989b14e0b8d35e4e3ef.png" alt="m"/> is computed using an impurity function
-<img class="math" src="../_images/math/7d6e812752f434e91c490703e9983f319610933c.png" alt="H()"/>, the choice of which depends on the task being solved
+</div><p>The impurity at <img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/> is computed using an impurity function
+<img class="math" src="../_images/math/bb0629d13e781d706142d327360c63b7abbd2a2c.png" alt="H()"/>, the choice of which depends on the task being solved
 (classification or regression)</p>
 <div class="math">
-<p><img src="../_images/math/7aaed5ba95d79fa52da0d2596f76ebdc25e8893f.png" alt="G(Q, \theta) = \frac{n_{left}}{N_m} H(Q_{left}(\theta))
+<p><img src="../_images/math/bdeaed6343c025d3c6727d13575c1b64cbccd151.png" alt="G(Q, \theta) = \frac{n_{left}}{N_m} H(Q_{left}(\theta))
 + \frac{n_{right}}{N_m} H(Q_{right}(\theta))"/></p>
 </div><p>Select the parameters that minimises the impurity</p>
 <div class="math">
-<p><img src="../_images/math/5d5c5d759bbce0758c8ad4e6a6d27fb6539b597e.png" alt="\theta^* = \operatorname{argmin}_\theta  G(Q, \theta)"/></p>
-</div><p>Recurse for subsets <img class="math" src="../_images/math/d93300e24558ddc7c23e5c2633c7f13605a41203.png" alt="Q_{left}(\theta^*)"/> and
-<img class="math" src="../_images/math/66a9bcb2fb38a49967dec10ad4d7cdded003ee7d.png" alt="Q_{right}(\theta^*)"/> until the maximum allowable depth is reached,
-<img class="math" src="../_images/math/dcf8a6d5a34c9ad0b9b22f7abf78053e907e0729.png" alt="N_m &lt; \min_{samples}"/> or <img class="math" src="../_images/math/a31baaf9fe13c9b90c5a8091bcd00e981cd8a49f.png" alt="N_m = 1"/>.</p>
+<p><img src="../_images/math/873b7550655c8586b19ca8fcb34468fd53c4a83e.png" alt="\theta^* = \operatorname{argmin}_\theta  G(Q, \theta)"/></p>
+</div><p>Recurse for subsets <img class="math" src="../_images/math/72d48343b86e8135369143144389d4a293a3f08e.png" alt="Q_{left}(\theta^*)"/> and
+<img class="math" src="../_images/math/268c5c0460ec1895b9f5ad2e72cfb7976f8f933a.png" alt="Q_{right}(\theta^*)"/> until the maximum allowable depth is reached,
+<img class="math" src="../_images/math/f7f2c7855a2dbb9ac7ece0b9871a8f1409bb87b4.png" alt="N_m &lt; \min_{samples}"/> or <img class="math" src="../_images/math/47368d972f09f7c7ff0b98bbe7d431e391fa6a60.png" alt="N_m = 1"/>.</p>
 <div class="section" id="classification-criteria">
 <h3>1.10.7.1. Classification criteria<a class="headerlink" href="#classification-criteria" title="Permalink to this headline">¶</a></h3>
 <p>If a target is a classification outcome taking on values 0,1,...,K-1,
-for node <img class="math" src="../_images/math/c4bb40dd65eae6c11b325989b14e0b8d35e4e3ef.png" alt="m"/>, representing a region <img class="math" src="../_images/math/23fee98757d811d8b5ade0fd876948f60f7806d9.png" alt="R_m"/> with <img class="math" src="../_images/math/c4a8a2957d6d5970fef35cce3e86d31427eaa216.png" alt="N_m"/>
+for node <img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/>, representing a region <img class="math" src="../_images/math/0fb4520efb80509c2e612669e74e7e87f4ed1605.png" alt="R_m"/> with <img class="math" src="../_images/math/917e843294a2cb07f60de6deb6eb4d87b84e71e6.png" alt="N_m"/>
 observations, let</p>
 <div class="math">
-<p><img src="../_images/math/ebb2cff7b67f3b8c4e06405d8385983efac9659c.png" alt="p_{mk} = 1/ N_m \sum_{x_i \in R_m} I(y_i = k)"/></p>
-</div><p>be the proportion of class k observations in node <img class="math" src="../_images/math/c4bb40dd65eae6c11b325989b14e0b8d35e4e3ef.png" alt="m"/></p>
+<p><img src="../_images/math/c78eea3d9be94ef49bf52bb76846278a9f3e7349.png" alt="p_{mk} = 1/ N_m \sum_{x_i \in R_m} I(y_i = k)"/></p>
+</div><p>be the proportion of class k observations in node <img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/></p>
 <p>Common measures of impurity are Gini</p>
 <div class="math">
-<p><img src="../_images/math/6227164813ffb600135aa9f69b90000ace19ba1d.png" alt="H(X_m) = \sum_k p_{mk} (1 - p_{mk})"/></p>
+<p><img src="../_images/math/dde0f5514c3181e6e888ce4593b48052a5989754.png" alt="H(X_m) = \sum_k p_{mk} (1 - p_{mk})"/></p>
 </div><p>Cross-Entropy</p>
 <div class="math">
-<p><img src="../_images/math/c0514e2296e129756835e46f72bf5f3da5aefaf4.png" alt="H(X_m) = \sum_k p_{mk} \log(p_{mk})"/></p>
+<p><img src="../_images/math/496cd201ea8b125a895ad9f37fd809a2e05ff2a9.png" alt="H(X_m) = \sum_k p_{mk} \log(p_{mk})"/></p>
 </div><p>and Misclassification</p>
 <div class="math">
-<p><img src="../_images/math/73565e0e02602c9b442a103dc229e5024e37ad67.png" alt="H(X_m) = 1 - \max(p_{mk})"/></p>
+<p><img src="../_images/math/fa2c74cec2aaa27dcb6cdeed0a2cd438b567b4f8.png" alt="H(X_m) = 1 - \max(p_{mk})"/></p>
 </div></div>
 <div class="section" id="regression-criteria">
 <h3>1.10.7.2. Regression criteria<a class="headerlink" href="#regression-criteria" title="Permalink to this headline">¶</a></h3>
-<p>If the target is a continuous value, then for node <img class="math" src="../_images/math/c4bb40dd65eae6c11b325989b14e0b8d35e4e3ef.png" alt="m"/>,
-representing a region <img class="math" src="../_images/math/23fee98757d811d8b5ade0fd876948f60f7806d9.png" alt="R_m"/> with <img class="math" src="../_images/math/c4a8a2957d6d5970fef35cce3e86d31427eaa216.png" alt="N_m"/> observations, a common
+<p>If the target is a continuous value, then for node <img class="math" src="../_images/math/f5047d1e0cbb50ec208923a22cd517c55100fa7b.png" alt="m"/>,
+representing a region <img class="math" src="../_images/math/0fb4520efb80509c2e612669e74e7e87f4ed1605.png" alt="R_m"/> with <img class="math" src="../_images/math/917e843294a2cb07f60de6deb6eb4d87b84e71e6.png" alt="N_m"/> observations, a common
 criterion to minimise is the Mean Squared Error</p>
 <div class="math">
-<p><img src="../_images/math/216499b7b74994c090829dbb0e24bfd8b8d177fc.png" alt="c_m = \frac{1}{N_m} \sum_{i \in N_m} y_i
+<p><img src="../_images/math/3100df53c4ba5c2a70b6a4bf141eaf2cc4ab4dda.png" alt="c_m = \frac{1}{N_m} \sum_{i \in N_m} y_i
 
 H(X_m) = \frac{1}{N_m} \sum_{i \in N_m} (y_i - c_m)^2"/></p>
 </div><div class="topic">

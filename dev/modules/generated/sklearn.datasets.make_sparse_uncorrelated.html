@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.datasets...
+        sklearn.datas...
         </span>
             <span class="hiddenrellink">
             sklearn.datasets.make_sparse_spd_matrix
@@ -168,12 +168,11 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></tt></a>.make_sparse_uncorrelated<a class="headerlink" href="#sklearn-datasets-make-sparse-uncorrelated" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.datasets.make_sparse_uncorrelated">
-<tt class="descclassname">sklearn.datasets.</tt><tt class="descname">make_sparse_uncorrelated</tt><big>(</big><em>n_samples=100</em>, <em>n_features=10</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/datasets/samples_generator.py#L1098"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.make_sparse_uncorrelated" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.datasets.</tt><tt class="descname">make_sparse_uncorrelated</tt><big>(</big><em>n_samples=100</em>, <em>n_features=10</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/datasets/samples_generator.py#L1101"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.make_sparse_uncorrelated" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate a random regression problem with sparse uncorrelated design</p>
 <p>This dataset is described in Celeux et al [1]. as:</p>
-<div class="highlight-python"><div class="highlight"><pre>X ~ N(0, 1)
-y(X) = X[:, 0] + 2 * X[:, 1] - 2 * X[:, 2] - 1.5 * X[:, 3]
-</pre></div>
+<div class="highlight-python"><pre>X ~ N(0, 1)
+y(X) = X[:, 0] + 2 * X[:, 1] - 2 * X[:, 2] - 1.5 * X[:, 3]</pre>
 </div>
 <p>Only the first 4 features are informative. The remaining features are
 useless.</p>

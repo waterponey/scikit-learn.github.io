@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.feature_...
+        sklearn.featu...
         </span>
             <span class="hiddenrellink">
             sklearn.feature_extraction.image.PatchExtractor
@@ -171,7 +171,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.feature_extraction.text" title="sklearn.feature_extraction.text"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction.text</span></tt></a>.CountVectorizer<a class="headerlink" href="#sklearn-feature-extraction-text-countvectorizer" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.feature_extraction.text.CountVectorizer">
-<em class="property">class </em><tt class="descclassname">sklearn.feature_extraction.text.</tt><tt class="descname">CountVectorizer</tt><big>(</big><em>input=u'content'</em>, <em>encoding=u'utf-8'</em>, <em>decode_error=u'strict'</em>, <em>strip_accents=None</em>, <em>lowercase=True</em>, <em>preprocessor=None</em>, <em>tokenizer=None</em>, <em>stop_words=None</em>, <em>token_pattern=u'(?u)\b\w\w+\b'</em>, <em>ngram_range=(1</em>, <em>1)</em>, <em>analyzer=u'word'</em>, <em>max_df=1.0</em>, <em>min_df=1</em>, <em>max_features=None</em>, <em>vocabulary=None</em>, <em>binary=False</em>, <em>dtype=&lt;type 'numpy.int64'&gt;</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L498"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.feature_extraction.text.</tt><tt class="descname">CountVectorizer</tt><big>(</big><em>input=u'content'</em>, <em>encoding=u'utf-8'</em>, <em>decode_error=u'strict'</em>, <em>strip_accents=None</em>, <em>lowercase=True</em>, <em>preprocessor=None</em>, <em>tokenizer=None</em>, <em>stop_words=None</em>, <em>token_pattern=u'(?u)\b\w\w+\b'</em>, <em>ngram_range=(1</em>, <em>1)</em>, <em>analyzer=u'word'</em>, <em>max_df=1.0</em>, <em>min_df=1</em>, <em>max_features=None</em>, <em>vocabulary=None</em>, <em>binary=False</em>, <em>dtype=&lt;type 'numpy.int64'&gt;</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L502"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert a collection of text documents to a matrix of token counts</p>
 <p>This implementation produces a sparse representation of the counts using
 scipy.sparse.coo_matrix.</p>
@@ -219,7 +219,8 @@ None (default) does nothing.</p>
 Option &#8216;char_wb&#8217; creates character n-grams only from text inside
 word boundaries.</p>
 <p>If a callable is passed it is used to extract the sequence of features
-out of the raw, unprocessed input.</p>
+out of the raw, unprocessed input.
+Only applies if <tt class="docutils literal"><span class="pre">analyzer</span> <span class="pre">==</span> <span class="pre">'word'</span></tt>.</p>
 </div></blockquote>
 <p><strong>preprocessor</strong> : callable or None (default)</p>
 <blockquote>
@@ -229,7 +230,8 @@ preserving the tokenizing and n-grams generation steps.</p>
 <p><strong>tokenizer</strong> : callable or None (default)</p>
 <blockquote>
 <div><p>Override the string tokenization step while preserving the
-preprocessing and n-grams generation steps.</p>
+preprocessing and n-grams generation steps.
+Only applies if <tt class="docutils literal"><span class="pre">analyzer</span> <span class="pre">==</span> <span class="pre">'word'</span></tt>.</p>
 </div></blockquote>
 <p><strong>ngram_range</strong> : tuple (min_n, max_n)</p>
 <blockquote>
@@ -241,7 +243,8 @@ will be used.</p>
 <blockquote>
 <div><p>If &#8216;english&#8217;, a built-in stop word list for English is used.</p>
 <p>If a list, that list is assumed to contain stop words, all of which
-will be removed from the resulting tokens.</p>
+will be removed from the resulting tokens.
+Only applies if <tt class="docutils literal"><span class="pre">analyzer</span> <span class="pre">==</span> <span class="pre">'word'</span></tt>.</p>
 <p>If None, no stop words will be used. max_df can be set to a value
 in the range [0.7, 1.0) to automatically detect and filter stop
 words based on intra corpus document frequency of terms.</p>
@@ -253,7 +256,7 @@ words based on intra corpus document frequency of terms.</p>
 <p><strong>token_pattern</strong> : string</p>
 <blockquote>
 <div><p>Regular expression denoting what constitutes a &#8220;token&#8221;, only used
-if <cite>tokenize == &#8216;word&#8217;</cite>. The default regexp select tokens of 2
+if <tt class="docutils literal"><span class="pre">analyzer</span> <span class="pre">==</span> <span class="pre">'word'</span></tt>. The default regexp select tokens of 2
 or more alphanumeric characters (punctuation is completely ignored
 and always treated as a token separator).</p>
 </div></blockquote>
@@ -376,37 +379,37 @@ be safely removed using delattr or set to None before pickling.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>input=u'content'</em>, <em>encoding=u'utf-8'</em>, <em>decode_error=u'strict'</em>, <em>strip_accents=None</em>, <em>lowercase=True</em>, <em>preprocessor=None</em>, <em>tokenizer=None</em>, <em>stop_words=None</em>, <em>token_pattern=u'(?u)\b\w\w+\b'</em>, <em>ngram_range=(1</em>, <em>1)</em>, <em>analyzer=u'word'</em>, <em>max_df=1.0</em>, <em>min_df=1</em>, <em>max_features=None</em>, <em>vocabulary=None</em>, <em>binary=False</em>, <em>dtype=&lt;type 'numpy.int64'&gt;</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L642"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>input=u'content'</em>, <em>encoding=u'utf-8'</em>, <em>decode_error=u'strict'</em>, <em>strip_accents=None</em>, <em>lowercase=True</em>, <em>preprocessor=None</em>, <em>tokenizer=None</em>, <em>stop_words=None</em>, <em>token_pattern=u'(?u)\b\w\w+\b'</em>, <em>ngram_range=(1</em>, <em>1)</em>, <em>analyzer=u'word'</em>, <em>max_df=1.0</em>, <em>min_df=1</em>, <em>max_features=None</em>, <em>vocabulary=None</em>, <em>binary=False</em>, <em>dtype=&lt;type 'numpy.int64'&gt;</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L649"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.build_analyzer">
-<tt class="descname">build_analyzer</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L217"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.build_analyzer" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">build_analyzer</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L219"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.build_analyzer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a callable that handles preprocessing and tokenization</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.build_preprocessor">
-<tt class="descname">build_preprocessor</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L176"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.build_preprocessor" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">build_preprocessor</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L178"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.build_preprocessor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a function to preprocess the text before tokenization</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.build_tokenizer">
-<tt class="descname">build_tokenizer</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.build_tokenizer" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">build_tokenizer</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L208"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.build_tokenizer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a function that splits a string into a sequence of tokens</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.decode">
-<tt class="descname">decode</tt><big>(</big><em>doc</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L100"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.decode" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decode</tt><big>(</big><em>doc</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L102"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.decode" title="Permalink to this definition">¶</a></dt>
 <dd><p>Decode the input into a string of unicode symbols</p>
 <p>The decoding strategy depends on the vectorizer parameters.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.fit">
-<tt class="descname">fit</tt><big>(</big><em>raw_documents</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L768"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>raw_documents</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L775"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Learn a vocabulary dictionary of all tokens in the raw documents.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -427,7 +430,7 @@ be safely removed using delattr or set to None before pickling.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>raw_documents</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L783"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>raw_documents</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L790"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Learn the vocabulary dictionary and return term-document matrix.</p>
 <p>This is equivalent to fit followed by transform, but more efficiently
 implemented.</p>
@@ -459,13 +462,13 @@ implemented.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.get_feature_names">
-<tt class="descname">get_feature_names</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L892"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.get_feature_names" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_feature_names</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L899"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.get_feature_names" title="Permalink to this definition">¶</a></dt>
 <dd><p>Array mapping from feature integer indices to feature name</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -490,13 +493,13 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.get_stop_words">
-<tt class="descname">get_stop_words</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L213"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.get_stop_words" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_stop_words</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L215"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.get_stop_words" title="Permalink to this definition">¶</a></dt>
 <dd><p>Build or fetch the effective stop words list</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.inverse_transform">
-<tt class="descname">inverse_transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L862"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">inverse_transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L869"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return terms per document with nonzero entries in X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -517,7 +520,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -535,7 +538,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.text.CountVectorizer.transform">
-<tt class="descname">transform</tt><big>(</big><em>raw_documents</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/feature_extraction/text.py#L835"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>raw_documents</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/feature_extraction/text.py#L842"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.text.CountVectorizer.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform documents to document-term matrix.</p>
 <p>Extract token counts out of raw text documents using the vocabulary
 fitted with fit or the one provided to the constructor.</p>
@@ -563,7 +566,11 @@ fitted with fit or the one provided to the constructor.</p>
 
 <div class="section" id="examples-using-sklearn-feature-extraction-text-countvectorizer">
 <h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.feature_extraction.text.CountVectorizer</span></tt><a class="headerlink" href="#examples-using-sklearn-feature-extraction-text-countvectorizer" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="The dataset used in this example is the 20 newsgroups dataset which will be automatically downl..."><div class="figure">
+<div class="thumbnailContainer" tooltip="This is an example of applying Non Negative Matrix Factorization and Latent Dirichlet Allocatio..."><div class="figure">
+<a class="reference external image-reference" href="./../../auto_examples/applications/topics_extraction_with_nmf_lda.html"><img alt="../../_images/topics_extraction_with_nmf_lda1.png" src="../../_images/topics_extraction_with_nmf_lda1.png" /></a>
+<p class="caption"><a class="reference internal" href="../../auto_examples/applications/topics_extraction_with_nmf_lda.html#example-applications-topics-extraction-with-nmf-lda-py"><em>Topics extraction with Non-Negative Matrix Factorization And Latent Dirichlet Allocation</em></a></p>
+</div>
+</div><div class="thumbnailContainer" tooltip="The dataset used in this example is the 20 newsgroups dataset which will be automatically downl..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/grid_search_text_feature_extraction.html"><img alt="../../_images/grid_search_text_feature_extraction1.png" src="../../_images/grid_search_text_feature_extraction1.png" /></a>
 <p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/grid_search_text_feature_extraction.html#example-model-selection-grid-search-text-feature-extraction-py"><em>Sample pipeline for text feature extraction and evaluation</em></a></p>
 </div>

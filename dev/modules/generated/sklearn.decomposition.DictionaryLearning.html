@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.decompos...
+        sklearn.decom...
         </span>
             <span class="hiddenrellink">
             sklearn.decomposition.SparseCoder
@@ -168,15 +168,14 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></tt></a>.DictionaryLearning<a class="headerlink" href="#sklearn-decomposition-dictionarylearning" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.decomposition.DictionaryLearning">
-<em class="property">class </em><tt class="descclassname">sklearn.decomposition.</tt><tt class="descname">DictionaryLearning</tt><big>(</big><em>n_components=None</em>, <em>alpha=1</em>, <em>max_iter=1000</em>, <em>tol=1e-08</em>, <em>fit_algorithm='lars'</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>n_jobs=1</em>, <em>code_init=None</em>, <em>dict_init=None</em>, <em>verbose=False</em>, <em>split_sign=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/decomposition/dict_learning.py#L870"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.decomposition.</tt><tt class="descname">DictionaryLearning</tt><big>(</big><em>n_components=None</em>, <em>alpha=1</em>, <em>max_iter=1000</em>, <em>tol=1e-08</em>, <em>fit_algorithm='lars'</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>n_jobs=1</em>, <em>code_init=None</em>, <em>dict_init=None</em>, <em>verbose=False</em>, <em>split_sign=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/decomposition/dict_learning.py#L870"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dictionary learning</p>
 <p>Finds a dictionary (a set of atoms) that can best be used to represent data
 using a sparse code.</p>
 <p>Solves the optimization problem:</p>
-<div class="highlight-python"><div class="highlight"><pre>(U^*,V^*) = argmin 0.5 || Y - U V ||_2^2 + alpha * || U ||_1
+<div class="highlight-python"><pre>(U^*,V^*) = argmin 0.5 || Y - U V ||_2^2 + alpha * || U ||_1
             (U,V)
-            with || V_k ||_2 = 1 for all  0 &lt;= k &lt; n_components
-</pre></div>
+            with || V_k ||_2 = 1 for all  0 &lt;= k &lt; n_components</pre>
 </div>
 <p>Read more in the <a class="reference internal" href="../decomposition.html#dictionarylearning"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -313,12 +312,12 @@ for sparse coding (<a class="reference external" href="http://www.di.ens.fr/sier
 </table>
 <dl class="method">
 <dt id="sklearn.decomposition.DictionaryLearning.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>n_components=None</em>, <em>alpha=1</em>, <em>max_iter=1000</em>, <em>tol=1e-08</em>, <em>fit_algorithm='lars'</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>n_jobs=1</em>, <em>code_init=None</em>, <em>dict_init=None</em>, <em>verbose=False</em>, <em>split_sign=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/decomposition/dict_learning.py#L976"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>n_components=None</em>, <em>alpha=1</em>, <em>max_iter=1000</em>, <em>tol=1e-08</em>, <em>fit_algorithm='lars'</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>n_jobs=1</em>, <em>code_init=None</em>, <em>dict_init=None</em>, <em>verbose=False</em>, <em>split_sign=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/decomposition/dict_learning.py#L976"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.decomposition.DictionaryLearning.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/decomposition/dict_learning.py#L994"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/decomposition/dict_learning.py#L994"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model from data in X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -343,7 +342,7 @@ and n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.DictionaryLearning.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L426"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/base.py#L429"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -373,7 +372,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.DictionaryLearning.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -398,7 +397,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.DictionaryLearning.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -416,7 +415,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.DictionaryLearning.transform">
-<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/decomposition/dict_learning.py#L745"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/decomposition/dict_learning.py#L745"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.DictionaryLearning.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Encode the data as a sparse combination of the dictionary atoms.</p>
 <p>Coding method is determined by the object parameter
 <cite>transform_algorithm</cite>.</p>

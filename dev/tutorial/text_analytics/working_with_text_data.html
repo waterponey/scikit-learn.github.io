@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        scikit-learn Tut...
+        scikit-learn ...
         </span>
             <span class="hiddenrellink">
             scikit-learn Tutorials
@@ -208,8 +208,7 @@ the feature extraction components and the classifier</li>
 page for more information and for per-system instructions.</p>
 <p>The source of this tutorial can be found within your
 scikit-learn folder:</p>
-<div class="highlight-python"><div class="highlight"><pre>scikit-learn/doc/tutorial/text_analytics/
-</pre></div>
+<div class="highlight-python"><pre>scikit-learn/doc/tutorial/text_analytics/</pre>
 </div>
 <p>The tutorial folder, should contain the following folders:</p>
 <blockquote>
@@ -224,17 +223,15 @@ scikit-learn folder:</p>
 on your hard-drive named <tt class="docutils literal"><span class="pre">sklearn_tut_workspace</span></tt> where you
 will edit your own files for the exercises while keeping
 the original skeletons intact:</p>
-<div class="highlight-python"><div class="highlight"><pre>% cp -r skeletons work_directory/sklearn_tut_workspace
-</pre></div>
+<div class="highlight-python"><pre>% cp -r skeletons work_directory/sklearn_tut_workspace</pre>
 </div>
 <p>Machine Learning algorithms need data. Go to each <tt class="docutils literal"><span class="pre">$TUTORIAL_HOME/data</span></tt>
 sub-folder and run the <tt class="docutils literal"><span class="pre">fetch_data.py</span></tt> script from there (after
 having read them first).</p>
 <p>For instance:</p>
-<div class="highlight-python"><div class="highlight"><pre>% cd $TUTORIAL_HOME/data/languages
+<div class="highlight-python"><pre>% cd $TUTORIAL_HOME/data/languages
 % less fetch_data.py
-% python fetch_data.py
-</pre></div>
+% python fetch_data.py</pre>
 </div>
 </div>
 <div class="section" id="loading-the-20-newsgroups-dataset">
@@ -582,14 +579,12 @@ we can do:</p>
 <h3>Exercises<a class="headerlink" href="#exercises" title="Permalink to this headline">¶</a></h3>
 <p>To do the exercises, copy the content of the &#8216;skeletons&#8217; folder as
 a new folder named &#8216;workspace&#8217;:</p>
-<div class="highlight-python"><div class="highlight"><pre>% cp -r skeletons workspace
-</pre></div>
+<div class="highlight-python"><pre>% cp -r skeletons workspace</pre>
 </div>
 <p>You can then edit the content of the workspace without fear of loosing
 the original exercise instructions.</p>
 <p>Then fire an ipython shell and run the work-in-progress script with:</p>
-<div class="highlight-python"><div class="highlight"><pre>[1] %run workspace/exercise_XX_script.py arg1 arg2 arg3
-</pre></div>
+<div class="highlight-python"><pre>[1] %run workspace/exercise_XX_script.py arg1 arg2 arg3</pre>
 </div>
 <p>If an exception is triggered, use <tt class="docutils literal"><span class="pre">%debug</span></tt> to fire-up a post
 mortem ipdb session.</p>
@@ -607,8 +602,7 @@ the predictive accurracy of the model.</strong></p>
 <li>Evaluate the performance on some held out test set.</li>
 </ul>
 <p>ipython command line:</p>
-<div class="highlight-python"><div class="highlight"><pre>%run workspace/exercise_01_language_train_model.py data/languages/paragraphs/
-</pre></div>
+<div class="highlight-python"><pre>%run workspace/exercise_01_language_train_model.py data/languages/paragraphs/</pre>
 </div>
 </div>
 <div class="section" id="exercise-2-sentiment-analysis-on-movie-reviews">
@@ -620,8 +614,7 @@ positive or negative.</li>
 <li>Evaluate the performance on a held out test set.</li>
 </ul>
 <p>ipython command line:</p>
-<div class="highlight-python"><div class="highlight"><pre>%run workspace/exercise_02_sentiment.py data/movie_reviews/txt_sentoken/
-</pre></div>
+<div class="highlight-python"><pre>%run workspace/exercise_02_sentiment.py data/movie_reviews/txt_sentoken/</pre>
 </div>
 </div>
 <div class="section" id="exercise-3-cli-text-classification-utility">

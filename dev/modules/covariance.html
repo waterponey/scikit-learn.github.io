@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        2.5. Decomposing...
+        2.5. Decompos...
         </span>
             <span class="hiddenrellink">
             2.5. Decomposing signals in components (matrix factorization problems)
@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        2. Unsupervised ...
+        2. Unsupervis...
         </span>
             <span class="hiddenrellink">
             2. Unsupervised learning
@@ -240,10 +240,10 @@ smallest and the largest eigenvalue of the empirical covariance matrix.
 It can be done by simply shifting every eigenvalue according to a given
 offset, which is equivalent of finding the l2-penalized Maximum
 Likelihood Estimator of the covariance matrix. In practice, shrinkage
-boils down to a simple a convex transformation : <img class="math" src="../_images/math/c7c5c6adaea9b8f6e4324e8cecfefbaf3cbd3627.png" alt="\Sigma_{\rm
+boils down to a simple a convex transformation : <img class="math" src="../_images/math/ef5698bc0ecc7e9dd647b02169e1d1f10ec615eb.png" alt="\Sigma_{\rm
 shrunk} = (1-\alpha)\hat{\Sigma} + \alpha\frac{{\rm
 Tr}\hat{\Sigma}}{p}\rm Id"/>.</p>
-<p>Choosing the amount of shrinkage, <img class="math" src="../_images/math/ad59b6e24a4a00ac621801f8d7513d68be654ab5.png" alt="\alpha"/> amounts to setting a
+<p>Choosing the amount of shrinkage, <img class="math" src="../_images/math/10f32377ac67d94f764f12a15ea987e88c85d3e1.png" alt="\alpha"/> amounts to setting a
 bias/variance trade-off, and is discussed below.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
@@ -257,7 +257,7 @@ to data.</li>
 <div class="section" id="ledoit-wolf-shrinkage">
 <h3>2.6.2.2. Ledoit-Wolf shrinkage<a class="headerlink" href="#ledoit-wolf-shrinkage" title="Permalink to this headline">¶</a></h3>
 <p>In their 2004 paper [1], O. Ledoit and M. Wolf propose a formula so as
-to compute the optimal shrinkage coefficient <img class="math" src="../_images/math/ad59b6e24a4a00ac621801f8d7513d68be654ab5.png" alt="\alpha"/> that
+to compute the optimal shrinkage coefficient <img class="math" src="../_images/math/10f32377ac67d94f764f12a15ea987e88c85d3e1.png" alt="\alpha"/> that
 minimizes the Mean Squared Error between the estimated and the real
 covariance matrix.</p>
 <p>The Ledoit-Wolf estimator of the covariance matrix can be computed on
@@ -291,7 +291,7 @@ with the <a class="reference internal" href="generated/sklearn.covariance.oas.ht
 package, or it can be otherwise obtained by fitting an <a class="reference internal" href="generated/sklearn.covariance.OAS.html#sklearn.covariance.OAS" title="sklearn.covariance.OAS"><tt class="xref py py-class docutils literal"><span class="pre">OAS</span></tt></a>
 object to the same sample.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/covariance/plot_covariance_estimation.html"><img alt="../_images/plot_covariance_estimation_001.png" src="../_images/plot_covariance_estimation_001.png" style="width: 520.0px; height: 390.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/covariance/plot_covariance_estimation.html"><img alt="../_images/plot_covariance_estimation_0011.png" src="../_images/plot_covariance_estimation_0011.png" style="width: 520.0px; height: 390.0px;" /></a>
 <p class="caption">Bias-variance trade-off when setting the shrinkage: comparing the
 choices of Ledoit-Wolf and OAS estimators</p>
 </div>
@@ -311,7 +311,7 @@ an <a class="reference internal" href="generated/sklearn.covariance.OAS.html#skl
 </ul>
 </div>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/covariance/plot_lw_vs_oas.html"><img alt="../_images/plot_lw_vs_oas_001.png" src="../_images/plot_lw_vs_oas_001.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/covariance/plot_lw_vs_oas.html"><img alt="../_images/plot_lw_vs_oas_0011.png" src="../_images/plot_lw_vs_oas_0011.png" style="width: 600.0px; height: 450.0px;" /></a>
 </div>
 </div>
 </div>
@@ -336,7 +336,7 @@ the precision matrix: the higher its <tt class="docutils literal"><span class="p
 the precision matrix. The corresponding <a class="reference internal" href="generated/sklearn.covariance.GraphLassoCV.html#sklearn.covariance.GraphLassoCV" title="sklearn.covariance.GraphLassoCV"><tt class="xref py py-class docutils literal"><span class="pre">GraphLassoCV</span></tt></a> object uses
 cross-validation to automatically set the <tt class="docutils literal"><span class="pre">alpha</span></tt> parameter.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/covariance/plot_sparse_cov.html"><img alt="../_images/plot_sparse_cov_001.png" src="../_images/plot_sparse_cov_001.png" style="width: 600.0px; height: 360.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/covariance/plot_sparse_cov.html"><img alt="../_images/plot_sparse_cov_0011.png" src="../_images/plot_sparse_cov_0011.png" style="width: 600.0px; height: 360.0px;" /></a>
 <p class="caption"><em>A comparison of maximum likelihood, shrinkage and sparse estimates of
 the covariance and precision matrix in the very small samples
 settings.</em></p>
@@ -363,13 +363,13 @@ irrelevant ones.</li>
 </div>
 <p>The mathematical formulation is the following:</p>
 <div class="math">
-<p><img src="../_images/math/cad8e74e7c1c5b0d5bc09c57e822de2968629308.png" alt="\hat{K} = \mathrm{argmin}_K \big(
+<p><img src="../_images/math/2c8e4bcb39da449f2265d7a0f08f942efc1ea3a0.png" alt="\hat{K} = \mathrm{argmin}_K \big(
             \mathrm{tr} S K - \mathrm{log} \mathrm{det} K
             + \alpha \|K\|_1
             \big)"/></p>
-</div><p>Where <img class="math" src="../_images/math/28e003020d0ae96250b302d7d779c791f183f707.png" alt="K"/> is the precision matrix to be estimated, and <img class="math" src="../_images/math/11a85f3c69ae6702cb1d99d3de451913b8f84c04.png" alt="S"/> is the
-sample covariance matrix. <img class="math" src="../_images/math/a9506247789928f7bdc2019910aa61bb177ff7ea.png" alt="\|K\|_1"/> is the sum of the absolute values of
-off-diagonal coefficients of <img class="math" src="../_images/math/28e003020d0ae96250b302d7d779c791f183f707.png" alt="K"/>. The algorithm employed to solve this
+</div><p>Where <img class="math" src="../_images/math/dfb064112b6c94470339f6571f69d07afc1c024c.png" alt="K"/> is the precision matrix to be estimated, and <img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/> is the
+sample covariance matrix. <img class="math" src="../_images/math/21f735187ce53091e6397ba7ea8dec73af718ee1.png" alt="\|K\|_1"/> is the sum of the absolute values of
+off-diagonal coefficients of <img class="math" src="../_images/math/dfb064112b6c94470339f6571f69d07afc1c024c.png" alt="K"/>. The algorithm employed to solve this
 problem is the GLasso algorithm, from the Friedman 2008 Biostatistics
 paper. It is the same algorithm as in the R <tt class="docutils literal"><span class="pre">glasso</span></tt> package.</p>
 <div class="topic">
@@ -459,7 +459,7 @@ visualize the difference between <a class="reference internal" href="generated/s
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference external" href="../auto_examples/covariance/plot_robust_vs_empirical_covariance.html"><img alt="robust_vs_emp" src="../_images/plot_robust_vs_empirical_covariance_001.png" style="width: 392.0px; height: 294.0px;" /></a></td>
+<tr class="row-even"><td><a class="reference external" href="../auto_examples/covariance/plot_robust_vs_empirical_covariance.html"><img alt="robust_vs_emp" src="../_images/plot_robust_vs_empirical_covariance_0011.png" style="width: 392.0px; height: 294.0px;" /></a></td>
 <td><a class="reference external" href="../auto_examples/covariance/plot_mahalanobis_distances.html"><img alt="mahalanobis" src="../_images/plot_mahalanobis_distances_0011.png" style="width: 392.0px; height: 294.0px;" /></a></td>
 </tr>
 </tbody>

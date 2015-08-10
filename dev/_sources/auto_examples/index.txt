@@ -314,12 +314,12 @@ interactive user interface.
 .. raw:: html
 
 
-    <div class="thumbnailContainer" tooltip="This is a proof of concept application of Non Negative Matrix Factorization of the term frequen...">
+    <div class="thumbnailContainer" tooltip="This is an example of applying Non Negative Matrix Factorization and Latent Dirichlet Allocatio...">
 
-.. figure:: applications/images/thumb/topics_extraction_with_nmf.png
-   :target: ./applications/topics_extraction_with_nmf.html
+.. figure:: applications/images/thumb/topics_extraction_with_nmf_lda.png
+   :target: ./applications/topics_extraction_with_nmf_lda.html
 
-   :ref:`example_applications_topics_extraction_with_nmf.py`
+   :ref:`example_applications_topics_extraction_with_nmf_lda.py`
 
 
 .. raw:: html
@@ -331,7 +331,7 @@ interactive user interface.
 .. toctree::
    :hidden:
 
-   applications/topics_extraction_with_nmf
+   applications/topics_extraction_with_nmf_lda
 
 
 
@@ -1020,6 +1020,30 @@ Examples concerning the :mod:`sklearn.cluster` module.
    :hidden:
 
    cluster/plot_affinity_propagation
+
+
+
+.. raw:: html
+
+
+    <div class="thumbnailContainer" tooltip="This example is meant to illustrate situations where k-means will produce unintuitive and possi...">
+
+.. figure:: cluster/images/thumb/plot_kmeans_assumptions.png
+   :target: ./cluster/plot_kmeans_assumptions.html
+
+   :ref:`example_cluster_plot_kmeans_assumptions.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   cluster/plot_kmeans_assumptions
 
 
 
@@ -4335,6 +4359,30 @@ Preprocessing
 Examples concerning the :mod:`sklearn.preprocessing` module.
 
 
+
+
+
+.. raw:: html
+
+
+    <div class="thumbnailContainer" tooltip="Shows how to use a function transformer in a pipeline. If you know your dataset's first princip...">
+
+.. figure:: preprocessing/images/thumb/plot_function_transformer.png
+   :target: ./preprocessing/plot_function_transformer.html
+
+   :ref:`example_preprocessing_plot_function_transformer.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   preprocessing/plot_function_transformer
 
 
 

@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        4.1. Pipeline an...
+        4.1. Pipeline...
         </span>
             <span class="hiddenrellink">
             4.1. Pipeline and FeatureUnion: combining estimators
@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        4. Dataset trans...
+        4. Dataset tr...
         </span>
             <span class="hiddenrellink">
             4. Dataset transformations
@@ -354,9 +354,9 @@ tokens are only processed on demand from the hasher.</p>
 <h3>4.2.2.1. Implementation details<a class="headerlink" href="#implementation-details" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="generated/sklearn.feature_extraction.FeatureHasher.html#sklearn.feature_extraction.FeatureHasher" title="sklearn.feature_extraction.FeatureHasher"><tt class="xref py py-class docutils literal"><span class="pre">FeatureHasher</span></tt></a> uses the signed 32-bit variant of MurmurHash3.
 As a result (and because of limitations in <tt class="docutils literal"><span class="pre">scipy.sparse</span></tt>),
-the maximum number of features supported is currently <img class="math" src="../_images/math/93c8c4826c6f7713528b0a263ab8b95d736366c6.png" alt="2^{31} - 1"/>.</p>
+the maximum number of features supported is currently <img class="math" src="../_images/math/4827481aa2c0da445faf499be37ad07877db93ec.png" alt="2^{31} - 1"/>.</p>
 <p>The original formulation of the hashing trick by Weinberger et al.
-used two separate hash functions <img class="math" src="../_images/math/cbb80ad77aa7a5e227d5a46bc44d235284106cfc.png" alt="h"/> and <img class="math" src="../_images/math/26bfd3bc4c5db78139d8897f9cfa5bba511a2f22.png" alt="\xi"/>
+used two separate hash functions <img class="math" src="../_images/math/8189a5b5a0917b8c93350827be4038af1839139d.png" alt="h"/> and <img class="math" src="../_images/math/ccfd1641d037d427d9dbf42cdd54b485a03eafe9.png" alt="\xi"/>
 to determine the column index and sign of a feature, respectively.
 The present implementation works under the assumption
 that the sign bit of MurmurHash3 is independent of its other bits.</p>
@@ -701,7 +701,7 @@ relaxing the hard assignment constraint of clustering, for instance by
 using <a class="reference internal" href="decomposition.html#nmf"><em>Non-negative matrix factorization (NMF or NNMF)</em></a>:</p>
 <blockquote>
 <div><ul class="simple">
-<li><a class="reference internal" href="../auto_examples/applications/topics_extraction_with_nmf.html#example-applications-topics-extraction-with-nmf-py"><em>Topics extraction with Non-Negative Matrix Factorization</em></a></li>
+<li><a class="reference internal" href="../auto_examples/applications/topics_extraction_with_nmf_lda.html#example-applications-topics-extraction-with-nmf-lda-py"><em>Topics extraction with Non-Negative Matrix Factorization And Latent Dirichlet Allocation</em></a></li>
 </ul>
 </div></blockquote>
 </div>
@@ -990,7 +990,7 @@ features or samples. For instance Ward clustering
 (<a class="reference internal" href="clustering.html#hierarchical-clustering"><em>Hierarchical clustering</em></a>) can cluster together only neighboring pixels
 of an image, thus forming contiguous patches:</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/cluster/plot_lena_ward_segmentation.html"><img alt="../_images/plot_lena_ward_segmentation_001.png" src="../_images/plot_lena_ward_segmentation_001.png" style="width: 200.0px; height: 200.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/cluster/plot_lena_ward_segmentation.html"><img alt="../_images/plot_lena_ward_segmentation_0011.png" src="../_images/plot_lena_ward_segmentation_0011.png" style="width: 200.0px; height: 200.0px;" /></a>
 </div>
 <p>For this purpose, the estimators use a &#8216;connectivity&#8217; matrix, giving
 which samples are connected.</p>

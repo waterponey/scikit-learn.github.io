@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        3.2.4.1.10. skle...
+        3.2.4.1.10. s...
         </span>
             <span class="hiddenrellink">
             3.2.4.1.10. sklearn.linear_model.RidgeClassifierCV
@@ -171,7 +171,7 @@
 <h1>3.2.4.1.9. <a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.RidgeCV<a class="headerlink" href="#sklearn-linear-model-ridgecv" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.linear_model.RidgeCV">
-<em class="property">class </em><tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">RidgeCV</tt><big>(</big><em>alphas=(0.1</em>, <em>1.0</em>, <em>10.0)</em>, <em>fit_intercept=True</em>, <em>normalize=False</em>, <em>scoring=None</em>, <em>cv=None</em>, <em>gcv_mode=None</em>, <em>store_cv_values=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/linear_model/ridge.py#L891"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">RidgeCV</tt><big>(</big><em>alphas=(0.1</em>, <em>1.0</em>, <em>10.0)</em>, <em>fit_intercept=True</em>, <em>normalize=False</em>, <em>scoring=None</em>, <em>cv=None</em>, <em>gcv_mode=None</em>, <em>store_cv_values=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/linear_model/ridge.py#L891"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ridge regression with built-in cross-validation.</p>
 <p>By default, it performs Generalized Cross-Validation, which is a form of
 efficient Leave-One-Out cross-validation.</p>
@@ -216,12 +216,11 @@ sklearn.cross_validation module for the list of possible objects</p>
 <blockquote>
 <div><p>Flag indicating which strategy to use when performing
 Generalized Cross-Validation. Options are:</p>
-<div class="highlight-python"><div class="highlight"><pre>&#39;auto&#39; : use svd if n_samples &gt; n_features or when X is a sparse
+<div class="highlight-python"><pre>'auto' : use svd if n_samples &gt; n_features or when X is a sparse
          matrix, otherwise use eigen
-&#39;svd&#39; : force computation via singular value decomposition of X
+'svd' : force computation via singular value decomposition of X
         (does not work for sparse matrices)
-&#39;eigen&#39; : force computation via eigendecomposition of X^T X
-</pre></div>
+'eigen' : force computation via eigendecomposition of X^T X</pre>
 </div>
 <p>The &#8216;auto&#8217; mode is the default and is intended to pick the cheaper
 option of the two depending upon the shape and format of the training
@@ -297,12 +296,12 @@ Generalized Cross-Validation).</p>
 </table>
 <dl class="method">
 <dt id="sklearn.linear_model.RidgeCV.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>alphas=(0.1</em>, <em>1.0</em>, <em>10.0)</em>, <em>fit_intercept=True</em>, <em>normalize=False</em>, <em>scoring=None</em>, <em>cv=None</em>, <em>gcv_mode=None</em>, <em>store_cv_values=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/linear_model/ridge.py#L832"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>alphas=(0.1</em>, <em>1.0</em>, <em>10.0)</em>, <em>fit_intercept=True</em>, <em>normalize=False</em>, <em>scoring=None</em>, <em>cv=None</em>, <em>gcv_mode=None</em>, <em>store_cv_values=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/linear_model/ridge.py#L832"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RidgeCV.decision_function">
-<tt class="descname">decision_function</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.decision_function" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decision_function</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>DEPRECATED:  and will be removed in 0.19.</p>
 <p>Decision function of the linear model.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -327,7 +326,7 @@ Generalized Cross-Validation).</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RidgeCV.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/linear_model/ridge.py#L844"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/linear_model/ridge.py#L844"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit Ridge regression model</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -356,7 +355,7 @@ Generalized Cross-Validation).</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RidgeCV.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/base.py#L198"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -381,7 +380,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RidgeCV.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/linear_model/base.py#L145"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/linear_model/base.py#L145"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict using the linear model</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -405,12 +404,15 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RidgeCV.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L317"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/base.py#L317"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
 sum of squares ((y_true - y_true.mean()) ** 2).sum().
-Best possible score is 1.0, lower values are worse.</p>
+Best possible score is 1.0 and it can be negative (because the
+model can be arbitrarily worse). A constant model that always
+predicts the expected value of y, disregarding the input features,
+would get a R^2 score of 0.0.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -441,7 +443,7 @@ Best possible score is 1.0, lower values are worse.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RidgeCV.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/base.py#L235"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RidgeCV.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form

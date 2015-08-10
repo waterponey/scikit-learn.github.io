@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        2.1. Gaussian mi...
+        2.1. Gaussian...
         </span>
             <span class="hiddenrellink">
             2.1. Gaussian mixture models
@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        2.1. Gaussian mi...
+        2.1. Gaussian...
         </span>
             <span class="hiddenrellink">
             2.1. Gaussian mixture models
@@ -223,19 +223,19 @@ the mixture of Gaussians.</p>
 <h1>2.1.3.2.2. Update rules for VB inference<a class="headerlink" href="#update-rules-for-vb-inference" title="Permalink to this headline">¶</a></h1>
 <p>Here the full mathematical derivation of the Variational Bayes update
 rules for Gaussian Mixture Models is given. The main parameters of the
-model, defined for any class <img class="math" src="../_images/math/5d90819185ae56b9e0d1c08df4bd719b6aa06b03.png" alt="k \in [1..K]"/> are the class
-proportion <img class="math" src="../_images/math/34ea3b8fe46ef695984759103d7bcdecd553f321.png" alt="\phi_k"/>, the mean parameters <img class="math" src="../_images/math/e0f4c204f26e9afa4f5bbeda60af5262e624c148.png" alt="\mu_k"/>, the
-covariance parameters <img class="math" src="../_images/math/07b943c6dd1061bde470bebfa3e9b5e373216870.png" alt="\Sigma_k"/>, which is characterized by
-variational Wishart density, <img class="math" src="../_images/math/24a5a6643f900bf129cdd7a03a6e161d1524ebfc.png" alt="Wishart(a_k, \mathbf{B_k})"/>, where
-<img class="math" src="../_images/math/7dd2a5ea01fbd72ad2a58dd1f3d6ecbfde6208a1.png" alt="a"/> is the degrees of freedom, and <img class="math" src="../_images/math/83956e92fcc80dee17fce864543216939a3c9da7.png" alt="B"/> is the
+model, defined for any class <img class="math" src="../_images/math/83f8d53b243d8196d2c9cab4fccdb82c7b8a97b7.png" alt="k \in [1..K]"/> are the class
+proportion <img class="math" src="../_images/math/b91ac9c58c0e22ff0b88f239dbda5d97e8329e81.png" alt="\phi_k"/>, the mean parameters <img class="math" src="../_images/math/27a0f74066fd925ffe2f5576a6ade18557abf47c.png" alt="\mu_k"/>, the
+covariance parameters <img class="math" src="../_images/math/12331cbadd3755f44112100a1900d5d891e9bdce.png" alt="\Sigma_k"/>, which is characterized by
+variational Wishart density, <img class="math" src="../_images/math/9df1d1349b7a8298368bf42cfb585c64e0f4d217.png" alt="Wishart(a_k, \mathbf{B_k})"/>, where
+<img class="math" src="../_images/math/c7d457e388298246adb06c587bccd419ea67f7e8.png" alt="a"/> is the degrees of freedom, and <img class="math" src="../_images/math/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" alt="B"/> is the
 scale matrix. Depending on the covariance parametrization,
-<img class="math" src="../_images/math/1a826fd4e37c0ceccbb19369141c92a7c1743e04.png" alt="B_k"/> can be a positive scalar, a positive vector or a Symmetric
+<img class="math" src="../_images/math/5754b618a3ce62e98fdb1766832459e0bcdd030a.png" alt="B_k"/> can be a positive scalar, a positive vector or a Symmetric
 Positive Definite matrix.</p>
 <div class="section" id="the-spherical-model">
 <h2>2.1.3.2.2.1. The spherical model<a class="headerlink" href="#the-spherical-model" title="Permalink to this headline">¶</a></h2>
 <p>The model then is</p>
 <div class="math">
-<p><img src="../_images/math/338694bf0978bd05178b8a7e238c866a14f3516f.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/1e9e89da8fc37781c465eaf6996361ed96adcaf8.png" alt="\begin{array}{rcl}
 \phi_k   &amp;\sim&amp; Beta(1, \alpha_1) \\
 \mu_k   &amp;\sim&amp; Normal(0,  \mathbf{I}) \\
 \sigma_k &amp;\sim&amp; Gamma(1, 1) \\
@@ -244,7 +244,7 @@ X_t &amp;\sim&amp; Normal(\mu_{z_i}, \frac{1}{\sigma_{z_i}} \mathbf{I})
 \end{array}"/></p>
 </div><p>The variational distribution we&#8217;ll use is</p>
 <div class="math">
-<p><img src="../_images/math/6da4b9b5dc6b2670c9f936c72ee7ee803389523f.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/b717a5aad4ed7afa8e012139fb3ada413d90ba70.png" alt="\begin{array}{rcl}
 \phi_k   &amp;\sim&amp; Beta(\gamma_{k,1}, \gamma_{k,2}) \\
 \mu_k   &amp;\sim&amp; Normal(\nu_{\mu_k},  \mathbf{I}) \\
 \sigma_k &amp;\sim&amp; Gamma(a_{k}, b_{k}) \\
@@ -254,7 +254,7 @@ z_{i}     &amp;\sim&amp; Discrete(\nu_{z_i}) \\
 <h3>2.1.3.2.2.1.1. The bound<a class="headerlink" href="#the-bound" title="Permalink to this headline">¶</a></h3>
 <p>The variational bound is</p>
 <div class="math">
-<p><img src="../_images/math/b654eee1dcbceb1e8500e575796fbfea6f5518bb.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/31c014e87dccbbe328aa6fe0ba7348100ab6f792.png" alt="\begin{array}{rcl}
 \log P(X) &amp;\ge&amp;
 \sum_k (E_q[\log P(\phi_k)] - E_q[\log Q(\phi_k)]) \\
 &amp;&amp;
@@ -266,9 +266,9 @@ z_{i}     &amp;\sim&amp; Discrete(\nu_{z_i}) \\
 &amp;&amp;
 +\sum_i E_q[\log P(X_t)]
 \end{array}"/></p>
-</div><p><strong>The bound for</strong> <img class="math" src="../_images/math/34ea3b8fe46ef695984759103d7bcdecd553f321.png" alt="\phi_k"/></p>
+</div><p><strong>The bound for</strong> <img class="math" src="../_images/math/b91ac9c58c0e22ff0b88f239dbda5d97e8329e81.png" alt="\phi_k"/></p>
 <div class="math">
-<p><img src="../_images/math/8a794bac91917159e451b8cfc65d3014cffcf45a.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/e8e771c1eb210d851a8f4b0826866a5f2c92828a.png" alt="\begin{array}{rcl}
 E_q[\log Beta(1,\alpha)] - E[\log Beta(\gamma_{k,1},\gamma_{k,2})]
 &amp;=&amp;
 \log \Gamma(1+\alpha) - \log \Gamma(\alpha) \\ &amp;&amp;
@@ -281,9 +281,9 @@ E_q[\log Beta(1,\alpha)] - E[\log Beta(\gamma_{k,1},\gamma_{k,2})]
 -
 (\gamma_{k,2}-1)(\Psi(\gamma_{k,2})-\Psi(\gamma_{k,1}+\gamma_{k,2}))
 \end{array}"/></p>
-</div><p><strong>The bound for</strong> <img class="math" src="../_images/math/e0f4c204f26e9afa4f5bbeda60af5262e624c148.png" alt="\mu_k"/></p>
+</div><p><strong>The bound for</strong> <img class="math" src="../_images/math/27a0f74066fd925ffe2f5576a6ade18557abf47c.png" alt="\mu_k"/></p>
 <div class="math">
-<p><img src="../_images/math/6249d7686a865f94d4173d4351dc919df639f900.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/22d4fe3874e5dcb9757dad7ce85f4a4ac574c2e1.png" alt="\begin{array}{rcl}
 &amp;&amp; E_q[\log P(\mu_k)] - E_q[\log Q(\mu_k)] \\
 &amp;=&amp;
 \int\!d\mu_f q(\mu_f) \log P(\mu_f)
@@ -292,17 +292,17 @@ E_q[\log Beta(1,\alpha)] - E[\log Beta(\gamma_{k,1},\gamma_{k,2})]
 - \frac{D}{2}\log 2\pi - \frac{1}{2} ||\nu_{\mu_k}||^2 - \frac{D}{2}
 + \frac{D}{2} \log 2\pi e
 \end{array}"/></p>
-</div><p><strong>The bound for</strong> <img class="math" src="../_images/math/088138d180d3b322617921d408597bf140875237.png" alt="\sigma_k"/></p>
+</div><p><strong>The bound for</strong> <img class="math" src="../_images/math/86df44d705c06a8b803b6d09f87bb903541e6028.png" alt="\sigma_k"/></p>
 <p>Here I&#8217;ll use the inverse scale parametrization of the gamma
 distribution.</p>
 <div class="math">
-<p><img src="../_images/math/82c2a519749bba8b5cdf13fac6f28b6645b044ab.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/32bbfa5c35c7a2195ea3f645fd9595d6f7404cf0.png" alt="\begin{array}{rcl}
 &amp;&amp; E_q[\log P(\sigma_k)] - E_q [\log Q(\sigma_k)] \\ &amp;=&amp;
 \log \Gamma (a_k) - (a_k-1)\Psi(a_k) -\log b_k + a_k - \frac{a_k}{b_k}
 \end{array}"/></p>
 </div><p><strong>The bound for z</strong></p>
 <div class="math">
-<p><img src="../_images/math/ea7883239d280b3403de364242bc5eaa7c043fa3.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/88e0632d2adf94f5f11a28e11579e0ef5d775f20.png" alt="\begin{array}{rcl}
 &amp;&amp; E_q[\log P(z)] - E_q[\log Q(z)] \\
 &amp;=&amp;
 \sum_{k} \left(
@@ -310,53 +310,53 @@ distribution.</p>
  +  \nu_{z_{i,k}}(\Psi(\gamma_{k,1})-\Psi(\gamma_{k,1}+\gamma_{k,2}))
  - \log \nu_{z_{i,k}} \right)
 \end{array}"/></p>
-</div><p><strong>The bound for</strong> <img class="math" src="../_images/math/f026aecf11ec7f6141ab863f260d395f94b10f51.png" alt="X"/></p>
-<p>Recall that there is no need for a <img class="math" src="../_images/math/debe2ff09239bb9b81160d734bd2d97cf7058162.png" alt="Q(X)"/> so this bound is just</p>
+</div><p><strong>The bound for</strong> <img class="math" src="../_images/math/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png" alt="X"/></p>
+<p>Recall that there is no need for a <img class="math" src="../_images/math/fc7c2703dfde4c265d3687d9e1f1c760ad06622d.png" alt="Q(X)"/> so this bound is just</p>
 <div class="math">
-<p><img src="../_images/math/5ec40441786a0fb92ebe6de43edbc7d6f5b6bab2.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/3e02e6ed81421a0adb3274fa42084e1cbdf6a58c.png" alt="\begin{array}{rcl}
 E_q[\log P(X_i)] &amp;=&amp; \sum_k \nu_{z_k} \left( - \frac{D}{2}\log 2\pi
 +\frac{D}{2} (\Psi(a_k) - \log(b_k))
 -\frac{a_k}{2b_k} (||X_i - \nu_{\mu_k}||^2+D) - \log 2 \pi e  \right)
 \end{array}"/></p>
-</div><p>For simplicity I&#8217;ll later call the term inside the parenthesis <img class="math" src="../_images/math/e43d9cd0fe15ae82f739a60dd2cd5be2c65c1d99.png" alt="E_q[\log P(X_i|z_i=k)]"/></p>
+</div><p>For simplicity I&#8217;ll later call the term inside the parenthesis <img class="math" src="../_images/math/e93ec10dd1c219d67f6597679fb1637e2a226a7f.png" alt="E_q[\log P(X_i|z_i=k)]"/></p>
 </div>
 <div class="section" id="the-updates">
 <h3>2.1.3.2.2.1.2. The updates<a class="headerlink" href="#the-updates" title="Permalink to this headline">¶</a></h3>
-<p><strong>Updating</strong> <img class="math" src="../_images/math/0ebb67342b546ca42a1c634b1ef03c893c4cdedb.png" alt="\gamma"/></p>
+<p><strong>Updating</strong> <img class="math" src="../_images/math/66981fa3920210c6ad8dbe5e968783d5dd7520c3.png" alt="\gamma"/></p>
 <div class="math">
-<p><img src="../_images/math/eeed3159db3c4592236053169e26a6aa2cbca30d.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/d0867351ca3d4f207d9c0fa06bf7238fb87915b5.png" alt="\begin{array}{rcl}
 \gamma_{k,1} &amp;=&amp; 1+\sum_i \nu_{z_{i,k}} \\
 \gamma_{k,2} &amp;=&amp; \alpha + \sum_i \sum_{j &gt; k} \nu_{z_{i,j}}.
 \end{array}"/></p>
-</div><p><strong>Updating</strong> <img class="math" src="../_images/math/126e84ba38f7dece5f0ad64e929b9588b20f6440.png" alt="\mu"/></p>
+</div><p><strong>Updating</strong> <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/></p>
 <p>The updates for mu essentially are just weighted expectations of
-<img class="math" src="../_images/math/f026aecf11ec7f6141ab863f260d395f94b10f51.png" alt="X"/> regularized by the prior. We can see this by taking the
-gradient of the bound with regards to <img class="math" src="../_images/math/d7b9c9300675caab903407dce0551c0ff4e67663.png" alt="\nu_{\mu}"/> and setting it to zero.
+<img class="math" src="../_images/math/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png" alt="X"/> regularized by the prior. We can see this by taking the
+gradient of the bound with regards to <img class="math" src="../_images/math/d24270d7d152194e88f512fc128abd16bbb07b1c.png" alt="\nu_{\mu}"/> and setting it to zero.
 The gradient is</p>
 <div class="math">
-<p><img src="../_images/math/24b02b1bfa811241ff9b1e8dbdbf425ef7851750.png" alt="\nabla L = -\nu_{\mu_k} + \sum_i \frac{\nu_{z_{i,k}}b_k}{a_k}(X_i + -\nu_{\mu})"/></p>
+<p><img src="../_images/math/1c8ff7536c7c3b836ace357582c79a2851e90886.png" alt="\nabla L = -\nu_{\mu_k} + \sum_i \frac{\nu_{z_{i,k}}b_k}{a_k}(X_i + -\nu_{\mu})"/></p>
 </div><p>so the update is</p>
 <div class="math">
-<p><img src="../_images/math/430e80b89227bed7145710b8999c77815de5ee99.png" alt="\nu_{\mu_k} = \frac{\sum_i \frac{\nu_{z_{i,k}}b_k}{a_k}X_i}{1+\sum_i \frac{\nu_{z_{i,k}}b_k}{a_k}}"/></p>
-</div><p><strong>Updating</strong> <img class="math" src="../_images/math/7dd2a5ea01fbd72ad2a58dd1f3d6ecbfde6208a1.png" alt="a"/> <strong>and</strong> <img class="math" src="../_images/math/5e87bf41a96deddf6cb485ff530f153f2590e9cc.png" alt="b"/></p>
+<p><img src="../_images/math/7a7b3c3f3643b3a32a902cdfc8fd0d531c6751cb.png" alt="\nu_{\mu_k} = \frac{\sum_i \frac{\nu_{z_{i,k}}b_k}{a_k}X_i}{1+\sum_i \frac{\nu_{z_{i,k}}b_k}{a_k}}"/></p>
+</div><p><strong>Updating</strong> <img class="math" src="../_images/math/c7d457e388298246adb06c587bccd419ea67f7e8.png" alt="a"/> <strong>and</strong> <img class="math" src="../_images/math/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png" alt="b"/></p>
 <p>For some odd reason it doesn&#8217;t really work when you derive the updates
 for a and b using the gradients of the lower bound (terms involving the
-<img class="math" src="../_images/math/df391fc64254ea60aabeb28d65a2f40966bc23f9.png" alt="\Psi'"/> function show up and <img class="math" src="../_images/math/7dd2a5ea01fbd72ad2a58dd1f3d6ecbfde6208a1.png" alt="a"/> is hard to isolate).
+<img class="math" src="../_images/math/db2d658bbbea9ab63ecadb79df99212a327bf177.png" alt="\Psi'"/> function show up and <img class="math" src="../_images/math/c7d457e388298246adb06c587bccd419ea67f7e8.png" alt="a"/> is hard to isolate).
 However, we can use the other formula,</p>
 <div class="math">
-<p><img src="../_images/math/5e0afb293a769e69c218750f2c321c3f81e12fba.png" alt="\log Q(\sigma_k) = E_{v \ne \sigma_k}[\log P] + const"/></p>
-</div><p>All the terms not involving <img class="math" src="../_images/math/088138d180d3b322617921d408597bf140875237.png" alt="\sigma_k"/> get folded over into the
+<p><img src="../_images/math/7a44ed54b3cb03beed08d64883cf03ca1c36890c.png" alt="\log Q(\sigma_k) = E_{v \ne \sigma_k}[\log P] + const"/></p>
+</div><p>All the terms not involving <img class="math" src="../_images/math/86df44d705c06a8b803b6d09f87bb903541e6028.png" alt="\sigma_k"/> get folded over into the
 constant and we get two terms: the prior and the probability of
-<img class="math" src="../_images/math/f026aecf11ec7f6141ab863f260d395f94b10f51.png" alt="X"/>. This gives us</p>
+<img class="math" src="../_images/math/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png" alt="X"/>. This gives us</p>
 <div class="math">
-<p><img src="../_images/math/7d6c7ac8c23d999a54a206610dc62438dc13fd4c.png" alt="\log Q(\sigma_k) = -\sigma_k  + \frac{D}{2} \sum_i \nu_{z_{i,k}}\log \sigma_k  - \frac{\sigma_k}{2}\sum_i \nu_{z_{i,k}} (||X_i-\mu_k||^2 + D)"/></p>
-</div><p>This is the log of a gamma distribution, with <img class="math" src="../_images/math/62be32aea2502a24649da8d7cc427e3b6bb402a0.png" alt="a_k = 1+\frac{D}{2}\sum_i \nu_{z_{i,k}}"/> and</p>
+<p><img src="../_images/math/09312004d6e68dc302498ccd63e5615ce18fd49f.png" alt="\log Q(\sigma_k) = -\sigma_k  + \frac{D}{2} \sum_i \nu_{z_{i,k}}\log \sigma_k  - \frac{\sigma_k}{2}\sum_i \nu_{z_{i,k}} (||X_i-\mu_k||^2 + D)"/></p>
+</div><p>This is the log of a gamma distribution, with <img class="math" src="../_images/math/8bd1e7e18de2d697cb770fa04910fd8b614fa982.png" alt="a_k = 1+\frac{D}{2}\sum_i \nu_{z_{i,k}}"/> and</p>
 <div class="math">
-<p><img src="../_images/math/5b60001364caf7a350cd44edec70e2e3019dbc12.png" alt="b_k = 1 + \frac{1}{2}\sum_i \nu_{z_{i,k}} (||X_i-\mu_k||^2 + D)."/></p>
+<p><img src="../_images/math/8fd2320399881a9e2578993ef6f7a2a13d458b22.png" alt="b_k = 1 + \frac{1}{2}\sum_i \nu_{z_{i,k}} (||X_i-\mu_k||^2 + D)."/></p>
 </div><p>You can verify this by normalizing the previous term.</p>
-<p><strong>Updating</strong> <img class="math" src="../_images/math/84d7271dd9e78c1e05d6c3c6ecb60309ef7dfc73.png" alt="z"/></p>
+<p><strong>Updating</strong> <img class="math" src="../_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z"/></p>
 <div class="math">
-<p><img src="../_images/math/8cc3251e688add3f0e6e7b349bdd82600c67ced7.png" alt="\log \nu_{z_{i,k}} \propto \Psi(\gamma_{k,1}) -
+<p><img src="../_images/math/85a9ad0ef0bdf36ec4eb256c02e05ced86524670.png" alt="\log \nu_{z_{i,k}} \propto \Psi(\gamma_{k,1}) -
 \Psi(\gamma_{k,1} + \gamma_{k,2}) + E_Q[\log P(X_i|z_i=k)] +
 \sum_{j &lt; k} \left (\Psi(\gamma_{j,2}) -
 \Psi(\gamma_{j,1}+\gamma_{j,2})\right)."/></p>
@@ -366,7 +366,7 @@ constant and we get two terms: the prior and the probability of
 <h2>2.1.3.2.2.2. The diagonal model<a class="headerlink" href="#the-diagonal-model" title="Permalink to this headline">¶</a></h2>
 <p>The model then is</p>
 <div class="math">
-<p><img src="../_images/math/93457a375ad774ed2e9a4d3e58e264e32f391f01.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/4c89f2f5ee815d4fa23ca94e30e3aacadbfcaaed.png" alt="\begin{array}{rcl}
 \phi_k   &amp;\sim&amp; Beta(1, \alpha_1) \\
 \mu_k   &amp;\sim&amp; Normal(0,  \mathbf{I}) \\
 \sigma_{k,d} &amp;\sim&amp; Gamma(1, 1) \\
@@ -375,7 +375,7 @@ X_t &amp;\sim&amp; Normal(\mu_{z_i}, \bm{\sigma_{z_i}}^{-1})
 \end{array}"/></p>
 </div><p>Tha variational distribution we&#8217;ll use is</p>
 <div class="math">
-<p><img src="../_images/math/75ffb8a1ebecd4726c681ab02b0af9d3ce0f5388.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/9846a2ba9e2619aa1373b210655d92f53f4e25e3.png" alt="\begin{array}{rcl}
 \phi_k   &amp;\sim&amp; Beta(\gamma_{k,1}, \gamma_{k,2}) \\
 \mu_k   &amp;\sim&amp; Normal(\nu_{\mu_k},  \mathbf{I}) \\
 \sigma_{k,d} &amp;\sim&amp; Gamma(a_{k,d}, b_{k,d}) \\
@@ -384,18 +384,18 @@ z_{i}     &amp;\sim&amp; Discrete(\nu_{z_i}) \\
 </div><div class="section" id="the-lower-bound">
 <h3>2.1.3.2.2.2.1. The lower bound<a class="headerlink" href="#the-lower-bound" title="Permalink to this headline">¶</a></h3>
 <p>The changes in this lower bound from the previous model are in the
-distributions of <img class="math" src="../_images/math/2298cf1485084afe72757a9c8483af49a138d81f.png" alt="\sigma"/> (as there are a lot more <img class="math" src="../_images/math/2298cf1485084afe72757a9c8483af49a138d81f.png" alt="\sigma"/> s
-now) and <img class="math" src="../_images/math/f026aecf11ec7f6141ab863f260d395f94b10f51.png" alt="X"/>.</p>
-<p>The bound for <img class="math" src="../_images/math/98960fec06a81f158a2b33b6351e2e87c58861f1.png" alt="\sigma_{k,d}"/> is the same bound for <img class="math" src="../_images/math/088138d180d3b322617921d408597bf140875237.png" alt="\sigma_k"/> and can
+distributions of <img class="math" src="../_images/math/fa35d9fc104207e09a712110ac81612c5b279a6c.png" alt="\sigma"/> (as there are a lot more <img class="math" src="../_images/math/fa35d9fc104207e09a712110ac81612c5b279a6c.png" alt="\sigma"/> s
+now) and <img class="math" src="../_images/math/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png" alt="X"/>.</p>
+<p>The bound for <img class="math" src="../_images/math/de6b344f507b3c5a1a4161252997460c08457ce1.png" alt="\sigma_{k,d}"/> is the same bound for <img class="math" src="../_images/math/86df44d705c06a8b803b6d09f87bb903541e6028.png" alt="\sigma_k"/> and can
 be safely omitted.</p>
-<p><strong>The bound for</strong> <img class="math" src="../_images/math/f026aecf11ec7f6141ab863f260d395f94b10f51.png" alt="X"/> :</p>
-<p>The main difference here is that the precision matrix <img class="math" src="../_images/math/9523e30d2c532ce5ce84b3c272f599e7c7b86953.png" alt="\bm{\sigma_k}"/>
+<p><strong>The bound for</strong> <img class="math" src="../_images/math/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png" alt="X"/> :</p>
+<p>The main difference here is that the precision matrix <img class="math" src="../_images/math/7471b1396fad741ec7484d411165df3c00f7cd5f.png" alt="\bm{\sigma_k}"/>
 scales the norm, so we have an extra term after computing the
-expectation of <img class="math" src="../_images/math/22f4ab6468e7a706bc27b9e5b2769965b9e2991a.png" alt="\mu_k^T\bm{\sigma_k}\mu_k"/>, which is
-<img class="math" src="../_images/math/2e6c422c84607919c1467f3f18f81ac44daf48f2.png" alt="\nu_{\mu_k}^T\bm{\sigma_k}\nu_{\mu_k} + \sum_d \sigma_{k,d}"/>. We then
+expectation of <img class="math" src="../_images/math/b7708cbf13059104beb68347a6501d892b186a00.png" alt="\mu_k^T\bm{\sigma_k}\mu_k"/>, which is
+<img class="math" src="../_images/math/b13e6807fc9f9b973c59a1735ddf4177ec9048d0.png" alt="\nu_{\mu_k}^T\bm{\sigma_k}\nu_{\mu_k} + \sum_d \sigma_{k,d}"/>. We then
 have</p>
 <div class="math">
-<p><img src="../_images/math/27fb9b03759b81490d29723a983e444e58902355.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/b1d0640eda071e12a8122852760423832f2f2d56.png" alt="\begin{array}{rcl}
 E_q[\log P(X_i)] &amp;=&amp; \sum_k \nu_{z_k} \Big( - \frac{D}{2}\log 2\pi
 +\frac{1}{2}\sum_d (\Psi(a_{k,d}) - \log(b_{k,d})) \\
 &amp;&amp;
@@ -404,31 +404,31 @@ E_q[\log P(X_i)] &amp;=&amp; \sum_k \nu_{z_k} \Big( - \frac{D}{2}\log 2\pi
 </div></div>
 <div class="section" id="id1">
 <h3>2.1.3.2.2.2.2. The updates<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>The updates only chance for <img class="math" src="../_images/math/126e84ba38f7dece5f0ad64e929b9588b20f6440.png" alt="\mu"/> (to weight them with the new
-<img class="math" src="../_images/math/2298cf1485084afe72757a9c8483af49a138d81f.png" alt="\sigma"/>), <img class="math" src="../_images/math/84d7271dd9e78c1e05d6c3c6ecb60309ef7dfc73.png" alt="z"/> (but the change is all folded into the
-<img class="math" src="../_images/math/8c59c344ff9ba0a15e07b4bf3158a3b9d8123072.png" alt="E_q[P(X_i|z_i=k)]"/> term), and the <img class="math" src="../_images/math/7dd2a5ea01fbd72ad2a58dd1f3d6ecbfde6208a1.png" alt="a"/> and <img class="math" src="../_images/math/5e87bf41a96deddf6cb485ff530f153f2590e9cc.png" alt="b"/> variables themselves.</p>
-<p><strong>The update for</strong> <img class="math" src="../_images/math/126e84ba38f7dece5f0ad64e929b9588b20f6440.png" alt="\mu"/></p>
+<p>The updates only chance for <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/> (to weight them with the new
+<img class="math" src="../_images/math/fa35d9fc104207e09a712110ac81612c5b279a6c.png" alt="\sigma"/>), <img class="math" src="../_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z"/> (but the change is all folded into the
+<img class="math" src="../_images/math/fd84cfe6be87f50bf8cb8bbab071e1041d52b6dd.png" alt="E_q[P(X_i|z_i=k)]"/> term), and the <img class="math" src="../_images/math/c7d457e388298246adb06c587bccd419ea67f7e8.png" alt="a"/> and <img class="math" src="../_images/math/8136a7ef6a03334a7246df9097e5bcc31ba33fd2.png" alt="b"/> variables themselves.</p>
+<p><strong>The update for</strong> <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/></p>
 <div class="math">
-<p><img src="../_images/math/2e71c7804cd1c5edb6aa75451a295c86d3488be6.png" alt="\nu_{\mu_k} = \left(\mathbf{I}+\sum_i \frac{\nu_{z_{i,k}}\mathbf{b_k}}{\mathbf{a_k}}\right)^{-1}\left(\sum_i \frac{\nu_{z_{i,k}}b_k}{a_k}X_i\right)"/></p>
+<p><img src="../_images/math/a214adf8cf555d337cbaa76c0ee22d1ad5ba1244.png" alt="\nu_{\mu_k} = \left(\mathbf{I}+\sum_i \frac{\nu_{z_{i,k}}\mathbf{b_k}}{\mathbf{a_k}}\right)^{-1}\left(\sum_i \frac{\nu_{z_{i,k}}b_k}{a_k}X_i\right)"/></p>
 </div><p><strong>The updates for a and b</strong></p>
 <p>Here we&#8217;ll do something very similar to the spheric model. The main
-difference is that now each <img class="math" src="../_images/math/98960fec06a81f158a2b33b6351e2e87c58861f1.png" alt="\sigma_{k,d}"/> controls only one dimension
+difference is that now each <img class="math" src="../_images/math/de6b344f507b3c5a1a4161252997460c08457ce1.png" alt="\sigma_{k,d}"/> controls only one dimension
 of the bound:</p>
 <div class="math">
-<p><img src="../_images/math/435990955e5bf931b5a6c2904ac75afaf4f20930.png" alt="\log Q(\sigma_{k,d}) = -\sigma_{k,d} + \sum_i \nu_{z_{i,k}}\frac{1}{2}\log \sigma_{k,d}
+<p><img src="../_images/math/d893c3a7bf8d86cd7d4ffc4ab53436f6bca0df8f.png" alt="\log Q(\sigma_{k,d}) = -\sigma_{k,d} + \sum_i \nu_{z_{i,k}}\frac{1}{2}\log \sigma_{k,d}
 - \frac{\sigma_{k,d}}{2}\sum_i \nu_{z_{i,k}} ((X_{i,d}-\mu_{k,d})^2 + 1)"/></p>
 </div><p>Hence</p>
 <div class="math">
-<p><img src="../_images/math/92bc70f6f13ec15f8fb46a2100f7273dc8bdf993.png" alt="a_{k,d} = 1 + \frac{1}{2} \sum_i \nu_{z_{i,k}}"/></p>
+<p><img src="../_images/math/30c60625dd3987457ba9dc9735eb959393a3157c.png" alt="a_{k,d} = 1 + \frac{1}{2} \sum_i \nu_{z_{i,k}}"/></p>
 </div><div class="math">
-<p><img src="../_images/math/bcc380de2952077d4d650c00bf936484d23bb854.png" alt="b_{k,d} = 1 + \frac{1}{2} \sum_i \nu_{z_{i,k}}((X_{i,d}-\mu_{k,d})^2 + 1)"/></p>
+<p><img src="../_images/math/42e0da4a5e4d924d5f6693c15418157aa3fbf86f.png" alt="b_{k,d} = 1 + \frac{1}{2} \sum_i \nu_{z_{i,k}}((X_{i,d}-\mu_{k,d})^2 + 1)"/></p>
 </div></div>
 </div>
 <div class="section" id="the-tied-model">
 <h2>2.1.3.2.2.3. The tied model<a class="headerlink" href="#the-tied-model" title="Permalink to this headline">¶</a></h2>
 <p>The model then is</p>
 <div class="math">
-<p><img src="../_images/math/ea669d9510e28549cf732e326579f743f2d9c4bb.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/f85b20e09841db6324dcf04f37b019206520d62a.png" alt="\begin{array}{rcl}
 \phi_k   &amp;\sim&amp; Beta(1, \alpha_1) \\
 \mu_k   &amp;\sim&amp; Normal(0,  \mathbf{I}) \\
 \Sigma &amp;\sim&amp; Wishart(D, \mathbf{I}) \\
@@ -437,7 +437,7 @@ X_t &amp;\sim&amp; Normal(\mu_{z_i},  \Sigma^{-1})
 \end{array}"/></p>
 </div><p>Tha variational distribution we&#8217;ll use is</p>
 <div class="math">
-<p><img src="../_images/math/a6c82f4798ded3445ff7923a021649b5133cc5b3.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/1d0d6a1c0bc29563de734ae0f9738de3dc37b2eb.png" alt="\begin{array}{rcl}
 \phi_k   &amp;\sim&amp; Beta(\gamma_{k,1}, \gamma_{k,2}) \\
 \mu_k   &amp;\sim&amp; Normal(\nu_{\mu_k},  \mathbf{I}) \\
 \Sigma &amp;\sim&amp; Wishart(a, \mathbf{B}) \\
@@ -445,10 +445,10 @@ z_{i}     &amp;\sim&amp; Discrete(\nu_{z_i}) \\
 \end{array}"/></p>
 </div><div class="section" id="id2">
 <h3>2.1.3.2.2.3.1. The lower bound<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<p>There are two changes in the lower-bound: for <img class="math" src="../_images/math/19ac15bf260b22dcb61a1042c60259e4b0bfbd64.png" alt="\Sigma"/> and for <img class="math" src="../_images/math/f026aecf11ec7f6141ab863f260d395f94b10f51.png" alt="X"/>.</p>
-<p><strong>The bound for</strong> <img class="math" src="../_images/math/19ac15bf260b22dcb61a1042c60259e4b0bfbd64.png" alt="\Sigma"/></p>
+<p>There are two changes in the lower-bound: for <img class="math" src="../_images/math/c8f77e3035db5fe9a4975967750ac1a6454bda8c.png" alt="\Sigma"/> and for <img class="math" src="../_images/math/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png" alt="X"/>.</p>
+<p><strong>The bound for</strong> <img class="math" src="../_images/math/c8f77e3035db5fe9a4975967750ac1a6454bda8c.png" alt="\Sigma"/></p>
 <div class="math">
-<p><img src="../_images/math/1df05e599583852d227514ff84ea614fc5159fba.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/f5320b7e007c511871f04f6e406530b4713a5e09.png" alt="\begin{array}{rcl}
 \frac{D^2}{2}\log 2  + \sum_d \log \Gamma(\frac{D+1-d}{2}) \\
 - \frac{aD}{2}\log 2 + \frac{a}{2} \log |\mathbf{B}| + \sum_d \log \Gamma(\frac{a+1-d}{2}) \\
 + \frac{a-D}{2}\left(\sum_d \Psi\left(\frac{a+1-d}{2}\right)
@@ -457,7 +457,7 @@ z_{i}     &amp;\sim&amp; Discrete(\nu_{z_i}) \\
 \end{array}"/></p>
 </div><p><strong>The bound for X</strong></p>
 <div class="math">
-<p><img src="../_images/math/a1658cc847336e3efa70e0601d507a3f78cbefe8.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/16f51ca19dba4d462f3eb1805d74a769cd54e224.png" alt="\begin{array}{rcl}
 E_q[\log P(X_i)] &amp;=&amp; \sum_k \nu_{z_k} \Big( - \frac{D}{2}\log 2\pi
 +\frac{1}{2}\left(\sum_d \Psi\left(\frac{a+1-d}{2}\right)
 + D \log 2 + \log |\mathbf{B}|\right) \\
@@ -467,29 +467,29 @@ E_q[\log P(X_i)] &amp;=&amp; \sum_k \nu_{z_k} \Big( - \frac{D}{2}\log 2\pi
 </div></div>
 <div class="section" id="id3">
 <h3>2.1.3.2.2.3.2. The updates<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
-<p>As in the last setting, what changes are the trivial update for <img class="math" src="../_images/math/84d7271dd9e78c1e05d6c3c6ecb60309ef7dfc73.png" alt="z"/>,
-the update for <img class="math" src="../_images/math/126e84ba38f7dece5f0ad64e929b9588b20f6440.png" alt="\mu"/> and the update for <img class="math" src="../_images/math/7dd2a5ea01fbd72ad2a58dd1f3d6ecbfde6208a1.png" alt="a"/> and <img class="math" src="../_images/math/fb542518f2c3338d27234e14932fd1ab5a311d8b.png" alt="\mathbf{B}"/>.</p>
-<p><strong>The update for</strong> <img class="math" src="../_images/math/126e84ba38f7dece5f0ad64e929b9588b20f6440.png" alt="\mu"/></p>
+<p>As in the last setting, what changes are the trivial update for <img class="math" src="../_images/math/b13f21416d84e13708696f34dea81026cda583c9.png" alt="z"/>,
+the update for <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/> and the update for <img class="math" src="../_images/math/c7d457e388298246adb06c587bccd419ea67f7e8.png" alt="a"/> and <img class="math" src="../_images/math/684089822af19d4ccbfae10139f057dbdad68d9f.png" alt="\mathbf{B}"/>.</p>
+<p><strong>The update for</strong> <img class="math" src="../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/></p>
 <div class="math">
-<p><img src="../_images/math/a906029eb7b8918858b4d8262c430f3d59b748e7.png" alt="\nu_{\mu_k} = \left(\mathbf{I}+ a\mathbf{B}\sum_i \nu_{z_{i,k}}\right)^{-1}
+<p><img src="../_images/math/7b72a42370928c69f872fef9af570835873140de.png" alt="\nu_{\mu_k} = \left(\mathbf{I}+ a\mathbf{B}\sum_i \nu_{z_{i,k}}\right)^{-1}
 \left(a\mathbf{B}\sum_i \nu_{z_{i,k}} X_i\right)"/></p>
-</div><p><strong>The update for</strong> <img class="math" src="../_images/math/7dd2a5ea01fbd72ad2a58dd1f3d6ecbfde6208a1.png" alt="a"/> <strong>and</strong> <img class="math" src="../_images/math/83956e92fcc80dee17fce864543216939a3c9da7.png" alt="B"/></p>
+</div><p><strong>The update for</strong> <img class="math" src="../_images/math/c7d457e388298246adb06c587bccd419ea67f7e8.png" alt="a"/> <strong>and</strong> <img class="math" src="../_images/math/ff5fb3d775862e2123b007eb4373ff6cc1a34d4e.png" alt="B"/></p>
 <p>As this distribution is far too complicated I&#8217;m not even going to try
 going at it the gradient way.</p>
 <div class="math">
-<p><img src="../_images/math/6cfe4cdaf5ef73a55c04bb0fcb95103837383bc8.png" alt="\log Q(\Sigma) = +\frac{1}{2}\log |\Sigma| - \frac{1}{2} \mathbf{tr}[\Sigma]
+<p><img src="../_images/math/c5aa5673cb44d939959c0785602e0421c289bc3c.png" alt="\log Q(\Sigma) = +\frac{1}{2}\log |\Sigma| - \frac{1}{2} \mathbf{tr}[\Sigma]
 + \sum_i \sum_k \nu_{z_{i,k}} \left( +\frac{1}{2}\log |\Sigma| - \frac{1}{2}((X_i-\nu_{\mu_k})^T\Sigma(X_i-\nu_{\mu_k})+\mathbf{tr}[\Sigma]) \right)"/></p>
-</div><p>which non-trivially (seeing that the quadratic form with <img class="math" src="../_images/math/19ac15bf260b22dcb61a1042c60259e4b0bfbd64.png" alt="\Sigma"/> in
+</div><p>which non-trivially (seeing that the quadratic form with <img class="math" src="../_images/math/c8f77e3035db5fe9a4975967750ac1a6454bda8c.png" alt="\Sigma"/> in
 the middle can be expressed as the trace of something) reduces to</p>
 <div class="math">
-<p><img src="../_images/math/15c553f2cfb7fa130f468d1a1bf31553d617f0fc.png" alt="\log Q(\Sigma) = +\frac{1}{2}\log |\Sigma| - \frac{1}{2} \mathbf{tr}[\Sigma]
+<p><img src="../_images/math/cfac94bab81009003c113eaa0793bcc95273f330.png" alt="\log Q(\Sigma) = +\frac{1}{2}\log |\Sigma| - \frac{1}{2} \mathbf{tr}[\Sigma]
 + \sum_i \sum_k \nu_{z_{i,k}} \left( +\frac{1}{2}\log |\Sigma| - \frac{1}{2}(\mathbf{tr}[(X_i-\nu_{\mu_k})(X_i-\nu_{\mu_k})^T\Sigma]+\mathbf{tr}[I \Sigma]) \right)"/></p>
 </div><p>hence this (with a bit of squinting) looks like a wishart with parameters</p>
 <div class="math">
-<p><img src="../_images/math/1b10bb021bdcab80e9a192bc46f57eaac675bff0.png" alt="a = 2 + D + T"/></p>
+<p><img src="../_images/math/078e4034cd05c9b4ef4a469296ae6051afd9571f.png" alt="a = 2 + D + T"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/b2c9abe9dcb37c7fe576baebfcc34f1dc74d4dde.png" alt="\mathbf{B} = \left(\mathbf{I} + \sum_i \sum_k \nu_{z_{i,k}}(X_i-\nu_{\mu_k})(X_i-\nu_{\mu_k})^T\right)^{-1}"/></p>
+<p><img src="../_images/math/0a47fc97d6525a4634b1da022835e3ef8366fcad.png" alt="\mathbf{B} = \left(\mathbf{I} + \sum_i \sum_k \nu_{z_{i,k}}(X_i-\nu_{\mu_k})(X_i-\nu_{\mu_k})^T\right)^{-1}"/></p>
 </div></div>
 </div>
 <div class="section" id="the-full-model">
@@ -497,7 +497,7 @@ the middle can be expressed as the trace of something) reduces to</p>
 <blockquote>
 <div>The model then is</div></blockquote>
 <div class="math">
-<p><img src="../_images/math/78a38be674bdf4202a26ae17ef1935fbdbe23682.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/ef52eb1d0819f8ad153e710714896fb888ee3a8b.png" alt="\begin{array}{rcl}
 \phi_k   &amp;\sim&amp; Beta(1, \alpha_1) \\
 \mu_k   &amp;\sim&amp; Normal(0,  \mathbf{I}) \\
 \Sigma_k &amp;\sim&amp; Wishart(D, \mathbf{I}) \\
@@ -506,7 +506,7 @@ X_t &amp;\sim&amp; Normal(\mu_{z_i},  \Sigma_{z,i}^{-1})
 \end{array}"/></p>
 </div><p>The variational distribution we&#8217;ll use is</p>
 <div class="math">
-<p><img src="../_images/math/78ec2f9210cf8a4c33c1501f9e90b1472fe920ed.png" alt="\begin{array}{rcl}
+<p><img src="../_images/math/506e1d1f1ecadbcd806d06430b3faa2b79036d10.png" alt="\begin{array}{rcl}
 \phi_k   &amp;\sim&amp; Beta(\gamma_{k,1}, \gamma_{k,2}) \\
 \mu_k   &amp;\sim&amp; Normal(\nu_{\mu_k},  \mathbf{I}) \\
 \Sigma_k &amp;\sim&amp; Wishart(a_k, \mathbf{B_k}) \\
@@ -515,7 +515,7 @@ z_{i}     &amp;\sim&amp; Discrete(\nu_{z_i}) \\
 </div><div class="section" id="id4">
 <h3>2.1.3.2.2.4.1. The lower bound<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
 <p>All that changes in this lower bound in comparison to the previous one
-is that there are K priors on different <img class="math" src="../_images/math/19ac15bf260b22dcb61a1042c60259e4b0bfbd64.png" alt="\Sigma"/> precision matrices
+is that there are K priors on different <img class="math" src="../_images/math/c8f77e3035db5fe9a4975967750ac1a6454bda8c.png" alt="\Sigma"/> precision matrices
 and there are the correct indices on the bound for X.</p>
 </div>
 <div class="section" id="id5">
@@ -523,13 +523,13 @@ and there are the correct indices on the bound for X.</p>
 <p>All that changes in the updates is that the update for mu uses only
 the proper sigma and the updates for a and B don&#8217;t have a sum over K, so</p>
 <div class="math">
-<p><img src="../_images/math/3c8b8b6a9aef0e43ed0a2c0772a5db285ba66de6.png" alt="\nu_{\mu_k} = \left(\mathbf{I}+ a_k\mathbf{B_k}\sum_i \nu_{z_{i,k}}\right)^{-1}
+<p><img src="../_images/math/76cdd77816414652307ce1caec62a9f82f0330bd.png" alt="\nu_{\mu_k} = \left(\mathbf{I}+ a_k\mathbf{B_k}\sum_i \nu_{z_{i,k}}\right)^{-1}
 \left(a_k\mathbf{B_k}\sum_i \nu_{z_{i,k}} X_i\right)"/></p>
 </div><div class="math">
-<p><img src="../_images/math/b2e267f8737a7dc04a95656aa5ffff5779b29de1.png" alt="a_k = 2 + D + \sum_i \nu_{z_{i,k}}"/></p>
+<p><img src="../_images/math/3370b40e2ac132db82ebd9de31b67816c1b0ec6b.png" alt="a_k = 2 + D + \sum_i \nu_{z_{i,k}}"/></p>
 </div><p>and</p>
 <div class="math">
-<p><img src="../_images/math/49ab0ef6841fb842550e844d69ee90d528252557.png" alt="\mathbf{B} = \left(\left(\sum_i\nu_{z_{i,k}}+1\right)\mathbf{I} + \sum_i  \nu_{z_{i,k}}(X_i-\nu_{\mu_k})(X_i-\nu_{\mu_k})^T\right)^{-1}"/></p>
+<p><img src="../_images/math/a1e5daea77a84263d20d7a7fc7ee062d68a88599.png" alt="\mathbf{B} = \left(\left(\sum_i\nu_{z_{i,k}}+1\right)\mathbf{I} + \sum_i  \nu_{z_{i,k}}(X_i-\nu_{\mu_k})(X_i-\nu_{\mu_k})^T\right)^{-1}"/></p>
 </div></div>
 </div>
 </div>

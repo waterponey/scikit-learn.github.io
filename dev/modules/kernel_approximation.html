@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        4.5. Random Proj...
+        4.5. Random P...
         </span>
             <span class="hiddenrellink">
             4.5. Random Projection
@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        4. Dataset trans...
+        4. Dataset tr...
         </span>
             <span class="hiddenrellink">
             4. Dataset transformations
@@ -244,7 +244,7 @@ Details on the method can be found in <a class="reference internal" href="#rr200
 as <a class="reference internal" href="generated/sklearn.kernel_approximation.Nystroem.html#sklearn.kernel_approximation.Nystroem" title="sklearn.kernel_approximation.Nystroem"><tt class="xref py py-class docutils literal"><span class="pre">Nystroem</span></tt></a>. <a class="reference internal" href="generated/sklearn.kernel_approximation.RBFSampler.html#sklearn.kernel_approximation.RBFSampler" title="sklearn.kernel_approximation.RBFSampler"><tt class="xref py py-class docutils literal"><span class="pre">RBFSampler</span></tt></a> is cheaper to compute, though, making
 use of larger feature spaces more efficient.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/plot_kernel_approximation.html"><img alt="../_images/plot_kernel_approximation_002.png" src="../_images/plot_kernel_approximation_002.png" style="width: 600.0px; height: 250.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/plot_kernel_approximation.html"><img alt="../_images/plot_kernel_approximation_0021.png" src="../_images/plot_kernel_approximation_0021.png" style="width: 600.0px; height: 250.0px;" /></a>
 <p class="caption">Comparing an exact RBF kernel (left) with the approximation (right)</p>
 </div>
 <div class="topic">
@@ -259,20 +259,20 @@ use of larger feature spaces more efficient.</p>
 <p>The additive chi squared kernel is a kernel on histograms, often used in computer vision.</p>
 <p>The additive chi squared kernel as used here is given by</p>
 <div class="math">
-<p><img src="../_images/math/cc80c6a15728d06a1349a06d1f4d6ba38de9a97c.png" alt="k(x, y) = \sum_i \frac{2x_iy_i}{x_i+y_i}"/></p>
+<p><img src="../_images/math/5aca6584a9fc03470380d2c5a34ecd6da1bf321b.png" alt="k(x, y) = \sum_i \frac{2x_iy_i}{x_i+y_i}"/></p>
 </div><p>This is not exactly the same as <tt class="xref py py-func docutils literal"><span class="pre">sklearn.metrics.additive_chi2_kernel</span></tt>.
 The authors of <a class="reference internal" href="#vz2010" id="id4">[VZ2010]</a> prefer the version above as it is always positive
 definite.
 Since the kernel is additive, it is possible to treat all components
-<img class="math" src="../_images/math/33dfc32d00ebd5c5791c824010a155d9e5630b6f.png" alt="x_i"/> separately for embedding. This makes it possible to sample
+<img class="math" src="../_images/math/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png" alt="x_i"/> separately for embedding. This makes it possible to sample
 the Fourier transform in regular intervals, instead of approximating
 using Monte Carlo sampling.</p>
 <p>The class <a class="reference internal" href="generated/sklearn.kernel_approximation.AdditiveChi2Sampler.html#sklearn.kernel_approximation.AdditiveChi2Sampler" title="sklearn.kernel_approximation.AdditiveChi2Sampler"><tt class="xref py py-class docutils literal"><span class="pre">AdditiveChi2Sampler</span></tt></a> implements this component wise
-deterministic sampling. Each component is sampled <img class="math" src="../_images/math/413f8a8e40062a9090d9d50b88bc7b551b314c26.png" alt="n"/> times, yielding
-<img class="math" src="../_images/math/555a757d6d006f9dbbf1c4f6e016b6e7f9808a33.png" alt="2n+1"/> dimensions per input dimension (the multiple of two stems
+deterministic sampling. Each component is sampled <img class="math" src="../_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n"/> times, yielding
+<img class="math" src="../_images/math/639e85fa2f2bb450812e9c9de2067851e11a04d1.png" alt="2n+1"/> dimensions per input dimension (the multiple of two stems
 from the real and complex part of the Fourier transform).
-In the literature, <img class="math" src="../_images/math/413f8a8e40062a9090d9d50b88bc7b551b314c26.png" alt="n"/> is usually chosen to be 1 or 2, transforming
-the dataset to size <tt class="docutils literal"><span class="pre">n_samples</span> <span class="pre">*</span> <span class="pre">5</span> <span class="pre">*</span> <span class="pre">n_features</span></tt> (in the case of <img class="math" src="../_images/math/b2e39c709bfa3fb0acea6a80914b706af361ad9a.png" alt="n=2"/>).</p>
+In the literature, <img class="math" src="../_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n"/> is usually chosen to be 1 or 2, transforming
+the dataset to size <tt class="docutils literal"><span class="pre">n_samples</span> <span class="pre">*</span> <span class="pre">5</span> <span class="pre">*</span> <span class="pre">n_features</span></tt> (in the case of <img class="math" src="../_images/math/6cb7ae00764b56ee2adf59e78a1ffde9685b80db.png" alt="n=2"/>).</p>
 <p>The approximate feature map provided by <a class="reference internal" href="generated/sklearn.kernel_approximation.AdditiveChi2Sampler.html#sklearn.kernel_approximation.AdditiveChi2Sampler" title="sklearn.kernel_approximation.AdditiveChi2Sampler"><tt class="xref py py-class docutils literal"><span class="pre">AdditiveChi2Sampler</span></tt></a> can be combined
 with the approximate feature map provided by <a class="reference internal" href="generated/sklearn.kernel_approximation.RBFSampler.html#sklearn.kernel_approximation.RBFSampler" title="sklearn.kernel_approximation.RBFSampler"><tt class="xref py py-class docutils literal"><span class="pre">RBFSampler</span></tt></a> to yield an approximate
 feature map for the exponentiated chi squared kernel.
@@ -282,41 +282,41 @@ See the <a class="reference internal" href="#vz2010" id="id5">[VZ2010]</a> for d
 <span id="skewed-chi-kernel-approx"></span><h2>4.6.4. Skewed Chi Squared Kernel<a class="headerlink" href="#skewed-chi-squared-kernel" title="Permalink to this headline">¶</a></h2>
 <p>The skewed chi squared kernel is given by:</p>
 <div class="math">
-<p><img src="../_images/math/0ddb6f5c7faa5f769117e3268fae9f895b095b34.png" alt="k(x,y) = \prod_i \frac{2\sqrt{x_i+c}\sqrt{y_i+c}}{x_i + y_i + 2c}"/></p>
+<p><img src="../_images/math/a002d98fd3e535e5ce55f9569f52135ca9eaefb4.png" alt="k(x,y) = \prod_i \frac{2\sqrt{x_i+c}\sqrt{y_i+c}}{x_i + y_i + 2c}"/></p>
 </div><p>It has properties that are similar to the exponentiated chi squared kernel
 often used in computer vision, but allows for a simple Monte Carlo
 approximation of the feature map.</p>
 <p>The usage of the <a class="reference internal" href="generated/sklearn.kernel_approximation.SkewedChi2Sampler.html#sklearn.kernel_approximation.SkewedChi2Sampler" title="sklearn.kernel_approximation.SkewedChi2Sampler"><tt class="xref py py-class docutils literal"><span class="pre">SkewedChi2Sampler</span></tt></a> is the same as the usage described
 above for the <a class="reference internal" href="generated/sklearn.kernel_approximation.RBFSampler.html#sklearn.kernel_approximation.RBFSampler" title="sklearn.kernel_approximation.RBFSampler"><tt class="xref py py-class docutils literal"><span class="pre">RBFSampler</span></tt></a>. The only difference is in the free
-parameter, that is called <img class="math" src="../_images/math/65868d23a5bfe5b3b2d819386b19c14fa36af134.png" alt="c"/>.
+parameter, that is called <img class="math" src="../_images/math/3372c1cb6d68cf97c2d231acc0b47b95a9ed04cc.png" alt="c"/>.
 For a motivation for this mapping and the mathematical details see <a class="reference internal" href="#ls2010" id="id7">[LS2010]</a>.</p>
 </div>
 <div class="section" id="mathematical-details">
 <h2>4.6.5. Mathematical Details<a class="headerlink" href="#mathematical-details" title="Permalink to this headline">¶</a></h2>
 <p>Kernel methods like support vector machines or kernelized
 PCA rely on a property of reproducing kernel Hilbert spaces.
-For any positive definite kernel function <img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> (a so called Mercer kernel),
-it is guaranteed that there exists a mapping <img class="math" src="../_images/math/10e009bdb83f96c5f47c58b34d5d4b12ef268d5b.png" alt="\phi"/>
-into a Hilbert space <img class="math" src="../_images/math/91269b5e38d627b1f586d3210c0fb20e902b06e5.png" alt="\mathcal{H}"/>, such that</p>
+For any positive definite kernel function <img class="math" src="../_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k"/> (a so called Mercer kernel),
+it is guaranteed that there exists a mapping <img class="math" src="../_images/math/2c175f60eecef1de7560c3bdea495d69f26f719d.png" alt="\phi"/>
+into a Hilbert space <img class="math" src="../_images/math/094215a028a80a31054721ded9ee0f700ec5f31a.png" alt="\mathcal{H}"/>, such that</p>
 <div class="math">
-<p><img src="../_images/math/b456cfa6720d47f9429abe61ef7d0e4e91620b14.png" alt="k(x,y) = \langle \phi(x), \phi(y) \rangle"/></p>
-</div><p>Where <img class="math" src="../_images/math/0723f27d3533f4a89b5383cf6055db6fa3f1d91a.png" alt="\langle \cdot, \cdot \rangle"/> denotes the inner product in the
+<p><img src="../_images/math/3f70e6eb86d175676cd5154ad592529e2c08e19b.png" alt="k(x,y) = \langle \phi(x), \phi(y) \rangle"/></p>
+</div><p>Where <img class="math" src="../_images/math/e99586f2a6521b60c9960f9601ac7e7f1ecfc7f3.png" alt="\langle \cdot, \cdot \rangle"/> denotes the inner product in the
 Hilbert space.</p>
 <p>If an algorithm, such as a linear support vector machine or PCA,
-relies only on the scalar product of data points <img class="math" src="../_images/math/33dfc32d00ebd5c5791c824010a155d9e5630b6f.png" alt="x_i"/>, one may use
-the value of <img class="math" src="../_images/math/1d1dd9e089c48d7fbe33ffd8f0fc3d49f59b68df.png" alt="k(x_i, x_j)"/>, which corresponds to applying the algorithm
-to the mapped data points <img class="math" src="../_images/math/1d77f3b3a344d15e6135bd7348a736163fa0ca8b.png" alt="\phi(x_i)"/>.
-The advantage of using <img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> is that the mapping <img class="math" src="../_images/math/10e009bdb83f96c5f47c58b34d5d4b12ef268d5b.png" alt="\phi"/> never has
+relies only on the scalar product of data points <img class="math" src="../_images/math/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png" alt="x_i"/>, one may use
+the value of <img class="math" src="../_images/math/5ebf8952471963e717e913c4c4ebbf62be8e0ee3.png" alt="k(x_i, x_j)"/>, which corresponds to applying the algorithm
+to the mapped data points <img class="math" src="../_images/math/89fad0e3d227883a02e8bc187b23e29912d122cf.png" alt="\phi(x_i)"/>.
+The advantage of using <img class="math" src="../_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k"/> is that the mapping <img class="math" src="../_images/math/2c175f60eecef1de7560c3bdea495d69f26f719d.png" alt="\phi"/> never has
 to be calculated explicitly, allowing for arbitrary large
 features (even infinite).</p>
 <p>One drawback of kernel methods is, that it might be necessary
-to store many kernel values <img class="math" src="../_images/math/1d1dd9e089c48d7fbe33ffd8f0fc3d49f59b68df.png" alt="k(x_i, x_j)"/> during optimization.
-If a kernelized classifier is applied to new data <img class="math" src="../_images/math/7e5afa68eb01a86e3fc93b26c2608df5bd10159b.png" alt="y_j"/>,
-<img class="math" src="../_images/math/335d78c4b0c7514827beaf3d89b7132513a62cf8.png" alt="k(x_i, y_j)"/> needs to be computed to make predictions,
-possibly for many different <img class="math" src="../_images/math/33dfc32d00ebd5c5791c824010a155d9e5630b6f.png" alt="x_i"/> in the training set.</p>
+to store many kernel values <img class="math" src="../_images/math/5ebf8952471963e717e913c4c4ebbf62be8e0ee3.png" alt="k(x_i, x_j)"/> during optimization.
+If a kernelized classifier is applied to new data <img class="math" src="../_images/math/30c472b0981d0e017b3914f324344a888c22607c.png" alt="y_j"/>,
+<img class="math" src="../_images/math/8ba9b17f88229fdcbb0e97f33b8ea3a7414aceb9.png" alt="k(x_i, y_j)"/> needs to be computed to make predictions,
+possibly for many different <img class="math" src="../_images/math/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png" alt="x_i"/> in the training set.</p>
 <p>The classes in this submodule allow to approximate the embedding
-<img class="math" src="../_images/math/10e009bdb83f96c5f47c58b34d5d4b12ef268d5b.png" alt="\phi"/>, thereby working explicitly with the representations
-<img class="math" src="../_images/math/1d77f3b3a344d15e6135bd7348a736163fa0ca8b.png" alt="\phi(x_i)"/>, which obviates the need to apply the kernel
+<img class="math" src="../_images/math/2c175f60eecef1de7560c3bdea495d69f26f719d.png" alt="\phi"/>, thereby working explicitly with the representations
+<img class="math" src="../_images/math/89fad0e3d227883a02e8bc187b23e29912d122cf.png" alt="\phi(x_i)"/>, which obviates the need to apply the kernel
 or store training examples.</p>
 <div class="topic">
 <p class="topic-title first">References:</p>

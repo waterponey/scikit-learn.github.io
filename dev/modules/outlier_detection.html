@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        2.6. Covariance ...
+        2.6. Covarian...
         </span>
             <span class="hiddenrellink">
             2.6. Covariance estimation
@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        2. Unsupervised ...
+        2. Unsupervis...
         </span>
             <span class="hiddenrellink">
             2. Unsupervised learning
@@ -207,8 +207,8 @@ implemented with objects learning in an unsupervised way from the data:</p>
 <p>Inliers are labeled 1, while outliers are labeled -1.</p>
 <div class="section" id="novelty-detection">
 <h2>2.7.1. Novelty Detection<a class="headerlink" href="#novelty-detection" title="Permalink to this headline">¶</a></h2>
-<p>Consider a data set of <img class="math" src="../_images/math/413f8a8e40062a9090d9d50b88bc7b551b314c26.png" alt="n"/> observations from the same
-distribution described by <img class="math" src="../_images/math/3eca8557203e86160952e1c0f735f7417f3285b1.png" alt="p"/> features.  Consider now that we
+<p>Consider a data set of <img class="math" src="../_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n"/> observations from the same
+distribution described by <img class="math" src="../_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p"/> features.  Consider now that we
 add one more observation to that data set. Is the new observation so
 different from the others that we can doubt it is regular? (i.e. does
 it come from the same distribution?) Or on the contrary, is it so
@@ -217,7 +217,7 @@ observations? This is the question addressed by the novelty detection
 tools and methods.</p>
 <p>In general, it is about to learn a rough, close frontier delimiting
 the contour of the initial observations distribution, plotted in
-embedding <img class="math" src="../_images/math/3eca8557203e86160952e1c0f735f7417f3285b1.png" alt="p"/>-dimensional space. Then, if further observations
+embedding <img class="math" src="../_images/math/36f73fc1312ee0349b3f3a0f3bd9eb5504339011.png" alt="p"/>-dimensional space. Then, if further observations
 lay within the frontier-delimited subspace, they are considered as
 coming from the same population than the initial
 observations. Otherwise, if they lay outside the frontier, we can say
@@ -228,7 +228,7 @@ and implemented in the <a class="reference internal" href="svm.html#svm"><em>Sup
 kernel and a scalar parameter to define a frontier.  The RBF kernel is
 usually chosen although there exists no exact formula or algorithm to
 set its bandwidth parameter. This is the default in the scikit-learn
-implementation. The <img class="math" src="../_images/math/d67fb61cfffca2cc069e083d76cb6220b4ca14c8.png" alt="\nu"/> parameter, also known as the margin of
+implementation. The <img class="math" src="../_images/math/d6a7ccf879c4a4fe694033606332cb83806db296.png" alt="\nu"/> parameter, also known as the margin of
 the One-Class SVM, corresponds to the probability of finding a new,
 but regular, observation outside the frontier.</p>
 <div class="topic">
@@ -323,7 +323,7 @@ fits a bit the outliers present in the training set. On the
 opposite, the decision rule based on fitting an
 <a class="reference internal" href="generated/sklearn.covariance.EllipticEnvelope.html#sklearn.covariance.EllipticEnvelope" title="sklearn.covariance.EllipticEnvelope"><tt class="xref py py-class docutils literal"><span class="pre">covariance.EllipticEnvelope</span></tt></a> learns an ellipse, which
 fits well the inlier distribution.</td>
-<td><a class="reference external" href="../auto_examples/covariance/plot_outlier_detection.html"><img alt="outlier1" src="../_images/plot_outlier_detection_001.png" style="width: 500.0px; height: 250.0px;" /></a></td>
+<td><a class="reference external" href="../auto_examples/covariance/plot_outlier_detection.html"><img alt="outlier1" src="../_images/plot_outlier_detection_0011.png" style="width: 500.0px; height: 250.0px;" /></a></td>
 </tr>
 <tr class="row-even"><td>As the inlier distribution becomes bimodal, the
 <a class="reference internal" href="generated/sklearn.covariance.EllipticEnvelope.html#sklearn.covariance.EllipticEnvelope" title="sklearn.covariance.EllipticEnvelope"><tt class="xref py py-class docutils literal"><span class="pre">covariance.EllipticEnvelope</span></tt></a> does not fit well the
@@ -331,13 +331,13 @@ inliers. However, we can see that the <a class="reference internal" href="genera
 tends to overfit: because it has not model of inliers, it
 interprets a region where, by chance some outliers are
 clustered, as inliers.</td>
-<td><a class="reference external" href="../auto_examples/covariance/plot_outlier_detection.html"><img alt="outlier2" src="../_images/plot_outlier_detection_002.png" style="width: 500.0px; height: 250.0px;" /></a></td>
+<td><a class="reference external" href="../auto_examples/covariance/plot_outlier_detection.html"><img alt="outlier2" src="../_images/plot_outlier_detection_0021.png" style="width: 500.0px; height: 250.0px;" /></a></td>
 </tr>
 <tr class="row-odd"><td>If the inlier distribution is strongly non Gaussian, the
 <a class="reference internal" href="generated/sklearn.svm.OneClassSVM.html#sklearn.svm.OneClassSVM" title="sklearn.svm.OneClassSVM"><tt class="xref py py-class docutils literal"><span class="pre">svm.OneClassSVM</span></tt></a> is able to recover a reasonable
 approximation, whereas the <a class="reference internal" href="generated/sklearn.covariance.EllipticEnvelope.html#sklearn.covariance.EllipticEnvelope" title="sklearn.covariance.EllipticEnvelope"><tt class="xref py py-class docutils literal"><span class="pre">covariance.EllipticEnvelope</span></tt></a>
 completely fails.</td>
-<td><a class="reference external" href="../auto_examples/covariance/plot_outlier_detection.html"><img alt="outlier3" src="../_images/plot_outlier_detection_003.png" style="width: 500.0px; height: 250.0px;" /></a></td>
+<td><a class="reference external" href="../auto_examples/covariance/plot_outlier_detection.html"><img alt="outlier3" src="../_images/plot_outlier_detection_0031.png" style="width: 500.0px; height: 250.0px;" /></a></td>
 </tr>
 </tbody>
 </table>

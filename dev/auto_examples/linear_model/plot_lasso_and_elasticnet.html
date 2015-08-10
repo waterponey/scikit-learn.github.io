@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Lasso on dense a...
+        Lasso on dens...
         </span>
             <span class="hiddenrellink">
             Lasso on dense and sparse data
@@ -171,15 +171,14 @@ sparse signal corrupted with an additive noise. Estimated coefficients are
 compared with the ground-truth.</p>
 <img alt="../../_images/plot_lasso_and_elasticnet_001.png" class="align-center" src="../../_images/plot_lasso_and_elasticnet_001.png" />
 <p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Lasso(alpha=0.1, copy_X=True, fit_intercept=True, max_iter=1000,
+<div class="highlight-python"><pre>Lasso(alpha=0.1, copy_X=True, fit_intercept=True, max_iter=1000,
    normalize=False, positive=False, precompute=False, random_state=None,
-   selection=&#39;cyclic&#39;, tol=0.0001, warm_start=False)
+   selection='cyclic', tol=0.0001, warm_start=False)
 r^2 on test data : 0.384710
 ElasticNet(alpha=0.1, copy_X=True, fit_intercept=True, l1_ratio=0.7,
       max_iter=1000, normalize=False, positive=False, precompute=False,
-      random_state=None, selection=&#39;cyclic&#39;, tol=0.0001, warm_start=False)
-r^2 on test data : 0.240176
-</pre></div>
+      random_state=None, selection='cyclic', tol=0.0001, warm_start=False)
+r^2 on test data : 0.240176</pre>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lasso_and_elasticnet.py"><tt class="xref download docutils literal"><span class="pre">plot_lasso_and_elasticnet.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
@@ -241,8 +240,8 @@ r^2 on test data : 0.240176
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.10 seconds
-( 0 minutes  0.10 seconds)</p>
+<p><strong>Total running time of the example:</strong>  0.09 seconds
+( 0 minutes  0.09 seconds)</p>
 </div>
 
 

@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        FeatureHasher an...
+        FeatureHasher...
         </span>
             <span class="hiddenrellink">
             FeatureHasher and DictVectorizer Comparison
@@ -175,22 +175,19 @@ downloaded from the <a class="reference external" href="http://mlcomp.org">http:
 <div><a class="reference external" href="http://mlcomp.org/datasets/379">http://mlcomp.org/datasets/379</a></div></blockquote>
 <p>Once downloaded unzip the archive somewhere on your filesystem.
 For instance in:</p>
-<div class="highlight-python"><div class="highlight"><pre>% mkdir -p ~/data/mlcomp
+<div class="highlight-python"><pre>% mkdir -p ~/data/mlcomp
 % cd  ~/data/mlcomp
-% unzip /path/to/dataset-379-20news-18828_XXXXX.zip
-</pre></div>
+% unzip /path/to/dataset-379-20news-18828_XXXXX.zip</pre>
 </div>
 <p>You should get a folder <tt class="docutils literal"><span class="pre">~/data/mlcomp/379</span></tt> with a file named <tt class="docutils literal"><span class="pre">metadata</span></tt>
 and subfolders <tt class="docutils literal"><span class="pre">raw</span></tt>, <tt class="docutils literal"><span class="pre">train</span></tt> and <tt class="docutils literal"><span class="pre">test</span></tt> holding the text documents
 organized by newsgroups.</p>
 <p>Then set the <tt class="docutils literal"><span class="pre">MLCOMP_DATASETS_HOME</span></tt> environment variable pointing to
 the root folder holding the uncompressed archive:</p>
-<div class="highlight-python"><div class="highlight"><pre>% export MLCOMP_DATASETS_HOME=&quot;~/data/mlcomp&quot;
-</pre></div>
+<div class="highlight-python"><pre>% export MLCOMP_DATASETS_HOME="~/data/mlcomp"</pre>
 </div>
 <p>Then you are ready to run this example using your favorite python shell:</p>
-<div class="highlight-python"><div class="highlight"><pre>% ipython examples/mlcomp_sparse_document_classification.py
-</pre></div>
+<div class="highlight-python"><pre>% ipython examples/mlcomp_sparse_document_classification.py</pre>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/mlcomp_sparse_document_classification.py"><tt class="xref download docutils literal"><span class="pre">mlcomp_sparse_document_classification.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Author: Olivier Grisel &lt;olivier.grisel@ensta.org&gt;</span>

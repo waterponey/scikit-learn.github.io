@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Wikipedia princi...
+        Wikipedia pri...
         </span>
             <span class="hiddenrellink">
             Wikipedia principal eigenvector
@@ -172,32 +172,31 @@ estimators.</p>
 either in bulk or atomic (i.e. one by one) mode.</p>
 <p>The plots represent the distribution of the prediction latency as a boxplot.</p>
 <ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_prediction_latency_0011.png"><img alt="../../_images/plot_prediction_latency_0011.png" src="../../_images/plot_prediction_latency_0011.png" style="width: 470.0px; height: 282.0px;" /></a>
+<li><a class="first reference internal image-reference" href="../../_images/plot_prediction_latency_001.png"><img alt="../../_images/plot_prediction_latency_001.png" src="../../_images/plot_prediction_latency_001.png" style="width: 470.0px; height: 282.0px;" /></a>
 </li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_prediction_latency_0021.png"><img alt="../../_images/plot_prediction_latency_0021.png" src="../../_images/plot_prediction_latency_0021.png" style="width: 470.0px; height: 282.0px;" /></a>
+<li><a class="first reference internal image-reference" href="../../_images/plot_prediction_latency_002.png"><img alt="../../_images/plot_prediction_latency_002.png" src="../../_images/plot_prediction_latency_002.png" style="width: 470.0px; height: 282.0px;" /></a>
 </li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_prediction_latency_0031.png"><img alt="../../_images/plot_prediction_latency_0031.png" src="../../_images/plot_prediction_latency_0031.png" style="width: 470.0px; height: 282.0px;" /></a>
+<li><a class="first reference internal image-reference" href="../../_images/plot_prediction_latency_003.png"><img alt="../../_images/plot_prediction_latency_003.png" src="../../_images/plot_prediction_latency_003.png" style="width: 470.0px; height: 282.0px;" /></a>
 </li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_prediction_latency_0041.png"><img alt="../../_images/plot_prediction_latency_0041.png" src="../../_images/plot_prediction_latency_0041.png" style="width: 470.0px; height: 282.0px;" /></a>
+<li><a class="first reference internal image-reference" href="../../_images/plot_prediction_latency_004.png"><img alt="../../_images/plot_prediction_latency_004.png" src="../../_images/plot_prediction_latency_004.png" style="width: 470.0px; height: 282.0px;" /></a>
 </li>
 </ul>
 <p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Benchmarking SGDRegressor(alpha=0.01, average=False, epsilon=0.1, eta0=0.01,
-       fit_intercept=True, l1_ratio=0.25, learning_rate=&#39;invscaling&#39;,
-       loss=&#39;squared_loss&#39;, n_iter=5, penalty=&#39;elasticnet&#39;, power_t=0.25,
+<div class="highlight-python"><pre>Benchmarking SGDRegressor(alpha=0.01, average=False, epsilon=0.1, eta0=0.01,
+       fit_intercept=True, l1_ratio=0.25, learning_rate='invscaling',
+       loss='squared_loss', n_iter=5, penalty='elasticnet', power_t=0.25,
        random_state=None, shuffle=True, verbose=0, warm_start=False)
-Benchmarking RandomForestRegressor(bootstrap=True, criterion=&#39;mse&#39;, max_depth=None,
-           max_features=&#39;auto&#39;, max_leaf_nodes=None, min_samples_leaf=1,
+Benchmarking RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+           max_features='auto', max_leaf_nodes=None, min_samples_leaf=1,
            min_samples_split=2, min_weight_fraction_leaf=0.0,
            n_estimators=10, n_jobs=1, oob_score=False, random_state=None,
            verbose=0, warm_start=False)
-Benchmarking SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma=0.0,
-  kernel=&#39;rbf&#39;, max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+Benchmarking SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+  kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
 benchmarking with 100 features
 benchmarking with 250 features
 benchmarking with 500 features
-example run in 4.34s
-</pre></div>
+example run in 4.71s</pre>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_prediction_latency.py"><tt class="xref download docutils literal"><span class="pre">plot_prediction_latency.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Authors: Eustache Diemert &lt;eustache@diemert.fr&gt;</span>
@@ -499,8 +498,8 @@ example run in 4.34s
 <span class="k">print</span><span class="p">(</span><span class="s">&quot;example run in </span><span class="si">%.2f</span><span class="s">s&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">stop_time</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">))</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  4.42 seconds
-( 0 minutes  4.42 seconds)</p>
+<p><strong>Total running time of the example:</strong>  4.78 seconds
+( 0 minutes  4.78 seconds)</p>
 </div>
 
 

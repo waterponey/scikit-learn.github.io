@@ -31,6 +31,6 @@ obtained in the first place.
 .. literalinclude:: plot_permutation_test_for_classification.py
     :lines: 13-
 
-**Total running time of the example:**  7.64 seconds
-( 0 minutes  7.64 seconds)
+**Total running time of the example:**  8.05 seconds
+( 0 minutes  8.05 seconds)
     

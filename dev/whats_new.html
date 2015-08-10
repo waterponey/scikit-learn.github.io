@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Who is using sci...
+        Who is using ...
         </span>
             <span class="hiddenrellink">
             Who is using scikit-learn?
@@ -320,6 +320,9 @@ centering and range normalization that is robust to outliers. By <a class="refer
 alternative to <a class="reference internal" href="modules/generated/sklearn.preprocessing.MinMaxScaler.html#sklearn.preprocessing.MinMaxScaler" title="sklearn.preprocessing.MinMaxScaler"><tt class="xref py py-class docutils literal"><span class="pre">preprocessing.MinMaxScaler</span></tt></a> for feature-wise
 range normalization when the data is already centered or sparse.
 By <a class="reference external" href="https://github.com/untom">Thomas Unterthiner</a>.</li>
+<li>The new class <a class="reference internal" href="modules/generated/sklearn.preprocessing.FunctionTransformer.html#sklearn.preprocessing.FunctionTransformer" title="sklearn.preprocessing.FunctionTransformer"><tt class="xref py py-class docutils literal"><span class="pre">preprocessing.FunctionTransformer</span></tt></a> turns a Python
+function into a <tt class="docutils literal"><span class="pre">Pipeline</span></tt>-compatible transformer object.
+By Joe Jevnik.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -397,6 +400,12 @@ lot of memory for large discrete grids. By <a class="reference external" href="h
 in the final fit. By <a class="reference external" href="https://manojbits.wordpress.com">Manoj Kumar</a>.</li>
 <li>Fixed bug in <tt class="xref py py-class docutils literal"><span class="pre">ensemble.forest.ForestClassifier</span></tt> while computing
 oob_score and X is a sparse.csc_matrix. By <a href="#id70"><span class="problematic" id="id71">`Ankur Ankan`_</span></a>.</li>
+<li>All regressors now consistently handle and warn when given <tt class="docutils literal"><span class="pre">y</span></tt> that is of
+shape <tt class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">1)</span></tt>. By <a class="reference external" href="http://peekaboo-vision.blogspot.com">Andreas Müller</a>.</li>
+<li>Fix in <a class="reference internal" href="modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><tt class="xref py py-class docutils literal"><span class="pre">cluster.KMeans</span></tt></a> cluster reassignment for sparse input by
+<a class="reference external" href="https://github.com/larsmans">Lars Buitinck</a>.</li>
+<li>Fixed a bug in <a class="reference internal" href="modules/generated/sklearn.lda.LDA.html#sklearn.lda.LDA" title="sklearn.lda.LDA"><tt class="xref py py-class docutils literal"><span class="pre">lda.LDA</span></tt></a> that could cause asymmetric covariance
+matrices when using shrinkage. By <a class="reference external" href="https://github.com/kazemakase">Martin Billinger</a>.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -743,10 +752,10 @@ We now use the weighted average of targets (secondary method). By
 meta-estimators don&#8217;t convert pandas DataFrames into arrays any more,
 allowing DataFrame specific operations in custom estimators.</p>
 </li>
-<li><p class="first"><a class="reference internal" href="modules/generated/sklearn.multiclass.fit_ovr.html#sklearn.multiclass.fit_ovr" title="sklearn.multiclass.fit_ovr"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ovr</span></tt></a>, <a class="reference internal" href="modules/generated/sklearn.multiclass.predict_ovr.html#sklearn.multiclass.predict_ovr" title="sklearn.multiclass.predict_ovr"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ovr</span></tt></a>,
+<li><p class="first"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ovr</span></tt>, <tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ovr</span></tt>,
 <tt class="xref py py-func docutils literal"><span class="pre">predict_proba_ovr</span></tt>,
-<a class="reference internal" href="modules/generated/sklearn.multiclass.fit_ovo.html#sklearn.multiclass.fit_ovo" title="sklearn.multiclass.fit_ovo"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ovo</span></tt></a>, <a class="reference internal" href="modules/generated/sklearn.multiclass.predict_ovo.html#sklearn.multiclass.predict_ovo" title="sklearn.multiclass.predict_ovo"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ovo</span></tt></a>,
-<a class="reference internal" href="modules/generated/sklearn.multiclass.fit_ecoc.html#sklearn.multiclass.fit_ecoc" title="sklearn.multiclass.fit_ecoc"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ecoc</span></tt></a> and <a class="reference internal" href="modules/generated/sklearn.multiclass.predict_ecoc.html#sklearn.multiclass.predict_ecoc" title="sklearn.multiclass.predict_ecoc"><tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ecoc</span></tt></a>
+<tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ovo</span></tt>, <tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ovo</span></tt>,
+<tt class="xref py py-func docutils literal"><span class="pre">multiclass.fit_ecoc</span></tt> and <tt class="xref py py-func docutils literal"><span class="pre">multiclass.predict_ecoc</span></tt>
 are deprecated. Use the underlying estimators instead.</p>
 </li>
 <li><p class="first">Nearest neighbors estimators used to take arbitrary keyword arguments
@@ -2683,8 +2692,7 @@ still a <tt class="docutils literal"><span class="pre">scikits.learn</span></tt>
 <p>Third-party projects with a dependency on scikit-learn 0.9+ should
 upgrade their codebase. For instance under Linux / MacOSX just run
 (make a backup first!):</p>
-<div class="highlight-python"><div class="highlight"><pre>find -name &quot;*.py&quot; | xargs sed -i &#39;s/\bscikits.learn\b/sklearn/g&#39;
-</pre></div>
+<div class="highlight-python"><pre>find -name "*.py" | xargs sed -i 's/\bscikits.learn\b/sklearn/g'</pre>
 </div>
 </li>
 <li><p class="first">Estimators no longer accept model parameters as <tt class="docutils literal"><span class="pre">fit</span></tt> arguments:
@@ -2701,8 +2709,7 @@ backward compatibility.</p>
 <p>Third-party projects with a dependency on scikit-learn 0.9+ should
 upgrade their codebase. For instance under Linux / MacOSX just run
 (make a backup first!):</p>
-<div class="highlight-python"><div class="highlight"><pre>find -name &quot;*.py&quot; | xargs sed -i &#39;s/\bcross_val\b/cross_validation/g&#39;
-</pre></div>
+<div class="highlight-python"><pre>find -name "*.py" | xargs sed -i 's/\bcross_val\b/cross_validation/g'</pre>
 </div>
 </li>
 <li><p class="first">The <tt class="docutils literal"><span class="pre">score_func</span></tt> argument of the

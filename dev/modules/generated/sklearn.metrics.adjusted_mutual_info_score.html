@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.metrics....
+        sklearn.metri...
         </span>
             <span class="hiddenrellink">
             sklearn.metrics.label_ranking_loss
@@ -171,13 +171,13 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.adjusted_mutual_info_score<a class="headerlink" href="#sklearn-metrics-adjusted-mutual-info-score" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.adjusted_mutual_info_score">
-<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">adjusted_mutual_info_score</tt><big>(</big><em>labels_true</em>, <em>labels_pred</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/metrics/cluster/supervised.py#L578"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.adjusted_mutual_info_score" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">adjusted_mutual_info_score</tt><big>(</big><em>labels_true</em>, <em>labels_pred</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/metrics/cluster/supervised.py#L578"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.adjusted_mutual_info_score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adjusted Mutual Information between two clusterings</p>
 <p>Adjusted Mutual Information (AMI) is an adjustment of the Mutual
 Information (MI) score to account for chance. It accounts for the fact that
 the MI is generally higher for two clusterings with a larger number of
 clusters, regardless of whether there is actually more information shared.
-For two clusterings <img class="math" src="../../_images/math/73f5e249c88b2b3068263480f576b051cb5c4f6e.png" alt="U"/> and <img class="math" src="../../_images/math/c99df7a209495334da442b1ec998abaabfa320d8.png" alt="V"/>, the AMI is given as:</p>
+For two clusterings <img class="math" src="../../_images/math/e2bbebb3bd73f1ae5c64098ab0244f739abf7ca4.png" alt="U"/> and <img class="math" src="../../_images/math/12d58aa29201da09d8e620f8698e3a37547f6b4a.png" alt="V"/>, the AMI is given as:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">AMI</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">V</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="n">MI</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">V</span><span class="p">)</span> <span class="o">-</span> <span class="n">E</span><span class="p">(</span><span class="n">MI</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">V</span><span class="p">))]</span> <span class="o">/</span> <span class="p">[</span><span class="nb">max</span><span class="p">(</span><span class="n">H</span><span class="p">(</span><span class="n">U</span><span class="p">),</span> <span class="n">H</span><span class="p">(</span><span class="n">V</span><span class="p">))</span> <span class="o">-</span> <span class="n">E</span><span class="p">(</span><span class="n">MI</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">V</span><span class="p">))]</span>
 </pre></div>
 </div>

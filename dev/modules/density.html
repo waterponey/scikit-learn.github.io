@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        2.7. Novelty and...
+        2.7. Novelty ...
         </span>
             <span class="hiddenrellink">
             2.7. Novelty and Outlier Detection
@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        2. Unsupervised ...
+        2. Unsupervis...
         </span>
             <span class="hiddenrellink">
             2. Unsupervised learning
@@ -187,7 +187,7 @@ familiar with one common density estimation technique: the histogram.</p>
 number of data points within each bin is tallied.  An example of a histogram
 can be seen in the upper-left panel of the following figure:</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="hist_to_kde" src="../_images/plot_kde_1d_001.png" style="width: 640.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="hist_to_kde" src="../_images/plot_kde_1d_0011.png" style="width: 640.0px; height: 480.0px;" /></a>
 </strong></p><p>A major problem with histograms, however, is that the choice of binning can
 have a disproportionate effect on the resulting visualization.  Consider the
 upper-right panel of the above figure.  It shows a histogram over the same
@@ -221,7 +221,7 @@ dimensionality causes its performance to degrade in high dimensions.</p>
 <p>In the following figure, 100 points are drawn from a bimodal distribution,
 and the kernel density estimates are shown for three choices of kernels:</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="kde_1d_distribution" src="../_images/plot_kde_1d_003.png" style="width: 640.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="kde_1d_distribution" src="../_images/plot_kde_1d_0031.png" style="width: 640.0px; height: 480.0px;" /></a>
 </strong></p><p>It&#8217;s clear how the kernel shape affects the smoothness of the resulting
 distribution.  The scikit-learn kernel density estimator can be used as
 follows:</p>
@@ -235,12 +235,12 @@ follows:</p>
 </pre></div>
 </div>
 <p>Here we have used <tt class="docutils literal"><span class="pre">kernel='gaussian'</span></tt>, as seen above.
-Mathematically, a kernel is a positive function <img class="math" src="../_images/math/08b2238649d4005da6c6591a962c50452243ab30.png" alt="K(x;h)"/>
-which is controlled by the bandwidth parameter <img class="math" src="../_images/math/cbb80ad77aa7a5e227d5a46bc44d235284106cfc.png" alt="h"/>.
-Given this kernel form, the density estimate at a point <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> within
-a group of points <img class="math" src="../_images/math/08fe58960982174a36d8a65ef1af0d3acf7ace5a.png" alt="x_i; i=1\cdots N"/> is given by:</p>
+Mathematically, a kernel is a positive function <img class="math" src="../_images/math/40404d32c84c94814e1d3b0227ad2b14e2ef8ab9.png" alt="K(x;h)"/>
+which is controlled by the bandwidth parameter <img class="math" src="../_images/math/8189a5b5a0917b8c93350827be4038af1839139d.png" alt="h"/>.
+Given this kernel form, the density estimate at a point <img class="math" src="../_images/math/092e364e1d9d19ad5fffb0b46ef4cc7f2da02c1c.png" alt="y"/> within
+a group of points <img class="math" src="../_images/math/a8ee78eb0297b2e0d5688e53c7a2c08cf89055c8.png" alt="x_i; i=1\cdots N"/> is given by:</p>
 <div class="math">
-<p><img src="../_images/math/57b73b19a75bba7654c1c5076915da8feca8bdb0.png" alt="\rho_K(y) = \sum_{i=1}^{N} K((y - x_i) / h)"/></p>
+<p><img src="../_images/math/2847caf0a9fc31081cdcb7b1f5e2874d220862c0.png" alt="\rho_K(y) = \sum_{i=1}^{N} K((y - x_i) / h)"/></p>
 </div><p>The bandwidth here acts as a smoothing parameter, controlling the tradeoff
 between bias and variance in the result.  A large bandwidth leads to a very
 smooth (i.e. high-bias) density distribution.  A small bandwidth leads
@@ -248,26 +248,26 @@ to an unsmooth (i.e. high-variance) density distribution.</p>
 <p><a class="reference internal" href="generated/sklearn.neighbors.KernelDensity.html#sklearn.neighbors.KernelDensity" title="sklearn.neighbors.KernelDensity"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.KernelDensity</span></tt></a> implements several common kernel
 forms, which are shown in the following figure:</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="kde_kernels" src="../_images/plot_kde_1d_002.png" style="width: 640.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="kde_kernels" src="../_images/plot_kde_1d_0021.png" style="width: 640.0px; height: 480.0px;" /></a>
 </strong></p><p>The form of these kernels is as follows:</p>
 <ul>
 <li><p class="first">Gaussian kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'gaussian'</span></tt>)</p>
-<p><img class="math" src="../_images/math/6f487de9cdc05af1d24272b8f36db9f03d5abb06.png" alt="K(x; h) \propto \exp(- \frac{x^2}{2h^2} )"/></p>
+<p><img class="math" src="../_images/math/3ceb92dc5c79095b0c64b5934247aa933b0169bf.png" alt="K(x; h) \propto \exp(- \frac{x^2}{2h^2} )"/></p>
 </li>
 <li><p class="first">Tophat kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'tophat'</span></tt>)</p>
-<p><img class="math" src="../_images/math/9e63a29c9ced920f6aae821ab3e29e01675f2f12.png" alt="K(x; h) \propto 1"/> if <img class="math" src="../_images/math/caea9921eb427449d088d91b6755d96e7cf1b214.png" alt="x &lt; h"/></p>
+<p><img class="math" src="../_images/math/e2c9fc818b2a4ee40b1026464f97a2b329d7a519.png" alt="K(x; h) \propto 1"/> if <img class="math" src="../_images/math/d33c084dab12688346d46f58ba285ea54aacce1d.png" alt="x &lt; h"/></p>
 </li>
 <li><p class="first">Epanechnikov kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'epanechnikov'</span></tt>)</p>
-<p><img class="math" src="../_images/math/ea8752ded7c5816c51d31d20e7d93f52fbf41f49.png" alt="K(x; h) \propto 1 - \frac{x^2}{h^2}"/></p>
+<p><img class="math" src="../_images/math/e75d13d0add1f4cd903092a8408860682b23dfeb.png" alt="K(x; h) \propto 1 - \frac{x^2}{h^2}"/></p>
 </li>
 <li><p class="first">Exponential kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'exponential'</span></tt>)</p>
-<p><img class="math" src="../_images/math/db5929be150f149215fd88053de8d36c6608bef6.png" alt="K(x; h) \propto \exp(-x/h)"/></p>
+<p><img class="math" src="../_images/math/07ee2f07a1becef8d9821ef3a28b1352f6e1c333.png" alt="K(x; h) \propto \exp(-x/h)"/></p>
 </li>
 <li><p class="first">Linear kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'linear'</span></tt>)</p>
-<p><img class="math" src="../_images/math/d432478525db6c0e8aeb2a6fa0a8ca3bf0afe7b5.png" alt="K(x; h) \propto 1 - x/h"/> if <img class="math" src="../_images/math/caea9921eb427449d088d91b6755d96e7cf1b214.png" alt="x &lt; h"/></p>
+<p><img class="math" src="../_images/math/8c6cc156df81b201919a4ea0fe9ba9d836715a22.png" alt="K(x; h) \propto 1 - x/h"/> if <img class="math" src="../_images/math/d33c084dab12688346d46f58ba285ea54aacce1d.png" alt="x &lt; h"/></p>
 </li>
 <li><p class="first">Cosine kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'cosine'</span></tt>)</p>
-<p><img class="math" src="../_images/math/b808030270971971d42ec8e62398634b513667c3.png" alt="K(x; h) \propto \cos(\frac{\pi x}{2h})"/> if <img class="math" src="../_images/math/caea9921eb427449d088d91b6755d96e7cf1b214.png" alt="x &lt; h"/></p>
+<p><img class="math" src="../_images/math/9b3a6b0618488cd6392c7dd56d136ce6b5b8cc8e.png" alt="K(x; h) \propto \cos(\frac{\pi x}{2h})"/> if <img class="math" src="../_images/math/d33c084dab12688346d46f58ba285ea54aacce1d.png" alt="x &lt; h"/></p>
 </li>
 </ul>
 <p>The kernel density estimator can be used with any of the valid distance
@@ -280,7 +280,7 @@ is an example of using a kernel density estimate for a visualization
 of geospatial data, in this case the distribution of observations of two
 different species on the South American continent:</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_species_kde.html"><img alt="species_kde" src="../_images/plot_species_kde_001.png" style="width: 640.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_species_kde.html"><img alt="species_kde" src="../_images/plot_species_kde_0011.png" style="width: 640.0px; height: 480.0px;" /></a>
 </strong></p><p>One other useful application of kernel density estimation is to learn a
 non-parametric generative model of a dataset in order to efficiently
 draw new samples from this generative model.
@@ -288,7 +288,7 @@ Here is an example of using this process to
 create a new set of hand-written digits, using a Gaussian kernel learned
 on a PCA projection of the data:</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_digits_kde_sampling.html"><img alt="digits_kde" src="../_images/plot_digits_kde_sampling_001.png" style="width: 640.0px; height: 480.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_digits_kde_sampling.html"><img alt="digits_kde" src="../_images/plot_digits_kde_sampling_0011.png" style="width: 640.0px; height: 480.0px;" /></a>
 </strong></p><p>The &#8220;new&#8221; data consists of linear combinations of the input data, with weights
 probabilistically drawn given the KDE model.</p>
 <div class="topic">

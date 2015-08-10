@@ -40,6 +40,6 @@ therefore are not shown.
 .. literalinclude:: plot_adaboost_multiclass.py
     :lines: 26-
 
-**Total running time of the example:**  15.13 seconds
-( 0 minutes  15.13 seconds)
+**Total running time of the example:**  15.25 seconds
+( 0 minutes  15.25 seconds)
     

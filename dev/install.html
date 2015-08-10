@@ -236,8 +236,7 @@ brand-new code.</li>
 <p>Wheel packages (.whl files) for scikit-learn from <a class="reference external" href="https://pypi.python.org/pypi/scikit-learn/">PyPI</a> can be installed with the <a class="reference external" href="http://pip.readthedocs.org/en/latest/installing.html">pip</a> utility.
 Open a console and type the following to install or upgrade scikit-learn to the
 latest stable release:</p>
-<div class="highlight-python"><div class="highlight"><pre>pip install -U scikit-learn
-</pre></div>
+<div class="highlight-python"><pre>pip install -U scikit-learn</pre>
 </div>
 <p>If there are no binary packages matching your Python version you might
 to try to install scikit-learn and its dependencies from <a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-learn">Christoph Gohlke
@@ -247,8 +246,7 @@ or from a <a class="reference internal" href="#install-by-distribution"><em>Pyth
 <div class="section" id="mac-osx">
 <h3>Mac OSX<a class="headerlink" href="#mac-osx" title="Permalink to this headline">¶</a></h3>
 <p>Scikit-learn and its dependencies are all available as wheel packages for OSX:</p>
-<div class="highlight-python"><div class="highlight"><pre>pip install -U numpy scipy scikit-learn
-</pre></div>
+<div class="highlight-python"><pre>pip install -U numpy scipy scikit-learn</pre>
 </div>
 </div>
 <div class="section" id="linux">
@@ -261,32 +259,28 @@ so you have to build from source.</p>
 dependencies, Python development headers and a working C/C++ compiler.
 Under Debian-based operating systems, which include Ubuntu, if you have
 Python 2 you can install all these requirements by issuing:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install build-essential python-dev python-setuptools \
+<div class="highlight-python"><pre>sudo apt-get install build-essential python-dev python-setuptools \
                      python-numpy python-scipy \
-                     libatlas-dev libatlas3gf-base
-</pre></div>
+                     libatlas-dev libatlas3gf-base</pre>
 </div>
 <p>If you have Python 3:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install build-essential python3-dev python3-setuptools \
+<div class="highlight-python"><pre>sudo apt-get install build-essential python3-dev python3-setuptools \
                      python3-numpy python3-scipy \
-                     libatlas-dev libatlas3gf-base
-</pre></div>
+                     libatlas-dev libatlas3gf-base</pre>
 </div>
 <p>On recent Debian and Ubuntu (e.g. Ubuntu 13.04 or later) make sure that ATLAS
 is used to provide the implementation of the BLAS and LAPACK linear algebra
 routines:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo update-alternatives --set libblas.so.3 \
+<div class="highlight-python"><pre>sudo update-alternatives --set libblas.so.3 \
     /usr/lib/atlas-base/atlas/libblas.so.3
 sudo update-alternatives --set liblapack.so.3 \
-    /usr/lib/atlas-base/atlas/liblapack.so.3
-</pre></div>
+    /usr/lib/atlas-base/atlas/liblapack.so.3</pre>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>In order to build the documentation and run the example code contains in
 this documentation you will need matplotlib:</p>
-<div class="last highlight-python"><div class="highlight"><pre>sudo apt-get install python-matplotlib
-</pre></div>
+<div class="last highlight-python"><pre>sudo apt-get install python-matplotlib</pre>
 </div>
 </div>
 <div class="admonition note">
@@ -300,27 +294,24 @@ but can freeze joblib/multiprocessing prior to OpenBLAS version 0.2.8-4,
 so using it is not recommended unless you know what you&#8217;re doing.</p>
 <p>If you do want to use OpenBLAS, then replacing ATLAS only requires a couple
 of commands. ATLAS has to be removed, otherwise NumPy may not work:</p>
-<div class="last highlight-python"><div class="highlight"><pre>sudo apt-get remove libatlas3gf-base libatlas-dev
+<div class="last highlight-python"><pre>sudo apt-get remove libatlas3gf-base libatlas-dev
 sudo apt-get install libopenblas-dev
 
 sudo update-alternatives  --set libblas.so.3 \
     /usr/lib/openblas-base/libopenblas.so.0
 sudo update-alternatives --set liblapack.so.3 \
-    /usr/lib/lapack/liblapack.so.3
-</pre></div>
+    /usr/lib/lapack/liblapack.so.3</pre>
 </div>
 </div>
 <p>On Red Hat and clones (e.g. CentOS), install the dependencies using:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo yum -y install gcc gcc-c++ numpy python-devel scipy
-</pre></div>
+<div class="highlight-python"><pre>sudo yum -y install gcc gcc-c++ numpy python-devel scipy</pre>
 </div>
 </div>
 <div class="section" id="building-scikit-learn-with-pip">
 <h4>Building scikit-learn with pip<a class="headerlink" href="#building-scikit-learn-with-pip" title="Permalink to this headline">¶</a></h4>
 <p>This is usually the fastest way to install or upgrade to the latest stable
 release:</p>
-<div class="highlight-python"><div class="highlight"><pre>pip install --user --install-option=&quot;--prefix=&quot; -U scikit-learn
-</pre></div>
+<div class="highlight-python"><pre>pip install --user --install-option="--prefix=" -U scikit-learn</pre>
 </div>
 <p>The <tt class="docutils literal"><span class="pre">--user</span></tt> flag asks pip to install scikit-learn in the <tt class="docutils literal"><span class="pre">$HOME/.local</span></tt>
 folder therefore not requiring root permission. This flag should make pip
@@ -336,12 +327,10 @@ be long and complex to build correctly from source.</p>
 , unpack the sources and cd into the source directory.</p>
 <p>This packages uses distutils, which is the default way of installing
 python modules. The install command is:</p>
-<div class="highlight-python"><div class="highlight"><pre>python setup.py install
-</pre></div>
+<div class="highlight-python"><pre>python setup.py install</pre>
 </div>
 <p>or alternatively (also from within the scikit-learn source folder):</p>
-<div class="highlight-python"><div class="highlight"><pre>pip install .
-</pre></div>
+<div class="highlight-python"><pre>pip install .</pre>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
@@ -367,8 +356,7 @@ that provide their own version of scikit-learn.</p>
 <p>The Debian package is named <tt class="docutils literal"><span class="pre">python-sklearn</span></tt>
 (formerly <tt class="docutils literal"><span class="pre">python-scikits-learn</span></tt>)
 and can be installed using the following command:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo apt-get install python-sklearn
-</pre></div>
+<div class="highlight-python"><pre>sudo apt-get install python-sklearn</pre>
 </div>
 <p>Additionally, backport builds of the most recent release of
 scikit-learn for existing releases of Debian and Ubuntu are available
@@ -393,12 +381,10 @@ library for Windows, Mac OSX and Linux.</p>
 <p>To upgrade or uninstall scikit-learn installed with Anaconda
 or <tt class="docutils literal"><span class="pre">conda</span></tt> you <strong>should not use the pip command</strong>. Instead:</p>
 <p>To upgrade <tt class="docutils literal"><span class="pre">scikit-learn</span></tt>:</p>
-<div class="highlight-python"><div class="highlight"><pre>conda update scikit-learn
-</pre></div>
+<div class="highlight-python"><pre>conda update scikit-learn</pre>
 </div>
 <p>To uninstall <tt class="docutils literal"><span class="pre">scikit-learn</span></tt>:</p>
-<div class="highlight-python"><div class="highlight"><pre>conda remove scikit-learn
-</pre></div>
+<div class="highlight-python"><pre>conda remove scikit-learn</pre>
 </div>
 <p>Upgrading with <tt class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-U</span> <span class="pre">scikit-learn</span></tt> or uninstalling
 <tt class="docutils literal"><span class="pre">pip</span> <span class="pre">uninstall</span> <span class="pre">scikit-learn</span></tt> is likely fail to properly remove files
@@ -413,12 +399,10 @@ via <tt class="docutils literal"><span class="pre">pip</span> <span class="pre">
 where <tt class="docutils literal"><span class="pre">XY</span></tt> denotes the Python version.
 It can be installed by typing the following
 command:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo port install py26-scikit-learn
-</pre></div>
+<div class="highlight-python"><pre>sudo port install py26-scikit-learn</pre>
 </div>
 <p>or:</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo port install py27-scikit-learn
-</pre></div>
+<div class="highlight-python"><pre>sudo port install py27-scikit-learn</pre>
 </div>
 </div>
 <div class="section" id="arch-linux">
@@ -446,12 +430,10 @@ It can be installed by typing the following command:</p>
 <p>The Fedora package is called <tt class="docutils literal"><span class="pre">python-scikit-learn</span></tt> for the Python 2 version
 and <tt class="docutils literal"><span class="pre">python3-scikit-learn</span></tt> for the Python 3 version. Both versions can
 be installed using <tt class="docutils literal"><span class="pre">yum</span></tt>:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ sudo yum install python-scikit-learn
-</pre></div>
+<div class="highlight-python"><pre>$ sudo yum install python-scikit-learn</pre>
 </div>
 <p>or:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ sudo yum install python3-scikit-learn
-</pre></div>
+<div class="highlight-python"><pre>$ sudo yum install python3-scikit-learn</pre>
 </div>
 </div>
 </div>
@@ -467,8 +449,7 @@ You can check the Python version by running the following in <tt class="docutils
 </pre></div>
 </div>
 <p>and the architecture with:</p>
-<div class="highlight-python"><div class="highlight"><pre>python -c &quot;import struct; print(struct.calcsize(&#39;P&#39;) * 8)&quot;
-</pre></div>
+<div class="highlight-python"><pre>python -c "import struct; print(struct.calcsize('P') * 8)"</pre>
 </div>
 <p>The above commands assume that you have the Python installation folder in your
 PATH environment variable.</p>
@@ -482,8 +463,7 @@ or Python 3.</p>
 <p>Once installed you should be able to build scikit-learn without any
 particular configuration by running the following command in the scikit-learn
 folder:</p>
-<div class="highlight-python"><div class="highlight"><pre>python setup.py install
-</pre></div>
+<div class="highlight-python"><pre>python setup.py install</pre>
 </div>
 </div>
 <div class="section" id="id1">
@@ -502,19 +482,16 @@ Framework 4</a></li>
 <p>Both SDKs can be installed in parallel on the same host. To use the Windows
 SDKs, you need to setup the environment of a <tt class="docutils literal"><span class="pre">cmd</span></tt> console launched with the
 following flags (at least for SDK v7.0):</p>
-<div class="highlight-python"><div class="highlight"><pre>cmd /E:ON /V:ON /K
-</pre></div>
+<div class="highlight-python"><pre>cmd /E:ON /V:ON /K</pre>
 </div>
 <p>Then configure the build environment with:</p>
-<div class="highlight-python"><div class="highlight"><pre>SET DISTUTILS_USE_SDK=1
+<div class="highlight-python"><pre>SET DISTUTILS_USE_SDK=1
 SET MSSdk=1
-&quot;C:\Program Files\Microsoft SDKs\Windows\v7.0\Setup\WindowsSdkVer.exe&quot; -q -version:v7.0
-&quot;C:\Program Files\Microsoft SDKs\Windows\v7.0\Bin\SetEnv.cmd&quot; /x64 /release
-</pre></div>
+"C:\Program Files\Microsoft SDKs\Windows\v7.0\Setup\WindowsSdkVer.exe" -q -version:v7.0
+"C:\Program Files\Microsoft SDKs\Windows\v7.0\Bin\SetEnv.cmd" /x64 /release</pre>
 </div>
 <p>Finally you can build scikit-learn in the same <tt class="docutils literal"><span class="pre">cmd</span></tt> console:</p>
-<div class="highlight-python"><div class="highlight"><pre>python setup.py install
-</pre></div>
+<div class="highlight-python"><pre>python setup.py install</pre>
 </div>
 <p>Replace <tt class="docutils literal"><span class="pre">v7.0</span></tt> by the <tt class="docutils literal"><span class="pre">v7.1</span></tt> in the above commands to do the same for
 Python 3 instead of Python 2.</p>
@@ -524,9 +501,8 @@ Python.</p>
 <div class="section" id="building-binary-packages-and-installers">
 <h3>Building binary packages and installers<a class="headerlink" href="#building-binary-packages-and-installers" title="Permalink to this headline">¶</a></h3>
 <p>The <tt class="docutils literal"><span class="pre">.whl</span></tt> package and <tt class="docutils literal"><span class="pre">.exe</span></tt> installers can be built with:</p>
-<div class="highlight-python"><div class="highlight"><pre>pip install wheel
-python setup.py bdist_wheel bdist_wininst -b doc/logos/scikit-learn-logo.bmp
-</pre></div>
+<div class="highlight-python"><pre>pip install wheel
+python setup.py bdist_wheel bdist_wininst -b doc/logos/scikit-learn-logo.bmp</pre>
 </div>
 <p>The resulting packages are generated in the <tt class="docutils literal"><span class="pre">dist/</span></tt> folder.</p>
 </div>
@@ -538,8 +514,7 @@ mingw32 can be redistributed as reusable packages as they depend on GCC runtime
 libraries typically not installed on end-users environment.</p>
 <p>To force the use of a particular compiler, pass the <tt class="docutils literal"><span class="pre">--compiler</span></tt> flag to the
 build step:</p>
-<div class="highlight-python"><div class="highlight"><pre>python setup.py build --compiler=my_compiler install
-</pre></div>
+<div class="highlight-python"><pre>python setup.py build --compiler=my_compiler install</pre>
 </div>
 <p>where <tt class="docutils literal"><span class="pre">my_compiler</span></tt> should be one of <tt class="docutils literal"><span class="pre">mingw32</span></tt> or <tt class="docutils literal"><span class="pre">msvc</span></tt>.</p>
 </div>
@@ -556,20 +531,17 @@ the previous instructions to build from source depending on your platform.</p>
 <p>Testing requires having the <a class="reference external" href="http://somethingaboutorange.com/mrl/projects/nose/">nose</a> library. After
 installation, the package can be tested by executing <em>from outside</em> the
 source directory:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ nosetests -v sklearn
-</pre></div>
+<div class="highlight-python"><pre>$ nosetests -v sklearn</pre>
 </div>
 <p>Under Windows, it is recommended to use the following command (adjust the path
 to the <tt class="docutils literal"><span class="pre">python.exe</span></tt> program) as using the <tt class="docutils literal"><span class="pre">nosetests.exe</span></tt> program can badly
 interact with tests that use <tt class="docutils literal"><span class="pre">multiprocessing</span></tt>:</p>
-<div class="highlight-python"><div class="highlight"><pre>C:\Python34\python.exe -c &quot;import nose; nose.main()&quot; -v sklearn
-</pre></div>
+<div class="highlight-python"><pre>C:\Python34\python.exe -c "import nose; nose.main()" -v sklearn</pre>
 </div>
 <p>This should give you a lot of output (and some warnings) but
 eventually should finish with a message similar to:</p>
-<div class="highlight-python"><div class="highlight"><pre>Ran 3246 tests in 260.618s
-OK (SKIP=20)
-</pre></div>
+<div class="highlight-python"><pre>Ran 3246 tests in 260.618s
+OK (SKIP=20)</pre>
 </div>
 <p>Otherwise, please consider posting an issue into the <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/issues">bug tracker</a> or to the
 <a class="reference internal" href="support.html#mailing-lists"><em>Mailing List</em></a> including the traceback of the individual failures
@@ -580,25 +552,20 @@ and errors.</p>
 <p>Scikit-learn can also be tested without having the package
 installed. For this you must compile the sources inplace from the
 source directory:</p>
-<div class="highlight-python"><div class="highlight"><pre>python setup.py build_ext --inplace
-</pre></div>
+<div class="highlight-python"><pre>python setup.py build_ext --inplace</pre>
 </div>
 <p>Test can now be run using nosetests:</p>
-<div class="highlight-python"><div class="highlight"><pre>nosetests -v sklearn/
-</pre></div>
+<div class="highlight-python"><pre>nosetests -v sklearn/</pre>
 </div>
 <p>This is automated by the commands:</p>
-<div class="highlight-python"><div class="highlight"><pre>make in
-</pre></div>
+<div class="highlight-python"><pre>make in</pre>
 </div>
 <p>and:</p>
-<div class="highlight-python"><div class="highlight"><pre>make test
-</pre></div>
+<div class="highlight-python"><pre>make test</pre>
 </div>
 <p>You can also install a symlink named <tt class="docutils literal"><span class="pre">site-packages/scikit-learn.egg-link</span></tt>
 to the development folder of scikit-learn with:</p>
-<div class="highlight-python"><div class="highlight"><pre>pip install --editable .
-</pre></div>
+<div class="highlight-python"><pre>pip install --editable .</pre>
 </div>
 </div>
 </div>

@@ -59,6 +59,6 @@ by Thomas P. Minka is also compared.
 .. literalinclude:: plot_pca_vs_fa_model_selection.py
     :lines: 29-
 
-**Total running time of the example:**  46.55 seconds
-( 0 minutes  46.55 seconds)
+**Total running time of the example:**  43.75 seconds
+( 0 minutes  43.75 seconds)
     

@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        4.4. Unsupervise...
+        4.4. Unsuperv...
         </span>
             <span class="hiddenrellink">
             4.4. Unsupervised dimensionality reduction
@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        4. Dataset trans...
+        4. Dataset tr...
         </span>
             <span class="hiddenrellink">
             4. Dataset transformations
@@ -223,10 +223,10 @@ bounded distortion introduced by the random projection:</p>
 </pre></div>
 </div>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/plot_johnson_lindenstrauss_bound.html"><img alt="../_images/plot_johnson_lindenstrauss_bound_001.png" src="../_images/plot_johnson_lindenstrauss_bound_001.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/plot_johnson_lindenstrauss_bound.html"><img alt="../_images/plot_johnson_lindenstrauss_bound_0011.png" src="../_images/plot_johnson_lindenstrauss_bound_0011.png" style="width: 600.0px; height: 450.0px;" /></a>
 </div>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/plot_johnson_lindenstrauss_bound.html"><img alt="../_images/plot_johnson_lindenstrauss_bound_002.png" src="../_images/plot_johnson_lindenstrauss_bound_002.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/plot_johnson_lindenstrauss_bound.html"><img alt="../_images/plot_johnson_lindenstrauss_bound_0021.png" src="../_images/plot_johnson_lindenstrauss_bound_0021.png" style="width: 600.0px; height: 450.0px;" /></a>
 </div>
 <div class="topic">
 <p class="topic-title first">Example:</p>
@@ -249,7 +249,7 @@ empirical validation using sparse random matrices.</li>
 <p>The <a class="reference internal" href="generated/sklearn.random_projection.GaussianRandomProjection.html#sklearn.random_projection.GaussianRandomProjection" title="sklearn.random_projection.GaussianRandomProjection"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.random_projection.GaussianRandomProjection</span></tt></a> reduces the
 dimensionality by projecting the original input space on a randomly generated
 matrix where components are drawn from the following distribution
-<img class="math" src="../_images/math/4b6fc14718fd93134fd32b08a74c8eb41f56f14b.png" alt="N(0, \frac{1}{n_{components}})"/>.</p>
+<img class="math" src="../_images/math/8049ae8ee68eff5e99381feeda7e1cfebfa40b98.png" alt="N(0, \frac{1}{n_{components}})"/>.</p>
 <p>Here a small excerpt which illustrates how to use the Gaussian random
 projection transformer:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -273,16 +273,16 @@ more memory efficient and allowing faster computation of the projected data.</p>
 <p>If we define <tt class="docutils literal"><span class="pre">s</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">/</span> <span class="pre">density</span></tt>, the elements of the random matrix
 are drawn from</p>
 <div class="math">
-<p><img src="../_images/math/c5926a04917006dc055a58af642f40f878e4fb49.png" alt="\left\{
+<p><img src="../_images/math/3819ee9774b41f2178960545b884acd39b098fd7.png" alt="\left\{
 \begin{array}{c c l}
 -\sqrt{\frac{s}{n_{\text{components}}}} &amp; &amp; 1 / 2s\\
 0 &amp;\text{with probability}  &amp; 1 - 1 / s \\
 +\sqrt{\frac{s}{n_{\text{components}}}} &amp; &amp; 1 / 2s\\
 \end{array}
 \right."/></p>
-</div><p>where <img class="math" src="../_images/math/e04c1e6d6021997fb981328239bc866d3a3a382b.png" alt="n_{\text{components}}"/> is the size of the projected subspace.
+</div><p>where <img class="math" src="../_images/math/aef02099badb6bea64f4815428934ade436ef8b2.png" alt="n_{\text{components}}"/> is the size of the projected subspace.
 By default the density of non zero elements is set to the minimum density as
-recommended by Ping Li et al.: <img class="math" src="../_images/math/62af498c85cf5772b99f66e5b493cdcba66a7b48.png" alt="1 / \sqrt{n_{\text{features}}}"/>.</p>
+recommended by Ping Li et al.: <img class="math" src="../_images/math/75a59f965e1a0419a3e9c041d6b28ca484bf2d51.png" alt="1 / \sqrt{n_{\text{features}}}"/>.</p>
 <p>Here a small excerpt which illustrates how to use the sparse random
 projection transformer:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>

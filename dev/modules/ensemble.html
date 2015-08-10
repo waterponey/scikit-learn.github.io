@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        1.10. Decision T...
+        1.10. Decisio...
         </span>
             <span class="hiddenrellink">
             1.10. Decision Trees
@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        1. Supervised le...
+        1. Supervised...
         </span>
             <span class="hiddenrellink">
             1. Supervised learning
@@ -397,7 +397,7 @@ in bias:</p>
 </pre></div>
 </div>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/ensemble/plot_forest_iris.html"><img alt="../_images/plot_forest_iris_001.png" src="../_images/plot_forest_iris_001.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/ensemble/plot_forest_iris.html"><img alt="../_images/plot_forest_iris_0011.png" src="../_images/plot_forest_iris_0011.png" style="width: 600.0px; height: 450.0px;" /></a>
 </div>
 </div>
 <div class="section" id="parameters">
@@ -489,7 +489,7 @@ for feature selection.</p>
 importances of each individual pixel for a face recognition task using
 a <a class="reference internal" href="generated/sklearn.ensemble.ExtraTreesClassifier.html#sklearn.ensemble.ExtraTreesClassifier" title="sklearn.ensemble.ExtraTreesClassifier"><tt class="xref py py-class docutils literal"><span class="pre">ExtraTreesClassifier</span></tt></a> model.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/ensemble/plot_forest_importances_faces.html"><img alt="../_images/plot_forest_importances_faces_001.png" src="../_images/plot_forest_importances_faces_001.png" style="width: 450.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/ensemble/plot_forest_importances_faces.html"><img alt="../_images/plot_forest_importances_faces_0011.png" src="../_images/plot_forest_importances_faces_0011.png" style="width: 450.0px; height: 450.0px;" /></a>
 </div>
 <p>In practice those estimates are stored as an attribute named
 <tt class="docutils literal"><span class="pre">feature_importances_</span></tt> on the fitted model. This is an array with shape
@@ -544,9 +544,9 @@ models that are only slightly better than random guessing, such as small
 decision trees) on repeatedly modified versions of the data. The predictions
 from all of them are then combined through a weighted majority vote (or sum) to
 produce the final prediction. The data modifications at each so-called boosting
-iteration consist of applying weights <img class="math" src="../_images/math/ee71d9a60992887aa4b7a1e010886633661a7ada.png" alt="w_1"/>, <img class="math" src="../_images/math/9c87339c285f85c875225faea7ee0af7107cf77b.png" alt="w_2"/>, ..., <img class="math" src="../_images/math/093edac7548ff6dcb81cfbee5ef2249fb8295d23.png" alt="w_N"/>
+iteration consist of applying weights <img class="math" src="../_images/math/3c352e9db5a7134ca93f9fecce8fe99b0d4e5889.png" alt="w_1"/>, <img class="math" src="../_images/math/0ce0501dff8a93818a4e5d9ecc570d8ab6472e5b.png" alt="w_2"/>, ..., <img class="math" src="../_images/math/ee6d92cf0af05164e5140340ee7ebbe9778c7d92.png" alt="w_N"/>
 to each of the training samples. Initially, those weights are all set to
-<img class="math" src="../_images/math/f517ce4e0d7328c27b2820bb5259535d3e1d8aa7.png" alt="w_i = 1/N"/>, so that the first step simply trains a weak learner on the
+<img class="math" src="../_images/math/cd9aaa1e00b85e7528b2300a292daac5f638e73e.png" alt="w_i = 1/N"/>, so that the first step simply trains a weak learner on the
 original data. For each successive iteration, the sample weights are
 individually modified and the learning algorithm is reapplied to the reweighted
 data. At a given step, those training examples that were incorrectly predicted
@@ -557,7 +557,7 @@ ever-increasing influence. Each subsequent weak learner is thereby forced to
 concentrate on the examples that are missed by the previous ones in the sequence
 <a class="reference internal" href="#htf" id="id9">[HTF]</a>.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/ensemble/plot_adaboost_hastie_10_2.html"><img alt="../_images/plot_adaboost_hastie_10_2_001.png" src="../_images/plot_adaboost_hastie_10_2_001.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/ensemble/plot_adaboost_hastie_10_2.html"><img alt="../_images/plot_adaboost_hastie_10_2_0011.png" src="../_images/plot_adaboost_hastie_10_2_0011.png" style="width: 600.0px; height: 450.0px;" /></a>
 </div>
 <p>AdaBoost can be used both for classification and regression problems:</p>
 <blockquote>
@@ -730,7 +730,7 @@ to determine the optimal number of trees (i.e. <tt class="docutils literal"><spa
 The plot on the right shows the feature importances which can be obtained via
 the <tt class="docutils literal"><span class="pre">feature_importances_</span></tt> property.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/ensemble/plot_gradient_boosting_regression.html"><img alt="../_images/plot_gradient_boosting_regression_001.png" src="../_images/plot_gradient_boosting_regression_001.png" style="width: 900.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/ensemble/plot_gradient_boosting_regression.html"><img alt="../_images/plot_gradient_boosting_regression_0011.png" src="../_images/plot_gradient_boosting_regression_0011.png" style="width: 900.0px; height: 450.0px;" /></a>
 </div>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
@@ -780,9 +780,9 @@ chapter on gradient boosting in <a class="reference internal" href="#f2001" id="
 <p>GBRT considers additive models of the following form:</p>
 <blockquote>
 <div><div class="math">
-<p><img src="../_images/math/38a3baf892674090e4285efd71f2305846d3d8eb.png" alt="F(x) = \sum_{m=1}^{M} \gamma_m h_m(x)"/></p>
+<p><img src="../_images/math/127cb2c6a89431965d87357eea1431edd897640c.png" alt="F(x) = \sum_{m=1}^{M} \gamma_m h_m(x)"/></p>
 </div></div></blockquote>
-<p>where <img class="math" src="../_images/math/52015b92f53f3a882ed0678cf03a59422703f6ac.png" alt="h_m(x)"/> are the basis functions which are usually called
+<p>where <img class="math" src="../_images/math/b9e4b6a2f8baf3797871aab96c0742672bb68cb9.png" alt="h_m(x)"/> are the basis functions which are usually called
 <em>weak learners</em> in the context of boosting. Gradient Tree Boosting
 uses <a class="reference internal" href="tree.html#tree"><em>decision trees</em></a> of fixed size as weak
 learners. Decision trees have a number of abilities that make them
@@ -792,17 +792,17 @@ and the ability to model complex functions.</p>
 a forward stagewise fashion:</p>
 <blockquote>
 <div><div class="math">
-<p><img src="../_images/math/10825eb55b44e9ab80b14555820128116d47b0ad.png" alt="F_m(x) = F_{m-1}(x) + \gamma_m h_m(x)"/></p>
+<p><img src="../_images/math/6da6fa76a6ab5bb49e5e463e5f224f930c298d0d.png" alt="F_m(x) = F_{m-1}(x) + \gamma_m h_m(x)"/></p>
 </div></div></blockquote>
-<p>At each stage the decision tree <img class="math" src="../_images/math/52015b92f53f3a882ed0678cf03a59422703f6ac.png" alt="h_m(x)"/> is chosen to
-minimize the loss function <img class="math" src="../_images/math/0a5711c7a37994043b2bc3bb374adca232491762.png" alt="L"/> given the current model
-<img class="math" src="../_images/math/b071ffb2ad3393f2755dfcb1741d4c138ed87532.png" alt="F_{m-1}"/> and its fit <img class="math" src="../_images/math/341739768b517fe3ccf083d4b4d6938c5cd7835d.png" alt="F_{m-1}(x_i)"/></p>
+<p>At each stage the decision tree <img class="math" src="../_images/math/b9e4b6a2f8baf3797871aab96c0742672bb68cb9.png" alt="h_m(x)"/> is chosen to
+minimize the loss function <img class="math" src="../_images/math/859ccf4cd60c7bc6b8fa1afc9a42dc811a826d6f.png" alt="L"/> given the current model
+<img class="math" src="../_images/math/bf9e8ea58bec8c8cee49056ee03e8b474081e983.png" alt="F_{m-1}"/> and its fit <img class="math" src="../_images/math/4a3e732937f9d29ebbe27f304c59de766d95fdef.png" alt="F_{m-1}(x_i)"/></p>
 <blockquote>
 <div><div class="math">
-<p><img src="../_images/math/24e745e0f9174a59c0ff6e8a6867a41ba1236a4c.png" alt="F_m(x) = F_{m-1}(x) + \arg\min_{h} \sum_{i=1}^{n} L(y_i,
+<p><img src="../_images/math/844f393be6199b8112a2c9cbbb4381097011b530.png" alt="F_m(x) = F_{m-1}(x) + \arg\min_{h} \sum_{i=1}^{n} L(y_i,
 F_{m-1}(x_i) - h(x))"/></p>
 </div></div></blockquote>
-<p>The initial model <img class="math" src="../_images/math/3bf8e7b868ef3130ec9da58118014d89b059fd79.png" alt="F_{0}"/> is problem specific, for least-squares
+<p>The initial model <img class="math" src="../_images/math/3c2247151009da34ba4846970ecf3b6e9aa7dd6e.png" alt="F_{0}"/> is problem specific, for least-squares
 regression one usually chooses the mean of the target values.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -812,17 +812,17 @@ argument. The passed object has to implement <tt class="docutils literal"><span 
 <p>Gradient Boosting attempts to solve this minimization problem
 numerically via steepest descent: The steepest descent direction is
 the negative gradient of the loss function evaluated at the current
-model <img class="math" src="../_images/math/b071ffb2ad3393f2755dfcb1741d4c138ed87532.png" alt="F_{m-1}"/> which can be calculated for any differentiable
+model <img class="math" src="../_images/math/bf9e8ea58bec8c8cee49056ee03e8b474081e983.png" alt="F_{m-1}"/> which can be calculated for any differentiable
 loss function:</p>
 <blockquote>
 <div><div class="math">
-<p><img src="../_images/math/da8ea309b3ca0582a5b848cda156da632570b2a9.png" alt="F_m(x) = F_{m-1}(x) + \gamma_m \sum_{i=1}^{n} \nabla_F L(y_i,
+<p><img src="../_images/math/a0bd992c86dfe225e030eefa421ce7ae9eac9469.png" alt="F_m(x) = F_{m-1}(x) + \gamma_m \sum_{i=1}^{n} \nabla_F L(y_i,
 F_{m-1}(x_i))"/></p>
 </div></div></blockquote>
-<p>Where the step length <img class="math" src="../_images/math/e1ff0eb7a23a5f833a66d75d4f681fe0875e781c.png" alt="\gamma_m"/> is chosen using line search:</p>
+<p>Where the step length <img class="math" src="../_images/math/7e4b2db2bae40f37155b0535933a737de4c238db.png" alt="\gamma_m"/> is chosen using line search:</p>
 <blockquote>
 <div><div class="math">
-<p><img src="../_images/math/934469f7305191f27184dffb1276b1e735050f7d.png" alt="\gamma_m = \arg\min_{\gamma} \sum_{i=1}^{n} L(y_i, F_{m-1}(x_i)
+<p><img src="../_images/math/7a4505768b7b4280e576671921267727b4257c29.png" alt="\gamma_m = \arg\min_{\gamma} \sum_{i=1}^{n} L(y_i, F_{m-1}(x_i)
 - \gamma \frac{\partial L(y_i, F_{m-1}(x_i))}{\partial F_{m-1}(x_i)})"/></p>
 </div></div></blockquote>
 <p>The algorithms for regression and classification
@@ -877,10 +877,10 @@ classification.</li>
 <div class="section" id="shrinkage">
 <span id="gradient-boosting-shrinkage"></span><h4>1.11.4.6.1. Shrinkage<a class="headerlink" href="#shrinkage" title="Permalink to this headline">¶</a></h4>
 <p><a class="reference internal" href="#f2001" id="id15">[F2001]</a> proposed a simple regularization strategy that scales
-the contribution of each weak learner by a factor <img class="math" src="../_images/math/d67fb61cfffca2cc069e083d76cb6220b4ca14c8.png" alt="\nu"/>:</p>
+the contribution of each weak learner by a factor <img class="math" src="../_images/math/d6a7ccf879c4a4fe694033606332cb83806db296.png" alt="\nu"/>:</p>
 <div class="math">
-<p><img src="../_images/math/47430226015a6b7a0653abed8c7d5d5e9f529404.png" alt="F_m(x) = F_{m-1}(x) + \nu \gamma_m h_m(x)"/></p>
-</div><p>The parameter <img class="math" src="../_images/math/d67fb61cfffca2cc069e083d76cb6220b4ca14c8.png" alt="\nu"/> is also called the <strong>learning rate</strong> because
+<p><img src="../_images/math/94c55bdf192b75661a39165f6e14639594e53f2f.png" alt="F_m(x) = F_{m-1}(x) + \nu \gamma_m h_m(x)"/></p>
+</div><p>The parameter <img class="math" src="../_images/math/d6a7ccf879c4a4fe694033606332cb83806db296.png" alt="\nu"/> is also called the <strong>learning rate</strong> because
 it scales the step length the the gradient descent procedure; it can
 be set via the <tt class="docutils literal"><span class="pre">learning_rate</span></tt> parameter.</p>
 <p>The parameter <tt class="docutils literal"><span class="pre">learning_rate</span></tt> strongly interacts with the parameter
@@ -906,7 +906,7 @@ outperforms no-shrinkage. Subsampling with shrinkage can further increase
 the accuracy of the model. Subsampling without shrinkage, on the other hand,
 does poorly.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/ensemble/plot_gradient_boosting_regularization.html"><img alt="../_images/plot_gradient_boosting_regularization_001.png" src="../_images/plot_gradient_boosting_regularization_001.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/ensemble/plot_gradient_boosting_regularization.html"><img alt="../_images/plot_gradient_boosting_regularization_0011.png" src="../_images/plot_gradient_boosting_regularization_0011.png" style="width: 600.0px; height: 450.0px;" /></a>
 </div>
 <p>Another strategy to reduce the variance is by subsampling the features
 analogous to the random splits in <a class="reference internal" href="generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier" title="sklearn.ensemble.RandomForestClassifier"><tt class="xref py py-class docutils literal"><span class="pre">RandomForestClassifier</span></tt></a> .
@@ -992,7 +992,7 @@ usually chosen among the most important features.</p>
 <p>The Figure below shows four one-way and one two-way partial dependence plots
 for the California housing dataset:</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/ensemble/plot_partial_dependence.html"><img alt="../_images/plot_partial_dependence_001.png" src="../_images/plot_partial_dependence_001.png" style="width: 560.0px; height: 420.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/ensemble/plot_partial_dependence.html"><img alt="../_images/plot_partial_dependence_0011.png" src="../_images/plot_partial_dependence_0011.png" style="width: 560.0px; height: 420.0px;" /></a>
 </div>
 <p>One-way PDPs tell us about the interaction between the target
 response and the target feature (e.g. linear, non-linear).

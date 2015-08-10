@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        2.1.3.2.1. Varia...
+        2.1.3.2.1. Va...
         </span>
             <span class="hiddenrellink">
             2.1.3.2.1. Variational Gaussian Mixture Models
@@ -133,7 +133,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        2. Unsupervised ...
+        2. Unsupervis...
         </span>
             <span class="hiddenrellink">
             2. Unsupervised learning
@@ -213,7 +213,7 @@
 </div>
 </div>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/manifold/plot_compare_methods.html"><img alt="../_images/plot_compare_methods_001.png" src="../_images/plot_compare_methods_001.png" style="width: 900.0px; height: 480.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/manifold/plot_compare_methods.html"><img alt="../_images/plot_compare_methods_0011.png" src="../_images/plot_compare_methods_0011.png" style="width: 900.0px; height: 480.0px;" /></a>
 </div>
 <p>Manifold learning is an approach to non-linear dimensionality reduction.
 Algorithms for this task are based on the idea that the dimensionality of
@@ -231,8 +231,8 @@ visualization of the data structure, the randomness of the choice leaves much
 to be desired.  In a random projection, it is likely that the more
 interesting structure within the data will be lost.</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="digits_img" src="../_images/plot_lle_digits_001.png" style="width: 400.0px; height: 300.0px;" /></a>
- <a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="projected_img" src="../_images/plot_lle_digits_002.png" style="width: 400.0px; height: 300.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="digits_img" src="../_images/plot_lle_digits_0011.png" style="width: 400.0px; height: 300.0px;" /></a>
+ <a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="projected_img" src="../_images/plot_lle_digits_0021.png" style="width: 400.0px; height: 300.0px;" /></a>
 </strong></p><p>To address this concern, a number of supervised and unsupervised linear
 dimensionality reduction frameworks have been designed, such as Principal
 Component Analysis (PCA), Independent Component Analysis, Linear
@@ -241,8 +241,8 @@ rubrics to choose an &#8220;interesting&#8221; linear projection of the data.
 These methods can be powerful, but often miss important non-linear
 structure in the data.</p>
 <p class="centered">
-<strong><a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="PCA_img" src="../_images/plot_lle_digits_003.png" style="width: 400.0px; height: 300.0px;" /></a>
- <a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="LDA_img" src="../_images/plot_lle_digits_004.png" style="width: 400.0px; height: 300.0px;" /></a>
+<strong><a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="PCA_img" src="../_images/plot_lle_digits_0031.png" style="width: 400.0px; height: 300.0px;" /></a>
+ <a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="LDA_img" src="../_images/plot_lle_digits_0041.png" style="width: 400.0px; height: 300.0px;" /></a>
 </strong></p><p>Manifold Learning can be thought of as an attempt to generalize linear
 frameworks like PCA to be sensitive to non-linear structure in data. Though
 supervised variants exist, the typical manifold learning problem is
@@ -269,7 +269,7 @@ Isomap seeks a lower-dimensional embedding which maintains geodesic
 distances between all points.  Isomap can be performed with the object
 <a class="reference internal" href="generated/sklearn.manifold.Isomap.html#sklearn.manifold.Isomap" title="sklearn.manifold.Isomap"><tt class="xref py py-class docutils literal"><span class="pre">Isomap</span></tt></a>.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_005.png" src="../_images/plot_lle_digits_005.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_0051.png" src="../_images/plot_lle_digits_0051.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
 <div class="section" id="complexity">
 <h3>2.2.2.1. Complexity<a class="headerlink" href="#complexity" title="Permalink to this headline">¶</a></h3>
@@ -277,29 +277,29 @@ distances between all points.  Isomap can be performed with the object
 <ol class="arabic simple">
 <li><strong>Nearest neighbor search.</strong>  Isomap uses
 <a class="reference internal" href="generated/sklearn.neighbors.BallTree.html#sklearn.neighbors.BallTree" title="sklearn.neighbors.BallTree"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.BallTree</span></tt></a> for efficient neighbor search.
-The cost is approximately <img class="math" src="../_images/math/fe970e16ff695918dee492901a03d3d94e3d3573.png" alt="O[D \log(k) N \log(N)]"/>, for <img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/>
-nearest neighbors of <img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> points in <img class="math" src="../_images/math/9dfa31437b58c0473299320aa638151cd88cf61b.png" alt="D"/> dimensions.</li>
+The cost is approximately <img class="math" src="../_images/math/0bb1f5705d1b4cb5f9b7241f529fddba23273795.png" alt="O[D \log(k) N \log(N)]"/>, for <img class="math" src="../_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k"/>
+nearest neighbors of <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> points in <img class="math" src="../_images/math/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="D"/> dimensions.</li>
 <li><strong>Shortest-path graph search.</strong>  The most efficient known algorithms
 for this are <em>Dijkstra&#8217;s Algorithm</em>, which is approximately
-<img class="math" src="../_images/math/7a77f92898506ef618b9aaad553cc8d0644d584a.png" alt="O[N^2(k + \log(N))]"/>, or the <em>Floyd-Warshall algorithm</em>, which
-is <img class="math" src="../_images/math/b1e15f42370b4dc4c04adc704aa520e0fe45dea8.png" alt="O[N^3]"/>.  The algorithm can be selected by the user with
+<img class="math" src="../_images/math/31e1150f8ab00e03d825eb22d563f494258bfa49.png" alt="O[N^2(k + \log(N))]"/>, or the <em>Floyd-Warshall algorithm</em>, which
+is <img class="math" src="../_images/math/900bffafee75e1b9d075fde7979410a759469326.png" alt="O[N^3]"/>.  The algorithm can be selected by the user with
 the <tt class="docutils literal"><span class="pre">path_method</span></tt> keyword of <tt class="docutils literal"><span class="pre">Isomap</span></tt>.  If unspecified, the code
 attempts to choose the best algorithm for the input data.</li>
 <li><strong>Partial eigenvalue decomposition.</strong>  The embedding is encoded in the
-eigenvectors corresponding to the <img class="math" src="../_images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/> largest eigenvalues of the
-<img class="math" src="../_images/math/e124387baa3fb78556702e7e00266ce1954002e0.png" alt="N \times N"/> isomap kernel.  For a dense solver, the cost is
-approximately <img class="math" src="../_images/math/ecaf3ef86f6fd84b69074f272980febf7c6148ae.png" alt="O[d N^2]"/>.  This cost can often be improved using
+eigenvectors corresponding to the <img class="math" src="../_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d"/> largest eigenvalues of the
+<img class="math" src="../_images/math/cb21db0177b65427c9c7fb7bd9183d242bdbcb1f.png" alt="N \times N"/> isomap kernel.  For a dense solver, the cost is
+approximately <img class="math" src="../_images/math/44ff8882aaedb0d90ea661dcb275dfcf7c0038f5.png" alt="O[d N^2]"/>.  This cost can often be improved using
 the <tt class="docutils literal"><span class="pre">ARPACK</span></tt> solver.  The eigensolver can be specified by the user
 with the <tt class="docutils literal"><span class="pre">path_method</span></tt> keyword of <tt class="docutils literal"><span class="pre">Isomap</span></tt>.  If unspecified, the
 code attempts to choose the best algorithm for the input data.</li>
 </ol>
 <p>The overall complexity of Isomap is
-<img class="math" src="../_images/math/fd50496ee4e6ec416aa56ab293a06437daeb350f.png" alt="O[D \log(k) N \log(N)] + O[N^2(k + \log(N))] + O[d N^2]"/>.</p>
+<img class="math" src="../_images/math/990c46631a02c6f20a15af03c70ee13693c4f446.png" alt="O[D \log(k) N \log(N)] + O[N^2(k + \log(N))] + O[d N^2]"/>.</p>
 <ul class="simple">
-<li><img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> : number of training data points</li>
-<li><img class="math" src="../_images/math/9dfa31437b58c0473299320aa638151cd88cf61b.png" alt="D"/> : input dimension</li>
-<li><img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> : number of nearest neighbors</li>
-<li><img class="math" src="../_images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/> : output dimension</li>
+<li><img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> : number of training data points</li>
+<li><img class="math" src="../_images/math/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="D"/> : input dimension</li>
+<li><img class="math" src="../_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k"/> : number of nearest neighbors</li>
+<li><img class="math" src="../_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d"/> : output dimension</li>
 </ul>
 <div class="topic">
 <p class="topic-title first">References:</p>
@@ -320,26 +320,26 @@ compared to find the best non-linear embedding.</p>
 <a class="reference internal" href="generated/sklearn.manifold.locally_linear_embedding.html#sklearn.manifold.locally_linear_embedding" title="sklearn.manifold.locally_linear_embedding"><tt class="xref py py-func docutils literal"><span class="pre">locally_linear_embedding</span></tt></a> or its object-oriented counterpart
 <a class="reference internal" href="generated/sklearn.manifold.LocallyLinearEmbedding.html#sklearn.manifold.LocallyLinearEmbedding" title="sklearn.manifold.LocallyLinearEmbedding"><tt class="xref py py-class docutils literal"><span class="pre">LocallyLinearEmbedding</span></tt></a>.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_006.png" src="../_images/plot_lle_digits_006.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_0061.png" src="../_images/plot_lle_digits_0061.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
 <div class="section" id="id3">
 <h3>2.2.3.1. Complexity<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>The standard LLE algorithm comprises three stages:</p>
 <ol class="arabic simple">
 <li><strong>Nearest Neighbors Search</strong>.  See discussion under Isomap above.</li>
-<li><strong>Weight Matrix Construction</strong>. <img class="math" src="../_images/math/a00fe53bef8884ef1e4612c48f7fb3f6f6134b73.png" alt="O[D N k^3]"/>.
+<li><strong>Weight Matrix Construction</strong>. <img class="math" src="../_images/math/074e13babe7a81980a087cfd4c71d69c6ef0fabe.png" alt="O[D N k^3]"/>.
 The construction of the LLE weight matrix involves the solution of a
-<img class="math" src="../_images/math/3908ba50237c94909083edd0295cd1c9345b0a8c.png" alt="k \times k"/> linear equation for each of the <img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> local
+<img class="math" src="../_images/math/d3eae791493a49e3c1653ae6b9c861e354c7d03d.png" alt="k \times k"/> linear equation for each of the <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> local
 neighborhoods</li>
 <li><strong>Partial Eigenvalue Decomposition</strong>. See discussion under Isomap above.</li>
 </ol>
 <p>The overall complexity of standard LLE is
-<img class="math" src="../_images/math/ff9da5d2add368dd1270ed207ae10e8ca80b4620.png" alt="O[D \log(k) N \log(N)] + O[D N k^3] + O[d N^2]"/>.</p>
+<img class="math" src="../_images/math/f25c41ecaf087953402b078828ee8c6f486bcf45.png" alt="O[D \log(k) N \log(N)] + O[D N k^3] + O[d N^2]"/>.</p>
 <ul class="simple">
-<li><img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> : number of training data points</li>
-<li><img class="math" src="../_images/math/9dfa31437b58c0473299320aa638151cd88cf61b.png" alt="D"/> : input dimension</li>
-<li><img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> : number of nearest neighbors</li>
-<li><img class="math" src="../_images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/> : output dimension</li>
+<li><img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> : number of training data points</li>
+<li><img class="math" src="../_images/math/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="D"/> : input dimension</li>
+<li><img class="math" src="../_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k"/> : number of nearest neighbors</li>
+<li><img class="math" src="../_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d"/> : output dimension</li>
 </ul>
 <div class="topic">
 <p class="topic-title first">References:</p>
@@ -355,11 +355,11 @@ Roweis, S. &amp; Saul, L.  Science 290:2323 (2000)</li>
 <p>One well-known issue with LLE is the regularization problem.  When the number
 of neighbors is greater than the number of input dimensions, the matrix
 defining each local neighborhood is rank-deficient.  To address this, standard
-LLE applies an arbitrary regularization parameter <img class="math" src="../_images/math/2ede365ad144ab396916ec60458da03860803078.png" alt="r"/>, which is chosen
+LLE applies an arbitrary regularization parameter <img class="math" src="../_images/math/b55ca7a0aa88ab7d58f4fc035317fdac39b17861.png" alt="r"/>, which is chosen
 relative to the trace of the local weight matrix.  Though it can be shown
-formally that as <img class="math" src="../_images/math/c3c1c05532d6913308cac959d27d21be5abed0d5.png" alt="r \to 0"/>, the solution converges to the desired
+formally that as <img class="math" src="../_images/math/de5569cd3c9b702d8eabe4af67b266bbb657572e.png" alt="r \to 0"/>, the solution converges to the desired
 embedding, there is no guarantee that the optimal solution will be found
-for <img class="math" src="../_images/math/3008f01be8419b658944e0f72e439ecf100d8579.png" alt="r &gt; 0"/>.  This problem manifests itself in embeddings which distort
+for <img class="math" src="../_images/math/22ff7db3e755a8164f2344e0d3d84ea3a0fe93b3.png" alt="r &gt; 0"/>.  This problem manifests itself in embeddings which distort
 the underlying geometry of the manifold.</p>
 <p>One method to address the regularization problem is to use multiple weight
 vectors in each neighborhood.  This is the essence of <em>modified locally
@@ -368,7 +368,7 @@ linear embedding</em> (MLLE).  MLLE can be  performed with function
 <a class="reference internal" href="generated/sklearn.manifold.LocallyLinearEmbedding.html#sklearn.manifold.LocallyLinearEmbedding" title="sklearn.manifold.LocallyLinearEmbedding"><tt class="xref py py-class docutils literal"><span class="pre">LocallyLinearEmbedding</span></tt></a>, with the keyword <tt class="docutils literal"><span class="pre">method</span> <span class="pre">=</span> <span class="pre">'modified'</span></tt>.
 It requires <tt class="docutils literal"><span class="pre">n_neighbors</span> <span class="pre">&gt;</span> <span class="pre">n_components</span></tt>.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_007.png" src="../_images/plot_lle_digits_007.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_0071.png" src="../_images/plot_lle_digits_0071.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
 <div class="section" id="id4">
 <h3>2.2.4.1. Complexity<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
@@ -376,7 +376,7 @@ It requires <tt class="docutils literal"><span class="pre">n_neighbors</span> <s
 <ol class="arabic simple">
 <li><strong>Nearest Neighbors Search</strong>.  Same as standard LLE</li>
 <li><strong>Weight Matrix Construction</strong>. Approximately
-<img class="math" src="../_images/math/29e54135d63cd3804df6986c91488360f24008fd.png" alt="O[D N k^3] + O[N (k-D) k^2]"/>.  The first term is exactly equivalent
+<img class="math" src="../_images/math/8ef8a9d2f7ba0266cfce9a2ef0339880e60c0c3a.png" alt="O[D N k^3] + O[N (k-D) k^2]"/>.  The first term is exactly equivalent
 to that of standard LLE.  The second term has to do with constructing the
 weight matrix from multiple weights.  In practice, the added cost of
 constructing the MLLE weight matrix is relatively small compared to the
@@ -384,12 +384,12 @@ cost of steps 1 and 3.</li>
 <li><strong>Partial Eigenvalue Decomposition</strong>. Same as standard LLE</li>
 </ol>
 <p>The overall complexity of MLLE is
-<img class="math" src="../_images/math/12934fe0b6fd78ffdbf076ed359cc8fb9a103848.png" alt="O[D \log(k) N \log(N)] + O[D N k^3] + O[N (k-D) k^2] + O[d N^2]"/>.</p>
+<img class="math" src="../_images/math/58b96b103f3380efb60e88163d7ff45234bc6c51.png" alt="O[D \log(k) N \log(N)] + O[D N k^3] + O[N (k-D) k^2] + O[d N^2]"/>.</p>
 <ul class="simple">
-<li><img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> : number of training data points</li>
-<li><img class="math" src="../_images/math/9dfa31437b58c0473299320aa638151cd88cf61b.png" alt="D"/> : input dimension</li>
-<li><img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> : number of nearest neighbors</li>
-<li><img class="math" src="../_images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/> : output dimension</li>
+<li><img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> : number of training data points</li>
+<li><img class="math" src="../_images/math/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="D"/> : input dimension</li>
+<li><img class="math" src="../_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k"/> : number of nearest neighbors</li>
+<li><img class="math" src="../_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d"/> : output dimension</li>
 </ul>
 <div class="topic">
 <p class="topic-title first">References:</p>
@@ -413,7 +413,7 @@ for small output dimension.  HLLE can be  performed with function
 <a class="reference internal" href="generated/sklearn.manifold.LocallyLinearEmbedding.html#sklearn.manifold.LocallyLinearEmbedding" title="sklearn.manifold.LocallyLinearEmbedding"><tt class="xref py py-class docutils literal"><span class="pre">LocallyLinearEmbedding</span></tt></a>, with the keyword <tt class="docutils literal"><span class="pre">method</span> <span class="pre">=</span> <span class="pre">'hessian'</span></tt>.
 It requires <tt class="docutils literal"><span class="pre">n_neighbors</span> <span class="pre">&gt;</span> <span class="pre">n_components</span> <span class="pre">*</span> <span class="pre">(n_components</span> <span class="pre">+</span> <span class="pre">3)</span> <span class="pre">/</span> <span class="pre">2</span></tt>.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_008.png" src="../_images/plot_lle_digits_008.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_0081.png" src="../_images/plot_lle_digits_0081.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
 <div class="section" id="id5">
 <h3>2.2.5.1. Complexity<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
@@ -421,18 +421,18 @@ It requires <tt class="docutils literal"><span class="pre">n_neighbors</span> <s
 <ol class="arabic simple">
 <li><strong>Nearest Neighbors Search</strong>.  Same as standard LLE</li>
 <li><strong>Weight Matrix Construction</strong>. Approximately
-<img class="math" src="../_images/math/5456e49de4bec0eee990f7c9b98afcd14f68aad1.png" alt="O[D N k^3] + O[N d^6]"/>.  The first term reflects a similar
+<img class="math" src="../_images/math/6ea1cb7c15c3e5ad834b0fb34549b764f13890b6.png" alt="O[D N k^3] + O[N d^6]"/>.  The first term reflects a similar
 cost to that of standard LLE.  The second term comes from a QR
 decomposition of the local hessian estimator.</li>
 <li><strong>Partial Eigenvalue Decomposition</strong>. Same as standard LLE</li>
 </ol>
 <p>The overall complexity of standard HLLE is
-<img class="math" src="../_images/math/845e2e1ea01544e0d335c7b2d48981e335cba4e1.png" alt="O[D \log(k) N \log(N)] + O[D N k^3] + O[N d^6] + O[d N^2]"/>.</p>
+<img class="math" src="../_images/math/8d7fa9e2b4599b4dc501426e5ed0c4ff25ceca3c.png" alt="O[D \log(k) N \log(N)] + O[D N k^3] + O[N d^6] + O[d N^2]"/>.</p>
 <ul class="simple">
-<li><img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> : number of training data points</li>
-<li><img class="math" src="../_images/math/9dfa31437b58c0473299320aa638151cd88cf61b.png" alt="D"/> : input dimension</li>
-<li><img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> : number of nearest neighbors</li>
-<li><img class="math" src="../_images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/> : output dimension</li>
+<li><img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> : number of training data points</li>
+<li><img class="math" src="../_images/math/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="D"/> : input dimension</li>
+<li><img class="math" src="../_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k"/> : number of nearest neighbors</li>
+<li><img class="math" src="../_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d"/> : output dimension</li>
 </ul>
 <div class="topic">
 <p class="topic-title first">References:</p>
@@ -463,18 +463,18 @@ function <a class="reference internal" href="generated/sklearn.manifold.spectral
 <li><strong>Weighted Graph Construction</strong>. Transform the raw input data into
 graph representation using affinity (adjacency) matrix representation.</li>
 <li><strong>Graph Laplacian Construction</strong>. unnormalized Graph Laplacian
-is constructed as <img class="math" src="../_images/math/04d0112aa0308b04992746d5020cf9a2940fc1a1.png" alt="L = D - A"/> for and normalized one as
-<img class="math" src="../_images/math/f50254c0b168d61d990acac162a65694626dd16f.png" alt="L = D^{-\frac{1}{2}} (D - A) D^{-\frac{1}{2}}"/>.</li>
+is constructed as <img class="math" src="../_images/math/a3b48be1e364c4c250dbb3ca7ee426b5fe39ebd3.png" alt="L = D - A"/> for and normalized one as
+<img class="math" src="../_images/math/43ddb8c871de20b37f35c5ba754b12cfdc2d5b84.png" alt="L = D^{-\frac{1}{2}} (D - A) D^{-\frac{1}{2}}"/>.</li>
 <li><strong>Partial Eigenvalue Decomposition</strong>. Eigenvalue decomposition is
 done on graph Laplacian</li>
 </ol>
 <p>The overall complexity of spectral embedding is
-<img class="math" src="../_images/math/ff9da5d2add368dd1270ed207ae10e8ca80b4620.png" alt="O[D \log(k) N \log(N)] + O[D N k^3] + O[d N^2]"/>.</p>
+<img class="math" src="../_images/math/f25c41ecaf087953402b078828ee8c6f486bcf45.png" alt="O[D \log(k) N \log(N)] + O[D N k^3] + O[d N^2]"/>.</p>
 <ul class="simple">
-<li><img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> : number of training data points</li>
-<li><img class="math" src="../_images/math/9dfa31437b58c0473299320aa638151cd88cf61b.png" alt="D"/> : input dimension</li>
-<li><img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> : number of nearest neighbors</li>
-<li><img class="math" src="../_images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/> : output dimension</li>
+<li><img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> : number of training data points</li>
+<li><img class="math" src="../_images/math/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="D"/> : input dimension</li>
+<li><img class="math" src="../_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k"/> : number of nearest neighbors</li>
+<li><img class="math" src="../_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d"/> : output dimension</li>
 </ul>
 <div class="topic">
 <p class="topic-title first">References:</p>
@@ -497,7 +497,7 @@ tangent spaces to learn the embedding.  LTSA can be performed with function
 <a class="reference internal" href="generated/sklearn.manifold.locally_linear_embedding.html#sklearn.manifold.locally_linear_embedding" title="sklearn.manifold.locally_linear_embedding"><tt class="xref py py-func docutils literal"><span class="pre">locally_linear_embedding</span></tt></a> or its object-oriented counterpart
 <a class="reference internal" href="generated/sklearn.manifold.LocallyLinearEmbedding.html#sklearn.manifold.LocallyLinearEmbedding" title="sklearn.manifold.LocallyLinearEmbedding"><tt class="xref py py-class docutils literal"><span class="pre">LocallyLinearEmbedding</span></tt></a>, with the keyword <tt class="docutils literal"><span class="pre">method</span> <span class="pre">=</span> <span class="pre">'ltsa'</span></tt>.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_009.png" src="../_images/plot_lle_digits_009.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_0091.png" src="../_images/plot_lle_digits_0091.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
 <div class="section" id="id8">
 <h3>2.2.7.1. Complexity<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
@@ -505,17 +505,17 @@ tangent spaces to learn the embedding.  LTSA can be performed with function
 <ol class="arabic simple">
 <li><strong>Nearest Neighbors Search</strong>.  Same as standard LLE</li>
 <li><strong>Weight Matrix Construction</strong>. Approximately
-<img class="math" src="../_images/math/53b01f9fa2117421f78360d9411c0944e9dc643b.png" alt="O[D N k^3] + O[k^2 d]"/>.  The first term reflects a similar
+<img class="math" src="../_images/math/e260aa4d522200a255b06dca42d69f1852612182.png" alt="O[D N k^3] + O[k^2 d]"/>.  The first term reflects a similar
 cost to that of standard LLE.</li>
 <li><strong>Partial Eigenvalue Decomposition</strong>. Same as standard LLE</li>
 </ol>
 <p>The overall complexity of standard LTSA is
-<img class="math" src="../_images/math/862543c637da17a6638dcc8fba6ba3eba91e19e9.png" alt="O[D \log(k) N \log(N)] + O[D N k^3] + O[k^2 d] + O[d N^2]"/>.</p>
+<img class="math" src="../_images/math/4a66f1945d28d61ea8f51a74fad433334ea65f14.png" alt="O[D \log(k) N \log(N)] + O[D N k^3] + O[k^2 d] + O[d N^2]"/>.</p>
 <ul class="simple">
-<li><img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> : number of training data points</li>
-<li><img class="math" src="../_images/math/9dfa31437b58c0473299320aa638151cd88cf61b.png" alt="D"/> : input dimension</li>
-<li><img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> : number of nearest neighbors</li>
-<li><img class="math" src="../_images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/> : output dimension</li>
+<li><img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> : number of training data points</li>
+<li><img class="math" src="../_images/math/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="D"/> : input dimension</li>
+<li><img class="math" src="../_images/math/8c325612684d41304b9751c175df7bcc0f61f64f.png" alt="k"/> : number of nearest neighbors</li>
+<li><img class="math" src="../_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d"/> : output dimension</li>
 </ul>
 <div class="topic">
 <p class="topic-title first">References:</p>
@@ -547,31 +547,31 @@ version, the algorithms will try to preserve the order of the distances, and
 hence seek for a monotonic relationship between the distances in the embedded
 space and the similarities/dissimilarities.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_010.png" src="../_images/plot_lle_digits_010.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_0101.png" src="../_images/plot_lle_digits_0101.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
-<p>Let <img class="math" src="../_images/math/11a85f3c69ae6702cb1d99d3de451913b8f84c04.png" alt="S"/> be the similarity matrix, and <img class="math" src="../_images/math/f026aecf11ec7f6141ab863f260d395f94b10f51.png" alt="X"/> the coordinates of the
-<img class="math" src="../_images/math/413f8a8e40062a9090d9d50b88bc7b551b314c26.png" alt="n"/> input points. Disparities <img class="math" src="../_images/math/6c7d2637152e02294a8ed8c9d3ea8405477850c7.png" alt="\hat{d}_{ij}"/> are transformation of
+<p>Let <img class="math" src="../_images/math/ad28c83c99a8fd0dd2e2e594c9d02ee532765a0a.png" alt="S"/> be the similarity matrix, and <img class="math" src="../_images/math/6a47ca0fe7cb276abc022af6ac88ddae1a9d6894.png" alt="X"/> the coordinates of the
+<img class="math" src="../_images/math/174fadd07fd54c9afe288e96558c92e0c1da733a.png" alt="n"/> input points. Disparities <img class="math" src="../_images/math/fa23e92d42083e8ab16dcd96a182930a7e416975.png" alt="\hat{d}_{ij}"/> are transformation of
 the similarities chosen in some optimal ways. The objective, called the
-stress, is then defined by <img class="math" src="../_images/math/884901a21146169667a13d451f698cd2eaedc562.png" alt="sum_{i &lt; j} d_{ij}(X) - \hat{d}_{ij}(X)"/></p>
+stress, is then defined by <img class="math" src="../_images/math/7b4069328fe8ee4dc959c1f55b2879b7e6371250.png" alt="sum_{i &lt; j} d_{ij}(X) - \hat{d}_{ij}(X)"/></p>
 <div class="section" id="metric-mds">
 <h3>2.2.8.1. Metric MDS<a class="headerlink" href="#metric-mds" title="Permalink to this headline">¶</a></h3>
 <p>The simplest metric <a class="reference internal" href="generated/sklearn.manifold.MDS.html#sklearn.manifold.MDS" title="sklearn.manifold.MDS"><tt class="xref py py-class docutils literal"><span class="pre">MDS</span></tt></a> model, called <em>absolute MDS</em>, disparities are defined by
-<img class="math" src="../_images/math/696714a8601d918119e572ede96326acbb6b945e.png" alt="\hat{d}_{ij} = S_{ij}"/>. With absolute MDS, the value <img class="math" src="../_images/math/da8ec41d380197365d9c7cd81b18bc69a81fe837.png" alt="S_{ij}"/>
-should then correspond exactly to the distance between point <img class="math" src="../_images/math/a581f053bbfa5115f42c13094857cdd12a37ec49.png" alt="i"/> and
-<img class="math" src="../_images/math/d32c78b759903e3f4bd4fd2ce0b86358f7500c5d.png" alt="j"/> in the embedding point.</p>
-<p>Most commonly, disparities are set to <img class="math" src="../_images/math/c61dad96aa06794917d7bff7d5e9962533ef8f43.png" alt="\hat{d}_{ij} = b S_{ij}"/>.</p>
+<img class="math" src="../_images/math/c15c5f9ba99b2e9c01c4a8d3198d2c9f9550f28a.png" alt="\hat{d}_{ij} = S_{ij}"/>. With absolute MDS, the value <img class="math" src="../_images/math/fc6fb3ab34757b7bcd2cc3486311053b169705da.png" alt="S_{ij}"/>
+should then correspond exactly to the distance between point <img class="math" src="../_images/math/34857b3ba74ce5cd8607f3ebd23e9015908ada71.png" alt="i"/> and
+<img class="math" src="../_images/math/8122aa89ea6e80784c6513d22787ad86e36ad0cc.png" alt="j"/> in the embedding point.</p>
+<p>Most commonly, disparities are set to <img class="math" src="../_images/math/0825b71c3967e2b09382a954634692befe9ef109.png" alt="\hat{d}_{ij} = b S_{ij}"/>.</p>
 </div>
 <div class="section" id="nonmetric-mds">
 <h3>2.2.8.2. Nonmetric MDS<a class="headerlink" href="#nonmetric-mds" title="Permalink to this headline">¶</a></h3>
 <p>Non metric <a class="reference internal" href="generated/sklearn.manifold.MDS.html#sklearn.manifold.MDS" title="sklearn.manifold.MDS"><tt class="xref py py-class docutils literal"><span class="pre">MDS</span></tt></a> focuses on the ordination of the data. If
-<img class="math" src="../_images/math/eb5c3fe273ef61963ce79f9cdd519ec892e6b105.png" alt="S_{ij} &lt; S_{kl}"/>, then the embedding should enforce <img class="math" src="../_images/math/8aaa0feea874e9e38e7a258cc59650b068dd257c.png" alt="d_{ij} &lt;
+<img class="math" src="../_images/math/c8f7245f6e1d9d54f499875c77190889b00c6bdd.png" alt="S_{ij} &lt; S_{kl}"/>, then the embedding should enforce <img class="math" src="../_images/math/effa2e398cfd0d4e8aef3f9f9c4134a0c29912b0.png" alt="d_{ij} &lt;
 d_{jk}"/>. A simple algorithm to enforce that is to use a monotonic regression
-of <img class="math" src="../_images/math/a645d3806f9b2ede11f714ac9fd34fd142bb30d8.png" alt="d_{ij}"/> on <img class="math" src="../_images/math/da8ec41d380197365d9c7cd81b18bc69a81fe837.png" alt="S_{ij}"/>, yielding disparities <img class="math" src="../_images/math/6c7d2637152e02294a8ed8c9d3ea8405477850c7.png" alt="\hat{d}_{ij}"/>
-in the same order as <img class="math" src="../_images/math/da8ec41d380197365d9c7cd81b18bc69a81fe837.png" alt="S_{ij}"/>.</p>
+of <img class="math" src="../_images/math/4fe72f28a9fe0a456173c9287d7a195c663e171b.png" alt="d_{ij}"/> on <img class="math" src="../_images/math/fc6fb3ab34757b7bcd2cc3486311053b169705da.png" alt="S_{ij}"/>, yielding disparities <img class="math" src="../_images/math/fa23e92d42083e8ab16dcd96a182930a7e416975.png" alt="\hat{d}_{ij}"/>
+in the same order as <img class="math" src="../_images/math/fc6fb3ab34757b7bcd2cc3486311053b169705da.png" alt="S_{ij}"/>.</p>
 <p>A trivial solution to this problem is to set all the points on the origin. In
-order to avoid that, the disparities <img class="math" src="../_images/math/6c7d2637152e02294a8ed8c9d3ea8405477850c7.png" alt="\hat{d}_{ij}"/> are normalized.</p>
+order to avoid that, the disparities <img class="math" src="../_images/math/fa23e92d42083e8ab16dcd96a182930a7e416975.png" alt="\hat{d}_{ij}"/> are normalized.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/manifold/plot_mds.html"><img alt="../_images/plot_mds_001.png" src="../_images/plot_mds_001.png" style="width: 480.0px; height: 360.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/manifold/plot_mds.html"><img alt="../_images/plot_mds_0011.png" src="../_images/plot_mds_0011.png" style="width: 480.0px; height: 360.0px;" /></a>
 </div>
 <div class="topic">
 <p class="topic-title first">References:</p>
@@ -598,7 +598,7 @@ multiple restarts with different initializations will end up in local minima
 of the KL divergence. Hence, it is sometimes useful to try different seeds
 and select the embedding with the lowest KL divergence.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_013.png" src="../_images/plot_lle_digits_013.png" style="width: 400.0px; height: 300.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/manifold/plot_lle_digits.html"><img alt="../_images/plot_lle_digits_0131.png" src="../_images/plot_lle_digits_0131.png" style="width: 400.0px; height: 300.0px;" /></a>
 </div>
 <p>The main purpose of t-SNE is visualization of high-dimensional data. Hence,
 it works best when the data will be embedded on two or three dimensions.</p>
@@ -622,8 +622,8 @@ divergence will increase during optimization. More tips can be found in
 Laurens van der Maaten&#8217;s FAQ (see references).</p>
 <p>Standard t-SNE that has been implemented here is usually much slower than
 other manifold learning algorithms. The optimization is quite difficult
-and the computation of the gradient is on <img class="math" src="../_images/math/ecaf3ef86f6fd84b69074f272980febf7c6148ae.png" alt="O[d N^2]"/>, where <img class="math" src="../_images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/>
-is the number of output dimensions and <img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> is the number of samples.</p>
+and the computation of the gradient is on <img class="math" src="../_images/math/44ff8882aaedb0d90ea661dcb275dfcf7c0038f5.png" alt="O[d N^2]"/>, where <img class="math" src="../_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d"/>
+is the number of output dimensions and <img class="math" src="../_images/math/fc97ef67268cd4e91bacdf12b8901d7036c9a056.png" alt="N"/> is the number of samples.</p>
 <p>While Isomap, LLE and variants are best suited to unfold a single continuous
 low dimensional manifold, t-SNE will focus on the local structure of the data
 and will tend to extract clustered local groups of samples as highlighted on
@@ -658,8 +658,8 @@ learning methods are based on a nearest-neighbor search, the algorithm
 may perform poorly otherwise.  See <a class="reference internal" href="preprocessing.html#preprocessing-scaler"><em>StandardScaler</em></a>
 for convenient ways of scaling heterogeneous data.</li>
 <li>The reconstruction error computed by each routine can be used to choose
-the optimal output dimension.  For a <img class="math" src="../_images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/>-dimensional manifold embedded
-in a <img class="math" src="../_images/math/9dfa31437b58c0473299320aa638151cd88cf61b.png" alt="D"/>-dimensional parameter space, the reconstruction error will
+the optimal output dimension.  For a <img class="math" src="../_images/math/96ab646de7704969b91c76a214126b45f2b07b25.png" alt="d"/>-dimensional manifold embedded
+in a <img class="math" src="../_images/math/9ffb448918db29f2a72f8f87f421b3b3cad18f95.png" alt="D"/>-dimensional parameter space, the reconstruction error will
 decrease as <tt class="docutils literal"><span class="pre">n_components</span></tt> is increased until <tt class="docutils literal"><span class="pre">n_components</span> <span class="pre">==</span> <span class="pre">d</span></tt>.</li>
 <li>Note that noisy data can &#8220;short-circuit&#8221; the manifold, in essence acting
 as a bridge between parts of the manifold that would otherwise be

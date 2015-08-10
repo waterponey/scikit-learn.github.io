@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Faces dataset de...
+        Faces dataset...
         </span>
             <span class="hiddenrellink">
             Faces dataset decompositions
@@ -188,7 +188,7 @@ it can produce a suggestive output with very high speed, and thus be useful
 for other tasks such as object classification, where performance is not
 necessarily related to visualisation.</p>
 <ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_image_denoising_0011.png"><img alt="../../_images/plot_image_denoising_0011.png" src="../../_images/plot_image_denoising_0011.png" style="width: 197.4px; height: 188.0px;" /></a>
+<li><a class="first reference internal image-reference" href="../../_images/plot_image_denoising_001.png"><img alt="../../_images/plot_image_denoising_001.png" src="../../_images/plot_image_denoising_001.png" style="width: 197.4px; height: 188.0px;" /></a>
 </li>
 <li><a class="first reference internal image-reference" href="../../_images/plot_image_denoising_002.png"><img alt="../../_images/plot_image_denoising_002.png" src="../../_images/plot_image_denoising_002.png" style="width: 235.0px; height: 155.1px;" /></a>
 </li>
@@ -202,26 +202,25 @@ necessarily related to visualisation.</p>
 </li>
 </ul>
 <p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Distorting image...
+<div class="highlight-python"><pre>Distorting image...
 Extracting reference patches...
 done in 0.02s.
 Learning the dictionary...
-done in 6.76s.
+done in 7.05s.
 Extracting noisy patches...
 done in 0.01s.
 Orthogonal Matching Pursuit
 1 atom...
-done in 3.64s.
+done in 3.79s.
 Orthogonal Matching Pursuit
 2 atoms...
-done in 10.89s.
+done in 5.64s.
 Least-angle regression
 5 atoms...
-done in 27.84s.
+done in 31.13s.
 Thresholding
  alpha=0.1...
-done in 0.70s.
-</pre></div>
+done in 0.68s.</pre>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_image_denoising.py"><tt class="xref download docutils literal"><span class="pre">plot_image_denoising.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
@@ -239,7 +238,6 @@ done in 0.70s.
 
 <span class="c">###############################################################################</span>
 <span class="c"># Load Lena image and extract patches</span>
-
 <a href="http://docs.scipy.org/doc/scipy-0.11.0/reference/generated/scipy.misc.lena.html#scipy.misc.lena"><span class="n">lena</span></a> <span class="o">=</span> <a href="http://docs.scipy.org/doc/scipy-0.11.0/reference/generated/scipy.misc.lena.html#scipy.misc.lena"><span class="n">lena</span></a><span class="p">()</span> <span class="o">/</span> <span class="mf">256.0</span>
 
 <span class="c"># downsample for higher speed</span>
@@ -357,8 +355,8 @@ done in 0.70s.
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  55.30 seconds
-( 0 minutes  55.30 seconds)</p>
+<p><strong>Total running time of the example:</strong>  53.38 seconds
+( 0 minutes  53.38 seconds)</p>
 </div>
 
 

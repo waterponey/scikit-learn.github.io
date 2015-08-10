@@ -36,7 +36,7 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="Robust Scaling on Toy Data" href="../preprocessing/plot_robust_scaling.html" />
+    <link rel="next" title="Using FunctionTransformer to select columns" href="../preprocessing/plot_function_transformer.html" />
     <link rel="prev" title="Scalability of Approximate Nearest Neighbors" href="../neighbors/plot_approximate_nearest_neighbors_scalability.html" />
   
   
@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Scalability of A...
+        Scalability o...
         </span>
             <span class="hiddenrellink">
             Scalability of Approximate Nearest Neighbors
@@ -183,26 +183,26 @@ example shows that the features extracted by the BernoulliRBM help improve the
 classification accuracy.</p>
 <img alt="../../_images/plot_rbm_logistic_classification_001.png" class="align-center" src="../../_images/plot_rbm_logistic_classification_001.png" />
 <p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>[BernoulliRBM] Iteration 1, pseudo-likelihood = -25.39, time = 0.60s
-[BernoulliRBM] Iteration 2, pseudo-likelihood = -23.77, time = 0.86s
-[BernoulliRBM] Iteration 3, pseudo-likelihood = -22.94, time = 0.99s
-[BernoulliRBM] Iteration 4, pseudo-likelihood = -21.91, time = 0.85s
-[BernoulliRBM] Iteration 5, pseudo-likelihood = -21.69, time = 0.87s
-[BernoulliRBM] Iteration 6, pseudo-likelihood = -21.06, time = 0.86s
-[BernoulliRBM] Iteration 7, pseudo-likelihood = -20.89, time = 0.79s
-[BernoulliRBM] Iteration 8, pseudo-likelihood = -20.64, time = 0.82s
+<div class="highlight-python"><pre>[BernoulliRBM] Iteration 1, pseudo-likelihood = -25.39, time = 0.57s
+[BernoulliRBM] Iteration 2, pseudo-likelihood = -23.77, time = 0.81s
+[BernoulliRBM] Iteration 3, pseudo-likelihood = -22.94, time = 0.82s
+[BernoulliRBM] Iteration 4, pseudo-likelihood = -21.91, time = 0.81s
+[BernoulliRBM] Iteration 5, pseudo-likelihood = -21.69, time = 0.82s
+[BernoulliRBM] Iteration 6, pseudo-likelihood = -21.06, time = 0.85s
+[BernoulliRBM] Iteration 7, pseudo-likelihood = -20.89, time = 0.84s
+[BernoulliRBM] Iteration 8, pseudo-likelihood = -20.64, time = 0.81s
 [BernoulliRBM] Iteration 9, pseudo-likelihood = -20.36, time = 0.82s
 [BernoulliRBM] Iteration 10, pseudo-likelihood = -20.09, time = 0.83s
-[BernoulliRBM] Iteration 11, pseudo-likelihood = -20.08, time = 0.99s
-[BernoulliRBM] Iteration 12, pseudo-likelihood = -19.82, time = 0.83s
-[BernoulliRBM] Iteration 13, pseudo-likelihood = -19.64, time = 0.86s
-[BernoulliRBM] Iteration 14, pseudo-likelihood = -19.61, time = 0.92s
-[BernoulliRBM] Iteration 15, pseudo-likelihood = -19.57, time = 1.01s
-[BernoulliRBM] Iteration 16, pseudo-likelihood = -19.41, time = 1.15s
-[BernoulliRBM] Iteration 17, pseudo-likelihood = -19.30, time = 1.04s
-[BernoulliRBM] Iteration 18, pseudo-likelihood = -19.25, time = 0.82s
-[BernoulliRBM] Iteration 19, pseudo-likelihood = -19.27, time = 0.82s
-[BernoulliRBM] Iteration 20, pseudo-likelihood = -19.01, time = 0.84s
+[BernoulliRBM] Iteration 11, pseudo-likelihood = -20.08, time = 0.83s
+[BernoulliRBM] Iteration 12, pseudo-likelihood = -19.82, time = 0.85s
+[BernoulliRBM] Iteration 13, pseudo-likelihood = -19.64, time = 0.81s
+[BernoulliRBM] Iteration 14, pseudo-likelihood = -19.61, time = 0.82s
+[BernoulliRBM] Iteration 15, pseudo-likelihood = -19.57, time = 0.82s
+[BernoulliRBM] Iteration 16, pseudo-likelihood = -19.41, time = 0.84s
+[BernoulliRBM] Iteration 17, pseudo-likelihood = -19.30, time = 0.85s
+[BernoulliRBM] Iteration 18, pseudo-likelihood = -19.25, time = 0.85s
+[BernoulliRBM] Iteration 19, pseudo-likelihood = -19.27, time = 0.83s
+[BernoulliRBM] Iteration 20, pseudo-likelihood = -19.01, time = 0.80s
 
 Logistic regression using RBM features:
              precision    recall  f1-score   support
@@ -235,8 +235,7 @@ Logistic regression using raw pixel features:
           8       0.68      0.55      0.61       182
           9       0.71      0.74      0.72       169
 
-avg / total       0.77      0.77      0.77      1797
-</pre></div>
+avg / total       0.77      0.77      0.77      1797</pre>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_rbm_logistic_classification.py"><tt class="xref download docutils literal"><span class="pre">plot_rbm_logistic_classification.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
@@ -355,8 +354,8 @@ avg / total       0.77      0.77      0.77      1797
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  52.37 seconds
-( 0 minutes  52.37 seconds)</p>
+<p><strong>Total running time of the example:</strong>  48.26 seconds
+( 0 minutes  48.26 seconds)</p>
 </div>
 
 

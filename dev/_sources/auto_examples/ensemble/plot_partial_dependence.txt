@@ -81,6 +81,6 @@ on age.
 .. literalinclude:: plot_partial_dependence.py
     :lines: 47-
 
-**Total running time of the example:**  4.65 seconds
-( 0 minutes  4.65 seconds)
+**Total running time of the example:**  5.44 seconds
+( 0 minutes  5.44 seconds)
     

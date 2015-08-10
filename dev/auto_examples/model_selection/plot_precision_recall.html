@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Receiver Operati...
+        Receiver Oper...
         </span>
             <span class="hiddenrellink">
             Receiver Operating Characteristic (ROC)
@@ -180,25 +180,25 @@ system with high precision but low recall is just the opposite, returning very
 few results, but most of its predicted labels are correct when compared to the
 training labels. An ideal system with high precision and high recall will
 return many results, with all results labeled correctly.</p>
-<p>Precision (<img class="math" src="../../_images/math/f48b617185733d8dd6712643f1ab17c736661a06.png" alt="P"/>) is defined as the number of true positives (<img class="math" src="../../_images/math/d3a93ce5fdd86a1a6cea538e4b3ad7616156ff25.png" alt="T_p"/>)
+<p>Precision (<img class="math" src="../../_images/math/4b4cade9ca8a2c8311fafcf040bc5b15ca507f52.png" alt="P"/>) is defined as the number of true positives (<img class="math" src="../../_images/math/3e491952b676db6942353d75fc8bd8e4e97f7016.png" alt="T_p"/>)
 over the number of true positives plus the number of false positives
-(<img class="math" src="../../_images/math/c65c2d023af7f064e3391aa7678358f3ed1ff117.png" alt="F_p"/>).</p>
-<p><img class="math" src="../../_images/math/cfe9bd9df7580025210fdf53add52cb820e6872f.png" alt="P = \frac{T_p}{T_p+F_p}"/></p>
-<p>Recall (<img class="math" src="../../_images/math/9d86170e7de539c0ff999de09621ee0c7b6c8ed0.png" alt="R"/>) is defined as the number of true positives (<img class="math" src="../../_images/math/d3a93ce5fdd86a1a6cea538e4b3ad7616156ff25.png" alt="T_p"/>)
+(<img class="math" src="../../_images/math/2dc5fbc7ac555901d4c3e32537a048fc4efc994d.png" alt="F_p"/>).</p>
+<p><img class="math" src="../../_images/math/604865071578257a1483272d83335b0d9dfe02bb.png" alt="P = \frac{T_p}{T_p+F_p}"/></p>
+<p>Recall (<img class="math" src="../../_images/math/eff43e84f8a3bcf7b6965f0a3248bc4d3a9d0cd4.png" alt="R"/>) is defined as the number of true positives (<img class="math" src="../../_images/math/3e491952b676db6942353d75fc8bd8e4e97f7016.png" alt="T_p"/>)
 over the number of true positives plus the number of false negatives
-(<img class="math" src="../../_images/math/bacdaf2f979238c05ec1690cd4777be7056b07d7.png" alt="F_n"/>).</p>
-<p><img class="math" src="../../_images/math/f8d5d8d5e7d9ea881f1b65e56a38ae02156a773f.png" alt="R = \frac{T_p}{T_p + F_n}"/></p>
-<p>These quantities are also related to the (<img class="math" src="../../_images/math/86b53a99470bfe410dd9108afdb7a4464f2461fb.png" alt="F_1"/>) score, which is defined
+(<img class="math" src="../../_images/math/b842b4552478b69732a9aea702309d8c51e43056.png" alt="F_n"/>).</p>
+<p><img class="math" src="../../_images/math/7359b88b0a72635f8515e469479131cebb84eef1.png" alt="R = \frac{T_p}{T_p + F_n}"/></p>
+<p>These quantities are also related to the (<img class="math" src="../../_images/math/3a2731abbb0e2524327bba81e355d6d886e5a6cb.png" alt="F_1"/>) score, which is defined
 as the harmonic mean of precision and recall.</p>
-<p><img class="math" src="../../_images/math/51b9aeb9655b757d685a814093e49924caee8e33.png" alt="F1 = 2\frac{P \times R}{P+R}"/></p>
+<p><img class="math" src="../../_images/math/8e4fea673f93f46566550b399925942b0ee207f3.png" alt="F1 = 2\frac{P \times R}{P+R}"/></p>
 <p>It is important to note that the precision may not decrease with recall. The
-definition of precision (<img class="math" src="../../_images/math/d07adc1a4155b273cdcd51dabb24c19b31c436a4.png" alt="\frac{T_p}{T_p + F_p}"/>) shows that lowering
+definition of precision (<img class="math" src="../../_images/math/214aa62f8d4d30d3d7bb2df54e97553fe965afbc.png" alt="\frac{T_p}{T_p + F_p}"/>) shows that lowering
 the threshold of a classifier may increase the denominator, by increasing the
 number of results returned. If the threshold was previously set too high, the
 new results may all be true positives, which will increase precision. If the
 previous threshold was about right or too low, further lowering the threshold
 will introduce false positives, decreasing precision.</p>
-<p>Recall is defined as <img class="math" src="../../_images/math/43632e5e903214a015edb525608b1996530563d9.png" alt="\frac{T_p}{T_p+F_n}"/>, where <img class="math" src="../../_images/math/8cd6937b04645af63fcf95a6a147ff833b150ace.png" alt="T_p+F_n"/> does
+<p>Recall is defined as <img class="math" src="../../_images/math/727089e56f893de865890ab24cc7a5c112f14664.png" alt="\frac{T_p}{T_p+F_n}"/>, where <img class="math" src="../../_images/math/5c4f67017689519fb197929e6e36a1593490700c.png" alt="T_p+F_n"/> does
 not depend on the classifier threshold. This means that lowering the classifier
 threshold may increase recall, by increasing the number of true positive
 results. It is also possible that lowering the threshold may leave recall
@@ -304,8 +304,8 @@ matrix as a binary prediction (micro-averaging).</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.30 seconds
-( 0 minutes  0.30 seconds)</p>
+<p><strong>Total running time of the example:</strong>  0.28 seconds
+( 0 minutes  0.28 seconds)</p>
 </div>
 
 

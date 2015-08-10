@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.cluster....
+        sklearn.clust...
         </span>
             <span class="hiddenrellink">
             sklearn.cluster.k_means
@@ -168,7 +168,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.cluster" title="sklearn.cluster"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></tt></a>.ward_tree<a class="headerlink" href="#sklearn-cluster-ward-tree" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.cluster.ward_tree">
-<tt class="descclassname">sklearn.cluster.</tt><tt class="descname">ward_tree</tt><big>(</big><em>X</em>, <em>connectivity=None</em>, <em>n_components=None</em>, <em>n_clusters=None</em>, <em>return_distance=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/cluster/hierarchical.py#L89"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.ward_tree" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.cluster.</tt><tt class="descname">ward_tree</tt><big>(</big><em>X</em>, <em>connectivity=None</em>, <em>n_components=None</em>, <em>n_clusters=None</em>, <em>return_distance=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/cluster/hierarchical.py#L89"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.ward_tree" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ward clustering based on a Feature matrix.</p>
 <p>Recursively merges the pair of clusters that minimally increases
 within-cluster variance.</p>
@@ -244,18 +244,18 @@ the nodes <cite>children[i, 1]</cite> and <cite>children[i, 2]</cite>. If the no
 leaves of the tree, then <cite>distances[i]</cite> is their unweighted euclidean
 distance. Distances are updated in the following way
 (from scipy.hierarchy.linkage):</p>
-<p>The new entry <img class="math" src="../../_images/math/97b17ba426e816881f89900ee53da726840e79e7.png" alt="d(u,v)"/> is computed as follows,</p>
+<p>The new entry <img class="math" src="../../_images/math/5311680eb59da6c8910ca10db72f4aaedcdf9ba1.png" alt="d(u,v)"/> is computed as follows,</p>
 <div class="math">
-<p><img src="../../_images/math/aee98367dcd43a9677b3447ee9c5853812db77f8.png" alt="d(u,v) = \sqrt{\frac{|v|+|s|}
+<p><img src="../../_images/math/cfcffba13c80727a791720593a4cf2817e2a4573.png" alt="d(u,v) = \sqrt{\frac{|v|+|s|}
                     {T}d(v,s)^2
              + \frac{|v|+|t|}
                     {T}d(v,t)^2
              - \frac{|v|}
                     {T}d(s,t)^2}"/></p>
-</div><p>where <img class="math" src="../../_images/math/e5fc41b391867da81606413e3389c7efc73abaf0.png" alt="u"/> is the newly joined cluster consisting of
-clusters <img class="math" src="../../_images/math/6859317dd1b439cef34131bcd4bafee8393444e0.png" alt="s"/> and <img class="math" src="../../_images/math/ef9270877405055756d345facd044e4ab297f858.png" alt="t"/>, <img class="math" src="../../_images/math/0e22076955898e6c9bb38aa079135195c24dc81e.png" alt="v"/> is an unused
-cluster in the forest, <img class="math" src="../../_images/math/5c35be80517ffef4a33d6d5d72e68bbdbd0aab1b.png" alt="T=|v|+|s|+|t|"/>, and
-<img class="math" src="../../_images/math/24ebde4aa6565bb26051379bbc4bc07867b22c0d.png" alt="|*|"/> is the cardinality of its argument. This is also
+</div><p>where <img class="math" src="../../_images/math/9ad99798ec4c38e165cf517cb9e02b1c9e824103.png" alt="u"/> is the newly joined cluster consisting of
+clusters <img class="math" src="../../_images/math/f37bba504894945c07a32f5496d74299a37aa51c.png" alt="s"/> and <img class="math" src="../../_images/math/e0d2bf360290fd61d1c1557e763f2622363b3d35.png" alt="t"/>, <img class="math" src="../../_images/math/a9f23bf124b6b2b2a993eb313c72e678664ac74a.png" alt="v"/> is an unused
+cluster in the forest, <img class="math" src="../../_images/math/85f2dbb0a716029fc8d42faa97eb15ef5b6cf8a1.png" alt="T=|v|+|s|+|t|"/>, and
+<img class="math" src="../../_images/math/9ab89553144682b1c73b05dd900facb62cdbc862.png" alt="|*|"/> is the cardinality of its argument. This is also
 known as the incremental algorithm.</p>
 </div></blockquote>
 </td>

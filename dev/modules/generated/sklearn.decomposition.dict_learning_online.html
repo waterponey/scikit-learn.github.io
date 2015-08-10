@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.decompos...
+        sklearn.decom...
         </span>
             <span class="hiddenrellink">
             sklearn.decomposition.dict_learning
@@ -168,14 +168,13 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></tt></a>.dict_learning_online<a class="headerlink" href="#sklearn-decomposition-dict-learning-online" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.decomposition.dict_learning_online">
-<tt class="descclassname">sklearn.decomposition.</tt><tt class="descname">dict_learning_online</tt><big>(</big><em>X</em>, <em>n_components=2</em>, <em>alpha=1</em>, <em>n_iter=100</em>, <em>return_code=True</em>, <em>dict_init=None</em>, <em>callback=None</em>, <em>batch_size=3</em>, <em>verbose=False</em>, <em>shuffle=True</em>, <em>n_jobs=1</em>, <em>method='lars'</em>, <em>iter_offset=0</em>, <em>random_state=None</em>, <em>return_inner_stats=False</em>, <em>inner_stats=None</em>, <em>return_n_iter=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/decomposition/dict_learning.py#L506"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.dict_learning_online" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.decomposition.</tt><tt class="descname">dict_learning_online</tt><big>(</big><em>X</em>, <em>n_components=2</em>, <em>alpha=1</em>, <em>n_iter=100</em>, <em>return_code=True</em>, <em>dict_init=None</em>, <em>callback=None</em>, <em>batch_size=3</em>, <em>verbose=False</em>, <em>shuffle=True</em>, <em>n_jobs=1</em>, <em>method='lars'</em>, <em>iter_offset=0</em>, <em>random_state=None</em>, <em>return_inner_stats=False</em>, <em>inner_stats=None</em>, <em>return_n_iter=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/decomposition/dict_learning.py#L506"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.dict_learning_online" title="Permalink to this definition">¶</a></dt>
 <dd><p>Solves a dictionary learning matrix factorization problem online.</p>
 <p>Finds the best dictionary and the corresponding sparse code for
 approximating the data matrix X by solving:</p>
-<div class="highlight-python"><div class="highlight"><pre>(U^*, V^*) = argmin 0.5 || X - U V ||_2^2 + alpha * || U ||_1
+<div class="highlight-python"><pre>(U^*, V^*) = argmin 0.5 || X - U V ||_2^2 + alpha * || U ||_1
              (U,V)
-             with || V_k ||_2 = 1 for all  0 &lt;= k &lt; n_components
-</pre></div>
+             with || V_k ||_2 = 1 for all  0 &lt;= k &lt; n_components</pre>
 </div>
 <p>where V is the dictionary and U is the sparse code. This is
 accomplished by repeatedly iterating over mini-batches by slicing

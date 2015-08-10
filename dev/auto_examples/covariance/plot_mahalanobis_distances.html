@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Shrinkage covari...
+        Shrinkage cov...
         </span>
             <span class="hiddenrellink">
             Shrinkage covariance estimation: LedoitWolf vs OAS and max-likelihood
@@ -169,12 +169,12 @@
 <p>An example to show covariance estimation with the Mahalanobis
 distances on Gaussian distributed data.</p>
 <p>For Gaussian distributed data, the distance of an observation
-<img class="math" src="../../_images/math/33dfc32d00ebd5c5791c824010a155d9e5630b6f.png" alt="x_i"/> to the mode of the distribution can be computed using its
-Mahalanobis distance: <img class="math" src="../../_images/math/f2f07f15055990c760c0ab754000b97bed50c917.png" alt="d_{(\mu,\Sigma)}(x_i)^2 = (x_i -
-\mu)'\Sigma^{-1}(x_i - \mu)"/> where <img class="math" src="../../_images/math/126e84ba38f7dece5f0ad64e929b9588b20f6440.png" alt="\mu"/> and <img class="math" src="../../_images/math/19ac15bf260b22dcb61a1042c60259e4b0bfbd64.png" alt="\Sigma"/> are
+<img class="math" src="../../_images/math/67bc6daa9d6b964201d6cef60cbeb1ac5fd26ead.png" alt="x_i"/> to the mode of the distribution can be computed using its
+Mahalanobis distance: <img class="math" src="../../_images/math/8b1579a08bfd21b418d230e75daca2ae1ed0d073.png" alt="d_{(\mu,\Sigma)}(x_i)^2 = (x_i -
+\mu)'\Sigma^{-1}(x_i - \mu)"/> where <img class="math" src="../../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/> and <img class="math" src="../../_images/math/c8f77e3035db5fe9a4975967750ac1a6454bda8c.png" alt="\Sigma"/> are
 the location and the covariance of the underlying Gaussian
 distribution.</p>
-<p>In practice, <img class="math" src="../../_images/math/126e84ba38f7dece5f0ad64e929b9588b20f6440.png" alt="\mu"/> and <img class="math" src="../../_images/math/19ac15bf260b22dcb61a1042c60259e4b0bfbd64.png" alt="\Sigma"/> are replaced by some
+<p>In practice, <img class="math" src="../../_images/math/2d8c833ed800824727cd7bd2fb9de1a12ad7e674.png" alt="\mu"/> and <img class="math" src="../../_images/math/c8f77e3035db5fe9a4975967750ac1a6454bda8c.png" alt="\Sigma"/> are replaced by some
 estimates.  The usual covariance maximum likelihood estimate is very
 sensitive to the presence of outliers in the data set and therefor,
 the corresponding Mahalanobis distances are. One would better have to
@@ -185,9 +185,9 @@ organisation of the observations.</p>
 <p>The Minimum Covariance Determinant estimator is a robust,
 high-breakdown point (i.e. it can be used to estimate the covariance
 matrix of highly contaminated datasets, up to
-<img class="math" src="../../_images/math/e3c673d681b61952ea1bd482aaef51fe9f7dcd21.png" alt="\frac{n_\text{samples}-n_\text{features}-1}{2}"/> outliers)
+<img class="math" src="../../_images/math/bae0aa0cca2d75d004ed4bb8809b6da03a3b928e.png" alt="\frac{n_\text{samples}-n_\text{features}-1}{2}"/> outliers)
 estimator of covariance. The idea is to find
-<img class="math" src="../../_images/math/a0911f10b2c581d0e1ef3237c082e1ca9a773b7c.png" alt="\frac{n_\text{samples}+n_\text{features}+1}{2}"/>
+<img class="math" src="../../_images/math/d7191b88f38716fb83916c352e542f64112e1e73.png" alt="\frac{n_\text{samples}+n_\text{features}+1}{2}"/>
 observations whose empirical covariance has the smallest determinant,
 yielding a &#8220;pure&#8221; subset of observations from which to compute
 standards estimates of location and covariance.</p>
@@ -303,8 +303,8 @@ of America, 17, 684-688.</dd>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.25 seconds
-( 0 minutes  0.25 seconds)</p>
+<p><strong>Total running time of the example:</strong>  0.26 seconds
+( 0 minutes  0.26 seconds)</p>
 </div>
 
 

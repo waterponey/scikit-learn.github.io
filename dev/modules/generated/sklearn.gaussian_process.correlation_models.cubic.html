@@ -116,7 +116,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.gaussian...
+        sklearn.gauss...
         </span>
             <span class="hiddenrellink">
             sklearn.gaussian_process.correlation_models.pure_nugget
@@ -168,13 +168,12 @@
 <h1><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.gaussian_process.correlation_models</span></tt>.cubic<a class="headerlink" href="#sklearn-gaussian-process-correlation-models-cubic" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.gaussian_process.correlation_models.cubic">
-<tt class="descclassname">sklearn.gaussian_process.correlation_models.</tt><tt class="descname">cubic</tt><big>(</big><em>theta</em>, <em>d</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/0e87eb8/sklearn/gaussian_process/correlation_models.py#L187"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.correlation_models.cubic" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.gaussian_process.correlation_models.</tt><tt class="descname">cubic</tt><big>(</big><em>theta</em>, <em>d</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1a45b79/sklearn/gaussian_process/correlation_models.py#L187"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.correlation_models.cubic" title="Permalink to this definition">¶</a></dt>
 <dd><p>Cubic correlation model:</p>
-<div class="highlight-python"><div class="highlight"><pre>theta, d --&gt; r(theta, d) =
+<div class="highlight-python"><pre>theta, d --&gt; r(theta, d) =
   n
  prod max(0, 1 - 3(theta_j*d_ij)^2 + 2(theta_j*d_ij)^3) ,  i = 1,...,m
-j = 1
-</pre></div>
+j = 1</pre>
 </div>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

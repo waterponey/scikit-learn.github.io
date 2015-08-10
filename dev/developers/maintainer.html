@@ -139,8 +139,7 @@
 <div><ul>
 <li><p class="first">edit the doc/whats_new.rst file to add release title and commit
 statistics. You can retrieve commit statistics with:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ git shortlog -ns 0.998..
-</pre></div>
+<div class="highlight-python"><pre>$ git shortlog -ns 0.998..</pre>
 </div>
 </li>
 <li><p class="first">edit the doc/conf.py to increase the version number</p>
@@ -155,22 +154,19 @@ entry of the front page.</p>
 variable</p>
 </li>
 <li><p class="first">Create the tag and push it:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ git tag 0.999
+<div class="highlight-python"><pre>$ git tag 0.999
 
-$ git push origin --tags
-</pre></div>
+$ git push origin --tags</pre>
 </div>
 </li>
 <li><p class="first">create tarballs:</p>
 <ul>
 <li><p class="first">Wipe clean your repo:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ git clean -xfd
-</pre></div>
+<div class="highlight-python"><pre>$ git clean -xfd</pre>
 </div>
 </li>
 <li><p class="first">Register and upload on PyPI:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ python setup.py sdist register upload
-</pre></div>
+<div class="highlight-python"><pre>$ python setup.py sdist register upload</pre>
 </div>
 </li>
 <li><p class="first">Upload manually the tarball on SourceForge:
@@ -181,8 +177,7 @@ $ git push origin --tags
 <li><p class="first">Push the documentation to the website (see README in doc folder)</p>
 </li>
 <li><p class="first">Build binaries for windows and push them to PyPI:</p>
-<div class="highlight-python"><div class="highlight"><pre>$ python setup.py bdist_wininst upload
-</pre></div>
+<div class="highlight-python"><pre>$ python setup.py bdist_wininst upload</pre>
 </div>
 <p>And upload them also to sourceforge</p>
 </li>
