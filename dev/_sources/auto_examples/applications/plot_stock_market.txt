@@ -91,6 +91,6 @@ axis.
 .. literalinclude:: plot_stock_market.py
     :lines: 62-
 
-**Total running time of the example:**  10.27 seconds
-( 0 minutes  10.27 seconds)
+**Total running time of the example:**  30.33 seconds
+( 0 minutes  30.33 seconds)
     

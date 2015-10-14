@@ -68,6 +68,6 @@ in :ref:`kernel_approximation`.
 .. literalinclude:: plot_kernel_approximation.py
     :lines: 44-
 
-**Total running time of the example:**  4.43 seconds
-( 0 minutes  4.43 seconds)
+**Total running time of the example:**  4.52 seconds
+( 0 minutes  4.52 seconds)
     

@@ -800,7 +800,7 @@ to approximate it, and those variational parameters <img class="math" src="../_i
 </div><p>Maximizing ELBO is equivalent to minimizing the Kullback-Leibler(KL) divergence
 between <img class="math" src="../_images/math/f2f45c207d4c0a4bb9e40c8e7434477faaecd720.png" alt="q(z,\theta,\beta)"/> and the true posterior
 <img class="math" src="../_images/math/06a569649af68d988f0764029a72aac05dc129f8.png" alt="p(z, \theta, \beta |w, \alpha, \eta)"/>.</p>
-<p><code class="xref py py-class docutils literal"><span class="pre">LatentDirichletAllocation</span></code> implements online variational Bayes algorithm and supports
+<p><a class="reference internal" href="generated/sklearn.decomposition.LatentDirichletAllocation.html#sklearn.decomposition.LatentDirichletAllocation" title="sklearn.decomposition.LatentDirichletAllocation"><code class="xref py py-class docutils literal"><span class="pre">LatentDirichletAllocation</span></code></a> implements online variational Bayes algorithm and supports
 both online and batch update method.
 While batch method updates variational variables after each full pass through the data,
 online method updates variational variables from mini-batch data points. Therefore,
@@ -811,11 +811,11 @@ online method usually converges faster than batch method.</p>
 the optimum point and the speed of convergence may depend on mini-batch size and
 attributes related to learning rate setting.</p>
 </div>
-<p>When <code class="xref py py-class docutils literal"><span class="pre">LatentDirichletAllocation</span></code> is applied on a &#8220;document-term&#8221; matrix, the matrix
+<p>When <a class="reference internal" href="generated/sklearn.decomposition.LatentDirichletAllocation.html#sklearn.decomposition.LatentDirichletAllocation" title="sklearn.decomposition.LatentDirichletAllocation"><code class="xref py py-class docutils literal"><span class="pre">LatentDirichletAllocation</span></code></a> is applied on a &#8220;document-term&#8221; matrix, the matrix
 will be decomposed into a &#8220;topic-term&#8221; matrix and a &#8220;document-topic&#8221; matrix. While
 &#8220;topic-term&#8221; matrix is stored as <code class="xref py py-attr docutils literal"><span class="pre">components_</span></code> in the model, &#8220;document-topic&#8221; matrix
 can be calculated from <code class="docutils literal"><span class="pre">transform</span></code> method.</p>
-<p><code class="xref py py-class docutils literal"><span class="pre">LatentDirichletAllocation</span></code> also implements <code class="docutils literal"><span class="pre">partial_fit</span></code> method. This is used
+<p><a class="reference internal" href="generated/sklearn.decomposition.LatentDirichletAllocation.html#sklearn.decomposition.LatentDirichletAllocation" title="sklearn.decomposition.LatentDirichletAllocation"><code class="xref py py-class docutils literal"><span class="pre">LatentDirichletAllocation</span></code></a> also implements <code class="docutils literal"><span class="pre">partial_fit</span></code> method. This is used
 when data can be fetched sequentially.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>

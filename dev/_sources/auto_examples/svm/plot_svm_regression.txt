@@ -23,6 +23,6 @@ Toy example of 1D regression using linear, polynomial and RBF kernels.
 .. literalinclude:: plot_svm_regression.py
     :lines: 9-
 
-**Total running time of the example:**  2.31 seconds
-( 0 minutes  2.31 seconds)
+**Total running time of the example:**  2.24 seconds
+( 0 minutes  2.24 seconds)
     

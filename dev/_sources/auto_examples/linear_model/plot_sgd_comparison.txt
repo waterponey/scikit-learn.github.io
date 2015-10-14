@@ -33,6 +33,6 @@ on the hand-written digits dataset.
 .. literalinclude:: plot_sgd_comparison.py
     :lines: 10-
 
-**Total running time of the example:**  14.30 seconds
-( 0 minutes  14.30 seconds)
+**Total running time of the example:**  14.99 seconds
+( 0 minutes  14.99 seconds)
     

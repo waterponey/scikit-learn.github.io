@@ -471,6 +471,7 @@ default. By <a class="reference external" href="https://github.com/gclenaghan">G
 be used along with estimators that have <cite>coef_</cite> or <cite>feature_importances_</cite>
 attribute to select important features of the input data. By
 <a class="reference external" href="https://github.com/maheshakya">Maheshakya Wijewardena</a>, <a class="reference external" href="http://joelnothman.com">Joel Nothman</a> and <a class="reference external" href="https://manojbits.wordpress.com">Manoj Kumar</a>.</li>
+<li>Added <a class="reference internal" href="modules/generated/sklearn.metrics.pairwise.laplacian_kernel.html#sklearn.metrics.pairwise.laplacian_kernel" title="sklearn.metrics.pairwise.laplacian_kernel"><code class="xref py py-func docutils literal"><span class="pre">metrics.pairwise.laplacian_kernel</span></code></a>.  By <a class="reference external" href="https://github.com/Clyde-fare">Clyde Fare</a>.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -494,7 +495,7 @@ oob_score and X is a sparse.csc_matrix. By <a class="reference external" href="h
 shape <code class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">1)</span></code>. By <a class="reference external" href="http://peekaboo-vision.blogspot.com">Andreas Müller</a>.</li>
 <li>Fix in <a class="reference internal" href="modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><code class="xref py py-class docutils literal"><span class="pre">cluster.KMeans</span></code></a> cluster reassignment for sparse input by
 <a class="reference external" href="https://github.com/larsmans">Lars Buitinck</a>.</li>
-<li>Fixed a bug in <a class="reference internal" href="modules/generated/sklearn.lda.LDA.html#sklearn.lda.LDA" title="sklearn.lda.LDA"><code class="xref py py-class docutils literal"><span class="pre">lda.LDA</span></code></a> that could cause asymmetric covariance
+<li>Fixed a bug in <code class="xref py py-class docutils literal"><span class="pre">lda.LDA</span></code> that could cause asymmetric covariance
 matrices when using shrinkage. By <a class="reference external" href="https://github.com/kazemakase">Martin Billinger</a>.</li>
 <li>Fixed <a class="reference internal" href="modules/generated/sklearn.cross_validation.cross_val_predict.html#sklearn.cross_validation.cross_val_predict" title="sklearn.cross_validation.cross_val_predict"><code class="xref py py-func docutils literal"><span class="pre">cross_validation.cross_val_predict</span></code></a> for estimators with
 sparse predictions. By Buddha Prakash.</li>
@@ -539,7 +540,7 @@ caused confusion in how the array elements should be interpreted
 as features or as samples. All data arrays are now expected
 to be explicitly shaped <code class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_features)</span></code>.
 By <a class="reference external" href="https://github.com/vighneshbirodkar">Vighnesh Birodkar</a>.</li>
-<li><a class="reference internal" href="modules/generated/sklearn.lda.LDA.html#sklearn.lda.LDA" title="sklearn.lda.LDA"><code class="xref py py-class docutils literal"><span class="pre">lda.LDA</span></code></a> and <a class="reference internal" href="modules/generated/sklearn.qda.QDA.html#sklearn.qda.QDA" title="sklearn.qda.QDA"><code class="xref py py-class docutils literal"><span class="pre">qda.QDA</span></code></a> have been moved to
+<li><code class="xref py py-class docutils literal"><span class="pre">lda.LDA</span></code> and <code class="xref py py-class docutils literal"><span class="pre">qda.QDA</span></code> have been moved to
 <a class="reference internal" href="modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><code class="xref py py-class docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis</span></code></a> and
 <a class="reference internal" href="modules/generated/sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.html#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis" title="sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis"><code class="xref py py-class docutils literal"><span class="pre">discriminant_analysis.QuadraticDiscriminantAnalysis</span></code></a>.</li>
 <li>The <code class="docutils literal"><span class="pre">store_covariance</span></code> and <code class="docutils literal"><span class="pre">tol</span></code> parameters have been moved from

@@ -300,7 +300,7 @@ selected with cross-validation.</li>
 </div>
 <div class="section" id="feature-selection-using-selectfrommodel">
 <span id="select-from-model"></span><h2>1.13.4. Feature selection using SelectFromModel<a class="headerlink" href="#feature-selection-using-selectfrommodel" title="Permalink to this headline">¶</a></h2>
-<p><code class="xref py py-class docutils literal"><span class="pre">SelectFromModel</span></code> is a meta-transformer that can be used along with any
+<p><a class="reference internal" href="generated/sklearn.feature_selection.SelectFromModel.html#sklearn.feature_selection.SelectFromModel" title="sklearn.feature_selection.SelectFromModel"><code class="xref py py-class docutils literal"><span class="pre">SelectFromModel</span></code></a> is a meta-transformer that can be used along with any
 estimator that has a <code class="docutils literal"><span class="pre">coef_</span></code> or <code class="docutils literal"><span class="pre">feature_importances_</span></code> attribute after fitting.
 The features are considered unimportant and removed, if the corresponding
 <code class="docutils literal"><span class="pre">coef_</span></code> or <code class="docutils literal"><span class="pre">feature_importances_</span></code> values are below the provided
@@ -322,7 +322,7 @@ threshold beforehand.</li>
 <p><a class="reference internal" href="linear_model.html#linear-model"><span>Linear models</span></a> penalized with the L1 norm have
 sparse solutions: many of their estimated coefficients are zero. When the goal
 is to reduce the dimensionality of the data to use with another classifier,
-they can be used along with <code class="xref py py-class docutils literal"><span class="pre">feature_selection.SelectFromModel</span></code>
+they can be used along with <a class="reference internal" href="generated/sklearn.feature_selection.SelectFromModel.html#sklearn.feature_selection.SelectFromModel" title="sklearn.feature_selection.SelectFromModel"><code class="xref py py-class docutils literal"><span class="pre">feature_selection.SelectFromModel</span></code></a>
 to select the non-zero coefficients. In particular, sparse estimators useful for
 this purpose are the <a class="reference internal" href="generated/sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><code class="xref py py-class docutils literal"><span class="pre">linear_model.Lasso</span></code></a> for regression, and
 of <a class="reference internal" href="generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><code class="xref py py-class docutils literal"><span class="pre">linear_model.LogisticRegression</span></code></a> and <a class="reference internal" href="generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC" title="sklearn.svm.LinearSVC"><code class="xref py py-class docutils literal"><span class="pre">svm.LinearSVC</span></code></a>
@@ -417,7 +417,7 @@ Journal of the Royal Statistical Society, 72 (2010)
 <p>Tree-based estimators (see the <a class="reference internal" href="classes.html#module-sklearn.tree" title="sklearn.tree"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.tree</span></code></a> module and forest
 of trees in the <a class="reference internal" href="classes.html#module-sklearn.ensemble" title="sklearn.ensemble"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble</span></code></a> module) can be used to compute
 feature importances, which in turn can be used to discard irrelevant
-features (when coupled with the <code class="xref py py-class docutils literal"><span class="pre">sklearn.feature_selection.SelectFromModel</span></code>
+features (when coupled with the <a class="reference internal" href="generated/sklearn.feature_selection.SelectFromModel.html#sklearn.feature_selection.SelectFromModel" title="sklearn.feature_selection.SelectFromModel"><code class="xref py py-class docutils literal"><span class="pre">sklearn.feature_selection.SelectFromModel</span></code></a>
 meta-transformer):</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">ExtraTreesClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
@@ -461,7 +461,7 @@ to use a <a class="reference internal" href="generated/sklearn.pipeline.Pipeline
 </pre></div>
 </div>
 <p>In this snippet we make use of a <a class="reference internal" href="generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC" title="sklearn.svm.LinearSVC"><code class="xref py py-class docutils literal"><span class="pre">sklearn.svm.LinearSVC</span></code></a>
-coupled with <code class="xref py py-class docutils literal"><span class="pre">sklearn.feature_selection.SelectFromModel</span></code>
+coupled with <a class="reference internal" href="generated/sklearn.feature_selection.SelectFromModel.html#sklearn.feature_selection.SelectFromModel" title="sklearn.feature_selection.SelectFromModel"><code class="xref py py-class docutils literal"><span class="pre">sklearn.feature_selection.SelectFromModel</span></code></a>
 to evaluate feature importances and select the most relevant features.
 Then, a <a class="reference internal" href="generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier" title="sklearn.ensemble.RandomForestClassifier"><code class="xref py py-class docutils literal"><span class="pre">sklearn.ensemble.RandomForestClassifier</span></code></a> is trained on the
 transformed output, i.e. using only relevant features. You can perform

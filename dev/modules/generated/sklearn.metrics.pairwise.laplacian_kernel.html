@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
   
-    <title>sklearn.lda.LDA &mdash; scikit-learn 0.17.dev0 documentation</title>
+    <title>sklearn.metrics.pairwise.laplacian_kernel &mdash; scikit-learn 0.17.dev0 documentation</title>
   <!-- htmltitle is before nature.css - we use this hack to load bootstrap first -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" media="screen" />
@@ -35,11 +35,14 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.multiclass.OneVsRestClassifier" href="sklearn.multiclass.OneVsRestClassifier.html" />
+    <link rel="prev" title="sklearn.metrics.pairwise.rbf_kernel" href="sklearn.metrics.pairwise.rbf_kernel.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="../../_static/js/bootstrap.min.js" type="text/javascript"></script>
-  <link rel="canonical" href="http://scikit-learn.org/stable/modules/generated/sklearn.lda.LDA.html" />
+  <link rel="canonical" href="http://scikit-learn.org/stable/modules/generated/sklearn.metrics.pairwise.laplacian_kernel.html" />
 
   <script type="text/javascript">
     $("div.buttonNext, div.buttonPrevious").hover(
@@ -104,13 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.metrics.pairwise.rbf_kernel.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.metri...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.metrics.pairwise.rbf_kernel
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.lda</span></code>.LDA</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-lda-lda">Examples using <code class="docutils literal"><span class="pre">sklearn.lda.LDA</span></code></a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics.pairwise</span></code>.laplacian_kernel</a></li>
 </ul>
 
     </div>
@@ -128,38 +165,35 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="sklearn-lda-lda">
-<h1><code class="xref py py-mod docutils literal"><span class="pre">sklearn.lda</span></code>.LDA<a class="headerlink" href="#sklearn-lda-lda" title="Permalink to this headline">¶</a></h1>
-<dl class="attribute">
-<dt id="sklearn.lda.LDA">
-<code class="descclassname">sklearn.lda.</code><code class="descname">LDA</code><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/9564b94/sklearn/discriminant_analysis.py#L128"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.lda.LDA" title="Permalink to this definition">¶</a></dt>
-<dd><p>alias of <code class="xref py py-class docutils literal"><span class="pre">LinearDiscriminantAnalysis</span></code></p>
+  <div class="section" id="sklearn-metrics-pairwise-laplacian-kernel">
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics.pairwise" title="sklearn.metrics.pairwise"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics.pairwise</span></code></a>.laplacian_kernel<a class="headerlink" href="#sklearn-metrics-pairwise-laplacian-kernel" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="sklearn.metrics.pairwise.laplacian_kernel">
+<code class="descclassname">sklearn.metrics.pairwise.</code><code class="descname">laplacian_kernel</code><span class="sig-paren">(</span><em>X</em>, <em>Y=None</em>, <em>gamma=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/276d928/sklearn/metrics/pairwise.py#L815"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.pairwise.laplacian_kernel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the laplacian kernel between X and Y.</p>
+<p>The laplacian kernel is defined as:</p>
+<div class="highlight-python"><div class="highlight"><pre>K(x, y) = exp(-gamma ||x-y||_1)
+</pre></div>
+</div>
+<p>for each pair of rows x in X and y in Y.
+Read more in the <a class="reference internal" href="../metrics.html#laplacian-kernel"><span>User Guide</span></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>X</strong> : array of shape (n_samples_X, n_features)</p>
+<p><strong>Y</strong> : array of shape (n_samples_Y, n_features)</p>
+<p><strong>gamma</strong> : float</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><strong>kernel_matrix</strong> : array of shape (n_samples_X, n_samples_Y)</p>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
-<div class="section" id="examples-using-sklearn-lda-lda">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.lda.LDA</span></code><a class="headerlink" href="#examples-using-sklearn-lda-lda" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Shows how shrinkage improves classification. "><div class="figure" id="id1">
-<a class="reference external image-reference" href="./../../auto_examples/classification/plot_lda.html"><img alt="../../_images/plot_lda1.png" src="../../_images/plot_lda1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/classification/plot_lda.html#example-classification-plot-lda-py"><span>Normal and Shrinkage Linear Discriminant Analysis for classification</span></a></span></p>
-</div>
-</div><div class="thumbnailContainer" tooltip="A comparison of a several classifiers in scikit-learn on synthetic datasets. The point of this ..."><div class="figure" id="id2">
-<a class="reference external image-reference" href="./../../auto_examples/classification/plot_classifier_comparison.html"><img alt="../../_images/plot_classifier_comparison1.png" src="../../_images/plot_classifier_comparison1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/classification/plot_classifier_comparison.html#example-classification-plot-classifier-comparison-py"><span>Classifier comparison</span></a></span></p>
-</div>
-</div><div class="thumbnailContainer" tooltip="Plot the confidence ellipsoids of each class and decision boundary "><div class="figure" id="id3">
-<a class="reference external image-reference" href="./../../auto_examples/classification/plot_lda_qda.html"><img alt="../../_images/plot_lda_qda1.png" src="../../_images/plot_lda_qda1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/classification/plot_lda_qda.html#example-classification-plot-lda-qda-py"><span>Linear and Quadratic Discriminant Analysis with confidence ellipsoid</span></a></span></p>
-</div>
-</div><div class="thumbnailContainer" tooltip="The Iris dataset represents 3 kind of Iris flowers (Setosa, Versicolour and Virginica) with 4 a..."><div class="figure" id="id4">
-<a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_pca_vs_lda.html"><img alt="../../_images/plot_pca_vs_lda1.png" src="../../_images/plot_pca_vs_lda1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_vs_lda.html#example-decomposition-plot-pca-vs-lda-py"><span>Comparison of LDA and PCA 2D projection of Iris dataset</span></a></span></p>
-</div>
-</div><div class="thumbnailContainer" tooltip="An illustration of various embeddings on the digits dataset."><div class="figure" id="id5">
-<a class="reference external image-reference" href="./../../auto_examples/manifold/plot_lle_digits.html"><img alt="../../_images/plot_lle_digits1.png" src="../../_images/plot_lle_digits1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/manifold/plot_lle_digits.html#example-manifold-plot-lle-digits-py"><span>Manifold learning on handwritten digits: Locally Linear Embedding, Isomap...</span></a></span></p>
-</div>
-</div><div class="clearer"></div></div>
-</div>
+<div class="clearer"></div></div>
 
 
           </div>
@@ -171,10 +205,14 @@
 
     <div class="footer">
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
-      <a href="../../_sources/modules/generated/sklearn.lda.LDA.txt" rel="nofollow">Show this page source</a>
+      <a href="../../_sources/modules/generated/sklearn.metrics.pairwise.laplacian_kernel.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.metrics.pairwise.rbf_kernel.html">Previous
+      </a>
+    </div>
     
      </div>
 

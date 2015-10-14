@@ -53,7 +53,7 @@ samples are built sequentially and so do not use multiple cores.
   DecisionTree with features [0, 1] has a score of 0.926666666667
   RandomForest with 30 estimators with features [0, 1] has a score of 0.926666666667
   ExtraTrees with 30 estimators with features [0, 1] has a score of 0.926666666667
-  AdaBoost with 30 estimators with features [0, 1] has a score of 0.86
+  AdaBoost with 30 estimators with features [0, 1] has a score of 0.84
   DecisionTree with features [0, 2] has a score of 0.993333333333
   RandomForest with 30 estimators with features [0, 2] has a score of 0.993333333333
   ExtraTrees with 30 estimators with features [0, 2] has a score of 0.993333333333
@@ -70,6 +70,6 @@ samples are built sequentially and so do not use multiple cores.
 .. literalinclude:: plot_forest_iris.py
     :lines: 41-
 
-**Total running time of the example:**  10.92 seconds
-( 0 minutes  10.92 seconds)
+**Total running time of the example:**  12.30 seconds
+( 0 minutes  12.30 seconds)
     

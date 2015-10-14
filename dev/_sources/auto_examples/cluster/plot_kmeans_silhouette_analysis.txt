@@ -70,7 +70,7 @@ verified from the labelled scatter plot on the right.
   For n_clusters = 3 The average silhouette_score is : 0.588200401213
   For n_clusters = 4 The average silhouette_score is : 0.650518663273
   For n_clusters = 5 The average silhouette_score is : 0.563764690262
-  For n_clusters = 6 The average silhouette_score is : 0.450301208266
+  For n_clusters = 6 The average silhouette_score is : 0.450466629437
 
 
 
@@ -79,6 +79,6 @@ verified from the labelled scatter plot on the right.
 .. literalinclude:: plot_kmeans_silhouette_analysis.py
     :lines: 32-
 
-**Total running time of the example:**  2.78 seconds
-( 0 minutes  2.78 seconds)
+**Total running time of the example:**  2.67 seconds
+( 0 minutes  2.67 seconds)
     

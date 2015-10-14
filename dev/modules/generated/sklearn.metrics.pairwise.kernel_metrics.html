@@ -169,7 +169,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.metrics.pairwise" title="sklearn.metrics.pairwise"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics.pairwise</span></code></a>.kernel_metrics<a class="headerlink" href="#sklearn-metrics-pairwise-kernel-metrics" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.pairwise.kernel_metrics">
-<code class="descclassname">sklearn.metrics.pairwise.</code><code class="descname">kernel_metrics</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/9564b94/sklearn/metrics/pairwise.py#L1191"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.pairwise.kernel_metrics" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.metrics.pairwise.</code><code class="descname">kernel_metrics</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/276d928/sklearn/metrics/pairwise.py#L1220"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.pairwise.kernel_metrics" title="Permalink to this definition">¶</a></dt>
 <dd><p>Valid metrics for pairwise_kernels</p>
 <p>This function simply returns the valid pairwise distance metrics.
 It exists, however, to allow for a verbose description of the mapping for
@@ -205,10 +205,13 @@ each of the valid strings.</p>
 <tr class="row-odd"><td>&#8216;rbf&#8217;</td>
 <td>sklearn.pairwise.rbf_kernel</td>
 </tr>
-<tr class="row-even"><td>&#8216;sigmoid&#8217;</td>
+<tr class="row-even"><td>&#8216;laplacian&#8217;</td>
+<td>sklearn.pairwise.laplacian_kernel</td>
+</tr>
+<tr class="row-odd"><td>&#8216;sigmoid&#8217;</td>
 <td>sklearn.pairwise.sigmoid_kernel</td>
 </tr>
-<tr class="row-odd"><td>&#8216;cosine&#8217;</td>
+<tr class="row-even"><td>&#8216;cosine&#8217;</td>
 <td>sklearn.pairwise.cosine_similarity</td>
 </tr>
 </tbody>

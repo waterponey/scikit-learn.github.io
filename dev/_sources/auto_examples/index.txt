@@ -1038,31 +1038,6 @@ Examples concerning the :mod:`sklearn.cluster` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="Reference: Brendan J. Frey and Delbert Dueck, "Clustering by Passing Messages Between Data Poin...">
-
-.. only:: html
-
-  .. figure:: cluster/images/thumb/plot_affinity_propagation.png
-    :target: ./cluster/plot_affinity_propagation.html
-
-    :ref:`example_cluster_plot_affinity_propagation.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   cluster/plot_affinity_propagation
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="This example is meant to illustrate situations where k-means will produce unintuitive and possi...">
 
 .. only:: html
@@ -1083,6 +1058,31 @@ Examples concerning the :mod:`sklearn.cluster` module.
    :hidden:
 
    cluster/plot_kmeans_assumptions
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="Reference: Brendan J. Frey and Delbert Dueck, "Clustering by Passing Messages Between Data Poin...">
+
+.. only:: html
+
+  .. figure:: cluster/images/thumb/plot_affinity_propagation.png
+    :target: ./cluster/plot_affinity_propagation.html
+
+    :ref:`example_cluster_plot_affinity_propagation.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   cluster/plot_affinity_propagation
 
 
 
@@ -1263,31 +1263,6 @@ Examples concerning the :mod:`sklearn.cluster` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="An illustration of various linkage option for agglomerative clustering on a 2D embedding of the...">
-
-.. only:: html
-
-  .. figure:: cluster/images/thumb/plot_digits_linkage.png
-    :target: ./cluster/plot_digits_linkage.html
-
-    :ref:`example_cluster_plot_digits_linkage.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   cluster/plot_digits_linkage
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="The plots display firstly what a K-means algorithm would yield using three clusters. It is then...">
 
 .. only:: html
@@ -1308,6 +1283,31 @@ Examples concerning the :mod:`sklearn.cluster` module.
    :hidden:
 
    cluster/plot_cluster_iris
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="An illustration of various linkage option for agglomerative clustering on a 2D embedding of the...">
+
+.. only:: html
+
+  .. figure:: cluster/images/thumb/plot_digits_linkage.png
+    :target: ./cluster/plot_digits_linkage.html
+
+    :ref:`example_cluster_plot_digits_linkage.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   cluster/plot_digits_linkage
 
 
 
@@ -3258,6 +3258,31 @@ Examples concerning the :mod:`sklearn.linear_model` module.
 
 .. raw:: html
 
+    <div class="thumbnailContainer" tooltip="The coefficients, the residual sum of squares and the variance score are also calculated.">
+
+.. only:: html
+
+  .. figure:: linear_model/images/thumb/plot_ols.png
+    :target: ./linear_model/plot_ols.html
+
+    :ref:`example_linear_model_plot_ols.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   linear_model/plot_ols
+
+
+
+.. raw:: html
+
     <div class="thumbnailContainer" tooltip="An example showing how different online solvers perform on the hand-written digits dataset.">
 
 .. only:: html
@@ -3303,31 +3328,6 @@ Examples concerning the :mod:`sklearn.linear_model` module.
    :hidden:
 
    linear_model/plot_ols_ridge_variance
-
-
-
-.. raw:: html
-
-    <div class="thumbnailContainer" tooltip="The coefficients, the residual sum of squares and the variance score are also calculated.">
-
-.. only:: html
-
-  .. figure:: linear_model/images/thumb/plot_ols.png
-    :target: ./linear_model/plot_ols.html
-
-    :ref:`example_linear_model_plot_ols.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   linear_model/plot_ols
 
 
 
@@ -4988,31 +4988,6 @@ Examples concerning the :mod:`sklearn.svm` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="A small value of `C` includes more/all the observations, allowing the margins to be calculated ...">
-
-.. only:: html
-
-  .. figure:: svm/images/thumb/plot_svm_margin.png
-    :target: ./svm/plot_svm_margin.html
-
-    :ref:`example_svm_plot_svm_margin.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   svm/plot_svm_margin
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="Three different types of SVM-Kernels are displayed below. The polynomial and RBF are especially...">
 
 .. only:: html
@@ -5033,6 +5008,31 @@ Examples concerning the :mod:`sklearn.svm` module.
    :hidden:
 
    svm/plot_svm_kernels
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="A small value of `C` includes more/all the observations, allowing the margins to be calculated ...">
+
+.. only:: html
+
+  .. figure:: svm/images/thumb/plot_svm_margin.png
+    :target: ./svm/plot_svm_margin.html
+
+    :ref:`example_svm_plot_svm_margin.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   svm/plot_svm_margin
 
 
 

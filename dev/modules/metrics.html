@@ -153,7 +153,8 @@
 <li><a class="reference internal" href="#polynomial-kernel">4.7.3. Polynomial kernel</a></li>
 <li><a class="reference internal" href="#sigmoid-kernel">4.7.4. Sigmoid kernel</a></li>
 <li><a class="reference internal" href="#rbf-kernel">4.7.5. RBF kernel</a></li>
-<li><a class="reference internal" href="#chi-squared-kernel">4.7.6. Chi-squared kernel</a></li>
+<li><a class="reference internal" href="#laplacian-kernel">4.7.6. Laplacian kernel</a></li>
+<li><a class="reference internal" href="#chi-squared-kernel">4.7.7. Chi-squared kernel</a></li>
 </ul>
 </li>
 </ul>
@@ -282,8 +283,19 @@ between two vectors. This kernel is defined as:</p>
 </div><p>where <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">y</span></code> are the input vectors. If <img class="math" src="../_images/math/4b15c4aa8feb74b435e9b7bca3afad099d18636e.png" alt="\gamma = \sigma^{-2}"/>
 the kernel is known as the Gaussian kernel of variance <img class="math" src="../_images/math/93c29bfedc993de115781b4fbb7e3a8b9e8d6b51.png" alt="\sigma^2"/>.</p>
 </div>
+<div class="section" id="laplacian-kernel">
+<span id="id6"></span><h2>4.7.6. Laplacian kernel<a class="headerlink" href="#laplacian-kernel" title="Permalink to this headline">¶</a></h2>
+<p>The function <a class="reference internal" href="generated/sklearn.metrics.pairwise.laplacian_kernel.html#sklearn.metrics.pairwise.laplacian_kernel" title="sklearn.metrics.pairwise.laplacian_kernel"><code class="xref py py-func docutils literal"><span class="pre">laplacian_kernel</span></code></a> is a variant on the radial basis
+function kernel defined as:</p>
+<div class="math">
+<p><img src="../_images/math/d328c5ba4f3813366fd43a1241342bdc14a925a6.png" alt="k(x, y) = \exp( -\gamma \| x-y \|_1)"/></p>
+</div><p>where <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">y</span></code> are the input vectors and <img class="math" src="../_images/math/8e00f2e60ce43e2776ce0f1aa550dd7429fdd5bc.png" alt="\|x-y\|_1"/> is the
+Manhattan distance between the input vectors.</p>
+<p>It has proven useful in ML applied to noiseless data.
+See e.g. <a class="reference external" href="http://onlinelibrary.wiley.com/doi/10.1002/qua.24954/abstract/">Machine learning for quantum mechanics in a nutshell</a>.</p>
+</div>
 <div class="section" id="chi-squared-kernel">
-<span id="chi2-kernel"></span><h2>4.7.6. Chi-squared kernel<a class="headerlink" href="#chi-squared-kernel" title="Permalink to this headline">¶</a></h2>
+<span id="chi2-kernel"></span><h2>4.7.7. Chi-squared kernel<a class="headerlink" href="#chi-squared-kernel" title="Permalink to this headline">¶</a></h2>
 <p>The chi-squared kernel is a very popular choice for training non-linear SVMs in
 computer vision applications.
 It can be computed using <a class="reference internal" href="generated/sklearn.metrics.pairwise.chi2_kernel.html#sklearn.metrics.pairwise.chi2_kernel" title="sklearn.metrics.pairwise.chi2_kernel"><code class="xref py py-func docutils literal"><span class="pre">chi2_kernel</span></code></a> and then passed to an

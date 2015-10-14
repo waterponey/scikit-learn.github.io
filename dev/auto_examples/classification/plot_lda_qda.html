@@ -178,8 +178,8 @@
 <span class="kn">import</span> <span class="nn">matplotlib</span> <span class="kn">as</span> <span class="nn">mpl</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">colors</span>
 
-<span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">LinearDiscriminantAnalysis</span>
-<span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <span class="n">QuadraticDiscriminantAnalysis</span>
+<span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><span class="n">LinearDiscriminantAnalysis</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.html#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis"><span class="n">QuadraticDiscriminantAnalysis</span></a>
 
 <span class="c">###############################################################################</span>
 <span class="c"># colormap</span>
@@ -291,14 +291,14 @@
 <span class="c">###############################################################################</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="n">dataset_fixed_cov</span><span class="p">(),</span> <span class="n">dataset_cov</span><span class="p">()]):</span>
     <span class="c"># Linear Discriminant Analysis</span>
-    <span class="n">lda</span> <span class="o">=</span> <span class="n">LinearDiscriminantAnalysis</span><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="s">&quot;svd&quot;</span><span class="p">,</span> <span class="n">store_covariance</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="n">lda</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><span class="n">LinearDiscriminantAnalysis</span></a><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="s">&quot;svd&quot;</span><span class="p">,</span> <span class="n">store_covariance</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
     <span class="n">y_pred</span> <span class="o">=</span> <span class="n">lda</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
     <span class="n">splot</span> <span class="o">=</span> <span class="n">plot_data</span><span class="p">(</span><span class="n">lda</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">fig_index</span><span class="o">=</span><span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
     <span class="n">plot_lda_cov</span><span class="p">(</span><span class="n">lda</span><span class="p">,</span> <span class="n">splot</span><span class="p">)</span>
     <a href="http://matplotlib.org/api/axis_api.html#matplotlib.axis"><span class="n">plt</span><span class="o">.</span><span class="n">axis</span></a><span class="p">(</span><span class="s">&#39;tight&#39;</span><span class="p">)</span>
 
     <span class="c"># Quadratic Discriminant Analysis</span>
-    <span class="n">qda</span> <span class="o">=</span> <span class="n">QuadraticDiscriminantAnalysis</span><span class="p">()</span>
+    <span class="n">qda</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.html#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis"><span class="n">QuadraticDiscriminantAnalysis</span></a><span class="p">()</span>
     <span class="n">y_pred</span> <span class="o">=</span> <span class="n">qda</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">store_covariances</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
     <span class="n">splot</span> <span class="o">=</span> <span class="n">plot_data</span><span class="p">(</span><span class="n">qda</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">fig_index</span><span class="o">=</span><span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
     <span class="n">plot_qda_cov</span><span class="p">(</span><span class="n">qda</span><span class="p">,</span> <span class="n">splot</span><span class="p">)</span>
@@ -307,8 +307,8 @@
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.39 seconds
-( 0 minutes  0.39 seconds)</p>
+<p><strong>Total running time of the example:</strong>  0.41 seconds
+( 0 minutes  0.41 seconds)</p>
 </div>
 
 

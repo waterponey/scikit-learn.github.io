@@ -264,7 +264,7 @@ of <a class="reference internal" href="generated/sklearn.preprocessing.StandardS
 <p>An alternative standardization is scaling features to
 lie between a given minimum and maximum value, often between zero and one,
 or so that the maximum absolute value of each feature is scaled to unit size.
-This can be achieved using <a class="reference internal" href="generated/sklearn.preprocessing.MinMaxScaler.html#sklearn.preprocessing.MinMaxScaler" title="sklearn.preprocessing.MinMaxScaler"><code class="xref py py-class docutils literal"><span class="pre">MinMaxScaler</span></code></a> or <code class="xref py py-class docutils literal"><span class="pre">MaxAbsScaler</span></code>,
+This can be achieved using <a class="reference internal" href="generated/sklearn.preprocessing.MinMaxScaler.html#sklearn.preprocessing.MinMaxScaler" title="sklearn.preprocessing.MinMaxScaler"><code class="xref py py-class docutils literal"><span class="pre">MinMaxScaler</span></code></a> or <a class="reference internal" href="generated/sklearn.preprocessing.MaxAbsScaler.html#sklearn.preprocessing.MaxAbsScaler" title="sklearn.preprocessing.MaxAbsScaler"><code class="xref py py-class docutils literal"><span class="pre">MaxAbsScaler</span></code></a>,
 respectively.</p>
 <p>The motivation to use this scaling include robustness to very small
 standard deviations of features and preserving zero entries in sparse data.</p>
@@ -306,7 +306,7 @@ full formula is:</p>
 <span class="n">X_scaled</span> <span class="o">=</span> <span class="n">X_std</span> <span class="o">/</span> <span class="p">(</span><span class="nb">max</span> <span class="o">-</span> <span class="nb">min</span><span class="p">)</span> <span class="o">+</span> <span class="nb">min</span>
 </pre></div>
 </div>
-<p><code class="xref py py-class docutils literal"><span class="pre">MaxAbsScaler</span></code> works in a very similar fashion, but scales in a way
+<p><a class="reference internal" href="generated/sklearn.preprocessing.MaxAbsScaler.html#sklearn.preprocessing.MaxAbsScaler" title="sklearn.preprocessing.MaxAbsScaler"><code class="xref py py-class docutils literal"><span class="pre">MaxAbsScaler</span></code></a> works in a very similar fashion, but scales in a way
 that the training data lies within the range <code class="docutils literal"><span class="pre">[-1,</span> <span class="pre">1]</span></code> by dividing through
 the largest maximum value in each feature. It is meant for data
 that is already centered at zero or sparse data.</p>
@@ -330,7 +330,7 @@ that is already centered at zero or sparse data.</p>
 </pre></div>
 </div>
 <p>As with <a class="reference internal" href="generated/sklearn.preprocessing.scale.html#sklearn.preprocessing.scale" title="sklearn.preprocessing.scale"><code class="xref py py-func docutils literal"><span class="pre">scale</span></code></a>, the module further provides convenience functions
-<code class="xref py py-func docutils literal"><span class="pre">minmax_scale</span></code> and <code class="xref py py-func docutils literal"><span class="pre">maxabs_scale</span></code> if you don&#8217;t want to create
+<a class="reference internal" href="generated/sklearn.preprocessing.minmax_scale.html#sklearn.preprocessing.minmax_scale" title="sklearn.preprocessing.minmax_scale"><code class="xref py py-func docutils literal"><span class="pre">minmax_scale</span></code></a> and <a class="reference internal" href="generated/sklearn.preprocessing.maxabs_scale.html#sklearn.preprocessing.maxabs_scale" title="sklearn.preprocessing.maxabs_scale"><code class="xref py py-func docutils literal"><span class="pre">maxabs_scale</span></code></a> if you don&#8217;t want to create
 an object.</p>
 </div>
 <div class="section" id="scaling-sparse-data">
@@ -338,7 +338,7 @@ an object.</p>
 <p>Centering sparse data would destroy the sparseness structure in the data, and
 thus rarely is a sensible thing to do. However, it can make sense to scale
 sparse inputs, especially if features are on different scales.</p>
-<p><code class="xref py py-class docutils literal"><span class="pre">MaxAbsScaler</span></code>  and <code class="xref py py-func docutils literal"><span class="pre">maxabs_scale</span></code> were specifically designed
+<p><a class="reference internal" href="generated/sklearn.preprocessing.MaxAbsScaler.html#sklearn.preprocessing.MaxAbsScaler" title="sklearn.preprocessing.MaxAbsScaler"><code class="xref py py-class docutils literal"><span class="pre">MaxAbsScaler</span></code></a>  and <a class="reference internal" href="generated/sklearn.preprocessing.maxabs_scale.html#sklearn.preprocessing.maxabs_scale" title="sklearn.preprocessing.maxabs_scale"><code class="xref py py-func docutils literal"><span class="pre">maxabs_scale</span></code></a> were specifically designed
 for scaling sparse data, and are the recommended way to go about this.
 However, <a class="reference internal" href="generated/sklearn.preprocessing.scale.html#sklearn.preprocessing.scale" title="sklearn.preprocessing.scale"><code class="xref py py-func docutils literal"><span class="pre">scale</span></code></a> and <a class="reference internal" href="generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="sklearn.preprocessing.StandardScaler"><code class="xref py py-class docutils literal"><span class="pre">StandardScaler</span></code></a> can accept <code class="docutils literal"><span class="pre">scipy.sparse</span></code>
 matrices  as input, as long as <code class="docutils literal"><span class="pre">with_centering=False</span></code> is explicitly passed
@@ -360,7 +360,7 @@ is another option.</p>
 <h3>4.3.1.3. Scaling data with outliers<a class="headerlink" href="#scaling-data-with-outliers" title="Permalink to this headline">¶</a></h3>
 <p>If your data contains many outliers, scaling using the mean and variance
 of the data is likely to not work very well. In these cases, you can use
-<code class="xref py py-func docutils literal"><span class="pre">robust_scale</span></code> and <a class="reference internal" href="generated/sklearn.preprocessing.RobustScaler.html#sklearn.preprocessing.RobustScaler" title="sklearn.preprocessing.RobustScaler"><code class="xref py py-class docutils literal"><span class="pre">RobustScaler</span></code></a> as drop-in replacements
+<a class="reference internal" href="generated/sklearn.preprocessing.robust_scale.html#sklearn.preprocessing.robust_scale" title="sklearn.preprocessing.robust_scale"><code class="xref py py-func docutils literal"><span class="pre">robust_scale</span></code></a> and <a class="reference internal" href="generated/sklearn.preprocessing.RobustScaler.html#sklearn.preprocessing.RobustScaler" title="sklearn.preprocessing.RobustScaler"><code class="xref py py-class docutils literal"><span class="pre">RobustScaler</span></code></a> as drop-in replacements
 instead. They use more robust estimates for the center and range of your
 data.</p>
 <div class="topic">
@@ -623,7 +623,7 @@ estimator that supports imputation. See <a class="reference internal" href="../a
 <h2>4.3.7. Custom transformers<a class="headerlink" href="#custom-transformers" title="Permalink to this headline">¶</a></h2>
 <p>Often, you will want to convert an existing Python function into a transformer
 to assist in data cleaning or processing. You can implement a transformer from
-an arbitrary function with <code class="xref py py-class docutils literal"><span class="pre">FunctionTransformer</span></code>. For example, to build
+an arbitrary function with <a class="reference internal" href="generated/sklearn.preprocessing.FunctionTransformer.html#sklearn.preprocessing.FunctionTransformer" title="sklearn.preprocessing.FunctionTransformer"><code class="xref py py-class docutils literal"><span class="pre">FunctionTransformer</span></code></a>. For example, to build
 a transformer that applies a log transformation in a pipeline, do:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">FunctionTransformer</span>
@@ -634,7 +634,7 @@ a transformer that applies a log transformation in a pipeline, do:</p>
 <span class="go">       [ 1.09861229,  1.38629436]])</span>
 </pre></div>
 </div>
-<p>For a full code example that demonstrates using a <code class="xref py py-class docutils literal"><span class="pre">FunctionTransformer</span></code>
+<p>For a full code example that demonstrates using a <a class="reference internal" href="generated/sklearn.preprocessing.FunctionTransformer.html#sklearn.preprocessing.FunctionTransformer" title="sklearn.preprocessing.FunctionTransformer"><code class="xref py py-class docutils literal"><span class="pre">FunctionTransformer</span></code></a>
 to do custom feature selection,
 see <a class="reference internal" href="../auto_examples/preprocessing/plot_function_transformer.html#example-preprocessing-plot-function-transformer-py"><span>Using FunctionTransformer to select columns</span></a></p>
 </div>
