@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,19 +163,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="restricted-boltzmann-machine-features-for-digit-classification">
 <span id="example-neural-networks-plot-rbm-logistic-classification-py"></span><h1>Restricted Boltzmann Machine features for digit classification<a class="headerlink" href="#restricted-boltzmann-machine-features-for-digit-classification" title="Permalink to this headline">¶</a></h1>
 <p>For greyscale image data where pixel values can be interpreted as degrees of
 blackness on a white background, like handwritten digit recognition, the
-Bernoulli Restricted Boltzmann machine model (<a class="reference internal" href="../../modules/generated/sklearn.neural_network.BernoulliRBM.html#sklearn.neural_network.BernoulliRBM" title="sklearn.neural_network.BernoulliRBM"><code class="xref py py-class docutils literal"><span class="pre">BernoulliRBM</span></code></a>) can perform effective non-linear
+Bernoulli Restricted Boltzmann machine model (<a class="reference internal" href="../../modules/generated/sklearn.neural_network.BernoulliRBM.html#sklearn.neural_network.BernoulliRBM" title="sklearn.neural_network.BernoulliRBM"><tt class="xref py py-class docutils literal"><span class="pre">BernoulliRBM</span></tt></a>) can perform effective non-linear
 feature extraction.</p>
 <p>In order to learn good latent representations from a small dataset, we
 artificially generate more labeled data by perturbing the training data with
 linear shifts of 1 pixel in each direction.</p>
 <p>This example shows how to build a classification pipeline with a BernoulliRBM
-feature extractor and a <a class="reference internal" href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><code class="xref py py-class docutils literal"><span class="pre">LogisticRegression</span></code></a> classifier. The hyperparameters
+feature extractor and a <a class="reference internal" href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><tt class="xref py py-class docutils literal"><span class="pre">LogisticRegression</span></tt></a> classifier. The hyperparameters
 of the entire model (learning rate, hidden layer size, regularization)
 were optimized by grid search, but the search is not reproduced here because
 of runtime constraints.</p>
@@ -239,7 +239,7 @@ Logistic regression using raw pixel features:
 avg / total       0.77      0.77      0.77      1797
 </pre></div>
 </div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_rbm_logistic_classification.py"><code class="xref download docutils literal"><span class="pre">plot_rbm_logistic_classification.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_rbm_logistic_classification.py"><tt class="xref download docutils literal"><span class="pre">plot_rbm_logistic_classification.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 
 <span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>

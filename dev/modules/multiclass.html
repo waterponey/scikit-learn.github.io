@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -179,18 +179,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="multiclass-and-multilabel-algorithms">
 <span id="multiclass"></span><h1>1.12. Multiclass and multilabel algorithms<a class="headerlink" href="#multiclass-and-multilabel-algorithms" title="Permalink to this headline">¶</a></h1>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">All classifiers in scikit-learn do multiclass classification
-out-of-the-box. You don&#8217;t need to use the <a class="reference internal" href="classes.html#module-sklearn.multiclass" title="sklearn.multiclass"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.multiclass</span></code></a> module
+out-of-the-box. You don&#8217;t need to use the <a class="reference internal" href="classes.html#module-sklearn.multiclass" title="sklearn.multiclass"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.multiclass</span></tt></a> module
 unless you want to experiment with different multiclass strategies.</p>
 </div>
-<p>The <a class="reference internal" href="classes.html#module-sklearn.multiclass" title="sklearn.multiclass"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.multiclass</span></code></a> module implements <em>meta-estimators</em> to solve
-<code class="docutils literal"><span class="pre">multiclass</span></code> and <code class="docutils literal"><span class="pre">multilabel</span></code> classification problems
+<p>The <a class="reference internal" href="classes.html#module-sklearn.multiclass" title="sklearn.multiclass"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.multiclass</span></tt></a> module implements <em>meta-estimators</em> to solve
+<tt class="docutils literal"><span class="pre">multiclass</span></tt> and <tt class="docutils literal"><span class="pre">multilabel</span></tt> classification problems
 by decomposing such problems into binary classification problems.</p>
 <blockquote>
 <div><ul>
@@ -228,7 +228,7 @@ more information, see the relevant estimator documentation.</p>
 </ul>
 </div></blockquote>
 <p>All scikit-learn classifiers are capable of multiclass classification,
-but the meta-estimators offered by <a class="reference internal" href="classes.html#module-sklearn.multiclass" title="sklearn.multiclass"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.multiclass</span></code></a>
+but the meta-estimators offered by <a class="reference internal" href="classes.html#module-sklearn.multiclass" title="sklearn.multiclass"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.multiclass</span></tt></a>
 permit changing the way they handle more than two classes
 because this may have an effect on classifier performance
 (either in terms of generalization error or required computational resources).</p>
@@ -237,25 +237,25 @@ grouped by strategy; you don&#8217;t need the meta-estimators in this class
 if you&#8217;re using one of these unless you want custom multiclass behavior:</p>
 <blockquote>
 <div><ul class="simple">
-<li>Inherently multiclass: <a class="reference internal" href="naive_bayes.html#naive-bayes"><span>Naive Bayes</span></a>,
-<a class="reference internal" href="lda_qda.html#lda-qda"><span>LDA and QDA</span></a>,
-<a class="reference internal" href="tree.html#tree"><span>Decision Trees</span></a>, <a class="reference internal" href="ensemble.html#forest"><span>Random Forests</span></a>,
-<a class="reference internal" href="neighbors.html#neighbors"><span>Nearest Neighbors</span></a>,
-setting <code class="docutils literal"><span class="pre">multi_class='multinomial'</span></code> in
-<a class="reference internal" href="generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><code class="xref py py-class docutils literal"><span class="pre">sklearn.linear_model.LogisticRegression</span></code></a>.</li>
-<li>Support multilabel: <a class="reference internal" href="tree.html#tree"><span>Decision Trees</span></a>,
-<a class="reference internal" href="ensemble.html#forest"><span>Random Forests</span></a>, <a class="reference internal" href="neighbors.html#neighbors"><span>Nearest Neighbors</span></a>,
-<a class="reference internal" href="linear_model.html#ridge-regression"><span>Ridge Regression</span></a>.</li>
-<li>One-Vs-One: <a class="reference internal" href="generated/sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><code class="xref py py-class docutils literal"><span class="pre">sklearn.svm.SVC</span></code></a>.</li>
-<li>One-Vs-All: all linear models except <a class="reference internal" href="generated/sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><code class="xref py py-class docutils literal"><span class="pre">sklearn.svm.SVC</span></code></a>.</li>
+<li>Inherently multiclass: <a class="reference internal" href="naive_bayes.html#naive-bayes"><em>Naive Bayes</em></a>,
+<a class="reference internal" href="lda_qda.html#lda-qda"><em>LDA and QDA</em></a>,
+<a class="reference internal" href="tree.html#tree"><em>Decision Trees</em></a>, <a class="reference internal" href="ensemble.html#forest"><em>Random Forests</em></a>,
+<a class="reference internal" href="neighbors.html#neighbors"><em>Nearest Neighbors</em></a>,
+setting <tt class="docutils literal"><span class="pre">multi_class='multinomial'</span></tt> in
+<a class="reference internal" href="generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.linear_model.LogisticRegression</span></tt></a>.</li>
+<li>Support multilabel: <a class="reference internal" href="tree.html#tree"><em>Decision Trees</em></a>,
+<a class="reference internal" href="ensemble.html#forest"><em>Random Forests</em></a>, <a class="reference internal" href="neighbors.html#neighbors"><em>Nearest Neighbors</em></a>,
+<a class="reference internal" href="linear_model.html#ridge-regression"><em>Ridge Regression</em></a>.</li>
+<li>One-Vs-One: <a class="reference internal" href="generated/sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.svm.SVC</span></tt></a>.</li>
+<li>One-Vs-All: all linear models except <a class="reference internal" href="generated/sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.svm.SVC</span></tt></a>.</li>
 </ul>
 </div></blockquote>
 <p>Some estimators also support multioutput-multiclass classification
-tasks <a class="reference internal" href="tree.html#tree"><span>Decision Trees</span></a>, <a class="reference internal" href="ensemble.html#forest"><span>Random Forests</span></a>,
-<a class="reference internal" href="neighbors.html#neighbors"><span>Nearest Neighbors</span></a>.</p>
+tasks <a class="reference internal" href="tree.html#tree"><em>Decision Trees</em></a>, <a class="reference internal" href="ensemble.html#forest"><em>Random Forests</em></a>,
+<a class="reference internal" href="neighbors.html#neighbors"><em>Nearest Neighbors</em></a>.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">At present, no metric in <a class="reference internal" href="classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>
+<p class="last">At present, no metric in <a class="reference internal" href="classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>
 supports the multioutput-multiclass classification task.</p>
 </div>
 <div class="section" id="multilabel-classification-format">
@@ -264,10 +264,10 @@ supports the multioutput-multiclass classification task.</p>
 expressed with label binary indicator array: each sample is one row of a 2d
 array of shape (n_samples, n_classes) with binary values: the one, i.e. the non
 zero elements, corresponds to the subset of labels. An array such as
-<code class="docutils literal"><span class="pre">np.array([[1,</span> <span class="pre">0,</span> <span class="pre">0],</span> <span class="pre">[0,</span> <span class="pre">1,</span> <span class="pre">1],</span> <span class="pre">[0,</span> <span class="pre">0,</span> <span class="pre">0]])</span></code> represents label 0 in the first
+<tt class="docutils literal"><span class="pre">np.array([[1,</span> <span class="pre">0,</span> <span class="pre">0],</span> <span class="pre">[0,</span> <span class="pre">1,</span> <span class="pre">1],</span> <span class="pre">[0,</span> <span class="pre">0,</span> <span class="pre">0]])</span></tt> represents label 0 in the first
 sample, labels 1 and 2 in the second sample, and no labels in the third sample.</p>
 <p>Producing multilabel data as a list of sets of labels may be more intuitive.
-The <a class="reference internal" href="generated/sklearn.preprocessing.MultiLabelBinarizer.html#sklearn.preprocessing.MultiLabelBinarizer" title="sklearn.preprocessing.MultiLabelBinarizer"><code class="xref py py-class docutils literal"><span class="pre">MultiLabelBinarizer</span></code></a>
+The <a class="reference internal" href="generated/sklearn.preprocessing.MultiLabelBinarizer.html#sklearn.preprocessing.MultiLabelBinarizer" title="sklearn.preprocessing.MultiLabelBinarizer"><tt class="xref py py-class docutils literal"><span class="pre">MultiLabelBinarizer</span></tt></a>
 transformer can be used to convert between a collection of collections of
 labels and the indicator format.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MultiLabelBinarizer</span>
@@ -284,7 +284,7 @@ labels and the indicator format.</p>
 <div class="section" id="one-vs-the-rest">
 <span id="ovr-classification"></span><h2>1.12.2. One-Vs-The-Rest<a class="headerlink" href="#one-vs-the-rest" title="Permalink to this headline">¶</a></h2>
 <p>This strategy, also known as <strong>one-vs-all</strong>, is implemented in
-<a class="reference internal" href="generated/sklearn.multiclass.OneVsRestClassifier.html#sklearn.multiclass.OneVsRestClassifier" title="sklearn.multiclass.OneVsRestClassifier"><code class="xref py py-class docutils literal"><span class="pre">OneVsRestClassifier</span></code></a>.  The strategy consists in fitting one classifier
+<a class="reference internal" href="generated/sklearn.multiclass.OneVsRestClassifier.html#sklearn.multiclass.OneVsRestClassifier" title="sklearn.multiclass.OneVsRestClassifier"><tt class="xref py py-class docutils literal"><span class="pre">OneVsRestClassifier</span></tt></a>.  The strategy consists in fitting one classifier
 per class. For each classifier, the class is fitted against all the other
 classes. In addition to its computational efficiency (only <cite>n_classes</cite>
 classifiers are needed), one advantage of this approach is its
@@ -313,7 +313,7 @@ default choice.</p>
 </div>
 <div class="section" id="multilabel-learning">
 <h3>1.12.2.2. Multilabel learning<a class="headerlink" href="#multilabel-learning" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.multiclass.OneVsRestClassifier.html#sklearn.multiclass.OneVsRestClassifier" title="sklearn.multiclass.OneVsRestClassifier"><code class="xref py py-class docutils literal"><span class="pre">OneVsRestClassifier</span></code></a> also supports multilabel classification.
+<p><a class="reference internal" href="generated/sklearn.multiclass.OneVsRestClassifier.html#sklearn.multiclass.OneVsRestClassifier" title="sklearn.multiclass.OneVsRestClassifier"><tt class="xref py py-class docutils literal"><span class="pre">OneVsRestClassifier</span></tt></a> also supports multilabel classification.
 To use this feature, feed the classifier an indicator matrix, in which cell
 [i, j] indicates the presence of label j in sample i.</p>
 <div class="figure align-center">
@@ -322,26 +322,26 @@ To use this feature, feed the classifier an indicator matrix, in which cell
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/plot_multilabel.html#example-plot-multilabel-py"><span>Multilabel classification</span></a></li>
+<li><a class="reference internal" href="../auto_examples/plot_multilabel.html#example-plot-multilabel-py"><em>Multilabel classification</em></a></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="section" id="one-vs-one">
 <span id="ovo-classification"></span><h2>1.12.3. One-Vs-One<a class="headerlink" href="#one-vs-one" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="generated/sklearn.multiclass.OneVsOneClassifier.html#sklearn.multiclass.OneVsOneClassifier" title="sklearn.multiclass.OneVsOneClassifier"><code class="xref py py-class docutils literal"><span class="pre">OneVsOneClassifier</span></code></a> constructs one classifier per pair of classes.
+<p><a class="reference internal" href="generated/sklearn.multiclass.OneVsOneClassifier.html#sklearn.multiclass.OneVsOneClassifier" title="sklearn.multiclass.OneVsOneClassifier"><tt class="xref py py-class docutils literal"><span class="pre">OneVsOneClassifier</span></tt></a> constructs one classifier per pair of classes.
 At prediction time, the class which received the most votes is selected.
 In the event of a tie (among two classes with an equal number of votes), it
 selects the class with the highest aggregate classification confidence by
 summing over the pair-wise classification confidence levels computed by the
 underlying binary classifiers.</p>
-<p>Since it requires to fit <code class="docutils literal"><span class="pre">n_classes</span> <span class="pre">*</span> <span class="pre">(n_classes</span> <span class="pre">-</span> <span class="pre">1)</span> <span class="pre">/</span> <span class="pre">2</span></code> classifiers,
+<p>Since it requires to fit <tt class="docutils literal"><span class="pre">n_classes</span> <span class="pre">*</span> <span class="pre">(n_classes</span> <span class="pre">-</span> <span class="pre">1)</span> <span class="pre">/</span> <span class="pre">2</span></tt> classifiers,
 this method is usually slower than one-vs-the-rest, due to its
 O(n_classes^2) complexity. However, this method may be advantageous for
 algorithms such as kernel algorithms which don&#8217;t scale well with
-<code class="docutils literal"><span class="pre">n_samples</span></code>. This is because each individual learning problem only involves
+<tt class="docutils literal"><span class="pre">n_samples</span></tt>. This is because each individual learning problem only involves
 a small subset of the data whereas, with one-vs-the-rest, the complete
-dataset is used <code class="docutils literal"><span class="pre">n_classes</span></code> times.</p>
+dataset is used <tt class="docutils literal"><span class="pre">n_classes</span></tt> times.</p>
 <div class="section" id="id1">
 <h3>1.12.3.1. Multiclass learning<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Below is an example of multiclass learning using OvO:</p>
@@ -388,13 +388,13 @@ future.</p>
 <p>At fitting time, one binary classifier per bit in the code book is fitted.
 At prediction time, the classifiers are used to project new points in the
 class space and the class closest to the points is chosen.</p>
-<p>In <a class="reference internal" href="generated/sklearn.multiclass.OutputCodeClassifier.html#sklearn.multiclass.OutputCodeClassifier" title="sklearn.multiclass.OutputCodeClassifier"><code class="xref py py-class docutils literal"><span class="pre">OutputCodeClassifier</span></code></a>, the <code class="docutils literal"><span class="pre">code_size</span></code> attribute allows the user to
+<p>In <a class="reference internal" href="generated/sklearn.multiclass.OutputCodeClassifier.html#sklearn.multiclass.OutputCodeClassifier" title="sklearn.multiclass.OutputCodeClassifier"><tt class="xref py py-class docutils literal"><span class="pre">OutputCodeClassifier</span></tt></a>, the <tt class="docutils literal"><span class="pre">code_size</span></tt> attribute allows the user to
 control the number of classifiers which will be used. It is a percentage of the
 total number of classes.</p>
 <p>A number between 0 and 1 will require fewer classifiers than
-one-vs-the-rest. In theory, <code class="docutils literal"><span class="pre">log2(n_classes)</span> <span class="pre">/</span> <span class="pre">n_classes</span></code> is sufficient to
+one-vs-the-rest. In theory, <tt class="docutils literal"><span class="pre">log2(n_classes)</span> <span class="pre">/</span> <span class="pre">n_classes</span></tt> is sufficient to
 represent each class unambiguously. However, in practice, it may not lead to
-good accuracy since <code class="docutils literal"><span class="pre">log2(n_classes)</span></code> is much smaller than n_classes.</p>
+good accuracy since <tt class="docutils literal"><span class="pre">log2(n_classes)</span></tt> is much smaller than n_classes.</p>
 <p>A number greater than than 1 will require more classifiers than
 one-vs-the-rest. In this case, some classifiers will in theory correct for
 the mistakes made by other classifiers, hence the name &#8220;error-correcting&#8221;.

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <style type="text/css">
   div.bodywrapper blockquote {
@@ -202,18 +202,18 @@
 </style><div class="section" id="dataset-transformations">
 <span id="data-transforms"></span><h1>4. Dataset transformations<a class="headerlink" href="#dataset-transformations" title="Permalink to this headline">¶</a></h1>
 <p>scikit-learn provides a library of transformers, which may clean (see
-<a class="reference internal" href="modules/preprocessing.html#preprocessing"><span>Preprocessing data</span></a>), reduce (see <a class="reference internal" href="modules/unsupervised_reduction.html#data-reduction"><span>Unsupervised dimensionality reduction</span></a>), expand (see
-<a class="reference internal" href="modules/kernel_approximation.html#kernel-approximation"><span>Kernel Approximation</span></a>) or generate (see <a class="reference internal" href="modules/feature_extraction.html#feature-extraction"><span>Feature extraction</span></a>)
+<a class="reference internal" href="modules/preprocessing.html#preprocessing"><em>Preprocessing data</em></a>), reduce (see <a class="reference internal" href="modules/unsupervised_reduction.html#data-reduction"><em>Unsupervised dimensionality reduction</em></a>), expand (see
+<a class="reference internal" href="modules/kernel_approximation.html#kernel-approximation"><em>Kernel Approximation</em></a>) or generate (see <a class="reference internal" href="modules/feature_extraction.html#feature-extraction"><em>Feature extraction</em></a>)
 feature representations.</p>
-<p>Like other estimators, these are represented by classes with <code class="docutils literal"><span class="pre">fit</span></code> method,
+<p>Like other estimators, these are represented by classes with <tt class="docutils literal"><span class="pre">fit</span></tt> method,
 which learns model parameters (e.g. mean and standard deviation for
-normalization) from a training set, and a <code class="docutils literal"><span class="pre">transform</span></code> method which applies
-this transformation model to unseen data. <code class="docutils literal"><span class="pre">fit_transform</span></code> may be more
+normalization) from a training set, and a <tt class="docutils literal"><span class="pre">transform</span></tt> method which applies
+this transformation model to unseen data. <tt class="docutils literal"><span class="pre">fit_transform</span></tt> may be more
 convenient and efficient for modelling and transforming the training data
 simultaneously.</p>
 <p>Combining such transformers, either in parallel or series is covered in
-<a class="reference internal" href="modules/pipeline.html#combining-estimators"><span>Pipeline and FeatureUnion: combining estimators</span></a>. <a class="reference internal" href="modules/metrics.html#metrics"><span>Pairwise metrics, Affinities and Kernels</span></a> covers transforming feature
-spaces into affinity matrices, while <a class="reference internal" href="modules/preprocessing_targets.html#preprocessing-targets"><span>Transforming the prediction target (y)</span></a> considers
+<a class="reference internal" href="modules/pipeline.html#combining-estimators"><em>Pipeline and FeatureUnion: combining estimators</em></a>. <a class="reference internal" href="modules/metrics.html#metrics"><em>Pairwise metrics, Affinities and Kernels</em></a> covers transforming feature
+spaces into affinity matrices, while <a class="reference internal" href="modules/preprocessing_targets.html#preprocessing-targets"><em>Transforming the prediction target (y)</em></a> considers
 transformations of the target space (e.g. categorical labels) for use in
 scikit-learn.</p>
 <div class="toctree-wrapper compound">
@@ -305,7 +305,7 @@ scikit-learn.</p>
 <li class="toctree-l2"><a class="reference internal" href="modules/metrics.html#chi-squared-kernel">4.7.7. Chi-squared kernel</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="modules/preprocessing_targets.html">4.8. Transforming the prediction target (<code class="docutils literal"><span class="pre">y</span></code>)</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/preprocessing_targets.html">4.8. Transforming the prediction target (<tt class="docutils literal"><span class="pre">y</span></tt>)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="modules/preprocessing_targets.html#label-binarization">4.8.1. Label binarization</a></li>
 <li class="toctree-l2"><a class="reference internal" href="modules/preprocessing_targets.html#label-encoding">4.8.2. Label encoding</a></li>
 </ul>

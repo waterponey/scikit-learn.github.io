@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.svm.LinearSVC" href="sklearn.svm.LinearSVC.html" />
+    <link rel="prev" title="sklearn.semi_supervised.LabelSpreading" href="sklearn.semi_supervised.LabelSpreading.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.semi_supervised.LabelSpreading.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.semi_...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.semi_supervised.LabelSpreading
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.svm</span></code>.SVC</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-svm-svc">Examples using <code class="docutils literal"><span class="pre">sklearn.svm.SVC</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.svm</span></tt>.SVC</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-svm-svc">Examples using <tt class="docutils literal"><span class="pre">sklearn.svm.SVC</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-svm-svc">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.svm" title="sklearn.svm"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></code></a>.SVC<a class="headerlink" href="#sklearn-svm-svc" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.svm" title="sklearn.svm"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></tt></a>.SVC<a class="headerlink" href="#sklearn-svm-svc" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.svm.SVC">
-<em class="property">class </em><code class="descclassname">sklearn.svm.</code><code class="descname">SVC</code><span class="sig-paren">(</span><em>C=1.0</em>, <em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>shrinking=True</em>, <em>probability=False</em>, <em>tol=0.001</em>, <em>cache_size=200</em>, <em>class_weight=None</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>decision_function_shape=None</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/svm/classes.py#L385"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.svm.</tt><tt class="descname">SVC</tt><big>(</big><em>C=1.0</em>, <em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>shrinking=True</em>, <em>probability=False</em>, <em>tol=0.001</em>, <em>cache_size=200</em>, <em>class_weight=None</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>decision_function_shape=None</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/svm/classes.py#L385"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC" title="Permalink to this definition">¶</a></dt>
 <dd><p>C-Support Vector Classification.</p>
 <p>The implementation is based on libsvm. The fit time complexity
 is more than quadratic with the number of samples which makes it hard
@@ -141,8 +181,8 @@ to scale to dataset with more than a couple of 10000 samples.</p>
 <p>For details on the precise mathematical formulation of the provided
 kernel functions and how <cite>gamma</cite>, <cite>coef0</cite> and <cite>degree</cite> affect each
 other, see the corresponding section in the narrative documentation:
-<a class="reference internal" href="../svm.html#svm-kernels"><span>Kernel functions</span></a>.</p>
-<p>Read more in the <a class="reference internal" href="../svm.html#svm-classification"><span>User Guide</span></a>.</p>
+<a class="reference internal" href="../svm.html#svm-kernels"><em>Kernel functions</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../svm.html#svm-classification"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -158,7 +198,7 @@ It must be one of &#8216;linear&#8217;, &#8216;poly&#8217;, &#8216;rbf&#8217;, &
 a callable.
 If none is given, &#8216;rbf&#8217; will be used. If a callable is given it is
 used to pre-compute the kernel matrix from data matrices; that matrix
-should be an array of shape <code class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_samples)</span></code>.</p>
+should be an array of shape <tt class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_samples)</span></tt>.</p>
 </div></blockquote>
 <p><strong>degree</strong> : int, optional (default=3)</p>
 <blockquote>
@@ -199,7 +239,7 @@ SVC. If not given, all classes are supposed to have
 weight one.
 The &#8220;balanced&#8221; mode uses the values of y to automatically adjust
 weights inversely proportional to class frequencies in the input data
-as <code class="docutils literal"><span class="pre">n_samples</span> <span class="pre">/</span> <span class="pre">(n_classes</span> <span class="pre">*</span> <span class="pre">np.bincount(y))</span></code></p>
+as <tt class="docutils literal"><span class="pre">n_samples</span> <span class="pre">/</span> <span class="pre">(n_classes</span> <span class="pre">*</span> <span class="pre">np.bincount(y))</span></tt></p>
 </div></blockquote>
 <p><strong>verbose</strong> : bool, default: False</p>
 <blockquote>
@@ -266,9 +306,9 @@ problem). This is only available in the case of a linear kernel.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.svm.SVR.html#sklearn.svm.SVR" title="sklearn.svm.SVR"><code class="xref py py-obj docutils literal"><span class="pre">SVR</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.svm.SVR.html#sklearn.svm.SVR" title="sklearn.svm.SVR"><tt class="xref py py-obj docutils literal"><span class="pre">SVR</span></tt></a></dt>
 <dd>Support Vector Machine for Regression implemented using libsvm.</dd>
-<dt><a class="reference internal" href="sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC" title="sklearn.svm.LinearSVC"><code class="xref py py-obj docutils literal"><span class="pre">LinearSVC</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC" title="sklearn.svm.LinearSVC"><tt class="xref py py-obj docutils literal"><span class="pre">LinearSVC</span></tt></a></dt>
 <dd>Scalable Linear Support Vector Machine for classification implemented using liblinear. Check the See also section of LinearSVC for more comparison element.</dd>
 </dl>
 </div>
@@ -294,16 +334,34 @@ problem). This is only available in the case of a linear kernel.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.svm.SVC.decision_function" title="sklearn.svm.SVC.decision_function"><tt class="xref py py-obj docutils literal"><span class="pre">decision_function</span></tt></a>(X)</td>
+<td>Distance of the samples X to the separating hyperplane.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.svm.SVC.fit" title="sklearn.svm.SVC.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Fit the SVM model according to the given training data.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.svm.SVC.get_params" title="sklearn.svm.SVC.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.svm.SVC.predict" title="sklearn.svm.SVC.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<td>Perform classification on samples in X.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.svm.SVC.score" title="sklearn.svm.SVC.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Returns the mean accuracy on the given test data and labels.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.svm.SVC.set_params" title="sklearn.svm.SVC.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.svm.SVC.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>C=1.0</em>, <em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>shrinking=True</em>, <em>probability=False</em>, <em>tol=0.001</em>, <em>cache_size=200</em>, <em>class_weight=None</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>decision_function_shape=None</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/svm/classes.py#L523"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>C=1.0</em>, <em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>shrinking=True</em>, <em>probability=False</em>, <em>tol=0.001</em>, <em>cache_size=200</em>, <em>class_weight=None</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>decision_function_shape=None</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/svm/classes.py#L523"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.decision_function">
-<code class="descname">decision_function</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/svm/base.py#L527"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.decision_function" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decision_function</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/svm/base.py#L527"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Distance of the samples X to the separating hyperplane.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -327,7 +385,7 @@ n_classes)</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/svm/base.py#L110"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/svm/base.py#L110"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the SVM model according to the given training data.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -369,7 +427,7 @@ matrices as input.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -394,7 +452,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/svm/base.py#L552"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/svm/base.py#L552"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform classification on samples in X.</p>
 <p>For an one-class model, +1 or -1 is returned.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -420,7 +478,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="attribute">
 <dt id="sklearn.svm.SVC.predict_log_proba">
-<code class="descname">predict_log_proba</code><a class="headerlink" href="#sklearn.svm.SVC.predict_log_proba" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict_log_proba</tt><a class="headerlink" href="#sklearn.svm.SVC.predict_log_proba" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute log probabilities of possible outcomes for samples in X.</p>
 <p>The model need to have probability information computed at training
 time: fit with attribute <cite>probability</cite> set to True.</p>
@@ -454,7 +512,7 @@ datasets.</p>
 
 <dl class="attribute">
 <dt id="sklearn.svm.SVC.predict_proba">
-<code class="descname">predict_proba</code><a class="headerlink" href="#sklearn.svm.SVC.predict_proba" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict_proba</tt><a class="headerlink" href="#sklearn.svm.SVC.predict_proba" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute probabilities of possible outcomes for samples in X.</p>
 <p>The model need to have probability information computed at training
 time: fit with attribute <cite>probability</cite> set to True.</p>
@@ -488,7 +546,7 @@ datasets.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L285"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L285"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -523,11 +581,11 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.SVC.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.SVC.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -542,142 +600,142 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-svm-svc">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.svm.SVC</span></code><a class="headerlink" href="#examples-using-sklearn-svm-svc" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="In many real-world examples, there are many ways to extract features from a dataset. Often it i..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.svm.SVC</span></tt><a class="headerlink" href="#examples-using-sklearn-svm-svc" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="In many real-world examples, there are many ways to extract features from a dataset. Often it i..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./feature_stacker.html"><img alt="../../_images/feature_stacker1.png" src="../../_images/feature_stacker1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_stacker.html#example-feature-stacker-py"><span>Concatenating multiple feature extraction methods</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_stacker.html#example-feature-stacker-py"><em>Concatenating multiple feature extraction methods</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example simulates a multi-label document classification problem. The dataset is generated ..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="This example simulates a multi-label document classification problem. The dataset is generated ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_multilabel.html"><img alt="../../_images/plot_multilabel1.png" src="../../_images/plot_multilabel1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_multilabel.html#example-plot-multilabel-py"><span>Multilabel classification</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_multilabel.html#example-plot-multilabel-py"><em>Multilabel classification</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Datasets can often contain components of that require different feature extraction and processi..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="Datasets can often contain components of that require different feature extraction and processi..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./hetero_feature_union.html"><img alt="../../_images/hetero_feature_union1.png" src="../../_images/hetero_feature_union1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/hetero_feature_union.html#example-hetero-feature-union-py"><span>Feature Union with Heterogeneous Data Sources</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/hetero_feature_union.html#example-hetero-feature-union-py"><em>Feature Union with Heterogeneous Data Sources</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An example illustrating the approximation of the feature map of an RBF kernel."><div class="figure" id="id4">
+</div><div class="thumbnailContainer" tooltip="An example illustrating the approximation of the feature map of an RBF kernel."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_kernel_approximation.html"><img alt="../../_images/plot_kernel_approximation1.png" src="../../_images/plot_kernel_approximation1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_kernel_approximation.html#example-plot-kernel-approximation-py"><span>Explicit feature map approximation for RBF kernels</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_kernel_approximation.html#example-plot-kernel-approximation-py"><em>Explicit feature map approximation for RBF kernels</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The dataset used in this example is a preprocessed excerpt of the "Labeled Faces in the Wild", ..."><div class="figure" id="id5">
+</div><div class="thumbnailContainer" tooltip="The dataset used in this example is a preprocessed excerpt of the "Labeled Faces in the Wild", ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/applications/face_recognition.html"><img alt="../../_images/face_recognition1.png" src="../../_images/face_recognition1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/face_recognition.html#example-applications-face-recognition-py"><span>Faces recognition example using eigenfaces and SVMs</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/applications/face_recognition.html#example-applications-face-recognition-py"><em>Faces recognition example using eigenfaces and SVMs</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A simple graphical frontend for Libsvm mainly intended for didactic purposes. You can create da..."><div class="figure" id="id6">
+</div><div class="thumbnailContainer" tooltip="A simple graphical frontend for Libsvm mainly intended for didactic purposes. You can create da..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/applications/svm_gui.html"><img alt="../../_images/svm_gui1.png" src="../../_images/svm_gui1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/svm_gui.html#example-applications-svm-gui-py"><span>Libsvm GUI</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/applications/svm_gui.html#example-applications-svm-gui-py"><em>Libsvm GUI</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An example showing how the scikit-learn can be used to recognize images of hand-written digits."><div class="figure" id="id7">
+</div><div class="thumbnailContainer" tooltip="An example showing how the scikit-learn can be used to recognize images of hand-written digits."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/classification/plot_digits_classification.html"><img alt="../../_images/plot_digits_classification1.png" src="../../_images/plot_digits_classification1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><span>Recognizing hand-written digits</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><em>Recognizing hand-written digits</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Plot the classification probability for different classifiers. We use a 3 class dataset, and we..."><div class="figure" id="id8">
+</div><div class="thumbnailContainer" tooltip="Plot the classification probability for different classifiers. We use a 3 class dataset, and we..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/classification/plot_classification_probability.html"><img alt="../../_images/plot_classification_probability1.png" src="../../_images/plot_classification_probability1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/classification/plot_classification_probability.html#example-classification-plot-classification-probability-py"><span>Plot classification probability</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/classification/plot_classification_probability.html#example-classification-plot-classification-probability-py"><em>Plot classification probability</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A comparison of a several classifiers in scikit-learn on synthetic datasets. The point of this ..."><div class="figure" id="id9">
+</div><div class="thumbnailContainer" tooltip="A comparison of a several classifiers in scikit-learn on synthetic datasets. The point of this ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/classification/plot_classifier_comparison.html"><img alt="../../_images/plot_classifier_comparison1.png" src="../../_images/plot_classifier_comparison1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/classification/plot_classifier_comparison.html#example-classification-plot-classifier-comparison-py"><span>Classifier comparison</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/classification/plot_classifier_comparison.html#example-classification-plot-classifier-comparison-py"><em>Classifier comparison</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Plot the decision boundaries of a `VotingClassifier` for two features of the Iris dataset."><div class="figure" id="id10">
+</div><div class="thumbnailContainer" tooltip="Plot the decision boundaries of a `VotingClassifier` for two features of the Iris dataset."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_voting_decision_regions.html"><img alt="../../_images/plot_voting_decision_regions1.png" src="../../_images/plot_voting_decision_regions1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_voting_decision_regions.html#example-ensemble-plot-voting-decision-regions-py"><span>Plot the decision boundaries of a VotingClassifier</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_voting_decision_regions.html#example-ensemble-plot-voting-decision-regions-py"><em>Plot the decision boundaries of a VotingClassifier</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A tutorial exercise using Cross-validation with an SVM on the Digits dataset."><div class="figure" id="id11">
+</div><div class="thumbnailContainer" tooltip="A tutorial exercise using Cross-validation with an SVM on the Digits dataset."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/exercises/plot_cv_digits.html"><img alt="../../_images/plot_cv_digits1.png" src="../../_images/plot_cv_digits1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/exercises/plot_cv_digits.html#example-exercises-plot-cv-digits-py"><span>Cross-validation on Digits Dataset Exercise</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/exercises/plot_cv_digits.html#example-exercises-plot-cv-digits-py"><em>Cross-validation on Digits Dataset Exercise</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A tutorial exercise for using different SVM kernels."><div class="figure" id="id12">
+</div><div class="thumbnailContainer" tooltip="A tutorial exercise for using different SVM kernels."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/exercises/plot_iris_exercise.html"><img alt="../../_images/plot_iris_exercise1.png" src="../../_images/plot_iris_exercise1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/exercises/plot_iris_exercise.html#example-exercises-plot-iris-exercise-py"><span>SVM Exercise</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/exercises/plot_iris_exercise.html#example-exercises-plot-iris-exercise-py"><em>SVM Exercise</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Simple usage of Pipeline that runs successively a univariate feature selection with anova and t..."><div class="figure" id="id13">
+</div><div class="thumbnailContainer" tooltip="Simple usage of Pipeline that runs successively a univariate feature selection with anova and t..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/feature_selection/feature_selection_pipeline.html"><img alt="../../_images/feature_selection_pipeline1.png" src="../../_images/feature_selection_pipeline1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_selection/feature_selection_pipeline.html#example-feature-selection-feature-selection-pipeline-py"><span>Pipeline Anova SVM</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_selection/feature_selection_pipeline.html#example-feature-selection-feature-selection-pipeline-py"><em>Pipeline Anova SVM</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A recursive feature elimination example showing the relevance of pixels in a digit classificati..."><div class="figure" id="id14">
+</div><div class="thumbnailContainer" tooltip="A recursive feature elimination example showing the relevance of pixels in a digit classificati..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/feature_selection/plot_rfe_digits.html"><img alt="../../_images/plot_rfe_digits1.png" src="../../_images/plot_rfe_digits1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_selection/plot_rfe_digits.html#example-feature-selection-plot-rfe-digits-py"><span>Recursive feature elimination</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_selection/plot_rfe_digits.html#example-feature-selection-plot-rfe-digits-py"><em>Recursive feature elimination</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A recursive feature elimination example with automatic tuning of the number of features selecte..."><div class="figure" id="id15">
+</div><div class="thumbnailContainer" tooltip="A recursive feature elimination example with automatic tuning of the number of features selecte..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/feature_selection/plot_rfe_with_cross_validation.html"><img alt="../../_images/plot_rfe_with_cross_validation1.png" src="../../_images/plot_rfe_with_cross_validation1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_selection/plot_rfe_with_cross_validation.html#example-feature-selection-plot-rfe-with-cross-validation-py"><span>Recursive feature elimination with cross-validation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_selection/plot_rfe_with_cross_validation.html#example-feature-selection-plot-rfe-with-cross-validation-py"><em>Recursive feature elimination with cross-validation</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="In order to test if a classification score is significative a technique in repeating the classi..."><div class="figure" id="id16">
+</div><div class="thumbnailContainer" tooltip="In order to test if a classification score is significative a technique in repeating the classi..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/feature_selection/plot_permutation_test_for_classification.html"><img alt="../../_images/plot_permutation_test_for_classification1.png" src="../../_images/plot_permutation_test_for_classification1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_selection/plot_permutation_test_for_classification.html#example-feature-selection-plot-permutation-test-for-classification-py"><span>Test with permutations the significance of a classification score</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_selection/plot_permutation_test_for_classification.html#example-feature-selection-plot-permutation-test-for-classification-py"><em>Test with permutations the significance of a classification score</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An example showing univariate feature selection."><div class="figure" id="id17">
+</div><div class="thumbnailContainer" tooltip="An example showing univariate feature selection."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/feature_selection/plot_feature_selection.html"><img alt="../../_images/plot_feature_selection1.png" src="../../_images/plot_feature_selection1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_selection/plot_feature_selection.html#example-feature-selection-plot-feature-selection-py"><span>Univariate Feature Selection</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_selection/plot_feature_selection.html#example-feature-selection-plot-feature-selection-py"><em>Univariate Feature Selection</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="In this plot you can see the training scores and validation scores of an SVM for different valu..."><div class="figure" id="id18">
+</div><div class="thumbnailContainer" tooltip="In this plot you can see the training scores and validation scores of an SVM for different valu..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_validation_curve.html"><img alt="../../_images/plot_validation_curve1.png" src="../../_images/plot_validation_curve1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_validation_curve.html#example-model-selection-plot-validation-curve-py"><span>Plotting Validation Curves</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_validation_curve.html#example-model-selection-plot-validation-curve-py"><em>Plotting Validation Curves</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Example of confusion matrix usage to evaluate the quality of the output of a classifier on the ..."><div class="figure" id="id19">
+</div><div class="thumbnailContainer" tooltip="Example of confusion matrix usage to evaluate the quality of the output of a classifier on the ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_confusion_matrix.html"><img alt="../../_images/plot_confusion_matrix1.png" src="../../_images/plot_confusion_matrix1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_confusion_matrix.html#example-model-selection-plot-confusion-matrix-py"><span>Confusion matrix</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_confusion_matrix.html#example-model-selection-plot-confusion-matrix-py"><em>Confusion matrix</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure" id="id20">
+</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_roc_crossval.html"><img alt="../../_images/plot_roc_crossval1.png" src="../../_images/plot_roc_crossval1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc_crossval.html#example-model-selection-plot-roc-crossval-py"><span>Receiver Operating Characteristic (ROC) with cross validation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc_crossval.html#example-model-selection-plot-roc-crossval-py"><em>Receiver Operating Characteristic (ROC) with cross validation</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This examples shows how a classifier is optimized by cross-validation, which is done using the ..."><div class="figure" id="id21">
+</div><div class="thumbnailContainer" tooltip="This examples shows how a classifier is optimized by cross-validation, which is done using the ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/grid_search_digits.html"><img alt="../../_images/grid_search_digits1.png" src="../../_images/grid_search_digits1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/grid_search_digits.html#example-model-selection-grid-search-digits-py"><span>Parameter estimation using grid search with cross-validation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/grid_search_digits.html#example-model-selection-grid-search-digits-py"><em>Parameter estimation using grid search with cross-validation</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Example of Precision-Recall metric to evaluate classifier output quality."><div class="figure" id="id22">
+</div><div class="thumbnailContainer" tooltip="Example of Precision-Recall metric to evaluate classifier output quality."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_precision_recall.html"><img alt="../../_images/plot_precision_recall1.png" src="../../_images/plot_precision_recall1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_precision_recall.html#example-model-selection-plot-precision-recall-py"><span>Precision-Recall</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_precision_recall.html#example-model-selection-plot-precision-recall-py"><em>Precision-Recall</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure" id="id23">
+</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_roc.html"><img alt="../../_images/plot_roc1.png" src="../../_images/plot_roc1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc.html#example-model-selection-plot-roc-py"><span>Receiver Operating Characteristic (ROC)</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc.html#example-model-selection-plot-roc-py"><em>Receiver Operating Characteristic (ROC)</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="On the left side the learning curve of a naive Bayes classifier is shown for the digits dataset..."><div class="figure" id="id24">
+</div><div class="thumbnailContainer" tooltip="On the left side the learning curve of a naive Bayes classifier is shown for the digits dataset..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_learning_curve.html"><img alt="../../_images/plot_learning_curve1.png" src="../../_images/plot_learning_curve1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_learning_curve.html#example-model-selection-plot-learning-curve-py"><span>Plotting Learning Curves</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_learning_curve.html#example-model-selection-plot-learning-curve-py"><em>Plotting Learning Curves</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Comparison for decision boundary generated on iris dataset between Label Propagation and SVM."><div class="figure" id="id25">
+</div><div class="thumbnailContainer" tooltip="Comparison for decision boundary generated on iris dataset between Label Propagation and SVM."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/semi_supervised/plot_label_propagation_versus_svm_iris.html"><img alt="../../_images/plot_label_propagation_versus_svm_iris1.png" src="../../_images/plot_label_propagation_versus_svm_iris1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/semi_supervised/plot_label_propagation_versus_svm_iris.html#example-semi-supervised-plot-label-propagation-versus-svm-iris-py"><span>Decision boundary of label propagation versus SVM on the Iris dataset</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/semi_supervised/plot_label_propagation_versus_svm_iris.html#example-semi-supervised-plot-label-propagation-versus-svm-iris-py"><em>Decision boundary of label propagation versus SVM on the Iris dataset</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Plot the maximum margin separating hyperplane within a two-class separable dataset using a Supp..."><div class="figure" id="id26">
+</div><div class="thumbnailContainer" tooltip="Plot the maximum margin separating hyperplane within a two-class separable dataset using a Supp..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_separating_hyperplane.html"><img alt="../../_images/plot_separating_hyperplane1.png" src="../../_images/plot_separating_hyperplane1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_separating_hyperplane.html#example-svm-plot-separating-hyperplane-py"><span>SVM: Maximum margin separating hyperplane</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_separating_hyperplane.html#example-svm-plot-separating-hyperplane-py"><em>SVM: Maximum margin separating hyperplane</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Find the optimal separating hyperplane using an SVC for classes that are unbalanced."><div class="figure" id="id27">
+</div><div class="thumbnailContainer" tooltip="Find the optimal separating hyperplane using an SVC for classes that are unbalanced."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_separating_hyperplane_unbalanced.html"><img alt="../../_images/plot_separating_hyperplane_unbalanced1.png" src="../../_images/plot_separating_hyperplane_unbalanced1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_separating_hyperplane_unbalanced.html#example-svm-plot-separating-hyperplane-unbalanced-py"><span>SVM: Separating hyperplane for unbalanced classes</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_separating_hyperplane_unbalanced.html#example-svm-plot-separating-hyperplane-unbalanced-py"><em>SVM: Separating hyperplane for unbalanced classes</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Simple usage of Support Vector Machines to classify a sample. It will plot the decision surface..."><div class="figure" id="id28">
+</div><div class="thumbnailContainer" tooltip="Simple usage of Support Vector Machines to classify a sample. It will plot the decision surface..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_custom_kernel.html"><img alt="../../_images/plot_custom_kernel1.png" src="../../_images/plot_custom_kernel1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_custom_kernel.html#example-svm-plot-custom-kernel-py"><span>SVM with custom kernel</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_custom_kernel.html#example-svm-plot-custom-kernel-py"><em>SVM with custom kernel</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example shows how to perform univariate feature before running a SVC (support vector class..."><div class="figure" id="id29">
+</div><div class="thumbnailContainer" tooltip="This example shows how to perform univariate feature before running a SVC (support vector class..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_svm_anova.html"><img alt="../../_images/plot_svm_anova1.png" src="../../_images/plot_svm_anova1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_svm_anova.html#example-svm-plot-svm-anova-py"><span>SVM-Anova: SVM with univariate feature selection</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_svm_anova.html#example-svm-plot-svm-anova-py"><em>SVM-Anova: SVM with univariate feature selection</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Plot decision function of a weighted dataset, where the size of points is proportional to its w..."><div class="figure" id="id30">
+</div><div class="thumbnailContainer" tooltip="Plot decision function of a weighted dataset, where the size of points is proportional to its w..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_weighted_samples.html"><img alt="../../_images/plot_weighted_samples1.png" src="../../_images/plot_weighted_samples1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_weighted_samples.html#example-svm-plot-weighted-samples-py"><span>SVM: Weighted samples</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_weighted_samples.html#example-svm-plot-weighted-samples-py"><em>SVM: Weighted samples</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Comparison of different linear SVM classifiers on a 2D projection of the iris dataset. We only ..."><div class="figure" id="id31">
+</div><div class="thumbnailContainer" tooltip="Comparison of different linear SVM classifiers on a 2D projection of the iris dataset. We only ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_iris.html"><img alt="../../_images/plot_iris2.png" src="../../_images/plot_iris2.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_iris.html#example-svm-plot-iris-py"><span>Plot different SVM classifiers in the iris dataset</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_iris.html#example-svm-plot-iris-py"><em>Plot different SVM classifiers in the iris dataset</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Three different types of SVM-Kernels are displayed below. The polynomial and RBF are especially..."><div class="figure" id="id32">
+</div><div class="thumbnailContainer" tooltip="Three different types of SVM-Kernels are displayed below. The polynomial and RBF are especially..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_svm_kernels.html"><img alt="../../_images/plot_svm_kernels1.png" src="../../_images/plot_svm_kernels1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_svm_kernels.html#example-svm-plot-svm-kernels-py"><span>SVM-Kernels</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_svm_kernels.html#example-svm-plot-svm-kernels-py"><em>SVM-Kernels</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A small value of `C` includes more/all the observations, allowing the margins to be calculated ..."><div class="figure" id="id33">
+</div><div class="thumbnailContainer" tooltip="A small value of `C` includes more/all the observations, allowing the margins to be calculated ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_svm_margin.html"><img alt="../../_images/plot_svm_margin1.png" src="../../_images/plot_svm_margin1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_svm_margin.html#example-svm-plot-svm-margin-py"><span>SVM Margins Example</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_svm_margin.html#example-svm-plot-svm-margin-py"><em>SVM Margins Example</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example illustrates the effect of the parameters ``gamma`` and ``C`` of the Radial Basis F..."><div class="figure" id="id34">
+</div><div class="thumbnailContainer" tooltip="This example illustrates the effect of the parameters ``gamma`` and ``C`` of the Radial Basis F..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_rbf_parameters.html"><img alt="../../_images/plot_rbf_parameters1.png" src="../../_images/plot_rbf_parameters1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_rbf_parameters.html#example-svm-plot-rbf-parameters-py"><span>RBF SVM parameters</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_rbf_parameters.html#example-svm-plot-rbf-parameters-py"><em>RBF SVM parameters</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -694,8 +752,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.svm.SVC.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.semi_supervised.LabelSpreading.html">Previous
+      </a>
+    </div>
     
      </div>
 

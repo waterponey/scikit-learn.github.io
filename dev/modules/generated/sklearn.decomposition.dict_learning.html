@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.decomposition.dict_learning_online" href="sklearn.decomposition.dict_learning_online.html" />
+    <link rel="prev" title="sklearn.decomposition.fastica" href="sklearn.decomposition.fastica.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.decomposition.fastica.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.decom...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.decomposition.fastica
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.decomposition</span></code>.dict_learning</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.decomposition</span></tt>.dict_learning</a></li>
 </ul>
 
     </div>
@@ -123,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-decomposition-dict-learning">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></code></a>.dict_learning<a class="headerlink" href="#sklearn-decomposition-dict-learning" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></tt></a>.dict_learning<a class="headerlink" href="#sklearn-decomposition-dict-learning" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.decomposition.dict_learning">
-<code class="descclassname">sklearn.decomposition.</code><code class="descname">dict_learning</code><span class="sig-paren">(</span><em>X</em>, <em>n_components</em>, <em>alpha</em>, <em>max_iter=100</em>, <em>tol=1e-08</em>, <em>method='lars'</em>, <em>n_jobs=1</em>, <em>dict_init=None</em>, <em>code_init=None</em>, <em>callback=None</em>, <em>verbose=False</em>, <em>random_state=None</em>, <em>return_n_iter=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/decomposition/dict_learning.py#L377"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.dict_learning" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.decomposition.</tt><tt class="descname">dict_learning</tt><big>(</big><em>X</em>, <em>n_components</em>, <em>alpha</em>, <em>max_iter=100</em>, <em>tol=1e-08</em>, <em>method='lars'</em>, <em>n_jobs=1</em>, <em>dict_init=None</em>, <em>code_init=None</em>, <em>callback=None</em>, <em>verbose=False</em>, <em>random_state=None</em>, <em>return_n_iter=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/dict_learning.py#L377"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.dict_learning" title="Permalink to this definition">¶</a></dt>
 <dd><p>Solves a dictionary learning matrix factorization problem.</p>
 <p>Finds the best dictionary and the corresponding sparse code for
 approximating the data matrix X by solving:</p>
@@ -139,7 +179,7 @@ approximating the data matrix X by solving:</p>
 </pre></div>
 </div>
 <p>where V is the dictionary and U is the sparse code.</p>
-<p>Read more in the <a class="reference internal" href="../decomposition.html#dictionarylearning"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../decomposition.html#dictionarylearning"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -225,7 +265,7 @@ set to True.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.decomposition.dict_learning_online.html#sklearn.decomposition.dict_learning_online" title="sklearn.decomposition.dict_learning_online"><code class="xref py py-obj docutils literal"><span class="pre">dict_learning_online</span></code></a>, <a class="reference internal" href="sklearn.decomposition.DictionaryLearning.html#sklearn.decomposition.DictionaryLearning" title="sklearn.decomposition.DictionaryLearning"><code class="xref py py-obj docutils literal"><span class="pre">DictionaryLearning</span></code></a>, <a class="reference internal" href="sklearn.decomposition.MiniBatchDictionaryLearning.html#sklearn.decomposition.MiniBatchDictionaryLearning" title="sklearn.decomposition.MiniBatchDictionaryLearning"><code class="xref py py-obj docutils literal"><span class="pre">MiniBatchDictionaryLearning</span></code></a>, <a class="reference internal" href="sklearn.decomposition.SparsePCA.html#sklearn.decomposition.SparsePCA" title="sklearn.decomposition.SparsePCA"><code class="xref py py-obj docutils literal"><span class="pre">SparsePCA</span></code></a>, <a class="reference internal" href="sklearn.decomposition.MiniBatchSparsePCA.html#sklearn.decomposition.MiniBatchSparsePCA" title="sklearn.decomposition.MiniBatchSparsePCA"><code class="xref py py-obj docutils literal"><span class="pre">MiniBatchSparsePCA</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.decomposition.dict_learning_online.html#sklearn.decomposition.dict_learning_online" title="sklearn.decomposition.dict_learning_online"><tt class="xref py py-obj docutils literal"><span class="pre">dict_learning_online</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.DictionaryLearning.html#sklearn.decomposition.DictionaryLearning" title="sklearn.decomposition.DictionaryLearning"><tt class="xref py py-obj docutils literal"><span class="pre">DictionaryLearning</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.MiniBatchDictionaryLearning.html#sklearn.decomposition.MiniBatchDictionaryLearning" title="sklearn.decomposition.MiniBatchDictionaryLearning"><tt class="xref py py-obj docutils literal"><span class="pre">MiniBatchDictionaryLearning</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.SparsePCA.html#sklearn.decomposition.SparsePCA" title="sklearn.decomposition.SparsePCA"><tt class="xref py py-obj docutils literal"><span class="pre">SparsePCA</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.MiniBatchSparsePCA.html#sklearn.decomposition.MiniBatchSparsePCA" title="sklearn.decomposition.MiniBatchSparsePCA"><tt class="xref py py-obj docutils literal"><span class="pre">MiniBatchSparsePCA</span></tt></a></p>
 </div>
 </dd></dl>
 
@@ -243,8 +283,12 @@ set to True.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.decomposition.dict_learning.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.decomposition.fastica.html">Previous
+      </a>
+    </div>
     
      </div>
 

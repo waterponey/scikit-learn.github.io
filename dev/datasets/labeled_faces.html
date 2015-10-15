@@ -53,7 +53,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -127,7 +127,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="the-labeled-faces-in-the-wild-face-recognition-dataset">
 <span id="labeled-faces-in-the-wild"></span><h1>The Labeled Faces in the Wild face recognition dataset<a class="headerlink" href="#the-labeled-faces-in-the-wild-face-recognition-dataset" title="Permalink to this headline">¶</a></h1>
@@ -149,14 +149,14 @@ implemented in the OpenCV library. The LFW faces were extracted by this
 face detector from various online websites.</p>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal"><span class="pre">scikit-learn</span></code> provides two loaders that will automatically download,
+<p><tt class="docutils literal"><span class="pre">scikit-learn</span></tt> provides two loaders that will automatically download,
 cache, parse the metadata files, decode the jpeg and convert the
 interesting slices into memmaped numpy arrays. This dataset size is more
 than 200 MB. The first load typically takes more than a couple of minutes
 to fully decode the relevant part of the JPEG files into numpy arrays. If
 the dataset has  been loaded once, the following times the loading times
 less than 200ms by using a memmaped version memoized on the disk in the
-<code class="docutils literal"><span class="pre">~/scikit_learn_data/lfw_home/</span></code> folder using <code class="docutils literal"><span class="pre">joblib</span></code>.</p>
+<tt class="docutils literal"><span class="pre">~/scikit_learn_data/lfw_home/</span></tt> folder using <tt class="docutils literal"><span class="pre">joblib</span></tt>.</p>
 <p>The first loader is used for the Face Identification task: a multi-class
 classification task (hence supervised learning):</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">fetch_lfw_people</span>
@@ -186,7 +186,7 @@ most of the background:</p>
 <span class="go">(1288, 50, 37)</span>
 </pre></div>
 </div>
-<p>Each of the <code class="docutils literal"><span class="pre">1140</span></code> faces is assigned to a single person id in the <code class="docutils literal"><span class="pre">target</span></code>
+<p>Each of the <tt class="docutils literal"><span class="pre">1140</span></tt> faces is assigned to a single person id in the <tt class="docutils literal"><span class="pre">target</span></tt>
 array:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">lfw_people</span><span class="o">.</span><span class="n">target</span><span class="o">.</span><span class="n">shape</span>
 <span class="go">(1288,)</span>
@@ -213,14 +213,14 @@ is a pair of two picture belonging or not to the same person:</p>
 <span class="go">(2200,)</span>
 </pre></div>
 </div>
-<p>Both for the <a class="reference internal" href="../modules/generated/sklearn.datasets.fetch_lfw_people.html#sklearn.datasets.fetch_lfw_people" title="sklearn.datasets.fetch_lfw_people"><code class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.fetch_lfw_people</span></code></a> and
-<a class="reference internal" href="../modules/generated/sklearn.datasets.fetch_lfw_pairs.html#sklearn.datasets.fetch_lfw_pairs" title="sklearn.datasets.fetch_lfw_pairs"><code class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.fetch_lfw_pairs</span></code></a> function it is
+<p>Both for the <a class="reference internal" href="../modules/generated/sklearn.datasets.fetch_lfw_people.html#sklearn.datasets.fetch_lfw_people" title="sklearn.datasets.fetch_lfw_people"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.fetch_lfw_people</span></tt></a> and
+<a class="reference internal" href="../modules/generated/sklearn.datasets.fetch_lfw_pairs.html#sklearn.datasets.fetch_lfw_pairs" title="sklearn.datasets.fetch_lfw_pairs"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.fetch_lfw_pairs</span></tt></a> function it is
 possible to get an additional dimension with the RGB color channels by
-passing <code class="docutils literal"><span class="pre">color=True</span></code>, in that case the shape will be
-<code class="docutils literal"><span class="pre">(2200,</span> <span class="pre">2,</span> <span class="pre">62,</span> <span class="pre">47,</span> <span class="pre">3)</span></code>.</p>
-<p>The <a class="reference internal" href="../modules/generated/sklearn.datasets.fetch_lfw_pairs.html#sklearn.datasets.fetch_lfw_pairs" title="sklearn.datasets.fetch_lfw_pairs"><code class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.fetch_lfw_pairs</span></code></a> datasets is subdivided into
-3 subsets: the development <code class="docutils literal"><span class="pre">train</span></code> set, the development <code class="docutils literal"><span class="pre">test</span></code> set and
-an evaluation <code class="docutils literal"><span class="pre">10_folds</span></code> set meant to compute performance metrics using a
+passing <tt class="docutils literal"><span class="pre">color=True</span></tt>, in that case the shape will be
+<tt class="docutils literal"><span class="pre">(2200,</span> <span class="pre">2,</span> <span class="pre">62,</span> <span class="pre">47,</span> <span class="pre">3)</span></tt>.</p>
+<p>The <a class="reference internal" href="../modules/generated/sklearn.datasets.fetch_lfw_pairs.html#sklearn.datasets.fetch_lfw_pairs" title="sklearn.datasets.fetch_lfw_pairs"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.fetch_lfw_pairs</span></tt></a> datasets is subdivided into
+3 subsets: the development <tt class="docutils literal"><span class="pre">train</span></tt> set, the development <tt class="docutils literal"><span class="pre">test</span></tt> set and
+an evaluation <tt class="docutils literal"><span class="pre">10_folds</span></tt> set meant to compute performance metrics using a
 10-folds cross validation scheme.</p>
 <div class="topic">
 <p class="topic-title first">References:</p>
@@ -234,7 +234,7 @@ University of Massachusetts, Amherst, Technical Report 07-49, October, 2007.</li
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="../auto_examples/applications/face_recognition.html#example-applications-face-recognition-py"><span>Faces recognition example using eigenfaces and SVMs</span></a></p>
+<p><a class="reference internal" href="../auto_examples/applications/face_recognition.html#example-applications-face-recognition-py"><em>Faces recognition example using eigenfaces and SVMs</em></a></p>
 </div>
 </div>
 

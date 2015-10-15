@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cross_validation</span></code>.ShuffleSplit</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-shufflesplit">Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.ShuffleSplit</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cross_validation</span></tt>.ShuffleSplit</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-shufflesplit">Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.ShuffleSplit</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -166,19 +166,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-cross-validation-shufflesplit">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></code></a>.ShuffleSplit<a class="headerlink" href="#sklearn-cross-validation-shufflesplit" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></tt></a>.ShuffleSplit<a class="headerlink" href="#sklearn-cross-validation-shufflesplit" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.cross_validation.ShuffleSplit">
-<em class="property">class </em><code class="descclassname">sklearn.cross_validation.</code><code class="descname">ShuffleSplit</code><span class="sig-paren">(</span><em>n</em>, <em>n_iter=10</em>, <em>test_size=0.1</em>, <em>train_size=None</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cross_validation.py#L761"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.ShuffleSplit" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.cross_validation.</tt><tt class="descname">ShuffleSplit</tt><big>(</big><em>n</em>, <em>n_iter=10</em>, <em>test_size=0.1</em>, <em>train_size=None</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cross_validation.py#L761"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.ShuffleSplit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Random permutation cross-validation iterator.</p>
 <p>Yields indices to split data into training and test sets.</p>
 <p>Note: contrary to other cross-validation strategies, random splits
 do not guarantee that all folds will be different, although this is
 still very likely for sizeable datasets.</p>
-<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -244,14 +244,14 @@ the value is automatically set to the complement of the test size.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-cross-validation-shufflesplit">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.ShuffleSplit</span></code><a class="headerlink" href="#examples-using-sklearn-cross-validation-shufflesplit" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="On the left side the learning curve of a naive Bayes classifier is shown for the digits dataset..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.ShuffleSplit</span></tt><a class="headerlink" href="#examples-using-sklearn-cross-validation-shufflesplit" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="On the left side the learning curve of a naive Bayes classifier is shown for the digits dataset..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_learning_curve.html"><img alt="../../_images/plot_learning_curve1.png" src="../../_images/plot_learning_curve1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_learning_curve.html#example-model-selection-plot-learning-curve-py"><span>Plotting Learning Curves</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_learning_curve.html#example-model-selection-plot-learning-curve-py"><em>Plotting Learning Curves</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The following example illustrates the effect of scaling the regularization parameter when using..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="The following example illustrates the effect of scaling the regularization parameter when using..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_svm_scale_c.html"><img alt="../../_images/plot_svm_scale_c1.png" src="../../_images/plot_svm_scale_c1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_svm_scale_c.html#example-svm-plot-svm-scale-c-py"><span>Scaling the regularization parameter for SVCs</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_svm_scale_c.html#example-svm-plot-svm-scale-c-py"><em>Scaling the regularization parameter for SVCs</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

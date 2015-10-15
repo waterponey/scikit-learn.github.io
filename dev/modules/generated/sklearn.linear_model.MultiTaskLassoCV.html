@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
   
-    <title>sklearn.linear_model.MultiTaskLassoCV &mdash; scikit-learn 0.17.dev0 documentation</title>
+    <title>3.2.4.1.7. sklearn.linear_model.MultiTaskLassoCV &mdash; scikit-learn 0.17.dev0 documentation</title>
   <!-- htmltitle is before nature.css - we use this hack to load bootstrap first -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" media="screen" />
@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="3.2.4.1.6. sklearn.linear_model.MultiTaskElasticNetCV" href="sklearn.linear_model.MultiTaskElasticNetCV.html" />
+    <link rel="prev" title="sklearn.linear_model.MultiTaskElasticNet" href="sklearn.linear_model.MultiTaskElasticNet.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.linear_model.MultiTaskElasticNet.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.linea...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.linear_model.MultiTaskElasticNet
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.linear_model</span></code>.MultiTaskLassoCV</a></li>
+<li><a class="reference internal" href="#">3.2.4.1.7. <tt class="docutils literal"><span class="pre">sklearn.linear_model</span></tt>.MultiTaskLassoCV</a></li>
 </ul>
 
     </div>
@@ -123,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-linear-model-multitasklassocv">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></code></a>.MultiTaskLassoCV<a class="headerlink" href="#sklearn-linear-model-multitasklassocv" title="Permalink to this headline">¶</a></h1>
+<h1>3.2.4.1.7. <a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.MultiTaskLassoCV<a class="headerlink" href="#sklearn-linear-model-multitasklassocv" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.linear_model.MultiTaskLassoCV">
-<em class="property">class </em><code class="descclassname">sklearn.linear_model.</code><code class="descname">MultiTaskLassoCV</code><span class="sig-paren">(</span><em>eps=0.001</em>, <em>n_alphas=100</em>, <em>alphas=None</em>, <em>fit_intercept=True</em>, <em>normalize=False</em>, <em>max_iter=1000</em>, <em>tol=0.0001</em>, <em>copy_X=True</em>, <em>cv=None</em>, <em>verbose=False</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>selection='cyclic'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/linear_model/coordinate_descent.py#L1964"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">MultiTaskLassoCV</tt><big>(</big><em>eps=0.001</em>, <em>n_alphas=100</em>, <em>alphas=None</em>, <em>fit_intercept=True</em>, <em>normalize=False</em>, <em>max_iter=1000</em>, <em>tol=0.0001</em>, <em>copy_X=True</em>, <em>cv=None</em>, <em>verbose=False</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>selection='cyclic'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/coordinate_descent.py#L1964"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV" title="Permalink to this definition">¶</a></dt>
 <dd><p>Multi-task L1/L2 Lasso with built-in cross-validation.</p>
 <p>The optimization objective for MultiTaskLasso is:</p>
 <div class="highlight-python"><div class="highlight"><pre>(1 / (2 * n_samples)) * ||Y - XW||^Fro_2 + alpha * ||W||_21
@@ -140,15 +180,15 @@
 </pre></div>
 </div>
 <p>i.e. the sum of norm of each row.</p>
-<p>Read more in the <a class="reference internal" href="../linear_model.html#multi-task-lasso"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../linear_model.html#multi-task-lasso"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>eps</strong> : float, optional</p>
 <blockquote>
-<div><p>Length of the path. <code class="docutils literal"><span class="pre">eps=1e-3</span></code> means that
-<code class="docutils literal"><span class="pre">alpha_min</span> <span class="pre">/</span> <span class="pre">alpha_max</span> <span class="pre">=</span> <span class="pre">1e-3</span></code>.</p>
+<div><p>Length of the path. <tt class="docutils literal"><span class="pre">eps=1e-3</span></tt> means that
+<tt class="docutils literal"><span class="pre">alpha_min</span> <span class="pre">/</span> <span class="pre">alpha_max</span> <span class="pre">=</span> <span class="pre">1e-3</span></tt>.</p>
 </div></blockquote>
 <p><strong>alphas</strong> : array-like, optional</p>
 <blockquote>
@@ -167,11 +207,11 @@ to false, no intercept will be used in calculations
 </div></blockquote>
 <p><strong>normalize</strong> : boolean, optional, default False</p>
 <blockquote>
-<div><p>If <code class="docutils literal"><span class="pre">True</span></code>, the regressors X will be normalized before regression.</p>
+<div><p>If <tt class="docutils literal"><span class="pre">True</span></tt>, the regressors X will be normalized before regression.</p>
 </div></blockquote>
 <p><strong>copy_X</strong> : boolean, optional, default True</p>
 <blockquote>
-<div><p>If <code class="docutils literal"><span class="pre">True</span></code>, X will be copied; else, it may be overwritten.</p>
+<div><p>If <tt class="docutils literal"><span class="pre">True</span></tt>, X will be copied; else, it may be overwritten.</p>
 </div></blockquote>
 <p><strong>max_iter</strong> : int, optional</p>
 <blockquote>
@@ -180,9 +220,9 @@ to false, no intercept will be used in calculations
 <p><strong>tol</strong> : float, optional</p>
 <blockquote>
 <div><p>The tolerance for the optimization: if the updates are
-smaller than <code class="docutils literal"><span class="pre">tol</span></code>, the optimization code checks the
+smaller than <tt class="docutils literal"><span class="pre">tol</span></tt>, the optimization code checks the
 dual gap for optimality and continues until it is smaller
-than <code class="docutils literal"><span class="pre">tol</span></code>.</p>
+than <tt class="docutils literal"><span class="pre">tol</span></tt>.</p>
 </div></blockquote>
 <p><strong>cv</strong> : int, cross-validation generator or an iterable, optional</p>
 <blockquote>
@@ -196,8 +236,8 @@ Possible inputs for cv are:</p>
 <li>An iterable yielding train/test splits.</li>
 </ul>
 </div></blockquote>
-<p>For integer/None inputs, <code class="xref py py-class docutils literal"><span class="pre">KFold</span></code> is used.</p>
-<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a> for the various
+<p>For integer/None inputs, <tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt> is used.</p>
+<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a> for the various
 cross-validation strategies that can be used here.</p>
 </div></blockquote>
 <p><strong>verbose</strong> : bool or integer</p>
@@ -206,7 +246,7 @@ cross-validation strategies that can be used here.</p>
 </div></blockquote>
 <p><strong>n_jobs</strong> : integer, optional</p>
 <blockquote>
-<div><p>Number of CPUs to use during the cross validation. If <code class="docutils literal"><span class="pre">-1</span></code>, use
+<div><p>Number of CPUs to use during the cross validation. If <tt class="docutils literal"><span class="pre">-1</span></tt>, use
 all the CPUs. Note that this is used only if multiple values for
 l1_ratio are given.</p>
 </div></blockquote>
@@ -256,7 +296,7 @@ the specified tolerance for the optimal alpha.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.linear_model.MultiTaskElasticNet.html#sklearn.linear_model.MultiTaskElasticNet" title="sklearn.linear_model.MultiTaskElasticNet"><code class="xref py py-obj docutils literal"><span class="pre">MultiTaskElasticNet</span></code></a>, <a class="reference internal" href="sklearn.linear_model.ElasticNetCV.html#sklearn.linear_model.ElasticNetCV" title="sklearn.linear_model.ElasticNetCV"><code class="xref py py-obj docutils literal"><span class="pre">ElasticNetCV</span></code></a>, <a class="reference internal" href="sklearn.linear_model.MultiTaskElasticNetCV.html#sklearn.linear_model.MultiTaskElasticNetCV" title="sklearn.linear_model.MultiTaskElasticNetCV"><code class="xref py py-obj docutils literal"><span class="pre">MultiTaskElasticNetCV</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.linear_model.MultiTaskElasticNet.html#sklearn.linear_model.MultiTaskElasticNet" title="sklearn.linear_model.MultiTaskElasticNet"><tt class="xref py py-obj docutils literal"><span class="pre">MultiTaskElasticNet</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.ElasticNetCV.html#sklearn.linear_model.ElasticNetCV" title="sklearn.linear_model.ElasticNetCV"><tt class="xref py py-obj docutils literal"><span class="pre">ElasticNetCV</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.MultiTaskElasticNetCV.html#sklearn.linear_model.MultiTaskElasticNetCV" title="sklearn.linear_model.MultiTaskElasticNetCV"><tt class="xref py py-obj docutils literal"><span class="pre">MultiTaskElasticNetCV</span></tt></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>The algorithm used to fit the model is coordinate descent.</p>
@@ -269,16 +309,37 @@ should be directly passed as a Fortran-contiguous numpy array.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.MultiTaskLassoCV.decision_function" title="sklearn.linear_model.MultiTaskLassoCV.decision_function"><tt class="xref py py-obj docutils literal"><span class="pre">decision_function</span></tt></a>(*args,&nbsp;**kwargs)</td>
+<td>DEPRECATED:  and will be removed in 0.19.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.MultiTaskLassoCV.fit" title="sklearn.linear_model.MultiTaskLassoCV.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y)</td>
+<td>Fit linear model with coordinate descent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.MultiTaskLassoCV.get_params" title="sklearn.linear_model.MultiTaskLassoCV.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.MultiTaskLassoCV.path" title="sklearn.linear_model.MultiTaskLassoCV.path"><tt class="xref py py-obj docutils literal"><span class="pre">path</span></tt></a>(X,&nbsp;y[,&nbsp;eps,&nbsp;n_alphas,&nbsp;alphas,&nbsp;...])</td>
+<td>Compute Lasso path with coordinate descent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.MultiTaskLassoCV.predict" title="sklearn.linear_model.MultiTaskLassoCV.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<td>Predict using the linear model</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.MultiTaskLassoCV.score" title="sklearn.linear_model.MultiTaskLassoCV.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Returns the coefficient of determination R^2 of the prediction.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.MultiTaskLassoCV.set_params" title="sklearn.linear_model.MultiTaskLassoCV.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.linear_model.MultiTaskLassoCV.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>eps=0.001</em>, <em>n_alphas=100</em>, <em>alphas=None</em>, <em>fit_intercept=True</em>, <em>normalize=False</em>, <em>max_iter=1000</em>, <em>tol=0.0001</em>, <em>copy_X=True</em>, <em>cv=None</em>, <em>verbose=False</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>selection='cyclic'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/linear_model/coordinate_descent.py#L2080"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>eps=0.001</em>, <em>n_alphas=100</em>, <em>alphas=None</em>, <em>fit_intercept=True</em>, <em>normalize=False</em>, <em>max_iter=1000</em>, <em>tol=0.0001</em>, <em>copy_X=True</em>, <em>cv=None</em>, <em>verbose=False</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>selection='cyclic'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/coordinate_descent.py#L2080"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.MultiTaskLassoCV.decision_function">
-<code class="descname">decision_function</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.decision_function" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decision_function</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>DEPRECATED:  and will be removed in 0.19.</p>
 <p>Decision function of the linear model.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -303,7 +364,7 @@ should be directly passed as a Fortran-contiguous numpy array.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.MultiTaskLassoCV.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/linear_model/coordinate_descent.py#L1018"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/coordinate_descent.py#L1018"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit linear model with coordinate descent</p>
 <p>Fit is on grid of alphas and best alpha estimated by cross-validation.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -328,7 +389,7 @@ X can be sparse.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.MultiTaskLassoCV.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -353,7 +414,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="staticmethod">
 <dt id="sklearn.linear_model.MultiTaskLassoCV.path">
-<em class="property">static </em><code class="descname">path</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>eps=0.001</em>, <em>n_alphas=100</em>, <em>alphas=None</em>, <em>precompute='auto'</em>, <em>Xy=None</em>, <em>copy_X=True</em>, <em>coef_init=None</em>, <em>verbose=False</em>, <em>return_n_iter=False</em>, <em>positive=False</em>, <em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/linear_model/coordinate_descent.py#L115"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.path" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><tt class="descname">path</tt><big>(</big><em>X</em>, <em>y</em>, <em>eps=0.001</em>, <em>n_alphas=100</em>, <em>alphas=None</em>, <em>precompute='auto'</em>, <em>Xy=None</em>, <em>copy_X=True</em>, <em>coef_init=None</em>, <em>verbose=False</em>, <em>return_n_iter=False</em>, <em>positive=False</em>, <em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/coordinate_descent.py#L115"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.path" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute Lasso path with coordinate descent</p>
 <p>The Lasso optimization function varies for mono and multi-outputs.</p>
 <p>For mono-output tasks it is:</p>
@@ -369,7 +430,7 @@ contained subobjects that are estimators.</p>
 </pre></div>
 </div>
 <p>i.e. the sum of norm of each row.</p>
-<p>Read more in the <a class="reference internal" href="../linear_model.html#lasso"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../linear_model.html#lasso"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -377,7 +438,7 @@ contained subobjects that are estimators.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>X</strong> : {array-like, sparse matrix}, shape (n_samples, n_features)</p>
 <blockquote>
 <div><p>Training data. Pass directly as Fortran-contiguous data to avoid
-unnecessary memory duplication. If <code class="docutils literal"><span class="pre">y</span></code> is mono-output then <code class="docutils literal"><span class="pre">X</span></code>
+unnecessary memory duplication. If <tt class="docutils literal"><span class="pre">y</span></tt> is mono-output then <tt class="docutils literal"><span class="pre">X</span></tt>
 can be sparse.</p>
 </div></blockquote>
 <p><strong>y</strong> : ndarray, shape (n_samples,), or (n_samples, n_outputs)</p>
@@ -386,8 +447,8 @@ can be sparse.</p>
 </div></blockquote>
 <p><strong>eps</strong> : float, optional</p>
 <blockquote>
-<div><p>Length of the path. <code class="docutils literal"><span class="pre">eps=1e-3</span></code> means that
-<code class="docutils literal"><span class="pre">alpha_min</span> <span class="pre">/</span> <span class="pre">alpha_max</span> <span class="pre">=</span> <span class="pre">1e-3</span></code></p>
+<div><p>Length of the path. <tt class="docutils literal"><span class="pre">eps=1e-3</span></tt> means that
+<tt class="docutils literal"><span class="pre">alpha_min</span> <span class="pre">/</span> <span class="pre">alpha_max</span> <span class="pre">=</span> <span class="pre">1e-3</span></tt></p>
 </div></blockquote>
 <p><strong>n_alphas</strong> : int, optional</p>
 <blockquote>
@@ -396,12 +457,12 @@ can be sparse.</p>
 <p><strong>alphas</strong> : ndarray, optional</p>
 <blockquote>
 <div><p>List of alphas where to compute the models.
-If <code class="docutils literal"><span class="pre">None</span></code> alphas are set automatically</p>
+If <tt class="docutils literal"><span class="pre">None</span></tt> alphas are set automatically</p>
 </div></blockquote>
 <p><strong>precompute</strong> : True | False | &#8216;auto&#8217; | array-like</p>
 <blockquote>
 <div><p>Whether to use a precomputed Gram matrix to speed up
-calculations. If set to <code class="docutils literal"><span class="pre">'auto'</span></code> let us decide. The Gram
+calculations. If set to <tt class="docutils literal"><span class="pre">'auto'</span></tt> let us decide. The Gram
 matrix can also be passed as argument.</p>
 </div></blockquote>
 <p><strong>Xy</strong> : array-like, optional</p>
@@ -411,7 +472,7 @@ only when the Gram matrix is precomputed.</p>
 </div></blockquote>
 <p><strong>copy_X</strong> : boolean, optional, default True</p>
 <blockquote>
-<div><p>If <code class="docutils literal"><span class="pre">True</span></code>, X will be copied; else, it may be overwritten.</p>
+<div><p>If <tt class="docutils literal"><span class="pre">True</span></tt>, X will be copied; else, it may be overwritten.</p>
 </div></blockquote>
 <p><strong>coef_init</strong> : array, shape (n_features, ) | None</p>
 <blockquote>
@@ -458,7 +519,7 @@ reach the specified tolerance for each alpha.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.linear_model.lars_path.html#sklearn.linear_model.lars_path" title="sklearn.linear_model.lars_path"><code class="xref py py-obj docutils literal"><span class="pre">lars_path</span></code></a>, <a class="reference internal" href="sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><code class="xref py py-obj docutils literal"><span class="pre">Lasso</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LassoLars.html#sklearn.linear_model.LassoLars" title="sklearn.linear_model.LassoLars"><code class="xref py py-obj docutils literal"><span class="pre">LassoLars</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LassoCV.html#sklearn.linear_model.LassoCV" title="sklearn.linear_model.LassoCV"><code class="xref py py-obj docutils literal"><span class="pre">LassoCV</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LassoLarsCV.html#sklearn.linear_model.LassoLarsCV" title="sklearn.linear_model.LassoLarsCV"><code class="xref py py-obj docutils literal"><span class="pre">LassoLarsCV</span></code></a>, <a class="reference internal" href="sklearn.decomposition.sparse_encode.html#sklearn.decomposition.sparse_encode" title="sklearn.decomposition.sparse_encode"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.decomposition.sparse_encode</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.linear_model.lars_path.html#sklearn.linear_model.lars_path" title="sklearn.linear_model.lars_path"><tt class="xref py py-obj docutils literal"><span class="pre">lars_path</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><tt class="xref py py-obj docutils literal"><span class="pre">Lasso</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoLars.html#sklearn.linear_model.LassoLars" title="sklearn.linear_model.LassoLars"><tt class="xref py py-obj docutils literal"><span class="pre">LassoLars</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoCV.html#sklearn.linear_model.LassoCV" title="sklearn.linear_model.LassoCV"><tt class="xref py py-obj docutils literal"><span class="pre">LassoCV</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoLarsCV.html#sklearn.linear_model.LassoLarsCV" title="sklearn.linear_model.LassoLarsCV"><tt class="xref py py-obj docutils literal"><span class="pre">LassoLarsCV</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.sparse_encode.html#sklearn.decomposition.sparse_encode" title="sklearn.decomposition.sparse_encode"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.decomposition.sparse_encode</span></tt></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>See examples/linear_model/plot_lasso_coordinate_descent_path.py
@@ -496,7 +557,7 @@ values output by lars_path</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.MultiTaskLassoCV.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/linear_model/base.py#L186"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L186"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict using the linear model</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -520,7 +581,7 @@ values output by lars_path</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.MultiTaskLassoCV.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
@@ -559,11 +620,11 @@ would get a R^2 score of 0.0.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.MultiTaskLassoCV.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.MultiTaskLassoCV.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -591,8 +652,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.linear_model.MultiTaskLassoCV.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.linear_model.MultiTaskElasticNet.html">Previous
+      </a>
+    </div>
     
      </div>
 

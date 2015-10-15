@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -182,21 +182,21 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="supervised-learning-predicting-an-output-variable-from-high-dimensional-observations">
 <span id="supervised-learning-tut"></span><h1>Supervised learning: predicting an output variable from high-dimensional observations<a class="headerlink" href="#supervised-learning-predicting-an-output-variable-from-high-dimensional-observations" title="Permalink to this headline">¶</a></h1>
 <div class="topic">
 <p class="topic-title first">The problem solved in supervised learning</p>
-<p><a class="reference internal" href="../../supervised_learning.html#supervised-learning"><span>Supervised learning</span></a>
+<p><a class="reference internal" href="../../supervised_learning.html#supervised-learning"><em>Supervised learning</em></a>
 consists in learning the link between two
-datasets: the observed data <code class="docutils literal"><span class="pre">X</span></code> and an external variable <code class="docutils literal"><span class="pre">y</span></code> that we
+datasets: the observed data <tt class="docutils literal"><span class="pre">X</span></tt> and an external variable <tt class="docutils literal"><span class="pre">y</span></tt> that we
 are trying to predict, usually called &#8220;target&#8221; or &#8220;labels&#8221;. Most often,
-<code class="docutils literal"><span class="pre">y</span></code> is a 1D array of length <code class="docutils literal"><span class="pre">n_samples</span></code>.</p>
+<tt class="docutils literal"><span class="pre">y</span></tt> is a 1D array of length <tt class="docutils literal"><span class="pre">n_samples</span></tt>.</p>
 <p>All supervised <a class="reference external" href="http://en.wikipedia.org/wiki/Estimator">estimators</a>
-in scikit-learn implement a <code class="docutils literal"><span class="pre">fit(X,</span> <span class="pre">y)</span></code> method to fit the model
-and a <code class="docutils literal"><span class="pre">predict(X)</span></code> method that, given unlabeled observations <code class="docutils literal"><span class="pre">X</span></code>,
-returns the predicted labels <code class="docutils literal"><span class="pre">y</span></code>.</p>
+in scikit-learn implement a <tt class="docutils literal"><span class="pre">fit(X,</span> <span class="pre">y)</span></tt> method to fit the model
+and a <tt class="docutils literal"><span class="pre">predict(X)</span></tt> method that, given unlabeled observations <tt class="docutils literal"><span class="pre">X</span></tt>,
+returns the predicted labels <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
 </div>
 <div class="topic">
 <p class="topic-title first">Vocabulary: classification and regression</p>
@@ -205,10 +205,10 @@ finite labels, in other words to &#8220;name&#8221; the objects observed, the ta
 is said to be a <strong>classification</strong> task. On the other hand, if the goal
 is to predict a continuous target variable, it is said to be a
 <strong>regression</strong> task.</p>
-<p>When doing classification in scikit-learn, <code class="docutils literal"><span class="pre">y</span></code> is a vector of integers
+<p>When doing classification in scikit-learn, <tt class="docutils literal"><span class="pre">y</span></tt> is a vector of integers
 or strings.</p>
-<p>Note: See the <a class="reference internal" href="../basic/tutorial.html#introduction"><span>Introduction to machine learning with scikit-learn
-Tutorial</span></a> for a quick run-through on the basic machine
+<p>Note: See the <a class="reference internal" href="../basic/tutorial.html#introduction"><em>Introduction to machine learning with scikit-learn
+Tutorial</em></a> for a quick run-through on the basic machine
 learning vocabulary used within scikit-learn.</p>
 </div>
 <div class="section" id="nearest-neighbor-and-the-curse-of-dimensionality">
@@ -233,9 +233,9 @@ their petal and sepal length and width:</p>
 <h3>k-Nearest neighbors classifier<a class="headerlink" href="#k-nearest-neighbors-classifier" title="Permalink to this headline">¶</a></h3>
 <p>The simplest possible classifier is the
 <a class="reference external" href="http://en.wikipedia.org/wiki/K-nearest_neighbor_algorithm">nearest neighbor</a>:
-given a new observation <code class="docutils literal"><span class="pre">X_test</span></code>, find in the training set (i.e. the data
+given a new observation <tt class="docutils literal"><span class="pre">X_test</span></tt>, find in the training set (i.e. the data
 used to train the estimator) the observation with the closest feature vector.
-(Please see the <a class="reference internal" href="../../modules/neighbors.html#neighbors"><span>Nearest Neighbors section</span></a> of the online
+(Please see the <a class="reference internal" href="../../modules/neighbors.html#neighbors"><em>Nearest Neighbors section</em></a> of the online
 Scikit-learn documentation for more information about this type of classifier.)</p>
 <div class="topic">
 <p class="topic-title first">Training set and testing set</p>
@@ -312,7 +312,7 @@ variables.</p>
 </div>
 <div class="section" id="linear-regression">
 <h3>Linear regression<a class="headerlink" href="#linear-regression" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="../../modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression" title="sklearn.linear_model.LinearRegression"><code class="xref py py-class docutils literal"><span class="pre">LinearRegression</span></code></a>,
+<p><a class="reference internal" href="../../modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression" title="sklearn.linear_model.LinearRegression"><tt class="xref py py-class docutils literal"><span class="pre">LinearRegression</span></tt></a>,
 in it&#8217;s simplest form, fits a linear model to the data set by adjusting
 a set of parameters in order to make the sum of the squared residuals
 of the model as small as possible.</p>
@@ -369,7 +369,7 @@ induces high variance:</p>
 </div>
 <p>A solution in high-dimensional statistical learning is to <em>shrink</em> the
 regression coefficients to zero: any two randomly chosen set of
-observations are likely to be uncorrelated. This is called <a class="reference internal" href="../../modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge" title="sklearn.linear_model.Ridge"><code class="xref py py-class docutils literal"><span class="pre">Ridge</span></code></a>
+observations are likely to be uncorrelated. This is called <a class="reference internal" href="../../modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge" title="sklearn.linear_model.Ridge"><tt class="xref py py-class docutils literal"><span class="pre">Ridge</span></tt></a>
 regression:</p>
 <a class="reference external image-reference" href="../../auto_examples/linear_model/plot_ols_ridge_variance.html"><img alt="../../_images/plot_ols_ridge_variance_0021.png" class="align-right" src="../../_images/plot_ols_ridge_variance_0021.png" style="width: 280.0px; height: 210.0px;" /></a>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">regr</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span><span class="o">=.</span><span class="mi">1</span><span class="p">)</span>
@@ -385,8 +385,8 @@ regression:</p>
 </pre></div>
 </div>
 <p>This is an example of <strong>bias/variance tradeoff</strong>: the larger the ridge
-<code class="docutils literal"><span class="pre">alpha</span></code> parameter, the higher the bias and the lower the variance.</p>
-<p>We can choose <code class="docutils literal"><span class="pre">alpha</span></code> to minimize left out error, this time using the
+<tt class="docutils literal"><span class="pre">alpha</span></tt> parameter, the higher the bias and the lower the variance.</p>
+<p>We can choose <tt class="docutils literal"><span class="pre">alpha</span></tt> to minimize left out error, this time using the
 diabetes dataset rather than our synthetic data:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">alphas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
@@ -409,7 +409,10 @@ by the ridge regression is called a
 <span id="id3"></span><h3>Sparsity<a class="headerlink" href="#sparsity" title="Permalink to this headline">¶</a></h3>
 <p class="centered"><strong>Fitting only features 1 and 2</strong></p>
 <p class="centered">
-<strong><a class="reference external" href="../../auto_examples/linear_model/plot_ols_3d.html"><img alt="diabetes_ols_1" src="../../_images/plot_ols_3d_0011.png" style="width: 260.0px; height: 195.0px;" /></a> <a class="reference external" href="../../auto_examples/linear_model/plot_ols_3d.html"><img alt="diabetes_ols_3" src="../../_images/plot_ols_3d_0031.png" style="width: 260.0px; height: 195.0px;" /></a> <a class="reference external" href="../../auto_examples/linear_model/plot_ols_3d.html"><img alt="diabetes_ols_2" src="../../_images/plot_ols_3d_0021.png" style="width: 260.0px; height: 195.0px;" /></a></strong></p><div class="admonition note">
+<strong><a class="reference external image-reference" href="../../auto_examples/linear_model/plot_ols_3d.html"><img alt="diabetes_ols_1" src="../../_images/plot_ols_3d_0011.png" style="width: 260.0px; height: 195.0px;" /></a>
+ <a class="reference external image-reference" href="../../auto_examples/linear_model/plot_ols_3d.html"><img alt="diabetes_ols_3" src="../../_images/plot_ols_3d_0031.png" style="width: 260.0px; height: 195.0px;" /></a>
+ <a class="reference external image-reference" href="../../auto_examples/linear_model/plot_ols_3d.html"><img alt="diabetes_ols_2" src="../../_images/plot_ols_3d_0021.png" style="width: 260.0px; height: 195.0px;" /></a>
+</strong></p><div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">A representation of the full diabetes dataset would involve 11
 dimensions (10 feature dimensions and one of the target variable). It
@@ -417,12 +420,12 @@ is hard to develop an intuition on such representation, but it may be
 useful to keep in mind that it would be a fairly <em>empty</em> space.</p>
 </div>
 <p>We can see that, although feature 2 has a strong coefficient on the full
-model, it conveys little information on <code class="docutils literal"><span class="pre">y</span></code> when considered with feature 1.</p>
+model, it conveys little information on <tt class="docutils literal"><span class="pre">y</span></tt> when considered with feature 1.</p>
 <p>To improve the conditioning of the problem (i.e. mitigating the
-<a class="reference internal" href="#curse-of-dimensionality"><span>The curse of dimensionality</span></a>), it would be interesting to select only the
+<a class="reference internal" href="#curse-of-dimensionality"><em>The curse of dimensionality</em></a>), it would be interesting to select only the
 informative features and set non-informative ones, like feature 2 to 0. Ridge
 regression will decrease their contribution, but not set them to zero. Another
-penalization approach, called <a class="reference internal" href="../../modules/linear_model.html#lasso"><span>Lasso</span></a> (least absolute shrinkage and
+penalization approach, called <a class="reference internal" href="../../modules/linear_model.html#lasso"><em>Lasso</em></a> (least absolute shrinkage and
 selection operator), can set some coefficients to zero. Such methods are
 called <strong>sparse method</strong> and sparsity can be seen as an
 application of Occam&#8217;s razor: <em>prefer simpler models</em>.</p>
@@ -445,11 +448,11 @@ application of Occam&#8217;s razor: <em>prefer simpler models</em>.</p>
 <div class="topic">
 <p class="topic-title first"><strong>Different algorithms for the same problem</strong></p>
 <p>Different algorithms can be used to solve the same mathematical
-problem. For instance the <code class="docutils literal"><span class="pre">Lasso</span></code> object in scikit-learn
+problem. For instance the <tt class="docutils literal"><span class="pre">Lasso</span></tt> object in scikit-learn
 solves the lasso regression problem using a
 <a class="reference external" href="http://en.wikipedia.org/wiki/Coordinate_descent">coordinate decent</a> method,
 that is efficient on large datasets. However, scikit-learn also
-provides the <a class="reference internal" href="../../modules/generated/sklearn.linear_model.LassoLars.html#sklearn.linear_model.LassoLars" title="sklearn.linear_model.LassoLars"><code class="xref py py-class docutils literal"><span class="pre">LassoLars</span></code></a> object using the <em>LARS</em> algorthm,
+provides the <a class="reference internal" href="../../modules/generated/sklearn.linear_model.LassoLars.html#sklearn.linear_model.LassoLars" title="sklearn.linear_model.LassoLars"><tt class="xref py py-class docutils literal"><span class="pre">LassoLars</span></tt></a> object using the <em>LARS</em> algorthm,
 which is very efficient for problems in which the weight vector estimated
 is very sparse (i.e. problems with very few observations).</p>
 </div>
@@ -473,7 +476,7 @@ function or <strong>logistic</strong> function:</p>
 <span class="go">          solver=&#39;liblinear&#39;, tol=0.0001, verbose=0, warm_start=False)</span>
 </pre></div>
 </div>
-<p>This is known as <a class="reference internal" href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><code class="xref py py-class docutils literal"><span class="pre">LogisticRegression</span></code></a>.</p>
+<p>This is known as <a class="reference internal" href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><tt class="xref py py-class docutils literal"><span class="pre">LogisticRegression</span></tt></a>.</p>
 <a class="reference external image-reference" href="../../auto_examples/linear_model/plot_iris_logistic.html"><img alt="../../_images/plot_iris_logistic_0011.png" src="../../_images/plot_iris_logistic_0011.png" style="width: 332.0px; height: 249.0px;" /></a>
 <div class="topic">
 <p class="topic-title first">Multiclass classification</p>
@@ -483,11 +486,11 @@ decision.</p>
 </div>
 <div class="topic">
 <p class="topic-title first">Shrinkage and sparsity with logistic regression</p>
-<p>The <code class="docutils literal"><span class="pre">C</span></code> parameter controls the amount of regularization in the
-<a class="reference internal" href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><code class="xref py py-class docutils literal"><span class="pre">LogisticRegression</span></code></a> object: a large value for <code class="docutils literal"><span class="pre">C</span></code> results in
+<p>The <tt class="docutils literal"><span class="pre">C</span></tt> parameter controls the amount of regularization in the
+<a class="reference internal" href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><tt class="xref py py-class docutils literal"><span class="pre">LogisticRegression</span></tt></a> object: a large value for <tt class="docutils literal"><span class="pre">C</span></tt> results in
 less regularization.
-<code class="docutils literal"><span class="pre">penalty=&quot;l2&quot;</span></code> gives <a class="reference internal" href="#shrinkage"><span>Shrinkage</span></a> (i.e. non-sparse coefficients), while
-<code class="docutils literal"><span class="pre">penalty=&quot;l1&quot;</span></code> gives <a class="reference internal" href="#sparsity"><span>Sparsity</span></a>.</p>
+<tt class="docutils literal"><span class="pre">penalty=&quot;l2&quot;</span></tt> gives <a class="reference internal" href="#shrinkage"><em>Shrinkage</em></a> (i.e. non-sparse coefficients), while
+<tt class="docutils literal"><span class="pre">penalty=&quot;l1&quot;</span></tt> gives <a class="reference internal" href="#sparsity"><em>Sparsity</em></a>.</p>
 </div>
 <div class="green topic">
 <p class="topic-title first"><strong>Exercise</strong></p>
@@ -501,7 +504,7 @@ observations.</p>
 <span class="n">y_digits</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">target</span>
 </pre></div>
 </div>
-<p>Solution: <a class="reference download internal" href="../../_downloads/digits_classification_exercise.py"><code class="xref download docutils literal"><span class="pre">../../auto_examples/exercises/digits_classification_exercise.py</span></code></a></p>
+<p>Solution: <a class="reference download internal" href="../../_downloads/digits_classification_exercise.py"><tt class="xref download docutils literal"><span class="pre">../../auto_examples/exercises/digits_classification_exercise.py</span></tt></a></p>
 </div>
 </div>
 </div>
@@ -509,12 +512,12 @@ observations.</p>
 <h2>Support vector machines (SVMs)<a class="headerlink" href="#support-vector-machines-svms" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="linear-svms">
 <h3>Linear SVMs<a class="headerlink" href="#linear-svms" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="../../modules/svm.html#svm"><span>Support Vector Machines</span></a> belong to the discriminant model family: they try to find a combination of
+<p><a class="reference internal" href="../../modules/svm.html#svm"><em>Support Vector Machines</em></a> belong to the discriminant model family: they try to find a combination of
 samples to build a plane maximizing the margin between the two classes.
-Regularization is set by the <code class="docutils literal"><span class="pre">C</span></code> parameter: a small value for <code class="docutils literal"><span class="pre">C</span></code> means the margin
+Regularization is set by the <tt class="docutils literal"><span class="pre">C</span></tt> parameter: a small value for <tt class="docutils literal"><span class="pre">C</span></tt> means the margin
 is calculated using many or all of the observations around the separating line
 (more regularization);
-a large value for <code class="docutils literal"><span class="pre">C</span></code> means the margin is calculated on observations close to
+a large value for <tt class="docutils literal"><span class="pre">C</span></tt> means the margin is calculated on observations close to
 the separating line (less regularization).</p>
 <table border="1" class="centered docutils">
 <colgroup>
@@ -535,11 +538,11 @@ the separating line (less regularization).</p>
 <div class="topic">
 <p class="topic-title first">Example:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../../auto_examples/svm/plot_iris.html#example-svm-plot-iris-py"><span>Plot different SVM classifiers in the iris dataset</span></a></li>
+<li><a class="reference internal" href="../../auto_examples/svm/plot_iris.html#example-svm-plot-iris-py"><em>Plot different SVM classifiers in the iris dataset</em></a></li>
 </ul>
 </div>
-<p>SVMs can be used in regression &#8211;<a class="reference internal" href="../../modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR" title="sklearn.svm.SVR"><code class="xref py py-class docutils literal"><span class="pre">SVR</span></code></a> (Support Vector Regression)&#8211;, or in
-classification &#8211;<a class="reference internal" href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><code class="xref py py-class docutils literal"><span class="pre">SVC</span></code></a> (Support Vector Classification).</p>
+<p>SVMs can be used in regression &#8211;<a class="reference internal" href="../../modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR" title="sklearn.svm.SVR"><tt class="xref py py-class docutils literal"><span class="pre">SVR</span></tt></a> (Support Vector Regression)&#8211;, or in
+classification &#8211;<a class="reference internal" href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><tt class="xref py py-class docutils literal"><span class="pre">SVC</span></tt></a> (Support Vector Classification).</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">svm</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&#39;linear&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">svc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">iris_X_train</span><span class="p">,</span> <span class="n">iris_y_train</span><span class="p">)</span>    
@@ -608,8 +611,8 @@ creating a decision energy by positioning <em>kernels</em> on observations:</p>
 </table>
 <div class="topic">
 <p class="topic-title first"><strong>Interactive example</strong></p>
-<p>See the <a class="reference internal" href="../../auto_examples/applications/svm_gui.html#example-applications-svm-gui-py"><span>SVM GUI</span></a> to download
-<code class="docutils literal"><span class="pre">svm_gui.py</span></code>; add data points of both classes with right and left button,
+<p>See the <a class="reference internal" href="../../auto_examples/applications/svm_gui.html#example-applications-svm-gui-py"><em>SVM GUI</em></a> to download
+<tt class="docutils literal"><span class="pre">svm_gui.py</span></tt>; add data points of both classes with right and left button,
 fit the model and change parameters and data.</p>
 </div>
 <a class="reference external image-reference" href="../../auto_examples/datasets/plot_iris_dataset.html"><img alt="../../_images/plot_iris_dataset_0011.png" class="align-right" src="../../_images/plot_iris_dataset_0011.png" style="width: 560.0px; height: 420.0px;" /></a>
@@ -620,7 +623,7 @@ the 2 first features. Leave out 10% of each class and test prediction
 performance on these observations.</p>
 <p><strong>Warning</strong>: the classes are ordered, do not leave out the last 10%,
 you would be testing on only one class.</p>
-<p><strong>Hint</strong>: You can use the <code class="docutils literal"><span class="pre">decision_function</span></code> method on a grid to get
+<p><strong>Hint</strong>: You can use the <tt class="docutils literal"><span class="pre">decision_function</span></tt> method on a grid to get
 intuitions.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span>
@@ -630,7 +633,7 @@ intuitions.</p>
 <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="n">y</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>Solution: <a class="reference download internal" href="../../_downloads/plot_iris_exercise.py"><code class="xref download docutils literal"><span class="pre">../../auto_examples/exercises/plot_iris_exercise.py</span></code></a></p>
+<p>Solution: <a class="reference download internal" href="../../_downloads/plot_iris_exercise.py"><tt class="xref download docutils literal"><span class="pre">../../auto_examples/exercises/plot_iris_exercise.py</span></tt></a></p>
 </div>
 </div>
 </div>

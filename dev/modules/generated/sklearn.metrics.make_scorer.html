@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.metrics.get_scorer" href="sklearn.metrics.get_scorer.html" />
+    <link rel="prev" title="sklearn.manifold.spectral_embedding" href="sklearn.manifold.spectral_embedding.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.manifold.spectral_embedding.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.manif...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.manifold.spectral_embedding
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.make_scorer</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.make_scorer</a></li>
 </ul>
 
     </div>
@@ -123,19 +163,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-metrics-make-scorer">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.make_scorer<a class="headerlink" href="#sklearn-metrics-make-scorer" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.make_scorer<a class="headerlink" href="#sklearn-metrics-make-scorer" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.make_scorer">
-<code class="descclassname">sklearn.metrics.</code><code class="descname">make_scorer</code><span class="sig-paren">(</span><em>score_func</em>, <em>greater_is_better=True</em>, <em>needs_proba=False</em>, <em>needs_threshold=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/metrics/scorer.py#L249"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.make_scorer" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">make_scorer</tt><big>(</big><em>score_func</em>, <em>greater_is_better=True</em>, <em>needs_proba=False</em>, <em>needs_threshold=False</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/metrics/scorer.py#L249"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.make_scorer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Make a scorer from a performance metric or loss function.</p>
 <p>This factory function wraps scoring functions for use in GridSearchCV
-and cross_val_score. It takes a score function, such as <code class="docutils literal"><span class="pre">accuracy_score</span></code>,
-<code class="docutils literal"><span class="pre">mean_squared_error</span></code>, <code class="docutils literal"><span class="pre">adjusted_rand_index</span></code> or <code class="docutils literal"><span class="pre">average_precision</span></code>
+and cross_val_score. It takes a score function, such as <tt class="docutils literal"><span class="pre">accuracy_score</span></tt>,
+<tt class="docutils literal"><span class="pre">mean_squared_error</span></tt>, <tt class="docutils literal"><span class="pre">adjusted_rand_index</span></tt> or <tt class="docutils literal"><span class="pre">average_precision</span></tt>
 and returns a callable that scores an estimator&#8217;s output.</p>
-<p>Read more in the <a class="reference internal" href="../model_evaluation.html#scoring"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../model_evaluation.html#scoring"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -143,7 +183,7 @@ and returns a callable that scores an estimator&#8217;s output.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>score_func</strong> : callable,</p>
 <blockquote>
 <div><p>Score function (or loss function) with signature
-<code class="docutils literal"><span class="pre">score_func(y,</span> <span class="pre">y_pred,</span> <span class="pre">**kwargs)</span></code>.</p>
+<tt class="docutils literal"><span class="pre">score_func(y,</span> <span class="pre">y_pred,</span> <span class="pre">**kwargs)</span></tt>.</p>
 </div></blockquote>
 <p><strong>greater_is_better</strong> : boolean, default=True</p>
 <blockquote>
@@ -161,7 +201,7 @@ out of a classifier.</p>
 <div><p>Whether score_func takes a continuous decision certainty.
 This only works for binary classification using estimators that
 have either a decision_function or predict_proba method.</p>
-<p>For example <code class="docutils literal"><span class="pre">average_precision</span></code> or the area under the roc curve
+<p>For example <tt class="docutils literal"><span class="pre">average_precision</span></tt> or the area under the roc curve
 can not be computed using discrete predictions alone.</p>
 </div></blockquote>
 <p><strong>**kwargs</strong> : additional arguments</p>
@@ -205,8 +245,12 @@ can not be computed using discrete predictions alone.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.make_scorer.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.manifold.spectral_embedding.html">Previous
+      </a>
+    </div>
     
      </div>
 

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="empirical-evaluation-of-the-impact-of-k-means-initialization">
 <span id="example-cluster-plot-kmeans-stability-low-dim-dense-py"></span><h1>Empirical evaluation of the impact of k-means initialization<a class="headerlink" href="#empirical-evaluation-of-the-impact-of-k-means-initialization" title="Permalink to this headline">¶</a></h1>
@@ -172,11 +172,11 @@ the algorithm convergence robust as measured by the relative standard
 deviation of the inertia of the clustering (i.e. the sum of distances
 to the nearest cluster center).</p>
 <p>The first plot shows the best inertia reached for each combination
-of the model (<code class="docutils literal"><span class="pre">KMeans</span></code> or <code class="docutils literal"><span class="pre">MiniBatchKMeans</span></code>) and the init method
-(<code class="docutils literal"><span class="pre">init=&quot;random&quot;</span></code> or <code class="docutils literal"><span class="pre">init=&quot;kmeans++&quot;</span></code>) for increasing values of the
-<code class="docutils literal"><span class="pre">n_init</span></code> parameter that controls the number of initializations.</p>
-<p>The second plot demonstrate one single run of the <code class="docutils literal"><span class="pre">MiniBatchKMeans</span></code>
-estimator using a <code class="docutils literal"><span class="pre">init=&quot;random&quot;</span></code> and <code class="docutils literal"><span class="pre">n_init=1</span></code>. This run leads to
+of the model (<tt class="docutils literal"><span class="pre">KMeans</span></tt> or <tt class="docutils literal"><span class="pre">MiniBatchKMeans</span></tt>) and the init method
+(<tt class="docutils literal"><span class="pre">init=&quot;random&quot;</span></tt> or <tt class="docutils literal"><span class="pre">init=&quot;kmeans++&quot;</span></tt>) for increasing values of the
+<tt class="docutils literal"><span class="pre">n_init</span></tt> parameter that controls the number of initializations.</p>
+<p>The second plot demonstrate one single run of the <tt class="docutils literal"><span class="pre">MiniBatchKMeans</span></tt>
+estimator using a <tt class="docutils literal"><span class="pre">init=&quot;random&quot;</span></tt> and <tt class="docutils literal"><span class="pre">n_init=1</span></tt>. This run leads to
 a bad convergence (local optimum) with estimated centers stuck
 between ground truth clusters.</p>
 <p>The dataset used for evaluation is a 2D grid of isotropic Gaussian
@@ -194,7 +194,7 @@ Evaluation of MiniBatchKMeans with k-means++ init
 Evaluation of MiniBatchKMeans with random init
 </pre></div>
 </div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_kmeans_stability_low_dim_dense.py"><code class="xref download docutils literal"><span class="pre">plot_kmeans_stability_low_dim_dense.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_kmeans_stability_low_dim_dense.py"><tt class="xref download docutils literal"><span class="pre">plot_kmeans_stability_low_dim_dense.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Olivier Grisel &lt;olivier.grisel@ensta.org&gt;</span>

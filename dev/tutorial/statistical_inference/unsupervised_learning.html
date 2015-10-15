@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -179,7 +179,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="unsupervised-learning-seeking-representations-of-the-data">
 <h1>Unsupervised learning: seeking representations of the data<a class="headerlink" href="#unsupervised-learning-seeking-representations-of-the-data" title="Permalink to this headline">¶</a></h1>
@@ -196,7 +196,7 @@ called <em>clusters</em>.</p>
 <h3>K-means clustering<a class="headerlink" href="#k-means-clustering" title="Permalink to this headline">¶</a></h3>
 <p>Note that there exist a lot of different clustering criteria and associated
 algorithms. The simplest clustering algorithm is
-<a class="reference internal" href="../../modules/clustering.html#k-means"><span>K-means</span></a>.</p>
+<a class="reference internal" href="../../modules/clustering.html#k-means"><em>K-means</em></a>.</p>
 <a class="reference external image-reference" href="../../auto_examples/cluster/plot_cluster_iris.html"><img alt="../../_images/plot_cluster_iris_0021.png" class="align-right" src="../../_images/plot_cluster_iris_0021.png" style="width: 280.0px; height: 210.0px;" /></a>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">cluster</span><span class="p">,</span> <span class="n">datasets</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
@@ -284,7 +284,7 @@ For instance, this can be used to posterize an image:</p>
 </div>
 <div class="section" id="hierarchical-agglomerative-clustering-ward">
 <h3>Hierarchical agglomerative clustering: Ward<a class="headerlink" href="#hierarchical-agglomerative-clustering-ward" title="Permalink to this headline">¶</a></h3>
-<p>A <a class="reference internal" href="../../modules/clustering.html#hierarchical-clustering"><span>Hierarchical clustering</span></a> method is a type of cluster analysis
+<p>A <a class="reference internal" href="../../modules/clustering.html#hierarchical-clustering"><em>Hierarchical clustering</em></a> method is a type of cluster analysis
 that aims to build a hierarchy of clusters. In general, the various approaches
 of this technique are either:</p>
 <blockquote>
@@ -364,8 +364,8 @@ transposed data.</p>
 </pre></div>
 </div>
 <div class="topic">
-<p class="topic-title first"><code class="docutils literal"><span class="pre">transform</span></code> and <code class="docutils literal"><span class="pre">inverse_transform</span></code> methods</p>
-<p>Some estimators expose a <code class="docutils literal"><span class="pre">transform</span></code> method, for instance to reduce
+<p class="topic-title first"><tt class="docutils literal"><span class="pre">transform</span></tt> and <tt class="docutils literal"><span class="pre">inverse_transform</span></tt> methods</p>
+<p>Some estimators expose a <tt class="docutils literal"><span class="pre">transform</span></tt> method, for instance to reduce
 the dimensionality of the dataset.</p>
 </div>
 </div>
@@ -382,7 +382,7 @@ Different criteria exist to choose the components</p>
 </div>
 <div class="section" id="principal-component-analysis-pca">
 <h3>Principal component analysis: PCA<a class="headerlink" href="#principal-component-analysis-pca" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="../../modules/decomposition.html#pca"><span>Principal component analysis (PCA)</span></a> selects the successive components that
+<p><a class="reference internal" href="../../modules/decomposition.html#pca"><em>Principal component analysis (PCA)</em></a> selects the successive components that
 explain the maximum variance in the signal.</p>
 <p class="centered"><a class="reference external" href="../../auto_examples/decomposition/plot_pca_3d.html"><img alt="pca_3d_axis" src="../../_images/plot_pca_3d_0011.png" style="width: 280.0px; height: 210.0px;" /></a> <a class="reference external" href="../../auto_examples/decomposition/plot_pca_3d.html"><img alt="pca_3d_aligned" src="../../_images/plot_pca_3d_0021.png" style="width: 280.0px; height: 210.0px;" /></a></p>
 <p>The point cloud spanned by the observations above is very flat in one
@@ -414,7 +414,7 @@ data by projecting on a principal subspace.</p>
 </div>
 <div class="section" id="independent-component-analysis-ica">
 <h3>Independent Component Analysis: ICA<a class="headerlink" href="#independent-component-analysis-ica" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="../../modules/decomposition.html#ica"><span>Independent component analysis (ICA)</span></a> selects components so that the distribution of their loadings carries
+<p><a class="reference internal" href="../../modules/decomposition.html#ica"><em>Independent component analysis (ICA)</em></a> selects components so that the distribution of their loadings carries
 a maximum amount of independent information. It is able to recover
 <strong>non-Gaussian</strong> independent signals:</p>
 <a class="reference external image-reference" href="../../auto_examples/decomposition/plot_ica_blind_source_separation.html"><img alt="../../_images/plot_ica_blind_source_separation_0012.png" class="align-center" src="../../_images/plot_ica_blind_source_separation_0012.png" style="width: 560.0px; height: 420.0px;" /></a>

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,7 +147,7 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.grid_search</span></code>.ParameterSampler</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.grid_search</span></tt>.ParameterSampler</a></li>
 </ul>
 
     </div>
@@ -163,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-grid-search-parametersampler">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.grid_search" title="sklearn.grid_search"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.grid_search</span></code></a>.ParameterSampler<a class="headerlink" href="#sklearn-grid-search-parametersampler" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.grid_search" title="sklearn.grid_search"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.grid_search</span></tt></a>.ParameterSampler<a class="headerlink" href="#sklearn-grid-search-parametersampler" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.grid_search.ParameterSampler">
-<em class="property">class </em><code class="descclassname">sklearn.grid_search.</code><code class="descname">ParameterSampler</code><span class="sig-paren">(</span><em>param_distributions</em>, <em>n_iter</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/grid_search.py#L158"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.ParameterSampler" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.grid_search.</tt><tt class="descname">ParameterSampler</tt><big>(</big><em>param_distributions</em>, <em>n_iter</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/grid_search.py#L158"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.ParameterSampler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generator on parameters sampled from given distributions.</p>
 <p>Non-deterministic iterable over random candidate combinations for hyper-
 parameter search. If all parameters are presented as a list,
@@ -177,12 +177,12 @@ sampling without replacement is performed. If at least one parameter
 is given as a distribution, sampling with replacement is used.
 It is highly recommended to use continuous distributions for continuous
 parameters.</p>
-<p>Note that as of SciPy 0.12, the <code class="docutils literal"><span class="pre">scipy.stats.distributions</span></code> do not accept
+<p>Note that as of SciPy 0.12, the <tt class="docutils literal"><span class="pre">scipy.stats.distributions</span></tt> do not accept
 a custom RNG instance and always use the singleton RNG from
-<code class="docutils literal"><span class="pre">numpy.random</span></code>. Hence setting <code class="docutils literal"><span class="pre">random_state</span></code> will not guarantee a
-deterministic iteration whenever <code class="docutils literal"><span class="pre">scipy.stats</span></code> distributions are used to
+<tt class="docutils literal"><span class="pre">numpy.random</span></tt>. Hence setting <tt class="docutils literal"><span class="pre">random_state</span></tt> will not guarantee a
+deterministic iteration whenever <tt class="docutils literal"><span class="pre">scipy.stats</span></tt> distributions are used to
 define the parameter search space.</p>
-<p>Read more in the <a class="reference internal" href="../grid_search.html#grid-search"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../grid_search.html#grid-search"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -191,7 +191,7 @@ define the parameter search space.</p>
 <blockquote>
 <div><p>Dictionary where the keys are parameters and values
 are distributions from which a parameter is to be sampled.
-Distributions either have to provide a <code class="docutils literal"><span class="pre">rvs</span></code> function
+Distributions either have to provide a <tt class="docutils literal"><span class="pre">rvs</span></tt> function
 to sample from them, or can be given as a list of values,
 where a uniform distribution is assumed.</p>
 </div></blockquote>

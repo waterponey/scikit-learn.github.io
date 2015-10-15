@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.metrics.pairwise_distances_argmin_min" href="sklearn.metrics.pairwise_distances_argmin_min.html" />
+    <link rel="prev" title="sklearn.metrics.pairwise_distances" href="sklearn.metrics.pairwise_distances.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.metrics.pairwise_distances.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.metri...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.metrics.pairwise_distances
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.pairwise_distances_argmin</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-pairwise-distances-argmin">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.pairwise_distances_argmin</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.pairwise_distances_argmin</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-pairwise-distances-argmin">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.pairwise_distances_argmin</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-metrics-pairwise-distances-argmin">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.pairwise_distances_argmin<a class="headerlink" href="#sklearn-metrics-pairwise-distances-argmin" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.pairwise_distances_argmin<a class="headerlink" href="#sklearn-metrics-pairwise-distances-argmin" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.pairwise_distances_argmin">
-<code class="descclassname">sklearn.metrics.</code><code class="descname">pairwise_distances_argmin</code><span class="sig-paren">(</span><em>X</em>, <em>Y</em>, <em>axis=1</em>, <em>metric='euclidean'</em>, <em>batch_size=500</em>, <em>metric_kwargs=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/metrics/pairwise.py#L372"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.pairwise_distances_argmin" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">pairwise_distances_argmin</tt><big>(</big><em>X</em>, <em>Y</em>, <em>axis=1</em>, <em>metric='euclidean'</em>, <em>batch_size=500</em>, <em>metric_kwargs=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/metrics/pairwise.py#L372"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.pairwise_distances_argmin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute minimum distances between one point and a set of points.</p>
 <p>This function computes for each row in X, the index of the row of Y which
 is closest (according to the specified distance).</p>
@@ -206,19 +246,19 @@ metrics.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.metrics.pairwise_distances.html#sklearn.metrics.pairwise_distances" title="sklearn.metrics.pairwise_distances"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.metrics.pairwise_distances</span></code></a>, <a class="reference internal" href="sklearn.metrics.pairwise_distances_argmin_min.html#sklearn.metrics.pairwise_distances_argmin_min" title="sklearn.metrics.pairwise_distances_argmin_min"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.metrics.pairwise_distances_argmin_min</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.metrics.pairwise_distances.html#sklearn.metrics.pairwise_distances" title="sklearn.metrics.pairwise_distances"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.metrics.pairwise_distances</span></tt></a>, <a class="reference internal" href="sklearn.metrics.pairwise_distances_argmin_min.html#sklearn.metrics.pairwise_distances_argmin_min" title="sklearn.metrics.pairwise_distances_argmin_min"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.metrics.pairwise_distances_argmin_min</span></tt></a></p>
 </div>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-pairwise-distances-argmin">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.pairwise_distances_argmin</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-pairwise-distances-argmin" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Performs a pixel-wise Vector Quantization (VQ) of an image of the summer palace (China), reduci..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.pairwise_distances_argmin</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-pairwise-distances-argmin" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Performs a pixel-wise Vector Quantization (VQ) of an image of the summer palace (China), reduci..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_color_quantization.html"><img alt="../../_images/plot_color_quantization1.png" src="../../_images/plot_color_quantization1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_color_quantization.html#example-cluster-plot-color-quantization-py"><span>Color Quantization using K-Means</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_color_quantization.html#example-cluster-plot-color-quantization-py"><em>Color Quantization using K-Means</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="We want to compare the performance of the MiniBatchKMeans and KMeans: the MiniBatchKMeans is fa..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="We want to compare the performance of the MiniBatchKMeans and KMeans: the MiniBatchKMeans is fa..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_mini_batch_kmeans.html"><img alt="../../_images/plot_mini_batch_kmeans1.png" src="../../_images/plot_mini_batch_kmeans1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_mini_batch_kmeans.html#example-cluster-plot-mini-batch-kmeans-py"><span>Comparison of the K-Means and MiniBatchKMeans clustering algorithms</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_mini_batch_kmeans.html#example-cluster-plot-mini-batch-kmeans-py"><em>Comparison of the K-Means and MiniBatchKMeans clustering algorithms</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -235,8 +275,12 @@ metrics.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.pairwise_distances_argmin.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.metrics.pairwise_distances.html">Previous
+      </a>
+    </div>
     
      </div>
 

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -167,18 +167,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="density-estimation">
 <span id="id1"></span><h1>2.8. Density Estimation<a class="headerlink" href="#density-estimation" title="Permalink to this headline">¶</a></h1>
 <p>Density estimation walks the line between unsupervised learning, feature
 engineering, and data modeling.  Some of the most popular and useful
 density estimation techniques are mixture models such as
-Gaussian Mixtures (<a class="reference internal" href="generated/sklearn.mixture.GMM.html#sklearn.mixture.GMM" title="sklearn.mixture.GMM"><code class="xref py py-class docutils literal"><span class="pre">sklearn.mixture.GMM</span></code></a>), and neighbor-based
+Gaussian Mixtures (<a class="reference internal" href="generated/sklearn.mixture.GMM.html#sklearn.mixture.GMM" title="sklearn.mixture.GMM"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.mixture.GMM</span></tt></a>), and neighbor-based
 approaches such as the kernel density estimate
-(<a class="reference internal" href="generated/sklearn.neighbors.KernelDensity.html#sklearn.neighbors.KernelDensity" title="sklearn.neighbors.KernelDensity"><code class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.KernelDensity</span></code></a>).
+(<a class="reference internal" href="generated/sklearn.neighbors.KernelDensity.html#sklearn.neighbors.KernelDensity" title="sklearn.neighbors.KernelDensity"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.KernelDensity</span></tt></a>).
 Gaussian Mixtures are discussed more fully in the context of
-<span class="xref std std-ref">clustering</span>, because the technique is also useful as
+<em class="xref std std-ref">clustering</em>, because the technique is also useful as
 an unsupervised clustering scheme.</p>
 <p>Density estimation is a very simple concept, and most people are already
 familiar with one common density estimation technique: the histogram.</p>
@@ -188,7 +188,8 @@ familiar with one common density estimation technique: the histogram.</p>
 number of data points within each bin is tallied.  An example of a histogram
 can be seen in the upper-left panel of the following figure:</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="hist_to_kde" src="../_images/plot_kde_1d_0011.png" style="width: 640.0px; height: 480.0px;" /></a></strong></p><p>A major problem with histograms, however, is that the choice of binning can
+<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="hist_to_kde" src="../_images/plot_kde_1d_0011.png" style="width: 640.0px; height: 480.0px;" /></a>
+</strong></p><p>A major problem with histograms, however, is that the choice of binning can
 have a disproportionate effect on the resulting visualization.  Consider the
 upper-right panel of the above figure.  It shows a histogram over the same
 data, with the bins shifted right.  The results of the two visualizations look
@@ -212,8 +213,8 @@ distribution of points.</p>
 <div class="section" id="kernel-density-estimation">
 <span id="kernel-density"></span><h2>2.8.2. Kernel Density Estimation<a class="headerlink" href="#kernel-density-estimation" title="Permalink to this headline">¶</a></h2>
 <p>Kernel density estimation in scikit-learn is implemented in the
-<a class="reference internal" href="generated/sklearn.neighbors.KernelDensity.html#sklearn.neighbors.KernelDensity" title="sklearn.neighbors.KernelDensity"><code class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.KernelDensity</span></code></a> estimator, which uses the
-Ball Tree or KD Tree for efficient queries (see <a class="reference internal" href="neighbors.html#neighbors"><span>Nearest Neighbors</span></a> for
+<a class="reference internal" href="generated/sklearn.neighbors.KernelDensity.html#sklearn.neighbors.KernelDensity" title="sklearn.neighbors.KernelDensity"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.KernelDensity</span></tt></a> estimator, which uses the
+Ball Tree or KD Tree for efficient queries (see <a class="reference internal" href="neighbors.html#neighbors"><em>Nearest Neighbors</em></a> for
 a discussion of these).  Though the above example
 uses a 1D data set for simplicity, kernel density estimation can be
 performed in any number of dimensions, though in practice the curse of
@@ -221,7 +222,8 @@ dimensionality causes its performance to degrade in high dimensions.</p>
 <p>In the following figure, 100 points are drawn from a bimodal distribution,
 and the kernel density estimates are shown for three choices of kernels:</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="kde_1d_distribution" src="../_images/plot_kde_1d_0031.png" style="width: 640.0px; height: 480.0px;" /></a></strong></p><p>It&#8217;s clear how the kernel shape affects the smoothness of the resulting
+<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="kde_1d_distribution" src="../_images/plot_kde_1d_0031.png" style="width: 640.0px; height: 480.0px;" /></a>
+</strong></p><p>It&#8217;s clear how the kernel shape affects the smoothness of the resulting
 distribution.  The scikit-learn kernel density estimator can be used as
 follows:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.neighbors.kde</span> <span class="kn">import</span> <span class="n">KernelDensity</span>
@@ -233,7 +235,7 @@ follows:</p>
 <span class="go">       -0.41076071])</span>
 </pre></div>
 </div>
-<p>Here we have used <code class="docutils literal"><span class="pre">kernel='gaussian'</span></code>, as seen above.
+<p>Here we have used <tt class="docutils literal"><span class="pre">kernel='gaussian'</span></tt>, as seen above.
 Mathematically, a kernel is a positive function <img class="math" src="../_images/math/08b2238649d4005da6c6591a962c50452243ab30.png" alt="K(x;h)"/>
 which is controlled by the bandwidth parameter <img class="math" src="../_images/math/cbb80ad77aa7a5e227d5a46bc44d235284106cfc.png" alt="h"/>.
 Given this kernel form, the density estimate at a point <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> within
@@ -244,32 +246,33 @@ a group of points <img class="math" src="../_images/math/08fe58960982174a36d8a65
 between bias and variance in the result.  A large bandwidth leads to a very
 smooth (i.e. high-bias) density distribution.  A small bandwidth leads
 to an unsmooth (i.e. high-variance) density distribution.</p>
-<p><a class="reference internal" href="generated/sklearn.neighbors.KernelDensity.html#sklearn.neighbors.KernelDensity" title="sklearn.neighbors.KernelDensity"><code class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.KernelDensity</span></code></a> implements several common kernel
+<p><a class="reference internal" href="generated/sklearn.neighbors.KernelDensity.html#sklearn.neighbors.KernelDensity" title="sklearn.neighbors.KernelDensity"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.KernelDensity</span></tt></a> implements several common kernel
 forms, which are shown in the following figure:</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="kde_kernels" src="../_images/plot_kde_1d_0021.png" style="width: 640.0px; height: 480.0px;" /></a></strong></p><p>The form of these kernels is as follows:</p>
+<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_kde_1d.html"><img alt="kde_kernels" src="../_images/plot_kde_1d_0021.png" style="width: 640.0px; height: 480.0px;" /></a>
+</strong></p><p>The form of these kernels is as follows:</p>
 <ul>
-<li><p class="first">Gaussian kernel (<code class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'gaussian'</span></code>)</p>
+<li><p class="first">Gaussian kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'gaussian'</span></tt>)</p>
 <p><img class="math" src="../_images/math/6f487de9cdc05af1d24272b8f36db9f03d5abb06.png" alt="K(x; h) \propto \exp(- \frac{x^2}{2h^2} )"/></p>
 </li>
-<li><p class="first">Tophat kernel (<code class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'tophat'</span></code>)</p>
+<li><p class="first">Tophat kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'tophat'</span></tt>)</p>
 <p><img class="math" src="../_images/math/9e63a29c9ced920f6aae821ab3e29e01675f2f12.png" alt="K(x; h) \propto 1"/> if <img class="math" src="../_images/math/caea9921eb427449d088d91b6755d96e7cf1b214.png" alt="x &lt; h"/></p>
 </li>
-<li><p class="first">Epanechnikov kernel (<code class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'epanechnikov'</span></code>)</p>
+<li><p class="first">Epanechnikov kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'epanechnikov'</span></tt>)</p>
 <p><img class="math" src="../_images/math/ea8752ded7c5816c51d31d20e7d93f52fbf41f49.png" alt="K(x; h) \propto 1 - \frac{x^2}{h^2}"/></p>
 </li>
-<li><p class="first">Exponential kernel (<code class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'exponential'</span></code>)</p>
+<li><p class="first">Exponential kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'exponential'</span></tt>)</p>
 <p><img class="math" src="../_images/math/db5929be150f149215fd88053de8d36c6608bef6.png" alt="K(x; h) \propto \exp(-x/h)"/></p>
 </li>
-<li><p class="first">Linear kernel (<code class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'linear'</span></code>)</p>
+<li><p class="first">Linear kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'linear'</span></tt>)</p>
 <p><img class="math" src="../_images/math/d432478525db6c0e8aeb2a6fa0a8ca3bf0afe7b5.png" alt="K(x; h) \propto 1 - x/h"/> if <img class="math" src="../_images/math/caea9921eb427449d088d91b6755d96e7cf1b214.png" alt="x &lt; h"/></p>
 </li>
-<li><p class="first">Cosine kernel (<code class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'cosine'</span></code>)</p>
+<li><p class="first">Cosine kernel (<tt class="docutils literal"><span class="pre">kernel</span> <span class="pre">=</span> <span class="pre">'cosine'</span></tt>)</p>
 <p><img class="math" src="../_images/math/b808030270971971d42ec8e62398634b513667c3.png" alt="K(x; h) \propto \cos(\frac{\pi x}{2h})"/> if <img class="math" src="../_images/math/caea9921eb427449d088d91b6755d96e7cf1b214.png" alt="x &lt; h"/></p>
 </li>
 </ul>
 <p>The kernel density estimator can be used with any of the valid distance
-metrics (see <a class="reference internal" href="generated/sklearn.neighbors.DistanceMetric.html#sklearn.neighbors.DistanceMetric" title="sklearn.neighbors.DistanceMetric"><code class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.DistanceMetric</span></code></a> for a list of available metrics), though
+metrics (see <a class="reference internal" href="generated/sklearn.neighbors.DistanceMetric.html#sklearn.neighbors.DistanceMetric" title="sklearn.neighbors.DistanceMetric"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.DistanceMetric</span></tt></a> for a list of available metrics), though
 the results are properly normalized only for the Euclidean metric.  One
 particularly useful metric is the
 <a class="reference external" href="http://en.wikipedia.org/wiki/Haversine_formula">Haversine distance</a>
@@ -278,24 +281,26 @@ is an example of using a kernel density estimate for a visualization
 of geospatial data, in this case the distribution of observations of two
 different species on the South American continent:</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/neighbors/plot_species_kde.html"><img alt="species_kde" src="../_images/plot_species_kde_0011.png" style="width: 640.0px; height: 480.0px;" /></a></strong></p><p>One other useful application of kernel density estimation is to learn a
+<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_species_kde.html"><img alt="species_kde" src="../_images/plot_species_kde_0011.png" style="width: 640.0px; height: 480.0px;" /></a>
+</strong></p><p>One other useful application of kernel density estimation is to learn a
 non-parametric generative model of a dataset in order to efficiently
 draw new samples from this generative model.
 Here is an example of using this process to
 create a new set of hand-written digits, using a Gaussian kernel learned
 on a PCA projection of the data:</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/neighbors/plot_digits_kde_sampling.html"><img alt="digits_kde" src="../_images/plot_digits_kde_sampling_0011.png" style="width: 640.0px; height: 480.0px;" /></a></strong></p><p>The &#8220;new&#8221; data consists of linear combinations of the input data, with weights
+<strong><a class="reference external image-reference" href="../auto_examples/neighbors/plot_digits_kde_sampling.html"><img alt="digits_kde" src="../_images/plot_digits_kde_sampling_0011.png" style="width: 640.0px; height: 480.0px;" /></a>
+</strong></p><p>The &#8220;new&#8221; data consists of linear combinations of the input data, with weights
 probabilistically drawn given the KDE model.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/neighbors/plot_kde_1d.html#example-neighbors-plot-kde-1d-py"><span>Simple 1D Kernel Density Estimation</span></a>: computation of simple kernel
+<li><a class="reference internal" href="../auto_examples/neighbors/plot_kde_1d.html#example-neighbors-plot-kde-1d-py"><em>Simple 1D Kernel Density Estimation</em></a>: computation of simple kernel
 density estimates in one dimension.</li>
-<li><a class="reference internal" href="../auto_examples/neighbors/plot_digits_kde_sampling.html#example-neighbors-plot-digits-kde-sampling-py"><span>Kernel Density Estimation</span></a>: an example of using
+<li><a class="reference internal" href="../auto_examples/neighbors/plot_digits_kde_sampling.html#example-neighbors-plot-digits-kde-sampling-py"><em>Kernel Density Estimation</em></a>: an example of using
 Kernel Density estimation to learn a generative model of the hand-written
 digits data, and drawing new samples from this model.</li>
-<li><a class="reference internal" href="../auto_examples/neighbors/plot_species_kde.html#example-neighbors-plot-species-kde-py"><span>Kernel Density Estimate of Species Distributions</span></a>: an example of Kernel Density
+<li><a class="reference internal" href="../auto_examples/neighbors/plot_species_kde.html#example-neighbors-plot-species-kde-py"><em>Kernel Density Estimate of Species Distributions</em></a>: an example of Kernel Density
 estimation using the Haversine distance metric to visualize geospatial data</li>
 </ul>
 </div>

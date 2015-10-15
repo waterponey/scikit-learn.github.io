@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,21 +163,21 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="gradient-boosting-regularization">
 <span id="example-ensemble-plot-gradient-boosting-regularization-py"></span><h1>Gradient Boosting regularization<a class="headerlink" href="#gradient-boosting-regularization" title="Permalink to this headline">¶</a></h1>
 <p>Illustration of the effect of different regularization strategies
 for Gradient Boosting. The example is taken from Hastie et al 2009.</p>
 <p>The loss function used is binomial deviance. Regularization via
-shrinkage (<code class="docutils literal"><span class="pre">learning_rate</span> <span class="pre">&lt;</span> <span class="pre">1.0</span></code>) improves performance considerably.
+shrinkage (<tt class="docutils literal"><span class="pre">learning_rate</span> <span class="pre">&lt;</span> <span class="pre">1.0</span></tt>) improves performance considerably.
 In combination with shrinkage, stochastic gradient boosting
-(<code class="docutils literal"><span class="pre">subsample</span> <span class="pre">&lt;</span> <span class="pre">1.0</span></code>) can produce more accurate models by reducing the
+(<tt class="docutils literal"><span class="pre">subsample</span> <span class="pre">&lt;</span> <span class="pre">1.0</span></tt>) can produce more accurate models by reducing the
 variance via bagging.
 Subsampling without shrinkage usually does poorly.
 Another strategy to reduce the variance is by subsampling the features
 analogous to the random splits in Random Forests
-(via the <code class="docutils literal"><span class="pre">max_features</span></code> parameter).</p>
+(via the <tt class="docutils literal"><span class="pre">max_features</span></tt> parameter).</p>
 <table class="docutils footnote" frame="void" id="id1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
@@ -186,7 +186,7 @@ Learning Ed. 2&#8221;, Springer, 2009.</td></tr>
 </tbody>
 </table>
 <img alt="../../_images/plot_gradient_boosting_regularization_001.png" class="align-center" src="../../_images/plot_gradient_boosting_regularization_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_gradient_boosting_regularization.py"><code class="xref download docutils literal"><span class="pre">plot_gradient_boosting_regularization.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_gradient_boosting_regularization.py"><tt class="xref download docutils literal"><span class="pre">plot_gradient_boosting_regularization.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Peter Prettenhofer &lt;peter.prettenhofer@gmail.com&gt;</span>

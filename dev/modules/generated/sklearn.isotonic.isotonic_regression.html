@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,7 +147,7 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.isotonic</span></code>.isotonic_regression</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.isotonic</span></tt>.isotonic_regression</a></li>
 </ul>
 
     </div>
@@ -163,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-isotonic-isotonic-regression">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.isotonic" title="sklearn.isotonic"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.isotonic</span></code></a>.isotonic_regression<a class="headerlink" href="#sklearn-isotonic-isotonic-regression" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.isotonic" title="sklearn.isotonic"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.isotonic</span></tt></a>.isotonic_regression<a class="headerlink" href="#sklearn-isotonic-isotonic-regression" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.isotonic.isotonic_regression">
-<code class="descclassname">sklearn.isotonic.</code><code class="descname">isotonic_regression</code><span class="sig-paren">(</span><em>y</em>, <em>sample_weight=None</em>, <em>y_min=None</em>, <em>y_max=None</em>, <em>increasing=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/isotonic.py#L78"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.isotonic.isotonic_regression" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.isotonic.</tt><tt class="descname">isotonic_regression</tt><big>(</big><em>y</em>, <em>sample_weight=None</em>, <em>y_min=None</em>, <em>y_max=None</em>, <em>increasing=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/isotonic.py#L78"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.isotonic.isotonic_regression" title="Permalink to this definition">¶</a></dt>
 <dd><p>Solve the isotonic regression model:</p>
 <div class="highlight-python"><div class="highlight"><pre>min sum w[i] (y[i] - y_[i]) ** 2
 
@@ -185,7 +185,7 @@ subject to y_min = y_[1] &lt;= y_[2] ... &lt;= y_[n] = y_max
 </ul>
 </dd>
 </dl>
-<p>Read more in the <a class="reference internal" href="../isotonic.html#isotonic"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../isotonic.html#isotonic"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -209,7 +209,7 @@ If None, weight is set to 1 (equal weights).</p>
 </div></blockquote>
 <p><strong>increasing</strong> : boolean, optional, default: True</p>
 <blockquote>
-<div><p>Whether to compute <code class="docutils literal"><span class="pre">y_</span></code> is increasing (if set to True) or decreasing
+<div><p>Whether to compute <tt class="docutils literal"><span class="pre">y_</span></tt> is increasing (if set to True) or decreasing
 (if set to False)</p>
 </div></blockquote>
 </td>

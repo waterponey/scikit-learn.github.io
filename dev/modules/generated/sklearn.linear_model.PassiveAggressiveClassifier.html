@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.linear_model.PassiveAggressiveRegressor" href="sklearn.linear_model.PassiveAggressiveRegressor.html" />
+    <link rel="prev" title="3.2.4.1.8. sklearn.linear_model.OrthogonalMatchingPursuitCV" href="sklearn.linear_model.OrthogonalMatchingPursuitCV.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.linear_model.OrthogonalMatchingPursuitCV.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        3.2.4.1.8. sk...
+        </span>
+            <span class="hiddenrellink">
+            3.2.4.1.8. sklearn.linear_model.OrthogonalMatchingPursuitCV
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.linear_model</span></code>.PassiveAggressiveClassifier</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-linear-model-passiveaggressiveclassifier">Examples using <code class="docutils literal"><span class="pre">sklearn.linear_model.PassiveAggressiveClassifier</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.linear_model</span></tt>.PassiveAggressiveClassifier</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-linear-model-passiveaggressiveclassifier">Examples using <tt class="docutils literal"><span class="pre">sklearn.linear_model.PassiveAggressiveClassifier</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,15 +166,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-linear-model-passiveaggressiveclassifier">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></code></a>.PassiveAggressiveClassifier<a class="headerlink" href="#sklearn-linear-model-passiveaggressiveclassifier" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.PassiveAggressiveClassifier<a class="headerlink" href="#sklearn-linear-model-passiveaggressiveclassifier" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.linear_model.PassiveAggressiveClassifier">
-<em class="property">class </em><code class="descclassname">sklearn.linear_model.</code><code class="descname">PassiveAggressiveClassifier</code><span class="sig-paren">(</span><em>C=1.0</em>, <em>fit_intercept=True</em>, <em>n_iter=5</em>, <em>shuffle=True</em>, <em>verbose=0</em>, <em>loss='hinge'</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>warm_start=False</em>, <em>class_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/passive_aggressive.py#L9"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">PassiveAggressiveClassifier</tt><big>(</big><em>C=1.0</em>, <em>fit_intercept=True</em>, <em>n_iter=5</em>, <em>shuffle=True</em>, <em>verbose=0</em>, <em>loss='hinge'</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>warm_start=False</em>, <em>class_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/passive_aggressive.py#L9"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier" title="Permalink to this definition">¶</a></dt>
 <dd><p>Passive Aggressive Classifier</p>
-<p>Read more in the <a class="reference internal" href="../linear_model.html#passive-aggressive"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../linear_model.html#passive-aggressive"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -190,7 +230,7 @@ initialization, otherwise, just erase the previous solution.</p>
 are supposed to have weight one.</p>
 <p>The &#8220;balanced&#8221; mode uses the values of y to automatically adjust
 weights inversely proportional to class frequencies in the input data
-as <code class="docutils literal"><span class="pre">n_samples</span> <span class="pre">/</span> <span class="pre">(n_classes</span> <span class="pre">*</span> <span class="pre">np.bincount(y))</span></code></p>
+as <tt class="docutils literal"><span class="pre">n_samples</span> <span class="pre">/</span> <span class="pre">(n_classes</span> <span class="pre">*</span> <span class="pre">np.bincount(y))</span></tt></p>
 </div></blockquote>
 </td>
 </tr>
@@ -208,7 +248,7 @@ as <code class="docutils literal"><span class="pre">n_samples</span> <span class
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier" title="sklearn.linear_model.SGDClassifier"><code class="xref py py-obj docutils literal"><span class="pre">SGDClassifier</span></code></a>, <a class="reference internal" href="sklearn.linear_model.Perceptron.html#sklearn.linear_model.Perceptron" title="sklearn.linear_model.Perceptron"><code class="xref py py-obj docutils literal"><span class="pre">Perceptron</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier" title="sklearn.linear_model.SGDClassifier"><tt class="xref py py-obj docutils literal"><span class="pre">SGDClassifier</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.Perceptron.html#sklearn.linear_model.Perceptron" title="sklearn.linear_model.Perceptron"><tt class="xref py py-obj docutils literal"><span class="pre">Perceptron</span></tt></a></p>
 </div>
 <p class="rubric">References</p>
 <p>Online Passive-Aggressive Algorithms
@@ -221,16 +261,43 @@ K. Crammer, O. Dekel, J. Keshat, S. Shalev-Shwartz, Y. Singer - JMLR (2006)</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.PassiveAggressiveClassifier.decision_function" title="sklearn.linear_model.PassiveAggressiveClassifier.decision_function"><tt class="xref py py-obj docutils literal"><span class="pre">decision_function</span></tt></a>(X)</td>
+<td>Predict confidence scores for samples.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.PassiveAggressiveClassifier.densify" title="sklearn.linear_model.PassiveAggressiveClassifier.densify"><tt class="xref py py-obj docutils literal"><span class="pre">densify</span></tt></a>()</td>
+<td>Convert coefficient matrix to dense array format.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.PassiveAggressiveClassifier.fit" title="sklearn.linear_model.PassiveAggressiveClassifier.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y[,&nbsp;coef_init,&nbsp;intercept_init])</td>
+<td>Fit linear model with Passive Aggressive algorithm.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.PassiveAggressiveClassifier.get_params" title="sklearn.linear_model.PassiveAggressiveClassifier.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.PassiveAggressiveClassifier.partial_fit" title="sklearn.linear_model.PassiveAggressiveClassifier.partial_fit"><tt class="xref py py-obj docutils literal"><span class="pre">partial_fit</span></tt></a>(X,&nbsp;y[,&nbsp;classes])</td>
+<td>Fit linear model with Passive Aggressive algorithm.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.PassiveAggressiveClassifier.predict" title="sklearn.linear_model.PassiveAggressiveClassifier.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<td>Predict class labels for samples in X.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.PassiveAggressiveClassifier.score" title="sklearn.linear_model.PassiveAggressiveClassifier.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Returns the mean accuracy on the given test data and labels.</td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt>(*args,&nbsp;**kwargs)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.PassiveAggressiveClassifier.sparsify" title="sklearn.linear_model.PassiveAggressiveClassifier.sparsify"><tt class="xref py py-obj docutils literal"><span class="pre">sparsify</span></tt></a>()</td>
+<td>Convert coefficient matrix to sparse format.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.linear_model.PassiveAggressiveClassifier.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>C=1.0</em>, <em>fit_intercept=True</em>, <em>n_iter=5</em>, <em>shuffle=True</em>, <em>verbose=0</em>, <em>loss='hinge'</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>warm_start=False</em>, <em>class_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/passive_aggressive.py#L84"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>C=1.0</em>, <em>fit_intercept=True</em>, <em>n_iter=5</em>, <em>shuffle=True</em>, <em>verbose=0</em>, <em>loss='hinge'</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>warm_start=False</em>, <em>class_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/passive_aggressive.py#L84"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.PassiveAggressiveClassifier.decision_function">
-<code class="descname">decision_function</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L221"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.decision_function" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decision_function</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L221"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict confidence scores for samples.</p>
 <p>The confidence score for a sample is the signed distance of that
 sample to the hyperplane.</p>
@@ -258,10 +325,10 @@ class would be predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.PassiveAggressiveClassifier.densify">
-<code class="descname">densify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L300"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.densify" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">densify</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L300"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.densify" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert coefficient matrix to dense array format.</p>
-<p>Converts the <code class="docutils literal"><span class="pre">coef_</span></code> member (back) to a numpy.ndarray. This is the
-default format of <code class="docutils literal"><span class="pre">coef_</span></code> and is required for fitting, so calling
+<p>Converts the <tt class="docutils literal"><span class="pre">coef_</span></tt> member (back) to a numpy.ndarray. This is the
+default format of <tt class="docutils literal"><span class="pre">coef_</span></tt> and is required for fitting, so calling
 this method is only required on models that have previously been
 sparsified; otherwise, it is a no-op.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -276,7 +343,7 @@ sparsified; otherwise, it is a no-op.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.PassiveAggressiveClassifier.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>coef_init=None</em>, <em>intercept_init=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/passive_aggressive.py#L140"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>coef_init=None</em>, <em>intercept_init=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/passive_aggressive.py#L140"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit linear model with Passive Aggressive algorithm.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -309,7 +376,7 @@ sparsified; otherwise, it is a no-op.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.PassiveAggressiveClassifier.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -334,7 +401,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.PassiveAggressiveClassifier.partial_fit">
-<code class="descname">partial_fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>classes=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/passive_aggressive.py#L101"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.partial_fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">partial_fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>classes=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/passive_aggressive.py#L101"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.partial_fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit linear model with Passive Aggressive algorithm.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -368,7 +435,7 @@ Note that y doesn&#8217;t need to contain all labels in <cite>classes</cite>.</p
 
 <dl class="method">
 <dt id="sklearn.linear_model.PassiveAggressiveClassifier.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L254"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L254"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict class labels for samples in X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -392,7 +459,7 @@ Note that y doesn&#8217;t need to contain all labels in <cite>classes</cite>.</p
 
 <dl class="method">
 <dt id="sklearn.linear_model.PassiveAggressiveClassifier.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L285"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L285"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -427,12 +494,12 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.PassiveAggressiveClassifier.sparsify">
-<code class="descname">sparsify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.sparsify" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">sparsify</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.PassiveAggressiveClassifier.sparsify" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert coefficient matrix to sparse format.</p>
-<p>Converts the <code class="docutils literal"><span class="pre">coef_</span></code> member to a scipy.sparse matrix, which for
+<p>Converts the <tt class="docutils literal"><span class="pre">coef_</span></tt> member to a scipy.sparse matrix, which for
 L1-regularized models can be much more memory- and storage-efficient
 than the usual numpy.ndarray representation.</p>
-<p>The <code class="docutils literal"><span class="pre">intercept_</span></code> member is not converted.</p>
+<p>The <tt class="docutils literal"><span class="pre">intercept_</span></tt> member is not converted.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -442,10 +509,10 @@ than the usual numpy.ndarray representation.</p>
 </tbody>
 </table>
 <p class="rubric">Notes</p>
-<p>For non-sparse models, i.e. when there are not many zeros in <code class="docutils literal"><span class="pre">coef_</span></code>,
+<p>For non-sparse models, i.e. when there are not many zeros in <tt class="docutils literal"><span class="pre">coef_</span></tt>,
 this may actually <em>increase</em> memory usage, so use this method with
 care. A rule of thumb is that the number of zero elements, which can
-be computed with <code class="docutils literal"><span class="pre">(coef_</span> <span class="pre">==</span> <span class="pre">0).sum()</span></code>, must be more than 50% for this
+be computed with <tt class="docutils literal"><span class="pre">(coef_</span> <span class="pre">==</span> <span class="pre">0).sum()</span></tt>, must be more than 50% for this
 to provide significant benefits.</p>
 <p>After calling this method, further fitting with the partial_fit
 method (if any) will not work until you call densify.</p>
@@ -454,18 +521,18 @@ method (if any) will not work until you call densify.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-linear-model-passiveaggressiveclassifier">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.linear_model.PassiveAggressiveClassifier</span></code><a class="headerlink" href="#examples-using-sklearn-linear-model-passiveaggressiveclassifier" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used for classification using an out-of-core..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.linear_model.PassiveAggressiveClassifier</span></tt><a class="headerlink" href="#examples-using-sklearn-linear-model-passiveaggressiveclassifier" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used for classification using an out-of-core..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/applications/plot_out_of_core_classification.html"><img alt="../../_images/plot_out_of_core_classification1.png" src="../../_images/plot_out_of_core_classification1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/plot_out_of_core_classification.html#example-applications-plot-out-of-core-classification-py"><span>Out-of-core classification of text documents</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/applications/plot_out_of_core_classification.html#example-applications-plot-out-of-core-classification-py"><em>Out-of-core classification of text documents</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An example showing how different online solvers perform on the hand-written digits dataset."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="An example showing how different online solvers perform on the hand-written digits dataset."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_sgd_comparison.html"><img alt="../../_images/plot_sgd_comparison1.png" src="../../_images/plot_sgd_comparison1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_sgd_comparison.html#example-linear-model-plot-sgd-comparison-py"><span>Comparing various online solvers</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_sgd_comparison.html#example-linear-model-plot-sgd-comparison-py"><em>Comparing various online solvers</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used to classify documents by topics using a..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used to classify documents by topics using a..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/text/document_classification_20newsgroups.html"><img alt="../../_images/document_classification_20newsgroups1.png" src="../../_images/document_classification_20newsgroups1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/text/document_classification_20newsgroups.html#example-text-document-classification-20newsgroups-py"><span>Classification of text documents using sparse features</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/text/document_classification_20newsgroups.html#example-text-document-classification-20newsgroups-py"><em>Classification of text documents using sparse features</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -482,8 +549,12 @@ method (if any) will not work until you call densify.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.linear_model.PassiveAggressiveClassifier.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.linear_model.OrthogonalMatchingPursuitCV.html">Previous
+      </a>
+    </div>
     
      </div>
 

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="classification-of-text-documents-using-a-mlcomp-dataset">
 <span id="example-text-mlcomp-sparse-document-classification-py"></span><h1>Classification of text documents: using a MLComp dataset<a class="headerlink" href="#classification-of-text-documents-using-a-mlcomp-dataset" title="Permalink to this headline">¶</a></h1>
@@ -181,10 +181,10 @@ For instance in:</p>
 % unzip /path/to/dataset-379-20news-18828_XXXXX.zip
 </pre></div>
 </div>
-<p>You should get a folder <code class="docutils literal"><span class="pre">~/data/mlcomp/379</span></code> with a file named <code class="docutils literal"><span class="pre">metadata</span></code>
-and subfolders <code class="docutils literal"><span class="pre">raw</span></code>, <code class="docutils literal"><span class="pre">train</span></code> and <code class="docutils literal"><span class="pre">test</span></code> holding the text documents
+<p>You should get a folder <tt class="docutils literal"><span class="pre">~/data/mlcomp/379</span></tt> with a file named <tt class="docutils literal"><span class="pre">metadata</span></tt>
+and subfolders <tt class="docutils literal"><span class="pre">raw</span></tt>, <tt class="docutils literal"><span class="pre">train</span></tt> and <tt class="docutils literal"><span class="pre">test</span></tt> holding the text documents
 organized by newsgroups.</p>
-<p>Then set the <code class="docutils literal"><span class="pre">MLCOMP_DATASETS_HOME</span></code> environment variable pointing to
+<p>Then set the <tt class="docutils literal"><span class="pre">MLCOMP_DATASETS_HOME</span></tt> environment variable pointing to
 the root folder holding the uncompressed archive:</p>
 <div class="highlight-python"><div class="highlight"><pre>% export MLCOMP_DATASETS_HOME=&quot;~/data/mlcomp&quot;
 </pre></div>
@@ -193,7 +193,7 @@ the root folder holding the uncompressed archive:</p>
 <div class="highlight-python"><div class="highlight"><pre>% ipython examples/mlcomp_sparse_document_classification.py
 </pre></div>
 </div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/mlcomp_sparse_document_classification.py"><code class="xref download docutils literal"><span class="pre">mlcomp_sparse_document_classification.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/mlcomp_sparse_document_classification.py"><tt class="xref download docutils literal"><span class="pre">mlcomp_sparse_document_classification.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Author: Olivier Grisel &lt;olivier.grisel@ensta.org&gt;</span>
 <span class="c"># License: BSD 3 clause</span>
 

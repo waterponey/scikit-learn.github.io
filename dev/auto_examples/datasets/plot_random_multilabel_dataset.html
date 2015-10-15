@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="plot-randomly-generated-multilabel-dataset">
 <span id="example-datasets-plot-random-multilabel-dataset-py"></span><h1>Plot randomly generated multilabel dataset<a class="headerlink" href="#plot-randomly-generated-multilabel-dataset" title="Permalink to this headline">¶</a></h1>
@@ -227,12 +227,12 @@ total), which are differently distributed in each of two classes.</p>
 </div></blockquote>
 <p>A star marks the expected sample for each class; its size reflects the
 probability of selecting that class label.</p>
-<p>The left and right examples highlight the <code class="docutils literal"><span class="pre">n_labels</span></code> parameter:
+<p>The left and right examples highlight the <tt class="docutils literal"><span class="pre">n_labels</span></tt> parameter:
 more of the samples in the right plot have 2 or 3 labels.</p>
 <p>Note that this two-dimensional example is very degenerate:
 generally the number of features would be much greater than the
 &#8220;document length&#8221;, while here we have much larger documents than vocabulary.
-Similarly, with <code class="docutils literal"><span class="pre">n_classes</span> <span class="pre">&gt;</span> <span class="pre">n_features</span></code>, it is much less likely that a
+Similarly, with <tt class="docutils literal"><span class="pre">n_classes</span> <span class="pre">&gt;</span> <span class="pre">n_features</span></tt>, it is much less likely that a
 feature distinguishes a particular class.</p>
 <img alt="../../_images/plot_random_multilabel_dataset_001.png" class="align-center" src="../../_images/plot_random_multilabel_dataset_001.png" />
 <p><strong>Script output</strong>:</p>
@@ -243,7 +243,7 @@ blue    0.38    0.99    0.01
 yellow  0.54    0.47    0.53
 </pre></div>
 </div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_random_multilabel_dataset.py"><code class="xref download docutils literal"><span class="pre">plot_random_multilabel_dataset.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_random_multilabel_dataset.py"><tt class="xref download docutils literal"><span class="pre">plot_random_multilabel_dataset.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>

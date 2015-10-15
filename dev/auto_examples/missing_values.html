@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="imputing-missing-values-before-building-an-estimator">
 <span id="example-missing-values-py"></span><h1>Imputing missing values before building an estimator<a class="headerlink" href="#imputing-missing-values-before-building-an-estimator" title="Permalink to this headline">¶</a></h1>
@@ -172,7 +172,7 @@ than discarding the samples containing any missing value.
 Imputing does not always improve the predictions, so please check via cross-validation.
 Sometimes dropping rows or using marker values is more effective.</p>
 <p>Missing values can be replaced by the mean, the median or the most frequent
-value using the <code class="docutils literal"><span class="pre">strategy</span></code> hyper-parameter.
+value using the <tt class="docutils literal"><span class="pre">strategy</span></tt> hyper-parameter.
 The median is a more robust estimator for data with high magnitude variables
 which could dominate results (otherwise known as a &#8216;long tail&#8217;).</p>
 <p>Script output:</p>
@@ -182,7 +182,7 @@ Score after imputation of the missing values = 0.55
 </pre></div>
 </div>
 <p>In this case, imputing helps the classifier get close to the original score.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/missing_values.py"><code class="xref download docutils literal"><span class="pre">missing_values.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/missing_values.py"><tt class="xref download docutils literal"><span class="pre">missing_values.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <a href="../modules/generated/sklearn.datasets.load_boston.html#sklearn.datasets.load_boston"><span class="n">load_boston</span></a>

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -169,7 +169,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="naive-bayes">
 <span id="id1"></span><h1>1.9. Naive Bayes<a class="headerlink" href="#naive-bayes" title="Permalink to this headline">¶</a></h1>
@@ -216,7 +216,7 @@ This in turn helps to alleviate problems stemming from the curse of
 dimensionality.</p>
 <p>On the flip side, although naive Bayes is known as a decent classifier,
 it is known to be a bad estimator, so the probability outputs from
-<code class="docutils literal"><span class="pre">predict_proba</span></code> are not to be taken too seriously.</p>
+<tt class="docutils literal"><span class="pre">predict_proba</span></tt> are not to be taken too seriously.</p>
 <div class="topic">
 <p class="topic-title first">References:</p>
 <ul class="simple">
@@ -226,7 +226,7 @@ Proc. FLAIRS.</li>
 </div>
 <div class="section" id="gaussian-naive-bayes">
 <span id="id2"></span><h2>1.9.1. Gaussian Naive Bayes<a class="headerlink" href="#gaussian-naive-bayes" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="generated/sklearn.naive_bayes.GaussianNB.html#sklearn.naive_bayes.GaussianNB" title="sklearn.naive_bayes.GaussianNB"><code class="xref py py-class docutils literal"><span class="pre">GaussianNB</span></code></a> implements the Gaussian Naive Bayes algorithm for
+<p><a class="reference internal" href="generated/sklearn.naive_bayes.GaussianNB.html#sklearn.naive_bayes.GaussianNB" title="sklearn.naive_bayes.GaussianNB"><tt class="xref py py-class docutils literal"><span class="pre">GaussianNB</span></tt></a> implements the Gaussian Naive Bayes algorithm for
 classification. The likelihood of the features is assumed to be Gaussian:</p>
 <div class="math">
 <p><img src="../_images/math/196f9e31dfd9403804db63b03de06cc584586a8c.png" alt="P(x_i \mid y) &amp;= \frac{1}{\sqrt{2\pi\sigma^2_y}} \exp\left(-\frac{(x_i - \mu_y)^2}{2\sigma^2_y}\right)"/></p>
@@ -245,7 +245,7 @@ are estimated using maximum likelihood.</p>
 </div>
 <div class="section" id="multinomial-naive-bayes">
 <span id="id3"></span><h2>1.9.2. Multinomial Naive Bayes<a class="headerlink" href="#multinomial-naive-bayes" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="generated/sklearn.naive_bayes.MultinomialNB.html#sklearn.naive_bayes.MultinomialNB" title="sklearn.naive_bayes.MultinomialNB"><code class="xref py py-class docutils literal"><span class="pre">MultinomialNB</span></code></a> implements the naive Bayes algorithm for multinomially
+<p><a class="reference internal" href="generated/sklearn.naive_bayes.MultinomialNB.html#sklearn.naive_bayes.MultinomialNB" title="sklearn.naive_bayes.MultinomialNB"><tt class="xref py py-class docutils literal"><span class="pre">MultinomialNB</span></tt></a> implements the naive Bayes algorithm for multinomially
 distributed data, and is one of the two classic naive Bayes variants used in
 text classification (where the data are typically represented as word vector
 counts, although tf-idf vectors are also known to work well in practice).
@@ -272,13 +272,13 @@ while <img class="math" src="../_images/math/f053df68f37ffa28944fe80c99adea2c995
 </div>
 <div class="section" id="bernoulli-naive-bayes">
 <span id="id4"></span><h2>1.9.3. Bernoulli Naive Bayes<a class="headerlink" href="#bernoulli-naive-bayes" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="generated/sklearn.naive_bayes.BernoulliNB.html#sklearn.naive_bayes.BernoulliNB" title="sklearn.naive_bayes.BernoulliNB"><code class="xref py py-class docutils literal"><span class="pre">BernoulliNB</span></code></a> implements the naive Bayes training and classification
+<p><a class="reference internal" href="generated/sklearn.naive_bayes.BernoulliNB.html#sklearn.naive_bayes.BernoulliNB" title="sklearn.naive_bayes.BernoulliNB"><tt class="xref py py-class docutils literal"><span class="pre">BernoulliNB</span></tt></a> implements the naive Bayes training and classification
 algorithms for data that is distributed according to multivariate Bernoulli
 distributions; i.e., there may be multiple features but each one is assumed
 to be a binary-valued (Bernoulli, boolean) variable.
 Therefore, this class requires samples to be represented as binary-valued
-feature vectors; if handed any other kind of data, a <code class="docutils literal"><span class="pre">BernoulliNB</span></code> instance
-may binarize its input (depending on the <code class="docutils literal"><span class="pre">binarize</span></code> parameter).</p>
+feature vectors; if handed any other kind of data, a <tt class="docutils literal"><span class="pre">BernoulliNB</span></tt> instance
+may binarize its input (depending on the <tt class="docutils literal"><span class="pre">binarize</span></tt> parameter).</p>
 <p>The decision rule for Bernoulli naive Bayes is based on</p>
 <div class="math">
 <p><img src="../_images/math/1f41dea8d6bdb5d736a645ff2c6179fd733c0a27.png" alt="P(x_i \mid y) = P(i \mid y) x_i + (1 - P(i \mid y)) (1 - x_i)"/></p>
@@ -287,7 +287,7 @@ in that it explicitly penalizes the non-occurrence of a feature <img class="math
 that is an indicator for class <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/>,
 where the multinomial variant would simply ignore a non-occurring feature.</p>
 <p>In the case of text classification, word occurrence vectors (rather than word
-count vectors) may be used to train and use this classifier. <code class="docutils literal"><span class="pre">BernoulliNB</span></code>
+count vectors) may be used to train and use this classifier. <tt class="docutils literal"><span class="pre">BernoulliNB</span></tt>
 might perform better on some datasets, especially those with shorter documents.
 It is advisable to evaluate both models, if time permits.</p>
 <div class="topic">
@@ -308,18 +308,18 @@ Proc. AAAI/ICML-98 Workshop on Learning for Text Categorization, pp. 41-48.</li>
 <h2>1.9.4. Out-of-core naive Bayes model fitting<a class="headerlink" href="#out-of-core-naive-bayes-model-fitting" title="Permalink to this headline">¶</a></h2>
 <p>Naive Bayes models can be used to tackle large scale classification problems
 for which the full training set might not fit in memory. To handle this case,
-<a class="reference internal" href="generated/sklearn.naive_bayes.MultinomialNB.html#sklearn.naive_bayes.MultinomialNB" title="sklearn.naive_bayes.MultinomialNB"><code class="xref py py-class docutils literal"><span class="pre">MultinomialNB</span></code></a>, <a class="reference internal" href="generated/sklearn.naive_bayes.BernoulliNB.html#sklearn.naive_bayes.BernoulliNB" title="sklearn.naive_bayes.BernoulliNB"><code class="xref py py-class docutils literal"><span class="pre">BernoulliNB</span></code></a>, and <a class="reference internal" href="generated/sklearn.naive_bayes.GaussianNB.html#sklearn.naive_bayes.GaussianNB" title="sklearn.naive_bayes.GaussianNB"><code class="xref py py-class docutils literal"><span class="pre">GaussianNB</span></code></a>
-expose a <code class="docutils literal"><span class="pre">partial_fit</span></code> method that can be used
+<a class="reference internal" href="generated/sklearn.naive_bayes.MultinomialNB.html#sklearn.naive_bayes.MultinomialNB" title="sklearn.naive_bayes.MultinomialNB"><tt class="xref py py-class docutils literal"><span class="pre">MultinomialNB</span></tt></a>, <a class="reference internal" href="generated/sklearn.naive_bayes.BernoulliNB.html#sklearn.naive_bayes.BernoulliNB" title="sklearn.naive_bayes.BernoulliNB"><tt class="xref py py-class docutils literal"><span class="pre">BernoulliNB</span></tt></a>, and <a class="reference internal" href="generated/sklearn.naive_bayes.GaussianNB.html#sklearn.naive_bayes.GaussianNB" title="sklearn.naive_bayes.GaussianNB"><tt class="xref py py-class docutils literal"><span class="pre">GaussianNB</span></tt></a>
+expose a <tt class="docutils literal"><span class="pre">partial_fit</span></tt> method that can be used
 incrementally as done with other classifiers as demonstrated in
-<a class="reference internal" href="../auto_examples/applications/plot_out_of_core_classification.html#example-applications-plot-out-of-core-classification-py"><span>Out-of-core classification of text documents</span></a>. Both discrete
-classifiers support sample weighting; <a class="reference internal" href="generated/sklearn.naive_bayes.GaussianNB.html#sklearn.naive_bayes.GaussianNB" title="sklearn.naive_bayes.GaussianNB"><code class="xref py py-class docutils literal"><span class="pre">GaussianNB</span></code></a> does not.</p>
-<p>Contrary to the <code class="docutils literal"><span class="pre">fit</span></code> method, the first call to <code class="docutils literal"><span class="pre">partial_fit</span></code> needs to be
+<a class="reference internal" href="../auto_examples/applications/plot_out_of_core_classification.html#example-applications-plot-out-of-core-classification-py"><em>Out-of-core classification of text documents</em></a>. Both discrete
+classifiers support sample weighting; <a class="reference internal" href="generated/sklearn.naive_bayes.GaussianNB.html#sklearn.naive_bayes.GaussianNB" title="sklearn.naive_bayes.GaussianNB"><tt class="xref py py-class docutils literal"><span class="pre">GaussianNB</span></tt></a> does not.</p>
+<p>Contrary to the <tt class="docutils literal"><span class="pre">fit</span></tt> method, the first call to <tt class="docutils literal"><span class="pre">partial_fit</span></tt> needs to be
 passed the list of all the expected class labels.</p>
 <p>For an overview of available strategies in scikit-learn, see also the
-<a class="reference internal" href="scaling_strategies.html#scaling-strategies"><span>out-of-core learning</span></a> documentation.</p>
+<a class="reference internal" href="scaling_strategies.html#scaling-strategies"><em>out-of-core learning</em></a> documentation.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">The <code class="docutils literal"><span class="pre">partial_fit</span></code> method call of naive Bayes models introduces some
+<p class="last">The <tt class="docutils literal"><span class="pre">partial_fit</span></tt> method call of naive Bayes models introduces some
 computational overhead. It is recommended to use data chunk sizes that are as
 large as possible, that is as the available RAM allows.</p>
 </div>

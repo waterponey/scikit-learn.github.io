@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -152,7 +152,7 @@
 <li><a class="reference internal" href="#loading-the-20-newsgroups-dataset">Loading the 20 newsgroups dataset</a></li>
 <li><a class="reference internal" href="#extracting-features-from-text-files">Extracting features from text files</a><ul>
 <li><a class="reference internal" href="#bags-of-words">Bags of words</a></li>
-<li><a class="reference internal" href="#tokenizing-text-with-scikit-learn">Tokenizing text with <code class="docutils literal"><span class="pre">scikit-learn</span></code></a></li>
+<li><a class="reference internal" href="#tokenizing-text-with-scikit-learn">Tokenizing text with <tt class="docutils literal"><span class="pre">scikit-learn</span></tt></a></li>
 <li><a class="reference internal" href="#from-occurrences-to-frequencies">From occurrences to frequencies</a></li>
 </ul>
 </li>
@@ -184,11 +184,11 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="working-with-text-data">
 <span id="text-data-tutorial"></span><h1>Working With Text Data<a class="headerlink" href="#working-with-text-data" title="Permalink to this headline">¶</a></h1>
-<p>The goal of this guide is to explore some of the main <code class="docutils literal"><span class="pre">scikit-learn</span></code>
+<p>The goal of this guide is to explore some of the main <tt class="docutils literal"><span class="pre">scikit-learn</span></tt>
 tools on a single practical task: analysing a collection of text
 documents (newsgroups posts) on twenty different topics.</p>
 <p>In this section we will see how to:</p>
@@ -205,7 +205,7 @@ the feature extraction components and the classifier</li>
 <h2>Tutorial setup<a class="headerlink" href="#tutorial-setup" title="Permalink to this headline">¶</a></h2>
 <p>To get started with this tutorial, you firstly must have the
 <em>scikit-learn</em> and all of its required dependencies installed.</p>
-<p>Please refer to the <a class="reference internal" href="../../install.html#installation-instructions"><span>installation instructions</span></a>
+<p>Please refer to the <a class="reference internal" href="../../install.html#installation-instructions"><em>installation instructions</em></a>
 page for more information and for per-system instructions.</p>
 <p>The source of this tutorial can be found within your
 scikit-learn folder:</p>
@@ -215,21 +215,21 @@ scikit-learn folder:</p>
 <p>The tutorial folder, should contain the following folders:</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">*.rst</span> <span class="pre">files</span></code> - the source of the tutorial document written with sphinx</li>
-<li><code class="docutils literal"><span class="pre">data</span></code> - folder to put the datasets used during the tutorial</li>
-<li><code class="docutils literal"><span class="pre">skeletons</span></code> - sample incomplete scripts for the exercises</li>
-<li><code class="docutils literal"><span class="pre">solutions</span></code> - solutions of the exercises</li>
+<li><tt class="docutils literal"><span class="pre">*.rst</span> <span class="pre">files</span></tt> - the source of the tutorial document written with sphinx</li>
+<li><tt class="docutils literal"><span class="pre">data</span></tt> - folder to put the datasets used during the tutorial</li>
+<li><tt class="docutils literal"><span class="pre">skeletons</span></tt> - sample incomplete scripts for the exercises</li>
+<li><tt class="docutils literal"><span class="pre">solutions</span></tt> - solutions of the exercises</li>
 </ul>
 </div></blockquote>
 <p>You can already copy the skeletons into a new folder somewhere
-on your hard-drive named <code class="docutils literal"><span class="pre">sklearn_tut_workspace</span></code> where you
+on your hard-drive named <tt class="docutils literal"><span class="pre">sklearn_tut_workspace</span></tt> where you
 will edit your own files for the exercises while keeping
 the original skeletons intact:</p>
 <div class="highlight-python"><div class="highlight"><pre>% cp -r skeletons work_directory/sklearn_tut_workspace
 </pre></div>
 </div>
-<p>Machine Learning algorithms need data. Go to each <code class="docutils literal"><span class="pre">$TUTORIAL_HOME/data</span></code>
-sub-folder and run the <code class="docutils literal"><span class="pre">fetch_data.py</span></code> script from there (after
+<p>Machine Learning algorithms need data. Go to each <tt class="docutils literal"><span class="pre">$TUTORIAL_HOME/data</span></tt>
+sub-folder and run the <tt class="docutils literal"><span class="pre">fetch_data.py</span></tt> script from there (after
 having read them first).</p>
 <p>For instance:</p>
 <div class="highlight-python"><div class="highlight"><pre>% cd $TUTORIAL_HOME/data/languages
@@ -253,8 +253,8 @@ experiments in text applications of machine learning techniques,
 such as text classification and text clustering.</div></blockquote>
 <p>In the following we will use the built-in dataset loader for 20 newsgroups
 from scikit-learn. Alternatively, it is possible to download the dataset
-manually from the web-site and use the <a class="reference internal" href="../../modules/generated/sklearn.datasets.load_files.html#sklearn.datasets.load_files" title="sklearn.datasets.load_files"><code class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.load_files</span></code></a>
-function by pointing it to the <code class="docutils literal"><span class="pre">20news-bydate-train</span></code> subfolder of the
+manually from the web-site and use the <a class="reference internal" href="../../modules/generated/sklearn.datasets.load_files.html#sklearn.datasets.load_files" title="sklearn.datasets.load_files"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.load_files</span></tt></a>
+function by pointing it to the <tt class="docutils literal"><span class="pre">20news-bydate-train</span></tt> subfolder of the
 uncompressed archive folder.</p>
 <p>In order to get faster execution times for this first example we will
 work on a partial dataset with only 4 categories out of the 20 available
@@ -269,15 +269,15 @@ in the dataset:</p>
 <span class="gp">... </span>    <span class="n">categories</span><span class="o">=</span><span class="n">categories</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The returned dataset is a <code class="docutils literal"><span class="pre">scikit-learn</span></code> &#8220;bunch&#8221;: a simple holder
-object with fields that can be both accessed as python <code class="docutils literal"><span class="pre">dict</span></code>
-keys or <code class="docutils literal"><span class="pre">object</span></code> attributes for convenience, for instance the
-<code class="docutils literal"><span class="pre">target_names</span></code> holds the list of the requested category names:</p>
+<p>The returned dataset is a <tt class="docutils literal"><span class="pre">scikit-learn</span></tt> &#8220;bunch&#8221;: a simple holder
+object with fields that can be both accessed as python <tt class="docutils literal"><span class="pre">dict</span></tt>
+keys or <tt class="docutils literal"><span class="pre">object</span></tt> attributes for convenience, for instance the
+<tt class="docutils literal"><span class="pre">target_names</span></tt> holds the list of the requested category names:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">twenty_train</span><span class="o">.</span><span class="n">target_names</span>
 <span class="go">[&#39;alt.atheism&#39;, &#39;comp.graphics&#39;, &#39;sci.med&#39;, &#39;soc.religion.christian&#39;]</span>
 </pre></div>
 </div>
-<p>The files themselves are loaded in memory in the <code class="docutils literal"><span class="pre">data</span></code> attribute. For
+<p>The files themselves are loaded in memory in the <tt class="docutils literal"><span class="pre">data</span></tt> attribute. For
 reference the filenames are also available:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">twenty_train</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
 <span class="go">2257</span>
@@ -299,10 +299,10 @@ reference the filenames are also available:</p>
 document in the training set. In this case the category is the name of the
 newsgroup which also happens to be the name of the folder holding the
 individual documents.</p>
-<p>For speed and space efficiency reasons <code class="docutils literal"><span class="pre">scikit-learn</span></code> loads the
+<p>For speed and space efficiency reasons <tt class="docutils literal"><span class="pre">scikit-learn</span></tt> loads the
 target attribute as an array of integers that corresponds to the
-index of the category name in the <code class="docutils literal"><span class="pre">target_names</span></code> list. The category
-integer id of each sample is stored in the <code class="docutils literal"><span class="pre">target</span></code> attribute:</p>
+index of the category name in the <tt class="docutils literal"><span class="pre">target_names</span></tt> list. The category
+integer id of each sample is stored in the <tt class="docutils literal"><span class="pre">target</span></tt> attribute:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">twenty_train</span><span class="o">.</span><span class="n">target</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span>
 <span class="go">array([1, 1, 3, 3, 3, 3, 3, 2, 2, 2])</span>
 </pre></div>
@@ -340,15 +340,15 @@ turn the text content into numerical feature vectors.</p>
 <li>assign a fixed integer id to each word occurring in any document
 of the training set (for instance by building a dictionary
 from words to integer indices).</li>
-<li>for each document <code class="docutils literal"><span class="pre">#i</span></code>, count the number of occurrences of each
-word <code class="docutils literal"><span class="pre">w</span></code> and store it in <code class="docutils literal"><span class="pre">X[i,</span> <span class="pre">j]</span></code> as the value of feature
-<code class="docutils literal"><span class="pre">#j</span></code> where <code class="docutils literal"><span class="pre">j</span></code> is the index of word <code class="docutils literal"><span class="pre">w</span></code> in the dictionary</li>
+<li>for each document <tt class="docutils literal"><span class="pre">#i</span></tt>, count the number of occurrences of each
+word <tt class="docutils literal"><span class="pre">w</span></tt> and store it in <tt class="docutils literal"><span class="pre">X[i,</span> <span class="pre">j]</span></tt> as the value of feature
+<tt class="docutils literal"><span class="pre">#j</span></tt> where <tt class="docutils literal"><span class="pre">j</span></tt> is the index of word <tt class="docutils literal"><span class="pre">w</span></tt> in the dictionary</li>
 </ol>
 </div></blockquote>
-<p>The bags of words representation implies that <code class="docutils literal"><span class="pre">n_features</span></code> is
+<p>The bags of words representation implies that <tt class="docutils literal"><span class="pre">n_features</span></tt> is
 the number of distinct words in the corpus: this number is typically
 larger that 100,000.</p>
-<p>If <code class="docutils literal"><span class="pre">n_samples</span> <span class="pre">==</span> <span class="pre">10000</span></code>, storing <code class="docutils literal"><span class="pre">X</span></code> as a numpy array of type
+<p>If <tt class="docutils literal"><span class="pre">n_samples</span> <span class="pre">==</span> <span class="pre">10000</span></tt>, storing <tt class="docutils literal"><span class="pre">X</span></tt> as a numpy array of type
 float32 would require 10000 x 100000 x 4 bytes = <strong>4GB in RAM</strong> which
 is barely manageable on today&#8217;s computers.</p>
 <p>Fortunately, <strong>most values in X will be zeros</strong> since for a given
@@ -356,11 +356,11 @@ document less than a couple thousands of distinct words will be
 used. For this reason we say that bags of words are typically
 <strong>high-dimensional sparse datasets</strong>. We can save a lot of memory by
 only storing the non-zero parts of the feature vectors in memory.</p>
-<p><code class="docutils literal"><span class="pre">scipy.sparse</span></code> matrices are data structures that do exactly this,
-and <code class="docutils literal"><span class="pre">scikit-learn</span></code> has built-in support for these structures.</p>
+<p><tt class="docutils literal"><span class="pre">scipy.sparse</span></tt> matrices are data structures that do exactly this,
+and <tt class="docutils literal"><span class="pre">scikit-learn</span></tt> has built-in support for these structures.</p>
 </div>
 <div class="section" id="tokenizing-text-with-scikit-learn">
-<h3>Tokenizing text with <code class="docutils literal"><span class="pre">scikit-learn</span></code><a class="headerlink" href="#tokenizing-text-with-scikit-learn" title="Permalink to this headline">¶</a></h3>
+<h3>Tokenizing text with <tt class="docutils literal"><span class="pre">scikit-learn</span></tt><a class="headerlink" href="#tokenizing-text-with-scikit-learn" title="Permalink to this headline">¶</a></h3>
 <p>Text preprocessing, tokenizing and filtering of stopwords are included in a high level component that is able to build a
 dictionary of features and transform documents to feature vectors:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">CountVectorizer</span>
@@ -370,7 +370,7 @@ dictionary of features and transform documents to feature vectors:</p>
 <span class="go">(2257, 35788)</span>
 </pre></div>
 </div>
-<p><a class="reference internal" href="../../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer" title="sklearn.feature_extraction.text.CountVectorizer"><code class="xref py py-class docutils literal"><span class="pre">CountVectorizer</span></code></a> supports counts of N-grams of words or consequective characters.
+<p><a class="reference internal" href="../../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer" title="sklearn.feature_extraction.text.CountVectorizer"><tt class="xref py py-class docutils literal"><span class="pre">CountVectorizer</span></tt></a> supports counts of N-grams of words or consequective characters.
 Once fitted, the vectorizer has built a dictionary of feature indices:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">count_vect</span><span class="o">.</span><span class="n">vocabulary_</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">u&#39;algorithm&#39;</span><span class="p">)</span>
 <span class="go">4690</span>
@@ -386,7 +386,7 @@ documents will have higher average count values than shorter documents,
 even though they might talk about the same topics.</p>
 <p>To avoid these potential discrepancies it suffices to divide the
 number of occurrences of each word in a document by the total number
-of words in the document: these new features are called <code class="docutils literal"><span class="pre">tf</span></code> for Term
+of words in the document: these new features are called <tt class="docutils literal"><span class="pre">tf</span></tt> for Term
 Frequencies.</p>
 <p>Another refinement on top of tf is to downscale weights for words
 that occur in many documents in the corpus and are therefore less
@@ -402,12 +402,12 @@ Inverse Document Frequency&#8221;.</p>
 <span class="go">(2257, 35788)</span>
 </pre></div>
 </div>
-<p>In the above example-code, we firstly use the <code class="docutils literal"><span class="pre">fit(..)</span></code> method to fit our
-estimator to the data and secondly the <code class="docutils literal"><span class="pre">transform(..)</span></code> method to transform
+<p>In the above example-code, we firstly use the <tt class="docutils literal"><span class="pre">fit(..)</span></tt> method to fit our
+estimator to the data and secondly the <tt class="docutils literal"><span class="pre">transform(..)</span></tt> method to transform
 our count-matrix to a tf-idf representation.
 These two steps can be combined to achieve the same end result faster
 by skipping redundant processing. This is done through using the
-<code class="docutils literal"><span class="pre">fit_transform(..)</span></code> method as shown below, and as mentioned in the note
+<tt class="docutils literal"><span class="pre">fit_transform(..)</span></tt> method as shown below, and as mentioned in the note
 in the previous section:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">tfidf_transformer</span> <span class="o">=</span> <span class="n">TfidfTransformer</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X_train_tfidf</span> <span class="o">=</span> <span class="n">tfidf_transformer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_train_counts</span><span class="p">)</span>
@@ -420,9 +420,9 @@ in the previous section:</p>
 <div class="section" id="training-a-classifier">
 <h2>Training a classifier<a class="headerlink" href="#training-a-classifier" title="Permalink to this headline">¶</a></h2>
 <p>Now that we have our features, we can train a classifier to try to predict
-the category of a post. Let&#8217;s start with a <a class="reference internal" href="../../modules/naive_bayes.html#naive-bayes"><span>naïve Bayes</span></a>
+the category of a post. Let&#8217;s start with a <a class="reference internal" href="../../modules/naive_bayes.html#naive-bayes"><em>naïve Bayes</em></a>
 classifier, which
-provides a nice baseline for this task. <code class="docutils literal"><span class="pre">scikit-learn</span></code> includes several
+provides a nice baseline for this task. <tt class="docutils literal"><span class="pre">scikit-learn</span></tt> includes several
 variants of this classifier; the one most suitable for word counts is the
 multinomial variant:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">MultinomialNB</span>
@@ -431,7 +431,7 @@ multinomial variant:</p>
 </div>
 <p>To try to predict the outcome on a new document we need to extract
 the features using almost the same feature extracting chain as before.
-The difference is that we call <code class="docutils literal"><span class="pre">transform</span></code> instead of <code class="docutils literal"><span class="pre">fit_transform</span></code>
+The difference is that we call <tt class="docutils literal"><span class="pre">transform</span></tt> instead of <tt class="docutils literal"><span class="pre">fit_transform</span></tt>
 on the transformers, since they have already been fit to the training set:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">docs_new</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;God is love&#39;</span><span class="p">,</span> <span class="s">&#39;OpenGL on the GPU is fast&#39;</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X_new_counts</span> <span class="o">=</span> <span class="n">count_vect</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">docs_new</span><span class="p">)</span>
@@ -450,7 +450,7 @@ on the transformers, since they have already been fit to the training set:</p>
 <div class="section" id="building-a-pipeline">
 <h2>Building a pipeline<a class="headerlink" href="#building-a-pipeline" title="Permalink to this headline">¶</a></h2>
 <p>In order to make the vectorizer =&gt; transformer =&gt; classifier easier
-to work with, <code class="docutils literal"><span class="pre">scikit-learn</span></code> provides a <code class="docutils literal"><span class="pre">Pipeline</span></code> class that behaves
+to work with, <tt class="docutils literal"><span class="pre">scikit-learn</span></tt> provides a <tt class="docutils literal"><span class="pre">Pipeline</span></tt> class that behaves
 like a compound classifier:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">text_clf</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s">&#39;vect&#39;</span><span class="p">,</span> <span class="n">CountVectorizer</span><span class="p">()),</span>
@@ -459,7 +459,7 @@ like a compound classifier:</p>
 <span class="gp">... </span><span class="p">])</span>
 </pre></div>
 </div>
-<p>The names <code class="docutils literal"><span class="pre">vect</span></code>, <code class="docutils literal"><span class="pre">tfidf</span></code> and <code class="docutils literal"><span class="pre">clf</span></code> (classifier) are arbitrary.
+<p>The names <tt class="docutils literal"><span class="pre">vect</span></tt>, <tt class="docutils literal"><span class="pre">tfidf</span></tt> and <tt class="docutils literal"><span class="pre">clf</span></tt> (classifier) are arbitrary.
 We shall see their use in the section on grid search, below.
 We can now train the model with a single command:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">text_clf</span> <span class="o">=</span> <span class="n">text_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">twenty_train</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">twenty_train</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
@@ -479,7 +479,7 @@ We can now train the model with a single command:</p>
 </pre></div>
 </div>
 <p>I.e., we achieved 83.4% accuracy. Let&#8217;s see if we can do better with a
-linear <a class="reference internal" href="../../modules/svm.html#svm"><span>support vector machine (SVM)</span></a>,
+linear <a class="reference internal" href="../../modules/svm.html#svm"><em>support vector machine (SVM)</em></a>,
 which is widely regarded as one of
 the best text classification algorithms (although it&#8217;s also a bit slower
 than naïve Bayes). We can change the learner by just plugging a different
@@ -496,7 +496,7 @@ classifier object into our pipeline:</p>
 <span class="go">0.912...</span>
 </pre></div>
 </div>
-<p><code class="docutils literal"><span class="pre">scikit-learn</span></code> further provides utilities for more detailed performance
+<p><tt class="docutils literal"><span class="pre">scikit-learn</span></tt> further provides utilities for more detailed performance
 analysis of the results:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">metrics</span><span class="o">.</span><span class="n">classification_report</span><span class="p">(</span><span class="n">twenty_test</span><span class="o">.</span><span class="n">target</span><span class="p">,</span> <span class="n">predicted</span><span class="p">,</span>
@@ -525,12 +525,12 @@ with computer graphics.</p>
 </div>
 <div class="section" id="parameter-tuning-using-grid-search">
 <h2>Parameter tuning using grid search<a class="headerlink" href="#parameter-tuning-using-grid-search" title="Permalink to this headline">¶</a></h2>
-<p>We&#8217;ve already encountered some parameters such as <code class="docutils literal"><span class="pre">use_idf</span></code> in the
-<code class="docutils literal"><span class="pre">TfidfTransformer</span></code>. Classifiers tend to have many parameters as well;
-e.g., <code class="docutils literal"><span class="pre">MultinomialNB</span></code> includes a smoothing parameter <code class="docutils literal"><span class="pre">alpha</span></code> and
-<code class="docutils literal"><span class="pre">SGDClassifier</span></code> has a penalty parameter <code class="docutils literal"><span class="pre">alpha</span></code> and configurable loss
+<p>We&#8217;ve already encountered some parameters such as <tt class="docutils literal"><span class="pre">use_idf</span></tt> in the
+<tt class="docutils literal"><span class="pre">TfidfTransformer</span></tt>. Classifiers tend to have many parameters as well;
+e.g., <tt class="docutils literal"><span class="pre">MultinomialNB</span></tt> includes a smoothing parameter <tt class="docutils literal"><span class="pre">alpha</span></tt> and
+<tt class="docutils literal"><span class="pre">SGDClassifier</span></tt> has a penalty parameter <tt class="docutils literal"><span class="pre">alpha</span></tt> and configurable loss
 and penalty terms in the objective function (see the module documentation,
-or use the Python <code class="docutils literal"><span class="pre">help</span></code> function, to get a description of these).</p>
+or use the Python <tt class="docutils literal"><span class="pre">help</span></tt> function, to get a description of these).</p>
 <p>Instead of tweaking the parameters of the various components of the
 chain, it is possible to run an exhaustive search of the best
 parameters on a grid of possible values. We try out all classifiers
@@ -545,26 +545,26 @@ parameter of either 0.01 or 0.001 for the linear SVM:</p>
 </div>
 <p>Obviously, such an exhaustive search can be expensive. If we have multiple
 CPU cores at our disposal, we can tell the grid searcher to try these eight
-parameter combinations in parallel with the <code class="docutils literal"><span class="pre">n_jobs</span></code> parameter. If we give
-this parameter a value of <code class="docutils literal"><span class="pre">-1</span></code>, grid search will detect how many cores
+parameter combinations in parallel with the <tt class="docutils literal"><span class="pre">n_jobs</span></tt> parameter. If we give
+this parameter a value of <tt class="docutils literal"><span class="pre">-1</span></tt>, grid search will detect how many cores
 are installed and uses them all:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gs_clf</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">text_clf</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The grid search instance behaves like a normal <code class="docutils literal"><span class="pre">scikit-learn</span></code>
+<p>The grid search instance behaves like a normal <tt class="docutils literal"><span class="pre">scikit-learn</span></tt>
 model. Let&#8217;s perform the search on a smaller subset of the training data
 to speed up the computation:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">gs_clf</span> <span class="o">=</span> <span class="n">gs_clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">twenty_train</span><span class="o">.</span><span class="n">data</span><span class="p">[:</span><span class="mi">400</span><span class="p">],</span> <span class="n">twenty_train</span><span class="o">.</span><span class="n">target</span><span class="p">[:</span><span class="mi">400</span><span class="p">])</span>
 </pre></div>
 </div>
-<p>The result of calling <code class="docutils literal"><span class="pre">fit</span></code> on a <code class="docutils literal"><span class="pre">GridSearchCV</span></code> object is a classifier
-that we can use to <code class="docutils literal"><span class="pre">predict</span></code>:</p>
+<p>The result of calling <tt class="docutils literal"><span class="pre">fit</span></tt> on a <tt class="docutils literal"><span class="pre">GridSearchCV</span></tt> object is a classifier
+that we can use to <tt class="docutils literal"><span class="pre">predict</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">twenty_train</span><span class="o">.</span><span class="n">target_names</span><span class="p">[</span><span class="n">gs_clf</span><span class="o">.</span><span class="n">predict</span><span class="p">([</span><span class="s">&#39;God is love&#39;</span><span class="p">])]</span>
 <span class="go">&#39;soc.religion.christian&#39;</span>
 </pre></div>
 </div>
 <p>but otherwise, it&#8217;s a pretty large and clumsy object. We can, however, get the
-optimal parameters out by inspecting the object&#8217;s <code class="docutils literal"><span class="pre">grid_scores_</span></code> attribute,
+optimal parameters out by inspecting the object&#8217;s <tt class="docutils literal"><span class="pre">grid_scores_</span></tt> attribute,
 which is a list of parameters/score pairs. To get the best scoring attributes,
 we can do:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">best_parameters</span><span class="p">,</span> <span class="n">score</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">gs_clf</span><span class="o">.</span><span class="n">grid_scores_</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
@@ -592,7 +592,7 @@ the original exercise instructions.</p>
 <div class="highlight-python"><div class="highlight"><pre>[1] %run workspace/exercise_XX_script.py arg1 arg2 arg3
 </pre></div>
 </div>
-<p>If an exception is triggered, use <code class="docutils literal"><span class="pre">%debug</span></code> to fire-up a post
+<p>If an exception is triggered, use <tt class="docutils literal"><span class="pre">%debug</span></tt> to fire-up a post
 mortem ipdb session.</p>
 <p>Refine the implementation and iterate until the exercise is solved.</p>
 <p><strong>For each exercise, the skeleton file provides all the necessary import
@@ -604,7 +604,7 @@ the predictive accurracy of the model.</strong></p>
 <h2>Exercise 1: Language identification<a class="headerlink" href="#exercise-1-language-identification" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Write a text classification pipeline using a custom preprocessor and
-<code class="docutils literal"><span class="pre">CharNGramAnalyzer</span></code> using data from Wikipedia articles as training set.</li>
+<tt class="docutils literal"><span class="pre">CharNGramAnalyzer</span></tt> using data from Wikipedia articles as training set.</li>
 <li>Evaluate the performance on some held out test set.</li>
 </ul>
 <p>ipython command line:</p>
@@ -627,9 +627,9 @@ positive or negative.</li>
 </div>
 <div class="section" id="exercise-3-cli-text-classification-utility">
 <h2>Exercise 3: CLI text classification utility<a class="headerlink" href="#exercise-3-cli-text-classification-utility" title="Permalink to this headline">¶</a></h2>
-<p>Using the results of the previous exercises and the <code class="docutils literal"><span class="pre">cPickle</span></code>
+<p>Using the results of the previous exercises and the <tt class="docutils literal"><span class="pre">cPickle</span></tt>
 module of the standard library, write a command line utility that
-detects the language of some text provided on <code class="docutils literal"><span class="pre">stdin</span></code> and estimate
+detects the language of some text provided on <tt class="docutils literal"><span class="pre">stdin</span></tt> and estimate
 the polarity (positive or negative) if the text is written in
 English.</p>
 <p>Bonus point if the utility is able to give a confidence level for its
@@ -640,20 +640,20 @@ predictions.</p>
 <p>Here are a few suggestions to help further your scikit-learn intuition
 upon the completion of this tutorial:</p>
 <ul class="simple">
-<li>Try playing around with the <code class="docutils literal"><span class="pre">analyzer</span></code> and <code class="docutils literal"><span class="pre">token</span> <span class="pre">normalisation</span></code> under
-<a class="reference internal" href="../../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer" title="sklearn.feature_extraction.text.CountVectorizer"><code class="xref py py-class docutils literal"><span class="pre">CountVectorizer</span></code></a></li>
+<li>Try playing around with the <tt class="docutils literal"><span class="pre">analyzer</span></tt> and <tt class="docutils literal"><span class="pre">token</span> <span class="pre">normalisation</span></tt> under
+<a class="reference internal" href="../../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer" title="sklearn.feature_extraction.text.CountVectorizer"><tt class="xref py py-class docutils literal"><span class="pre">CountVectorizer</span></tt></a></li>
 <li>If you don&#8217;t have labels, try using
-<a class="reference internal" href="../../auto_examples/text/document_clustering.html#example-text-document-clustering-py"><span>Clustering</span></a>
+<a class="reference internal" href="../../auto_examples/text/document_clustering.html#example-text-document-clustering-py"><em>Clustering</em></a>
 on your problem.</li>
 <li>If you have multiple labels per document, e.g categories, have a look
-at the <a class="reference internal" href="../../modules/multiclass.html#multiclass"><span>Multiclass and multilabel section</span></a></li>
-<li>Try using <a class="reference internal" href="../../modules/decomposition.html#lsa"><span>Truncated SVD</span></a> for
+at the <a class="reference internal" href="../../modules/multiclass.html#multiclass"><em>Multiclass and multilabel section</em></a></li>
+<li>Try using <a class="reference internal" href="../../modules/decomposition.html#lsa"><em>Truncated SVD</em></a> for
 <a class="reference external" href="http://en.wikipedia.org/wiki/Latent_semantic_analysis">latent semantic analysis</a>.</li>
 <li>Have a look at using
-<a class="reference internal" href="../../auto_examples/applications/plot_out_of_core_classification.html#example-applications-plot-out-of-core-classification-py"><span>Out-of-core Classification</span></a> to
+<a class="reference internal" href="../../auto_examples/applications/plot_out_of_core_classification.html#example-applications-plot-out-of-core-classification-py"><em>Out-of-core Classification</em></a> to
 learn from data that would not fit into the computer main memory.</li>
-<li>Have a look at the <a class="reference internal" href="../../modules/feature_extraction.html#hashing-vectorizer"><span>Hashing Vectorizer</span></a>
-as a memory efficient alternative to <a class="reference internal" href="../../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer" title="sklearn.feature_extraction.text.CountVectorizer"><code class="xref py py-class docutils literal"><span class="pre">CountVectorizer</span></code></a>.</li>
+<li>Have a look at the <a class="reference internal" href="../../modules/feature_extraction.html#hashing-vectorizer"><em>Hashing Vectorizer</em></a>
+as a memory efficient alternative to <a class="reference internal" href="../../modules/generated/sklearn.feature_extraction.text.CountVectorizer.html#sklearn.feature_extraction.text.CountVectorizer" title="sklearn.feature_extraction.text.CountVectorizer"><tt class="xref py py-class docutils literal"><span class="pre">CountVectorizer</span></tt></a>.</li>
 </ul>
 </div>
 </div>

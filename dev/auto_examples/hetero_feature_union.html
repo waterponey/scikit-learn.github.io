@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="feature-union-with-heterogeneous-data-sources">
 <span id="example-hetero-feature-union-py"></span><h1>Feature Union with Heterogeneous Data Sources<a class="headerlink" href="#feature-union-with-heterogeneous-data-sources" title="Permalink to this headline">¶</a></h1>
@@ -176,7 +176,7 @@ text captions)</li>
 require different processing pipelines.</li>
 </ol>
 <p>This example demonstrates how to use
-<code class="xref py py-class docutils literal"><span class="pre">sklearn.feature_extraction.FeatureUnion</span></code> on a dataset containing
+<tt class="xref py py-class docutils literal"><span class="pre">sklearn.feature_extraction.FeatureUnion</span></tt> on a dataset containing
 different types of features.  We use the 20-newsgroups dataset and compute
 standard bag-of-words features for the subject line and body in separate
 pipelines as well as ad hoc features on the body. We combine them (with
@@ -184,7 +184,7 @@ weights) using a FeatureUnion and finally train a classifier on the combined
 set of features.</p>
 <p>The choice of features is not particularly helpful, but serves to illustrate
 the technique.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/hetero_feature_union.py"><code class="xref download docutils literal"><span class="pre">hetero_feature_union.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/hetero_feature_union.py"><tt class="xref download docutils literal"><span class="pre">hetero_feature_union.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Author: Matt Terry &lt;matt.terry@gmail.com&gt;</span>
 <span class="c">#</span>
 <span class="c"># License: BSD 3 clause</span>

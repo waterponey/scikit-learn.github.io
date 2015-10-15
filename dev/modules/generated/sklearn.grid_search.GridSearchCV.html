@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.grid_search</span></code>.GridSearchCV</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-grid-search-gridsearchcv">Examples using <code class="docutils literal"><span class="pre">sklearn.grid_search.GridSearchCV</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.grid_search</span></tt>.GridSearchCV</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-grid-search-gridsearchcv">Examples using <tt class="docutils literal"><span class="pre">sklearn.grid_search.GridSearchCV</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -166,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-grid-search-gridsearchcv">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.grid_search" title="sklearn.grid_search"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.grid_search</span></code></a>.GridSearchCV<a class="headerlink" href="#sklearn-grid-search-gridsearchcv" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.grid_search" title="sklearn.grid_search"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.grid_search</span></tt></a>.GridSearchCV<a class="headerlink" href="#sklearn-grid-search-gridsearchcv" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.grid_search.GridSearchCV">
-<em class="property">class </em><code class="descclassname">sklearn.grid_search.</code><code class="descname">GridSearchCV</code><span class="sig-paren">(</span><em>estimator</em>, <em>param_grid</em>, <em>scoring=None</em>, <em>fit_params=None</em>, <em>n_jobs=1</em>, <em>iid=True</em>, <em>refit=True</em>, <em>cv=None</em>, <em>verbose=0</em>, <em>pre_dispatch='2*n_jobs'</em>, <em>error_score='raise'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/grid_search.py#L606"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.grid_search.</tt><tt class="descname">GridSearchCV</tt><big>(</big><em>estimator</em>, <em>param_grid</em>, <em>scoring=None</em>, <em>fit_params=None</em>, <em>n_jobs=1</em>, <em>iid=True</em>, <em>refit=True</em>, <em>cv=None</em>, <em>verbose=0</em>, <em>pre_dispatch='2*n_jobs'</em>, <em>error_score='raise'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/grid_search.py#L606"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV" title="Permalink to this definition">¶</a></dt>
 <dd><p>Exhaustive search over specified parameter values for an estimator.</p>
 <p>Important members are fit, predict.</p>
 <p>GridSearchCV implements a &#8220;fit&#8221; and a &#8220;score&#8221; method.
@@ -181,7 +181,7 @@ It also implements &#8220;predict&#8221;, &#8220;predict_proba&#8221;, &#8220;de
 estimator used.</p>
 <p>The parameters of the estimator used to apply these methods are optimized
 by cross-validated grid-search over a parameter grid.</p>
-<p>Read more in the <a class="reference internal" href="../grid_search.html#grid-search"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../grid_search.html#grid-search"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -190,8 +190,8 @@ by cross-validated grid-search over a parameter grid.</p>
 <blockquote>
 <div><p>A object of that type is instantiated for each grid point.
 This is assumed to implement the scikit-learn estimator interface.
-Either estimator needs to provide a <code class="docutils literal"><span class="pre">score</span></code> function,
-or <code class="docutils literal"><span class="pre">scoring</span></code> must be passed.</p>
+Either estimator needs to provide a <tt class="docutils literal"><span class="pre">score</span></tt> function,
+or <tt class="docutils literal"><span class="pre">scoring</span></tt> must be passed.</p>
 </div></blockquote>
 <p><strong>param_grid</strong> : dict or list of dictionaries</p>
 <blockquote>
@@ -205,8 +205,8 @@ of parameter settings.</p>
 <blockquote>
 <div><p>A string (see model evaluation documentation) or
 a scorer callable object / function with signature
-<code class="docutils literal"><span class="pre">scorer(estimator,</span> <span class="pre">X,</span> <span class="pre">y)</span></code>.
-If <code class="docutils literal"><span class="pre">None</span></code>, the <code class="docutils literal"><span class="pre">score</span></code> method of the estimator is used.</p>
+<tt class="docutils literal"><span class="pre">scorer(estimator,</span> <span class="pre">X,</span> <span class="pre">y)</span></tt>.
+If <tt class="docutils literal"><span class="pre">None</span></tt>, the <tt class="docutils literal"><span class="pre">score</span></tt> method of the estimator is used.</p>
 </div></blockquote>
 <p><strong>fit_params</strong> : dict, optional</p>
 <blockquote>
@@ -253,10 +253,10 @@ Possible inputs for cv are:</p>
 <li>An iterable yielding train/test splits.</li>
 </ul>
 </div></blockquote>
-<p>For integer/None inputs, if <code class="docutils literal"><span class="pre">y</span></code> is binary or multiclass,
-<code class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></code> used. If the estimator is a classifier
-or if <code class="docutils literal"><span class="pre">y</span></code> is neither binary nor multiclass, <code class="xref py py-class docutils literal"><span class="pre">KFold</span></code> is used.</p>
-<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a> for the various
+<p>For integer/None inputs, if <tt class="docutils literal"><span class="pre">y</span></tt> is binary or multiclass,
+<tt class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></tt> used. If the estimator is a classifier
+or if <tt class="docutils literal"><span class="pre">y</span></tt> is neither binary nor multiclass, <tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt> is used.</p>
+<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a> for the various
 cross-validation strategies that can be used here.</p>
 </div></blockquote>
 <p><strong>refit</strong> : boolean, default=True</p>
@@ -285,10 +285,10 @@ Each entry corresponds to one parameter setting.
 Each named tuple has the attributes:</p>
 <blockquote>
 <div><ul class="simple">
-<li><code class="docutils literal"><span class="pre">parameters</span></code>, a dict of parameter settings</li>
-<li><code class="docutils literal"><span class="pre">mean_validation_score</span></code>, the mean score over the
+<li><tt class="docutils literal"><span class="pre">parameters</span></tt>, a dict of parameter settings</li>
+<li><tt class="docutils literal"><span class="pre">mean_validation_score</span></tt>, the mean score over the
 cross-validation folds</li>
-<li><code class="docutils literal"><span class="pre">cv_validation_scores</span></code>, the list of scores for each fold</li>
+<li><tt class="docutils literal"><span class="pre">cv_validation_scores</span></tt>, the list of scores for each fold</li>
 </ul>
 </div></blockquote>
 </div></blockquote>
@@ -318,11 +318,11 @@ parameters for the model.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.grid_search.ParameterGrid.html#sklearn.grid_search.ParameterGrid" title="sklearn.grid_search.ParameterGrid"><code class="xref py py-class docutils literal"><span class="pre">ParameterGrid</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.grid_search.ParameterGrid.html#sklearn.grid_search.ParameterGrid" title="sklearn.grid_search.ParameterGrid"><tt class="xref py py-class docutils literal"><span class="pre">ParameterGrid</span></tt></a></dt>
 <dd>generates all the combinations of a an hyperparameter grid.</dd>
-<dt><a class="reference internal" href="sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split" title="sklearn.cross_validation.train_test_split"><code class="xref py py-func docutils literal"><span class="pre">sklearn.cross_validation.train_test_split</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split" title="sklearn.cross_validation.train_test_split"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.cross_validation.train_test_split</span></tt></a></dt>
 <dd>utility function to split the data into a development set usable for fitting a GridSearchCV instance and an evaluation set for its final evaluation.</dd>
-<dt><a class="reference internal" href="sklearn.metrics.make_scorer.html#sklearn.metrics.make_scorer" title="sklearn.metrics.make_scorer"><code class="xref py py-func docutils literal"><span class="pre">sklearn.metrics.make_scorer</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.metrics.make_scorer.html#sklearn.metrics.make_scorer" title="sklearn.metrics.make_scorer"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.metrics.make_scorer</span></tt></a></dt>
 <dd>Make a scorer from a performance metric or loss function.</dd>
 </dl>
 </div>
@@ -362,43 +362,49 @@ n_jobs</cite>.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.decision_function" title="sklearn.grid_search.GridSearchCV.decision_function"><code class="xref py py-obj docutils literal"><span class="pre">decision_function</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.decision_function" title="sklearn.grid_search.GridSearchCV.decision_function"><tt class="xref py py-obj docutils literal"><span class="pre">decision_function</span></tt></a>(*args,&nbsp;**kwargs)</td>
 <td>Call decision_function on the estimator with the best found parameters.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.fit" title="sklearn.grid_search.GridSearchCV.fit"><code class="xref py py-obj docutils literal"><span class="pre">fit</span></code></a>(X[,&nbsp;y])</td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.fit" title="sklearn.grid_search.GridSearchCV.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
 <td>Run fit with all sets of parameters.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.inverse_transform" title="sklearn.grid_search.GridSearchCV.inverse_transform"><code class="xref py py-obj docutils literal"><span class="pre">inverse_transform</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.get_params" title="sklearn.grid_search.GridSearchCV.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.inverse_transform" title="sklearn.grid_search.GridSearchCV.inverse_transform"><tt class="xref py py-obj docutils literal"><span class="pre">inverse_transform</span></tt></a>(*args,&nbsp;**kwargs)</td>
 <td>Call inverse_transform on the estimator with the best found parameters.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.predict" title="sklearn.grid_search.GridSearchCV.predict"><code class="xref py py-obj docutils literal"><span class="pre">predict</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.predict" title="sklearn.grid_search.GridSearchCV.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(*args,&nbsp;**kwargs)</td>
 <td>Call predict on the estimator with the best found parameters.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.predict_log_proba" title="sklearn.grid_search.GridSearchCV.predict_log_proba"><code class="xref py py-obj docutils literal"><span class="pre">predict_log_proba</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.predict_log_proba" title="sklearn.grid_search.GridSearchCV.predict_log_proba"><tt class="xref py py-obj docutils literal"><span class="pre">predict_log_proba</span></tt></a>(*args,&nbsp;**kwargs)</td>
 <td>Call predict_log_proba on the estimator with the best found parameters.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.predict_proba" title="sklearn.grid_search.GridSearchCV.predict_proba"><code class="xref py py-obj docutils literal"><span class="pre">predict_proba</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.predict_proba" title="sklearn.grid_search.GridSearchCV.predict_proba"><tt class="xref py py-obj docutils literal"><span class="pre">predict_proba</span></tt></a>(*args,&nbsp;**kwargs)</td>
 <td>Call predict_proba on the estimator with the best found parameters.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.score" title="sklearn.grid_search.GridSearchCV.score"><code class="xref py py-obj docutils literal"><span class="pre">score</span></code></a>(X[,&nbsp;y])</td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.score" title="sklearn.grid_search.GridSearchCV.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X[,&nbsp;y])</td>
 <td>Returns the score on the given data, if the estimator has been refit.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.transform" title="sklearn.grid_search.GridSearchCV.transform"><code class="xref py py-obj docutils literal"><span class="pre">transform</span></code></a>(*args,&nbsp;**kwargs)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.set_params" title="sklearn.grid_search.GridSearchCV.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.grid_search.GridSearchCV.transform" title="sklearn.grid_search.GridSearchCV.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(*args,&nbsp;**kwargs)</td>
 <td>Call transform on the estimator with the best found parameters.</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>estimator</em>, <em>param_grid</em>, <em>scoring=None</em>, <em>fit_params=None</em>, <em>n_jobs=1</em>, <em>iid=True</em>, <em>refit=True</em>, <em>cv=None</em>, <em>verbose=0</em>, <em>pre_dispatch='2*n_jobs'</em>, <em>error_score='raise'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/grid_search.py#L775"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>estimator</em>, <em>param_grid</em>, <em>scoring=None</em>, <em>fit_params=None</em>, <em>n_jobs=1</em>, <em>iid=True</em>, <em>refit=True</em>, <em>cv=None</em>, <em>verbose=0</em>, <em>pre_dispatch='2*n_jobs'</em>, <em>error_score='raise'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/grid_search.py#L775"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
+<dl class="staticmethod">
 <dt id="sklearn.grid_search.GridSearchCV.decision_function">
-<code class="descname">decision_function</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.decision_function" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><tt class="descname">decision_function</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call decision_function on the estimator with the best found parameters.</p>
-<p>Only available if <code class="docutils literal"><span class="pre">refit=True</span></code> and the underlying estimator supports
-<code class="docutils literal"><span class="pre">decision_function</span></code>.</p>
+<p>Only available if <tt class="docutils literal"><span class="pre">refit=True</span></tt> and the underlying estimator supports
+<tt class="docutils literal"><span class="pre">decision_function</span></tt>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -416,7 +422,7 @@ underlying estimator.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/grid_search.py#L785"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/grid_search.py#L785"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run fit with all sets of parameters.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -440,7 +446,7 @@ None for unsupervised learning.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -463,12 +469,12 @@ contained subobjects that are estimators.</p>
 </table>
 </dd></dl>
 
-<dl class="method">
+<dl class="staticmethod">
 <dt id="sklearn.grid_search.GridSearchCV.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><tt class="descname">inverse_transform</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call inverse_transform on the estimator with the best found parameters.</p>
-<p>Only available if the underlying estimator implements <code class="docutils literal"><span class="pre">inverse_transform</span></code> and
-<code class="docutils literal"><span class="pre">refit=True</span></code>.</p>
+<p>Only available if the underlying estimator implements <tt class="docutils literal"><span class="pre">inverse_transform</span></tt> and
+<tt class="docutils literal"><span class="pre">refit=True</span></tt>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -484,12 +490,12 @@ underlying estimator.</p>
 </table>
 </dd></dl>
 
-<dl class="method">
+<dl class="staticmethod">
 <dt id="sklearn.grid_search.GridSearchCV.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><tt class="descname">predict</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call predict on the estimator with the best found parameters.</p>
-<p>Only available if <code class="docutils literal"><span class="pre">refit=True</span></code> and the underlying estimator supports
-<code class="docutils literal"><span class="pre">predict</span></code>.</p>
+<p>Only available if <tt class="docutils literal"><span class="pre">refit=True</span></tt> and the underlying estimator supports
+<tt class="docutils literal"><span class="pre">predict</span></tt>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -505,12 +511,12 @@ underlying estimator.</p>
 </table>
 </dd></dl>
 
-<dl class="method">
+<dl class="staticmethod">
 <dt id="sklearn.grid_search.GridSearchCV.predict_log_proba">
-<code class="descname">predict_log_proba</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict_log_proba" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><tt class="descname">predict_log_proba</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict_log_proba" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call predict_log_proba on the estimator with the best found parameters.</p>
-<p>Only available if <code class="docutils literal"><span class="pre">refit=True</span></code> and the underlying estimator supports
-<code class="docutils literal"><span class="pre">predict_log_proba</span></code>.</p>
+<p>Only available if <tt class="docutils literal"><span class="pre">refit=True</span></tt> and the underlying estimator supports
+<tt class="docutils literal"><span class="pre">predict_log_proba</span></tt>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -526,12 +532,12 @@ underlying estimator.</p>
 </table>
 </dd></dl>
 
-<dl class="method">
+<dl class="staticmethod">
 <dt id="sklearn.grid_search.GridSearchCV.predict_proba">
-<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict_proba" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><tt class="descname">predict_proba</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.predict_proba" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call predict_proba on the estimator with the best found parameters.</p>
-<p>Only available if <code class="docutils literal"><span class="pre">refit=True</span></code> and the underlying estimator supports
-<code class="docutils literal"><span class="pre">predict_proba</span></code>.</p>
+<p>Only available if <tt class="docutils literal"><span class="pre">refit=True</span></tt> and the underlying estimator supports
+<tt class="docutils literal"><span class="pre">predict_proba</span></tt>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -549,10 +555,10 @@ underlying estimator.</p>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/grid_search.py#L382"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/grid_search.py#L382"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the score on the given data, if the estimator has been refit.</p>
-<p>This uses the score defined by <code class="docutils literal"><span class="pre">scoring</span></code> where provided, and the
-<code class="docutils literal"><span class="pre">best_estimator_.score</span></code> method otherwise.</p>
+<p>This uses the score defined by <tt class="docutils literal"><span class="pre">scoring</span></tt> where provided, and the
+<tt class="docutils literal"><span class="pre">best_estimator_.score</span></tt> method otherwise.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -577,18 +583,18 @@ None for unsupervised learning.</p>
 <p class="rubric">Notes</p>
 <ul class="simple">
 <li>The long-standing behavior of this method changed in version 0.16.</li>
-<li>It no longer uses the metric provided by <code class="docutils literal"><span class="pre">estimator.score</span></code> if the
-<code class="docutils literal"><span class="pre">scoring</span></code> parameter was set when fitting.</li>
+<li>It no longer uses the metric provided by <tt class="docutils literal"><span class="pre">estimator.score</span></tt> if the
+<tt class="docutils literal"><span class="pre">scoring</span></tt> parameter was set when fitting.</li>
 </ul>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.grid_search.GridSearchCV.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -600,12 +606,12 @@ component of a nested object.</p>
 </table>
 </dd></dl>
 
-<dl class="method">
+<dl class="staticmethod">
 <dt id="sklearn.grid_search.GridSearchCV.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.transform" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><tt class="descname">transform</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.grid_search.GridSearchCV.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call transform on the estimator with the best found parameters.</p>
-<p>Only available if the underlying estimator supports <code class="docutils literal"><span class="pre">transform</span></code> and
-<code class="docutils literal"><span class="pre">refit=True</span></code>.</p>
+<p>Only available if the underlying estimator supports <tt class="docutils literal"><span class="pre">transform</span></tt> and
+<tt class="docutils literal"><span class="pre">refit=True</span></tt>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -624,58 +630,58 @@ underlying estimator.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-grid-search-gridsearchcv">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.grid_search.GridSearchCV</span></code><a class="headerlink" href="#examples-using-sklearn-grid-search-gridsearchcv" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="In many real-world examples, there are many ways to extract features from a dataset. Often it i..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.grid_search.GridSearchCV</span></tt><a class="headerlink" href="#examples-using-sklearn-grid-search-gridsearchcv" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="In many real-world examples, there are many ways to extract features from a dataset. Often it i..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./feature_stacker.html"><img alt="../../_images/feature_stacker1.png" src="../../_images/feature_stacker1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_stacker.html#example-feature-stacker-py"><span>Concatenating multiple feature extraction methods</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_stacker.html#example-feature-stacker-py"><em>Concatenating multiple feature extraction methods</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The PCA does an unsupervised dimensionality reduction, while the logistic regression does the p..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="The PCA does an unsupervised dimensionality reduction, while the logistic regression does the p..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_digits_pipe.html"><img alt="../../_images/plot_digits_pipe1.png" src="../../_images/plot_digits_pipe1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_digits_pipe.html#example-plot-digits-pipe-py"><span>Pipelining: chaining a PCA and a logistic regression</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_digits_pipe.html#example-plot-digits-pipe-py"><em>Pipelining: chaining a PCA and a logistic regression</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Both kernel ridge regression (KRR) and SVR learn a non-linear function by employing the kernel ..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="Both kernel ridge regression (KRR) and SVR learn a non-linear function by employing the kernel ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_kernel_ridge_regression.html"><img alt="../../_images/plot_kernel_ridge_regression1.png" src="../../_images/plot_kernel_ridge_regression1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_kernel_ridge_regression.html#example-plot-kernel-ridge-regression-py"><span>Comparison of kernel ridge regression and SVR</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_kernel_ridge_regression.html#example-plot-kernel-ridge-regression-py"><em>Comparison of kernel ridge regression and SVR</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The dataset used in this example is a preprocessed excerpt of the "Labeled Faces in the Wild", ..."><div class="figure" id="id4">
+</div><div class="thumbnailContainer" tooltip="The dataset used in this example is a preprocessed excerpt of the "Labeled Faces in the Wild", ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/applications/face_recognition.html"><img alt="../../_images/face_recognition1.png" src="../../_images/face_recognition1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/face_recognition.html#example-applications-face-recognition-py"><span>Faces recognition example using eigenfaces and SVMs</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/applications/face_recognition.html#example-applications-face-recognition-py"><em>Faces recognition example using eigenfaces and SVMs</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example compares 2 dimensionality reduction strategies:"><div class="figure" id="id5">
+</div><div class="thumbnailContainer" tooltip="This example compares 2 dimensionality reduction strategies:"><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_feature_agglomeration_vs_univariate_selection.html"><img alt="../../_images/plot_feature_agglomeration_vs_univariate_selection1.png" src="../../_images/plot_feature_agglomeration_vs_univariate_selection1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_feature_agglomeration_vs_univariate_selection.html#example-cluster-plot-feature-agglomeration-vs-univariate-selection-py"><span>Feature agglomeration vs. univariate selection</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_feature_agglomeration_vs_univariate_selection.html#example-cluster-plot-feature-agglomeration-vs-univariate-selection-py"><em>Feature agglomeration vs. univariate selection</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="When working with covariance estimation, the usual approach is to use a maximum likelihood esti..."><div class="figure" id="id6">
+</div><div class="thumbnailContainer" tooltip="When working with covariance estimation, the usual approach is to use a maximum likelihood esti..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/covariance/plot_covariance_estimation.html"><img alt="../../_images/plot_covariance_estimation1.png" src="../../_images/plot_covariance_estimation1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/covariance/plot_covariance_estimation.html#example-covariance-plot-covariance-estimation-py"><span>Shrinkage covariance estimation: LedoitWolf vs OAS and max-likelihood</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/covariance/plot_covariance_estimation.html#example-covariance-plot-covariance-estimation-py"><em>Shrinkage covariance estimation: LedoitWolf vs OAS and max-likelihood</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Probabilistic PCA and Factor Analysis are probabilistic models. The consequence is that the lik..."><div class="figure" id="id7">
+</div><div class="thumbnailContainer" tooltip="Probabilistic PCA and Factor Analysis are probabilistic models. The consequence is that the lik..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.html"><img alt="../../_images/plot_pca_vs_fa_model_selection1.png" src="../../_images/plot_pca_vs_fa_model_selection1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.html#example-decomposition-plot-pca-vs-fa-model-selection-py"><span>Model selection with Probabilistic PCA and Factor Analysis (FA)</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.html#example-decomposition-plot-pca-vs-fa-model-selection-py"><em>Model selection with Probabilistic PCA and Factor Analysis (FA)</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This examples shows how a classifier is optimized by cross-validation, which is done using the ..."><div class="figure" id="id8">
+</div><div class="thumbnailContainer" tooltip="This examples shows how a classifier is optimized by cross-validation, which is done using the ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/grid_search_digits.html"><img alt="../../_images/grid_search_digits1.png" src="../../_images/grid_search_digits1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/grid_search_digits.html#example-model-selection-grid-search-digits-py"><span>Parameter estimation using grid search with cross-validation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/grid_search_digits.html#example-model-selection-grid-search-digits-py"><em>Parameter estimation using grid search with cross-validation</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Compare randomized search and grid search for optimizing hyperparameters of a random forest. Al..."><div class="figure" id="id9">
+</div><div class="thumbnailContainer" tooltip="Compare randomized search and grid search for optimizing hyperparameters of a random forest. Al..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/randomized_search.html"><img alt="../../_images/randomized_search1.png" src="../../_images/randomized_search1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/randomized_search.html#example-model-selection-randomized-search-py"><span>Comparing randomized search and grid search for hyperparameter estimation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/randomized_search.html#example-model-selection-randomized-search-py"><em>Comparing randomized search and grid search for hyperparameter estimation</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The dataset used in this example is the 20 newsgroups dataset which will be automatically downl..."><div class="figure" id="id10">
+</div><div class="thumbnailContainer" tooltip="The dataset used in this example is the 20 newsgroups dataset which will be automatically downl..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/grid_search_text_feature_extraction.html"><img alt="../../_images/grid_search_text_feature_extraction1.png" src="../../_images/grid_search_text_feature_extraction1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/grid_search_text_feature_extraction.html#example-model-selection-grid-search-text-feature-extraction-py"><span>Sample pipeline for text feature extraction and evaluation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/grid_search_text_feature_extraction.html#example-model-selection-grid-search-text-feature-extraction-py"><em>Sample pipeline for text feature extraction and evaluation</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example shows how kernel density estimation (KDE), a powerful non-parametric density estim..."><div class="figure" id="id11">
+</div><div class="thumbnailContainer" tooltip="This example shows how kernel density estimation (KDE), a powerful non-parametric density estim..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/neighbors/plot_digits_kde_sampling.html"><img alt="../../_images/plot_digits_kde_sampling1.png" src="../../_images/plot_digits_kde_sampling1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/neighbors/plot_digits_kde_sampling.html#example-neighbors-plot-digits-kde-sampling-py"><span>Kernel Density Estimation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/neighbors/plot_digits_kde_sampling.html#example-neighbors-plot-digits-kde-sampling-py"><em>Kernel Density Estimation</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The following example illustrates the effect of scaling the regularization parameter when using..."><div class="figure" id="id12">
+</div><div class="thumbnailContainer" tooltip="The following example illustrates the effect of scaling the regularization parameter when using..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_svm_scale_c.html"><img alt="../../_images/plot_svm_scale_c1.png" src="../../_images/plot_svm_scale_c1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_svm_scale_c.html#example-svm-plot-svm-scale-c-py"><span>Scaling the regularization parameter for SVCs</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_svm_scale_c.html#example-svm-plot-svm-scale-c-py"><em>Scaling the regularization parameter for SVCs</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example illustrates the effect of the parameters ``gamma`` and ``C`` of the Radial Basis F..."><div class="figure" id="id13">
+</div><div class="thumbnailContainer" tooltip="This example illustrates the effect of the parameters ``gamma`` and ``C`` of the Radial Basis F..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_rbf_parameters.html"><img alt="../../_images/plot_rbf_parameters1.png" src="../../_images/plot_rbf_parameters1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_rbf_parameters.html#example-svm-plot-rbf-parameters-py"><span>RBF SVM parameters</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_rbf_parameters.html#example-svm-plot-rbf-parameters-py"><em>RBF SVM parameters</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -185,7 +185,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="cross-validation-evaluating-estimator-performance">
 <span id="cross-validation"></span><h1>3.1. Cross-validation: evaluating estimator performance<a class="headerlink" href="#cross-validation-evaluating-estimator-performance" title="Permalink to this headline">¶</a></h1>
@@ -196,13 +196,13 @@ score but would fail to predict anything useful on yet-unseen data.
 This situation is called <strong>overfitting</strong>.
 To avoid it, it is common practice when performing
 a (supervised) machine learning experiment
-to hold out part of the available data as a <strong>test set</strong> <code class="docutils literal"><span class="pre">X_test,</span> <span class="pre">y_test</span></code>.
+to hold out part of the available data as a <strong>test set</strong> <tt class="docutils literal"><span class="pre">X_test,</span> <span class="pre">y_test</span></tt>.
 Note that the word &#8220;experiment&#8221; is not intended
 to denote academic use only,
 because even in commercial settings
 machine learning usually starts out experimentally.</p>
 <p>In scikit-learn a random split into training and test sets
-can be quickly computed with the <a class="reference internal" href="generated/sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split" title="sklearn.cross_validation.train_test_split"><code class="xref py py-func docutils literal"><span class="pre">train_test_split</span></code></a> helper function.
+can be quickly computed with the <a class="reference internal" href="generated/sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split" title="sklearn.cross_validation.train_test_split"><tt class="xref py py-func docutils literal"><span class="pre">train_test_split</span></tt></a> helper function.
 Let&#8217;s load the iris data set to fit a linear support vector machine on it:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">cross_validation</span>
@@ -230,7 +230,7 @@ data for testing (evaluating) our classifier:</p>
 </pre></div>
 </div>
 <p>When evaluating different settings (&#8220;hyperparameters&#8221;) for estimators,
-such as the <code class="docutils literal"><span class="pre">C</span></code> setting that must be manually set for an SVM,
+such as the <tt class="docutils literal"><span class="pre">C</span></tt> setting that must be manually set for an SVM,
 there is still a risk of overfitting <em>on the test set</em>
 because the parameters can be tweaked until the estimator performs optimally.
 This way, knowledge about the test set can &#8220;leak&#8221; into the model
@@ -273,7 +273,7 @@ where the number of samples is very small.</p>
 <div class="section" id="computing-cross-validated-metrics">
 <h2>3.1.1. Computing cross-validated metrics<a class="headerlink" href="#computing-cross-validated-metrics" title="Permalink to this headline">¶</a></h2>
 <p>The simplest way to use cross-validation is to call the
-<a class="reference internal" href="generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score" title="sklearn.cross_validation.cross_val_score"><code class="xref py py-func docutils literal"><span class="pre">cross_val_score</span></code></a> helper function on the estimator and the dataset.</p>
+<a class="reference internal" href="generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score" title="sklearn.cross_validation.cross_val_score"><tt class="xref py py-func docutils literal"><span class="pre">cross_val_score</span></tt></a> helper function on the estimator and the dataset.</p>
 <p>The following example demonstrates how to estimate the accuracy of a linear
 kernel support vector machine on the iris dataset by splitting the data, fitting
 a model and computing the score 5 consecutive times (with different splits each
@@ -292,7 +292,7 @@ given by:</p>
 <span class="go">Accuracy: 0.98 (+/- 0.03)</span>
 </pre></div>
 </div>
-<p>By default, the score computed at each CV iteration is the <code class="docutils literal"><span class="pre">score</span></code>
+<p>By default, the score computed at each CV iteration is the <tt class="docutils literal"><span class="pre">score</span></tt>
 method of the estimator. It is possible to change this by using the
 scoring parameter:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
@@ -302,12 +302,12 @@ scoring parameter:</p>
 <span class="go">array([ 0.96...,  1.  ...,  0.96...,  0.96...,  1.        ])</span>
 </pre></div>
 </div>
-<p>See <a class="reference internal" href="model_evaluation.html#scoring-parameter"><span>The scoring parameter: defining model evaluation rules</span></a> for details.
+<p>See <a class="reference internal" href="model_evaluation.html#scoring-parameter"><em>The scoring parameter: defining model evaluation rules</em></a> for details.
 In the case of the Iris dataset, the samples are balanced across target
 classes hence the accuracy and the F1-score are almost equal.</p>
-<p>When the <code class="docutils literal"><span class="pre">cv</span></code> argument is an integer, <a class="reference internal" href="generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score" title="sklearn.cross_validation.cross_val_score"><code class="xref py py-func docutils literal"><span class="pre">cross_val_score</span></code></a> uses the
-<a class="reference internal" href="generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><code class="xref py py-class docutils literal"><span class="pre">KFold</span></code></a> or <a class="reference internal" href="generated/sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><code class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></code></a> strategies by default, the latter
-being used if the estimator derives from <a class="reference internal" href="generated/sklearn.base.ClassifierMixin.html#sklearn.base.ClassifierMixin" title="sklearn.base.ClassifierMixin"><code class="xref py py-class docutils literal"><span class="pre">ClassifierMixin</span></code></a>.</p>
+<p>When the <tt class="docutils literal"><span class="pre">cv</span></tt> argument is an integer, <a class="reference internal" href="generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score" title="sklearn.cross_validation.cross_val_score"><tt class="xref py py-func docutils literal"><span class="pre">cross_val_score</span></tt></a> uses the
+<a class="reference internal" href="generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt></a> or <a class="reference internal" href="generated/sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><tt class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></tt></a> strategies by default, the latter
+being used if the estimator derives from <a class="reference internal" href="generated/sklearn.base.ClassifierMixin.html#sklearn.base.ClassifierMixin" title="sklearn.base.ClassifierMixin"><tt class="xref py py-class docutils literal"><span class="pre">ClassifierMixin</span></tt></a>.</p>
 <p>It is also possible to use other cross validation strategies by passing a cross
 validation iterator instead, for instance:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">n_samples</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -323,7 +323,7 @@ validation iterator instead, for instance:</p>
 <p class="topic-title first">Data transformation with held out data</p>
 <p>Just as it is important to test a predictor on data held-out from
 training, preprocessing (such as standardization, feature selection, etc.)
-and similar <a class="reference internal" href="../data_transforms.html#data-transforms"><span>data transformations</span></a> similarly should
+and similar <a class="reference internal" href="../data_transforms.html#data-transforms"><em>data transformations</em></a> similarly should
 be learnt from a training set and applied to held-out data for prediction:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">preprocessing</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">cross_validation</span><span class="o">.</span><span class="n">train_test_split</span><span class="p">(</span>
@@ -336,7 +336,7 @@ be learnt from a training set and applied to held-out data for prediction:</p>
 <span class="go">0.9333...</span>
 </pre></div>
 </div>
-<p>A <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><code class="xref py py-class docutils literal"><span class="pre">Pipeline</span></code></a> makes it easier to compose
+<p>A <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><tt class="xref py py-class docutils literal"><span class="pre">Pipeline</span></tt></a> makes it easier to compose
 estimators, providing this behavior under cross-validation:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">make_pipeline</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span><span class="n">preprocessing</span><span class="o">.</span><span class="n">StandardScaler</span><span class="p">(),</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
@@ -345,12 +345,12 @@ estimators, providing this behavior under cross-validation:</p>
 <span class="go">array([ 0.97...,  0.93...,  0.95...])</span>
 </pre></div>
 </div>
-<p>See <a class="reference internal" href="pipeline.html#combining-estimators"><span>Pipeline and FeatureUnion: combining estimators</span></a>.</p>
+<p>See <a class="reference internal" href="pipeline.html#combining-estimators"><em>Pipeline and FeatureUnion: combining estimators</em></a>.</p>
 </div>
 <div class="section" id="obtaining-predictions-by-cross-validation">
 <h3>3.1.1.1. Obtaining predictions by cross-validation<a class="headerlink" href="#obtaining-predictions-by-cross-validation" title="Permalink to this headline">¶</a></h3>
-<p>The function <a class="reference internal" href="generated/sklearn.cross_validation.cross_val_predict.html#sklearn.cross_validation.cross_val_predict" title="sklearn.cross_validation.cross_val_predict"><code class="xref py py-func docutils literal"><span class="pre">cross_val_predict</span></code></a> has a similar interface to
-<a class="reference internal" href="generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score" title="sklearn.cross_validation.cross_val_score"><code class="xref py py-func docutils literal"><span class="pre">cross_val_score</span></code></a>, but returns, for each element in the input, the
+<p>The function <a class="reference internal" href="generated/sklearn.cross_validation.cross_val_predict.html#sklearn.cross_validation.cross_val_predict" title="sklearn.cross_validation.cross_val_predict"><tt class="xref py py-func docutils literal"><span class="pre">cross_val_predict</span></tt></a> has a similar interface to
+<a class="reference internal" href="generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score" title="sklearn.cross_validation.cross_val_score"><tt class="xref py py-func docutils literal"><span class="pre">cross_val_score</span></tt></a>, but returns, for each element in the input, the
 prediction that was obtained for that element when it was in the test set. Only
 cross-validation strategies that assign all elements to a test set exactly once
 can be used (otherwise, an exception is raised).</p>
@@ -362,18 +362,18 @@ can be used (otherwise, an exception is raised).</p>
 </pre></div>
 </div>
 <p>Note that the result of this computation may be slightly different from those
-obtained using <a class="reference internal" href="generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score" title="sklearn.cross_validation.cross_val_score"><code class="xref py py-func docutils literal"><span class="pre">cross_val_score</span></code></a> as the elements are grouped in different
+obtained using <a class="reference internal" href="generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score" title="sklearn.cross_validation.cross_val_score"><tt class="xref py py-func docutils literal"><span class="pre">cross_val_score</span></tt></a> as the elements are grouped in different
 ways.</p>
 <p>The available cross validation iterators are introduced in the following
 section.</p>
 <div class="topic">
 <p class="topic-title first">Examples</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/model_selection/plot_roc_crossval.html#example-model-selection-plot-roc-crossval-py"><span>Receiver Operating Characteristic (ROC) with cross validation</span></a>,</li>
-<li><a class="reference internal" href="../auto_examples/feature_selection/plot_rfe_with_cross_validation.html#example-feature-selection-plot-rfe-with-cross-validation-py"><span>Recursive feature elimination with cross-validation</span></a>,</li>
-<li><a class="reference internal" href="../auto_examples/model_selection/grid_search_digits.html#example-model-selection-grid-search-digits-py"><span>Parameter estimation using grid search with cross-validation</span></a>,</li>
-<li><a class="reference internal" href="../auto_examples/model_selection/grid_search_text_feature_extraction.html#example-model-selection-grid-search-text-feature-extraction-py"><span>Sample pipeline for text feature extraction and evaluation</span></a>,</li>
-<li><a class="reference internal" href="../auto_examples/plot_cv_predict.html#example-plot-cv-predict-py"><span>Plotting Cross-Validated Predictions</span></a>,</li>
+<li><a class="reference internal" href="../auto_examples/model_selection/plot_roc_crossval.html#example-model-selection-plot-roc-crossval-py"><em>Receiver Operating Characteristic (ROC) with cross validation</em></a>,</li>
+<li><a class="reference internal" href="../auto_examples/feature_selection/plot_rfe_with_cross_validation.html#example-feature-selection-plot-rfe-with-cross-validation-py"><em>Recursive feature elimination with cross-validation</em></a>,</li>
+<li><a class="reference internal" href="../auto_examples/model_selection/grid_search_digits.html#example-model-selection-grid-search-digits-py"><em>Parameter estimation using grid search with cross-validation</em></a>,</li>
+<li><a class="reference internal" href="../auto_examples/model_selection/grid_search_text_feature_extraction.html#example-model-selection-grid-search-text-feature-extraction-py"><em>Sample pipeline for text feature extraction and evaluation</em></a>,</li>
+<li><a class="reference internal" href="../auto_examples/plot_cv_predict.html#example-plot-cv-predict-py"><em>Plotting Cross-Validated Predictions</em></a>,</li>
 </ul>
 </div>
 </div>
@@ -385,7 +385,7 @@ that can be used to generate dataset splits according to different cross
 validation strategies.</p>
 <div class="section" id="k-fold">
 <h3>3.1.2.1. K-fold<a class="headerlink" href="#k-fold" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><code class="xref py py-class docutils literal"><span class="pre">KFold</span></code></a> divides all the samples in <img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> groups of samples,
+<p><a class="reference internal" href="generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt></a> divides all the samples in <img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> groups of samples,
 called folds (if <img class="math" src="../_images/math/48b80c2fee19e41a529e3220199a5562ea29e35d.png" alt="k = n"/>, this is equivalent to the <em>Leave One
 Out</em> strategy), of equal sizes (if possible). The prediction function is
 learned using <img class="math" src="../_images/math/23ca2c534b3fe41683cbc51a0948ba22563356d1.png" alt="k - 1"/> folds, and the fold left out is used for test.</p>
@@ -411,7 +411,7 @@ Thus, one can create the training/test sets using numpy indexing:</p>
 </div>
 <div class="section" id="stratified-k-fold">
 <h3>3.1.2.2. Stratified k-fold<a class="headerlink" href="#stratified-k-fold" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><code class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></code></a> is a variation of <em>k-fold</em> which returns <em>stratified</em>
+<p><a class="reference internal" href="generated/sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><tt class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></tt></a> is a variation of <em>k-fold</em> which returns <em>stratified</em>
 folds: each set contains approximately the same percentage of samples of each
 target class as the complete set.</p>
 <p>Example of stratified 3-fold cross-validation on a dataset with 10 samples from
@@ -430,7 +430,7 @@ two slightly unbalanced classes:</p>
 </div>
 <div class="section" id="label-k-fold">
 <h3>3.1.2.3. Label k-fold<a class="headerlink" href="#label-k-fold" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.cross_validation.LabelKFold.html#sklearn.cross_validation.LabelKFold" title="sklearn.cross_validation.LabelKFold"><code class="xref py py-class docutils literal"><span class="pre">LabelKFold</span></code></a> is a variation of <em>k-fold</em> which ensures that the same
+<p><a class="reference internal" href="generated/sklearn.cross_validation.LabelKFold.html#sklearn.cross_validation.LabelKFold" title="sklearn.cross_validation.LabelKFold"><tt class="xref py py-class docutils literal"><span class="pre">LabelKFold</span></tt></a> is a variation of <em>k-fold</em> which ensures that the same
 label is not in both testing and training sets. This is necessary for example
 if you obtained data from different subjects and you want to avoid over-fitting
 (i.e., learning person specific features) by testing and training on different
@@ -454,7 +454,7 @@ size due to the imbalance in the data.</p>
 </div>
 <div class="section" id="leave-one-out-loo">
 <h3>3.1.2.4. Leave-One-Out - LOO<a class="headerlink" href="#leave-one-out-loo" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.cross_validation.LeaveOneOut.html#sklearn.cross_validation.LeaveOneOut" title="sklearn.cross_validation.LeaveOneOut"><code class="xref py py-class docutils literal"><span class="pre">LeaveOneOut</span></code></a> (or LOO) is a simple cross-validation. Each learning
+<p><a class="reference internal" href="generated/sklearn.cross_validation.LeaveOneOut.html#sklearn.cross_validation.LeaveOneOut" title="sklearn.cross_validation.LeaveOneOut"><tt class="xref py py-class docutils literal"><span class="pre">LeaveOneOut</span></tt></a> (or LOO) is a simple cross-validation. Each learning
 set is created by taking all the samples except one, the test set being
 the sample left out. Thus, for <img class="math" src="../_images/math/413f8a8e40062a9090d9d50b88bc7b551b314c26.png" alt="n"/> samples, we have <img class="math" src="../_images/math/413f8a8e40062a9090d9d50b88bc7b551b314c26.png" alt="n"/> different
 training sets and <img class="math" src="../_images/math/413f8a8e40062a9090d9d50b88bc7b551b314c26.png" alt="n"/> different tests set. This cross-validation
@@ -502,10 +502,10 @@ Statistical Learning</a>, Springer 2013</li>
 </div>
 <div class="section" id="leave-p-out-lpo">
 <h3>3.1.2.5. Leave-P-Out - LPO<a class="headerlink" href="#leave-p-out-lpo" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.cross_validation.LeavePOut.html#sklearn.cross_validation.LeavePOut" title="sklearn.cross_validation.LeavePOut"><code class="xref py py-class docutils literal"><span class="pre">LeavePOut</span></code></a> is very similar to <a class="reference internal" href="generated/sklearn.cross_validation.LeaveOneOut.html#sklearn.cross_validation.LeaveOneOut" title="sklearn.cross_validation.LeaveOneOut"><code class="xref py py-class docutils literal"><span class="pre">LeaveOneOut</span></code></a> as it creates all
+<p><a class="reference internal" href="generated/sklearn.cross_validation.LeavePOut.html#sklearn.cross_validation.LeavePOut" title="sklearn.cross_validation.LeavePOut"><tt class="xref py py-class docutils literal"><span class="pre">LeavePOut</span></tt></a> is very similar to <a class="reference internal" href="generated/sklearn.cross_validation.LeaveOneOut.html#sklearn.cross_validation.LeaveOneOut" title="sklearn.cross_validation.LeaveOneOut"><tt class="xref py py-class docutils literal"><span class="pre">LeaveOneOut</span></tt></a> as it creates all
 the possible training/test sets by removing <img class="math" src="../_images/math/3eca8557203e86160952e1c0f735f7417f3285b1.png" alt="p"/> samples from the complete
 set. For <img class="math" src="../_images/math/413f8a8e40062a9090d9d50b88bc7b551b314c26.png" alt="n"/> samples, this produces <img class="math" src="../_images/math/d72a9aef7b3237cc3733eef2e7aef97a156230e8.png" alt="{n \choose p}"/> train-test
-pairs. Unlike <a class="reference internal" href="generated/sklearn.cross_validation.LeaveOneOut.html#sklearn.cross_validation.LeaveOneOut" title="sklearn.cross_validation.LeaveOneOut"><code class="xref py py-class docutils literal"><span class="pre">LeaveOneOut</span></code></a> and <a class="reference internal" href="generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><code class="xref py py-class docutils literal"><span class="pre">KFold</span></code></a>, the test sets will
+pairs. Unlike <a class="reference internal" href="generated/sklearn.cross_validation.LeaveOneOut.html#sklearn.cross_validation.LeaveOneOut" title="sklearn.cross_validation.LeaveOneOut"><tt class="xref py py-class docutils literal"><span class="pre">LeaveOneOut</span></tt></a> and <a class="reference internal" href="generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt></a>, the test sets will
 overlap for <img class="math" src="../_images/math/db30f65159c0f4b2e3ec318ed09839aa42bf261a.png" alt="p &gt; 1"/>.</p>
 <p>Example of Leave-2-Out on a dataset with 4 samples:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">LeavePOut</span>
@@ -524,7 +524,7 @@ overlap for <img class="math" src="../_images/math/db30f65159c0f4b2e3ec318ed0983
 </div>
 <div class="section" id="leave-one-label-out-lolo">
 <h3>3.1.2.6. Leave-One-Label-Out - LOLO<a class="headerlink" href="#leave-one-label-out-lolo" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.cross_validation.LeaveOneLabelOut.html#sklearn.cross_validation.LeaveOneLabelOut" title="sklearn.cross_validation.LeaveOneLabelOut"><code class="xref py py-class docutils literal"><span class="pre">LeaveOneLabelOut</span></code></a> (LOLO) is a cross-validation scheme which holds out
+<p><a class="reference internal" href="generated/sklearn.cross_validation.LeaveOneLabelOut.html#sklearn.cross_validation.LeaveOneLabelOut" title="sklearn.cross_validation.LeaveOneLabelOut"><tt class="xref py py-class docutils literal"><span class="pre">LeaveOneLabelOut</span></tt></a> (LOLO) is a cross-validation scheme which holds out
 the samples according to a third-party provided array of integer labels. This
 label information can be used to encode arbitrary domain specific pre-defined
 cross-validation folds.</p>
@@ -548,18 +548,18 @@ labels could be the year of collection of the samples and thus allow
 for cross-validation against time-based splits.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Contrary to <a class="reference internal" href="generated/sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><code class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></code></a>, <strong>the ``labels`` of
+<p class="last">Contrary to <a class="reference internal" href="generated/sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><tt class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></tt></a>, <strong>the ``labels`` of
 :class:`LeaveOneLabelOut` should not encode the target class to predict</strong>:
-the goal of <a class="reference internal" href="generated/sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><code class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></code></a> is to rebalance dataset classes across
+the goal of <a class="reference internal" href="generated/sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><tt class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></tt></a> is to rebalance dataset classes across
 the train / test split to ensure that the train and test folds have
 approximately the same percentage of samples of each class while
-<a class="reference internal" href="generated/sklearn.cross_validation.LeaveOneLabelOut.html#sklearn.cross_validation.LeaveOneLabelOut" title="sklearn.cross_validation.LeaveOneLabelOut"><code class="xref py py-class docutils literal"><span class="pre">LeaveOneLabelOut</span></code></a> will do the opposite by ensuring that the samples
+<a class="reference internal" href="generated/sklearn.cross_validation.LeaveOneLabelOut.html#sklearn.cross_validation.LeaveOneLabelOut" title="sklearn.cross_validation.LeaveOneLabelOut"><tt class="xref py py-class docutils literal"><span class="pre">LeaveOneLabelOut</span></tt></a> will do the opposite by ensuring that the samples
 of the train and test fold will not share the same label value.</p>
 </div>
 </div>
 <div class="section" id="leave-p-label-out">
 <h3>3.1.2.7. Leave-P-Label-Out<a class="headerlink" href="#leave-p-label-out" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.cross_validation.LeavePLabelOut.html#sklearn.cross_validation.LeavePLabelOut" title="sklearn.cross_validation.LeavePLabelOut"><code class="xref py py-class docutils literal"><span class="pre">LeavePLabelOut</span></code></a> is similar as <em>Leave-One-Label-Out</em>, but removes
+<p><a class="reference internal" href="generated/sklearn.cross_validation.LeavePLabelOut.html#sklearn.cross_validation.LeavePLabelOut" title="sklearn.cross_validation.LeavePLabelOut"><tt class="xref py py-class docutils literal"><span class="pre">LeavePLabelOut</span></tt></a> is similar as <em>Leave-One-Label-Out</em>, but removes
 samples related to <img class="math" src="../_images/math/f48b617185733d8dd6712643f1ab17c736661a06.png" alt="P"/> labels for each training/test set.</p>
 <p>Example of Leave-2-Label Out:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">LeavePLabelOut</span>
@@ -576,12 +576,12 @@ samples related to <img class="math" src="../_images/math/f48b617185733d8dd67126
 </div>
 <div class="section" id="random-permutations-cross-validation-a-k-a-shuffle-split">
 <span id="shufflesplit"></span><h3>3.1.2.8. Random permutations cross-validation a.k.a. Shuffle &amp; Split<a class="headerlink" href="#random-permutations-cross-validation-a-k-a-shuffle-split" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.cross_validation.ShuffleSplit.html#sklearn.cross_validation.ShuffleSplit" title="sklearn.cross_validation.ShuffleSplit"><code class="xref py py-class docutils literal"><span class="pre">ShuffleSplit</span></code></a></p>
-<p>The <a class="reference internal" href="generated/sklearn.cross_validation.ShuffleSplit.html#sklearn.cross_validation.ShuffleSplit" title="sklearn.cross_validation.ShuffleSplit"><code class="xref py py-class docutils literal"><span class="pre">ShuffleSplit</span></code></a> iterator will generate a user defined number of
+<p><a class="reference internal" href="generated/sklearn.cross_validation.ShuffleSplit.html#sklearn.cross_validation.ShuffleSplit" title="sklearn.cross_validation.ShuffleSplit"><tt class="xref py py-class docutils literal"><span class="pre">ShuffleSplit</span></tt></a></p>
+<p>The <a class="reference internal" href="generated/sklearn.cross_validation.ShuffleSplit.html#sklearn.cross_validation.ShuffleSplit" title="sklearn.cross_validation.ShuffleSplit"><tt class="xref py py-class docutils literal"><span class="pre">ShuffleSplit</span></tt></a> iterator will generate a user defined number of
 independent train / test dataset splits. Samples are first shuffled and
 then split into a pair of train and test sets.</p>
 <p>It is possible to control the randomness for reproducibility of the
-results by explicitly seeding the <code class="docutils literal"><span class="pre">random_state</span></code> pseudo random number
+results by explicitly seeding the <tt class="docutils literal"><span class="pre">random_state</span></tt> pseudo random number
 generator.</p>
 <p>Here is a usage example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ss</span> <span class="o">=</span> <span class="n">cross_validation</span><span class="o">.</span><span class="n">ShuffleSplit</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span>
@@ -594,15 +594,15 @@ generator.</p>
 <span class="go">[4 0 2] [1 3]</span>
 </pre></div>
 </div>
-<p><a class="reference internal" href="generated/sklearn.cross_validation.ShuffleSplit.html#sklearn.cross_validation.ShuffleSplit" title="sklearn.cross_validation.ShuffleSplit"><code class="xref py py-class docutils literal"><span class="pre">ShuffleSplit</span></code></a> is thus a good alternative to <a class="reference internal" href="generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><code class="xref py py-class docutils literal"><span class="pre">KFold</span></code></a> cross
+<p><a class="reference internal" href="generated/sklearn.cross_validation.ShuffleSplit.html#sklearn.cross_validation.ShuffleSplit" title="sklearn.cross_validation.ShuffleSplit"><tt class="xref py py-class docutils literal"><span class="pre">ShuffleSplit</span></tt></a> is thus a good alternative to <a class="reference internal" href="generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt></a> cross
 validation that allows a finer control on the number of iterations and
 the proportion of samples in on each side of the train / test split.</p>
 </div>
 <div class="section" id="label-shuffle-split">
 <h3>3.1.2.9. Label-Shuffle-Split<a class="headerlink" href="#label-shuffle-split" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.cross_validation.LabelShuffleSplit.html#sklearn.cross_validation.LabelShuffleSplit" title="sklearn.cross_validation.LabelShuffleSplit"><code class="xref py py-class docutils literal"><span class="pre">LabelShuffleSplit</span></code></a></p>
-<p>The <a class="reference internal" href="generated/sklearn.cross_validation.LabelShuffleSplit.html#sklearn.cross_validation.LabelShuffleSplit" title="sklearn.cross_validation.LabelShuffleSplit"><code class="xref py py-class docutils literal"><span class="pre">LabelShuffleSplit</span></code></a> iterator behaves as a combination of
-<a class="reference internal" href="generated/sklearn.cross_validation.ShuffleSplit.html#sklearn.cross_validation.ShuffleSplit" title="sklearn.cross_validation.ShuffleSplit"><code class="xref py py-class docutils literal"><span class="pre">ShuffleSplit</span></code></a> and <code class="xref py py-class docutils literal"><span class="pre">LeavePLabelsOut</span></code>, and generates a
+<p><a class="reference internal" href="generated/sklearn.cross_validation.LabelShuffleSplit.html#sklearn.cross_validation.LabelShuffleSplit" title="sklearn.cross_validation.LabelShuffleSplit"><tt class="xref py py-class docutils literal"><span class="pre">LabelShuffleSplit</span></tt></a></p>
+<p>The <a class="reference internal" href="generated/sklearn.cross_validation.LabelShuffleSplit.html#sklearn.cross_validation.LabelShuffleSplit" title="sklearn.cross_validation.LabelShuffleSplit"><tt class="xref py py-class docutils literal"><span class="pre">LabelShuffleSplit</span></tt></a> iterator behaves as a combination of
+<a class="reference internal" href="generated/sklearn.cross_validation.ShuffleSplit.html#sklearn.cross_validation.ShuffleSplit" title="sklearn.cross_validation.ShuffleSplit"><tt class="xref py py-class docutils literal"><span class="pre">ShuffleSplit</span></tt></a> and <tt class="xref py py-class docutils literal"><span class="pre">LeavePLabelsOut</span></tt>, and generates a
 sequence of randomized partitions in which a subset of labels are held
 out for each split.</p>
 <p>Here is a usage example:</p>
@@ -620,25 +620,25 @@ out for each split.</p>
 <span class="go">[4 5 6 7] [0 1 2 3]</span>
 </pre></div>
 </div>
-<p>This class is useful when the behavior of <code class="xref py py-class docutils literal"><span class="pre">LeavePLabelsOut</span></code> is
+<p>This class is useful when the behavior of <tt class="xref py py-class docutils literal"><span class="pre">LeavePLabelsOut</span></tt> is
 desired, but the number of labels is large enough that generating all
 possible partitions with <img class="math" src="../_images/math/f48b617185733d8dd6712643f1ab17c736661a06.png" alt="P"/> labels withheld would be prohibitively
-expensive.  In such a scenario, <a class="reference internal" href="generated/sklearn.cross_validation.LabelShuffleSplit.html#sklearn.cross_validation.LabelShuffleSplit" title="sklearn.cross_validation.LabelShuffleSplit"><code class="xref py py-class docutils literal"><span class="pre">LabelShuffleSplit</span></code></a> provides
+expensive.  In such a scenario, <a class="reference internal" href="generated/sklearn.cross_validation.LabelShuffleSplit.html#sklearn.cross_validation.LabelShuffleSplit" title="sklearn.cross_validation.LabelShuffleSplit"><tt class="xref py py-class docutils literal"><span class="pre">LabelShuffleSplit</span></tt></a> provides
 a random sample (with replacement) of the train / test splits
-generated by <code class="xref py py-class docutils literal"><span class="pre">LeavePLabelsOut</span></code>.</p>
+generated by <tt class="xref py py-class docutils literal"><span class="pre">LeavePLabelsOut</span></tt>.</p>
 </div>
 <div class="section" id="predefined-fold-splits-validation-sets">
 <h3>3.1.2.10. Predefined Fold-Splits / Validation-Sets<a class="headerlink" href="#predefined-fold-splits-validation-sets" title="Permalink to this headline">¶</a></h3>
 <p>For some datasets, a pre-defined split of the data into training- and
 validation fold or into several cross-validation folds already
-exists. Using <a class="reference internal" href="generated/sklearn.cross_validation.PredefinedSplit.html#sklearn.cross_validation.PredefinedSplit" title="sklearn.cross_validation.PredefinedSplit"><code class="xref py py-class docutils literal"><span class="pre">PredefinedSplit</span></code></a> it is possible to use these folds
+exists. Using <a class="reference internal" href="generated/sklearn.cross_validation.PredefinedSplit.html#sklearn.cross_validation.PredefinedSplit" title="sklearn.cross_validation.PredefinedSplit"><tt class="xref py py-class docutils literal"><span class="pre">PredefinedSplit</span></tt></a> it is possible to use these folds
 e.g. when searching for hyperparameters.</p>
-<p>For example, when using a validation set, set the <code class="docutils literal"><span class="pre">test_fold</span></code> to 0 for all
+<p>For example, when using a validation set, set the <tt class="docutils literal"><span class="pre">test_fold</span></tt> to 0 for all
 samples that are part of the validation set, and to -1 for all other samples.</p>
 </div>
 <div class="section" id="see-also">
 <h3>3.1.2.11. See also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.cross_validation.StratifiedShuffleSplit.html#sklearn.cross_validation.StratifiedShuffleSplit" title="sklearn.cross_validation.StratifiedShuffleSplit"><code class="xref py py-class docutils literal"><span class="pre">StratifiedShuffleSplit</span></code></a> is a variation of <em>ShuffleSplit</em>, which returns
+<p><a class="reference internal" href="generated/sklearn.cross_validation.StratifiedShuffleSplit.html#sklearn.cross_validation.StratifiedShuffleSplit" title="sklearn.cross_validation.StratifiedShuffleSplit"><tt class="xref py py-class docutils literal"><span class="pre">StratifiedShuffleSplit</span></tt></a> is a variation of <em>ShuffleSplit</em>, which returns
 stratified splits, <em>i.e</em> which creates splits by preserving the same
 percentage for each target class as in the complete set.</p>
 </div>
@@ -653,27 +653,27 @@ to news articles, and are ordered by their time of publication, then shuffling
 the data will likely lead to a model that is overfit and an inflated validation
 score: it will be tested on samples that are artificially similar (close in
 time) to training samples.</p>
-<p>Some cross validation iterators, such as <a class="reference internal" href="generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><code class="xref py py-class docutils literal"><span class="pre">KFold</span></code></a>, have an inbuilt option
+<p>Some cross validation iterators, such as <a class="reference internal" href="generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt></a>, have an inbuilt option
 to shuffle the data indices before splitting them. Note that:</p>
 <ul class="simple">
 <li>This consumes less memory than shuffling the data directly.</li>
 <li>By default no shuffling occurs, including for the (stratified) K fold cross-
-validation performed by specifying <code class="docutils literal"><span class="pre">cv=some_integer</span></code> to
-<a class="reference internal" href="generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score" title="sklearn.cross_validation.cross_val_score"><code class="xref py py-func docutils literal"><span class="pre">cross_val_score</span></code></a>, grid search, etc. Keep in mind that
-<a class="reference internal" href="generated/sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split" title="sklearn.cross_validation.train_test_split"><code class="xref py py-func docutils literal"><span class="pre">train_test_split</span></code></a> still returns a random split.</li>
-<li>The <code class="docutils literal"><span class="pre">random_state</span></code> parameter defaults to <code class="docutils literal"><span class="pre">None</span></code>, meaning that the
-shuffling will be different every time <code class="docutils literal"><span class="pre">KFold(...,</span> <span class="pre">shuffle=True)</span></code> is
-iterated. However, <code class="docutils literal"><span class="pre">GridSearchCV</span></code> will use the same shuffling for each set
-of parameters validated by a single call to its <code class="docutils literal"><span class="pre">fit</span></code> method.</li>
+validation performed by specifying <tt class="docutils literal"><span class="pre">cv=some_integer</span></tt> to
+<a class="reference internal" href="generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score" title="sklearn.cross_validation.cross_val_score"><tt class="xref py py-func docutils literal"><span class="pre">cross_val_score</span></tt></a>, grid search, etc. Keep in mind that
+<a class="reference internal" href="generated/sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split" title="sklearn.cross_validation.train_test_split"><tt class="xref py py-func docutils literal"><span class="pre">train_test_split</span></tt></a> still returns a random split.</li>
+<li>The <tt class="docutils literal"><span class="pre">random_state</span></tt> parameter defaults to <tt class="docutils literal"><span class="pre">None</span></tt>, meaning that the
+shuffling will be different every time <tt class="docutils literal"><span class="pre">KFold(...,</span> <span class="pre">shuffle=True)</span></tt> is
+iterated. However, <tt class="docutils literal"><span class="pre">GridSearchCV</span></tt> will use the same shuffling for each set
+of parameters validated by a single call to its <tt class="docutils literal"><span class="pre">fit</span></tt> method.</li>
 <li>To ensure results are repeatable (<em>on the same platform</em>), use a fixed value
-for <code class="docutils literal"><span class="pre">random_state</span></code>.</li>
+for <tt class="docutils literal"><span class="pre">random_state</span></tt>.</li>
 </ul>
 </div>
 <div class="section" id="cross-validation-and-model-selection">
 <h2>3.1.4. Cross validation and model selection<a class="headerlink" href="#cross-validation-and-model-selection" title="Permalink to this headline">¶</a></h2>
 <p>Cross validation iterators can also be used to directly perform model
 selection using Grid Search for the optimal hyperparameters of the
-model. This is the topic if the next section: <a class="reference internal" href="grid_search.html#grid-search"><span>Grid Search: Searching for estimator parameters</span></a>.</p>
+model. This is the topic if the next section: <a class="reference internal" href="grid_search.html#grid-search"><em>Grid Search: Searching for estimator parameters</em></a>.</p>
 </div>
 </div>
 

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,12 +163,12 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="manifold-learning-on-handwritten-digits-locally-linear-embedding-isomap">
 <span id="example-manifold-plot-lle-digits-py"></span><h1>Manifold learning on handwritten digits: Locally Linear Embedding, Isomap...<a class="headerlink" href="#manifold-learning-on-handwritten-digits-locally-linear-embedding-isomap" title="Permalink to this headline">¶</a></h1>
 <p>An illustration of various embeddings on the digits dataset.</p>
-<p>The RandomTreesEmbedding, from the <a class="reference internal" href="../../modules/classes.html#module-sklearn.ensemble" title="sklearn.ensemble"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble</span></code></a> module, is not
+<p>The RandomTreesEmbedding, from the <a class="reference internal" href="../../modules/classes.html#module-sklearn.ensemble" title="sklearn.ensemble"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble</span></tt></a> module, is not
 technically a manifold embedding method, as it learn a high-dimensional
 representation on which we apply a dimensionality reduction method.
 However, it is often useful to cast a dataset into a representation in
@@ -177,7 +177,7 @@ which the classes are linearly-separable.</p>
 this example, which is not the default setting. It ensures global stability
 of the embedding, i.e., the embedding does not depend on random
 initialization.</p>
-<p class="horizontal"><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lle_digits.py"><code class="xref download docutils literal"><span class="pre">plot_lle_digits.py</span></code></a></p>
+<p class="horizontal"><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lle_digits.py"><tt class="xref download docutils literal"><span class="pre">plot_lle_digits.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Authors: Fabian Pedregosa &lt;fabian.pedregosa@inria.fr&gt;</span>
 <span class="c">#          Olivier Grisel &lt;olivier.grisel@ensta.org&gt;</span>
 <span class="c">#          Mathieu Blondel &lt;mathieu@mblondel.org&gt;</span>

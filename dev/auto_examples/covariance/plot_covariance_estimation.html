@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,18 +163,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="shrinkage-covariance-estimation-ledoitwolf-vs-oas-and-max-likelihood">
 <span id="example-covariance-plot-covariance-estimation-py"></span><h1>Shrinkage covariance estimation: LedoitWolf vs OAS and max-likelihood<a class="headerlink" href="#shrinkage-covariance-estimation-ledoitwolf-vs-oas-and-max-likelihood" title="Permalink to this headline">¶</a></h1>
 <p>When working with covariance estimation, the usual approach is to use
 a maximum likelihood estimator, such as the
-<a class="reference internal" href="../../modules/generated/sklearn.covariance.EmpiricalCovariance.html#sklearn.covariance.EmpiricalCovariance" title="sklearn.covariance.EmpiricalCovariance"><code class="xref py py-class docutils literal"><span class="pre">sklearn.covariance.EmpiricalCovariance</span></code></a>. It is unbiased, i.e. it
+<a class="reference internal" href="../../modules/generated/sklearn.covariance.EmpiricalCovariance.html#sklearn.covariance.EmpiricalCovariance" title="sklearn.covariance.EmpiricalCovariance"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.covariance.EmpiricalCovariance</span></tt></a>. It is unbiased, i.e. it
 converges to the true (population) covariance when given many
 observations. However, it can also be beneficial to regularize it, in
 order to reduce its variance; this, in turn, introduces some bias. This
 example illustrates the simple regularization used in
-<a class="reference internal" href="../../modules/covariance.html#shrunk-covariance"><span>Shrunk Covariance</span></a> estimators. In particular, it focuses on how to
+<a class="reference internal" href="../../modules/covariance.html#shrunk-covariance"><em>Shrunk Covariance</em></a> estimators. In particular, it focuses on how to
 set the amount of regularization, i.e. how to choose the bias-variance
 trade-off.</p>
 <p>Here we compare 3 approaches:</p>
@@ -183,10 +183,10 @@ trade-off.</p>
 according to a grid of potential shrinkage parameters.</li>
 <li>A close formula proposed by Ledoit and Wolf to compute
 the asymptotically optimal regularization parameter (minimizing a MSE
-criterion), yielding the <a class="reference internal" href="../../modules/generated/sklearn.covariance.LedoitWolf.html#sklearn.covariance.LedoitWolf" title="sklearn.covariance.LedoitWolf"><code class="xref py py-class docutils literal"><span class="pre">sklearn.covariance.LedoitWolf</span></code></a>
+criterion), yielding the <a class="reference internal" href="../../modules/generated/sklearn.covariance.LedoitWolf.html#sklearn.covariance.LedoitWolf" title="sklearn.covariance.LedoitWolf"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.covariance.LedoitWolf</span></tt></a>
 covariance estimate.</li>
 <li>An improvement of the Ledoit-Wolf shrinkage, the
-<a class="reference internal" href="../../modules/generated/sklearn.covariance.OAS.html#sklearn.covariance.OAS" title="sklearn.covariance.OAS"><code class="xref py py-class docutils literal"><span class="pre">sklearn.covariance.OAS</span></code></a>, proposed by Chen et al. Its
+<a class="reference internal" href="../../modules/generated/sklearn.covariance.OAS.html#sklearn.covariance.OAS" title="sklearn.covariance.OAS"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.covariance.OAS</span></tt></a>, proposed by Chen et al. Its
 convergence is significantly better under the assumption that the data
 are Gaussian, in particular for small samples.</li>
 </ul>
@@ -200,7 +200,7 @@ example, the OAS estimate is a bit further away. Interestingly, both
 approaches outperform cross-validation, which is significantly most
 computationally costly.</p>
 <img alt="../../_images/plot_covariance_estimation_001.png" class="align-center" src="../../_images/plot_covariance_estimation_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_covariance_estimation.py"><code class="xref download docutils literal"><span class="pre">plot_covariance_estimation.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_covariance_estimation.py"><tt class="xref download docutils literal"><span class="pre">plot_covariance_estimation.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>

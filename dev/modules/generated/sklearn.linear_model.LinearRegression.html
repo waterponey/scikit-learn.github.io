@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.linear_model.LogisticRegression" href="sklearn.linear_model.LogisticRegression.html" />
+    <link rel="prev" title="3.2.4.2.1. sklearn.linear_model.LassoLarsIC" href="sklearn.linear_model.LassoLarsIC.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.linear_model.LassoLarsIC.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        3.2.4.2.1. sk...
+        </span>
+            <span class="hiddenrellink">
+            3.2.4.2.1. sklearn.linear_model.LassoLarsIC
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.linear_model</span></code>.LinearRegression</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-linear-model-linearregression">Examples using <code class="docutils literal"><span class="pre">sklearn.linear_model.LinearRegression</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.linear_model</span></tt>.LinearRegression</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-linear-model-linearregression">Examples using <tt class="docutils literal"><span class="pre">sklearn.linear_model.LinearRegression</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-linear-model-linearregression">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></code></a>.LinearRegression<a class="headerlink" href="#sklearn-linear-model-linearregression" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.LinearRegression<a class="headerlink" href="#sklearn-linear-model-linearregression" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.linear_model.LinearRegression">
-<em class="property">class </em><code class="descclassname">sklearn.linear_model.</code><code class="descname">LinearRegression</code><span class="sig-paren">(</span><em>fit_intercept=True</em>, <em>normalize=False</em>, <em>copy_X=True</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L348"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">LinearRegression</tt><big>(</big><em>fit_intercept=True</em>, <em>normalize=False</em>, <em>copy_X=True</em>, <em>n_jobs=1</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L348"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ordinary least squares Linear Regression.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -185,16 +225,34 @@ Least Squares (scipy.linalg.lstsq) wrapped as a predictor object.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.LinearRegression.decision_function" title="sklearn.linear_model.LinearRegression.decision_function"><tt class="xref py py-obj docutils literal"><span class="pre">decision_function</span></tt></a>(*args,&nbsp;**kwargs)</td>
+<td>DEPRECATED:  and will be removed in 0.19.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.LinearRegression.fit" title="sklearn.linear_model.LinearRegression.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Fit linear model.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.LinearRegression.get_params" title="sklearn.linear_model.LinearRegression.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.LinearRegression.predict" title="sklearn.linear_model.LinearRegression.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<td>Predict using the linear model</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.LinearRegression.score" title="sklearn.linear_model.LinearRegression.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Returns the coefficient of determination R^2 of the prediction.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.LinearRegression.set_params" title="sklearn.linear_model.LinearRegression.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.linear_model.LinearRegression.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>fit_intercept=True</em>, <em>normalize=False</em>, <em>copy_X=True</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L388"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>fit_intercept=True</em>, <em>normalize=False</em>, <em>copy_X=True</em>, <em>n_jobs=1</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L388"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LinearRegression.decision_function">
-<code class="descname">decision_function</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.decision_function" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decision_function</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>DEPRECATED:  and will be removed in 0.19.</p>
 <p>Decision function of the linear model.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -219,7 +277,7 @@ Least Squares (scipy.linalg.lstsq) wrapped as a predictor object.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LinearRegression.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L395"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L395"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit linear model.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -248,7 +306,7 @@ Least Squares (scipy.linalg.lstsq) wrapped as a predictor object.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LinearRegression.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -273,7 +331,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LinearRegression.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L186"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/base.py#L186"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict using the linear model</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -297,7 +355,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LinearRegression.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
@@ -336,11 +394,11 @@ would get a R^2 score of 0.0.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LinearRegression.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LinearRegression.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -355,58 +413,58 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-linear-model-linearregression">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.linear_model.LinearRegression</span></code><a class="headerlink" href="#examples-using-sklearn-linear-model-linearregression" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example shows how to use `cross_val_predict` to visualize prediction errors."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.linear_model.LinearRegression</span></tt><a class="headerlink" href="#examples-using-sklearn-linear-model-linearregression" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example shows how to use `cross_val_predict` to visualize prediction errors."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_cv_predict.html"><img alt="../../_images/plot_cv_predict1.png" src="../../_images/plot_cv_predict1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_cv_predict.html#example-plot-cv-predict-py"><span>Plotting Cross-Validated Predictions</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_cv_predict.html#example-plot-cv-predict-py"><em>Plotting Cross-Validated Predictions</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An illustration of the isotonic regression on generated data. The isotonic regression finds a n..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="An illustration of the isotonic regression on generated data. The isotonic regression finds a n..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_isotonic_regression.html"><img alt="../../_images/plot_isotonic_regression1.png" src="../../_images/plot_isotonic_regression1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_isotonic_regression.html#example-plot-isotonic-regression-py"><span>Isotonic Regression</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_isotonic_regression.html#example-plot-isotonic-regression-py"><em>Isotonic Regression</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example shows the use of multi-output estimator to complete images. The goal is to predict..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="This example shows the use of multi-output estimator to complete images. The goal is to predict..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_multioutput_face_completion.html"><img alt="../../_images/plot_multioutput_face_completion1.png" src="../../_images/plot_multioutput_face_completion1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_multioutput_face_completion.html#example-plot-multioutput-face-completion-py"><span>Face completion with a multi-output estimators</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_multioutput_face_completion.html#example-plot-multioutput-face-completion-py"><em>Face completion with a multi-output estimators</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="In this example we see how to robustly fit a linear model to faulty data using the RANSAC algor..."><div class="figure" id="id4">
+</div><div class="thumbnailContainer" tooltip="In this example we see how to robustly fit a linear model to faulty data using the RANSAC algor..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_ransac.html"><img alt="../../_images/plot_ransac1.png" src="../../_images/plot_ransac1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_ransac.html#example-linear-model-plot-ransac-py"><span>Robust linear model estimation using RANSAC</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_ransac.html#example-linear-model-plot-ransac-py"><em>Robust linear model estimation using RANSAC</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The coefficients, the residual sum of squares and the variance score are also calculated."><div class="figure" id="id5">
+</div><div class="thumbnailContainer" tooltip="The coefficients, the residual sum of squares and the variance score are also calculated."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_ols.html"><img alt="../../_images/plot_ols1.png" src="../../_images/plot_ols1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_ols.html#example-linear-model-plot-ols-py"><span>Linear Regression Example</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_ols.html#example-linear-model-plot-ols-py"><em>Linear Regression Example</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Ridge regression is basically minimizing a penalised version of the least-squared function. The..."><div class="figure" id="id6">
+</div><div class="thumbnailContainer" tooltip="Ridge regression is basically minimizing a penalised version of the least-squared function. The..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_ols_ridge_variance.html"><img alt="../../_images/plot_ols_ridge_variance1.png" src="../../_images/plot_ols_ridge_variance1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_ols_ridge_variance.html#example-linear-model-plot-ols-ridge-variance-py"><span>Ordinary Least Squares and Ridge Regression Variance</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_ols_ridge_variance.html#example-linear-model-plot-ols-ridge-variance-py"><em>Ordinary Least Squares and Ridge Regression Variance</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Show in the plot is how the logistic regression would, in this synthetic dataset, classify valu..."><div class="figure" id="id7">
+</div><div class="thumbnailContainer" tooltip="Show in the plot is how the logistic regression would, in this synthetic dataset, classify valu..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_logistic.html"><img alt="../../_images/plot_logistic1.png" src="../../_images/plot_logistic1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_logistic.html#example-linear-model-plot-logistic-py"><span>Logit function</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_logistic.html#example-linear-model-plot-logistic-py"><em>Logit function</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Features 1 and 2 of the diabetes-dataset are fitted and plotted below. It illustrates that alth..."><div class="figure" id="id8">
+</div><div class="thumbnailContainer" tooltip="Features 1 and 2 of the diabetes-dataset are fitted and plotted below. It illustrates that alth..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_ols_3d.html"><img alt="../../_images/plot_ols_3d1.png" src="../../_images/plot_ols_3d1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_ols_3d.html#example-linear-model-plot-ols-3d-py"><span>Sparsity Example: Fitting only features 1  and 2</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_ols_3d.html#example-linear-model-plot-ols-3d-py"><em>Sparsity Example: Fitting only features 1  and 2</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Computes a Bayesian Ridge Regression on a synthetic dataset."><div class="figure" id="id9">
+</div><div class="thumbnailContainer" tooltip="Computes a Bayesian Ridge Regression on a synthetic dataset."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_bayesian_ridge.html"><img alt="../../_images/plot_bayesian_ridge1.png" src="../../_images/plot_bayesian_ridge1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_bayesian_ridge.html#example-linear-model-plot-bayesian-ridge-py"><span>Bayesian Ridge Regression</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_bayesian_ridge.html#example-linear-model-plot-bayesian-ridge-py"><em>Bayesian Ridge Regression</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Here a sine function is fit with a polynomial of order 3, for values close to zero."><div class="figure" id="id10">
+</div><div class="thumbnailContainer" tooltip="Here a sine function is fit with a polynomial of order 3, for values close to zero."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_robust_fit.html"><img alt="../../_images/plot_robust_fit1.png" src="../../_images/plot_robust_fit1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_robust_fit.html#example-linear-model-plot-robust-fit-py"><span>Robust linear estimator fitting</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_robust_fit.html#example-linear-model-plot-robust-fit-py"><em>Robust linear estimator fitting</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Fit regression model with Bayesian Ridge Regression."><div class="figure" id="id11">
+</div><div class="thumbnailContainer" tooltip="Fit regression model with Bayesian Ridge Regression."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_ard.html"><img alt="../../_images/plot_ard1.png" src="../../_images/plot_ard1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_ard.html#example-linear-model-plot-ard-py"><span>Automatic Relevance Determination Regression (ARD)</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_ard.html#example-linear-model-plot-ard-py"><em>Automatic Relevance Determination Regression (ARD)</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Computes a Theil-Sen Regression on a synthetic dataset."><div class="figure" id="id12">
+</div><div class="thumbnailContainer" tooltip="Computes a Theil-Sen Regression on a synthetic dataset."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_theilsen.html"><img alt="../../_images/plot_theilsen1.png" src="../../_images/plot_theilsen1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_theilsen.html#example-linear-model-plot-theilsen-py"><span>Theil-Sen Regression</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_theilsen.html#example-linear-model-plot-theilsen-py"><em>Theil-Sen Regression</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example demonstrates the problems of underfitting and overfitting and how we can use linea..."><div class="figure" id="id13">
+</div><div class="thumbnailContainer" tooltip="This example demonstrates the problems of underfitting and overfitting and how we can use linea..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_underfitting_overfitting.html"><img alt="../../_images/plot_underfitting_overfitting1.png" src="../../_images/plot_underfitting_overfitting1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_underfitting_overfitting.html#example-model-selection-plot-underfitting-overfitting-py"><span>Underfitting vs. Overfitting</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_underfitting_overfitting.html#example-model-selection-plot-underfitting-overfitting-py"><em>Underfitting vs. Overfitting</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -423,8 +481,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.linear_model.LinearRegression.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.linear_model.LassoLarsIC.html">Previous
+      </a>
+    </div>
     
      </div>
 

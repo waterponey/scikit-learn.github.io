@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.datasets.fetch_lfw_people" href="sklearn.datasets.fetch_lfw_people.html" />
+    <link rel="prev" title="sklearn.datasets.load_iris" href="sklearn.datasets.load_iris.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.datasets.load_iris.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.datas...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.datasets.load_iris
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.datasets</span></code>.fetch_lfw_pairs</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.datasets</span></tt>.fetch_lfw_pairs</a></li>
 </ul>
 
     </div>
@@ -123,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-datasets-fetch-lfw-pairs">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></code></a>.fetch_lfw_pairs<a class="headerlink" href="#sklearn-datasets-fetch-lfw-pairs" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></tt></a>.fetch_lfw_pairs<a class="headerlink" href="#sklearn-datasets-fetch-lfw-pairs" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.datasets.fetch_lfw_pairs">
-<code class="descclassname">sklearn.datasets.</code><code class="descname">fetch_lfw_pairs</code><span class="sig-paren">(</span><em>subset='train'</em>, <em>data_home=None</em>, <em>funneled=True</em>, <em>resize=0.5</em>, <em>color=False</em>, <em>slice_=(slice(70</em>, <em>195</em>, <em>None)</em>, <em>slice(78</em>, <em>172</em>, <em>None))</em>, <em>download_if_missing=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/datasets/lfw.py#L387"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.fetch_lfw_pairs" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.datasets.</tt><tt class="descname">fetch_lfw_pairs</tt><big>(</big><em>subset='train'</em>, <em>data_home=None</em>, <em>funneled=True</em>, <em>resize=0.5</em>, <em>color=False</em>, <em>slice_=(slice(70</em>, <em>195</em>, <em>None)</em>, <em>slice(78</em>, <em>172</em>, <em>None))</em>, <em>download_if_missing=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/datasets/lfw.py#L387"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.fetch_lfw_pairs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Loader for the Labeled Faces in the Wild (LFW) pairs dataset</p>
 <p>This dataset is a collection of JPEG pictures of famous people
 collected on the internet, all details are available on the
@@ -148,7 +188,7 @@ the same person.</p>
 <div></div></blockquote>
 <p>The original images are 250 x 250 pixels, but the default slice and resize
 arguments reduce them to 62 x 74.</p>
-<p>Read more in the <a class="reference internal" href="../../datasets/labeled_faces.html#labeled-faces-in-the-wild"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../../datasets/labeled_faces.html#labeled-faces-in-the-wild"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -197,13 +237,13 @@ instead of trying to download the data from the source site.</p>
 <p><strong>data</strong> : numpy array of shape (2200, 5828)</p>
 <blockquote>
 <div><p>Each row corresponds to 2 ravel&#8217;d face images of original size 62 x 47
-pixels. Changing the <code class="docutils literal"><span class="pre">slice_</span></code> or resize parameters will change the shape
+pixels. Changing the <tt class="docutils literal"><span class="pre">slice_</span></tt> or resize parameters will change the shape
 of the output.</p>
 </div></blockquote>
 <p><strong>pairs</strong> : numpy array of shape (2200, 2, 62, 47)</p>
 <blockquote>
 <div><p>Each row has 2 face images corresponding to same or different person
-from the dataset containing 5749 people. Changing the <code class="docutils literal"><span class="pre">slice_</span></code> or resize
+from the dataset containing 5749 people. Changing the <tt class="docutils literal"><span class="pre">slice_</span></tt> or resize
 parameters will change the shape of the output.</p>
 </div></blockquote>
 <p><strong>target</strong> : numpy array of shape (13233,)</p>
@@ -235,8 +275,12 @@ different persons or the same person.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.datasets.fetch_lfw_pairs.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.datasets.load_iris.html">Previous
+      </a>
+    </div>
     
      </div>
 

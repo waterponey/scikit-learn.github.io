@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.preprocessing.KernelCenterer" href="sklearn.preprocessing.KernelCenterer.html" />
+    <link rel="prev" title="sklearn.preprocessing.FunctionTransformer" href="sklearn.preprocessing.FunctionTransformer.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.preprocessing.FunctionTransformer.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.prepr...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.preprocessing.FunctionTransformer
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.preprocessing</span></code>.Imputer</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-preprocessing-imputer">Examples using <code class="docutils literal"><span class="pre">sklearn.preprocessing.Imputer</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.preprocessing</span></tt>.Imputer</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-preprocessing-imputer">Examples using <tt class="docutils literal"><span class="pre">sklearn.preprocessing.Imputer</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,15 +166,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-preprocessing-imputer">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.preprocessing" title="sklearn.preprocessing"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.preprocessing</span></code></a>.Imputer<a class="headerlink" href="#sklearn-preprocessing-imputer" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.preprocessing" title="sklearn.preprocessing"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.preprocessing</span></tt></a>.Imputer<a class="headerlink" href="#sklearn-preprocessing-imputer" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.preprocessing.Imputer">
-<em class="property">class </em><code class="descclassname">sklearn.preprocessing.</code><code class="descname">Imputer</code><span class="sig-paren">(</span><em>missing_values='NaN'</em>, <em>strategy='mean'</em>, <em>axis=0</em>, <em>verbose=0</em>, <em>copy=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/imputation.py#L64"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.preprocessing.</tt><tt class="descname">Imputer</tt><big>(</big><em>missing_values='NaN'</em>, <em>strategy='mean'</em>, <em>axis=0</em>, <em>verbose=0</em>, <em>copy=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/imputation.py#L64"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Imputation transformer for completing missing values.</p>
-<p>Read more in the <a class="reference internal" href="../preprocessing.html#imputation"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../preprocessing.html#imputation"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -193,9 +233,9 @@ a new copy will always be made, even if <cite>copy=False</cite>:</p>
 </table>
 <p class="rubric">Notes</p>
 <ul class="simple">
-<li>When <code class="docutils literal"><span class="pre">axis=0</span></code>, columns which only contained missing values at <cite>fit</cite>
+<li>When <tt class="docutils literal"><span class="pre">axis=0</span></tt>, columns which only contained missing values at <cite>fit</cite>
 are discarded upon <cite>transform</cite>.</li>
-<li>When <code class="docutils literal"><span class="pre">axis=1</span></code>, an exception is raised if there are rows for which it is
+<li>When <tt class="docutils literal"><span class="pre">axis=1</span></tt>, an exception is raised if there are rows for which it is
 not possible to fill in the missing values (e.g., because they only
 contain missing values).</li>
 </ul>
@@ -206,16 +246,31 @@ contain missing values).</li>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.preprocessing.Imputer.fit" title="sklearn.preprocessing.Imputer.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit the imputer on X.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.preprocessing.Imputer.fit_transform" title="sklearn.preprocessing.Imputer.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.preprocessing.Imputer.get_params" title="sklearn.preprocessing.Imputer.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.preprocessing.Imputer.set_params" title="sklearn.preprocessing.Imputer.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.preprocessing.Imputer.transform" title="sklearn.preprocessing.Imputer.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
+<td>Impute all missing values in X.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.preprocessing.Imputer.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>missing_values='NaN'</em>, <em>strategy='mean'</em>, <em>axis=0</em>, <em>verbose=0</em>, <em>copy=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/imputation.py#L118"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>missing_values='NaN'</em>, <em>strategy='mean'</em>, <em>axis=0</em>, <em>verbose=0</em>, <em>copy=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/imputation.py#L118"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.Imputer.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/imputation.py#L126"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/imputation.py#L126"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the imputer on X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -223,8 +278,8 @@ contain missing values).</li>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>X</strong> : {array-like, sparse matrix}, shape (n_samples, n_features)</p>
 <blockquote>
-<div><p>Input data, where <code class="docutils literal"><span class="pre">n_samples</span></code> is the number of samples and
-<code class="docutils literal"><span class="pre">n_features</span></code> is the number of features.</p>
+<div><p>Input data, where <tt class="docutils literal"><span class="pre">n_samples</span></tt> is the number of samples and
+<tt class="docutils literal"><span class="pre">n_features</span></tt> is the number of features.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -240,7 +295,7 @@ contain missing values).</li>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.Imputer.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -270,7 +325,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.Imputer.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -295,11 +350,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.Imputer.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -313,7 +368,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.Imputer.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/imputation.py#L302"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/imputation.py#L302"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.Imputer.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Impute all missing values in X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -332,10 +387,10 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-preprocessing-imputer">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.preprocessing.Imputer</span></code><a class="headerlink" href="#examples-using-sklearn-preprocessing-imputer" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example shows that imputing the missing values can give better results than discarding the..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.preprocessing.Imputer</span></tt><a class="headerlink" href="#examples-using-sklearn-preprocessing-imputer" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example shows that imputing the missing values can give better results than discarding the..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./missing_values.html"><img alt="../../_images/missing_values1.png" src="../../_images/missing_values1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/missing_values.html#example-missing-values-py"><span>Imputing missing values before building an estimator</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/missing_values.html#example-missing-values-py"><em>Imputing missing values before building an estimator</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -352,8 +407,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.preprocessing.Imputer.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.preprocessing.FunctionTransformer.html">Previous
+      </a>
+    </div>
     
      </div>
 

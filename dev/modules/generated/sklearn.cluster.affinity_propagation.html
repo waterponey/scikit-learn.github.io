@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.cluster.dbscan" href="sklearn.cluster.dbscan.html" />
+    <link rel="prev" title="sklearn.cluster.ward_tree" href="sklearn.cluster.ward_tree.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.cluster.ward_tree.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.clust...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.cluster.ward_tree
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cluster</span></code>.affinity_propagation</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-cluster-affinity-propagation">Examples using <code class="docutils literal"><span class="pre">sklearn.cluster.affinity_propagation</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cluster</span></tt>.affinity_propagation</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-cluster-affinity-propagation">Examples using <tt class="docutils literal"><span class="pre">sklearn.cluster.affinity_propagation</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,15 +166,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-cluster-affinity-propagation">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cluster" title="sklearn.cluster"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></code></a>.affinity_propagation<a class="headerlink" href="#sklearn-cluster-affinity-propagation" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cluster" title="sklearn.cluster"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></tt></a>.affinity_propagation<a class="headerlink" href="#sklearn-cluster-affinity-propagation" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.cluster.affinity_propagation">
-<code class="descclassname">sklearn.cluster.</code><code class="descname">affinity_propagation</code><span class="sig-paren">(</span><em>S</em>, <em>preference=None</em>, <em>convergence_iter=15</em>, <em>max_iter=200</em>, <em>damping=0.5</em>, <em>copy=True</em>, <em>verbose=False</em>, <em>return_n_iter=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cluster/affinity_propagation_.py#L19"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.affinity_propagation" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.cluster.</tt><tt class="descname">affinity_propagation</tt><big>(</big><em>S</em>, <em>preference=None</em>, <em>convergence_iter=15</em>, <em>max_iter=200</em>, <em>damping=0.5</em>, <em>copy=True</em>, <em>verbose=False</em>, <em>return_n_iter=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cluster/affinity_propagation_.py#L19"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.affinity_propagation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform Affinity Propagation Clustering of data</p>
-<p>Read more in the <a class="reference internal" href="../clustering.html#affinity-propagation"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../clustering.html#affinity-propagation"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -206,10 +246,10 @@ Between Data Points&#8221;, Science Feb. 2007</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-cluster-affinity-propagation">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.cluster.affinity_propagation</span></code><a class="headerlink" href="#examples-using-sklearn-cluster-affinity-propagation" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example employs several unsupervised learning techniques to extract the stock market struc..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.cluster.affinity_propagation</span></tt><a class="headerlink" href="#examples-using-sklearn-cluster-affinity-propagation" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example employs several unsupervised learning techniques to extract the stock market struc..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/applications/plot_stock_market.html"><img alt="../../_images/plot_stock_market1.png" src="../../_images/plot_stock_market1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/plot_stock_market.html#example-applications-plot-stock-market-py"><span>Visualizing the stock market structure</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/applications/plot_stock_market.html#example-applications-plot-stock-market-py"><em>Visualizing the stock market structure</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -226,8 +266,12 @@ Between Data Points&#8221;, Science Feb. 2007</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.cluster.affinity_propagation.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.cluster.ward_tree.html">Previous
+      </a>
+    </div>
     
      </div>
 

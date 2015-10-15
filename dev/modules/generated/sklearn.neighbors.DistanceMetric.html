@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.neighbors.KernelDensity" href="sklearn.neighbors.KernelDensity.html" />
+    <link rel="prev" title="sklearn.neighbors.LSHForest" href="sklearn.neighbors.LSHForest.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.neighbors.LSHForest.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.neigh...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.neighbors.LSHForest
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.neighbors</span></code>.DistanceMetric</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.neighbors</span></tt>.DistanceMetric</a></li>
 </ul>
 
     </div>
@@ -123,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-neighbors-distancemetric">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.neighbors" title="sklearn.neighbors"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.neighbors</span></code></a>.DistanceMetric<a class="headerlink" href="#sklearn-neighbors-distancemetric" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.neighbors" title="sklearn.neighbors"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.neighbors</span></tt></a>.DistanceMetric<a class="headerlink" href="#sklearn-neighbors-distancemetric" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.neighbors.DistanceMetric">
-<em class="property">class </em><code class="descclassname">sklearn.neighbors.</code><code class="descname">DistanceMetric</code><a class="headerlink" href="#sklearn.neighbors.DistanceMetric" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.neighbors.</tt><tt class="descname">DistanceMetric</tt><a class="headerlink" href="#sklearn.neighbors.DistanceMetric" title="Permalink to this definition">¶</a></dt>
 <dd><p>DistanceMetric class</p>
 <p>This class provides a uniform interface to fast distance metric
 functions.  The various metrics can be accessed via the <cite>get_metric</cite>
@@ -166,7 +206,7 @@ distance metric classes:</p>
 <li></li>
 </ul>
 </td>
-<td><code class="docutils literal"><span class="pre">sqrt(sum((x</span> <span class="pre">-</span> <span class="pre">y)^2))</span></code></td>
+<td><tt class="docutils literal"><span class="pre">sqrt(sum((x</span> <span class="pre">-</span> <span class="pre">y)^2))</span></tt></td>
 </tr>
 <tr class="row-odd"><td>&#8220;manhattan&#8221;</td>
 <td>ManhattanDistance</td>
@@ -174,7 +214,7 @@ distance metric classes:</p>
 <li></li>
 </ul>
 </td>
-<td><code class="docutils literal"><span class="pre">sum(|x</span> <span class="pre">-</span> <span class="pre">y|)</span></code></td>
+<td><tt class="docutils literal"><span class="pre">sum(|x</span> <span class="pre">-</span> <span class="pre">y|)</span></tt></td>
 </tr>
 <tr class="row-even"><td>&#8220;chebyshev&#8221;</td>
 <td>ChebyshevDistance</td>
@@ -182,27 +222,27 @@ distance metric classes:</p>
 <li></li>
 </ul>
 </td>
-<td><code class="docutils literal"><span class="pre">sum(max(|x</span> <span class="pre">-</span> <span class="pre">y|))</span></code></td>
+<td><tt class="docutils literal"><span class="pre">sum(max(|x</span> <span class="pre">-</span> <span class="pre">y|))</span></tt></td>
 </tr>
 <tr class="row-odd"><td>&#8220;minkowski&#8221;</td>
 <td>MinkowskiDistance</td>
 <td>p</td>
-<td><code class="docutils literal"><span class="pre">sum(|x</span> <span class="pre">-</span> <span class="pre">y|^p)^(1/p)</span></code></td>
+<td><tt class="docutils literal"><span class="pre">sum(|x</span> <span class="pre">-</span> <span class="pre">y|^p)^(1/p)</span></tt></td>
 </tr>
 <tr class="row-even"><td>&#8220;wminkowski&#8221;</td>
 <td>WMinkowskiDistance</td>
 <td>p, w</td>
-<td><code class="docutils literal"><span class="pre">sum(w</span> <span class="pre">*</span> <span class="pre">|x</span> <span class="pre">-</span> <span class="pre">y|^p)^(1/p)</span></code></td>
+<td><tt class="docutils literal"><span class="pre">sum(w</span> <span class="pre">*</span> <span class="pre">|x</span> <span class="pre">-</span> <span class="pre">y|^p)^(1/p)</span></tt></td>
 </tr>
 <tr class="row-odd"><td>&#8220;seuclidean&#8221;</td>
 <td>SEuclideanDistance</td>
 <td>V</td>
-<td><code class="docutils literal"><span class="pre">sqrt(sum((x</span> <span class="pre">-</span> <span class="pre">y)^2</span> <span class="pre">/</span> <span class="pre">V))</span></code></td>
+<td><tt class="docutils literal"><span class="pre">sqrt(sum((x</span> <span class="pre">-</span> <span class="pre">y)^2</span> <span class="pre">/</span> <span class="pre">V))</span></tt></td>
 </tr>
 <tr class="row-even"><td>&#8220;mahalanobis&#8221;</td>
 <td>MahalanobisDistance</td>
 <td>V or VI</td>
-<td><code class="docutils literal"><span class="pre">sqrt((x</span> <span class="pre">-</span> <span class="pre">y)'</span> <span class="pre">V^-1</span> <span class="pre">(x</span> <span class="pre">-</span> <span class="pre">y))</span></code></td>
+<td><tt class="docutils literal"><span class="pre">sqrt((x</span> <span class="pre">-</span> <span class="pre">y)'</span> <span class="pre">V^-1</span> <span class="pre">(x</span> <span class="pre">-</span> <span class="pre">y))</span></tt></td>
 </tr>
 </tbody>
 </table>
@@ -247,15 +287,15 @@ real-valued vectors.</p>
 </tr>
 <tr class="row-even"><td>&#8220;hamming&#8221;</td>
 <td>HammingDistance</td>
-<td><code class="docutils literal"><span class="pre">N_unequal(x,</span> <span class="pre">y)</span> <span class="pre">/</span> <span class="pre">N_tot</span></code></td>
+<td><tt class="docutils literal"><span class="pre">N_unequal(x,</span> <span class="pre">y)</span> <span class="pre">/</span> <span class="pre">N_tot</span></tt></td>
 </tr>
 <tr class="row-odd"><td>&#8220;canberra&#8221;</td>
 <td>CanberraDistance</td>
-<td><code class="docutils literal"><span class="pre">sum(|x</span> <span class="pre">-</span> <span class="pre">y|</span> <span class="pre">/</span> <span class="pre">(|x|</span> <span class="pre">+</span> <span class="pre">|y|))</span></code></td>
+<td><tt class="docutils literal"><span class="pre">sum(|x</span> <span class="pre">-</span> <span class="pre">y|</span> <span class="pre">/</span> <span class="pre">(|x|</span> <span class="pre">+</span> <span class="pre">|y|))</span></tt></td>
 </tr>
 <tr class="row-even"><td>&#8220;braycurtis&#8221;</td>
 <td>BrayCurtisDistance</td>
-<td><code class="docutils literal"><span class="pre">sum(|x</span> <span class="pre">-</span> <span class="pre">y|)</span> <span class="pre">/</span> <span class="pre">(sum(|x|)</span> <span class="pre">+</span> <span class="pre">sum(|y|))</span></code></td>
+<td><tt class="docutils literal"><span class="pre">sum(|x</span> <span class="pre">-</span> <span class="pre">y|)</span> <span class="pre">/</span> <span class="pre">(sum(|x|)</span> <span class="pre">+</span> <span class="pre">sum(|y|))</span></tt></td>
 </tr>
 </tbody>
 </table>
@@ -336,7 +376,7 @@ abbreviations are used:</p>
 </tr>
 </tbody>
 </table>
-<p>Here <code class="docutils literal"><span class="pre">func</span></code> is a function which takes two one-dimensional numpy
+<p>Here <tt class="docutils literal"><span class="pre">func</span></tt> is a function which takes two one-dimensional numpy
 arrays, and returns a distance.  Note that in order to be used within
 the BallTree, the distance must be a true metric:
 i.e. it must satisfy the following properties</p>
@@ -356,29 +396,29 @@ scaling as other distances.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neighbors.DistanceMetric.dist_to_rdist" title="sklearn.neighbors.DistanceMetric.dist_to_rdist"><code class="xref py py-obj docutils literal"><span class="pre">dist_to_rdist</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neighbors.DistanceMetric.dist_to_rdist" title="sklearn.neighbors.DistanceMetric.dist_to_rdist"><tt class="xref py py-obj docutils literal"><span class="pre">dist_to_rdist</span></tt></a></td>
 <td>Convert the true distance to the reduced distance.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.neighbors.DistanceMetric.get_metric" title="sklearn.neighbors.DistanceMetric.get_metric"><code class="xref py py-obj docutils literal"><span class="pre">get_metric</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.neighbors.DistanceMetric.get_metric" title="sklearn.neighbors.DistanceMetric.get_metric"><tt class="xref py py-obj docutils literal"><span class="pre">get_metric</span></tt></a></td>
 <td>Get the given distance metric from the string identifier.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neighbors.DistanceMetric.pairwise" title="sklearn.neighbors.DistanceMetric.pairwise"><code class="xref py py-obj docutils literal"><span class="pre">pairwise</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neighbors.DistanceMetric.pairwise" title="sklearn.neighbors.DistanceMetric.pairwise"><tt class="xref py py-obj docutils literal"><span class="pre">pairwise</span></tt></a></td>
 <td>Compute the pairwise distances between X and Y</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.neighbors.DistanceMetric.rdist_to_dist" title="sklearn.neighbors.DistanceMetric.rdist_to_dist"><code class="xref py py-obj docutils literal"><span class="pre">rdist_to_dist</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.neighbors.DistanceMetric.rdist_to_dist" title="sklearn.neighbors.DistanceMetric.rdist_to_dist"><tt class="xref py py-obj docutils literal"><span class="pre">rdist_to_dist</span></tt></a></td>
 <td>Convert the Reduced distance to the true distance.</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.neighbors.DistanceMetric.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sklearn.neighbors.DistanceMetric.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#sklearn.neighbors.DistanceMetric.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.neighbors.DistanceMetric.dist_to_rdist">
-<code class="descname">dist_to_rdist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sklearn.neighbors.DistanceMetric.dist_to_rdist" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">dist_to_rdist</tt><big>(</big><big>)</big><a class="headerlink" href="#sklearn.neighbors.DistanceMetric.dist_to_rdist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert the true distance to the reduced distance.</p>
 <p>The reduced distance, defined for some metrics, is a computationally
 more efficent measure which preserves the rank of the true distance.
@@ -386,9 +426,9 @@ For example, in the Euclidean distance metric, the reduced distance
 is the squared-euclidean distance.</p>
 </dd></dl>
 
-<dl class="method">
+<dl class="staticmethod">
 <dt id="sklearn.neighbors.DistanceMetric.get_metric">
-<code class="descname">get_metric</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sklearn.neighbors.DistanceMetric.get_metric" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><tt class="descname">get_metric</tt><big>(</big><big>)</big><a class="headerlink" href="#sklearn.neighbors.DistanceMetric.get_metric" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the given distance metric from the string identifier.</p>
 <p>See the docstring of DistanceMetric for a list of available metrics.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -411,7 +451,7 @@ is the squared-euclidean distance.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.DistanceMetric.pairwise">
-<code class="descname">pairwise</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sklearn.neighbors.DistanceMetric.pairwise" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">pairwise</tt><big>(</big><big>)</big><a class="headerlink" href="#sklearn.neighbors.DistanceMetric.pairwise" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the pairwise distances between X and Y</p>
 <p>This is a convenience routine for the sake of testing.  For many
 metrics, the utilities in scipy.spatial.distance.cdist and
@@ -444,7 +484,7 @@ X and Y.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.DistanceMetric.rdist_to_dist">
-<code class="descname">rdist_to_dist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sklearn.neighbors.DistanceMetric.rdist_to_dist" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">rdist_to_dist</tt><big>(</big><big>)</big><a class="headerlink" href="#sklearn.neighbors.DistanceMetric.rdist_to_dist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert the Reduced distance to the true distance.</p>
 <p>The reduced distance, defined for some metrics, is a computationally
 more efficent measure which preserves the rank of the true distance.
@@ -468,8 +508,12 @@ is the squared-euclidean distance.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.neighbors.DistanceMetric.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.neighbors.LSHForest.html">Previous
+      </a>
+    </div>
     
      </div>
 

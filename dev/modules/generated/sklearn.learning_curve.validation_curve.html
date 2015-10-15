@@ -36,7 +36,7 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.metrics.pairwise.additive_chi2_kernel" href="sklearn.metrics.pairwise.additive_chi2_kernel.html" />
+    <link rel="next" title="sklearn.linear_model.ARDRegression" href="sklearn.linear_model.ARDRegression.html" />
     <link rel="prev" title="sklearn.learning_curve.learning_curve" href="sklearn.learning_curve.learning_curve.html" />
   
   
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.learning_curve</span></code>.validation_curve</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-learning-curve-validation-curve">Examples using <code class="docutils literal"><span class="pre">sklearn.learning_curve.validation_curve</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.learning_curve</span></tt>.validation_curve</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-learning-curve-validation-curve">Examples using <tt class="docutils literal"><span class="pre">sklearn.learning_curve.validation_curve</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -166,20 +166,20 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-learning-curve-validation-curve">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.learning_curve" title="sklearn.learning_curve"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.learning_curve</span></code></a>.validation_curve<a class="headerlink" href="#sklearn-learning-curve-validation-curve" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.learning_curve" title="sklearn.learning_curve"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.learning_curve</span></tt></a>.validation_curve<a class="headerlink" href="#sklearn-learning-curve-validation-curve" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.learning_curve.validation_curve">
-<code class="descclassname">sklearn.learning_curve.</code><code class="descname">validation_curve</code><span class="sig-paren">(</span><em>estimator</em>, <em>X</em>, <em>y</em>, <em>param_name</em>, <em>param_range</em>, <em>cv=None</em>, <em>scoring=None</em>, <em>n_jobs=1</em>, <em>pre_dispatch='all'</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/learning_curve.py#L242"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.learning_curve.validation_curve" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.learning_curve.</tt><tt class="descname">validation_curve</tt><big>(</big><em>estimator</em>, <em>X</em>, <em>y</em>, <em>param_name</em>, <em>param_range</em>, <em>cv=None</em>, <em>scoring=None</em>, <em>n_jobs=1</em>, <em>pre_dispatch='all'</em>, <em>verbose=0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/learning_curve.py#L242"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.learning_curve.validation_curve" title="Permalink to this definition">¶</a></dt>
 <dd><p>Validation curve.</p>
 <p>Determine training and test scores for varying parameter values.</p>
 <p>Compute scores for an estimator with different values of a specified
 parameter. This is similar to grid search with one parameter. However, this
 will also compute training scores and is merely a utility for plotting the
 results.</p>
-<p>Read more in the <a class="reference internal" href="../learning_curve.html#validation-curve"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../learning_curve.html#validation-curve"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -218,17 +218,17 @@ Possible inputs for cv are:</p>
 <li>An iterable yielding train/test splits.</li>
 </ul>
 </div></blockquote>
-<p>For integer/None inputs, if <code class="docutils literal"><span class="pre">y</span></code> is binary or multiclass,
-<code class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></code> used. If the estimator is a classifier
-or if <code class="docutils literal"><span class="pre">y</span></code> is neither binary nor multiclass, <code class="xref py py-class docutils literal"><span class="pre">KFold</span></code> is used.</p>
-<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a> for the various
+<p>For integer/None inputs, if <tt class="docutils literal"><span class="pre">y</span></tt> is binary or multiclass,
+<tt class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></tt> used. If the estimator is a classifier
+or if <tt class="docutils literal"><span class="pre">y</span></tt> is neither binary nor multiclass, <tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt> is used.</p>
+<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a> for the various
 cross-validation strategies that can be used here.</p>
 </div></blockquote>
 <p><strong>scoring</strong> : string, callable or None, optional, default: None</p>
 <blockquote>
 <div><p>A string (see model evaluation documentation) or
 a scorer callable object / function with signature
-<code class="docutils literal"><span class="pre">scorer(estimator,</span> <span class="pre">X,</span> <span class="pre">y)</span></code>.</p>
+<tt class="docutils literal"><span class="pre">scorer(estimator,</span> <span class="pre">X,</span> <span class="pre">y)</span></tt>.</p>
 </div></blockquote>
 <p><strong>n_jobs</strong> : integer, optional</p>
 <blockquote>
@@ -260,14 +260,14 @@ be an expression like &#8216;2*n_jobs&#8217;.</p>
 </table>
 <p class="rubric">Notes</p>
 <p>See
-<a class="reference internal" href="../../auto_examples/model_selection/plot_validation_curve.html#example-model-selection-plot-validation-curve-py"><span>examples/model_selection/plot_validation_curve.py</span></a></p>
+<a class="reference internal" href="../../auto_examples/model_selection/plot_validation_curve.html#example-model-selection-plot-validation-curve-py"><em>examples/model_selection/plot_validation_curve.py</em></a></p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-learning-curve-validation-curve">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.learning_curve.validation_curve</span></code><a class="headerlink" href="#examples-using-sklearn-learning-curve-validation-curve" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="In this plot you can see the training scores and validation scores of an SVM for different valu..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.learning_curve.validation_curve</span></tt><a class="headerlink" href="#examples-using-sklearn-learning-curve-validation-curve" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="In this plot you can see the training scores and validation scores of an SVM for different valu..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_validation_curve.html"><img alt="../../_images/plot_validation_curve1.png" src="../../_images/plot_validation_curve1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_validation_curve.html#example-model-selection-plot-validation-curve-py"><span>Plotting Validation Curves</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_validation_curve.html#example-model-selection-plot-validation-curve-py"><em>Plotting Validation Curves</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

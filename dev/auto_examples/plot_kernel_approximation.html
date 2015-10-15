@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,19 +163,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="explicit-feature-map-approximation-for-rbf-kernels">
 <span id="example-plot-kernel-approximation-py"></span><h1>Explicit feature map approximation for RBF kernels<a class="headerlink" href="#explicit-feature-map-approximation-for-rbf-kernels" title="Permalink to this headline">¶</a></h1>
 <p>An example illustrating the approximation of the feature map
 of an RBF kernel.</p>
-<p>It shows how to use <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.RBFSampler.html#sklearn.kernel_approximation.RBFSampler" title="sklearn.kernel_approximation.RBFSampler"><code class="xref py py-class docutils literal"><span class="pre">RBFSampler</span></code></a> and <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.Nystroem.html#sklearn.kernel_approximation.Nystroem" title="sklearn.kernel_approximation.Nystroem"><code class="xref py py-class docutils literal"><span class="pre">Nystroem</span></code></a> to
+<p>It shows how to use <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.RBFSampler.html#sklearn.kernel_approximation.RBFSampler" title="sklearn.kernel_approximation.RBFSampler"><tt class="xref py py-class docutils literal"><span class="pre">RBFSampler</span></tt></a> and <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.Nystroem.html#sklearn.kernel_approximation.Nystroem" title="sklearn.kernel_approximation.Nystroem"><tt class="xref py py-class docutils literal"><span class="pre">Nystroem</span></tt></a> to
 approximate the feature map of an RBF kernel for classification with an SVM on
 the digits dataset. Results using a linear SVM in the original space, a linear
 SVM using the approximate mappings and using a kernelized SVM are compared.
 Timings and accuracy for varying amounts of Monte Carlo samplings (in the case
-of <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.RBFSampler.html#sklearn.kernel_approximation.RBFSampler" title="sklearn.kernel_approximation.RBFSampler"><code class="xref py py-class docutils literal"><span class="pre">RBFSampler</span></code></a>, which uses random Fourier features) and different sized
-subsets of the training set (for <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.Nystroem.html#sklearn.kernel_approximation.Nystroem" title="sklearn.kernel_approximation.Nystroem"><code class="xref py py-class docutils literal"><span class="pre">Nystroem</span></code></a>) for the approximate mapping
+of <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.RBFSampler.html#sklearn.kernel_approximation.RBFSampler" title="sklearn.kernel_approximation.RBFSampler"><tt class="xref py py-class docutils literal"><span class="pre">RBFSampler</span></tt></a>, which uses random Fourier features) and different sized
+subsets of the training set (for <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.Nystroem.html#sklearn.kernel_approximation.Nystroem" title="sklearn.kernel_approximation.Nystroem"><tt class="xref py py-class docutils literal"><span class="pre">Nystroem</span></tt></a>) for the approximate mapping
 are shown.</p>
 <p>Please note that the dataset here is not large enough to show the benefits
 of kernel approximation, as the exact SVM is still reasonably fast.</p>
@@ -183,7 +183,7 @@ of kernel approximation, as the exact SVM is still reasonably fast.</p>
 comes at a greater cost. This means there is a tradeoff between runtime and
 accuracy, given by the parameter n_components. Note that solving the Linear
 SVM and also the approximate kernel SVM could be greatly accelerated by using
-stochastic gradient descent via <a class="reference internal" href="../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier" title="sklearn.linear_model.SGDClassifier"><code class="xref py py-class docutils literal"><span class="pre">sklearn.linear_model.SGDClassifier</span></code></a>.
+stochastic gradient descent via <a class="reference internal" href="../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier" title="sklearn.linear_model.SGDClassifier"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.linear_model.SGDClassifier</span></tt></a>.
 This is not easily possible for the case of the kernelized SVM.</p>
 <p>The second plot visualized the decision surfaces of the RBF kernel SVM and
 the linear SVM with approximate kernel maps.
@@ -194,15 +194,15 @@ the decision surface in 64 dimensions. In particular note that
 a datapoint (represented as a dot) does not necessarily be classified
 into the region it is lying in, since it will not lie on the plane
 that the first two principal components span.</p>
-<p>The usage of <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.RBFSampler.html#sklearn.kernel_approximation.RBFSampler" title="sklearn.kernel_approximation.RBFSampler"><code class="xref py py-class docutils literal"><span class="pre">RBFSampler</span></code></a> and <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.Nystroem.html#sklearn.kernel_approximation.Nystroem" title="sklearn.kernel_approximation.Nystroem"><code class="xref py py-class docutils literal"><span class="pre">Nystroem</span></code></a> is described in detail
-in <a class="reference internal" href="../modules/kernel_approximation.html#kernel-approximation"><span>Kernel Approximation</span></a>.</p>
+<p>The usage of <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.RBFSampler.html#sklearn.kernel_approximation.RBFSampler" title="sklearn.kernel_approximation.RBFSampler"><tt class="xref py py-class docutils literal"><span class="pre">RBFSampler</span></tt></a> and <a class="reference internal" href="../modules/generated/sklearn.kernel_approximation.Nystroem.html#sklearn.kernel_approximation.Nystroem" title="sklearn.kernel_approximation.Nystroem"><tt class="xref py py-class docutils literal"><span class="pre">Nystroem</span></tt></a> is described in detail
+in <a class="reference internal" href="../modules/kernel_approximation.html#kernel-approximation"><em>Kernel Approximation</em></a>.</p>
 <ul class="horizontal">
 <li><a class="first reference internal image-reference" href="../_images/plot_kernel_approximation_001.png"><img alt="../_images/plot_kernel_approximation_001.png" src="../_images/plot_kernel_approximation_001.png" style="width: 376.0px; height: 376.0px;" /></a>
 </li>
 <li><a class="first reference internal image-reference" href="../_images/plot_kernel_approximation_002.png"><img alt="../_images/plot_kernel_approximation_002.png" src="../_images/plot_kernel_approximation_002.png" style="width: 564.0px; height: 235.0px;" /></a>
 </li>
 </ul>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_kernel_approximation.py"><code class="xref download docutils literal"><span class="pre">plot_kernel_approximation.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_kernel_approximation.py"><tt class="xref download docutils literal"><span class="pre">plot_kernel_approximation.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Gael Varoquaux &lt;gael dot varoquaux at normalesup dot org&gt;</span>

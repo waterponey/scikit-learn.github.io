@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="plot-different-svm-classifiers-in-the-iris-dataset">
 <span id="example-svm-plot-iris-py"></span><h1>Plot different SVM classifiers in the iris dataset<a class="headerlink" href="#plot-different-svm-classifiers-in-the-iris-dataset" title="Permalink to this headline">¶</a></h1>
@@ -175,14 +175,14 @@ dataset. We only consider the first 2 features of this dataset:</p>
 </ul>
 <p>This example shows how to plot the decision surface for four SVM classifiers
 with different kernels.</p>
-<p>The linear models <code class="docutils literal"><span class="pre">LinearSVC()</span></code> and <code class="docutils literal"><span class="pre">SVC(kernel='linear')</span></code> yield slightly
+<p>The linear models <tt class="docutils literal"><span class="pre">LinearSVC()</span></tt> and <tt class="docutils literal"><span class="pre">SVC(kernel='linear')</span></tt> yield slightly
 different decision boundaries. This can be a consequence of the following
 differences:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">LinearSVC</span></code> minimizes the squared hinge loss while <code class="docutils literal"><span class="pre">SVC</span></code> minimizes the
+<li><tt class="docutils literal"><span class="pre">LinearSVC</span></tt> minimizes the squared hinge loss while <tt class="docutils literal"><span class="pre">SVC</span></tt> minimizes the
 regular hinge loss.</li>
-<li><code class="docutils literal"><span class="pre">LinearSVC</span></code> uses the One-vs-All (also known as One-vs-Rest) multiclass
-reduction while <code class="docutils literal"><span class="pre">SVC</span></code> uses the One-vs-One multiclass reduction.</li>
+<li><tt class="docutils literal"><span class="pre">LinearSVC</span></tt> uses the One-vs-All (also known as One-vs-Rest) multiclass
+reduction while <tt class="docutils literal"><span class="pre">SVC</span></tt> uses the One-vs-One multiclass reduction.</li>
 </ul>
 <p>Both linear models have linear decision boundaries (intersecting hyperplanes)
 while the non-linear kernel models (polynomial or Gaussian RBF) have more
@@ -196,7 +196,7 @@ expressive power, be aware that those intuitions don&#8217;t always generalize t
 more realistic high-dimensional problems.</p>
 </div>
 <img alt="../../_images/plot_iris_001.png" class="align-center" src="../../_images/plot_iris_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_iris.py"><code class="xref download docutils literal"><span class="pre">plot_iris.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_iris.py"><tt class="xref download docutils literal"><span class="pre">plot_iris.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>

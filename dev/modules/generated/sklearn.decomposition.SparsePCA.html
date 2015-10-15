@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.decomposition.MiniBatchSparsePCA" href="sklearn.decomposition.MiniBatchSparsePCA.html" />
+    <link rel="prev" title="sklearn.decomposition.NMF" href="sklearn.decomposition.NMF.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.decomposition.NMF.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.decom...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.decomposition.NMF
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.decomposition</span></code>.SparsePCA</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.decomposition</span></tt>.SparsePCA</a></li>
 </ul>
 
     </div>
@@ -123,18 +163,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-decomposition-sparsepca">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></code></a>.SparsePCA<a class="headerlink" href="#sklearn-decomposition-sparsepca" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></tt></a>.SparsePCA<a class="headerlink" href="#sklearn-decomposition-sparsepca" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.decomposition.SparsePCA">
-<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">SparsePCA</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>alpha=1</em>, <em>ridge_alpha=0.01</em>, <em>max_iter=1000</em>, <em>tol=1e-08</em>, <em>method='lars'</em>, <em>n_jobs=1</em>, <em>U_init=None</em>, <em>V_init=None</em>, <em>verbose=False</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/decomposition/sparse_pca.py#L14"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.decomposition.</tt><tt class="descname">SparsePCA</tt><big>(</big><em>n_components=None</em>, <em>alpha=1</em>, <em>ridge_alpha=0.01</em>, <em>max_iter=1000</em>, <em>tol=1e-08</em>, <em>method='lars'</em>, <em>n_jobs=1</em>, <em>U_init=None</em>, <em>V_init=None</em>, <em>verbose=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/sparse_pca.py#L14"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sparse Principal Components Analysis (SparsePCA)</p>
 <p>Finds the set of sparse components that can optimally reconstruct
 the data.  The amount of sparseness is controllable by the coefficient
 of the L1 penalty, given by the parameter alpha.</p>
-<p>Read more in the <a class="reference internal" href="../decomposition.html#sparsepca"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../decomposition.html#sparsepca"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -209,7 +249,7 @@ the estimated components are sparse.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.decomposition.PCA.html#sklearn.decomposition.PCA" title="sklearn.decomposition.PCA"><code class="xref py py-obj docutils literal"><span class="pre">PCA</span></code></a>, <a class="reference internal" href="sklearn.decomposition.MiniBatchSparsePCA.html#sklearn.decomposition.MiniBatchSparsePCA" title="sklearn.decomposition.MiniBatchSparsePCA"><code class="xref py py-obj docutils literal"><span class="pre">MiniBatchSparsePCA</span></code></a>, <a class="reference internal" href="sklearn.decomposition.DictionaryLearning.html#sklearn.decomposition.DictionaryLearning" title="sklearn.decomposition.DictionaryLearning"><code class="xref py py-obj docutils literal"><span class="pre">DictionaryLearning</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.decomposition.PCA.html#sklearn.decomposition.PCA" title="sklearn.decomposition.PCA"><tt class="xref py py-obj docutils literal"><span class="pre">PCA</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.MiniBatchSparsePCA.html#sklearn.decomposition.MiniBatchSparsePCA" title="sklearn.decomposition.MiniBatchSparsePCA"><tt class="xref py py-obj docutils literal"><span class="pre">MiniBatchSparsePCA</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.DictionaryLearning.html#sklearn.decomposition.DictionaryLearning" title="sklearn.decomposition.DictionaryLearning"><tt class="xref py py-obj docutils literal"><span class="pre">DictionaryLearning</span></tt></a></p>
 </div>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
@@ -218,16 +258,31 @@ the estimated components are sparse.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.SparsePCA.fit" title="sklearn.decomposition.SparsePCA.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit the model from data in X.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.SparsePCA.fit_transform" title="sklearn.decomposition.SparsePCA.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.SparsePCA.get_params" title="sklearn.decomposition.SparsePCA.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.SparsePCA.set_params" title="sklearn.decomposition.SparsePCA.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.SparsePCA.transform" title="sklearn.decomposition.SparsePCA.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X[,&nbsp;ridge_alpha])</td>
+<td>Least Squares projection of the data onto the sparse components.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.decomposition.SparsePCA.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>alpha=1</em>, <em>ridge_alpha=0.01</em>, <em>max_iter=1000</em>, <em>tol=1e-08</em>, <em>method='lars'</em>, <em>n_jobs=1</em>, <em>U_init=None</em>, <em>V_init=None</em>, <em>verbose=False</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/decomposition/sparse_pca.py#L81"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>n_components=None</em>, <em>alpha=1</em>, <em>ridge_alpha=0.01</em>, <em>max_iter=1000</em>, <em>tol=1e-08</em>, <em>method='lars'</em>, <em>n_jobs=1</em>, <em>U_init=None</em>, <em>V_init=None</em>, <em>verbose=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/sparse_pca.py#L81"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.decomposition.SparsePCA.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/decomposition/sparse_pca.py#L96"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/sparse_pca.py#L96"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model from data in X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -252,7 +307,7 @@ and n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.SparsePCA.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -282,7 +337,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.SparsePCA.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -307,11 +362,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.SparsePCA.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -325,7 +380,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.SparsePCA.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>ridge_alpha=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/decomposition/sparse_pca.py#L133"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>ridge_alpha=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/sparse_pca.py#L133"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.SparsePCA.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Least Squares projection of the data onto the sparse components.</p>
 <p>To avoid instability issues in case the system is under-determined,
 regularization can be applied (Ridge regression) via the
@@ -374,8 +429,12 @@ conditioning.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.decomposition.SparsePCA.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.decomposition.NMF.html">Previous
+      </a>
+    </div>
     
      </div>
 

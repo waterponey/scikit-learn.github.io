@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -167,7 +167,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="model-persistence">
 <span id="id1"></span><h1>3.4. Model persistence<a class="headerlink" href="#model-persistence" title="Permalink to this headline">¶</a></h1>
@@ -200,7 +200,7 @@ persistence model, namely <a class="reference external" href="http://docs.python
 </pre></div>
 </div>
 <p>In the specific case of the scikit, it may be more interesting to use
-joblib&#8217;s replacement of pickle (<code class="docutils literal"><span class="pre">joblib.dump</span></code> &amp; <code class="docutils literal"><span class="pre">joblib.load</span></code>),
+joblib&#8217;s replacement of pickle (<tt class="docutils literal"><span class="pre">joblib.dump</span></tt> &amp; <tt class="docutils literal"><span class="pre">joblib.load</span></tt>),
 which is more efficient on objects that carry large numpy arrays internally as
 is often the case for fitted scikit-learn estimators, but can only pickle to the
 disk and not to a string:</p>
@@ -216,7 +216,7 @@ with:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">joblib.dump returns a list of filenames. Each individual numpy array
-contained in the <code class="docutils literal"><span class="pre">clf</span></code> object is serialized as a separate file on the
+contained in the <tt class="docutils literal"><span class="pre">clf</span></tt> object is serialized as a separate file on the
 filesystem. All files are required in the same folder when reloading the
 model with joblib.load.</p>
 </div>

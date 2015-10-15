@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -170,33 +170,34 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="linear-and-quadratic-discriminant-analysis">
 <span id="lda-qda"></span><h1>1.2. Linear and Quadratic Discriminant Analysis<a class="headerlink" href="#linear-and-quadratic-discriminant-analysis" title="Permalink to this headline">¶</a></h1>
 <p>Linear Discriminant Analysis
-(<a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><code class="xref py py-class docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis</span></code></a>) and Quadratic
+(<a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><tt class="xref py py-class docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis</span></tt></a>) and Quadratic
 Discriminant Analysis
-(<a class="reference internal" href="generated/sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.html#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis" title="sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis"><code class="xref py py-class docutils literal"><span class="pre">discriminant_analysis.QuadraticDiscriminantAnalysis</span></code></a>) are two classic
+(<a class="reference internal" href="generated/sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.html#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis" title="sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis"><tt class="xref py py-class docutils literal"><span class="pre">discriminant_analysis.QuadraticDiscriminantAnalysis</span></tt></a>) are two classic
 classifiers, with, as their names suggest, a linear and a quadratic decision
 surface, respectively.</p>
 <p>These classifiers are attractive because they have closed-form solutions that
 can be easily computed, are inherently multiclass, have proven to work well in
 practice and have no hyperparameters to tune.</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/classification/plot_lda_qda.html"><img alt="ldaqda" src="../_images/plot_lda_qda_0011.png" style="width: 640.0px; height: 480.0px;" /></a></strong></p><p>The plot shows decision boundaries for Linear Discriminant Analysis and
+<strong><a class="reference external image-reference" href="../auto_examples/classification/plot_lda_qda.html"><img alt="ldaqda" src="../_images/plot_lda_qda_0011.png" style="width: 640.0px; height: 480.0px;" /></a>
+</strong></p><p>The plot shows decision boundaries for Linear Discriminant Analysis and
 Quadratic Discriminant Analysis. The bottom row demonstrates that Linear
 Discriminant Analysis can only learn linear boundaries, while Quadratic
 Discriminant Analysis can learn quadratic boundaries and is therefore more
 flexible.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
-<p><a class="reference internal" href="../auto_examples/classification/plot_lda_qda.html#example-classification-plot-lda-qda-py"><span>Linear and Quadratic Discriminant Analysis with confidence ellipsoid</span></a>: Comparison of LDA and QDA
+<p><a class="reference internal" href="../auto_examples/classification/plot_lda_qda.html#example-classification-plot-lda-qda-py"><em>Linear and Quadratic Discriminant Analysis with confidence ellipsoid</em></a>: Comparison of LDA and QDA
 on synthetic data.</p>
 </div>
 <div class="section" id="dimensionality-reduction-using-linear-discriminant-analysis">
 <h2>1.2.1. Dimensionality reduction using Linear Discriminant Analysis<a class="headerlink" href="#dimensionality-reduction-using-linear-discriminant-analysis" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><code class="xref py py-class docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis</span></code></a> can be used to
+<p><a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><tt class="xref py py-class docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis</span></tt></a> can be used to
 perform supervised dimensionality reduction, by projecting the input data to a
 linear subspace consisting of the directions which maximize the separation
 between classes (in a precise sense discussed in the mathematics section
@@ -204,14 +205,14 @@ below). The dimension of the output is necessarily less that the number of
 classes, so this is a in general a rather strong dimensionality reduction, and
 only makes senses in a multiclass setting.</p>
 <p>This is implemented in
-<a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis.transform" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis.transform"><code class="xref py py-func docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis.transform</span></code></a>. The desired
-dimensionality can be set using the <code class="docutils literal"><span class="pre">n_components</span></code> constructor parameter.
+<a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis.transform" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis.transform"><tt class="xref py py-func docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis.transform</span></tt></a>. The desired
+dimensionality can be set using the <tt class="docutils literal"><span class="pre">n_components</span></tt> constructor parameter.
 This parameter has no influence on
-<a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis.fit" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis.fit"><code class="xref py py-func docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis.fit</span></code></a> or
-<a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis.predict" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis.predict"><code class="xref py py-func docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis.predict</span></code></a>.</p>
+<a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis.fit" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis.fit"><tt class="xref py py-func docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis.fit</span></tt></a> or
+<a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis.predict" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis.predict"><tt class="xref py py-func docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis.predict</span></tt></a>.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
-<p><a class="reference internal" href="../auto_examples/decomposition/plot_pca_vs_lda.html#example-decomposition-plot-pca-vs-lda-py"><span>Comparison of LDA and PCA 2D projection of Iris dataset</span></a>: Comparison of LDA and PCA
+<p><a class="reference internal" href="../auto_examples/decomposition/plot_pca_vs_lda.html#example-decomposition-plot-pca-vs-lda-py"><em>Comparison of LDA and PCA 2D projection of Iris dataset</em></a>: Comparison of LDA and PCA
 for dimensionality reduction of the Iris dataset</p>
 </div>
 </div>
@@ -248,7 +249,7 @@ log-probability ratios <img class="math" src="../_images/math/e97ecabcc51db3bd27
 <p class="last">If in the QDA model one assumes that the covariance matrices are diagonal,
 then this means that we assume the classes are conditionally independent,
 and the resulting classifier is equivalent to the Gaussian Naive Bayes
-classifier <a class="reference internal" href="generated/sklearn.naive_bayes.GaussianNB.html#sklearn.naive_bayes.GaussianNB" title="sklearn.naive_bayes.GaussianNB"><code class="xref py py-class docutils literal"><span class="pre">naive_bayes.GaussianNB</span></code></a>.</p>
+classifier <a class="reference internal" href="generated/sklearn.naive_bayes.GaussianNB.html#sklearn.naive_bayes.GaussianNB" title="sklearn.naive_bayes.GaussianNB"><tt class="xref py py-class docutils literal"><span class="pre">naive_bayes.GaussianNB</span></tt></a>.</p>
 </div>
 </div>
 <div class="section" id="mathematical-formulation-of-lda-dimensionality-reduction">
@@ -271,8 +272,8 @@ classifier, there is a dimensionality reduction by linear projection onto a
 onto the linear subspace <img class="math" src="../_images/math/7e92db8660cb5a445e9d83da1b9e47a123dece1a.png" alt="H_L"/> which maximize the variance of the
 <img class="math" src="../_images/math/5ee369a0219cf8053e73a6926064947a02d97434.png" alt="\mu^*_k"/> after projection (in effect, we are doing a form of PCA for the
 transformed class means <img class="math" src="../_images/math/5ee369a0219cf8053e73a6926064947a02d97434.png" alt="\mu^*_k"/>). This <img class="math" src="../_images/math/0a5711c7a37994043b2bc3bb374adca232491762.png" alt="L"/> corresponds to the
-<code class="docutils literal"><span class="pre">n_components</span></code> parameter used in the
-<a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis.transform" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis.transform"><code class="xref py py-func docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis.transform</span></code></a> method. See
+<tt class="docutils literal"><span class="pre">n_components</span></tt> parameter used in the
+<a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis.transform" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis.transform"><tt class="xref py py-func docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis.transform</span></tt></a> method. See
 <a class="footnote-reference" href="#id4" id="id2">[3]</a> for more details.</p>
 </div>
 <div class="section" id="shrinkage">
@@ -280,13 +281,13 @@ transformed class means <img class="math" src="../_images/math/5ee369a0219cf8053
 <p>Shrinkage is a tool to improve estimation of covariance matrices in situations
 where the number of training samples is small compared to the number of
 features. In this scenario, the empirical sample covariance is a poor
-estimator. Shrinkage LDA can be used by setting the <code class="docutils literal"><span class="pre">shrinkage</span></code> parameter of
-the <a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><code class="xref py py-class docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis</span></code></a> class to &#8216;auto&#8217;.
+estimator. Shrinkage LDA can be used by setting the <tt class="docutils literal"><span class="pre">shrinkage</span></tt> parameter of
+the <a class="reference internal" href="generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis" title="sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><tt class="xref py py-class docutils literal"><span class="pre">discriminant_analysis.LinearDiscriminantAnalysis</span></tt></a> class to &#8216;auto&#8217;.
 This automatically determines the optimal shrinkage parameter in an analytic
 way following the lemma introduced by Ledoit and Wolf <a class="footnote-reference" href="#id5" id="id3">[4]</a>. Note that
-currently shrinkage only works when setting the <code class="docutils literal"><span class="pre">solver</span></code> parameter to &#8216;lsqr&#8217;
+currently shrinkage only works when setting the <tt class="docutils literal"><span class="pre">solver</span></tt> parameter to &#8216;lsqr&#8217;
 or &#8216;eigen&#8217;.</p>
-<p>The <code class="docutils literal"><span class="pre">shrinkage</span></code> parameter can also be manually set between 0 and 1. In
+<p>The <tt class="docutils literal"><span class="pre">shrinkage</span></tt> parameter can also be manually set between 0 and 1. In
 particular, a value of 0 corresponds to no shrinkage (which means the empirical
 covariance matrix will be used) and a value of 1 corresponds to complete
 shrinkage (which means that the diagonal matrix of variances will be used as
@@ -294,7 +295,8 @@ an estimate for the covariance matrix). Setting this parameter to a value
 between these two extrema will estimate a shrunk version of the covariance
 matrix.</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/classification/plot_lda.html"><img alt="shrinkage" src="../_images/plot_lda_0011.png" style="width: 600.0px; height: 450.0px;" /></a></strong></p></div>
+<strong><a class="reference external image-reference" href="../auto_examples/classification/plot_lda.html"><img alt="shrinkage" src="../_images/plot_lda_0011.png" style="width: 600.0px; height: 450.0px;" /></a>
+</strong></p></div>
 <div class="section" id="estimation-algorithms">
 <h2>1.2.5. Estimation algorithms<a class="headerlink" href="#estimation-algorithms" title="Permalink to this headline">¶</a></h2>
 <p>The default solver is &#8216;svd&#8217;. It can perform both classification and transform,
@@ -310,7 +312,7 @@ compute the covariance matrix, so it might not be suitable for situations with
 a high number of features.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
-<p><a class="reference internal" href="../auto_examples/classification/plot_lda.html#example-classification-plot-lda-py"><span>Normal and Shrinkage Linear Discriminant Analysis for classification</span></a>: Comparison of LDA classifiers
+<p><a class="reference internal" href="../auto_examples/classification/plot_lda.html#example-classification-plot-lda-py"><em>Normal and Shrinkage Linear Discriminant Analysis for classification</em></a>: Comparison of LDA classifiers
 with and without shrinkage.</p>
 </div>
 <div class="topic">

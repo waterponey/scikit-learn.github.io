@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -179,7 +179,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="gaussian-processes">
 <span id="gaussian-process"></span><h1>1.7. Gaussian Processes<a class="headerlink" href="#gaussian-processes" title="Permalink to this headline">¶</a></h1>
@@ -196,7 +196,7 @@ correlation models).</li>
 empirical confidence intervals and exceedance probabilities that might be
 used to refit (online fitting, adaptive fitting) the prediction in some
 region of interest.</li>
-<li>Versatile: different <a class="reference internal" href="linear_model.html#linear-model"><span>linear regression models</span></a> and <a class="reference internal" href="#correlation-models"><span>correlation models</span></a> can be specified. Common models are provided, but
+<li>Versatile: different <a class="reference internal" href="linear_model.html#linear-model"><em>linear regression models</em></a> and <a class="reference internal" href="#correlation-models"><em>correlation models</em></a> can be specified. Common models are provided, but
 it is also possible to specify custom models provided they are
 stationary.</li>
 </ul>
@@ -253,14 +253,14 @@ parameters or alternatively it uses the given parameters.</p>
 <h3>1.7.1.2. Fitting Noisy Data<a class="headerlink" href="#fitting-noisy-data" title="Permalink to this headline">¶</a></h3>
 <p>When the data to be fit includes noise, the Gaussian process model can be
 used by specifying the variance of the noise for each point.
-<a class="reference internal" href="generated/sklearn.gaussian_process.GaussianProcess.html#sklearn.gaussian_process.GaussianProcess" title="sklearn.gaussian_process.GaussianProcess"><code class="xref py py-class docutils literal"><span class="pre">GaussianProcess</span></code></a> takes a parameter <code class="docutils literal"><span class="pre">nugget</span></code> which
+<a class="reference internal" href="generated/sklearn.gaussian_process.GaussianProcess.html#sklearn.gaussian_process.GaussianProcess" title="sklearn.gaussian_process.GaussianProcess"><tt class="xref py py-class docutils literal"><span class="pre">GaussianProcess</span></tt></a> takes a parameter <tt class="docutils literal"><span class="pre">nugget</span></tt> which
 is added to the diagonal of the correlation matrix between training points:
 in general this is a type of Tikhonov regularization.  In the special case
 of a squared-exponential correlation function, this normalization is
 equivalent to specifying a fractional variance in the input.  That is</p>
 <div class="math">
 <p><img src="../_images/math/b0997a6b918f5f8fc9a3615f1c8cb2d514a09296.png" alt="\mathrm{nugget}_i = \left[\frac{\sigma_i}{y_i}\right]^2"/></p>
-</div><p>With <code class="docutils literal"><span class="pre">nugget</span></code> and <code class="docutils literal"><span class="pre">corr</span></code> properly set, Gaussian Processes can be
+</div><p>With <tt class="docutils literal"><span class="pre">nugget</span></tt> and <tt class="docutils literal"><span class="pre">corr</span></tt> properly set, Gaussian Processes can be
 used to robustly recover an underlying function from noisy data:</p>
 <div class="figure align-center">
 <a class="reference external image-reference" href="../auto_examples/gaussian_process/plot_gp_regression.html"><img alt="../_images/plot_gp_regression_0021.png" src="../_images/plot_gp_regression_0021.png" /></a>
@@ -268,7 +268,7 @@ used to robustly recover an underlying function from noisy data:</p>
 <div class="topic">
 <p class="topic-title first">Other examples</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/gaussian_process/plot_gp_probabilistic_classification_after_regression.html#example-gaussian-process-plot-gp-probabilistic-classification-after-regression-py"><span>Gaussian Processes classification example: exploiting the probabilistic output</span></a></li>
+<li><a class="reference internal" href="../auto_examples/gaussian_process/plot_gp_probabilistic_classification_after_regression.html#example-gaussian-process-plot-gp-probabilistic-classification-after-regression-py"><em>Gaussian Processes classification example: exploiting the probabilistic output</em></a></li>
 </ul>
 </div>
 </div>
@@ -388,7 +388,7 @@ decomposition algorithm.</p>
 <h3>1.7.2.3. The empirical best linear unbiased predictor (EBLUP)<a class="headerlink" href="#the-empirical-best-linear-unbiased-predictor-eblup" title="Permalink to this headline">¶</a></h3>
 <p>Until now, both the autocorrelation and regression models were assumed given.
 In practice however they are never known in advance so that one has to make
-(motivated) empirical choices for these models <a class="reference internal" href="#correlation-models"><span>Correlation Models</span></a>.</p>
+(motivated) empirical choices for these models <a class="reference internal" href="#correlation-models"><em>Correlation Models</em></a>.</p>
 <p>Provided these choices are made, one should estimate the remaining unknown
 parameters involved in the BLUP. To do so, one uses the set of provided
 observations in conjunction with some inference technique. The present

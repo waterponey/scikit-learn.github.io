@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.linear_model.RANSACRegressor" href="sklearn.linear_model.RANSACRegressor.html" />
+    <link rel="prev" title="sklearn.linear_model.RandomizedLasso" href="sklearn.linear_model.RandomizedLasso.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.linear_model.RandomizedLasso.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.linea...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.linear_model.RandomizedLasso
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.linear_model</span></code>.RandomizedLogisticRegression</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.linear_model</span></tt>.RandomizedLogisticRegression</a></li>
 </ul>
 
     </div>
@@ -123,18 +163,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-linear-model-randomizedlogisticregression">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></code></a>.RandomizedLogisticRegression<a class="headerlink" href="#sklearn-linear-model-randomizedlogisticregression" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.RandomizedLogisticRegression<a class="headerlink" href="#sklearn-linear-model-randomizedlogisticregression" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.linear_model.RandomizedLogisticRegression">
-<em class="property">class </em><code class="descclassname">sklearn.linear_model.</code><code class="descname">RandomizedLogisticRegression</code><span class="sig-paren">(</span><em>C=1</em>, <em>scaling=0.5</em>, <em>sample_fraction=0.75</em>, <em>n_resampling=200</em>, <em>selection_threshold=0.25</em>, <em>tol=0.001</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>random_state=None</em>, <em>n_jobs=1</em>, <em>pre_dispatch='3*n_jobs'</em>, <em>memory=Memory(cachedir=None)</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/linear_model/randomized_l1.py#L371"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">RandomizedLogisticRegression</tt><big>(</big><em>C=1</em>, <em>scaling=0.5</em>, <em>sample_fraction=0.75</em>, <em>n_resampling=200</em>, <em>selection_threshold=0.25</em>, <em>tol=0.001</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>random_state=None</em>, <em>n_jobs=1</em>, <em>pre_dispatch='3*n_jobs'</em>, <em>memory=Memory(cachedir=None)</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/randomized_l1.py#L371"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression" title="Permalink to this definition">¶</a></dt>
 <dd><p>Randomized Logistic Regression</p>
 <p>Randomized Regression works by resampling the train data and computing
 a LogisticRegression on each resampling. In short, the features selected
 more often are good features. It is also known as stability selection.</p>
-<p>Read more in the <a class="reference internal" href="../feature_selection.html#randomized-l1"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../feature_selection.html#randomized-l1"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -223,7 +263,7 @@ If a string is given, it is the path to the caching directory.</p>
 </div></blockquote>
 <p><strong>all_scores_</strong> : array, shape = [n_features, n_reg_parameter]</p>
 <blockquote class="last">
-<div><p>Feature scores between 0 and 1 for all values of the regularization         parameter. The reference article suggests <code class="docutils literal"><span class="pre">scores_</span></code> is the max         of <code class="docutils literal"><span class="pre">all_scores_</span></code>.</p>
+<div><p>Feature scores between 0 and 1 for all values of the regularization         parameter. The reference article suggests <tt class="docutils literal"><span class="pre">scores_</span></tt> is the max         of <tt class="docutils literal"><span class="pre">all_scores_</span></tt>.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -231,7 +271,7 @@ If a string is given, it is the path to the caching directory.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.linear_model.RandomizedLasso.html#sklearn.linear_model.RandomizedLasso" title="sklearn.linear_model.RandomizedLasso"><code class="xref py py-obj docutils literal"><span class="pre">RandomizedLasso</span></code></a>, <a class="reference internal" href="sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><code class="xref py py-obj docutils literal"><span class="pre">Lasso</span></code></a>, <a class="reference internal" href="sklearn.linear_model.ElasticNet.html#sklearn.linear_model.ElasticNet" title="sklearn.linear_model.ElasticNet"><code class="xref py py-obj docutils literal"><span class="pre">ElasticNet</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.linear_model.RandomizedLasso.html#sklearn.linear_model.RandomizedLasso" title="sklearn.linear_model.RandomizedLasso"><tt class="xref py py-obj docutils literal"><span class="pre">RandomizedLasso</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><tt class="xref py py-obj docutils literal"><span class="pre">Lasso</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.ElasticNet.html#sklearn.linear_model.ElasticNet" title="sklearn.linear_model.ElasticNet"><tt class="xref py py-obj docutils literal"><span class="pre">ElasticNet</span></tt></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>See examples/linear_model/plot_sparse_recovery.py for an example.</p>
@@ -253,16 +293,37 @@ DOI: 10.1111/j.1467-9868.2010.00740.x</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLogisticRegression.fit" title="sklearn.linear_model.RandomizedLogisticRegression.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y)</td>
+<td>Fit the model using X, y as training data.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLogisticRegression.fit_transform" title="sklearn.linear_model.RandomizedLogisticRegression.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLogisticRegression.get_params" title="sklearn.linear_model.RandomizedLogisticRegression.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLogisticRegression.get_support" title="sklearn.linear_model.RandomizedLogisticRegression.get_support"><tt class="xref py py-obj docutils literal"><span class="pre">get_support</span></tt></a>([indices])</td>
+<td>Return a mask, or list, of the features/indices selected.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLogisticRegression.inverse_transform" title="sklearn.linear_model.RandomizedLogisticRegression.inverse_transform"><tt class="xref py py-obj docutils literal"><span class="pre">inverse_transform</span></tt></a>(X)</td>
+<td>Transform a new matrix using the selected features</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLogisticRegression.set_params" title="sklearn.linear_model.RandomizedLogisticRegression.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLogisticRegression.transform" title="sklearn.linear_model.RandomizedLogisticRegression.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
+<td>Transform a new matrix using the selected features</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLogisticRegression.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>C=1</em>, <em>scaling=0.5</em>, <em>sample_fraction=0.75</em>, <em>n_resampling=200</em>, <em>selection_threshold=0.25</em>, <em>tol=0.001</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>random_state=None</em>, <em>n_jobs=1</em>, <em>pre_dispatch='3*n_jobs'</em>, <em>memory=Memory(cachedir=None)</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/linear_model/randomized_l1.py#L475"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>C=1</em>, <em>scaling=0.5</em>, <em>sample_fraction=0.75</em>, <em>n_resampling=200</em>, <em>selection_threshold=0.25</em>, <em>tol=0.001</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>random_state=None</em>, <em>n_jobs=1</em>, <em>pre_dispatch='3*n_jobs'</em>, <em>memory=Memory(cachedir=None)</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/randomized_l1.py#L475"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLogisticRegression.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/linear_model/randomized_l1.py#L75"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/randomized_l1.py#L75"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model using X, y as training data.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -290,7 +351,7 @@ DOI: 10.1111/j.1467-9868.2010.00740.x</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLogisticRegression.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -320,7 +381,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLogisticRegression.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -345,23 +406,23 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLogisticRegression.get_support">
-<code class="descname">get_support</code><span class="sig-paren">(</span><em>indices=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/linear_model/randomized_l1.py#L124"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.get_support" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_support</tt><big>(</big><em>indices=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/randomized_l1.py#L124"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.get_support" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a mask, or list, of the features/indices selected.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLogisticRegression.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/linear_model/randomized_l1.py#L141"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">inverse_transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/randomized_l1.py#L141"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform a new matrix using the selected features</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLogisticRegression.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -375,7 +436,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLogisticRegression.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/linear_model/randomized_l1.py#L133"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/linear_model/randomized_l1.py#L133"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLogisticRegression.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform a new matrix using the selected features</p>
 </dd></dl>
 
@@ -395,8 +456,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.linear_model.RandomizedLogisticRegression.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.linear_model.RandomizedLasso.html">Previous
+      </a>
+    </div>
     
      </div>
 

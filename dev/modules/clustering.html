@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -210,37 +210,37 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="clustering">
 <span id="id1"></span><h1>2.3. Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Cluster_analysis">Clustering</a> of
-unlabeled data can be performed with the module <a class="reference internal" href="classes.html#module-sklearn.cluster" title="sklearn.cluster"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></code></a>.</p>
+unlabeled data can be performed with the module <a class="reference internal" href="classes.html#module-sklearn.cluster" title="sklearn.cluster"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></tt></a>.</p>
 <p>Each clustering algorithm comes in two variants: a class, that implements
-the <code class="docutils literal"><span class="pre">fit</span></code> method to learn the clusters on train data, and a function,
+the <tt class="docutils literal"><span class="pre">fit</span></tt> method to learn the clusters on train data, and a function,
 that, given train data, returns an array of integer labels corresponding
 to the different clusters. For the class, the labels over the training
-data can be found in the <code class="docutils literal"><span class="pre">labels_</span></code> attribute.</p>
+data can be found in the <tt class="docutils literal"><span class="pre">labels_</span></tt> attribute.</p>
 <div class="topic">
 <p class="topic-title first">Input data</p>
 <p>One important thing to note is that the algorithms implemented in
 this module take different kinds of matrix as input.  On one hand,
-<a class="reference internal" href="generated/sklearn.cluster.MeanShift.html#sklearn.cluster.MeanShift" title="sklearn.cluster.MeanShift"><code class="xref py py-class docutils literal"><span class="pre">MeanShift</span></code></a> and <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><code class="xref py py-class docutils literal"><span class="pre">KMeans</span></code></a> take data matrices of shape
+<a class="reference internal" href="generated/sklearn.cluster.MeanShift.html#sklearn.cluster.MeanShift" title="sklearn.cluster.MeanShift"><tt class="xref py py-class docutils literal"><span class="pre">MeanShift</span></tt></a> and <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><tt class="xref py py-class docutils literal"><span class="pre">KMeans</span></tt></a> take data matrices of shape
 [n_samples, n_features]. These can be obtained from the classes in
-the <a class="reference internal" href="classes.html#module-sklearn.feature_extraction" title="sklearn.feature_extraction"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction</span></code></a> module. On the other hand,
-<a class="reference internal" href="generated/sklearn.cluster.AffinityPropagation.html#sklearn.cluster.AffinityPropagation" title="sklearn.cluster.AffinityPropagation"><code class="xref py py-class docutils literal"><span class="pre">AffinityPropagation</span></code></a> and <a class="reference internal" href="generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering" title="sklearn.cluster.SpectralClustering"><code class="xref py py-class docutils literal"><span class="pre">SpectralClustering</span></code></a> take
+the <a class="reference internal" href="classes.html#module-sklearn.feature_extraction" title="sklearn.feature_extraction"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction</span></tt></a> module. On the other hand,
+<a class="reference internal" href="generated/sklearn.cluster.AffinityPropagation.html#sklearn.cluster.AffinityPropagation" title="sklearn.cluster.AffinityPropagation"><tt class="xref py py-class docutils literal"><span class="pre">AffinityPropagation</span></tt></a> and <a class="reference internal" href="generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering" title="sklearn.cluster.SpectralClustering"><tt class="xref py py-class docutils literal"><span class="pre">SpectralClustering</span></tt></a> take
 similarity matrices of shape [n_samples, n_samples].  These can be
-obtained from the functions in the <a class="reference internal" href="classes.html#module-sklearn.metrics.pairwise" title="sklearn.metrics.pairwise"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics.pairwise</span></code></a>
-module. In other words, <a class="reference internal" href="generated/sklearn.cluster.MeanShift.html#sklearn.cluster.MeanShift" title="sklearn.cluster.MeanShift"><code class="xref py py-class docutils literal"><span class="pre">MeanShift</span></code></a> and <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><code class="xref py py-class docutils literal"><span class="pre">KMeans</span></code></a> work
-with points in a vector space, whereas <a class="reference internal" href="generated/sklearn.cluster.AffinityPropagation.html#sklearn.cluster.AffinityPropagation" title="sklearn.cluster.AffinityPropagation"><code class="xref py py-class docutils literal"><span class="pre">AffinityPropagation</span></code></a>
-and <a class="reference internal" href="generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering" title="sklearn.cluster.SpectralClustering"><code class="xref py py-class docutils literal"><span class="pre">SpectralClustering</span></code></a> can work with arbitrary objects, as
+obtained from the functions in the <a class="reference internal" href="classes.html#module-sklearn.metrics.pairwise" title="sklearn.metrics.pairwise"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics.pairwise</span></tt></a>
+module. In other words, <a class="reference internal" href="generated/sklearn.cluster.MeanShift.html#sklearn.cluster.MeanShift" title="sklearn.cluster.MeanShift"><tt class="xref py py-class docutils literal"><span class="pre">MeanShift</span></tt></a> and <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><tt class="xref py py-class docutils literal"><span class="pre">KMeans</span></tt></a> work
+with points in a vector space, whereas <a class="reference internal" href="generated/sklearn.cluster.AffinityPropagation.html#sklearn.cluster.AffinityPropagation" title="sklearn.cluster.AffinityPropagation"><tt class="xref py py-class docutils literal"><span class="pre">AffinityPropagation</span></tt></a>
+and <a class="reference internal" href="generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering" title="sklearn.cluster.SpectralClustering"><tt class="xref py py-class docutils literal"><span class="pre">SpectralClustering</span></tt></a> can work with arbitrary objects, as
 long as a similarity measure exists for such objects.</p>
 </div>
 <div class="section" id="overview-of-clustering-methods">
 <h2>2.3.1. Overview of clustering methods<a class="headerlink" href="#overview-of-clustering-methods" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-center" id="id20">
+<div class="figure align-center">
 <a class="reference external image-reference" href="../auto_examples/cluster/plot_cluster_comparison.html"><img alt="../_images/plot_cluster_comparison_0011.png" src="../_images/plot_cluster_comparison_0011.png" style="width: 950.0px; height: 475.0px;" /></a>
-<p class="caption"><span class="caption-text">A comparison of the clustering algorithms in scikit-learn</span></p>
+<p class="caption">A comparison of the clustering algorithms in scikit-learn</p>
 </div>
 <table border="1" class="docutils">
 <colgroup>
@@ -259,59 +259,59 @@ long as a similarity measure exists for such objects.</p>
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#k-means"><span>K-Means</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#k-means"><em>K-Means</em></a></td>
 <td>number of clusters</td>
-<td>Very large <code class="docutils literal"><span class="pre">n_samples</span></code>, medium <code class="docutils literal"><span class="pre">n_clusters</span></code> with
-<a class="reference internal" href="#mini-batch-kmeans"><span>MiniBatch code</span></a></td>
+<td>Very large <tt class="docutils literal"><span class="pre">n_samples</span></tt>, medium <tt class="docutils literal"><span class="pre">n_clusters</span></tt> with
+<a class="reference internal" href="#mini-batch-kmeans"><em>MiniBatch code</em></a></td>
 <td>General-purpose, even cluster size, flat geometry, not too many clusters</td>
 <td>Distances between points</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#affinity-propagation"><span>Affinity propagation</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#affinity-propagation"><em>Affinity propagation</em></a></td>
 <td>damping, sample preference</td>
 <td>Not scalable with n_samples</td>
 <td>Many clusters, uneven cluster size, non-flat geometry</td>
 <td>Graph distance (e.g. nearest-neighbor graph)</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#mean-shift"><span>Mean-shift</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#mean-shift"><em>Mean-shift</em></a></td>
 <td>bandwidth</td>
-<td>Not scalable with <code class="docutils literal"><span class="pre">n_samples</span></code></td>
+<td>Not scalable with <tt class="docutils literal"><span class="pre">n_samples</span></tt></td>
 <td>Many clusters, uneven cluster size, non-flat geometry</td>
 <td>Distances between points</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#spectral-clustering"><span>Spectral clustering</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#spectral-clustering"><em>Spectral clustering</em></a></td>
 <td>number of clusters</td>
-<td>Medium <code class="docutils literal"><span class="pre">n_samples</span></code>, small <code class="docutils literal"><span class="pre">n_clusters</span></code></td>
+<td>Medium <tt class="docutils literal"><span class="pre">n_samples</span></tt>, small <tt class="docutils literal"><span class="pre">n_clusters</span></tt></td>
 <td>Few clusters, even cluster size, non-flat geometry</td>
 <td>Graph distance (e.g. nearest-neighbor graph)</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#hierarchical-clustering"><span>Ward hierarchical clustering</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#hierarchical-clustering"><em>Ward hierarchical clustering</em></a></td>
 <td>number of clusters</td>
-<td>Large <code class="docutils literal"><span class="pre">n_samples</span></code> and <code class="docutils literal"><span class="pre">n_clusters</span></code></td>
+<td>Large <tt class="docutils literal"><span class="pre">n_samples</span></tt> and <tt class="docutils literal"><span class="pre">n_clusters</span></tt></td>
 <td>Many clusters, possibly connectivity constraints</td>
 <td>Distances between points</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#hierarchical-clustering"><span>Agglomerative clustering</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#hierarchical-clustering"><em>Agglomerative clustering</em></a></td>
 <td>number of clusters, linkage type, distance</td>
-<td>Large <code class="docutils literal"><span class="pre">n_samples</span></code> and <code class="docutils literal"><span class="pre">n_clusters</span></code></td>
+<td>Large <tt class="docutils literal"><span class="pre">n_samples</span></tt> and <tt class="docutils literal"><span class="pre">n_clusters</span></tt></td>
 <td>Many clusters, possibly connectivity constraints, non Euclidean
 distances</td>
 <td>Any pairwise distance</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#dbscan"><span>DBSCAN</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#dbscan"><em>DBSCAN</em></a></td>
 <td>neighborhood size</td>
-<td>Very large <code class="docutils literal"><span class="pre">n_samples</span></code>, medium <code class="docutils literal"><span class="pre">n_clusters</span></code></td>
+<td>Very large <tt class="docutils literal"><span class="pre">n_samples</span></tt>, medium <tt class="docutils literal"><span class="pre">n_clusters</span></tt></td>
 <td>Non-flat geometry, uneven cluster sizes</td>
 <td>Distances between nearest points</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="mixture.html#mixture"><span>Gaussian mixtures</span></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="mixture.html#mixture"><em>Gaussian mixtures</em></a></td>
 <td>many</td>
 <td>Not scalable</td>
 <td>Flat geometry, good for density estimation</td>
 <td>Mahalanobis distances to  centers</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#birch"><span>Birch</span></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#birch"><em>Birch</em></a></td>
 <td>branching factor, threshold, optional global clusterer.</td>
-<td>Large <code class="docutils literal"><span class="pre">n_clusters</span></code> and <code class="docutils literal"><span class="pre">n_samples</span></code></td>
+<td>Large <tt class="docutils literal"><span class="pre">n_clusters</span></tt> and <tt class="docutils literal"><span class="pre">n_samples</span></tt></td>
 <td>Large dataset, outlier removal, data reduction.</td>
 <td>Euclidean distance between points</td>
 </tr>
@@ -322,13 +322,13 @@ shape, i.e. a non-flat manifold, and the standard euclidean distance is
 not the right metric. This case arises in the two top rows of the figure
 above.</p>
 <p>Gaussian mixture models, useful for clustering, are described in
-<a class="reference internal" href="mixture.html#mixture"><span>another chapter of the documentation</span></a> dedicated to
+<a class="reference internal" href="mixture.html#mixture"><em>another chapter of the documentation</em></a> dedicated to
 mixture models. KMeans can be seen as a special case of Gaussian mixture
 model with equal covariance per component.</p>
 </div>
 <div class="section" id="k-means">
 <span id="id3"></span><h2>2.3.2. K-means<a class="headerlink" href="#k-means" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><code class="xref py py-class docutils literal"><span class="pre">KMeans</span></code></a> algorithm clusters data by trying to separate samples
+<p>The <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><tt class="xref py py-class docutils literal"><span class="pre">KMeans</span></tt></a> algorithm clusters data by trying to separate samples
 in n groups of equal variance, minimizing a criterion known as the
 <a class="reference external" href="inertia">inertia</a> or within-cluster sum-of-squares.
 This algorithm requires the number of clusters to be specified.
@@ -386,11 +386,11 @@ minimum. This is highly dependent on the initialization of the centroids.
 As a result, the computation is often done several times, with different
 initializations of the centroids. One method to help address this issue is the
 k-means++ initialization scheme, which has been implemented in scikit-learn
-(use the <code class="docutils literal"><span class="pre">init='kmeans++'</span></code> parameter). This initializes the centroids to be
+(use the <tt class="docutils literal"><span class="pre">init='kmeans++'</span></tt> parameter). This initializes the centroids to be
 (generally) distant from each other, leading to provably better results than
 random initialization, as shown in the reference.</p>
 <p>A parameter can be given to allow K-means to be run in parallel, called
-<code class="docutils literal"><span class="pre">n_jobs</span></code>. Giving this parameter a positive value uses that many processors
+<tt class="docutils literal"><span class="pre">n_jobs</span></tt>. Giving this parameter a positive value uses that many processors
 (default: 1). A value of -1 uses all available processors, with -2 using one
 less, and so on. Parallelization generally speeds up computation at the cost of
 memory (in this case, multiple copies of centroids need to be stored, one for
@@ -403,13 +403,13 @@ after a fork but you need to execv the subprocess with the Python binary
 (which multiprocessing does not do under posix).</p>
 </div>
 <p>K-means can be used for vector quantization. This is achieved using the
-transform method of a trained model of <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><code class="xref py py-class docutils literal"><span class="pre">KMeans</span></code></a>.</p>
+transform method of a trained model of <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><tt class="xref py py-class docutils literal"><span class="pre">KMeans</span></tt></a>.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_kmeans_assumptions.html#example-cluster-plot-kmeans-assumptions-py"><span>Demonstration of k-means assumptions</span></a>: Demonstrating when
+<li><a class="reference internal" href="../auto_examples/cluster/plot_kmeans_assumptions.html#example-cluster-plot-kmeans-assumptions-py"><em>Demonstration of k-means assumptions</em></a>: Demonstrating when
 k-means performs intuitively and when it does not</li>
-<li><a class="reference internal" href="../auto_examples/cluster/plot_kmeans_digits.html#example-cluster-plot-kmeans-digits-py"><span>A demo of K-Means clustering on the handwritten digits data</span></a>: Clustering handwritten digits</li>
+<li><a class="reference internal" href="../auto_examples/cluster/plot_kmeans_digits.html#example-cluster-plot-kmeans-digits-py"><em>A demo of K-Means clustering on the handwritten digits data</em></a>: Clustering handwritten digits</li>
 </ul>
 </div>
 <div class="topic">
@@ -423,7 +423,7 @@ algorithms</em>, Society for Industrial and Applied Mathematics (2007)</li>
 </div>
 <div class="section" id="mini-batch-k-means">
 <span id="mini-batch-kmeans"></span><h3>2.3.2.1. Mini Batch K-Means<a class="headerlink" href="#mini-batch-k-means" title="Permalink to this headline">¶</a></h3>
-<p>The <a class="reference internal" href="generated/sklearn.cluster.MiniBatchKMeans.html#sklearn.cluster.MiniBatchKMeans" title="sklearn.cluster.MiniBatchKMeans"><code class="xref py py-class docutils literal"><span class="pre">MiniBatchKMeans</span></code></a> is a variant of the <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><code class="xref py py-class docutils literal"><span class="pre">KMeans</span></code></a> algorithm
+<p>The <a class="reference internal" href="generated/sklearn.cluster.MiniBatchKMeans.html#sklearn.cluster.MiniBatchKMeans" title="sklearn.cluster.MiniBatchKMeans"><tt class="xref py py-class docutils literal"><span class="pre">MiniBatchKMeans</span></tt></a> is a variant of the <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><tt class="xref py py-class docutils literal"><span class="pre">KMeans</span></tt></a> algorithm
 which uses mini-batches to reduce the computation time, while still attempting
 to optimise the same objective function. Mini-batches are subsets of the input
 data, randomly sampled in each training iteration. These mini-batches
@@ -440,7 +440,7 @@ is updated by taking the streaming average of the sample and all previous
 samples assigned to that centroid. This has the effect of decreasing the
 rate of change for a centroid over time. These steps are performed until
 convergence or a predetermined number of iterations is reached.</p>
-<p><a class="reference internal" href="generated/sklearn.cluster.MiniBatchKMeans.html#sklearn.cluster.MiniBatchKMeans" title="sklearn.cluster.MiniBatchKMeans"><code class="xref py py-class docutils literal"><span class="pre">MiniBatchKMeans</span></code></a> converges faster than <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><code class="xref py py-class docutils literal"><span class="pre">KMeans</span></code></a>, but the quality
+<p><a class="reference internal" href="generated/sklearn.cluster.MiniBatchKMeans.html#sklearn.cluster.MiniBatchKMeans" title="sklearn.cluster.MiniBatchKMeans"><tt class="xref py py-class docutils literal"><span class="pre">MiniBatchKMeans</span></tt></a> converges faster than <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><tt class="xref py py-class docutils literal"><span class="pre">KMeans</span></tt></a>, but the quality
 of the results is reduced. In practice this difference in quality can be quite
 small, as shown in the example and cited reference.</p>
 <div class="figure align-center">
@@ -449,11 +449,11 @@ small, as shown in the example and cited reference.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_mini_batch_kmeans.html#example-cluster-plot-mini-batch-kmeans-py"><span>Comparison of the K-Means and MiniBatchKMeans clustering algorithms</span></a>: Comparison of KMeans and
+<li><a class="reference internal" href="../auto_examples/cluster/plot_mini_batch_kmeans.html#example-cluster-plot-mini-batch-kmeans-py"><em>Comparison of the K-Means and MiniBatchKMeans clustering algorithms</em></a>: Comparison of KMeans and
 MiniBatchKMeans</li>
-<li><a class="reference internal" href="../auto_examples/text/document_clustering.html#example-text-document-clustering-py"><span>Clustering text documents using k-means</span></a>: Document clustering using sparse
+<li><a class="reference internal" href="../auto_examples/text/document_clustering.html#example-text-document-clustering-py"><em>Clustering text documents using k-means</em></a>: Document clustering using sparse
 MiniBatchKMeans</li>
-<li><a class="reference internal" href="../auto_examples/cluster/plot_dict_face_patches.html#example-cluster-plot-dict-face-patches-py"><span>Online learning of a dictionary of parts of faces</span></a></li>
+<li><a class="reference internal" href="../auto_examples/cluster/plot_dict_face_patches.html#example-cluster-plot-dict-face-patches-py"><em>Online learning of a dictionary of parts of faces</em></a></li>
 </ul>
 </div>
 <div class="topic">
@@ -468,7 +468,7 @@ wide web</em> (2010)</li>
 </div>
 <div class="section" id="affinity-propagation">
 <span id="id4"></span><h2>2.3.3. Affinity Propagation<a class="headerlink" href="#affinity-propagation" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="generated/sklearn.cluster.AffinityPropagation.html#sklearn.cluster.AffinityPropagation" title="sklearn.cluster.AffinityPropagation"><code class="xref py py-class docutils literal"><span class="pre">AffinityPropagation</span></code></a> creates clusters by sending messages between
+<p><a class="reference internal" href="generated/sklearn.cluster.AffinityPropagation.html#sklearn.cluster.AffinityPropagation" title="sklearn.cluster.AffinityPropagation"><tt class="xref py py-class docutils literal"><span class="pre">AffinityPropagation</span></tt></a> creates clusters by sending messages between
 pairs of samples until convergence. A dataset is then described using a small
 number of exemplars, which are identified as those most representative of other
 samples. The messages sent between pairs represent the suitability for one
@@ -493,9 +493,9 @@ appropriate for small to medium sized datasets.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_affinity_propagation.html#example-cluster-plot-affinity-propagation-py"><span>Demo of affinity propagation clustering algorithm</span></a>: Affinity
+<li><a class="reference internal" href="../auto_examples/cluster/plot_affinity_propagation.html#example-cluster-plot-affinity-propagation-py"><em>Demo of affinity propagation clustering algorithm</em></a>: Affinity
 Propagation on a synthetic 2D datasets with 3 classes.</li>
-<li><a class="reference internal" href="../auto_examples/applications/plot_stock_market.html#example-applications-plot-stock-market-py"><span>Visualizing the stock market structure</span></a> Affinity Propagation on
+<li><a class="reference internal" href="../auto_examples/applications/plot_stock_market.html#example-applications-plot-stock-market-py"><em>Visualizing the stock market structure</em></a> Affinity Propagation on
 Financial time series to find groups of companies</li>
 </ul>
 </div>
@@ -525,7 +525,7 @@ and the calculation of each iterates until convergence.</p>
 </div>
 <div class="section" id="mean-shift">
 <span id="id5"></span><h2>2.3.4. Mean Shift<a class="headerlink" href="#mean-shift" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="generated/sklearn.cluster.MeanShift.html#sklearn.cluster.MeanShift" title="sklearn.cluster.MeanShift"><code class="xref py py-class docutils literal"><span class="pre">MeanShift</span></code></a> clustering aims to discover <em>blobs</em> in a smooth density of
+<p><a class="reference internal" href="generated/sklearn.cluster.MeanShift.html#sklearn.cluster.MeanShift" title="sklearn.cluster.MeanShift"><tt class="xref py py-class docutils literal"><span class="pre">MeanShift</span></tt></a> clustering aims to discover <em>blobs</em> in a smooth density of
 samples. It is a centroid based algorithm, which works by updating candidates
 for centroids to be the mean of the points within a given region. These
 candidates are then filtered in a post-processing stage to eliminate
@@ -542,9 +542,9 @@ to be the mean of the samples within its neighborhood:</p>
 <div class="math">
 <p><img src="../_images/math/6b6b0c624950f60141fafc6b2bb0d46f8c4c7e60.png" alt="m(x_i) = \frac{\sum_{x_j \in N(x_i)}K(x_j - x_i)x_j}{\sum_{x_j \in N(x_i)}K(x_j - x_i)}"/></p>
 </div><p>The algorithm automatically sets the number of clusters, instead of relying on a
-parameter <code class="docutils literal"><span class="pre">bandwidth</span></code>, which dictates the size of the region to search through.
+parameter <tt class="docutils literal"><span class="pre">bandwidth</span></tt>, which dictates the size of the region to search through.
 This parameter can be set manually, but can be estimated using the provided
-<code class="docutils literal"><span class="pre">estimate_bandwidth</span></code> function, which is called if the bandwidth is not set.</p>
+<tt class="docutils literal"><span class="pre">estimate_bandwidth</span></tt> function, which is called if the bandwidth is not set.</p>
 <p>The algorithm is not highly scalable, as it requires multiple nearest neighbor
 searches during the execution of the algorithm. The algorithm is guaranteed to
 converge, however the algorithm will stop iterating when the change in centroids
@@ -557,7 +557,7 @@ given sample.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_mean_shift.html#example-cluster-plot-mean-shift-py"><span>A demo of the mean-shift clustering algorithm</span></a>: Mean Shift clustering
+<li><a class="reference internal" href="../auto_examples/cluster/plot_mean_shift.html#example-cluster-plot-mean-shift-py"><em>A demo of the mean-shift clustering algorithm</em></a>: Mean Shift clustering
 on a synthetic 2D datasets with 3 classes.</li>
 </ul>
 </div>
@@ -571,7 +571,7 @@ D. Comaniciu and P. Meer, <em>IEEE Transactions on Pattern Analysis and Machine 
 </div>
 <div class="section" id="spectral-clustering">
 <span id="id6"></span><h2>2.3.5. Spectral clustering<a class="headerlink" href="#spectral-clustering" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering" title="sklearn.cluster.SpectralClustering"><code class="xref py py-class docutils literal"><span class="pre">SpectralClustering</span></code></a> does a low-dimension embedding of the
+<p><a class="reference internal" href="generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering" title="sklearn.cluster.SpectralClustering"><tt class="xref py py-class docutils literal"><span class="pre">SpectralClustering</span></tt></a> does a low-dimension embedding of the
 affinity matrix between samples, followed by a KMeans in the low
 dimensional space. It is especially efficient if the affinity matrix is
 sparse and the <a class="reference external" href="http://pyamg.org/">pyamg</a> module is installed.
@@ -586,7 +586,9 @@ cluster. This criteria is especially interesting when working on images:
 graph vertices are pixels, and edges of the similarity graph are a
 function of the gradient of the image.</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/cluster/plot_segmentation_toy.html"><img alt="noisy_img" src="../_images/plot_segmentation_toy_0011.png" style="width: 300.0px; height: 300.0px;" /></a> <a class="reference external" href="../auto_examples/cluster/plot_segmentation_toy.html"><img alt="segmented_img" src="../_images/plot_segmentation_toy_0021.png" style="width: 300.0px; height: 300.0px;" /></a></strong></p><div class="admonition warning">
+<strong><a class="reference external image-reference" href="../auto_examples/cluster/plot_segmentation_toy.html"><img alt="noisy_img" src="../_images/plot_segmentation_toy_0011.png" style="width: 300.0px; height: 300.0px;" /></a>
+ <a class="reference external image-reference" href="../auto_examples/cluster/plot_segmentation_toy.html"><img alt="segmented_img" src="../_images/plot_segmentation_toy_0021.png" style="width: 300.0px; height: 300.0px;" /></a>
+</strong></p><div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p>Transforming distance to well-behaved similarities</p>
 <p>Note that if the values of your similarity matrix are not well
@@ -603,20 +605,20 @@ case of a signed distance matrix, is common to apply a heat kernel:</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_segmentation_toy.html#example-cluster-plot-segmentation-toy-py"><span>Spectral clustering for image segmentation</span></a>: Segmenting objects
+<li><a class="reference internal" href="../auto_examples/cluster/plot_segmentation_toy.html#example-cluster-plot-segmentation-toy-py"><em>Spectral clustering for image segmentation</em></a>: Segmenting objects
 from a noisy background using spectral clustering.</li>
-<li><a class="reference internal" href="../auto_examples/cluster/plot_lena_segmentation.html#example-cluster-plot-lena-segmentation-py"><span>Segmenting the picture of Lena in regions</span></a>: Spectral clustering
+<li><a class="reference internal" href="../auto_examples/cluster/plot_lena_segmentation.html#example-cluster-plot-lena-segmentation-py"><em>Segmenting the picture of Lena in regions</em></a>: Spectral clustering
 to split the image of lena in regions.</li>
 </ul>
 </div>
 <div class="section" id="different-label-assignment-strategies">
 <h3>2.3.5.1. Different label assignment strategies<a class="headerlink" href="#different-label-assignment-strategies" title="Permalink to this headline">¶</a></h3>
 <p>Different label assignment strategies can be used, corresponding to the
-<code class="docutils literal"><span class="pre">assign_labels</span></code> parameter of <a class="reference internal" href="generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering" title="sklearn.cluster.SpectralClustering"><code class="xref py py-class docutils literal"><span class="pre">SpectralClustering</span></code></a>.
-The <code class="docutils literal"><span class="pre">&quot;kmeans&quot;</span></code> strategy can match finer details of the data, but it can be
-more unstable. In particular, unless you control the <code class="docutils literal"><span class="pre">random_state</span></code>, it
+<tt class="docutils literal"><span class="pre">assign_labels</span></tt> parameter of <a class="reference internal" href="generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering" title="sklearn.cluster.SpectralClustering"><tt class="xref py py-class docutils literal"><span class="pre">SpectralClustering</span></tt></a>.
+The <tt class="docutils literal"><span class="pre">&quot;kmeans&quot;</span></tt> strategy can match finer details of the data, but it can be
+more unstable. In particular, unless you control the <tt class="docutils literal"><span class="pre">random_state</span></tt>, it
 may not be reproducible from run-to-run, as it depends on a random
-initialization. On the other hand, the <code class="docutils literal"><span class="pre">&quot;discretize&quot;</span></code> strategy is 100%
+initialization. On the other hand, the <tt class="docutils literal"><span class="pre">&quot;discretize&quot;</span></tt> strategy is 100%
 reproducible, but it tends to create parcels of fairly even and
 geometrical shape.</p>
 <table border="1" class="docutils">
@@ -625,8 +627,8 @@ geometrical shape.</p>
 <col width="50%" />
 </colgroup>
 <thead valign="bottom">
-<tr class="row-odd"><th class="head"><code class="docutils literal"><span class="pre">assign_labels=&quot;kmeans&quot;</span></code></th>
-<th class="head"><code class="docutils literal"><span class="pre">assign_labels=&quot;discretize&quot;</span></code></th>
+<tr class="row-odd"><th class="head"><tt class="docutils literal"><span class="pre">assign_labels=&quot;kmeans&quot;</span></tt></th>
+<th class="head"><tt class="docutils literal"><span class="pre">assign_labels=&quot;discretize&quot;</span></tt></th>
 </tr>
 </thead>
 <tbody valign="top">
@@ -657,7 +659,7 @@ build nested clusters by merging or splitting them successively. This
 hierarchy of clusters is represented as a tree (or dendrogram). The root of the
 tree is the unique cluster that gathers all the samples, the leaves being the
 clusters with only one sample. See the <a class="reference external" href="https://en.wikipedia.org/wiki/Hierarchical_clustering">Wikipedia page</a> for more details.</p>
-<p>The <a class="reference internal" href="generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering" title="sklearn.cluster.AgglomerativeClustering"><code class="xref py py-class docutils literal"><span class="pre">AgglomerativeClustering</span></code></a> object performs a hierarchical clustering
+<p>The <a class="reference internal" href="generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering" title="sklearn.cluster.AgglomerativeClustering"><tt class="xref py py-class docutils literal"><span class="pre">AgglomerativeClustering</span></tt></a> object performs a hierarchical clustering
 using a bottom up approach: each observation starts in its own cluster, and
 clusters are successively merged together. The linkage criteria determines the
 metric used for the merge strategy:</p>
@@ -671,20 +673,20 @@ observations of pairs of clusters.</li>
 <li><strong>Average linkage</strong> minimizes the average of the distances between all
 observations of pairs of clusters.</li>
 </ul>
-<p><a class="reference internal" href="generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering" title="sklearn.cluster.AgglomerativeClustering"><code class="xref py py-class docutils literal"><span class="pre">AgglomerativeClustering</span></code></a> can also scale to large number of samples
+<p><a class="reference internal" href="generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering" title="sklearn.cluster.AgglomerativeClustering"><tt class="xref py py-class docutils literal"><span class="pre">AgglomerativeClustering</span></tt></a> can also scale to large number of samples
 when it is used jointly with a connectivity matrix, but is computationally
 expensive when no connectivity constraints are added between samples: it
 considers at each step all the possible merges.</p>
 <div class="topic">
-<p class="topic-title first"><a class="reference internal" href="generated/sklearn.cluster.FeatureAgglomeration.html#sklearn.cluster.FeatureAgglomeration" title="sklearn.cluster.FeatureAgglomeration"><code class="xref py py-class docutils literal"><span class="pre">FeatureAgglomeration</span></code></a></p>
-<p>The <a class="reference internal" href="generated/sklearn.cluster.FeatureAgglomeration.html#sklearn.cluster.FeatureAgglomeration" title="sklearn.cluster.FeatureAgglomeration"><code class="xref py py-class docutils literal"><span class="pre">FeatureAgglomeration</span></code></a> uses agglomerative clustering to
+<p class="topic-title first"><a class="reference internal" href="generated/sklearn.cluster.FeatureAgglomeration.html#sklearn.cluster.FeatureAgglomeration" title="sklearn.cluster.FeatureAgglomeration"><tt class="xref py py-class docutils literal"><span class="pre">FeatureAgglomeration</span></tt></a></p>
+<p>The <a class="reference internal" href="generated/sklearn.cluster.FeatureAgglomeration.html#sklearn.cluster.FeatureAgglomeration" title="sklearn.cluster.FeatureAgglomeration"><tt class="xref py py-class docutils literal"><span class="pre">FeatureAgglomeration</span></tt></a> uses agglomerative clustering to
 group together features that look very similar, thus decreasing the
 number of features. It is a dimensionality reduction tool, see
-<a class="reference internal" href="unsupervised_reduction.html#data-reduction"><span>Unsupervised dimensionality reduction</span></a>.</p>
+<a class="reference internal" href="unsupervised_reduction.html#data-reduction"><em>Unsupervised dimensionality reduction</em></a>.</p>
 </div>
 <div class="section" id="different-linkage-type-ward-complete-and-average-linkage">
 <h3>2.3.6.1. Different linkage type: Ward, complete and average linkage<a class="headerlink" href="#different-linkage-type-ward-complete-and-average-linkage" title="Permalink to this headline">¶</a></h3>
-<p><a class="reference internal" href="generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering" title="sklearn.cluster.AgglomerativeClustering"><code class="xref py py-class docutils literal"><span class="pre">AgglomerativeClustering</span></code></a> supports Ward, average, and complete
+<p><a class="reference internal" href="generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering" title="sklearn.cluster.AgglomerativeClustering"><tt class="xref py py-class docutils literal"><span class="pre">AgglomerativeClustering</span></tt></a> supports Ward, average, and complete
 linkage strategies.</p>
 <a class="reference external image-reference" href="../auto_examples/cluster/plot_digits_linkage.html"><img alt="../_images/plot_digits_linkage_0011.png" src="../_images/plot_digits_linkage_0011.png" style="width: 258.0px; height: 172.0px;" /></a>
 <a class="reference external image-reference" href="../auto_examples/cluster/plot_digits_linkage.html"><img alt="../_images/plot_digits_linkage_0021.png" src="../_images/plot_digits_linkage_0021.png" style="width: 258.0px; height: 172.0px;" /></a>
@@ -697,14 +699,14 @@ Euclidean metrics, average linkage is a good alternative.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_digits_linkage.html#example-cluster-plot-digits-linkage-py"><span>Various Agglomerative Clustering on a 2D embedding of digits</span></a>: exploration of the
+<li><a class="reference internal" href="../auto_examples/cluster/plot_digits_linkage.html#example-cluster-plot-digits-linkage-py"><em>Various Agglomerative Clustering on a 2D embedding of digits</em></a>: exploration of the
 different linkage strategies in a real dataset.</li>
 </ul>
 </div>
 </div>
 <div class="section" id="adding-connectivity-constraints">
 <h3>2.3.6.2. Adding connectivity constraints<a class="headerlink" href="#adding-connectivity-constraints" title="Permalink to this headline">¶</a></h3>
-<p>An interesting aspect of <a class="reference internal" href="generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering" title="sklearn.cluster.AgglomerativeClustering"><code class="xref py py-class docutils literal"><span class="pre">AgglomerativeClustering</span></code></a> is that
+<p>An interesting aspect of <a class="reference internal" href="generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering" title="sklearn.cluster.AgglomerativeClustering"><tt class="xref py py-class docutils literal"><span class="pre">AgglomerativeClustering</span></tt></a> is that
 connectivity constraints can be added to this algorithm (only adjacent
 clusters can be merged together), through a connectivity matrix that defines
 for each sample the neighboring samples following a given structure of the
@@ -713,7 +715,9 @@ constraints forbid the merging of points that are not adjacent on the swiss
 roll, and thus avoid forming clusters that extend across overlapping folds of
 the roll.</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/cluster/plot_ward_structured_vs_unstructured.html"><img alt="unstructured" src="../_images/plot_ward_structured_vs_unstructured_0011.png" style="width: 392.0px; height: 294.0px;" /></a> <a class="reference external" href="../auto_examples/cluster/plot_ward_structured_vs_unstructured.html"><img alt="structured" src="../_images/plot_ward_structured_vs_unstructured_0021.png" style="width: 392.0px; height: 294.0px;" /></a></strong></p><p>These constraint are useful to impose a certain local structure, but they
+<strong><a class="reference external image-reference" href="../auto_examples/cluster/plot_ward_structured_vs_unstructured.html"><img alt="unstructured" src="../_images/plot_ward_structured_vs_unstructured_0011.png" style="width: 392.0px; height: 294.0px;" /></a>
+ <a class="reference external image-reference" href="../auto_examples/cluster/plot_ward_structured_vs_unstructured.html"><img alt="structured" src="../_images/plot_ward_structured_vs_unstructured_0021.png" style="width: 392.0px; height: 294.0px;" /></a>
+</strong></p><p>These constraint are useful to impose a certain local structure, but they
 also make the algorithm faster, especially when the number of the samples
 is high.</p>
 <p>The connectivity constraints are imposed via an connectivity matrix: a
@@ -722,23 +726,23 @@ and a column with indices of the dataset that should be connected. This
 matrix can be constructed from a-priori information: for instance, you
 may wish to cluster web pages by only merging pages with a link pointing
 from one to another. It can also be learned from the data, for instance
-using <a class="reference internal" href="generated/sklearn.neighbors.kneighbors_graph.html#sklearn.neighbors.kneighbors_graph" title="sklearn.neighbors.kneighbors_graph"><code class="xref py py-func docutils literal"><span class="pre">sklearn.neighbors.kneighbors_graph</span></code></a> to restrict
-merging to nearest neighbors as in <a class="reference internal" href="../auto_examples/cluster/plot_agglomerative_clustering.html#example-cluster-plot-agglomerative-clustering-py"><span>this example</span></a>, or
-using <a class="reference internal" href="generated/sklearn.feature_extraction.image.grid_to_graph.html#sklearn.feature_extraction.image.grid_to_graph" title="sklearn.feature_extraction.image.grid_to_graph"><code class="xref py py-func docutils literal"><span class="pre">sklearn.feature_extraction.image.grid_to_graph</span></code></a> to
+using <a class="reference internal" href="generated/sklearn.neighbors.kneighbors_graph.html#sklearn.neighbors.kneighbors_graph" title="sklearn.neighbors.kneighbors_graph"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.neighbors.kneighbors_graph</span></tt></a> to restrict
+merging to nearest neighbors as in <a class="reference internal" href="../auto_examples/cluster/plot_agglomerative_clustering.html#example-cluster-plot-agglomerative-clustering-py"><em>this example</em></a>, or
+using <a class="reference internal" href="generated/sklearn.feature_extraction.image.grid_to_graph.html#sklearn.feature_extraction.image.grid_to_graph" title="sklearn.feature_extraction.image.grid_to_graph"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.feature_extraction.image.grid_to_graph</span></tt></a> to
 enable only merging of neighboring pixels on an image, as in the
-<a class="reference internal" href="../auto_examples/cluster/plot_lena_ward_segmentation.html#example-cluster-plot-lena-ward-segmentation-py"><span>Lena</span></a> example.</p>
+<a class="reference internal" href="../auto_examples/cluster/plot_lena_ward_segmentation.html#example-cluster-plot-lena-ward-segmentation-py"><em>Lena</em></a> example.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_lena_ward_segmentation.html#example-cluster-plot-lena-ward-segmentation-py"><span>A demo of structured Ward hierarchical clustering on Lena image</span></a>: Ward clustering
+<li><a class="reference internal" href="../auto_examples/cluster/plot_lena_ward_segmentation.html#example-cluster-plot-lena-ward-segmentation-py"><em>A demo of structured Ward hierarchical clustering on Lena image</em></a>: Ward clustering
 to split the image of lena in regions.</li>
-<li><a class="reference internal" href="../auto_examples/cluster/plot_ward_structured_vs_unstructured.html#example-cluster-plot-ward-structured-vs-unstructured-py"><span>Hierarchical clustering: structured vs unstructured ward</span></a>: Example of
+<li><a class="reference internal" href="../auto_examples/cluster/plot_ward_structured_vs_unstructured.html#example-cluster-plot-ward-structured-vs-unstructured-py"><em>Hierarchical clustering: structured vs unstructured ward</em></a>: Example of
 Ward algorithm on a swiss-roll, comparison of structured approaches
 versus unstructured approaches.</li>
-<li><a class="reference internal" href="../auto_examples/cluster/plot_feature_agglomeration_vs_univariate_selection.html#example-cluster-plot-feature-agglomeration-vs-univariate-selection-py"><span>Feature agglomeration vs. univariate selection</span></a>:
+<li><a class="reference internal" href="../auto_examples/cluster/plot_feature_agglomeration_vs_univariate_selection.html#example-cluster-plot-feature-agglomeration-vs-univariate-selection-py"><em>Feature agglomeration vs. univariate selection</em></a>:
 Example of dimensionality reduction with feature agglomeration based on
 Ward hierarchical clustering.</li>
-<li><a class="reference internal" href="../auto_examples/cluster/plot_agglomerative_clustering.html#example-cluster-plot-agglomerative-clustering-py"><span>Agglomerative clustering with and without structure</span></a></li>
+<li><a class="reference internal" href="../auto_examples/cluster/plot_agglomerative_clustering.html#example-cluster-plot-agglomerative-clustering-py"><em>Agglomerative clustering with and without structure</em></a></li>
 </ul>
 </div>
 <div class="admonition warning">
@@ -747,10 +751,10 @@ Ward hierarchical clustering.</li>
 <p class="last">Connectivity constraints and complete or average linkage can enhance
 the &#8216;rich getting richer&#8217; aspect of agglomerative clustering,
 particularly so if they are built with
-<a class="reference internal" href="generated/sklearn.neighbors.kneighbors_graph.html#sklearn.neighbors.kneighbors_graph" title="sklearn.neighbors.kneighbors_graph"><code class="xref py py-func docutils literal"><span class="pre">sklearn.neighbors.kneighbors_graph</span></code></a>. In the limit of a small
+<a class="reference internal" href="generated/sklearn.neighbors.kneighbors_graph.html#sklearn.neighbors.kneighbors_graph" title="sklearn.neighbors.kneighbors_graph"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.neighbors.kneighbors_graph</span></tt></a>. In the limit of a small
 number of clusters, they tend to give a few macroscopically occupied
 clusters and almost empty ones. (see the discussion in
-<a class="reference internal" href="../auto_examples/cluster/plot_agglomerative_clustering.html#example-cluster-plot-agglomerative-clustering-py"><span>Agglomerative clustering with and without structure</span></a>).</p>
+<a class="reference internal" href="../auto_examples/cluster/plot_agglomerative_clustering.html#example-cluster-plot-agglomerative-clustering-py"><em>Agglomerative clustering with and without structure</em></a>).</p>
 </div>
 <a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering.html"><img alt="../_images/plot_agglomerative_clustering_0011.png" src="../_images/plot_agglomerative_clustering_0011.png" style="width: 380.0px; height: 152.0px;" /></a>
 <a class="reference external image-reference" href="../auto_examples/cluster/plot_agglomerative_clustering.html"><img alt="../_images/plot_agglomerative_clustering_0021.png" src="../_images/plot_agglomerative_clustering_0021.png" style="width: 380.0px; height: 152.0px;" /></a>
@@ -779,14 +783,14 @@ each class.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_agglomerative_clustering_metrics.html#example-cluster-plot-agglomerative-clustering-metrics-py"><span>Agglomerative clustering with different metrics</span></a></li>
+<li><a class="reference internal" href="../auto_examples/cluster/plot_agglomerative_clustering_metrics.html#example-cluster-plot-agglomerative-clustering-metrics-py"><em>Agglomerative clustering with different metrics</em></a></li>
 </ul>
 </div>
 </div>
 </div>
 <div class="section" id="dbscan">
 <span id="id8"></span><h2>2.3.7. DBSCAN<a class="headerlink" href="#dbscan" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="generated/sklearn.cluster.DBSCAN.html#sklearn.cluster.DBSCAN" title="sklearn.cluster.DBSCAN"><code class="xref py py-class docutils literal"><span class="pre">DBSCAN</span></code></a> algorithm views clusters as areas of high density
+<p>The <a class="reference internal" href="generated/sklearn.cluster.DBSCAN.html#sklearn.cluster.DBSCAN" title="sklearn.cluster.DBSCAN"><tt class="xref py py-class docutils literal"><span class="pre">DBSCAN</span></tt></a> algorithm views clusters as areas of high density
 separated by areas of low density. Due to this rather generic view, clusters
 found by DBSCAN can be any shape, as opposed to k-means which assumes that
 clusters are convex shaped. The central component to the DBSCAN is the concept
@@ -795,13 +799,13 @@ cluster is therefore a set of core samples, each close to each other
 (measured by some distance measure)
 and a set of non-core samples that are close to a core sample (but are not
 themselves core samples). There are two parameters to the algorithm,
-<code class="docutils literal"><span class="pre">min_samples</span></code> and <code class="docutils literal"><span class="pre">eps</span></code>,
+<tt class="docutils literal"><span class="pre">min_samples</span></tt> and <tt class="docutils literal"><span class="pre">eps</span></tt>,
 which define formally what we mean when we say <em>dense</em>.
-Higher <code class="docutils literal"><span class="pre">min_samples</span></code> or lower <code class="docutils literal"><span class="pre">eps</span></code>
+Higher <tt class="docutils literal"><span class="pre">min_samples</span></tt> or lower <tt class="docutils literal"><span class="pre">eps</span></tt>
 indicate higher density necessary to form a cluster.</p>
 <p>More formally, we define a core sample as being a sample in the dataset such
-that there exist <code class="docutils literal"><span class="pre">min_samples</span></code> other samples within a distance of
-<code class="docutils literal"><span class="pre">eps</span></code>, which are defined as <em>neighbors</em> of the core sample. This tells
+that there exist <tt class="docutils literal"><span class="pre">min_samples</span></tt> other samples within a distance of
+<tt class="docutils literal"><span class="pre">eps</span></tt>, which are defined as <em>neighbors</em> of the core sample. This tells
 us that the core sample is in a dense area of the vector space. A cluster
 is a set of core samples, that can be built by recursively by taking a core
 sample, finding all of its neighbors that are core samples, finding all of
@@ -810,19 +814,20 @@ set of non-core samples, which are samples that are neighbors of a core sample
 in the cluster but are not themselves core samples. Intuitively, these samples
 are on the fringes of a cluster.</p>
 <p>Any core sample is part of a cluster, by definition. Further, any cluster has
-at least <code class="docutils literal"><span class="pre">min_samples</span></code> points in it, following the definition of a core
+at least <tt class="docutils literal"><span class="pre">min_samples</span></tt> points in it, following the definition of a core
 sample. For any sample that is not a core sample, and does have a
-distance higher than <code class="docutils literal"><span class="pre">eps</span></code> to any core sample, it is considered an outlier by
+distance higher than <tt class="docutils literal"><span class="pre">eps</span></tt> to any core sample, it is considered an outlier by
 the algorithm.</p>
 <p>In the figure below, the color indicates cluster membership, with large circles
 indicating core samples found by the algorithm. Smaller circles are non-core
 samples that are still part of a cluster. Moreover, the outliers are indicated
 by black points below.</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/cluster/plot_dbscan.html"><img alt="dbscan_results" src="../_images/plot_dbscan_0011.png" style="width: 400.0px; height: 300.0px;" /></a></strong></p><div class="topic">
+<strong><a class="reference external image-reference" href="../auto_examples/cluster/plot_dbscan.html"><img alt="dbscan_results" src="../_images/plot_dbscan_0011.png" style="width: 400.0px; height: 300.0px;" /></a>
+</strong></p><div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_dbscan.html#example-cluster-plot-dbscan-py"><span>Demo of DBSCAN clustering algorithm</span></a></li>
+<li><a class="reference internal" href="../auto_examples/cluster/plot_dbscan.html#example-cluster-plot-dbscan-py"><em>Demo of DBSCAN clustering algorithm</em></a></li>
 </ul>
 </div>
 <div class="topic">
@@ -831,9 +836,9 @@ by black points below.</p>
 always belong to the same clusters (although the labels may be
 different). The non-determinism comes from deciding to which cluster a
 non-core sample belongs. A non-core sample can have a distance lower
-than <code class="docutils literal"><span class="pre">eps</span></code> to two core samples in different clusters. By the
+than <tt class="docutils literal"><span class="pre">eps</span></tt> to two core samples in different clusters. By the
 triangular inequality, those two core samples must be more distant than
-<code class="docutils literal"><span class="pre">eps</span></code> from each other, or they would be in the same cluster. The non-core
+<tt class="docutils literal"><span class="pre">eps</span></tt> from each other, or they would be in the same cluster. The non-core
 sample is assigned to whichever cluster is generated first, where
 the order is determined randomly. Other than the ordering of
 the dataset, the algorithm is deterministic, making the results relatively
@@ -843,7 +848,7 @@ to determine the neighborhood of points,
 which avoids calculating the full distance matrix
 (as was done in scikit-learn versions before 0.14).
 The possibility to use custom metrics is retained;
-for details, see <code class="xref py py-class docutils literal"><span class="pre">NearestNeighbors</span></code>.</p>
+for details, see <tt class="xref py py-class docutils literal"><span class="pre">NearestNeighbors</span></tt>.</p>
 </div>
 <div class="topic">
 <p class="topic-title first">References:</p>
@@ -858,7 +863,7 @@ and Data Mining, Portland, OR, AAAI Press, pp. 226–231. 1996</li>
 </div>
 <div class="section" id="birch">
 <span id="id9"></span><h2>2.3.8. Birch<a class="headerlink" href="#birch" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="generated/sklearn.cluster.Birch.html#sklearn.cluster.Birch" title="sklearn.cluster.Birch"><code class="xref py py-class docutils literal"><span class="pre">Birch</span></code></a> builds a tree called the Characteristic Feature Tree (CFT)
+<p>The <a class="reference internal" href="generated/sklearn.cluster.Birch.html#sklearn.cluster.Birch" title="sklearn.cluster.Birch"><tt class="xref py py-class docutils literal"><span class="pre">Birch</span></tt></a> builds a tree called the Characteristic Feature Tree (CFT)
 for the given data. The data is essentially lossy compressed to a set of
 Characteristic Feature nodes (CF Nodes). The CF Nodes have a number of
 subclusters called Characteristic Feature subclusters (CF Subclusters)
@@ -880,8 +885,8 @@ subclusters.</p>
 <p>This algorithm can be viewed as an instance or data reduction method,
 since it reduces the input data to a set of subclusters which are obtained directly
 from the leaves of the CFT. This reduced data can be further processed by feeding
-it into a global clusterer. This global clusterer can be set by <code class="docutils literal"><span class="pre">n_clusters</span></code>.
-If <code class="docutils literal"><span class="pre">n_clusters</span></code> is set to None, the subclusters from the leaves are directly
+it into a global clusterer. This global clusterer can be set by <tt class="docutils literal"><span class="pre">n_clusters</span></tt>.
+If <tt class="docutils literal"><span class="pre">n_clusters</span></tt> is set to None, the subclusters from the leaves are directly
 read off, otherwise a global clustering step labels these subclusters into global
 clusters (labels) and the samples are mapped to the global label of the nearest subcluster.</p>
 <p><strong>Algorithm description:</strong></p>
@@ -907,22 +912,22 @@ recursively, till it reaches the root.</li>
 <blockquote>
 <div><ul class="simple">
 <li>Birch does not scale very well to high dimensional data. As a rule of thumb if
-<code class="docutils literal"><span class="pre">n_features</span></code> is greater than twenty, it is generally better to use MiniBatchKMeans.</li>
+<tt class="docutils literal"><span class="pre">n_features</span></tt> is greater than twenty, it is generally better to use MiniBatchKMeans.</li>
 <li>If the number of instances of data needs to be reduced, or if one wants a
 large number of subclusters either as a preprocessing step or otherwise,
 Birch is more useful than MiniBatchKMeans.</li>
 </ul>
 </div></blockquote>
 <p><strong>How to use partial_fit?</strong></p>
-<p>To avoid the computation of global clustering, for every call of <code class="docutils literal"><span class="pre">partial_fit</span></code>
+<p>To avoid the computation of global clustering, for every call of <tt class="docutils literal"><span class="pre">partial_fit</span></tt>
 the user is advised</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li>To set <code class="docutils literal"><span class="pre">n_clusters=None</span></code> initially</li>
+<li>To set <tt class="docutils literal"><span class="pre">n_clusters=None</span></tt> initially</li>
 <li>Train all data by multiple calls to partial_fit.</li>
-<li>Set <code class="docutils literal"><span class="pre">n_clusters</span></code> to a required value using
-<code class="docutils literal"><span class="pre">brc.set_params(n_clusters=n_clusters)</span></code>.</li>
-<li>Call <code class="docutils literal"><span class="pre">partial_fit</span></code> finally with no arguments, i.e <code class="docutils literal"><span class="pre">brc.partial_fit()</span></code>
+<li>Set <tt class="docutils literal"><span class="pre">n_clusters</span></tt> to a required value using
+<tt class="docutils literal"><span class="pre">brc.set_params(n_clusters=n_clusters)</span></tt>.</li>
+<li>Call <tt class="docutils literal"><span class="pre">partial_fit</span></tt> finally with no arguments, i.e <tt class="docutils literal"><span class="pre">brc.partial_fit()</span></tt>
 which performs the global clustering.</li>
 </ol>
 </div></blockquote>
@@ -951,9 +956,9 @@ belong to the same class are more similar that members of different
 classes according to some similarity metric.</p>
 <div class="section" id="adjusted-rand-index">
 <span id="adjusted-rand-score"></span><h3>2.3.9.1. Adjusted Rand index<a class="headerlink" href="#adjusted-rand-index" title="Permalink to this headline">¶</a></h3>
-<p>Given the knowledge of the ground truth class assignments <code class="docutils literal"><span class="pre">labels_true</span></code>
+<p>Given the knowledge of the ground truth class assignments <tt class="docutils literal"><span class="pre">labels_true</span></tt>
 and our clustering algorithm assignments of the same samples
-<code class="docutils literal"><span class="pre">labels_pred</span></code>, the <strong>adjusted Rand index</strong> is a function that measures
+<tt class="docutils literal"><span class="pre">labels_pred</span></tt>, the <strong>adjusted Rand index</strong> is a function that measures
 the <strong>similarity</strong> of the two assignments, ignoring permutations and <strong>with
 chance normalization</strong>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
@@ -971,7 +976,7 @@ the same score:</p>
 <span class="go">0.24...</span>
 </pre></div>
 </div>
-<p>Furthermore, <a class="reference internal" href="generated/sklearn.metrics.adjusted_rand_score.html#sklearn.metrics.adjusted_rand_score" title="sklearn.metrics.adjusted_rand_score"><code class="xref py py-func docutils literal"><span class="pre">adjusted_rand_score</span></code></a> is <strong>symmetric</strong>: swapping the argument
+<p>Furthermore, <a class="reference internal" href="generated/sklearn.metrics.adjusted_rand_score.html#sklearn.metrics.adjusted_rand_score" title="sklearn.metrics.adjusted_rand_score"><tt class="xref py py-func docutils literal"><span class="pre">adjusted_rand_score</span></tt></a> is <strong>symmetric</strong>: swapping the argument
 does not change the score. It can thus be used as a <strong>consensus
 measure</strong>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">metrics</span><span class="o">.</span><span class="n">adjusted_rand_score</span><span class="p">(</span><span class="n">labels_pred</span><span class="p">,</span> <span class="n">labels_true</span><span class="p">)</span>  
@@ -995,7 +1000,7 @@ measure</strong>:</p>
 <h4>2.3.9.1.1. Advantages<a class="headerlink" href="#advantages" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>Random (uniform) label assignments have a ARI score close to 0.0</strong>
-for any value of <code class="docutils literal"><span class="pre">n_clusters</span></code> and <code class="docutils literal"><span class="pre">n_samples</span></code> (which is not the
+for any value of <tt class="docutils literal"><span class="pre">n_clusters</span></tt> and <tt class="docutils literal"><span class="pre">n_samples</span></tt> (which is not the
 case for raw Rand index or the V-measure for instance).</li>
 <li><strong>Bounded range [-1, 1]</strong>: negative values are bad (independent
 labelings), similar clusterings have a positive ARI, 1.0 is the perfect
@@ -1020,7 +1025,7 @@ model selection (TODO).</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_adjusted_for_chance_measures.html#example-cluster-plot-adjusted-for-chance-measures-py"><span>Adjustment for chance in clustering performance evaluation</span></a>: Analysis of
+<li><a class="reference internal" href="../auto_examples/cluster/plot_adjusted_for_chance_measures.html#example-cluster-plot-adjusted-for-chance-measures-py"><em>Adjustment for chance in clustering performance evaluation</em></a>: Analysis of
 the impact of the dataset size on the value of clustering measures
 for random assignments.</li>
 </ul>
@@ -1060,8 +1065,8 @@ L. Hubert and P. Arabie, Journal of Classification 1985</li>
 </div>
 <div class="section" id="mutual-information-based-scores">
 <span id="mutual-info-score"></span><h3>2.3.9.2. Mutual Information based scores<a class="headerlink" href="#mutual-information-based-scores" title="Permalink to this headline">¶</a></h3>
-<p>Given the knowledge of the ground truth class assignments <code class="docutils literal"><span class="pre">labels_true</span></code> and
-our clustering algorithm assignments of the same samples <code class="docutils literal"><span class="pre">labels_pred</span></code>, the
+<p>Given the knowledge of the ground truth class assignments <tt class="docutils literal"><span class="pre">labels_true</span></tt> and
+our clustering algorithm assignments of the same samples <tt class="docutils literal"><span class="pre">labels_pred</span></tt>, the
 <strong>Mutual Information</strong> is a function that measures the <strong>agreement</strong> of the two
 assignments, ignoring permutations.  Two different normalized versions of this
 measure are available, <strong>Normalized Mutual Information(NMI)</strong> and <strong>Adjusted
@@ -1082,8 +1087,8 @@ the same score:</p>
 <span class="go">0.22504...</span>
 </pre></div>
 </div>
-<p>All, <a class="reference internal" href="generated/sklearn.metrics.mutual_info_score.html#sklearn.metrics.mutual_info_score" title="sklearn.metrics.mutual_info_score"><code class="xref py py-func docutils literal"><span class="pre">mutual_info_score</span></code></a>, <a class="reference internal" href="generated/sklearn.metrics.adjusted_mutual_info_score.html#sklearn.metrics.adjusted_mutual_info_score" title="sklearn.metrics.adjusted_mutual_info_score"><code class="xref py py-func docutils literal"><span class="pre">adjusted_mutual_info_score</span></code></a> and
-<a class="reference internal" href="generated/sklearn.metrics.normalized_mutual_info_score.html#sklearn.metrics.normalized_mutual_info_score" title="sklearn.metrics.normalized_mutual_info_score"><code class="xref py py-func docutils literal"><span class="pre">normalized_mutual_info_score</span></code></a> are symmetric: swapping the argument does
+<p>All, <a class="reference internal" href="generated/sklearn.metrics.mutual_info_score.html#sklearn.metrics.mutual_info_score" title="sklearn.metrics.mutual_info_score"><tt class="xref py py-func docutils literal"><span class="pre">mutual_info_score</span></tt></a>, <a class="reference internal" href="generated/sklearn.metrics.adjusted_mutual_info_score.html#sklearn.metrics.adjusted_mutual_info_score" title="sklearn.metrics.adjusted_mutual_info_score"><tt class="xref py py-func docutils literal"><span class="pre">adjusted_mutual_info_score</span></tt></a> and
+<a class="reference internal" href="generated/sklearn.metrics.normalized_mutual_info_score.html#sklearn.metrics.normalized_mutual_info_score" title="sklearn.metrics.normalized_mutual_info_score"><tt class="xref py py-func docutils literal"><span class="pre">normalized_mutual_info_score</span></tt></a> are symmetric: swapping the argument does
 not change the score. Thus they can be used as a <strong>consensus measure</strong>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">metrics</span><span class="o">.</span><span class="n">adjusted_mutual_info_score</span><span class="p">(</span><span class="n">labels_pred</span><span class="p">,</span> <span class="n">labels_true</span><span class="p">)</span>  
 <span class="go">0.22504...</span>
@@ -1098,7 +1103,7 @@ not change the score. Thus they can be used as a <strong>consensus measure</stro
 <span class="go">1.0</span>
 </pre></div>
 </div>
-<p>This is not true for <code class="docutils literal"><span class="pre">mutual_info_score</span></code>, which is therefore harder to judge:</p>
+<p>This is not true for <tt class="docutils literal"><span class="pre">mutual_info_score</span></tt>, which is therefore harder to judge:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">metrics</span><span class="o">.</span><span class="n">mutual_info_score</span><span class="p">(</span><span class="n">labels_true</span><span class="p">,</span> <span class="n">labels_pred</span><span class="p">)</span>  
 <span class="go">0.69...</span>
 </pre></div>
@@ -1114,7 +1119,7 @@ not change the score. Thus they can be used as a <strong>consensus measure</stro
 <h4>2.3.9.2.1. Advantages<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>Random (uniform) label assignments have a AMI score close to 0.0</strong>
-for any value of <code class="docutils literal"><span class="pre">n_clusters</span></code> and <code class="docutils literal"><span class="pre">n_samples</span></code> (which is not the
+for any value of <tt class="docutils literal"><span class="pre">n_clusters</span></tt> and <tt class="docutils literal"><span class="pre">n_samples</span></tt> (which is not the
 case for raw Mutual Information or the V-measure for instance).</li>
 <li><strong>Bounded range [0, 1]</strong>:  Values close to zero indicate two label
 assignments that are largely independent, while values close to one
@@ -1144,7 +1149,7 @@ model selection.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_adjusted_for_chance_measures.html#example-cluster-plot-adjusted-for-chance-measures-py"><span>Adjustment for chance in clustering performance evaluation</span></a>: Analysis of
+<li><a class="reference internal" href="../auto_examples/cluster/plot_adjusted_for_chance_measures.html#example-cluster-plot-adjusted-for-chance-measures-py"><em>Adjustment for chance in clustering performance evaluation</em></a>: Analysis of
 the impact of the dataset size on the value of clustering measures
 for random assignments. This example also includes the Adjusted Rand
 Index.</li>
@@ -1221,8 +1226,8 @@ desirable objectives for any cluster assignment:</p>
 <li><strong>completeness</strong>: all members of a given class are assigned to the same
 cluster.</li>
 </ul>
-<p>We can turn those concept as scores <a class="reference internal" href="generated/sklearn.metrics.homogeneity_score.html#sklearn.metrics.homogeneity_score" title="sklearn.metrics.homogeneity_score"><code class="xref py py-func docutils literal"><span class="pre">homogeneity_score</span></code></a> and
-<a class="reference internal" href="generated/sklearn.metrics.completeness_score.html#sklearn.metrics.completeness_score" title="sklearn.metrics.completeness_score"><code class="xref py py-func docutils literal"><span class="pre">completeness_score</span></code></a>. Both are bounded below by 0.0 and above by
+<p>We can turn those concept as scores <a class="reference internal" href="generated/sklearn.metrics.homogeneity_score.html#sklearn.metrics.homogeneity_score" title="sklearn.metrics.homogeneity_score"><tt class="xref py py-func docutils literal"><span class="pre">homogeneity_score</span></tt></a> and
+<a class="reference internal" href="generated/sklearn.metrics.completeness_score.html#sklearn.metrics.completeness_score" title="sklearn.metrics.completeness_score"><tt class="xref py py-func docutils literal"><span class="pre">completeness_score</span></tt></a>. Both are bounded below by 0.0 and above by
 1.0 (higher is better):</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">metrics</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">labels_true</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
@@ -1236,7 +1241,7 @@ cluster.</li>
 </pre></div>
 </div>
 <p>Their harmonic mean called <strong>V-measure</strong> is computed by
-<a class="reference internal" href="generated/sklearn.metrics.v_measure_score.html#sklearn.metrics.v_measure_score" title="sklearn.metrics.v_measure_score"><code class="xref py py-func docutils literal"><span class="pre">v_measure_score</span></code></a>:</p>
+<a class="reference internal" href="generated/sklearn.metrics.v_measure_score.html#sklearn.metrics.v_measure_score" title="sklearn.metrics.v_measure_score"><tt class="xref py py-func docutils literal"><span class="pre">v_measure_score</span></tt></a>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">metrics</span><span class="o">.</span><span class="n">v_measure_score</span><span class="p">(</span><span class="n">labels_true</span><span class="p">,</span> <span class="n">labels_pred</span><span class="p">)</span>    
 <span class="go">0.51...</span>
 </pre></div>
@@ -1244,7 +1249,7 @@ cluster.</li>
 <p>The V-measure is actually equivalent to the mutual information (NMI)
 discussed above normalized by the sum of the label entropies <a class="reference internal" href="#b2011" id="id13">[B2011]</a>.</p>
 <p>Homogeneity, completeness and V-measure can be computed at once using
-<a class="reference internal" href="generated/sklearn.metrics.homogeneity_completeness_v_measure.html#sklearn.metrics.homogeneity_completeness_v_measure" title="sklearn.metrics.homogeneity_completeness_v_measure"><code class="xref py py-func docutils literal"><span class="pre">homogeneity_completeness_v_measure</span></code></a> as follows:</p>
+<a class="reference internal" href="generated/sklearn.metrics.homogeneity_completeness_v_measure.html#sklearn.metrics.homogeneity_completeness_v_measure" title="sklearn.metrics.homogeneity_completeness_v_measure"><tt class="xref py py-func docutils literal"><span class="pre">homogeneity_completeness_v_measure</span></tt></a> as follows:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">metrics</span><span class="o">.</span><span class="n">homogeneity_completeness_v_measure</span><span class="p">(</span><span class="n">labels_true</span><span class="p">,</span> <span class="n">labels_pred</span><span class="p">)</span>
 <span class="gp">... </span>                                                     
 <span class="go">(0.66..., 0.42..., 0.51...)</span>
@@ -1260,10 +1265,10 @@ homogeneous but not complete:</p>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p><a class="reference internal" href="generated/sklearn.metrics.v_measure_score.html#sklearn.metrics.v_measure_score" title="sklearn.metrics.v_measure_score"><code class="xref py py-func docutils literal"><span class="pre">v_measure_score</span></code></a> is <strong>symmetric</strong>: it can be used to evaluate
+<p><a class="reference internal" href="generated/sklearn.metrics.v_measure_score.html#sklearn.metrics.v_measure_score" title="sklearn.metrics.v_measure_score"><tt class="xref py py-func docutils literal"><span class="pre">v_measure_score</span></tt></a> is <strong>symmetric</strong>: it can be used to evaluate
 the <strong>agreement</strong> of two independent assignments on the same dataset.</p>
-<p>This is not the case for <a class="reference internal" href="generated/sklearn.metrics.completeness_score.html#sklearn.metrics.completeness_score" title="sklearn.metrics.completeness_score"><code class="xref py py-func docutils literal"><span class="pre">completeness_score</span></code></a> and
-<a class="reference internal" href="generated/sklearn.metrics.homogeneity_score.html#sklearn.metrics.homogeneity_score" title="sklearn.metrics.homogeneity_score"><code class="xref py py-func docutils literal"><span class="pre">homogeneity_score</span></code></a>: both are bound by the relationship:</p>
+<p>This is not the case for <a class="reference internal" href="generated/sklearn.metrics.completeness_score.html#sklearn.metrics.completeness_score" title="sklearn.metrics.completeness_score"><tt class="xref py py-func docutils literal"><span class="pre">completeness_score</span></tt></a> and
+<a class="reference internal" href="generated/sklearn.metrics.homogeneity_score.html#sklearn.metrics.homogeneity_score" title="sklearn.metrics.homogeneity_score"><tt class="xref py py-func docutils literal"><span class="pre">homogeneity_score</span></tt></a>: both are bound by the relationship:</p>
 <div class="last highlight-python"><div class="highlight"><pre><span class="n">homogeneity_score</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="o">==</span> <span class="n">completeness_score</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -1307,7 +1312,7 @@ human annotators (as in the supervised learning setting).</li>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_adjusted_for_chance_measures.html#example-cluster-plot-adjusted-for-chance-measures-py"><span>Adjustment for chance in clustering performance evaluation</span></a>: Analysis of
+<li><a class="reference internal" href="../auto_examples/cluster/plot_adjusted_for_chance_measures.html#example-cluster-plot-adjusted-for-chance-measures-py"><em>Adjustment for chance in clustering performance evaluation</em></a>: Analysis of
 the impact of the dataset size on the value of clustering measures
 for random assignments.</li>
 </ul>
@@ -1362,7 +1367,7 @@ Becker, PhD Thesis.</td></tr>
 <span id="id17"></span><h3>2.3.9.4. Silhouette Coefficient<a class="headerlink" href="#silhouette-coefficient" title="Permalink to this headline">¶</a></h3>
 <p>If the ground truth labels are not known, evaluation must be performed using
 the model itself. The Silhouette Coefficient
-(<a class="reference internal" href="generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score" title="sklearn.metrics.silhouette_score"><code class="xref py py-func docutils literal"><span class="pre">sklearn.metrics.silhouette_score</span></code></a>)
+(<a class="reference internal" href="generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score" title="sklearn.metrics.silhouette_score"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.metrics.silhouette_score</span></tt></a>)
 is an example of such an evaluation, where a
 higher Silhouette Coefficient score relates to a model with better defined
 clusters. The Silhouette Coefficient is defined for each sample and is composed
@@ -1425,7 +1430,7 @@ through DBSCAN.</li>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/cluster/plot_kmeans_silhouette_analysis.html#example-cluster-plot-kmeans-silhouette-analysis-py"><span>Selecting the number of clusters with silhouette analysis on KMeans clustering</span></a> : In this example
+<li><a class="reference internal" href="../auto_examples/cluster/plot_kmeans_silhouette_analysis.html#example-cluster-plot-kmeans-silhouette-analysis-py"><em>Selecting the number of clusters with silhouette analysis on KMeans clustering</em></a> : In this example
 the silhouette analysis is used to choose an optimal value for n_clusters.</li>
 </ul>
 </div>

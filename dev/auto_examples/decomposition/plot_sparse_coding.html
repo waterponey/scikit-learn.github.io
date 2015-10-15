@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sparse-coding-with-a-precomputed-dictionary">
 <span id="example-decomposition-plot-sparse-coding-py"></span><h1>Sparse coding with a precomputed dictionary<a class="headerlink" href="#sparse-coding-with-a-precomputed-dictionary" title="Permalink to this headline">¶</a></h1>
 <p>Transform a signal as a sparse combination of Ricker wavelets. This example
 visually compares different sparse coding methods using the
-<a class="reference internal" href="../../modules/generated/sklearn.decomposition.SparseCoder.html#sklearn.decomposition.SparseCoder" title="sklearn.decomposition.SparseCoder"><code class="xref py py-class docutils literal"><span class="pre">sklearn.decomposition.SparseCoder</span></code></a> estimator. The Ricker (also known
+<a class="reference internal" href="../../modules/generated/sklearn.decomposition.SparseCoder.html#sklearn.decomposition.SparseCoder" title="sklearn.decomposition.SparseCoder"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.decomposition.SparseCoder</span></tt></a> estimator. The Ricker (also known
 as Mexican hat or the second derivative of a Gaussian) is not a particularly
 good kernel to represent piecewise constant signals like this one. It can
 therefore be seen how much adding different widths of atoms matters and it
@@ -177,7 +177,7 @@ therefore motivates learning the dictionary to best fit your type of signals.</p
 <p>The richer dictionary on the right is not larger in size, heavier subsampling
 is performed in order to stay on the same order of magnitude.</p>
 <img alt="../../_images/plot_sparse_coding_001.png" class="align-center" src="../../_images/plot_sparse_coding_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_sparse_coding.py"><code class="xref download docutils literal"><span class="pre">plot_sparse_coding.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_sparse_coding.py"><tt class="xref download docutils literal"><span class="pre">plot_sparse_coding.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -174,17 +174,17 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="biclustering">
 <span id="id1"></span><h1>2.4. Biclustering<a class="headerlink" href="#biclustering" title="Permalink to this headline">¶</a></h1>
 <p>Biclustering can be performed with the module
-<a class="reference internal" href="classes.html#module-sklearn.cluster.bicluster" title="sklearn.cluster.bicluster"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster.bicluster</span></code></a>. Biclustering algorithms simultaneously
+<a class="reference internal" href="classes.html#module-sklearn.cluster.bicluster" title="sklearn.cluster.bicluster"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster.bicluster</span></tt></a>. Biclustering algorithms simultaneously
 cluster rows and columns of a data matrix. These clusters of rows and
 columns are known as biclusters. Each determines a submatrix of the
 original data matrix with some desired properties.</p>
-<p>For instance, given a matrix of shape <code class="docutils literal"><span class="pre">(10,</span> <span class="pre">10)</span></code>, one possible bicluster
-with three rows and two columns induces a submatrix of shape <code class="docutils literal"><span class="pre">(3,</span> <span class="pre">2)</span></code>:</p>
+<p>For instance, given a matrix of shape <tt class="docutils literal"><span class="pre">(10,</span> <span class="pre">10)</span></tt>, one possible bicluster
+with three rows and two columns induces a submatrix of shape <tt class="docutils literal"><span class="pre">(3,</span> <span class="pre">2)</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
@@ -214,24 +214,24 @@ rearranging the rows and columns of the data matrix reveals the
 biclusters on the diagonal. Here is an example of this structure
 where biclusters have higher average values than the other rows and
 columns:</p>
-<div class="figure align-center" id="id5">
+<div class="figure align-center">
 <a class="reference external image-reference" href="../auto_examples/bicluster/images/plot_spectral_coclustering_003.png"><img alt="../_images/plot_spectral_coclustering_0031.png" src="../_images/plot_spectral_coclustering_0031.png" style="width: 300.0px; height: 300.0px;" /></a>
-<p class="caption"><span class="caption-text">An example of biclusters formed by partitioning rows and columns.</span></p>
+<p class="caption">An example of biclusters formed by partitioning rows and columns.</p>
 </div>
 <p>In the checkerboard case, each row belongs to all column clusters, and
 each column belongs to all row clusters. Here is an example of this
 structure where the variance of the values within each bicluster is
 small:</p>
-<div class="figure align-center" id="id6">
+<div class="figure align-center">
 <a class="reference external image-reference" href="../auto_examples/bicluster/images/plot_spectral_biclustering_003.png"><img alt="../_images/plot_spectral_biclustering_0031.png" src="../_images/plot_spectral_biclustering_0031.png" style="width: 300.0px; height: 300.0px;" /></a>
-<p class="caption"><span class="caption-text">An example of checkerboard biclusters.</span></p>
+<p class="caption">An example of checkerboard biclusters.</p>
 </div>
 <p>After fitting a model, row and column cluster membership can be found
-in the <code class="docutils literal"><span class="pre">rows_</span></code> and <code class="docutils literal"><span class="pre">columns_</span></code> attributes. <code class="docutils literal"><span class="pre">rows_[i]</span></code> is a binary vector
+in the <tt class="docutils literal"><span class="pre">rows_</span></tt> and <tt class="docutils literal"><span class="pre">columns_</span></tt> attributes. <tt class="docutils literal"><span class="pre">rows_[i]</span></tt> is a binary vector
 with nonzero entries corresponding to rows that belong to bicluster
-<code class="docutils literal"><span class="pre">i</span></code>. Similarly, <code class="docutils literal"><span class="pre">columns_[i]</span></code> indicates which columns belong to
-bicluster <code class="docutils literal"><span class="pre">i</span></code>.</p>
-<p>Some models also have <code class="docutils literal"><span class="pre">row_labels_</span></code> and <code class="docutils literal"><span class="pre">column_labels_</span></code> attributes.
+<tt class="docutils literal"><span class="pre">i</span></tt>. Similarly, <tt class="docutils literal"><span class="pre">columns_[i]</span></tt> indicates which columns belong to
+bicluster <tt class="docutils literal"><span class="pre">i</span></tt>.</p>
+<p>Some models also have <tt class="docutils literal"><span class="pre">row_labels_</span></tt> and <tt class="docutils literal"><span class="pre">column_labels_</span></tt> attributes.
 These models partition the rows and columns, such as in the block
 diagonal and checkerboard bicluster structures.</p>
 <div class="admonition note">
@@ -244,7 +244,7 @@ these alternate names.</p>
 </div>
 <div class="section" id="spectral-co-clustering">
 <span id="spectral-coclustering"></span><h2>2.4.1. Spectral Co-Clustering<a class="headerlink" href="#spectral-co-clustering" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="generated/sklearn.cluster.bicluster.SpectralCoclustering.html#sklearn.cluster.bicluster.SpectralCoclustering" title="sklearn.cluster.bicluster.SpectralCoclustering"><code class="xref py py-class docutils literal"><span class="pre">SpectralCoclustering</span></code></a> algorithm finds biclusters with
+<p>The <a class="reference internal" href="generated/sklearn.cluster.bicluster.SpectralCoclustering.html#sklearn.cluster.bicluster.SpectralCoclustering" title="sklearn.cluster.bicluster.SpectralCoclustering"><tt class="xref py py-class docutils literal"><span class="pre">SpectralCoclustering</span></tt></a> algorithm finds biclusters with
 values higher than those in the corresponding other rows and columns.
 Each row and each column belongs to exactly one bicluster, so
 rearranging the rows and columns to make partitions contiguous reveals
@@ -286,15 +286,15 @@ are used to form the matrix <img class="math" src="../_images/math/c4563e7ecec23
       \end{bmatrix}"/></p>
 </div><p>where the the columns of <img class="math" src="../_images/math/73f5e249c88b2b3068263480f576b051cb5c4f6e.png" alt="U"/> are <img class="math" src="../_images/math/f92ab7ae092a16eac5c7423d7c5446623447d724.png" alt="u_2, \dots, u_{\ell +
 1}"/>, and similarly for <img class="math" src="../_images/math/c99df7a209495334da442b1ec998abaabfa320d8.png" alt="V"/>.</p>
-<p>Then the rows of <img class="math" src="../_images/math/c4563e7ecec2336a3934447a6c10ef8519b0b452.png" alt="Z"/> are clustered using <a class="reference internal" href="clustering.html#k-means"><span>k-means</span></a>. The first <code class="docutils literal"><span class="pre">n_rows</span></code> labels provide the row partitioning,
-and the remaining <code class="docutils literal"><span class="pre">n_columns</span></code> labels provide the column partitioning.</p>
+<p>Then the rows of <img class="math" src="../_images/math/c4563e7ecec2336a3934447a6c10ef8519b0b452.png" alt="Z"/> are clustered using <a class="reference internal" href="clustering.html#k-means"><em>k-means</em></a>. The first <tt class="docutils literal"><span class="pre">n_rows</span></tt> labels provide the row partitioning,
+and the remaining <tt class="docutils literal"><span class="pre">n_columns</span></tt> labels provide the column partitioning.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/bicluster/plot_spectral_coclustering.html#example-bicluster-plot-spectral-coclustering-py"><span>A demo of the Spectral Co-Clustering algorithm</span></a>: A simple example
+<li><a class="reference internal" href="../auto_examples/bicluster/plot_spectral_coclustering.html#example-bicluster-plot-spectral-coclustering-py"><em>A demo of the Spectral Co-Clustering algorithm</em></a>: A simple example
 showing how to generate a data matrix with biclusters and apply
 this method to it.</li>
-<li><a class="reference internal" href="../auto_examples/bicluster/bicluster_newsgroups.html#example-bicluster-bicluster-newsgroups-py"><span>Biclustering documents with the Spectral Co-clustering algorithm</span></a>: An example of finding
+<li><a class="reference internal" href="../auto_examples/bicluster/bicluster_newsgroups.html#example-bicluster-bicluster-newsgroups-py"><em>Biclustering documents with the Spectral Co-clustering algorithm</em></a>: An example of finding
 biclusters in the twenty newsgroup dataset.</li>
 </ul>
 </div>
@@ -309,7 +309,7 @@ bipartite spectral graph partitioning</a>.</li>
 </div>
 <div class="section" id="spectral-biclustering">
 <span id="id2"></span><h2>2.4.2. Spectral Biclustering<a class="headerlink" href="#spectral-biclustering" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="generated/sklearn.cluster.bicluster.SpectralBiclustering.html#sklearn.cluster.bicluster.SpectralBiclustering" title="sklearn.cluster.bicluster.SpectralBiclustering"><code class="xref py py-class docutils literal"><span class="pre">SpectralBiclustering</span></code></a> algorithm assumes that the input
+<p>The <a class="reference internal" href="generated/sklearn.cluster.bicluster.SpectralBiclustering.html#sklearn.cluster.bicluster.SpectralBiclustering" title="sklearn.cluster.bicluster.SpectralBiclustering"><tt class="xref py py-class docutils literal"><span class="pre">SpectralBiclustering</span></tt></a> algorithm assumes that the input
 data matrix has a hidden checkerboard structure. The rows and columns
 of a matrix with this structure may be partitioned so that the entries
 of any bicluster in the Cartesian product of row clusters and column
@@ -365,7 +365,7 @@ clustering this <img class="math" src="../_images/math/90669be6326baab71b695e16b
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/bicluster/plot_spectral_biclustering.html#example-bicluster-plot-spectral-biclustering-py"><span>A demo of the Spectral Biclustering algorithm</span></a>: a simple example
+<li><a class="reference internal" href="../auto_examples/bicluster/plot_spectral_biclustering.html#example-bicluster-plot-spectral-biclustering-py"><em>A demo of the Spectral Biclustering algorithm</em></a>: a simple example
 showing how to generate a checkerboard matrix and bicluster it.</li>
 </ul>
 </div>
@@ -401,7 +401,7 @@ the number of elements in their intersection. The Jaccard index
 achieves its minimum of 0 when the biclusters to not overlap at all
 and its maximum of 1 when they are identical.</p>
 <p>Several methods have been developed to compare two sets of biclusters.
-For now, only <a class="reference internal" href="generated/sklearn.metrics.consensus_score.html#sklearn.metrics.consensus_score" title="sklearn.metrics.consensus_score"><code class="xref py py-func docutils literal"><span class="pre">consensus_score</span></code></a> (Hochreiter et. al., 2010) is
+For now, only <a class="reference internal" href="generated/sklearn.metrics.consensus_score.html#sklearn.metrics.consensus_score" title="sklearn.metrics.consensus_score"><tt class="xref py py-func docutils literal"><span class="pre">consensus_score</span></tt></a> (Hochreiter et. al., 2010) is
 available:</p>
 <ol class="arabic simple">
 <li>Compute bicluster similarities for pairs of biclusters, one in each

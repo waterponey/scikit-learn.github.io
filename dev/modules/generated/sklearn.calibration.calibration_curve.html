@@ -36,7 +36,7 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.pipeline.Pipeline" href="sklearn.pipeline.Pipeline.html" />
+    <link rel="next" title="sklearn.cross_decomposition.PLSRegression" href="sklearn.cross_decomposition.PLSRegression.html" />
     <link rel="prev" title="sklearn.calibration.CalibratedClassifierCV" href="sklearn.calibration.CalibratedClassifierCV.html" />
   
   
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.calibration</span></code>.calibration_curve</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-calibration-calibration-curve">Examples using <code class="docutils literal"><span class="pre">sklearn.calibration.calibration_curve</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.calibration</span></tt>.calibration_curve</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-calibration-calibration-curve">Examples using <tt class="docutils literal"><span class="pre">sklearn.calibration.calibration_curve</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -166,15 +166,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-calibration-calibration-curve">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.calibration" title="sklearn.calibration"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.calibration</span></code></a>.calibration_curve<a class="headerlink" href="#sklearn-calibration-calibration-curve" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.calibration" title="sklearn.calibration"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.calibration</span></tt></a>.calibration_curve<a class="headerlink" href="#sklearn-calibration-calibration-curve" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.calibration.calibration_curve">
-<code class="descclassname">sklearn.calibration.</code><code class="descname">calibration_curve</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_prob</em>, <em>normalize=False</em>, <em>n_bins=5</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/calibration.py#L491"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.calibration.calibration_curve" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.calibration.</tt><tt class="descname">calibration_curve</tt><big>(</big><em>y_true</em>, <em>y_prob</em>, <em>normalize=False</em>, <em>n_bins=5</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/calibration.py#L491"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.calibration.calibration_curve" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute true and predicted probabilities for a calibration curve.</p>
-<p>Read more in the <a class="reference internal" href="../calibration.html#calibration"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../calibration.html#calibration"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -219,14 +219,14 @@ See section 4 (Qualitative Analysis of Predictions).</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-calibration-calibration-curve">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.calibration.calibration_curve</span></code><a class="headerlink" href="#examples-using-sklearn-calibration-calibration-curve" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Well calibrated classifiers are probabilistic classifiers for which the output of the predict_p..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.calibration.calibration_curve</span></tt><a class="headerlink" href="#examples-using-sklearn-calibration-calibration-curve" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Well calibrated classifiers are probabilistic classifiers for which the output of the predict_p..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/calibration/plot_compare_calibration.html"><img alt="../../_images/plot_compare_calibration1.png" src="../../_images/plot_compare_calibration1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/calibration/plot_compare_calibration.html#example-calibration-plot-compare-calibration-py"><span>Comparison of Calibration of Classifiers</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/calibration/plot_compare_calibration.html#example-calibration-plot-compare-calibration-py"><em>Comparison of Calibration of Classifiers</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="When performing classification one often wants to predict not only the class label, but also th..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="When performing classification one often wants to predict not only the class label, but also th..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/calibration/plot_calibration_curve.html"><img alt="../../_images/plot_calibration_curve1.png" src="../../_images/plot_calibration_curve1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_curve.html#example-calibration-plot-calibration-curve-py"><span>Probability Calibration curves</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_curve.html#example-calibration-plot-calibration-curve-py"><em>Probability Calibration curves</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

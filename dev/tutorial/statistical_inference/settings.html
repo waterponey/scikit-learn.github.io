@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -167,7 +167,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="statistical-learning-the-setting-and-the-estimator-object-in-scikit-learn">
 <h1>Statistical learning: the setting and the estimator object in scikit-learn<a class="headerlink" href="#statistical-learning-the-setting-and-the-estimator-object-in-scikit-learn" title="Permalink to this headline">¶</a></h1>
@@ -189,9 +189,9 @@ these arrays is the <strong>samples</strong> axis, while the second is the
 </div>
 <p>It is made of 150 observations of irises, each described by 4
 features: their sepal and petal length and width, as detailed in
-<code class="docutils literal"><span class="pre">iris.DESCR</span></code>.</p>
+<tt class="docutils literal"><span class="pre">iris.DESCR</span></tt>.</p>
 </div>
-<p>When the data is not initially in the <code class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_features)</span></code> shape, it
+<p>When the data is not initially in the <tt class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_features)</span></tt> shape, it
 needs to be preprocessed in order to be used by scikit-learn.</p>
 <div class="topic">
 <p class="topic-title first">An example of reshaping data would be the digits dataset</p>
@@ -219,7 +219,7 @@ feature vector of length 64</p>
 <cite>estimator</cite>. An estimator is any object that learns from data;
 it may be a classification, regression or clustering algorithm or
 a <em>transformer</em> that extracts/filters useful features from raw data.</p>
-<p>All estimator objects expose a <code class="docutils literal"><span class="pre">fit</span></code> method that takes a dataset
+<p>All estimator objects expose a <tt class="docutils literal"><span class="pre">fit</span></tt> method that takes a dataset
 (usually a 2-d array):</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>

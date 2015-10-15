@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.decomposition.NMF" href="sklearn.decomposition.NMF.html" />
+    <link rel="prev" title="sklearn.decomposition.FastICA" href="sklearn.decomposition.FastICA.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.decomposition.FastICA.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.decom...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.decomposition.FastICA
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.decomposition</span></code>.TruncatedSVD</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-decomposition-truncatedsvd">Examples using <code class="docutils literal"><span class="pre">sklearn.decomposition.TruncatedSVD</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.decomposition</span></tt>.TruncatedSVD</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-decomposition-truncatedsvd">Examples using <tt class="docutils literal"><span class="pre">sklearn.decomposition.TruncatedSVD</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-decomposition-truncatedsvd">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></code></a>.TruncatedSVD<a class="headerlink" href="#sklearn-decomposition-truncatedsvd" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></tt></a>.TruncatedSVD<a class="headerlink" href="#sklearn-decomposition-truncatedsvd" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.decomposition.TruncatedSVD">
-<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">TruncatedSVD</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>algorithm='randomized'</em>, <em>n_iter=5</em>, <em>random_state=None</em>, <em>tol=0.0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L25"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.decomposition.</tt><tt class="descname">TruncatedSVD</tt><big>(</big><em>n_components=2</em>, <em>algorithm='randomized'</em>, <em>n_iter=5</em>, <em>random_state=None</em>, <em>tol=0.0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L25"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dimensionality reduction using truncated SVD (aka LSA).</p>
 <p>This transformer performs linear dimensionality reduction by means of
 truncated singular value decomposition (SVD). It is very similar to PCA,
@@ -144,7 +184,7 @@ context, it is known as latent semantic analysis (LSA).</p>
 <p>This estimator supports two algorithm: a fast randomized SVD solver, and
 a &#8220;naive&#8221; algorithm that uses ARPACK as an eigensolver on (X * X.T) or
 (X.T * X), whichever is more efficient.</p>
-<p>Read more in the <a class="reference internal" href="../decomposition.html#lsa"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../decomposition.html#lsa"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -194,11 +234,11 @@ each component.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.decomposition.PCA.html#sklearn.decomposition.PCA" title="sklearn.decomposition.PCA"><code class="xref py py-obj docutils literal"><span class="pre">PCA</span></code></a>, <a class="reference internal" href="sklearn.decomposition.RandomizedPCA.html#sklearn.decomposition.RandomizedPCA" title="sklearn.decomposition.RandomizedPCA"><code class="xref py py-obj docutils literal"><span class="pre">RandomizedPCA</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.decomposition.PCA.html#sklearn.decomposition.PCA" title="sklearn.decomposition.PCA"><tt class="xref py py-obj docutils literal"><span class="pre">PCA</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.RandomizedPCA.html#sklearn.decomposition.RandomizedPCA" title="sklearn.decomposition.RandomizedPCA"><tt class="xref py py-obj docutils literal"><span class="pre">RandomizedPCA</span></tt></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>SVD suffers from a problem called &#8220;sign indeterminancy&#8221;, which means the
-sign of the <code class="docutils literal"><span class="pre">components_</span></code> and the output from transform depend on the
+sign of the <tt class="docutils literal"><span class="pre">components_</span></tt> and the output from transform depend on the
 algorithm and random state. To work around this, fit instances of this
 class to data once, then keep the instance around to do transformations.</p>
 <p class="rubric">References</p>
@@ -226,16 +266,34 @@ Halko, et al., 2009 (arXiv:909) http://arxiv.org/pdf/0909.4061</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.TruncatedSVD.fit" title="sklearn.decomposition.TruncatedSVD.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit LSI model on training data X.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.TruncatedSVD.fit_transform" title="sklearn.decomposition.TruncatedSVD.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit LSI model to X and perform dimensionality reduction on X.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.TruncatedSVD.get_params" title="sklearn.decomposition.TruncatedSVD.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.TruncatedSVD.inverse_transform" title="sklearn.decomposition.TruncatedSVD.inverse_transform"><tt class="xref py py-obj docutils literal"><span class="pre">inverse_transform</span></tt></a>(X)</td>
+<td>Transform X back to its original space.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.TruncatedSVD.set_params" title="sklearn.decomposition.TruncatedSVD.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.TruncatedSVD.transform" title="sklearn.decomposition.TruncatedSVD.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
+<td>Perform dimensionality reduction on X.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.decomposition.TruncatedSVD.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>algorithm='randomized'</em>, <em>n_iter=5</em>, <em>random_state=None</em>, <em>tol=0.0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L111"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>n_components=2</em>, <em>algorithm='randomized'</em>, <em>n_iter=5</em>, <em>random_state=None</em>, <em>tol=0.0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L111"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.decomposition.TruncatedSVD.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L119"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L119"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit LSI model on training data X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -259,7 +317,7 @@ Halko, et al., 2009 (arXiv:909) http://arxiv.org/pdf/0909.4061</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.TruncatedSVD.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L135"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L135"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit LSI model to X and perform dimensionality reduction on X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -283,7 +341,7 @@ Halko, et al., 2009 (arXiv:909) http://arxiv.org/pdf/0909.4061</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.TruncatedSVD.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -308,7 +366,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.TruncatedSVD.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L203"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">inverse_transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L203"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform X back to its original space.</p>
 <p>Returns an array X_original whose transform would be X.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -333,11 +391,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.TruncatedSVD.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -351,7 +409,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.TruncatedSVD.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L187"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/decomposition/truncated_svd.py#L187"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.TruncatedSVD.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform dimensionality reduction on X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -376,22 +434,22 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-decomposition-truncatedsvd">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.decomposition.TruncatedSVD</span></code><a class="headerlink" href="#examples-using-sklearn-decomposition-truncatedsvd" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Datasets can often contain components of that require different feature extraction and processi..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.decomposition.TruncatedSVD</span></tt><a class="headerlink" href="#examples-using-sklearn-decomposition-truncatedsvd" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Datasets can often contain components of that require different feature extraction and processi..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./hetero_feature_union.html"><img alt="../../_images/hetero_feature_union1.png" src="../../_images/hetero_feature_union1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/hetero_feature_union.html#example-hetero-feature-union-py"><span>Feature Union with Heterogeneous Data Sources</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/hetero_feature_union.html#example-hetero-feature-union-py"><em>Feature Union with Heterogeneous Data Sources</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="RandomTreesEmbedding provides a way to map data to a very high-dimensional, sparse representati..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="RandomTreesEmbedding provides a way to map data to a very high-dimensional, sparse representati..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_random_forest_embedding.html"><img alt="../../_images/plot_random_forest_embedding1.png" src="../../_images/plot_random_forest_embedding1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_random_forest_embedding.html#example-ensemble-plot-random-forest-embedding-py"><span>Hashing feature transformation using Totally Random Trees</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_random_forest_embedding.html#example-ensemble-plot-random-forest-embedding-py"><em>Hashing feature transformation using Totally Random Trees</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An illustration of various embeddings on the digits dataset."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="An illustration of various embeddings on the digits dataset."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/manifold/plot_lle_digits.html"><img alt="../../_images/plot_lle_digits1.png" src="../../_images/plot_lle_digits1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/manifold/plot_lle_digits.html#example-manifold-plot-lle-digits-py"><span>Manifold learning on handwritten digits: Locally Linear Embedding, Isomap...</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/manifold/plot_lle_digits.html#example-manifold-plot-lle-digits-py"><em>Manifold learning on handwritten digits: Locally Linear Embedding, Isomap...</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This is an example showing how the scikit-learn can be used to cluster documents by topics usin..."><div class="figure" id="id4">
+</div><div class="thumbnailContainer" tooltip="This is an example showing how the scikit-learn can be used to cluster documents by topics usin..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/text/document_clustering.html"><img alt="../../_images/document_clustering1.png" src="../../_images/document_clustering1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/text/document_clustering.html#example-text-document-clustering-py"><span>Clustering text documents using k-means</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/text/document_clustering.html#example-text-document-clustering-py"><em>Clustering text documents using k-means</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -408,8 +466,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.decomposition.TruncatedSVD.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.decomposition.FastICA.html">Previous
+      </a>
+    </div>
     
      </div>
 

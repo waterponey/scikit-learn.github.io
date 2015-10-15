@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.preprocessing.PolynomialFeatures" href="sklearn.preprocessing.PolynomialFeatures.html" />
+    <link rel="prev" title="sklearn.preprocessing.Normalizer" href="sklearn.preprocessing.Normalizer.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.preprocessing.Normalizer.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.prepr...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.preprocessing.Normalizer
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.preprocessing</span></code>.OneHotEncoder</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-preprocessing-onehotencoder">Examples using <code class="docutils literal"><span class="pre">sklearn.preprocessing.OneHotEncoder</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.preprocessing</span></tt>.OneHotEncoder</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-preprocessing-onehotencoder">Examples using <tt class="docutils literal"><span class="pre">sklearn.preprocessing.OneHotEncoder</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-preprocessing-onehotencoder">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.preprocessing" title="sklearn.preprocessing"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.preprocessing</span></code></a>.OneHotEncoder<a class="headerlink" href="#sklearn-preprocessing-onehotencoder" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.preprocessing" title="sklearn.preprocessing"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.preprocessing</span></tt></a>.OneHotEncoder<a class="headerlink" href="#sklearn-preprocessing-onehotencoder" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.preprocessing.OneHotEncoder">
-<em class="property">class </em><code class="descclassname">sklearn.preprocessing.</code><code class="descname">OneHotEncoder</code><span class="sig-paren">(</span><em>n_values='auto'</em>, <em>categorical_features='all'</em>, <em>dtype=&lt;type 'float'&gt;</em>, <em>sparse=True</em>, <em>handle_unknown='error'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/data.py#L1587"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.preprocessing.</tt><tt class="descname">OneHotEncoder</tt><big>(</big><em>n_values='auto'</em>, <em>categorical_features='all'</em>, <em>dtype=&lt;type 'float'&gt;</em>, <em>sparse=True</em>, <em>handle_unknown='error'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/data.py#L1587"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Encode categorical integer features using a one-hot aka one-of-K scheme.</p>
 <p>The input to this transformer should be a matrix of integers, denoting
 the values taken on by categorical (discrete) features. The output will be
@@ -141,7 +181,7 @@ feature. It is assumed that input features take on values in the range
 [0, n_values).</p>
 <p>This encoding is needed for feeding categorical data to many scikit-learn
 estimators, notably linear models and SVMs with the standard kernels.</p>
-<p>Read more in the <a class="reference internal" href="../preprocessing.html#preprocessing-categorical-features"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../preprocessing.html#preprocessing-categorical-features"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -183,13 +223,13 @@ present during transform.</p>
 <tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><p class="first"><strong>active_features_</strong> : array</p>
 <blockquote>
 <div><p>Indices for active features, meaning values that actually occur
-in the training set. Only available when n_values is <code class="docutils literal"><span class="pre">'auto'</span></code>.</p>
+in the training set. Only available when n_values is <tt class="docutils literal"><span class="pre">'auto'</span></tt>.</p>
 </div></blockquote>
 <p><strong>feature_indices_</strong> : array of shape (n_features,)</p>
 <blockquote>
 <div><p>Indices to feature ranges.
-Feature <code class="docutils literal"><span class="pre">i</span></code> in the original data is mapped to features
-from <code class="docutils literal"><span class="pre">feature_indices_[i]</span></code> to <code class="docutils literal"><span class="pre">feature_indices_[i+1]</span></code>
+Feature <tt class="docutils literal"><span class="pre">i</span></tt> in the original data is mapped to features
+from <tt class="docutils literal"><span class="pre">feature_indices_[i]</span></tt> to <tt class="docutils literal"><span class="pre">feature_indices_[i+1]</span></tt>
 (and then potentially masked by <cite>active_features_</cite> afterwards)</p>
 </div></blockquote>
 <p><strong>n_values_</strong> : array of shape (n_features,)</p>
@@ -203,9 +243,9 @@ from <code class="docutils literal"><span class="pre">feature_indices_[i]</span>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.feature_extraction.DictVectorizer.html#sklearn.feature_extraction.DictVectorizer" title="sklearn.feature_extraction.DictVectorizer"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.feature_extraction.DictVectorizer</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_extraction.DictVectorizer.html#sklearn.feature_extraction.DictVectorizer" title="sklearn.feature_extraction.DictVectorizer"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.feature_extraction.DictVectorizer</span></tt></a></dt>
 <dd>performs a one-hot encoding of dictionary items (also handles string-valued features).</dd>
-<dt><a class="reference internal" href="sklearn.feature_extraction.FeatureHasher.html#sklearn.feature_extraction.FeatureHasher" title="sklearn.feature_extraction.FeatureHasher"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.feature_extraction.FeatureHasher</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_extraction.FeatureHasher.html#sklearn.feature_extraction.FeatureHasher" title="sklearn.feature_extraction.FeatureHasher"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.feature_extraction.FeatureHasher</span></tt></a></dt>
 <dd>performs an approximate one-hot encoding of dictionary items or strings.</dd>
 </dl>
 </div>
@@ -233,16 +273,31 @@ one-hot encoding.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.preprocessing.OneHotEncoder.fit" title="sklearn.preprocessing.OneHotEncoder.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit OneHotEncoder to X.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.preprocessing.OneHotEncoder.fit_transform" title="sklearn.preprocessing.OneHotEncoder.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit OneHotEncoder to X, then transform X.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.preprocessing.OneHotEncoder.get_params" title="sklearn.preprocessing.OneHotEncoder.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.preprocessing.OneHotEncoder.set_params" title="sklearn.preprocessing.OneHotEncoder.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.preprocessing.OneHotEncoder.transform" title="sklearn.preprocessing.OneHotEncoder.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
+<td>Transform X using one-hot encoding.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.preprocessing.OneHotEncoder.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_values='auto'</em>, <em>categorical_features='all'</em>, <em>dtype=&lt;type 'float'&gt;</em>, <em>sparse=True</em>, <em>handle_unknown='error'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/data.py#L1670"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>n_values='auto'</em>, <em>categorical_features='all'</em>, <em>dtype=&lt;type 'float'&gt;</em>, <em>sparse=True</em>, <em>handle_unknown='error'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/data.py#L1670"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.OneHotEncoder.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/data.py#L1678"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/data.py#L1678"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit OneHotEncoder to X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -263,7 +318,7 @@ one-hot encoding.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.OneHotEncoder.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/data.py#L1739"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/data.py#L1739"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit OneHotEncoder to X, then transform X.</p>
 <p>Equivalent to self.fit(X).transform(X), but more convenient and more
 efficient. See fit for the parameters, transform for the return value.</p>
@@ -271,7 +326,7 @@ efficient. See fit for the parameters, transform for the return value.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.OneHotEncoder.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -296,11 +351,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.OneHotEncoder.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -314,7 +369,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.OneHotEncoder.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/data.py#L1787"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/preprocessing/data.py#L1787"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.OneHotEncoder.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform X using one-hot encoding.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -339,10 +394,10 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-preprocessing-onehotencoder">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.preprocessing.OneHotEncoder</span></code><a class="headerlink" href="#examples-using-sklearn-preprocessing-onehotencoder" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Transform your features into a higher dimensional, sparse space. Then train a linear model on t..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.preprocessing.OneHotEncoder</span></tt><a class="headerlink" href="#examples-using-sklearn-preprocessing-onehotencoder" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Transform your features into a higher dimensional, sparse space. Then train a linear model on t..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_feature_transformation.html"><img alt="../../_images/plot_feature_transformation1.png" src="../../_images/plot_feature_transformation1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_feature_transformation.html#example-ensemble-plot-feature-transformation-py"><span>Feature transformations with ensembles of trees</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_feature_transformation.html#example-ensemble-plot-feature-transformation-py"><em>Feature transformations with ensembles of trees</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -359,8 +414,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.preprocessing.OneHotEncoder.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.preprocessing.Normalizer.html">Previous
+      </a>
+    </div>
     
      </div>
 

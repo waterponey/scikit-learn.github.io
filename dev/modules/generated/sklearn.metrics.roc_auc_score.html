@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.metrics.roc_curve" href="sklearn.metrics.roc_curve.html" />
+    <link rel="prev" title="sklearn.metrics.recall_score" href="sklearn.metrics.recall_score.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.metrics.recall_score.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.metri...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.metrics.recall_score
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.roc_auc_score</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.roc_auc_score</a></li>
 </ul>
 
     </div>
@@ -123,17 +163,17 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-metrics-roc-auc-score">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.roc_auc_score<a class="headerlink" href="#sklearn-metrics-roc-auc-score" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.roc_auc_score<a class="headerlink" href="#sklearn-metrics-roc-auc-score" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.roc_auc_score">
-<code class="descclassname">sklearn.metrics.</code><code class="descname">roc_auc_score</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_score</em>, <em>average='macro'</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/metrics/ranking.py#L181"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.roc_auc_score" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">roc_auc_score</tt><big>(</big><em>y_true</em>, <em>y_score</em>, <em>average='macro'</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/metrics/ranking.py#L181"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.roc_auc_score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute Area Under the Curve (AUC) from prediction scores</p>
 <p>Note: this implementation is restricted to the binary classification task
 or multilabel classification task in label indicator format.</p>
-<p>Read more in the <a class="reference internal" href="../model_evaluation.html#roc-metrics"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../model_evaluation.html#roc-metrics"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -149,22 +189,22 @@ class, confidence values, or binary decisions.</p>
 </div></blockquote>
 <p><strong>average</strong> : string, [None, &#8216;micro&#8217;, &#8216;macro&#8217; (default), &#8216;samples&#8217;, &#8216;weighted&#8217;]</p>
 <blockquote>
-<div><p>If <code class="docutils literal"><span class="pre">None</span></code>, the scores for each class are returned. Otherwise,
+<div><p>If <tt class="docutils literal"><span class="pre">None</span></tt>, the scores for each class are returned. Otherwise,
 this determines the type of averaging performed on the data:</p>
 <dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">'micro'</span></code>:</dt>
+<dt><tt class="docutils literal"><span class="pre">'micro'</span></tt>:</dt>
 <dd><p class="first last">Calculate metrics globally by considering each element of the label
 indicator matrix as a label.</p>
 </dd>
-<dt><code class="docutils literal"><span class="pre">'macro'</span></code>:</dt>
+<dt><tt class="docutils literal"><span class="pre">'macro'</span></tt>:</dt>
 <dd><p class="first last">Calculate metrics for each label, and find their unweighted
 mean.  This does not take label imbalance into account.</p>
 </dd>
-<dt><code class="docutils literal"><span class="pre">'weighted'</span></code>:</dt>
+<dt><tt class="docutils literal"><span class="pre">'weighted'</span></tt>:</dt>
 <dd><p class="first last">Calculate metrics for each label, and find their average, weighted
 by support (the number of true instances for each label).</p>
 </dd>
-<dt><code class="docutils literal"><span class="pre">'samples'</span></code>:</dt>
+<dt><tt class="docutils literal"><span class="pre">'samples'</span></tt>:</dt>
 <dd><p class="first last">Calculate metrics for each instance, and find their average.</p>
 </dd>
 </dl>
@@ -183,17 +223,17 @@ by support (the number of true instances for each label).</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.metrics.average_precision_score.html#sklearn.metrics.average_precision_score" title="sklearn.metrics.average_precision_score"><code class="xref py py-obj docutils literal"><span class="pre">average_precision_score</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.metrics.average_precision_score.html#sklearn.metrics.average_precision_score" title="sklearn.metrics.average_precision_score"><tt class="xref py py-obj docutils literal"><span class="pre">average_precision_score</span></tt></a></dt>
 <dd>Area under the precision-recall curve</dd>
-<dt><a class="reference internal" href="sklearn.metrics.roc_curve.html#sklearn.metrics.roc_curve" title="sklearn.metrics.roc_curve"><code class="xref py py-obj docutils literal"><span class="pre">roc_curve</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.metrics.roc_curve.html#sklearn.metrics.roc_curve" title="sklearn.metrics.roc_curve"><tt class="xref py py-obj docutils literal"><span class="pre">roc_curve</span></tt></a></dt>
 <dd>Compute Receiver operating characteristic (ROC)</dd>
 </dl>
 </div>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r87" rules="none">
+<table class="docutils citation" frame="void" id="r179" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R87]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Receiver_operating_characteristic">Wikipedia entry for the Receiver operating characteristic</a></td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id1">[R179]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Receiver_operating_characteristic">Wikipedia entry for the Receiver operating characteristic</a></td></tr>
 </tbody>
 </table>
 <p class="rubric">Examples</p>
@@ -221,8 +261,12 @@ by support (the number of true instances for each label).</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.roc_auc_score.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.metrics.recall_score.html">Previous
+      </a>
+    </div>
     
      </div>
 

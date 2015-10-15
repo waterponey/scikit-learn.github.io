@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.metrics.matthews_corrcoef" href="sklearn.metrics.matthews_corrcoef.html" />
+    <link rel="prev" title="sklearn.metrics.jaccard_similarity_score" href="sklearn.metrics.jaccard_similarity_score.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.metrics.jaccard_similarity_score.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.metri...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.metrics.jaccard_similarity_score
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.log_loss</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-log-loss">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.log_loss</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.log_loss</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-log-loss">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.log_loss</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-metrics-log-loss">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.log_loss<a class="headerlink" href="#sklearn-metrics-log-loss" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.log_loss<a class="headerlink" href="#sklearn-metrics-log-loss" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.log_loss">
-<code class="descclassname">sklearn.metrics.</code><code class="descname">log_loss</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_pred</em>, <em>eps=1e-15</em>, <em>normalize=True</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/metrics/classification.py#L1477"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.log_loss" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">log_loss</tt><big>(</big><em>y_true</em>, <em>y_pred</em>, <em>eps=1e-15</em>, <em>normalize=True</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/metrics/classification.py#L1477"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.log_loss" title="Permalink to this definition">¶</a></dt>
 <dd><p>Log loss, aka logistic loss or cross-entropy loss.</p>
 <p>This is the loss function used in (multinomial) logistic regression
 and extensions of it such as neural networks, defined as the negative
@@ -141,7 +181,7 @@ predictions. For a single sample with true label yt in {0,1} and
 estimated probability yp that yt = 1, the log loss is</p>
 <blockquote>
 <div>-log P(yt|yp) = -(yt log(yp) + (1 - yt) log(1 - yp))</div></blockquote>
-<p>Read more in the <a class="reference internal" href="../model_evaluation.html#log-loss"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../model_evaluation.html#log-loss"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -190,10 +230,10 @@ p. 209.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-log-loss">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.log_loss</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-log-loss" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example illustrates how sigmoid calibration changes predicted probabilities for a 3-class ..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.log_loss</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-log-loss" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example illustrates how sigmoid calibration changes predicted probabilities for a 3-class ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/calibration/plot_calibration_multiclass.html"><img alt="../../_images/plot_calibration_multiclass1.png" src="../../_images/plot_calibration_multiclass1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_multiclass.html#example-calibration-plot-calibration-multiclass-py"><span>Probability Calibration for 3-class classification</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_multiclass.html#example-calibration-plot-calibration-multiclass-py"><em>Probability Calibration for 3-class classification</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -210,8 +250,12 @@ p. 209.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.log_loss.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.metrics.jaccard_similarity_score.html">Previous
+      </a>
+    </div>
     
      </div>
 

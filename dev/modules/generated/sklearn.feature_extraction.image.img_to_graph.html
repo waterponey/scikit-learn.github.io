@@ -37,7 +37,7 @@
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../classes.html" />
     <link rel="next" title="sklearn.feature_extraction.image.grid_to_graph" href="sklearn.feature_extraction.image.grid_to_graph.html" />
-    <link rel="prev" title="sklearn.ensemble.partial_dependence.plot_partial_dependence" href="sklearn.ensemble.partial_dependence.plot_partial_dependence.html" />
+    <link rel="prev" title="sklearn.feature_extraction.FeatureHasher" href="sklearn.feature_extraction.FeatureHasher.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="sklearn.ensemble.partial_dependence.plot_partial_dependence.html"
+        <a href="sklearn.feature_extraction.FeatureHasher.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.ensem...
+        sklearn.featu...
         </span>
             <span class="hiddenrellink">
-            sklearn.ensemble.partial_dependence.plot_partial_dependence
+            sklearn.feature_extraction.FeatureHasher
             </span>
         </a>
         </div>
@@ -147,7 +147,7 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.feature_extraction.image</span></code>.img_to_graph</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.feature_extraction.image</span></tt>.img_to_graph</a></li>
 </ul>
 
     </div>
@@ -163,16 +163,16 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-feature-extraction-image-img-to-graph">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_extraction.image" title="sklearn.feature_extraction.image"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction.image</span></code></a>.img_to_graph<a class="headerlink" href="#sklearn-feature-extraction-image-img-to-graph" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_extraction.image" title="sklearn.feature_extraction.image"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction.image</span></tt></a>.img_to_graph<a class="headerlink" href="#sklearn-feature-extraction-image-img-to-graph" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.feature_extraction.image.img_to_graph">
-<code class="descclassname">sklearn.feature_extraction.image.</code><code class="descname">img_to_graph</code><span class="sig-paren">(</span><em>img</em>, <em>mask=None</em>, <em>return_as=&lt;class 'scipy.sparse.coo.coo_matrix'&gt;</em>, <em>dtype=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/85223b9/sklearn/feature_extraction/image.py#L133"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.image.img_to_graph" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.feature_extraction.image.</tt><tt class="descname">img_to_graph</tt><big>(</big><em>img</em>, <em>mask=None</em>, <em>return_as=&lt;class 'scipy.sparse.coo.coo_matrix'&gt;</em>, <em>dtype=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_extraction/image.py#L133"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.image.img_to_graph" title="Permalink to this definition">¶</a></dt>
 <dd><p>Graph of the pixel-to-pixel gradient connections</p>
 <p>Edges are weighted with the gradient values.</p>
-<p>Read more in the <a class="reference internal" href="../feature_extraction.html#image-feature-extraction"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../feature_extraction.html#image-feature-extraction"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -204,7 +204,7 @@ dtype of img</p>
 by returning a dense np.matrix instance.  Going forward, np.ndarray
 returns an np.ndarray, as expected.</p>
 <p>For compatibility, user code relying on this method should wrap its
-calls in <code class="docutils literal"><span class="pre">np.asarray</span></code> to avoid type issues.</p>
+calls in <tt class="docutils literal"><span class="pre">np.asarray</span></tt> to avoid type issues.</p>
 </dd></dl>
 
 <div class="clearer"></div></div>
@@ -224,7 +224,7 @@ calls in <code class="docutils literal"><span class="pre">np.asarray</span></cod
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="sklearn.ensemble.partial_dependence.plot_partial_dependence.html">Previous
+      <a href="sklearn.feature_extraction.FeatureHasher.html">Previous
       </a>
     </div>
     

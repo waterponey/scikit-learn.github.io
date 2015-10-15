@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -169,7 +169,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="visualizing-the-stock-market-structure">
 <span id="example-applications-plot-stock-market-py"></span><h1>Visualizing the stock market structure<a class="headerlink" href="#visualizing-the-stock-market-structure" title="Permalink to this headline">¶</a></h1>
@@ -188,8 +188,8 @@ its fluctuations.</p>
 <div class="section" id="clustering">
 <h2>Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h2>
 <p>We use clustering to group together quotes that behave similarly. Here,
-amongst the <span class="xref std std-ref">various clustering techniques</span> available
-in the scikit-learn, we use <a class="reference internal" href="../../modules/clustering.html#affinity-propagation"><span>Affinity Propagation</span></a> as it does
+amongst the <em class="xref std std-ref">various clustering techniques</em> available
+in the scikit-learn, we use <a class="reference internal" href="../../modules/clustering.html#affinity-propagation"><em>Affinity Propagation</em></a> as it does
 not enforce equal-size clusters, and it can choose automatically the
 number of clusters from the data.</p>
 <p>Note that this gives us a different indication than the graph, as the
@@ -201,7 +201,7 @@ market.</p>
 <div class="section" id="embedding-in-2d-space">
 <h2>Embedding in 2D space<a class="headerlink" href="#embedding-in-2d-space" title="Permalink to this headline">¶</a></h2>
 <p>For visualization purposes, we need to lay out the different symbols on a
-2D canvas. For this we use <a class="reference internal" href="../../modules/manifold.html#manifold"><span>Manifold learning</span></a> techniques to retrieve 2D
+2D canvas. For this we use <a class="reference internal" href="../../modules/manifold.html#manifold"><em>Manifold learning</em></a> techniques to retrieve 2D
 embedding.</p>
 </div>
 <div class="section" id="visualization">
@@ -234,7 +234,7 @@ Cluster 11: Raytheon, Boeing, Lookheed Martin, General Dynamics, Northrop Grumma
 Cluster 12: Kraft Foods
 </pre></div>
 </div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_stock_market.py"><code class="xref download docutils literal"><span class="pre">plot_stock_market.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_stock_market.py"><tt class="xref download docutils literal"><span class="pre">plot_stock_market.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Gael Varoquaux gael.varoquaux@normalesup.org</span>

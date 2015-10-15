@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.cluster.AgglomerativeClustering" href="sklearn.cluster.AgglomerativeClustering.html" />
+    <link rel="prev" title="sklearn.base.clone" href="sklearn.base.clone.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.base.clone.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.base....
+        </span>
+            <span class="hiddenrellink">
+            sklearn.base.clone
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cluster</span></code>.AffinityPropagation</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-cluster-affinitypropagation">Examples using <code class="docutils literal"><span class="pre">sklearn.cluster.AffinityPropagation</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cluster</span></tt>.AffinityPropagation</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-cluster-affinitypropagation">Examples using <tt class="docutils literal"><span class="pre">sklearn.cluster.AffinityPropagation</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,15 +166,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-cluster-affinitypropagation">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cluster" title="sklearn.cluster"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></code></a>.AffinityPropagation<a class="headerlink" href="#sklearn-cluster-affinitypropagation" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cluster" title="sklearn.cluster"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></tt></a>.AffinityPropagation<a class="headerlink" href="#sklearn-cluster-affinitypropagation" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.cluster.AffinityPropagation">
-<em class="property">class </em><code class="descclassname">sklearn.cluster.</code><code class="descname">AffinityPropagation</code><span class="sig-paren">(</span><em>damping=0.5</em>, <em>max_iter=200</em>, <em>convergence_iter=15</em>, <em>copy=True</em>, <em>preference=None</em>, <em>affinity='euclidean'</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cluster/affinity_propagation_.py#L193"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.cluster.</tt><tt class="descname">AffinityPropagation</tt><big>(</big><em>damping=0.5</em>, <em>max_iter=200</em>, <em>convergence_iter=15</em>, <em>copy=True</em>, <em>preference=None</em>, <em>affinity='euclidean'</em>, <em>verbose=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cluster/affinity_propagation_.py#L193"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform Affinity Propagation Clustering of data.</p>
-<p>Read more in the <a class="reference internal" href="../clustering.html#affinity-propagation"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../clustering.html#affinity-propagation"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -166,8 +206,8 @@ they will be set to the median of the input similarities.</p>
 </div></blockquote>
 <p><strong>affinity</strong> : string, optional, default=``euclidean``</p>
 <blockquote>
-<div><p>Which affinity to use. At the moment <code class="docutils literal"><span class="pre">precomputed</span></code> and
-<code class="docutils literal"><span class="pre">euclidean</span></code> are supported. <code class="docutils literal"><span class="pre">euclidean</span></code> uses the
+<div><p>Which affinity to use. At the moment <tt class="docutils literal"><span class="pre">precomputed</span></tt> and
+<tt class="docutils literal"><span class="pre">euclidean</span></tt> are supported. <tt class="docutils literal"><span class="pre">euclidean</span></tt> uses the
 negative squared euclidean distance between points.</p>
 </div></blockquote>
 <p><strong>verbose</strong> : boolean, optional, default: False</p>
@@ -182,7 +222,7 @@ negative squared euclidean distance between points.</p>
 </div></blockquote>
 <p><strong>cluster_centers_</strong> : array, shape (n_clusters, n_features)</p>
 <blockquote>
-<div><p>Cluster centers (if affinity != <code class="docutils literal"><span class="pre">precomputed</span></code>).</p>
+<div><p>Cluster centers (if affinity != <tt class="docutils literal"><span class="pre">precomputed</span></tt>).</p>
 </div></blockquote>
 <p><strong>labels_</strong> : array, shape (n_samples,)</p>
 <blockquote>
@@ -190,7 +230,7 @@ negative squared euclidean distance between points.</p>
 </div></blockquote>
 <p><strong>affinity_matrix_</strong> : array, shape (n_samples, n_samples)</p>
 <blockquote>
-<div><p>Stores the affinity matrix used in <code class="docutils literal"><span class="pre">fit</span></code>.</p>
+<div><p>Stores the affinity matrix used in <tt class="docutils literal"><span class="pre">fit</span></tt>.</p>
 </div></blockquote>
 <p><strong>n_iter_</strong> : int</p>
 <blockquote class="last">
@@ -214,16 +254,31 @@ Between Data Points&#8221;, Science Feb. 2007</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.cluster.AffinityPropagation.fit" title="sklearn.cluster.AffinityPropagation.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
+<td>Create affinity matrix from negative euclidean distances, then apply affinity propagation clustering.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.cluster.AffinityPropagation.fit_predict" title="sklearn.cluster.AffinityPropagation.fit_predict"><tt class="xref py py-obj docutils literal"><span class="pre">fit_predict</span></tt></a>(X[,&nbsp;y])</td>
+<td>Performs clustering on X and returns cluster labels.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.cluster.AffinityPropagation.get_params" title="sklearn.cluster.AffinityPropagation.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.cluster.AffinityPropagation.predict" title="sklearn.cluster.AffinityPropagation.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<td>Predict the closest cluster each sample in X belongs to.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.cluster.AffinityPropagation.set_params" title="sklearn.cluster.AffinityPropagation.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.cluster.AffinityPropagation.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>damping=0.5</em>, <em>max_iter=200</em>, <em>convergence_iter=15</em>, <em>copy=True</em>, <em>preference=None</em>, <em>affinity='euclidean'</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cluster/affinity_propagation_.py#L260"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>damping=0.5</em>, <em>max_iter=200</em>, <em>convergence_iter=15</em>, <em>copy=True</em>, <em>preference=None</em>, <em>affinity='euclidean'</em>, <em>verbose=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cluster/affinity_propagation_.py#L260"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.cluster.AffinityPropagation.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cluster/affinity_propagation_.py#L276"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cluster/affinity_propagation_.py#L276"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create affinity matrix from negative euclidean distances, then
 apply affinity propagation clustering.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -232,7 +287,7 @@ apply affinity propagation clustering.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>X: array-like, shape (n_samples, n_features) or (n_samples, n_samples)</strong> :</p>
 <blockquote class="last">
-<div><p>Data matrix or, if affinity is <code class="docutils literal"><span class="pre">precomputed</span></code>, matrix of
+<div><p>Data matrix or, if affinity is <tt class="docutils literal"><span class="pre">precomputed</span></tt>, matrix of
 similarities / affinities.</p>
 </div></blockquote>
 </td>
@@ -243,7 +298,7 @@ similarities / affinities.</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.AffinityPropagation.fit_predict">
-<code class="descname">fit_predict</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L356"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.fit_predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_predict</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L356"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.fit_predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Performs clustering on X and returns cluster labels.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -267,7 +322,7 @@ similarities / affinities.</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.AffinityPropagation.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -292,7 +347,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.AffinityPropagation.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cluster/affinity_propagation_.py#L308"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/cluster/affinity_propagation_.py#L308"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict the closest cluster each sample in X belongs to.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -316,11 +371,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.AffinityPropagation.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.AffinityPropagation.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -335,14 +390,14 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-cluster-affinitypropagation">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.cluster.AffinityPropagation</span></code><a class="headerlink" href="#examples-using-sklearn-cluster-affinitypropagation" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Reference: Brendan J. Frey and Delbert Dueck, "Clustering by Passing Messages Between Data Poin..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.cluster.AffinityPropagation</span></tt><a class="headerlink" href="#examples-using-sklearn-cluster-affinitypropagation" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Reference: Brendan J. Frey and Delbert Dueck, "Clustering by Passing Messages Between Data Poin..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_affinity_propagation.html"><img alt="../../_images/plot_affinity_propagation1.png" src="../../_images/plot_affinity_propagation1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_affinity_propagation.html#example-cluster-plot-affinity-propagation-py"><span>Demo of affinity propagation clustering algorithm</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_affinity_propagation.html#example-cluster-plot-affinity-propagation-py"><em>Demo of affinity propagation clustering algorithm</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example aims at showing characteristics of different clustering algorithms on datasets tha..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="This example aims at showing characteristics of different clustering algorithms on datasets tha..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_cluster_comparison.html"><img alt="../../_images/plot_cluster_comparison1.png" src="../../_images/plot_cluster_comparison1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_cluster_comparison.html#example-cluster-plot-cluster-comparison-py"><span>Comparing different clustering algorithms on toy datasets</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_cluster_comparison.html#example-cluster-plot-cluster-comparison-py"><em>Comparing different clustering algorithms on toy datasets</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -359,8 +414,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.cluster.AffinityPropagation.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.base.clone.html">Previous
+      </a>
+    </div>
     
      </div>
 

@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.feature_selection.SelectFwe" href="sklearn.feature_selection.SelectFwe.html" />
+    <link rel="prev" title="sklearn.feature_selection.SelectFdr" href="sklearn.feature_selection.SelectFdr.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.feature_selection.SelectFdr.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.featu...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.feature_selection.SelectFdr
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.feature_selection</span></code>.SelectFromModel</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-feature-selection-selectfrommodel">Examples using <code class="docutils literal"><span class="pre">sklearn.feature_selection.SelectFromModel</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.feature_selection</span></tt>.SelectFromModel</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-feature-selection-selectfrommodel">Examples using <tt class="docutils literal"><span class="pre">sklearn.feature_selection.SelectFromModel</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-feature-selection-selectfrommodel">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_selection" title="sklearn.feature_selection"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_selection</span></code></a>.SelectFromModel<a class="headerlink" href="#sklearn-feature-selection-selectfrommodel" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_selection" title="sklearn.feature_selection"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_selection</span></tt></a>.SelectFromModel<a class="headerlink" href="#sklearn-feature-selection-selectfrommodel" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.feature_selection.SelectFromModel">
-<em class="property">class </em><code class="descclassname">sklearn.feature_selection.</code><code class="descname">SelectFromModel</code><span class="sig-paren">(</span><em>estimator</em>, <em>threshold=None</em>, <em>prefit=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/from_model.py#L146"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.feature_selection.</tt><tt class="descname">SelectFromModel</tt><big>(</big><em>estimator</em>, <em>threshold=None</em>, <em>prefit=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/from_model.py#L146"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Meta-transformer for selecting features based on importance weights.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -141,14 +181,14 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>estimator</strong> : object</p>
 <blockquote>
 <div><p>The base estimator from which the transformer is built.
-This can be both a fitted (if <code class="docutils literal"><span class="pre">prefit</span></code> is set to True)
+This can be both a fitted (if <tt class="docutils literal"><span class="pre">prefit</span></tt> is set to True)
 or a non-fitted estimator.</p>
 </div></blockquote>
 <p><strong>threshold</strong> : string, float, optional default None</p>
 <blockquote>
 <div><p>The threshold value to use for feature selection. Features whose
 importance is greater or equal are kept while the others are
-discarded. If &#8220;median&#8221; (resp. &#8220;mean&#8221;), then the <code class="docutils literal"><span class="pre">threshold</span></code> value is
+discarded. If &#8220;median&#8221; (resp. &#8220;mean&#8221;), then the <tt class="docutils literal"><span class="pre">threshold</span></tt> value is
 the median (resp. the mean) of the feature importances. A scaling
 factor (e.g., &#8220;1.25*mean&#8221;) may also be used. If None and if the
 estimator has a parameter penalty set to l1, either explicitly
@@ -158,10 +198,10 @@ Otherwise, &#8220;mean&#8221; is used by default.</p>
 <p><strong>prefit</strong> : bool, default False</p>
 <blockquote>
 <div><p>Whether a prefit model is expected to be passed into the constructor
-directly or not. If True, <code class="docutils literal"><span class="pre">transform</span></code> must be called directly
-and SelectFromModel cannot be used with <code class="docutils literal"><span class="pre">cross_val_score</span></code>,
-<code class="docutils literal"><span class="pre">GridSearchCV</span></code> and similar utilities that clone the estimator.
-Otherwise train the model using <code class="docutils literal"><span class="pre">fit</span></code> and then <code class="docutils literal"><span class="pre">transform</span></code> to do
+directly or not. If True, <tt class="docutils literal"><span class="pre">transform</span></tt> must be called directly
+and SelectFromModel cannot be used with <tt class="docutils literal"><span class="pre">cross_val_score</span></tt>,
+<tt class="docutils literal"><span class="pre">GridSearchCV</span></tt> and similar utilities that clone the estimator.
+Otherwise train the model using <tt class="docutils literal"><span class="pre">fit</span></tt> and then <tt class="docutils literal"><span class="pre">transform</span></tt> to do
 feature selection.</p>
 </div></blockquote>
 </td>
@@ -170,7 +210,7 @@ feature selection.</p>
 <blockquote>
 <div><p>The base estimator from which the transformer is built.
 This is stored only when a non-fitted estimator is passed to the
-<code class="docutils literal"><span class="pre">SelectFromModel</span></code>, i.e when prefit is False.</p>
+<tt class="docutils literal"><span class="pre">SelectFromModel</span></tt>, i.e when prefit is False.</p>
 </div></blockquote>
 <p><strong>`threshold_`: float</strong> :</p>
 <blockquote class="last">
@@ -187,16 +227,40 @@ This is stored only when a non-fitted estimator is passed to the
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFromModel.fit" title="sklearn.feature_selection.SelectFromModel.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit the SelectFromModel meta-transformer.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFromModel.fit_transform" title="sklearn.feature_selection.SelectFromModel.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFromModel.get_params" title="sklearn.feature_selection.SelectFromModel.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFromModel.get_support" title="sklearn.feature_selection.SelectFromModel.get_support"><tt class="xref py py-obj docutils literal"><span class="pre">get_support</span></tt></a>([indices])</td>
+<td>Get a mask, or integer index, of the features selected</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFromModel.inverse_transform" title="sklearn.feature_selection.SelectFromModel.inverse_transform"><tt class="xref py py-obj docutils literal"><span class="pre">inverse_transform</span></tt></a>(X)</td>
+<td>Reverse the transformation operation</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFromModel.partial_fit" title="sklearn.feature_selection.SelectFromModel.partial_fit"><tt class="xref py py-obj docutils literal"><span class="pre">partial_fit</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit the SelectFromModel meta-transformer only once.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFromModel.set_params" title="sklearn.feature_selection.SelectFromModel.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFromModel.transform" title="sklearn.feature_selection.SelectFromModel.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
+<td>Reduce X to the selected features.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFromModel.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>estimator</em>, <em>threshold=None</em>, <em>prefit=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/from_model.py#L184"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>estimator</em>, <em>threshold=None</em>, <em>prefit=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/from_model.py#L184"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFromModel.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/from_model.py#L204"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/from_model.py#L204"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the SelectFromModel meta-transformer.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -226,7 +290,7 @@ classification, real numbers in regression).</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFromModel.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -256,7 +320,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFromModel.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -281,7 +345,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFromModel.get_support">
-<code class="descname">get_support</code><span class="sig-paren">(</span><em>indices=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/base.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.get_support" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_support</tt><big>(</big><em>indices=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/base.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.get_support" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a mask, or integer index, of the features selected</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -311,7 +375,7 @@ values are indices into the input feature vector.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFromModel.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/base.py#L86"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">inverse_transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/base.py#L86"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reverse the transformation operation</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -336,7 +400,7 @@ been removed by <cite>transform</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFromModel.partial_fit">
-<code class="descname">partial_fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/from_model.py#L231"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.partial_fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">partial_fit</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/from_model.py#L231"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.partial_fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the SelectFromModel meta-transformer only once.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -366,11 +430,11 @@ classification, real numbers in regression).</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFromModel.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -384,7 +448,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFromModel.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/base.py#L62"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/1b9e791/sklearn/feature_selection/base.py#L62"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFromModel.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reduce X to the selected features.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -409,18 +473,18 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-feature-selection-selectfrommodel">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.feature_selection.SelectFromModel</span></code><a class="headerlink" href="#examples-using-sklearn-feature-selection-selectfrommodel" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="RandomTreesEmbedding provides a way to map data to a very high-dimensional, sparse representati..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.feature_selection.SelectFromModel</span></tt><a class="headerlink" href="#examples-using-sklearn-feature-selection-selectfrommodel" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="RandomTreesEmbedding provides a way to map data to a very high-dimensional, sparse representati..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_random_forest_embedding.html"><img alt="../../_images/plot_random_forest_embedding1.png" src="../../_images/plot_random_forest_embedding1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_random_forest_embedding.html#example-ensemble-plot-random-forest-embedding-py"><span>Hashing feature transformation using Totally Random Trees</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_random_forest_embedding.html#example-ensemble-plot-random-forest-embedding-py"><em>Hashing feature transformation using Totally Random Trees</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Transform your features into a higher dimensional, sparse space. Then train a linear model on t..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="Transform your features into a higher dimensional, sparse space. Then train a linear model on t..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_feature_transformation.html"><img alt="../../_images/plot_feature_transformation1.png" src="../../_images/plot_feature_transformation1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_feature_transformation.html#example-ensemble-plot-feature-transformation-py"><span>Feature transformations with ensembles of trees</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_feature_transformation.html#example-ensemble-plot-feature-transformation-py"><em>Feature transformations with ensembles of trees</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Use SelectFromModel meta-transformer along with Lasso to select the best couple of features fro..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="Use SelectFromModel meta-transformer along with Lasso to select the best couple of features fro..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/feature_selection/plot_select_from_model_boston.html"><img alt="../../_images/plot_select_from_model_boston1.png" src="../../_images/plot_select_from_model_boston1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_selection/plot_select_from_model_boston.html#example-feature-selection-plot-select-from-model-boston-py"><span>Feature selection using SelectFromModel and LassoCV</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_selection/plot_select_from_model_boston.html#example-feature-selection-plot-select-from-model-boston-py"><em>Feature selection using SelectFromModel and LassoCV</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -437,8 +501,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.feature_selection.SelectFromModel.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.feature_selection.SelectFdr.html">Previous
+      </a>
+    </div>
     
      </div>
 

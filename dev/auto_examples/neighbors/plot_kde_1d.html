@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,11 +163,11 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="simple-1d-kernel-density-estimation">
 <span id="example-neighbors-plot-kde-1d-py"></span><h1>Simple 1D Kernel Density Estimation<a class="headerlink" href="#simple-1d-kernel-density-estimation" title="Permalink to this headline">¶</a></h1>
-<p>This example uses the <a class="reference internal" href="../../modules/generated/sklearn.neighbors.KernelDensity.html#sklearn.neighbors.KernelDensity" title="sklearn.neighbors.KernelDensity"><code class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.KernelDensity</span></code></a> class to
+<p>This example uses the <a class="reference internal" href="../../modules/generated/sklearn.neighbors.KernelDensity.html#sklearn.neighbors.KernelDensity" title="sklearn.neighbors.KernelDensity"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.KernelDensity</span></tt></a> class to
 demonstrate the principles of Kernel Density Estimation in one dimension.</p>
 <p>The first plot shows one of the problems with using histograms to visualize
 the density of points in 1D. Intuitively, a histogram can be thought of as a
@@ -181,7 +181,7 @@ kernel shapes: the bottom-right panel of the first figure shows a Gaussian
 kernel density estimate over the same distribution.</p>
 <p>Scikit-learn implements efficient kernel density estimation using either
 a Ball Tree or KD Tree structure, through the
-<a class="reference internal" href="../../modules/generated/sklearn.neighbors.KernelDensity.html#sklearn.neighbors.KernelDensity" title="sklearn.neighbors.KernelDensity"><code class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.KernelDensity</span></code></a> estimator.  The available kernels
+<a class="reference internal" href="../../modules/generated/sklearn.neighbors.KernelDensity.html#sklearn.neighbors.KernelDensity" title="sklearn.neighbors.KernelDensity"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.KernelDensity</span></tt></a> estimator.  The available kernels
 are shown in the second figure of this example.</p>
 <p>The third figure compares kernel density estimates for a distribution of 100
 samples in 1 dimension.  Though this example uses 1D distributions, kernel
@@ -195,7 +195,7 @@ as well.</p>
 <li><a class="first reference internal image-reference" href="../../_images/plot_kde_1d_003.png"><img alt="../../_images/plot_kde_1d_003.png" src="../../_images/plot_kde_1d_003.png" style="width: 376.0px; height: 282.0px;" /></a>
 </li>
 </ul>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_kde_1d.py"><code class="xref download docutils literal"><span class="pre">plot_kde_1d.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_kde_1d.py"><tt class="xref download docutils literal"><span class="pre">plot_kde_1d.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Author: Jake Vanderplas &lt;jakevdp@cs.washington.edu&gt;</span>
 <span class="c">#</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>

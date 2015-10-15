@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="gradient-boosting-out-of-bag-estimates">
 <span id="example-ensemble-plot-gradient-boosting-oob-py"></span><h1>Gradient Boosting Out-of-Bag estimates<a class="headerlink" href="#gradient-boosting-out-of-bag-estimates" title="Permalink to this headline">¶</a></h1>
@@ -173,7 +173,7 @@ OOB estimates are almost identical to cross-validation estimates but
 they can be computed on-the-fly without the need for repeated model
 fitting.
 OOB estimates are only available for Stochastic Gradient Boosting
-(i.e. <code class="docutils literal"><span class="pre">subsample</span> <span class="pre">&lt;</span> <span class="pre">1.0</span></code>), the estimates are derived from the improvement
+(i.e. <tt class="docutils literal"><span class="pre">subsample</span> <span class="pre">&lt;</span> <span class="pre">1.0</span></tt>), the estimates are derived from the improvement
 in loss based on the examples not included in the bootstrap sample
 (the so-called out-of-bag examples).
 The OOB estimator is a pessimistic estimator of the true
@@ -190,7 +190,7 @@ but is computationally more demanding.</p>
 <div class="highlight-python"><div class="highlight"><pre>Accuracy: 0.6840
 </pre></div>
 </div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_gradient_boosting_oob.py"><code class="xref download docutils literal"><span class="pre">plot_gradient_boosting_oob.py</span></code></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_gradient_boosting_oob.py"><tt class="xref download docutils literal"><span class="pre">plot_gradient_boosting_oob.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Peter Prettenhofer &lt;peter.prettenhofer@gmail.com&gt;</span>
