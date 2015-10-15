@@ -44,6 +44,6 @@ but is computationally more demanding.
 .. literalinclude:: plot_gradient_boosting_oob.py
     :lines: 26-
 
-**Total running time of the example:**  7.06 seconds
-( 0 minutes  7.06 seconds)
+**Total running time of the example:**  7.21 seconds
+( 0 minutes  7.21 seconds)
     

@@ -54,6 +54,6 @@ heterogeneous labels. This results in a significantly improved Brier score.
 .. literalinclude:: plot_calibration.py
     :lines: 23-
 
-**Total running time of the example:**  0.72 seconds
-( 0 minutes  0.72 seconds)
+**Total running time of the example:**  0.71 seconds
+( 0 minutes  0.71 seconds)
     

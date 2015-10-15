@@ -66,6 +66,7 @@ on age.
 
 **Script output**::
 
+  downloading Cal. housing from http://lib.stat.cmu.edu/modules.php?op=modload&name=Downloads&file=index&req=getit&lid=83 to /home/sklearn/scikit_learn_data
   ________________________________________________________________________________
   Training GBRT...
   done.
@@ -81,6 +82,6 @@ on age.
 .. literalinclude:: plot_partial_dependence.py
     :lines: 47-
 
-**Total running time of the example:**  8.04 seconds
-( 0 minutes  8.04 seconds)
+**Total running time of the example:**  10.72 seconds
+( 0 minutes  10.72 seconds)
     

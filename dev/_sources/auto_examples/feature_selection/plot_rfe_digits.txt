@@ -28,6 +28,6 @@ a digit classification task.
 .. literalinclude:: plot_rfe_digits.py
     :lines: 14-
 
-**Total running time of the example:**  10.72 seconds
-( 0 minutes  10.72 seconds)
+**Total running time of the example:**  10.67 seconds
+( 0 minutes  10.67 seconds)
     

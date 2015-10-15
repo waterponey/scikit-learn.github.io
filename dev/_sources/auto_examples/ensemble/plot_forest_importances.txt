@@ -41,6 +41,6 @@ remaining are not.
 .. literalinclude:: plot_forest_importances.py
     :lines: 13-
 
-**Total running time of the example:**  1.22 seconds
-( 0 minutes  1.22 seconds)
+**Total running time of the example:**  1.21 seconds
+( 0 minutes  1.21 seconds)
     
