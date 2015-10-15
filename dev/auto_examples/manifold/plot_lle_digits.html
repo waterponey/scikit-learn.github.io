@@ -177,7 +177,56 @@ which the classes are linearly-separable.</p>
 this example, which is not the default setting. It ensures global stability
 of the embedding, i.e., the embedding does not depend on random
 initialization.</p>
-<p class="horizontal"><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lle_digits.py"><tt class="xref download docutils literal"><span class="pre">plot_lle_digits.py</span></tt></a></p>
+<ul class="horizontal">
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_001.png"><img alt="../../_images/plot_lle_digits_001.png" src="../../_images/plot_lle_digits_001.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_002.png"><img alt="../../_images/plot_lle_digits_002.png" src="../../_images/plot_lle_digits_002.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_003.png"><img alt="../../_images/plot_lle_digits_003.png" src="../../_images/plot_lle_digits_003.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_004.png"><img alt="../../_images/plot_lle_digits_004.png" src="../../_images/plot_lle_digits_004.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_005.png"><img alt="../../_images/plot_lle_digits_005.png" src="../../_images/plot_lle_digits_005.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_006.png"><img alt="../../_images/plot_lle_digits_006.png" src="../../_images/plot_lle_digits_006.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_007.png"><img alt="../../_images/plot_lle_digits_007.png" src="../../_images/plot_lle_digits_007.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_008.png"><img alt="../../_images/plot_lle_digits_008.png" src="../../_images/plot_lle_digits_008.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_009.png"><img alt="../../_images/plot_lle_digits_009.png" src="../../_images/plot_lle_digits_009.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_010.png"><img alt="../../_images/plot_lle_digits_010.png" src="../../_images/plot_lle_digits_010.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_011.png"><img alt="../../_images/plot_lle_digits_011.png" src="../../_images/plot_lle_digits_011.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_012.png"><img alt="../../_images/plot_lle_digits_012.png" src="../../_images/plot_lle_digits_012.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lle_digits_013.png"><img alt="../../_images/plot_lle_digits_013.png" src="../../_images/plot_lle_digits_013.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+</ul>
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Computing random projection
+Computing PCA projection
+Computing Linear Discriminant Analysis projection
+Computing Isomap embedding
+Done.
+Computing LLE embedding
+Done. Reconstruction error: 1.63555e-06
+Computing modified LLE embedding
+Done. Reconstruction error: 0.356278
+Computing Hessian LLE embedding
+Done. Reconstruction error: 0.212818
+Computing LTSA embedding
+Done. Reconstruction error: 0.212808
+Computing MDS embedding
+Done. Stress: 142178483.812083
+Computing Totally Random Trees embedding
+Computing Spectral embedding
+Computing t-SNE embedding
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lle_digits.py"><tt class="xref download docutils literal"><span class="pre">plot_lle_digits.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Authors: Fabian Pedregosa &lt;fabian.pedregosa@inria.fr&gt;</span>
 <span class="c">#          Olivier Grisel &lt;olivier.grisel@ensta.org&gt;</span>
 <span class="c">#          Mathieu Blondel &lt;mathieu@mblondel.org&gt;</span>
@@ -190,8 +239,8 @@ initialization.</p>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <a href="http://matplotlib.org/api/offsetbox_api.html#matplotlib.offsetbox"><span class="n">offsetbox</span></a>
-<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="p">(</span><span class="n">manifold</span><span class="p">,</span> <span class="n">datasets</span><span class="p">,</span> <span class="n">decomposition</span><span class="p">,</span> <span class="n">ensemble</span><span class="p">,</span> <span class="n">lda</span><span class="p">,</span>
-                     <span class="n">random_projection</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="p">(</span><span class="n">manifold</span><span class="p">,</span> <span class="n">datasets</span><span class="p">,</span> <span class="n">decomposition</span><span class="p">,</span> <span class="n">ensemble</span><span class="p">,</span>
+                     <span class="n">discriminant_analysis</span><span class="p">,</span> <span class="n">random_projection</span><span class="p">)</span>
 
 <span class="n">digits</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.load_digits.html#sklearn.datasets.load_digits"><span class="n">datasets</span><span class="o">.</span><span class="n">load_digits</span></a><span class="p">(</span><span class="n">n_class</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">data</span>
@@ -250,7 +299,7 @@ initialization.</p>
 <span class="c">#----------------------------------------------------------------------</span>
 <span class="c"># Random 2D projection using a random unitary matrix</span>
 <span class="k">print</span><span class="p">(</span><span class="s">&quot;Computing random projection&quot;</span><span class="p">)</span>
-<span class="n">rp</span> <span class="o">=</span> <span class="n">random_projection</span><span class="o">.</span><span class="n">SparseRandomProjection</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">rp</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.random_projection.SparseRandomProjection.html#sklearn.random_projection.SparseRandomProjection"><span class="n">random_projection</span><span class="o">.</span><span class="n">SparseRandomProjection</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">X_projected</span> <span class="o">=</span> <span class="n">rp</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="n">plot_embedding</span><span class="p">(</span><span class="n">X_projected</span><span class="p">,</span> <span class="s">&quot;Random Projection of the digits&quot;</span><span class="p">)</span>
 
@@ -391,8 +440,8 @@ initialization.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.00 seconds
-( 0 minutes  0.00 seconds)</p>
+<p><strong>Total running time of the example:</strong>  66.82 seconds
+( 1 minutes  6.82 seconds)</p>
 </div>
 
 

@@ -411,16 +411,18 @@ By <a class="reference external" href="http://trevorstephens.com/">Trevor Stephe
 By Chih-Wei Chang.</li>
 <li>RCV1 dataset loader (<a class="reference internal" href="modules/generated/sklearn.datasets.fetch_rcv1.html#sklearn.datasets.fetch_rcv1" title="sklearn.datasets.fetch_rcv1"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.fetch_rcv1</span></tt></a>).
 By <a class="reference external" href="https://github.com/TomDLT">Tom Dupre la Tour</a>.</li>
-<li>Upgraded to joblib 0.9.0b4 to benefit from the new automatic batching of
+<li>Upgraded to joblib 0.9.2 to benefit from the new automatic batching of
 short tasks. This makes it possible for scikit-learn to benefit from
 parallelism when many very short tasks are executed in parallel, for
 instance by the <a class="reference internal" href="modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV" title="sklearn.grid_search.GridSearchCV"><tt class="xref py py-class docutils literal"><span class="pre">grid_search.GridSearchCV</span></tt></a> meta-estimator
 with <tt class="docutils literal"><span class="pre">n_jobs</span> <span class="pre">&gt;</span> <span class="pre">1</span></tt> used with a large grid of parameters on a small
 dataset. By <a class="reference external" href="http://vene.ro">Vlad Niculae</a>, <a class="reference external" href="http://twitter.com/ogrisel">Olivier Grisel</a> and <a class="reference external" href="https://github.com/lesteve">Loic Esteve</a>.</li>
-<li>Joblib 0.9.0b4 also enables the <tt class="docutils literal"><span class="pre">forkserver</span></tt> start method for
+<li>Joblib 0.9.2 also enables the <tt class="docutils literal"><span class="pre">forkserver</span></tt> start method for
 multiprocessing by default under non-Windows platforms for Python 3.4
 and later in order to avoid possible crash with some version of BLAS such
 as vecLib / Accelerate under OSX for instance. By <a class="reference external" href="http://twitter.com/ogrisel">Olivier Grisel</a>.</li>
+<li>For more details about changes in joblib 0.9.2 see the release notes:
+<a class="reference external" href="https://github.com/joblib/joblib/blob/master/CHANGES.rst#release-092">https://github.com/joblib/joblib/blob/master/CHANGES.rst#release-092</a></li>
 <li>Improved speed (3 times per iteration) of
 <tt class="xref py py-class docutils literal"><span class="pre">decomposition.DictLearning</span></tt> with coordinate descent method
 from <a class="reference internal" href="modules/generated/sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><tt class="xref py py-class docutils literal"><span class="pre">linear_model.Lasso</span></tt></a>. By <a class="reference external" href="https://github.com/arthurmensch">Arthur Mensch</a>.</li>
