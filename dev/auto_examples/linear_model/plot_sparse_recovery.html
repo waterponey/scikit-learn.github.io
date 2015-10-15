@@ -326,7 +326,7 @@ precision-recall.</p>
                         <span class="p">]:</span>
         <span class="n">precision</span><span class="p">,</span> <span class="n">recall</span><span class="p">,</span> <span class="n">thresholds</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.metrics.precision_recall_curve.html#sklearn.metrics.precision_recall_curve"><span class="n">precision_recall_curve</span></a><span class="p">(</span><span class="n">coef</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">,</span>
                                                                <span class="n">score</span><span class="p">)</span>
-        <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.semilogy"><span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span></a><span class="p">(</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.maximum.html#numpy.maximum"><span class="n">np</span><span class="o">.</span><span class="n">maximum</span></a><span class="p">(</span><span class="n">score</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">score</span><span class="p">),</span> <span class="mf">1e-4</span><span class="p">),</span>
+        <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.semilogy"><span class="n">plt</span><span class="o">.</span><span class="n">semilogy</span></a><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">score</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">score</span><span class="p">),</span> <span class="mf">1e-4</span><span class="p">),</span>
                      <span class="n">label</span><span class="o">=</span><span class="s">&quot;</span><span class="si">%s</span><span class="s">. AUC: </span><span class="si">%.3f</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <a href="../../modules/generated/sklearn.metrics.auc.html#sklearn.metrics.auc"><span class="n">auc</span></a><span class="p">(</span><span class="n">recall</span><span class="p">,</span> <span class="n">precision</span><span class="p">)))</span>
 
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.where.html#numpy.where"><span class="n">np</span><span class="o">.</span><span class="n">where</span></a><span class="p">(</span><span class="n">coef</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)[</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mf">2e-4</span><span class="p">]</span> <span class="o">*</span> <span class="n">n_relevant_features</span><span class="p">,</span> <span class="s">&#39;mo&#39;</span><span class="p">,</span>
@@ -342,8 +342,8 @@ precision-recall.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  12.10 seconds
-( 0 minutes  12.10 seconds)</p>
+<p><strong>Total running time of the example:</strong>  11.79 seconds
+( 0 minutes  11.79 seconds)</p>
 </div>
 
 

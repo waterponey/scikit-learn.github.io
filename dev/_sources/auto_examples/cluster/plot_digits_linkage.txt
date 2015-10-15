@@ -44,9 +44,9 @@ that ends up with a couple of singleton clusters.
 
   Computing embedding
   Done.
-  ward : 77.18s
+  ward : 79.12s
   average : 77.03s
-  complete : 77.75s
+  complete : 77.00s
 
 
 
@@ -55,6 +55,6 @@ that ends up with a couple of singleton clusters.
 .. literalinclude:: plot_digits_linkage.py
     :lines: 18-
 
-**Total running time of the example:**  279.63 seconds
-( 4 minutes  39.63 seconds)
+**Total running time of the example:**  280.84 seconds
+( 4 minutes  40.84 seconds)
     

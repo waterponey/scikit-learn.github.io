@@ -57,11 +57,11 @@ on the parameters epsilon and C of the SVR.
 
 **Script output**::
 
-  SVR complexity and bandwidth selected and model fitted in 1.579 s
-  KRR complexity and bandwidth selected and model fitted in 0.563 s
+  SVR complexity and bandwidth selected and model fitted in 1.565 s
+  KRR complexity and bandwidth selected and model fitted in 0.553 s
   Support vector ratio: 0.320
-  SVR prediction for 100000 inputs in 0.192 s
-  KRR prediction for 100000 inputs in 0.700 s
+  SVR prediction for 100000 inputs in 0.193 s
+  KRR prediction for 100000 inputs in 0.721 s
 
 
 
@@ -70,6 +70,6 @@ on the parameters epsilon and C of the SVR.
 .. literalinclude:: plot_kernel_ridge_regression.py
     :lines: 33-
 
-**Total running time of the example:**  80.65 seconds
-( 1 minutes  20.65 seconds)
+**Total running time of the example:**  80.50 seconds
+( 1 minutes  20.50 seconds)
     

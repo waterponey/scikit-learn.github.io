@@ -37,6 +37,6 @@ behavior.
 .. literalinclude:: plot_cluster_comparison.py
     :lines: 23-
 
-**Total running time of the example:**  125.51 seconds
-( 2 minutes  5.51 seconds)
+**Total running time of the example:**  126.12 seconds
+( 2 minutes  6.12 seconds)
     

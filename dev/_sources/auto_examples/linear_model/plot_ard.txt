@@ -48,6 +48,6 @@ marginal log-likelihood of the observations.
 .. literalinclude:: plot_ard.py
     :lines: 19-
 
-**Total running time of the example:**  0.63 seconds
-( 0 minutes  0.63 seconds)
+**Total running time of the example:**  0.74 seconds
+( 0 minutes  0.74 seconds)
     
