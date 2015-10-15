@@ -596,9 +596,9 @@ estimator that supports imputation. See <a class="reference internal" href="../a
 <span class="go">       [4, 5]])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">poly</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">poly</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>                             
-<span class="go">array([[ 1,  0,  1,  0,  0,  1],</span>
-<span class="go">       [ 1,  2,  3,  4,  6,  9],</span>
-<span class="go">       [ 1,  4,  5, 16, 20, 25]])</span>
+<span class="go">array([[  1.,   0.,   1.,   0.,   0.,   1.],</span>
+<span class="go">       [  1.,   2.,   3.,   4.,   6.,   9.],</span>
+<span class="go">       [  1.,   4.,   5.,  16.,  20.,  25.]])</span>
 </pre></div>
 </div>
 <p>The features of X have been transformed from <img class="math" src="../_images/math/34adf865a29381a6d492d1d69c2f7e1e4a01c8fa.png" alt="(X_1, X_2)"/> to <img class="math" src="../_images/math/89ff7f73e231da14014c5c4355ff5ab3ba181fec.png" alt="(1, X_1, X_2, X_1^2, X_1X_2, X_2^2)"/>.</p>
@@ -610,9 +610,9 @@ estimator that supports imputation. See <a class="reference internal" href="../a
 <span class="go">       [6, 7, 8]])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">poly</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">interaction_only</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">poly</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>                             
-<span class="go">array([[  1,   0,   1,   2,   0,   0,   2,   0],</span>
-<span class="go">       [  1,   3,   4,   5,  12,  15,  20,  60],</span>
-<span class="go">       [  1,   6,   7,   8,  42,  48,  56, 336]])</span>
+<span class="go">array([[   1.,    0.,    1.,    2.,    0.,    0.,    2.,    0.],</span>
+<span class="go">       [   1.,    3.,    4.,    5.,   12.,   15.,   20.,   60.],</span>
+<span class="go">       [   1.,    6.,    7.,    8.,   42.,   48.,   56.,  336.]])</span>
 </pre></div>
 </div>
 <p>The features of X have been transformed from <img class="math" src="../_images/math/754ae478b77cf358d3ae841fb0b18368afdf37f1.png" alt="(X_1, X_2, X_3)"/> to <img class="math" src="../_images/math/7c842dafc2022b137525e227b2e7703098069372.png" alt="(1, X_1, X_2, X_3, X_1X_2, X_1X_3, X_2X_3, X_1X_2X_3)"/>.</p>

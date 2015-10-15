@@ -1173,9 +1173,9 @@ of a given degree.  It can be used as follows:</p>
 <span class="go">       [4, 5]])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">poly</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">degree</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">poly</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-<span class="go">array([[ 1,  0,  1,  0,  0,  1],</span>
-<span class="go">       [ 1,  2,  3,  4,  6,  9],</span>
-<span class="go">       [ 1,  4,  5, 16, 20, 25]])</span>
+<span class="go">array([[  1.,   0.,   1.,   0.,   0.,   1.],</span>
+<span class="go">       [  1.,   2.,   3.,   4.,   6.,   9.],</span>
+<span class="go">       [  1.,   4.,   5.,  16.,  20.,  25.]])</span>
 </pre></div>
 </div>
 <p>The features of <code class="docutils literal"><span class="pre">X</span></code> have been transformed from <img class="math" src="../_images/math/96c49711bb53eae5b3697f1835b6eb50a9313fa8.png" alt="[x_1, x_2]"/> to
@@ -1216,10 +1216,10 @@ This way, we can solve the XOR problem with a linear classifier:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">^</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">PolynomialFeatures</span><span class="p">(</span><span class="n">interaction_only</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span>
-<span class="go">array([[1, 0, 0, 0],</span>
-<span class="go">       [1, 0, 1, 0],</span>
-<span class="go">       [1, 1, 0, 0],</span>
-<span class="go">       [1, 1, 1, 1]])</span>
+<span class="go">array([[ 1.,  0.,  0.,  0.],</span>
+<span class="go">       [ 1.,  0.,  1.,  0.],</span>
+<span class="go">       [ 1.,  1.,  0.,  0.],</span>
+<span class="go">       [ 1.,  1.,  1.,  1.]])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">Perceptron</span><span class="p">(</span><span class="n">fit_intercept</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="go">1.0</span>
