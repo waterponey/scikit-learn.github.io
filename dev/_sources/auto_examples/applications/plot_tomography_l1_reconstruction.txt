@@ -51,6 +51,6 @@ contributed to fewer projections than the central disk.
 .. literalinclude:: plot_tomography_l1_reconstruction.py
     :lines: 37-
 
-**Total running time of the example:**  18.38 seconds
-( 0 minutes  18.38 seconds)
+**Total running time of the example:**  18.52 seconds
+( 0 minutes  18.52 seconds)
     

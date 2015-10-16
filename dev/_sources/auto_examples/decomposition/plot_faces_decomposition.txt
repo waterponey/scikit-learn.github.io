@@ -68,19 +68,19 @@ matrix decomposition (dimension reduction) methods from the module
 
   Dataset consists of 400 faces
   Extracting the top 6 Eigenfaces - RandomizedPCA...
-  done in 0.708s
+  done in 0.804s
   Extracting the top 6 Non-negative components - NMF...
-  done in 4.125s
+  done in 4.631s
   Extracting the top 6 Independent components - FastICA...
-  done in 4.594s
+  done in 5.447s
   Extracting the top 6 Sparse comp. - MiniBatchSparsePCA...
-  done in 1.957s
+  done in 2.005s
   Extracting the top 6 MiniBatchDictionaryLearning...
-  done in 3.359s
+  done in 3.750s
   Extracting the top 6 Cluster centers - MiniBatchKMeans...
-  done in 0.721s
+  done in 1.353s
   Extracting the top 6 Factor Analysis components - FA...
-  done in 3.542s
+  done in 3.962s
 
 
 
@@ -89,6 +89,6 @@ matrix decomposition (dimension reduction) methods from the module
 .. literalinclude:: plot_faces_decomposition.py
     :lines: 12-
 
-**Total running time of the example:**  22.70 seconds
-( 0 minutes  22.70 seconds)
+**Total running time of the example:**  25.53 seconds
+( 0 minutes  25.53 seconds)
     

@@ -67,6 +67,6 @@ What we can see that:
 .. literalinclude:: plot_robust_fit.py
     :lines: 28-
 
-**Total running time of the example:**  17.13 seconds
-( 0 minutes  17.13 seconds)
+**Total running time of the example:**  16.39 seconds
+( 0 minutes  16.39 seconds)
     
