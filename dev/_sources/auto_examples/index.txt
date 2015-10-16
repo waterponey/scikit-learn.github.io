@@ -3608,31 +3608,6 @@ Examples concerning the :mod:`sklearn.linear_model` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="Computes a Theil-Sen Regression on a synthetic dataset.">
-
-.. only:: html
-
-  .. figure:: linear_model/images/thumb/plot_theilsen.png
-    :target: ./linear_model/plot_theilsen.html
-
-    :ref:`example_linear_model_plot_theilsen.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   linear_model/plot_theilsen
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="Using orthogonal matching pursuit for recovering a sparse signal from a noisy measurement encod...">
 
 .. only:: html
@@ -3653,6 +3628,31 @@ Examples concerning the :mod:`sklearn.linear_model` module.
    :hidden:
 
    linear_model/plot_omp
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="Computes a Theil-Sen Regression on a synthetic dataset.">
+
+.. only:: html
+
+  .. figure:: linear_model/images/thumb/plot_theilsen.png
+    :target: ./linear_model/plot_theilsen.html
+
+    :ref:`example_linear_model_plot_theilsen.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   linear_model/plot_theilsen
 
 
 
