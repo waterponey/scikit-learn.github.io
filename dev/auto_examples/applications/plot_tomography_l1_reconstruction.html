@@ -217,7 +217,7 @@ contributed to fewer projections than the central disk.</p>
 
 
 <span class="k">def</span> <span class="nf">_generate_center_coordinates</span><span class="p">(</span><span class="n">l_x</span><span class="p">):</span>
-    <span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mgrid.html#numpy.mgrid"><span class="n">np</span><span class="o">.</span><span class="n">mgrid</span></a><span class="p">[:</span><span class="n">l_x</span><span class="p">,</span> <span class="p">:</span><span class="n">l_x</span><span class="p">]</span>
+    <span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mgrid.html#numpy.mgrid"><span class="n">np</span><span class="o">.</span><span class="n">mgrid</span></a><span class="p">[:</span><span class="n">l_x</span><span class="p">,</span> <span class="p">:</span><span class="n">l_x</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">)</span>
     <span class="n">center</span> <span class="o">=</span> <span class="n">l_x</span> <span class="o">/</span> <span class="mf">2.</span>
     <span class="n">X</span> <span class="o">+=</span> <span class="mf">0.5</span> <span class="o">-</span> <span class="n">center</span>
     <span class="n">Y</span> <span class="o">+=</span> <span class="mf">0.5</span> <span class="o">-</span> <span class="n">center</span>
@@ -310,8 +310,8 @@ contributed to fewer projections than the central disk.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  18.52 seconds
-( 0 minutes  18.52 seconds)</p>
+<p><strong>Total running time of the example:</strong>  17.76 seconds
+( 0 minutes  17.76 seconds)</p>
 </div>
 
 
