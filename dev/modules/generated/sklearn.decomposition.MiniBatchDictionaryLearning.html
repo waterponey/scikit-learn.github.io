@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
   
-    <title>sklearn.decomposition.MiniBatchDictionaryLearning &mdash; scikit-learn 0.17.dev0 documentation</title>
+    <title>sklearn.decomposition.MiniBatchDictionaryLearning &mdash; scikit-learn 0.18.dev0 documentation</title>
   <!-- htmltitle is before nature.css - we use this hack to load bootstrap first -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" media="screen" />
@@ -22,7 +22,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.17.dev0',
+        VERSION:     '0.18.dev0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -34,7 +34,7 @@
     <script type="text/javascript" src="../../_static/js/copybutton.js"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
-    <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../classes.html" />
     <link rel="next" title="sklearn.decomposition.LatentDirichletAllocation" href="sklearn.decomposition.LatentDirichletAllocation.html" />
     <link rel="prev" title="sklearn.decomposition.DictionaryLearning" href="sklearn.decomposition.DictionaryLearning.html" />
@@ -144,7 +144,7 @@
         </div>
     </div>
     
-      <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
+      <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
 <li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.decomposition</span></tt>.MiniBatchDictionaryLearning</a><ul>
@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></tt></a>.MiniBatchDictionaryLearning<a class="headerlink" href="#sklearn-decomposition-minibatchdictionarylearning" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.decomposition.MiniBatchDictionaryLearning">
-<em class="property">class </em><tt class="descclassname">sklearn.decomposition.</tt><tt class="descname">MiniBatchDictionaryLearning</tt><big>(</big><em>n_components=None</em>, <em>alpha=1</em>, <em>n_iter=1000</em>, <em>fit_algorithm='lars'</em>, <em>n_jobs=1</em>, <em>batch_size=3</em>, <em>shuffle=True</em>, <em>dict_init=None</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>verbose=False</em>, <em>split_sign=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/decomposition/dict_learning.py#L1075"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.decomposition.</tt><tt class="descname">MiniBatchDictionaryLearning</tt><big>(</big><em>n_components=None</em>, <em>alpha=1</em>, <em>n_iter=1000</em>, <em>fit_algorithm='lars'</em>, <em>n_jobs=1</em>, <em>batch_size=3</em>, <em>shuffle=True</em>, <em>dict_init=None</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>verbose=False</em>, <em>split_sign=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/decomposition/dict_learning.py#L1075"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mini-batch dictionary learning</p>
 <p>Finds a dictionary (a set of atoms) that can best be used to represent data
 using a sparse code.</p>
@@ -325,12 +325,12 @@ for sparse coding (<a class="reference external" href="http://www.di.ens.fr/sier
 </table>
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchDictionaryLearning.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>n_components=None</em>, <em>alpha=1</em>, <em>n_iter=1000</em>, <em>fit_algorithm='lars'</em>, <em>n_jobs=1</em>, <em>batch_size=3</em>, <em>shuffle=True</em>, <em>dict_init=None</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>verbose=False</em>, <em>split_sign=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/decomposition/dict_learning.py#L1187"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>n_components=None</em>, <em>alpha=1</em>, <em>n_iter=1000</em>, <em>fit_algorithm='lars'</em>, <em>n_jobs=1</em>, <em>batch_size=3</em>, <em>shuffle=True</em>, <em>dict_init=None</em>, <em>transform_algorithm='omp'</em>, <em>transform_n_nonzero_coefs=None</em>, <em>transform_alpha=None</em>, <em>verbose=False</em>, <em>split_sign=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/decomposition/dict_learning.py#L1187"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchDictionaryLearning.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/decomposition/dict_learning.py#L1206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/decomposition/dict_learning.py#L1206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model from data in X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -355,7 +355,7 @@ and n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchDictionaryLearning.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -385,7 +385,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchDictionaryLearning.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -410,7 +410,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchDictionaryLearning.partial_fit">
-<tt class="descname">partial_fit</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>iter_offset=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/decomposition/dict_learning.py#L1239"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.partial_fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">partial_fit</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>iter_offset=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/decomposition/dict_learning.py#L1239"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.partial_fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Updates the model using the data in X as a mini-batch.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -442,7 +442,7 @@ used.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchDictionaryLearning.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -460,7 +460,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.MiniBatchDictionaryLearning.transform">
-<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/decomposition/dict_learning.py#L790"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/decomposition/dict_learning.py#L790"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.MiniBatchDictionaryLearning.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Encode the data as a sparse combination of the dictionary atoms.</p>
 <p>Coding method is determined by the object parameter
 <cite>transform_algorithm</cite>.</p>

@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
   
-    <title>sklearn.random_projection.SparseRandomProjection &mdash; scikit-learn 0.17.dev0 documentation</title>
+    <title>sklearn.random_projection.SparseRandomProjection &mdash; scikit-learn 0.18.dev0 documentation</title>
   <!-- htmltitle is before nature.css - we use this hack to load bootstrap first -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" media="screen" />
@@ -22,7 +22,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.17.dev0',
+        VERSION:     '0.18.dev0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -34,7 +34,7 @@
     <script type="text/javascript" src="../../_static/js/copybutton.js"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
-    <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../classes.html" />
     <link rel="next" title="sklearn.random_projection.johnson_lindenstrauss_min_dim" href="sklearn.random_projection.johnson_lindenstrauss_min_dim.html" />
     <link rel="prev" title="sklearn.random_projection.GaussianRandomProjection" href="sklearn.random_projection.GaussianRandomProjection.html" />
@@ -144,7 +144,7 @@
         </div>
     </div>
     
-      <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
+      <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
 <li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.random_projection</span></tt>.SparseRandomProjection</a><ul>
@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.random_projection" title="sklearn.random_projection"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.random_projection</span></tt></a>.SparseRandomProjection<a class="headerlink" href="#sklearn-random-projection-sparserandomprojection" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.random_projection.SparseRandomProjection">
-<em class="property">class </em><tt class="descclassname">sklearn.random_projection.</tt><tt class="descname">SparseRandomProjection</tt><big>(</big><em>n_components='auto'</em>, <em>density='auto'</em>, <em>eps=0.1</em>, <em>dense_output=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/random_projection.py#L500"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.random_projection.</tt><tt class="descname">SparseRandomProjection</tt><big>(</big><em>n_components='auto'</em>, <em>density='auto'</em>, <em>eps=0.1</em>, <em>dense_output=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/random_projection.py#L500"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reduce dimensionality through sparse random projection</p>
 <p>Sparse random matrix is an alternative to dense random
 projection matrix that guarantees similar embedding quality while being
@@ -258,18 +258,18 @@ matrix at fit time.</p>
 <p class="last"><a class="reference internal" href="sklearn.random_projection.GaussianRandomProjection.html#sklearn.random_projection.GaussianRandomProjection" title="sklearn.random_projection.GaussianRandomProjection"><tt class="xref py py-obj docutils literal"><span class="pre">GaussianRandomProjection</span></tt></a></p>
 </div>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r59" rules="none">
+<table class="docutils citation" frame="void" id="r190" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R59]</a></td><td>Ping Li, T. Hastie and K. W. Church, 2006,
+<tr><td class="label"><a class="fn-backref" href="#id1">[R190]</a></td><td>Ping Li, T. Hastie and K. W. Church, 2006,
 &#8220;Very Sparse Random Projections&#8221;.
 <a class="reference external" href="http://www.stanford.edu/~hastie/Papers/Ping/KDD06_rp.pdf">http://www.stanford.edu/~hastie/Papers/Ping/KDD06_rp.pdf</a></td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r60" rules="none">
+<table class="docutils citation" frame="void" id="r191" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[R60]</a></td><td>D. Achlioptas, 2001, &#8220;Database-friendly random projections&#8221;,
+<tr><td class="label"><a class="fn-backref" href="#id2">[R191]</a></td><td>D. Achlioptas, 2001, &#8220;Database-friendly random projections&#8221;,
 <a class="reference external" href="http://www.cs.ucsc.edu/~optas/papers/jl.pdf">http://www.cs.ucsc.edu/~optas/papers/jl.pdf</a></td></tr>
 </tbody>
 </table>
@@ -299,12 +299,12 @@ matrix at fit time.</p>
 </table>
 <dl class="method">
 <dt id="sklearn.random_projection.SparseRandomProjection.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>n_components='auto'</em>, <em>density='auto'</em>, <em>eps=0.1</em>, <em>dense_output=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/random_projection.py#L589"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>n_components='auto'</em>, <em>density='auto'</em>, <em>eps=0.1</em>, <em>dense_output=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/random_projection.py#L589"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.random_projection.SparseRandomProjection.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/random_projection.py#L327"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/random_projection.py#L327"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate a sparse random projection matrix</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -328,7 +328,7 @@ afore mentioned papers.</p>
 
 <dl class="method">
 <dt id="sklearn.random_projection.SparseRandomProjection.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -358,7 +358,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.random_projection.SparseRandomProjection.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -383,7 +383,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.random_projection.SparseRandomProjection.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -401,7 +401,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.random_projection.SparseRandomProjection.transform">
-<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/random_projection.py#L392"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/random_projection.py#L392"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.random_projection.SparseRandomProjection.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Project the data by using matrix product with the random matrix</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

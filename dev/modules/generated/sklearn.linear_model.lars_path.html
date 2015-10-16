@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
   
-    <title>sklearn.linear_model.lars_path &mdash; scikit-learn 0.17.dev0 documentation</title>
+    <title>sklearn.linear_model.lars_path &mdash; scikit-learn 0.18.dev0 documentation</title>
   <!-- htmltitle is before nature.css - we use this hack to load bootstrap first -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" media="screen" />
@@ -22,7 +22,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.17.dev0',
+        VERSION:     '0.18.dev0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -34,7 +34,7 @@
     <script type="text/javascript" src="../../_static/js/copybutton.js"></script>
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
-    <link rel="top" title="scikit-learn 0.17.dev0 documentation" href="../../index.html" />
+    <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../classes.html" />
     <link rel="next" title="sklearn.linear_model.lasso_path" href="sklearn.linear_model.lasso_path.html" />
     <link rel="prev" title="sklearn.linear_model.TheilSenRegressor" href="sklearn.linear_model.TheilSenRegressor.html" />
@@ -144,7 +144,7 @@
         </div>
     </div>
     
-      <p class="doc-version">This documentation is for scikit-learn <strong>version 0.17.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
+      <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
 <li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.linear_model</span></tt>.lars_path</a><ul>
@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.lars_path<a class="headerlink" href="#sklearn-linear-model-lars-path" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.linear_model.lars_path">
-<tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">lars_path</tt><big>(</big><em>X</em>, <em>y</em>, <em>Xy=None</em>, <em>Gram=None</em>, <em>max_iter=500</em>, <em>alpha_min=0</em>, <em>method='lar'</em>, <em>copy_X=True</em>, <em>eps=2.2204460492503131e-16</em>, <em>copy_Gram=True</em>, <em>verbose=0</em>, <em>return_path=True</em>, <em>return_n_iter=False</em>, <em>positive=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/c0c2c73/sklearn/linear_model/least_angle.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.lars_path" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">lars_path</tt><big>(</big><em>X</em>, <em>y</em>, <em>Xy=None</em>, <em>Gram=None</em>, <em>max_iter=500</em>, <em>alpha_min=0</em>, <em>method='lar'</em>, <em>copy_X=True</em>, <em>eps=2.2204460492503131e-16</em>, <em>copy_Gram=True</em>, <em>verbose=0</em>, <em>return_path=True</em>, <em>return_n_iter=False</em>, <em>positive=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/96f587a/sklearn/linear_model/least_angle.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.lars_path" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute Least Angle Regression or Lasso path using LARS algorithm [1]</p>
 <p>The optimization objective for the case method=&#8217;lasso&#8217; is:</p>
 <div class="highlight-python"><div class="highlight"><pre>(1 / (2 * n_samples)) * ||y - Xw||^2_2 + alpha * ||w||_1
@@ -282,23 +282,23 @@ to True.</p>
 <p class="last"><a class="reference internal" href="sklearn.linear_model.lasso_path.html#sklearn.linear_model.lasso_path" title="sklearn.linear_model.lasso_path"><tt class="xref py py-obj docutils literal"><span class="pre">lasso_path</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoLars.html#sklearn.linear_model.LassoLars" title="sklearn.linear_model.LassoLars"><tt class="xref py py-obj docutils literal"><span class="pre">LassoLars</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.Lars.html#sklearn.linear_model.Lars" title="sklearn.linear_model.Lars"><tt class="xref py py-obj docutils literal"><span class="pre">Lars</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoLarsCV.html#sklearn.linear_model.LassoLarsCV" title="sklearn.linear_model.LassoLarsCV"><tt class="xref py py-obj docutils literal"><span class="pre">LassoLarsCV</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LarsCV.html#sklearn.linear_model.LarsCV" title="sklearn.linear_model.LarsCV"><tt class="xref py py-obj docutils literal"><span class="pre">LarsCV</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.sparse_encode.html#sklearn.decomposition.sparse_encode" title="sklearn.decomposition.sparse_encode"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.decomposition.sparse_encode</span></tt></a></p>
 </div>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r30" rules="none">
+<table class="docutils citation" frame="void" id="r144" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R30]</a></td><td>&#8220;Least Angle Regression&#8221;, Effron et al.
+<tr><td class="label"><a class="fn-backref" href="#id1">[R144]</a></td><td>&#8220;Least Angle Regression&#8221;, Effron et al.
 <a class="reference external" href="http://www-stat.stanford.edu/~tibs/ftp/lars.pdf">http://www-stat.stanford.edu/~tibs/ftp/lars.pdf</a></td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r31" rules="none">
+<table class="docutils citation" frame="void" id="r145" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[R31]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Least-angle_regression">Wikipedia entry on the Least-angle regression</a></td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id2">[R145]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Least-angle_regression">Wikipedia entry on the Least-angle regression</a></td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r32" rules="none">
+<table class="docutils citation" frame="void" id="r146" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[R32]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Lasso_(statistics)#Lasso_method">Wikipedia entry on the Lasso</a></td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id3">[R146]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Lasso_(statistics)#Lasso_method">Wikipedia entry on the Lasso</a></td></tr>
 </tbody>
 </table>
 </dd></dl>
