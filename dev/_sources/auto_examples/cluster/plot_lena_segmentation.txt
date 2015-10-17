@@ -44,6 +44,6 @@ There are two options to assign labels:
 .. literalinclude:: plot_lena_segmentation.py
     :lines: 20-
 
-**Total running time of the example:**  717.86 seconds
-( 11 minutes  57.86 seconds)
+**Total running time of the example:**  719.17 seconds
+( 11 minutes  59.17 seconds)
     

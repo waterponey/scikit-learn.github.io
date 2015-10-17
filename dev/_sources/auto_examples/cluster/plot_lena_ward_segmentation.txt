@@ -20,7 +20,7 @@ for each segmented region to be in one piece.
 **Script output**::
 
   Compute structured hierarchical clustering...
-  Elapsed time:  15.0112400055
+  Elapsed time:  14.8561799526
   Number of pixels:  65536
   Number of clusters:  15
 
@@ -31,6 +31,6 @@ for each segmented region to be in one piece.
 .. literalinclude:: plot_lena_ward_segmentation.py
     :lines: 10-
 
-**Total running time of the example:**  15.59 seconds
-( 0 minutes  15.59 seconds)
+**Total running time of the example:**  15.40 seconds
+( 0 minutes  15.40 seconds)
     
