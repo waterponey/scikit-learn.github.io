@@ -30,8 +30,8 @@ original data.
 
 
 
-.. rst-class:: horizontal
-
+.. image:: images/plot_random_forest_embedding_001.png
+    :align: center
 
 
 
@@ -41,6 +41,6 @@ original data.
 .. literalinclude:: plot_random_forest_embedding.py
     :lines: 27-
 
-**Total running time of the example:**  0.00 seconds
-( 0 minutes  0.00 seconds)
+**Total running time of the example:**  0.89 seconds
+( 0 minutes  0.89 seconds)
     
