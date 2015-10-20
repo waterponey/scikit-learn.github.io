@@ -932,21 +932,57 @@ interactive user interface.</p>
 <div class="section" id="gaussian-process-for-machine-learning">
 <span id="gaussian-process-examples"></span><h2>Gaussian Process for Machine Learning<a class="headerlink" href="#gaussian-process-for-machine-learning" title="Permalink to this headline">¶</a></h2>
 <p>Examples concerning the <a class="reference internal" href="../modules/classes.html#module-sklearn.gaussian_process" title="sklearn.gaussian_process"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.gaussian_process</span></tt></a> module.</p>
-<div class="thumbnailContainer" tooltip="In this example, we fit a Gaussian Process model onto the diabetes dataset."><div class="figure">
-<a class="reference external image-reference" href="./gaussian_process/gp_diabetes_dataset.html"><img alt="../_images/gp_diabetes_dataset.png" src="../_images/gp_diabetes_dataset.png" /></a>
-<p class="caption"><a class="reference internal" href="gaussian_process/gp_diabetes_dataset.html#example-gaussian-process-gp-diabetes-dataset-py"><em>Gaussian Processes regression: goodness-of-fit on the &#8216;diabetes&#8217; dataset</em></a></p>
+<div class="thumbnailContainer" tooltip="This example illustrates GPC on XOR data. Compared are a stationary, isotropic kernel (RBF) and..."><div class="figure">
+<a class="reference external image-reference" href="./gaussian_process/plot_gpc_xor.html"><img alt="../_images/plot_gpc_xor.png" src="../_images/plot_gpc_xor.png" /></a>
+<p class="caption"><a class="reference internal" href="gaussian_process/plot_gpc_xor.html#example-gaussian-process-plot-gpc-xor-py"><em>Illustration of Gaussian process classification (GPC) on the XOR dataset</em></a></p>
 </div>
 </div><div class="toctree-wrapper compound">
 </div>
-<div class="thumbnailContainer" tooltip="A two-dimensional regression exercise with a post-processing allowing for probabilistic classif..."><div class="figure">
-<a class="reference external image-reference" href="./gaussian_process/plot_gp_probabilistic_classification_after_regression.html"><img alt="../_images/plot_gp_probabilistic_classification_after_regression.png" src="../_images/plot_gp_probabilistic_classification_after_regression.png" /></a>
-<p class="caption"><a class="reference internal" href="gaussian_process/plot_gp_probabilistic_classification_after_regression.html#example-gaussian-process-plot-gp-probabilistic-classification-after-regression-py"><em>Gaussian Processes classification example: exploiting the probabilistic output</em></a></p>
+<div class="thumbnailContainer" tooltip="This example illustrates the predicted probability of GPC for an isotropic and anisotropic RBF ..."><div class="figure">
+<a class="reference external image-reference" href="./gaussian_process/plot_gpc_iris.html"><img alt="../_images/plot_gpc_iris.png" src="../_images/plot_gpc_iris.png" /></a>
+<p class="caption"><a class="reference internal" href="gaussian_process/plot_gpc_iris.html#example-gaussian-process-plot-gpc-iris-py"><em>Gaussian process classification (GPC) on iris dataset</em></a></p>
 </div>
 </div><div class="toctree-wrapper compound">
 </div>
-<div class="thumbnailContainer" tooltip="A simple one-dimensional regression exercise computed in two different ways:"><div class="figure">
-<a class="reference external image-reference" href="./gaussian_process/plot_gp_regression.html"><img alt="../_images/plot_gp_regression.png" src="../_images/plot_gp_regression.png" /></a>
-<p class="caption"><a class="reference internal" href="gaussian_process/plot_gp_regression.html#example-gaussian-process-plot-gp-regression-py"><em>Gaussian Processes regression: basic introductory example</em></a></p>
+<div class="thumbnailContainer" tooltip="This example illustrates the prior and posterior of a GPR with different kernels. Mean, standar..."><div class="figure">
+<a class="reference external image-reference" href="./gaussian_process/plot_gpr_prior_posterior.html"><img alt="../_images/plot_gpr_prior_posterior.png" src="../_images/plot_gpr_prior_posterior.png" /></a>
+<p class="caption"><a class="reference internal" href="gaussian_process/plot_gpr_prior_posterior.html#example-gaussian-process-plot-gpr-prior-posterior-py"><em>Illustration of prior and posterior Gaussian process for different kernels</em></a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer" tooltip="Both kernel ridge regression (KRR) and Gaussian process regression (GPR) learn a target functio..."><div class="figure">
+<a class="reference external image-reference" href="./gaussian_process/plot_compare_gpr_krr.html"><img alt="../_images/plot_compare_gpr_krr.png" src="../_images/plot_compare_gpr_krr.png" /></a>
+<p class="caption"><a class="reference internal" href="gaussian_process/plot_compare_gpr_krr.html#example-gaussian-process-plot-compare-gpr-krr-py"><em>Comparison of kernel ridge and Gaussian process regression</em></a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer" tooltip="This example is based on Section 5.4.3 of "Gaussian Processes for Machine Learning" [RW2006]. I..."><div class="figure">
+<a class="reference external image-reference" href="./gaussian_process/plot_gpr_co2.html"><img alt="../_images/plot_gpr_co2.png" src="../_images/plot_gpr_co2.png" /></a>
+<p class="caption"><a class="reference internal" href="gaussian_process/plot_gpr_co2.html#example-gaussian-process-plot-gpr-co2-py"><em>Gaussian process regression (GPR) on Mauna Loa CO2 data.</em></a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer" tooltip="This example illustrates the predicted probability of GPC for an RBF kernel with different choi..."><div class="figure">
+<a class="reference external image-reference" href="./gaussian_process/plot_gpc.html"><img alt="../_images/plot_gpc.png" src="../_images/plot_gpc.png" /></a>
+<p class="caption"><a class="reference internal" href="gaussian_process/plot_gpc.html#example-gaussian-process-plot-gpc-py"><em>Probabilistic predictions with Gaussian process classification (GPC)</em></a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer" tooltip="This example illustrates that GPR with a sum-kernel including a WhiteKernel can estimate the no..."><div class="figure">
+<a class="reference external image-reference" href="./gaussian_process/plot_gpr_noisy.html"><img alt="../_images/plot_gpr_noisy.png" src="../_images/plot_gpr_noisy.png" /></a>
+<p class="caption"><a class="reference internal" href="gaussian_process/plot_gpr_noisy.html#example-gaussian-process-plot-gpr-noisy-py"><em>Gaussian process regression (GPR) with noise-level estimation</em></a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer" tooltip="A two-dimensional classification example showing iso-probability lines for the predicted probab..."><div class="figure">
+<a class="reference external image-reference" href="./gaussian_process/plot_gpc_isoprobability.html"><img alt="../_images/plot_gpc_isoprobability.png" src="../_images/plot_gpc_isoprobability.png" /></a>
+<p class="caption"><a class="reference internal" href="gaussian_process/plot_gpc_isoprobability.html#example-gaussian-process-plot-gpc-isoprobability-py"><em>Iso-probability lines for Gaussian Processes classification (GPC)</em></a></p>
+</div>
+</div><div class="toctree-wrapper compound">
+</div>
+<div class="thumbnailContainer" tooltip="A simple one-dimensional regression example computed in two different ways:"><div class="figure">
+<a class="reference external image-reference" href="./gaussian_process/plot_gpr_noisy_targets.html"><img alt="../_images/plot_gpr_noisy_targets.png" src="../_images/plot_gpr_noisy_targets.png" /></a>
+<p class="caption"><a class="reference internal" href="gaussian_process/plot_gpr_noisy_targets.html#example-gaussian-process-plot-gpr-noisy-targets-py"><em>Gaussian Processes regression: basic introductory example</em></a></p>
 </div>
 </div><div class="toctree-wrapper compound">
 </div>

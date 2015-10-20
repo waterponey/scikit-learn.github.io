@@ -169,7 +169,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.tree" title="sklearn.tree"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.tree</span></tt></a>.ExtraTreeRegressor<a class="headerlink" href="#sklearn-tree-extratreeregressor" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.tree.ExtraTreeRegressor">
-<em class="property">class </em><tt class="descclassname">sklearn.tree.</tt><tt class="descname">ExtraTreeRegressor</tt><big>(</big><em>criterion='mse'</em>, <em>splitter='random'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features='auto'</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5f3cbb5/sklearn/tree/tree.py#L915"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.tree.</tt><tt class="descname">ExtraTreeRegressor</tt><big>(</big><em>criterion='mse'</em>, <em>splitter='random'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features='auto'</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d4e9d79/sklearn/tree/tree.py#L914"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor" title="Permalink to this definition">¶</a></dt>
 <dd><p>An extremely randomized tree regressor.</p>
 <p>Extra-trees differ from classic decision trees in the way they are built.
 When looking for the best split to separate the samples of a node into two
@@ -184,10 +184,10 @@ decision tree.</p>
 <p class="last"><a class="reference internal" href="sklearn.tree.ExtraTreeClassifier.html#sklearn.tree.ExtraTreeClassifier" title="sklearn.tree.ExtraTreeClassifier"><tt class="xref py py-obj docutils literal"><span class="pre">ExtraTreeClassifier</span></tt></a>, <tt class="xref py py-obj docutils literal"><span class="pre">ExtraTreesClassifier</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">ExtraTreesRegressor</span></tt></p>
 </div>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r203" rules="none">
+<table class="docutils citation" frame="void" id="r186" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R203]</a></td><td>P. Geurts, D. Ernst., and L. Wehenkel, &#8220;Extremely randomized trees&#8221;,
+<tr><td class="label"><a class="fn-backref" href="#id1">[R186]</a></td><td>P. Geurts, D. Ernst., and L. Wehenkel, &#8220;Extremely randomized trees&#8221;,
 Machine Learning, 63(1), 3-42, 2006.</td></tr>
 </tbody>
 </table>
@@ -226,12 +226,12 @@ Machine Learning, 63(1), 3-42, 2006.</td></tr>
 </table>
 <dl class="method">
 <dt id="sklearn.tree.ExtraTreeRegressor.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>criterion='mse'</em>, <em>splitter='random'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features='auto'</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5f3cbb5/sklearn/tree/tree.py#L939"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>criterion='mse'</em>, <em>splitter='random'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features='auto'</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d4e9d79/sklearn/tree/tree.py#L938"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.tree.ExtraTreeRegressor.apply">
-<tt class="descname">apply</tt><big>(</big><em>X</em>, <em>check_input=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5f3cbb5/sklearn/tree/tree.py#L432"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.apply" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">apply</tt><big>(</big><em>X</em>, <em>check_input=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d4e9d79/sklearn/tree/tree.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.apply" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the index of the leaf that each sample is predicted as.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -282,7 +282,7 @@ It is also known as the Gini importance.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.ExtraTreeRegressor.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em>, <em>check_input=True</em>, <em>X_idx_sorted=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5f3cbb5/sklearn/tree/tree.py#L113"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em>, <em>check_input=True</em>, <em>X_idx_sorted=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d4e9d79/sklearn/tree/tree.py#L112"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Build a decision tree from the training set (X, y).</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -334,7 +334,7 @@ Don&#8217;t use this parameter unless you know what to do.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.ExtraTreeRegressor.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5f3cbb5/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d4e9d79/sklearn/base.py#L438"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -364,7 +364,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.ExtraTreeRegressor.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5f3cbb5/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d4e9d79/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -389,7 +389,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.ExtraTreeRegressor.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em>, <em>check_input=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5f3cbb5/sklearn/tree/tree.py#L381"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em>, <em>check_input=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d4e9d79/sklearn/tree/tree.py#L380"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict class or regression value for X.</p>
 <p>For a classification model, the predicted class for each sample in X is
 returned. For a regression model, the predicted value based on X is
@@ -423,7 +423,7 @@ Don&#8217;t use this parameter unless you know what you do.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.ExtraTreeRegressor.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5f3cbb5/sklearn/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d4e9d79/sklearn/base.py#L325"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
@@ -462,7 +462,7 @@ would get a R^2 score of 0.0.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.ExtraTreeRegressor.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5f3cbb5/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d4e9d79/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -480,7 +480,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.ExtraTreeRegressor.transform">
-<tt class="descname">transform</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5f3cbb5/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d4e9d79/sklearn/utils/deprecation.py#L69"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.ExtraTreeRegressor.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>DEPRECATED: Support to use estimators as feature selectors will be removed in version 0.19. Use SelectFromModel instead.</p>
 <p>Reduce X to its most important features.</p>
 <blockquote>

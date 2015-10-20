@@ -269,7 +269,7 @@ silently dispatched to <tt class="docutils literal"><span class="pre">numpy.dot<
 <tt class="docutils literal"><span class="pre">numpy.dot</span></tt> has been invoked in a situation where it is suboptimal, you can
 activate the related warning:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">warnings</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.utils.validation</span> <span class="kn">import</span> <span class="n">NonBLASDotWarning</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.exceptions</span> <span class="kn">import</span> <span class="n">NonBLASDotWarning</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s">&#39;always&#39;</span><span class="p">,</span> <span class="n">NonBLASDotWarning</span><span class="p">)</span> 
 </pre></div>
 </div>

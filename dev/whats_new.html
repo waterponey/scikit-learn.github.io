@@ -319,12 +319,28 @@
 <h3>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="new-features">
 <h4>New features<a class="headerlink" href="#new-features" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li>The Gaussian Process module has been reimplemented and now offers classification
+and regression estimators through <a class="reference internal" href="modules/generated/sklearn.gaussian_process.GaussianProcessClassifier.html#sklearn.gaussian_process.GaussianProcessClassifier" title="sklearn.gaussian_process.GaussianProcessClassifier"><tt class="xref py py-class docutils literal"><span class="pre">gaussian_process.GaussianProcessClassifier</span></tt></a>
+and  <a class="reference internal" href="modules/generated/sklearn.gaussian_process.GaussianProcessRegressor.html#sklearn.gaussian_process.GaussianProcessRegressor" title="sklearn.gaussian_process.GaussianProcessRegressor"><tt class="xref py py-class docutils literal"><span class="pre">gaussian_process.GaussianProcessRegressor</span></tt></a>. Among other things, the new
+implementation supports kernel engineering, gradient-based hyperparameter optimization or
+sampling of functions from GP prior and GP posterior. Extensive documentation and
+examples are provided. By <a class="reference external" href="https://jmetzen.github.io/">Jan Hendrik Metzen</a>.</li>
+</ul>
+</div></blockquote>
 </div>
 <div class="section" id="enhancements">
 <h4>Enhancements<a class="headerlink" href="#enhancements" title="Permalink to this headline">¶</a></h4>
 </div>
 <div class="section" id="bug-fixes">
 <h4>Bug fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li>Fixed bug in <a class="reference internal" href="modules/generated/sklearn.manifold.spectral_embedding.html#sklearn.manifold.spectral_embedding" title="sklearn.manifold.spectral_embedding"><tt class="xref py py-func docutils literal"><span class="pre">manifold.spectral_embedding</span></tt></a> where diagonal of unnormalized
+Laplacian matrix was incorrectly set to 1. By <a class="reference external" href="https://github.com/yanlend">Peter Fischer</a>.</li>
+</ul>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="api-changes-summary">
@@ -3147,8 +3163,8 @@ assign weights to samples (see
 <a class="reference internal" href="auto_examples/svm/plot_weighted_samples.html#example-svm-plot-weighted-samples-py"><em>SVM: Weighted samples</em></a> for an example).</li>
 <li>New <a class="reference internal" href="modules/gaussian_process.html#gaussian-process"><em>Gaussian Processes</em></a> module by Vincent Dubourg. This module
 also has great documentation and some very neat examples. See
-<a class="reference internal" href="auto_examples/gaussian_process/plot_gp_regression.html#example-gaussian-process-plot-gp-regression-py"><em>Gaussian Processes regression: basic introductory example</em></a> or
-<a class="reference internal" href="auto_examples/gaussian_process/plot_gp_probabilistic_classification_after_regression.html#example-gaussian-process-plot-gp-probabilistic-classification-after-regression-py"><em>Gaussian Processes classification example: exploiting the probabilistic output</em></a>
+<em class="xref std std-ref">example_gaussian_process_plot_gp_regression.py</em> or
+<em class="xref std std-ref">example_gaussian_process_plot_gp_probabilistic_classification_after_regression.py</em>
 for a taste of what can be done.</li>
 <li>It is now possible to use liblinear’s Multi-class SVC (option
 multi_class in <a class="reference internal" href="modules/generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC" title="sklearn.svm.LinearSVC"><tt class="xref py py-class docutils literal"><span class="pre">svm.LinearSVC</span></tt></a>)</li>

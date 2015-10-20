@@ -77,21 +77,21 @@ necessarily related to visualisation.
   Extracting reference patches...
   done in 0.11s.
   Learning the dictionary...
-  done in 9.50s.
+  done in 9.44s.
   Extracting noisy patches... 
   done in 0.03s.
   Orthogonal Matching Pursuit
   1 atom...
-  done in 4.83s.
+  done in 4.84s.
   Orthogonal Matching Pursuit
   2 atoms...
-  done in 9.78s.
+  done in 9.71s.
   Least-angle regression
   5 atoms...
-  done in 54.07s.
+  done in 53.71s.
   Thresholding
    alpha=0.1...
-  done in 0.85s.
+  done in 0.74s.
 
 
 
@@ -100,6 +100,6 @@ necessarily related to visualisation.
 .. literalinclude:: plot_image_denoising.py
     :lines: 34-
 
-**Total running time of the example:**  87.49 seconds
-( 1 minutes  27.49 seconds)
+**Total running time of the example:**  86.87 seconds
+( 1 minutes  26.87 seconds)
     

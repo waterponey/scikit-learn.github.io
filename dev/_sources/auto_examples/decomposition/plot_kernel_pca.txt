@@ -23,6 +23,6 @@ that makes data linearly separable.
 .. literalinclude:: plot_kernel_pca.py
     :lines: 9-
 
-**Total running time of the example:**  0.92 seconds
-( 0 minutes  0.92 seconds)
+**Total running time of the example:**  0.89 seconds
+( 0 minutes  0.89 seconds)
     

@@ -33,6 +33,6 @@ with a decision score above some value.
 .. literalinclude:: plot_adaboost_twoclass.py
     :lines: 19-
 
-**Total running time of the example:**  8.15 seconds
-( 0 minutes  8.15 seconds)
+**Total running time of the example:**  8.55 seconds
+( 0 minutes  8.55 seconds)
     

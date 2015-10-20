@@ -166,6 +166,7 @@
 <li><a class="reference internal" href="#module-sklearn.ensemble.partial_dependence">partial dependence</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#module-sklearn.exceptions"><tt class="docutils literal"><span class="pre">sklearn.exceptions</span></tt>: Exceptions and warnings</a></li>
 <li><a class="reference internal" href="#module-sklearn.feature_extraction"><tt class="docutils literal"><span class="pre">sklearn.feature_extraction</span></tt>: Feature Extraction</a><ul>
 <li><a class="reference internal" href="#module-sklearn.feature_extraction.image">From images</a></li>
 <li><a class="reference internal" href="#module-sklearn.feature_extraction.text">From text</a></li>
@@ -483,7 +484,7 @@ validation and performance evaluation.</p>
 <tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><tt class="xref py py-obj docutils literal"><span class="pre">cross_validation.KFold</span></tt></a>(n[,&nbsp;n_folds,&nbsp;...])</td>
 <td>K-Folds cross validation iterator.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.cross_validation.LabelKFold.html#sklearn.cross_validation.LabelKFold" title="sklearn.cross_validation.LabelKFold"><tt class="xref py py-obj docutils literal"><span class="pre">cross_validation.LabelKFold</span></tt></a>(labels[,&nbsp;...])</td>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.cross_validation.LabelKFold.html#sklearn.cross_validation.LabelKFold" title="sklearn.cross_validation.LabelKFold"><tt class="xref py py-obj docutils literal"><span class="pre">cross_validation.LabelKFold</span></tt></a>(labels[,&nbsp;n_folds])</td>
 <td>K-fold iterator variant with non-overlapping labels.</td>
 </tr>
 <tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.cross_validation.LabelShuffleSplit.html#sklearn.cross_validation.LabelShuffleSplit" title="sklearn.cross_validation.LabelShuffleSplit"><tt class="xref py py-obj docutils literal"><span class="pre">cross_validation.LabelShuffleSplit</span></tt></a>(labels[,&nbsp;...])</td>
@@ -883,6 +884,46 @@ classification and regression.</p>
 </table>
 </div>
 </div>
+<div class="section" id="module-sklearn.exceptions">
+<span id="sklearn-exceptions-exceptions-and-warnings"></span><span id="exceptions-ref"></span><h2><a class="reference internal" href="#module-sklearn.exceptions" title="sklearn.exceptions"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.exceptions</span></tt></a>: Exceptions and warnings<a class="headerlink" href="#module-sklearn.exceptions" title="Permalink to this headline">¶</a></h2>
+<p>The <a class="reference internal" href="#module-sklearn.exceptions" title="sklearn.exceptions"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.exceptions</span></tt></a> module includes all custom warnings and error
+classes used across scikit-learn.</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.exceptions.NotFittedError.html#sklearn.exceptions.NotFittedError" title="sklearn.exceptions.NotFittedError"><tt class="xref py py-obj docutils literal"><span class="pre">exceptions.NotFittedError</span></tt></a></td>
+<td>Exception class to raise if estimator is used before fitting.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.exceptions.ChangedBehaviorWarning.html#sklearn.exceptions.ChangedBehaviorWarning" title="sklearn.exceptions.ChangedBehaviorWarning"><tt class="xref py py-obj docutils literal"><span class="pre">exceptions.ChangedBehaviorWarning</span></tt></a></td>
+<td>Warning class used to notify the user of any change in the behavior.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.exceptions.ConvergenceWarning.html#sklearn.exceptions.ConvergenceWarning" title="sklearn.exceptions.ConvergenceWarning"><tt class="xref py py-obj docutils literal"><span class="pre">exceptions.ConvergenceWarning</span></tt></a></td>
+<td>Custom warning to capture convergence problems</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.exceptions.DataConversionWarning.html#sklearn.exceptions.DataConversionWarning" title="sklearn.exceptions.DataConversionWarning"><tt class="xref py py-obj docutils literal"><span class="pre">exceptions.DataConversionWarning</span></tt></a></td>
+<td>Warning used to notify implicit data conversions happening in the code.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.exceptions.DataDimensionalityWarning.html#sklearn.exceptions.DataDimensionalityWarning" title="sklearn.exceptions.DataDimensionalityWarning"><tt class="xref py py-obj docutils literal"><span class="pre">exceptions.DataDimensionalityWarning</span></tt></a></td>
+<td>Custom warning to notify potential issues with data dimensionality.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.exceptions.EfficiencyWarning.html#sklearn.exceptions.EfficiencyWarning" title="sklearn.exceptions.EfficiencyWarning"><tt class="xref py py-obj docutils literal"><span class="pre">exceptions.EfficiencyWarning</span></tt></a></td>
+<td>Warning used to notify the user of inefficient computation.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.exceptions.FitFailedWarning.html#sklearn.exceptions.FitFailedWarning" title="sklearn.exceptions.FitFailedWarning"><tt class="xref py py-obj docutils literal"><span class="pre">exceptions.FitFailedWarning</span></tt></a></td>
+<td>Warning class used if there is an error while fitting the estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.exceptions.NonBLASDotWarning.html#sklearn.exceptions.NonBLASDotWarning" title="sklearn.exceptions.NonBLASDotWarning"><tt class="xref py py-obj docutils literal"><span class="pre">exceptions.NonBLASDotWarning</span></tt></a></td>
+<td>Warning used when the dot operation does not use BLAS.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.exceptions.UndefinedMetricWarning.html#sklearn.exceptions.UndefinedMetricWarning" title="sklearn.exceptions.UndefinedMetricWarning"><tt class="xref py py-obj docutils literal"><span class="pre">exceptions.UndefinedMetricWarning</span></tt></a></td>
+<td>Warning used when the metric is invalid</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="module-sklearn.feature_extraction">
 <span id="sklearn-feature-extraction-feature-extraction"></span><span id="feature-extraction-ref"></span><h2><a class="reference internal" href="#module-sklearn.feature_extraction" title="sklearn.feature_extraction"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction</span></tt></a>: Feature Extraction<a class="headerlink" href="#module-sklearn.feature_extraction" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference internal" href="#module-sklearn.feature_extraction" title="sklearn.feature_extraction"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction</span></tt></a> module deals with feature extraction
@@ -1021,8 +1062,8 @@ recursive feature elimination algorithm.</p>
 </div>
 <div class="section" id="module-sklearn.gaussian_process">
 <span id="sklearn-gaussian-process-gaussian-processes"></span><span id="gaussian-process-ref"></span><h2><a class="reference internal" href="#module-sklearn.gaussian_process" title="sklearn.gaussian_process"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.gaussian_process</span></tt></a>: Gaussian Processes<a class="headerlink" href="#module-sklearn.gaussian_process" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="#module-sklearn.gaussian_process" title="sklearn.gaussian_process"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.gaussian_process</span></tt></a> module implements scalar Gaussian Process
-based predictions.</p>
+<p>The <a class="reference internal" href="#module-sklearn.gaussian_process" title="sklearn.gaussian_process"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.gaussian_process</span></tt></a> module implements Gaussian Process
+based regression and classification.</p>
 <p><strong>User guide:</strong> See the <a class="reference internal" href="gaussian_process.html#gaussian-process"><em>Gaussian Processes</em></a> section for further details.</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -1030,43 +1071,65 @@ based predictions.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.GaussianProcess.html#sklearn.gaussian_process.GaussianProcess" title="sklearn.gaussian_process.GaussianProcess"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.GaussianProcess</span></tt></a>([regr,&nbsp;...])</td>
-<td>The Gaussian Process model class.</td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.GaussianProcessRegressor.html#sklearn.gaussian_process.GaussianProcessRegressor" title="sklearn.gaussian_process.GaussianProcessRegressor"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.GaussianProcessRegressor</span></tt></a>([...])</td>
+<td>Gaussian process regression (GPR).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.GaussianProcessClassifier.html#sklearn.gaussian_process.GaussianProcessClassifier" title="sklearn.gaussian_process.GaussianProcessClassifier"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.GaussianProcessClassifier</span></tt></a>([...])</td>
+<td>Gaussian process classification (GPC) based on Laplace approximation.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.GaussianProcess.html#sklearn.gaussian_process.GaussianProcess" title="sklearn.gaussian_process.GaussianProcess"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.GaussianProcess</span></tt></a>(*args,&nbsp;**kwargs)</td>
+<td>The legacy Gaussian Process model class.</td>
 </tr>
 </tbody>
 </table>
+<p>Kernels:</p>
 <table border="1" class="longtable docutils">
 <colgroup>
 <col width="10%" />
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.correlation_models.absolute_exponential.html#sklearn.gaussian_process.correlation_models.absolute_exponential" title="sklearn.gaussian_process.correlation_models.absolute_exponential"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.correlation_models.absolute_exponential</span></tt></a>(...)</td>
-<td>Absolute exponential autocorrelation model.</td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.Kernel.html#sklearn.gaussian_process.kernels.Kernel" title="sklearn.gaussian_process.kernels.Kernel"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.Kernel</span></tt></a></td>
+<td>Base class for all kernels.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.correlation_models.squared_exponential.html#sklearn.gaussian_process.correlation_models.squared_exponential" title="sklearn.gaussian_process.correlation_models.squared_exponential"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.correlation_models.squared_exponential</span></tt></a>(...)</td>
-<td>Squared exponential correlation model (Radial Basis Function).</td>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.Sum.html#sklearn.gaussian_process.kernels.Sum" title="sklearn.gaussian_process.kernels.Sum"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.Sum</span></tt></a>(k1,&nbsp;k2)</td>
+<td>Sum-kernel k1 + k2 of two kernels k1 and k2.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.correlation_models.generalized_exponential.html#sklearn.gaussian_process.correlation_models.generalized_exponential" title="sklearn.gaussian_process.correlation_models.generalized_exponential"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.correlation_models.generalized_exponential</span></tt></a>(...)</td>
-<td>Generalized exponential correlation model.</td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.Product.html#sklearn.gaussian_process.kernels.Product" title="sklearn.gaussian_process.kernels.Product"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.Product</span></tt></a>(k1,&nbsp;k2)</td>
+<td>Product-kernel k1 * k2 of two kernels k1 and k2.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.correlation_models.pure_nugget.html#sklearn.gaussian_process.correlation_models.pure_nugget" title="sklearn.gaussian_process.correlation_models.pure_nugget"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.correlation_models.pure_nugget</span></tt></a>(...)</td>
-<td>Spatial independence correlation model (pure nugget).</td>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.Exponentiation.html#sklearn.gaussian_process.kernels.Exponentiation" title="sklearn.gaussian_process.kernels.Exponentiation"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.Exponentiation</span></tt></a>(...)</td>
+<td>Exponentiate kernel by given exponent.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.correlation_models.cubic.html#sklearn.gaussian_process.correlation_models.cubic" title="sklearn.gaussian_process.correlation_models.cubic"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.correlation_models.cubic</span></tt></a>(...)</td>
-<td>Cubic correlation model:</td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.ConstantKernel.html#sklearn.gaussian_process.kernels.ConstantKernel" title="sklearn.gaussian_process.kernels.ConstantKernel"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.ConstantKernel</span></tt></a>([...])</td>
+<td>Constant kernel.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.correlation_models.linear.html#sklearn.gaussian_process.correlation_models.linear" title="sklearn.gaussian_process.correlation_models.linear"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.correlation_models.linear</span></tt></a>(...)</td>
-<td>Linear correlation model:</td>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.WhiteKernel.html#sklearn.gaussian_process.kernels.WhiteKernel" title="sklearn.gaussian_process.kernels.WhiteKernel"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.WhiteKernel</span></tt></a>([...])</td>
+<td>White kernel.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.regression_models.constant.html#sklearn.gaussian_process.regression_models.constant" title="sklearn.gaussian_process.regression_models.constant"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.regression_models.constant</span></tt></a>(x)</td>
-<td>Zero order polynomial (constant, p = 1) regression model.</td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.RBF.html#sklearn.gaussian_process.kernels.RBF" title="sklearn.gaussian_process.kernels.RBF"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.RBF</span></tt></a>([length_scale,&nbsp;...])</td>
+<td>Radial-basis function kernel (aka squared-exponential kernel).</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.regression_models.linear.html#sklearn.gaussian_process.regression_models.linear" title="sklearn.gaussian_process.regression_models.linear"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.regression_models.linear</span></tt></a>(x)</td>
-<td>First order polynomial (linear, p = n+1) regression model.</td>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.Matern.html#sklearn.gaussian_process.kernels.Matern" title="sklearn.gaussian_process.kernels.Matern"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.Matern</span></tt></a>([...])</td>
+<td>Matern kernel.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.regression_models.quadratic.html#sklearn.gaussian_process.regression_models.quadratic" title="sklearn.gaussian_process.regression_models.quadratic"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.regression_models.quadratic</span></tt></a>(x)</td>
-<td>Second order polynomial (quadratic, p = n*(n-1)/2+n+1) regression model.</td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.RationalQuadratic.html#sklearn.gaussian_process.kernels.RationalQuadratic" title="sklearn.gaussian_process.kernels.RationalQuadratic"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.RationalQuadratic</span></tt></a>([...])</td>
+<td>Rational Quadratic kernel.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.ExpSineSquared.html#sklearn.gaussian_process.kernels.ExpSineSquared" title="sklearn.gaussian_process.kernels.ExpSineSquared"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.ExpSineSquared</span></tt></a>([...])</td>
+<td>Exp-Sine-Squared kernel.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.DotProduct.html#sklearn.gaussian_process.kernels.DotProduct" title="sklearn.gaussian_process.kernels.DotProduct"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.DotProduct</span></tt></a>([...])</td>
+<td>Dot-Product kernel.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.PairwiseKernel.html#sklearn.gaussian_process.kernels.PairwiseKernel" title="sklearn.gaussian_process.kernels.PairwiseKernel"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.PairwiseKernel</span></tt></a>([...])</td>
+<td>Wrapper for kernels in sklearn.metrics.pairwise.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.CompoundKernel.html#sklearn.gaussian_process.kernels.CompoundKernel" title="sklearn.gaussian_process.kernels.CompoundKernel"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.CompoundKernel</span></tt></a>(kernels)</td>
+<td>Kernel which is composed of a set of other kernels.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/sklearn.gaussian_process.kernels.Hyperparameter.html#sklearn.gaussian_process.kernels.Hyperparameter" title="sklearn.gaussian_process.kernels.Hyperparameter"><tt class="xref py py-obj docutils literal"><span class="pre">gaussian_process.kernels.Hyperparameter</span></tt></a></td>
+<td>A kernel hyperparameter&#8217;s specification in form of a namedtuple.</td>
 </tr>
 </tbody>
 </table>
@@ -1552,7 +1615,7 @@ cluster analysis results. There are two forms of evaluation:</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.metrics.adjusted_mutual_info_score.html#sklearn.metrics.adjusted_mutual_info_score" title="sklearn.metrics.adjusted_mutual_info_score"><tt class="xref py py-obj docutils literal"><span class="pre">metrics.adjusted_mutual_info_score</span></tt></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.metrics.adjusted_mutual_info_score.html#sklearn.metrics.adjusted_mutual_info_score" title="sklearn.metrics.adjusted_mutual_info_score"><tt class="xref py py-obj docutils literal"><span class="pre">metrics.adjusted_mutual_info_score</span></tt></a>(...[,&nbsp;...])</td>
 <td>Adjusted Mutual Information between two clusterings</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/sklearn.metrics.adjusted_rand_score.html#sklearn.metrics.adjusted_rand_score" title="sklearn.metrics.adjusted_rand_score"><tt class="xref py py-obj docutils literal"><span class="pre">metrics.adjusted_rand_score</span></tt></a>(labels_true,&nbsp;...)</td>
@@ -1570,7 +1633,7 @@ cluster analysis results. There are two forms of evaluation:</p>
 <tr class="row-even"><td><a class="reference internal" href="generated/sklearn.metrics.mutual_info_score.html#sklearn.metrics.mutual_info_score" title="sklearn.metrics.mutual_info_score"><tt class="xref py py-obj docutils literal"><span class="pre">metrics.mutual_info_score</span></tt></a>(labels_true,&nbsp;...)</td>
 <td>Mutual Information between two clusterings</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.metrics.normalized_mutual_info_score.html#sklearn.metrics.normalized_mutual_info_score" title="sklearn.metrics.normalized_mutual_info_score"><tt class="xref py py-obj docutils literal"><span class="pre">metrics.normalized_mutual_info_score</span></tt></a>(...)</td>
+<tr class="row-odd"><td><a class="reference internal" href="generated/sklearn.metrics.normalized_mutual_info_score.html#sklearn.metrics.normalized_mutual_info_score" title="sklearn.metrics.normalized_mutual_info_score"><tt class="xref py py-obj docutils literal"><span class="pre">metrics.normalized_mutual_info_score</span></tt></a>(...[,&nbsp;...])</td>
 <td>Normalized Mutual Information between two clusterings</td>
 </tr>
 <tr class="row-even"><td><a class="reference internal" href="generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score" title="sklearn.metrics.silhouette_score"><tt class="xref py py-obj docutils literal"><span class="pre">metrics.silhouette_score</span></tt></a>(X,&nbsp;labels[,&nbsp;...])</td>

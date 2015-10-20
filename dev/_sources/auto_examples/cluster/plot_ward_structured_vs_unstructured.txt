@@ -41,10 +41,10 @@ the clusters form a nice parcellation of the swiss roll.
 **Script output**::
 
   Compute unstructured hierarchical clustering...
-  Elapsed time: 5.09s
+  Elapsed time: 5.53s
   Number of points: 1500
   Compute structured hierarchical clustering...
-  Elapsed time: 0.26s
+  Elapsed time: 0.27s
   Number of points: 1500
 
 
@@ -54,6 +54,6 @@ the clusters form a nice parcellation of the swiss roll.
 .. literalinclude:: plot_ward_structured_vs_unstructured.py
     :lines: 21-
 
-**Total running time of the example:**  5.52 seconds
-( 0 minutes  5.52 seconds)
+**Total running time of the example:**  5.96 seconds
+( 0 minutes  5.96 seconds)
     
