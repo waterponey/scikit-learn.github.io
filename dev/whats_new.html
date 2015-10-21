@@ -337,6 +337,16 @@ examples are provided. By <a class="reference external" href="https://jmetzen.gi
 <h4>Bug fixes<a class="headerlink" href="#bug-fixes" title="Permalink to this headline">¶</a></h4>
 <blockquote>
 <div><ul class="simple">
+<li><tt class="xref py py-class docutils literal"><span class="pre">RandomizedPCA</span></tt> default number of <cite>iterated_power</cite> is 2 instead of 3.
+This is a speed up with a minor precision decrease. By <a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
+<li><tt class="xref py py-func docutils literal"><span class="pre">randomized_svd</span></tt> performs 2 power iterations by default, instead or 0.
+In practice this is often enough for obtaining a good approximation of the
+true eigenvalues/vectors in the presence of noise. By <a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
+<li><tt class="xref py py-func docutils literal"><span class="pre">randomized_range_finder</span></tt> is more numerically stable when many
+power iterations are requested, since it applies LU normalization by default.
+If <cite>n_iter&lt;2</cite> numerical issues are unlikely, thus no normalization is applied.
+Other normalization options are available: &#8216;none&#8217;, &#8216;LU&#8217; and &#8216;QR&#8217;. By
+<a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
 <li>Fixed bug in <a class="reference internal" href="modules/generated/sklearn.manifold.spectral_embedding.html#sklearn.manifold.spectral_embedding" title="sklearn.manifold.spectral_embedding"><tt class="xref py py-func docutils literal"><span class="pre">manifold.spectral_embedding</span></tt></a> where diagonal of unnormalized
 Laplacian matrix was incorrectly set to 1. By <a class="reference external" href="https://github.com/yanlend">Peter Fischer</a>.</li>
 </ul>
@@ -356,7 +366,7 @@ Laplacian matrix was incorrectly set to 1. By <a class="reference external" href
 <blockquote>
 <div><ul class="simple">
 <li>All the Scaler classes but <tt class="xref py py-class docutils literal"><span class="pre">RobustScaler</span></tt> can be fitted online by
-calling <cite>partial_fit</cite>. By <a href="#id64"><span class="problematic" id="id65">`Giorgio Patrini`_</span></a>.</li>
+calling <cite>partial_fit</cite>. By <a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
 <li>The new class <a class="reference internal" href="modules/generated/sklearn.ensemble.VotingClassifier.html#sklearn.ensemble.VotingClassifier" title="sklearn.ensemble.VotingClassifier"><tt class="xref py py-class docutils literal"><span class="pre">ensemble.VotingClassifier</span></tt></a> implements a
 &#8220;majority rule&#8221; / &#8220;soft voting&#8221; ensemble classifier to combine
 estimators for classification. By <a class="reference external" href="http://sebastianraschka.com">Sebastian Raschka</a>.</li>
@@ -563,7 +573,7 @@ automatically changes the solver to &#8216;sag&#8217; in this case.
 By <a class="reference external" href="https://github.com/TomDLT">Tom Dupre la Tour</a>.</li>
 <li>Fixed a performance bug in <a class="reference internal" href="modules/generated/sklearn.decomposition.RandomizedPCA.html#sklearn.decomposition.RandomizedPCA" title="sklearn.decomposition.RandomizedPCA"><tt class="xref py py-class docutils literal"><span class="pre">decomposition.RandomizedPCA</span></tt></a> on data
 with a large number of features and fewer samples. (<a class="reference external" href="https://github.com/scikit-learn/scikit-learn/pull/4478">#4478</a>)
-By <a class="reference external" href="http://peekaboo-vision.blogspot.com">Andreas Müller</a>, <a class="reference external" href="https://github.com/lesteve">Loic Esteve</a> and <a href="#id66"><span class="problematic" id="id67">`Giorgio Patrini`_</span></a>.</li>
+By <a class="reference external" href="http://peekaboo-vision.blogspot.com">Andreas Müller</a>, <a class="reference external" href="https://github.com/lesteve">Loic Esteve</a> and <a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
 </ul>
 </div></blockquote>
 </div>
@@ -575,11 +585,11 @@ By <a class="reference external" href="http://peekaboo-vision.blogspot.com">Andr
 <li>Attribute <cite>data_min</cite>, <cite>data_max</cite> and <cite>data_range</cite> in
 <a class="reference internal" href="modules/generated/sklearn.preprocessing.MinMaxScaler.html#sklearn.preprocessing.MinMaxScaler" title="sklearn.preprocessing.MinMaxScaler"><tt class="xref py py-class docutils literal"><span class="pre">preprocessing.MinMaxScaler</span></tt></a> are deprecated and won&#8217;t be available
 from 0.19. Instead, the class now exposes <cite>data_min_</cite>, <cite>data_max_</cite>
-and <cite>data_range_</cite>. By <a href="#id68"><span class="problematic" id="id69">`Giorgio Patrini`_</span></a>.</li>
+and <cite>data_range_</cite>. By <a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
 <li>All Scaler classes now have an <cite>scale_</cite> attribute, the feature-wise
 rescaling applied by their <cite>transform</cite> methods. The old attribute <cite>std_</cite>
 in <a class="reference internal" href="modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler" title="sklearn.preprocessing.StandardScaler"><tt class="xref py py-class docutils literal"><span class="pre">preprocessing.StandardScaler</span></tt></a> is deprecated and superseded
-by <cite>scale_</cite>; it won&#8217;t be available in 0.19. By <a href="#id70"><span class="problematic" id="id71">`Giorgio Patrini`_</span></a>.</li>
+by <cite>scale_</cite>; it won&#8217;t be available in 0.19. By <a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
 <li><tt class="xref py py-class docutils literal"><span class="pre">svm.SVC`</span></tt> and <a class="reference internal" href="modules/generated/sklearn.svm.NuSVC.html#sklearn.svm.NuSVC" title="sklearn.svm.NuSVC"><tt class="xref py py-class docutils literal"><span class="pre">svm.NuSVC</span></tt></a> now have an <tt class="docutils literal"><span class="pre">decision_function_shape</span></tt>
 parameter to make their decision function of shape <tt class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_classes)</span></tt>
 by setting <tt class="docutils literal"><span class="pre">decision_function_shape='ovr'</span></tt>. This will be the default behavior
