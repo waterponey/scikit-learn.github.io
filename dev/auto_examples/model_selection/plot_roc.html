@@ -36,8 +36,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="Plotting Learning Curves" href="plot_learning_curve.html" />
-    <link rel="prev" title="Sample pipeline for text feature extraction and evaluation" href="grid_search_text_feature_extraction.html" />
+    <link rel="next" title="Nearest Neighbors regression" href="../neighbors/plot_regression.html" />
+    <link rel="prev" title="Plotting Learning Curves" href="plot_learning_curve.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="grid_search_text_feature_extraction.html"
+        <a href="plot_learning_curve.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Sample pipeli...
+        Plotting Lear...
         </span>
             <span class="hiddenrellink">
-            Sample pipeline for text feature extraction and evaluation
+            Plotting Learning Curves
             </span>
         </a>
         </div>
@@ -197,7 +197,13 @@ label.</p>
 <dd><a class="reference internal" href="plot_roc_crossval.html#example-model-selection-plot-roc-crossval-py"><em>Receiver Operating Characteristic (ROC) with cross validation</em></a>.</dd>
 </dl>
 </div>
-<p class="horizontal"><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_roc.py"><tt class="xref download docutils literal"><span class="pre">plot_roc.py</span></tt></a></p>
+<ul class="horizontal">
+<li><a class="first reference internal image-reference" href="../../_images/plot_roc_001.png"><img alt="../../_images/plot_roc_001.png" src="../../_images/plot_roc_001.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_roc_002.png"><img alt="../../_images/plot_roc_002.png" src="../../_images/plot_roc_002.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+</ul>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_roc.py"><tt class="xref download docutils literal"><span class="pre">plot_roc.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -207,6 +213,7 @@ label.</p>
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.cross_validation.train_test_split.html#sklearn.cross_validation.train_test_split"><span class="n">train_test_split</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.preprocessing.label_binarize.html#sklearn.preprocessing.label_binarize"><span class="n">label_binarize</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.multiclass</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.multiclass.OneVsRestClassifier.html#sklearn.multiclass.OneVsRestClassifier"><span class="n">OneVsRestClassifier</span></a>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">interp</span>
 
 <span class="c"># Import some data to play with</span>
 <span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
@@ -262,10 +269,23 @@ label.</p>
 <span class="c"># Plot ROC curves for the multiclass problem</span>
 
 <span class="c"># Compute macro-average ROC curve and ROC area</span>
-<span class="n">fpr</span><span class="p">[</span><span class="s">&quot;macro&quot;</span><span class="p">]</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mean.html#numpy.mean"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">([</span><span class="n">fpr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_classes</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">tpr</span><span class="p">[</span><span class="s">&quot;macro&quot;</span><span class="p">]</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mean.html#numpy.mean"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">([</span><span class="n">tpr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_classes</span><span class="p">)],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c"># First aggregate all false positive rates</span>
+<span class="n">all_fpr</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.unique.html#numpy.unique"><span class="n">np</span><span class="o">.</span><span class="n">unique</span></a><span class="p">(</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.concatenate.html#numpy.concatenate"><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span></a><span class="p">([</span><span class="n">fpr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_classes</span><span class="p">)]))</span>
+
+<span class="c"># Then interpolate all ROC curves at this points</span>
+<span class="n">mean_tpr</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.zeros_like.html#numpy.zeros_like"><span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span></a><span class="p">(</span><span class="n">all_fpr</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_classes</span><span class="p">):</span>
+    <span class="n">mean_tpr</span> <span class="o">+=</span> <span class="n">interp</span><span class="p">(</span><span class="n">all_fpr</span><span class="p">,</span> <span class="n">fpr</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">tpr</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="c"># Finally average it and compute AUC</span>
+<span class="n">mean_tpr</span> <span class="o">/=</span> <span class="n">n_classes</span>
+
+<span class="n">fpr</span><span class="p">[</span><span class="s">&quot;macro&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">all_fpr</span>
+<span class="n">tpr</span><span class="p">[</span><span class="s">&quot;macro&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mean_tpr</span>
 <span class="n">roc_auc</span><span class="p">[</span><span class="s">&quot;macro&quot;</span><span class="p">]</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.metrics.auc.html#sklearn.metrics.auc"><span class="n">auc</span></a><span class="p">(</span><span class="n">fpr</span><span class="p">[</span><span class="s">&quot;macro&quot;</span><span class="p">],</span> <span class="n">tpr</span><span class="p">[</span><span class="s">&quot;macro&quot;</span><span class="p">])</span>
 
+<span class="c"># Plot all ROC curves</span>
 <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">fpr</span><span class="p">[</span><span class="s">&quot;micro&quot;</span><span class="p">],</span> <span class="n">tpr</span><span class="p">[</span><span class="s">&quot;micro&quot;</span><span class="p">],</span>
          <span class="n">label</span><span class="o">=</span><span class="s">&#39;micro-average ROC curve (area = {0:0.2f})&#39;</span>
@@ -291,8 +311,8 @@ label.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.00 seconds
-( 0 minutes  0.00 seconds)</p>
+<p><strong>Total running time of the example:</strong>  0.36 seconds
+( 0 minutes  0.36 seconds)</p>
 </div>
 </div>
 
@@ -311,7 +331,7 @@ label.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="grid_search_text_feature_extraction.html">Previous
+      <a href="plot_learning_curve.html">Previous
       </a>
     </div>
     

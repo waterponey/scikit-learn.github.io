@@ -4408,31 +4408,6 @@ Examples concerning model selection, mostly contained in the
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality...">
-
-.. only:: html
-
-  .. figure:: model_selection/images/thumb/plot_roc.png
-    :target: ./model_selection/plot_roc.html
-
-    :ref:`example_model_selection_plot_roc.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   model_selection/plot_roc
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="On the left side the learning curve of a naive Bayes classifier is shown for the digits dataset...">
 
 .. only:: html
@@ -4453,6 +4428,31 @@ Examples concerning model selection, mostly contained in the
    :hidden:
 
    model_selection/plot_learning_curve
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality...">
+
+.. only:: html
+
+  .. figure:: model_selection/images/thumb/plot_roc.png
+    :target: ./model_selection/plot_roc.html
+
+    :ref:`example_model_selection_plot_roc.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   model_selection/plot_roc
 
 
 .. raw:: html
