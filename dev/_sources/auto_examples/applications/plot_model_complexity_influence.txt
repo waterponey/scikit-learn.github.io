@@ -45,53 +45,53 @@ performance (latency) and predictive power (MSE or Hamming Loss).
          learning_rate='optimal', loss='modified_huber', n_iter=5, n_jobs=1,
          penalty='elasticnet', power_t=0.5, random_state=None, shuffle=True,
          verbose=0, warm_start=False)
-  Complexity: 4454 | Hamming Loss (Misclassification Ratio): 0.2501 | Pred. Time: 0.044415s
+  Complexity: 4454 | Hamming Loss (Misclassification Ratio): 0.2501 | Pred. Time: 0.044454s
   
   Benchmarking SGDClassifier(alpha=0.001, average=False, class_weight=None, epsilon=0.1,
          eta0=0.0, fit_intercept=True, l1_ratio=0.5, learning_rate='optimal',
          loss='modified_huber', n_iter=5, n_jobs=1, penalty='elasticnet',
          power_t=0.5, random_state=None, shuffle=True, verbose=0,
          warm_start=False)
-  Complexity: 1624 | Hamming Loss (Misclassification Ratio): 0.2923 | Pred. Time: 0.032616s
+  Complexity: 1624 | Hamming Loss (Misclassification Ratio): 0.2923 | Pred. Time: 0.032484s
   
   Benchmarking SGDClassifier(alpha=0.001, average=False, class_weight=None, epsilon=0.1,
          eta0=0.0, fit_intercept=True, l1_ratio=0.75,
          learning_rate='optimal', loss='modified_huber', n_iter=5, n_jobs=1,
          penalty='elasticnet', power_t=0.5, random_state=None, shuffle=True,
          verbose=0, warm_start=False)
-  Complexity: 873 | Hamming Loss (Misclassification Ratio): 0.3191 | Pred. Time: 0.027091s
+  Complexity: 873 | Hamming Loss (Misclassification Ratio): 0.3191 | Pred. Time: 0.026997s
   
   Benchmarking SGDClassifier(alpha=0.001, average=False, class_weight=None, epsilon=0.1,
          eta0=0.0, fit_intercept=True, l1_ratio=0.9, learning_rate='optimal',
          loss='modified_huber', n_iter=5, n_jobs=1, penalty='elasticnet',
          power_t=0.5, random_state=None, shuffle=True, verbose=0,
          warm_start=False)
-  Complexity: 655 | Hamming Loss (Misclassification Ratio): 0.3252 | Pred. Time: 0.024369s
+  Complexity: 655 | Hamming Loss (Misclassification Ratio): 0.3252 | Pred. Time: 0.024515s
   
   Benchmarking NuSVR(C=1000.0, cache_size=200, coef0=0.0, degree=3, gamma=3.0517578125e-05,
      kernel='rbf', max_iter=-1, nu=0.1, shrinking=True, tol=0.001,
      verbose=False)
-  Complexity: 69 | MSE: 31.8133 | Pred. Time: 0.000743s
+  Complexity: 69 | MSE: 31.8133 | Pred. Time: 0.000748s
   
   Benchmarking NuSVR(C=1000.0, cache_size=200, coef0=0.0, degree=3, gamma=3.0517578125e-05,
      kernel='rbf', max_iter=-1, nu=0.25, shrinking=True, tol=0.001,
      verbose=False)
-  Complexity: 136 | MSE: 25.6140 | Pred. Time: 0.001379s
+  Complexity: 136 | MSE: 25.6140 | Pred. Time: 0.001372s
   
   Benchmarking NuSVR(C=1000.0, cache_size=200, coef0=0.0, degree=3, gamma=3.0517578125e-05,
      kernel='rbf', max_iter=-1, nu=0.5, shrinking=True, tol=0.001,
      verbose=False)
-  Complexity: 243 | MSE: 22.3315 | Pred. Time: 0.002408s
+  Complexity: 243 | MSE: 22.3315 | Pred. Time: 0.002387s
   
   Benchmarking NuSVR(C=1000.0, cache_size=200, coef0=0.0, degree=3, gamma=3.0517578125e-05,
      kernel='rbf', max_iter=-1, nu=0.75, shrinking=True, tol=0.001,
      verbose=False)
-  Complexity: 350 | MSE: 21.3679 | Pred. Time: 0.003427s
+  Complexity: 350 | MSE: 21.3679 | Pred. Time: 0.003398s
   
   Benchmarking NuSVR(C=1000.0, cache_size=200, coef0=0.0, degree=3, gamma=3.0517578125e-05,
      kernel='rbf', max_iter=-1, nu=0.9, shrinking=True, tol=0.001,
      verbose=False)
-  Complexity: 404 | MSE: 21.0915 | Pred. Time: 0.003977s
+  Complexity: 404 | MSE: 21.0915 | Pred. Time: 0.003924s
   
   Benchmarking GradientBoostingRegressor(alpha=0.9, init=None, learning_rate=0.1, loss='ls',
                max_depth=3, max_features=None, max_leaf_nodes=None,
@@ -105,7 +105,7 @@ performance (latency) and predictive power (MSE or Hamming Loss).
                min_samples_leaf=1, min_samples_split=2,
                min_weight_fraction_leaf=0.0, n_estimators=50, presort='auto',
                random_state=None, subsample=1.0, verbose=0, warm_start=False)
-  Complexity: 50 | MSE: 8.3021 | Pred. Time: 0.000275s
+  Complexity: 50 | MSE: 8.3021 | Pred. Time: 0.000278s
   
   Benchmarking GradientBoostingRegressor(alpha=0.9, init=None, learning_rate=0.1, loss='ls',
                max_depth=3, max_features=None, max_leaf_nodes=None,
@@ -113,7 +113,7 @@ performance (latency) and predictive power (MSE or Hamming Loss).
                min_weight_fraction_leaf=0.0, n_estimators=100,
                presort='auto', random_state=None, subsample=1.0, verbose=0,
                warm_start=False)
-  Complexity: 100 | MSE: 7.0518 | Pred. Time: 0.000406s
+  Complexity: 100 | MSE: 7.0518 | Pred. Time: 0.000412s
   
   Benchmarking GradientBoostingRegressor(alpha=0.9, init=None, learning_rate=0.1, loss='ls',
                max_depth=3, max_features=None, max_leaf_nodes=None,
@@ -121,7 +121,7 @@ performance (latency) and predictive power (MSE or Hamming Loss).
                min_weight_fraction_leaf=0.0, n_estimators=200,
                presort='auto', random_state=None, subsample=1.0, verbose=0,
                warm_start=False)
-  Complexity: 200 | MSE: 6.1267 | Pred. Time: 0.000676s
+  Complexity: 200 | MSE: 6.1267 | Pred. Time: 0.000682s
   
   Benchmarking GradientBoostingRegressor(alpha=0.9, init=None, learning_rate=0.1, loss='ls',
                max_depth=3, max_features=None, max_leaf_nodes=None,
@@ -129,7 +129,7 @@ performance (latency) and predictive power (MSE or Hamming Loss).
                min_weight_fraction_leaf=0.0, n_estimators=500,
                presort='auto', random_state=None, subsample=1.0, verbose=0,
                warm_start=False)
-  Complexity: 500 | MSE: 6.3365 | Pred. Time: 0.001575s
+  Complexity: 500 | MSE: 6.3365 | Pred. Time: 0.001578s
 
 
 
@@ -138,6 +138,6 @@ performance (latency) and predictive power (MSE or Hamming Loss).
 .. literalinclude:: plot_model_complexity_influence.py
     :lines: 16-
 
-**Total running time of the example:**  46.13 seconds
-( 0 minutes  46.13 seconds)
+**Total running time of the example:**  46.34 seconds
+( 0 minutes  46.34 seconds)
     

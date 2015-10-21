@@ -49,6 +49,6 @@ and posterior.
 .. literalinclude:: plot_gpr_prior_posterior.py
     :lines: 10-
 
-**Total running time of the example:**  1.51 seconds
-( 0 minutes  1.51 seconds)
+**Total running time of the example:**  1.55 seconds
+( 0 minutes  1.55 seconds)
     

@@ -224,7 +224,7 @@ precision-recall.</p>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.metrics.auc.html#sklearn.metrics.auc"><span class="n">auc</span></a><span class="p">,</span> <a href="../../modules/generated/sklearn.metrics.precision_recall_curve.html#sklearn.metrics.precision_recall_curve"><span class="n">precision_recall_curve</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.ensemble.ExtraTreesRegressor.html#sklearn.ensemble.ExtraTreesRegressor"><span class="n">ExtraTreesRegressor</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.utils.extmath</span> <span class="kn">import</span> <span class="n">pinvh</span>
-<span class="kn">from</span> <span class="nn">sklearn.exceptions</span> <span class="kn">import</span> <span class="n">ConvergenceWarning</span>
+<span class="kn">from</span> <span class="nn">sklearn.exceptions</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.exceptions.ConvergenceWarning.html#sklearn.exceptions.ConvergenceWarning"><span class="n">ConvergenceWarning</span></a>
 
 
 <span class="k">def</span> <span class="nf">mutual_incoherence</span><span class="p">(</span><span class="n">X_relevant</span><span class="p">,</span> <span class="n">X_irelevant</span><span class="p">):</span>
@@ -306,7 +306,7 @@ precision-recall.</p>
     <span class="c"># as it is specifically set up to be challenging.</span>
     <span class="k">with</span> <span class="n">warnings</span><span class="o">.</span><span class="n">catch_warnings</span><span class="p">():</span>
         <span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s">&#39;ignore&#39;</span><span class="p">,</span> <span class="ne">UserWarning</span><span class="p">)</span>
-        <span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">ConvergenceWarning</span><span class="p">)</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s">&#39;ignore&#39;</span><span class="p">,</span> <a href="../../modules/generated/sklearn.exceptions.ConvergenceWarning.html#sklearn.exceptions.ConvergenceWarning"><span class="n">ConvergenceWarning</span></a><span class="p">)</span>
         <span class="n">lars_cv</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.linear_model.LassoLarsCV.html#sklearn.linear_model.LassoLarsCV"><span class="n">LassoLarsCV</span></a><span class="p">(</span><span class="n">cv</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
     <span class="c"># Run the RandomizedLasso: we use a paths going down to .1*alpha_max</span>
@@ -342,8 +342,8 @@ precision-recall.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  11.11 seconds
-( 0 minutes  11.11 seconds)</p>
+<p><strong>Total running time of the example:</strong>  11.82 seconds
+( 0 minutes  11.82 seconds)</p>
 </div>
 
 
