@@ -338,15 +338,14 @@ examples are provided. By <a class="reference external" href="https://jmetzen.gi
 <blockquote>
 <div><ul class="simple">
 <li><tt class="xref py py-class docutils literal"><span class="pre">RandomizedPCA</span></tt> default number of <cite>iterated_power</cite> is 2 instead of 3.
-This is a speed up with a minor precision decrease. By <a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
+This is a speed up with a minor precision decrease. (<a href="#id64"><span class="problematic" id="id65">`#5141 https://github.com/scikit-learn/scikit-learn/pull/5141&gt;`_</span></a>) by <a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
 <li><tt class="xref py py-func docutils literal"><span class="pre">randomized_svd</span></tt> performs 2 power iterations by default, instead or 0.
 In practice this is often enough for obtaining a good approximation of the
-true eigenvalues/vectors in the presence of noise. By <a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
+true eigenvalues/vectors in the presence of noise. (<a href="#id66"><span class="problematic" id="id67">`#5141 https://github.com/scikit-learn/scikit-learn/pull/5141&gt;`_</span></a>) by <a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
 <li><tt class="xref py py-func docutils literal"><span class="pre">randomized_range_finder</span></tt> is more numerically stable when many
 power iterations are requested, since it applies LU normalization by default.
 If <cite>n_iter&lt;2</cite> numerical issues are unlikely, thus no normalization is applied.
-Other normalization options are available: &#8216;none&#8217;, &#8216;LU&#8217; and &#8216;QR&#8217;. By
-<a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
+Other normalization options are available: &#8216;none&#8217;, &#8216;LU&#8217; and &#8216;QR&#8217;. (<a href="#id68"><span class="problematic" id="id69">`#5141 https://github.com/scikit-learn/scikit-learn/pull/5141&gt;`_</span></a>) by <a class="reference external" href="https://github.com/giorgiop">Giorgio Patrini</a>.</li>
 <li>Fixed bug in <a class="reference internal" href="modules/generated/sklearn.manifold.spectral_embedding.html#sklearn.manifold.spectral_embedding" title="sklearn.manifold.spectral_embedding"><tt class="xref py py-func docutils literal"><span class="pre">manifold.spectral_embedding</span></tt></a> where diagonal of unnormalized
 Laplacian matrix was incorrectly set to 1. By <a class="reference external" href="https://github.com/yanlend">Peter Fischer</a>.</li>
 </ul>
