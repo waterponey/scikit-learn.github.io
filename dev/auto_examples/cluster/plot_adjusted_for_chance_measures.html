@@ -36,8 +36,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="Comparison of the K-Means and MiniBatchKMeans clustering algorithms" href="plot_mini_batch_kmeans.html" />
-    <link rel="prev" title="Comparing different clustering algorithms on toy datasets" href="plot_cluster_comparison.html" />
+    <link rel="next" title="Comparing different clustering algorithms on toy datasets" href="plot_cluster_comparison.html" />
+    <link rel="prev" title="A demo of K-Means clustering on the handwritten digits data" href="plot_kmeans_digits.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_cluster_comparison.html"
+        <a href="plot_kmeans_digits.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Comparing dif...
+        A demo of K-M...
         </span>
             <span class="hiddenrellink">
-            Comparing different clustering algorithms on toy datasets
+            A demo of K-Means clustering on the handwritten digits data
             </span>
         </a>
         </div>
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="adjustment-for-chance-in-clustering-performance-evaluation">
 <span id="example-cluster-plot-adjusted-for-chance-measures-py"></span><h1>Adjustment for chance in clustering performance evaluation<a class="headerlink" href="#adjustment-for-chance-in-clustering-performance-evaluation" title="Permalink to this headline">¶</a></h1>
@@ -179,32 +179,7 @@ clusters.</p>
 <p>Only adjusted measures can hence safely be used as a consensus index
 to evaluate the average stability of clustering algorithms for a given
 value of k on various overlapping sub-samples of the dataset.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_adjusted_for_chance_measures_001.png"><img alt="../../_images/plot_adjusted_for_chance_measures_001.png" src="../../_images/plot_adjusted_for_chance_measures_001.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_adjusted_for_chance_measures_002.png"><img alt="../../_images/plot_adjusted_for_chance_measures_002.png" src="../../_images/plot_adjusted_for_chance_measures_002.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-</ul>
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Computing adjusted_rand_score for 10 values of n_clusters and n_samples=100
-done in 0.243s
-Computing v_measure_score for 10 values of n_clusters and n_samples=100
-done in 0.036s
-Computing adjusted_mutual_info_score for 10 values of n_clusters and n_samples=100
-done in 0.962s
-Computing mutual_info_score for 10 values of n_clusters and n_samples=100
-done in 0.024s
-Computing adjusted_rand_score for 10 values of n_clusters and n_samples=1000
-done in 0.256s
-Computing v_measure_score for 10 values of n_clusters and n_samples=1000
-done in 0.069s
-Computing adjusted_mutual_info_score for 10 values of n_clusters and n_samples=1000
-done in 0.527s
-Computing mutual_info_score for 10 values of n_clusters and n_samples=1000
-done in 0.042s
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_adjusted_for_chance_measures.py"><tt class="xref download docutils literal"><span class="pre">plot_adjusted_for_chance_measures.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_adjusted_for_chance_measures.py"><code class="xref download docutils literal"><span class="pre">plot_adjusted_for_chance_measures.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Olivier Grisel &lt;olivier.grisel@ensta.org&gt;</span>
@@ -308,8 +283,6 @@ done in 0.042s
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  2.39 seconds
-( 0 minutes  2.39 seconds)</p>
 </div>
 
 
@@ -327,7 +300,7 @@ done in 0.042s
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_cluster_comparison.html">Previous
+      <a href="plot_kmeans_digits.html">Previous
       </a>
     </div>
     

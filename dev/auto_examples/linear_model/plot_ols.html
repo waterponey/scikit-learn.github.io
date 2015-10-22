@@ -36,8 +36,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="Comparing various online solvers" href="plot_sgd_comparison.html" />
-    <link rel="prev" title="Logistic Regression 3-class Classifier" href="plot_iris_logistic.html" />
+    <link rel="next" title="Ordinary Least Squares and Ridge Regression Variance" href="plot_ols_ridge_variance.html" />
+    <link rel="prev" title="Path with L1- Logistic Regression" href="plot_logistic_path.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_iris_logistic.html"
+        <a href="plot_logistic_path.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Logistic Regr...
+        Path with L1-...
         </span>
             <span class="hiddenrellink">
-            Logistic Regression 3-class Classifier
+            Path with L1- Logistic Regression
             </span>
         </a>
         </div>
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="linear-regression-example">
 <span id="example-linear-model-plot-ols-py"></span><h1>Linear Regression Example<a class="headerlink" href="#linear-regression-example" title="Permalink to this headline">¶</a></h1>
@@ -175,15 +175,7 @@ between the observed responses in the dataset, and the responses predicted by
 the linear approximation.</p>
 <p>The coefficients, the residual sum of squares and the variance score are also
 calculated.</p>
-<img alt="../../_images/plot_ols_001.png" class="align-center" src="../../_images/plot_ols_001.png" />
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Coefficients:
- [ 938.23786125]
-Residual sum of squares: 2548.07
-Variance score: 0.47
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ols.py"><tt class="xref download docutils literal"><span class="pre">plot_ols.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ols.py"><code class="xref download docutils literal"><span class="pre">plot_ols.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 
@@ -235,8 +227,6 @@ Variance score: 0.47
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.10 seconds
-( 0 minutes  0.10 seconds)</p>
 </div>
 
 
@@ -254,7 +244,7 @@ Variance score: 0.47
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_iris_logistic.html">Previous
+      <a href="plot_logistic_path.html">Previous
       </a>
     </div>
     

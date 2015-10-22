@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,31 +163,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="a-demo-of-the-spectral-co-clustering-algorithm">
 <span id="example-bicluster-plot-spectral-coclustering-py"></span><h1>A demo of the Spectral Co-Clustering algorithm<a class="headerlink" href="#a-demo-of-the-spectral-co-clustering-algorithm" title="Permalink to this headline">¶</a></h1>
 <p>This example demonstrates how to generate a dataset and bicluster it
 using the the Spectral Co-Clustering algorithm.</p>
-<p>The dataset is generated using the <tt class="docutils literal"><span class="pre">make_biclusters</span></tt> function, which
+<p>The dataset is generated using the <code class="docutils literal"><span class="pre">make_biclusters</span></code> function, which
 creates a matrix of small values and implants bicluster with large
 values. The rows and columns are then shuffled and passed to the
 Spectral Co-Clustering algorithm. Rearranging the shuffled matrix to
 make biclusters contiguous shows how accurately the algorithm found
 the biclusters.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_spectral_coclustering_001.png"><img alt="../../_images/plot_spectral_coclustering_001.png" src="../../_images/plot_spectral_coclustering_001.png" style="width: 282.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_spectral_coclustering_002.png"><img alt="../../_images/plot_spectral_coclustering_002.png" src="../../_images/plot_spectral_coclustering_002.png" style="width: 282.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_spectral_coclustering_003.png"><img alt="../../_images/plot_spectral_coclustering_003.png" src="../../_images/plot_spectral_coclustering_003.png" style="width: 282.0px; height: 282.0px;" /></a>
-</li>
-</ul>
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>consensus score: 1.000
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_spectral_coclustering.py"><tt class="xref download docutils literal"><span class="pre">plot_spectral_coclustering.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_spectral_coclustering.py"><code class="xref download docutils literal"><span class="pre">plot_spectral_coclustering.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Kemal Eren &lt;kemal@kemaleren.com&gt;</span>
@@ -228,8 +216,6 @@ the biclusters.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.33 seconds
-( 0 minutes  0.33 seconds)</p>
 </div>
 
 

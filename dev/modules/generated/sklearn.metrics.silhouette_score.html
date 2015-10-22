@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.metrics.silhouette_samples" href="sklearn.metrics.silhouette_samples.html" />
-    <link rel="prev" title="sklearn.metrics.normalized_mutual_info_score" href="sklearn.metrics.normalized_mutual_info_score.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.metrics.normalized_mutual_info_score.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.metri...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.metrics.normalized_mutual_info_score
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.silhouette_score</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-silhouette-score">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.silhouette_score</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.silhouette_score</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-silhouette-score">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.silhouette_score</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,27 +126,27 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-metrics-silhouette-score">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.silhouette_score<a class="headerlink" href="#sklearn-metrics-silhouette-score" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.silhouette_score<a class="headerlink" href="#sklearn-metrics-silhouette-score" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.silhouette_score">
-<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">silhouette_score</tt><big>(</big><em>X</em>, <em>labels</em>, <em>metric='euclidean'</em>, <em>sample_size=None</em>, <em>random_state=None</em>, <em>**kwds</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/metrics/cluster/unsupervised.py#L13"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.silhouette_score" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.metrics.</code><code class="descname">silhouette_score</code><span class="sig-paren">(</span><em>X</em>, <em>labels</em>, <em>metric='euclidean'</em>, <em>sample_size=None</em>, <em>random_state=None</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/cluster/unsupervised.py#L13"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.silhouette_score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the mean Silhouette Coefficient of all samples.</p>
 <p>The Silhouette Coefficient is calculated using the mean intra-cluster
-distance (<tt class="docutils literal"><span class="pre">a</span></tt>) and the mean nearest-cluster distance (<tt class="docutils literal"><span class="pre">b</span></tt>) for each
-sample.  The Silhouette Coefficient for a sample is <tt class="docutils literal"><span class="pre">(b</span> <span class="pre">-</span> <span class="pre">a)</span> <span class="pre">/</span> <span class="pre">max(a,</span>
-<span class="pre">b)</span></tt>.  To clarify, <tt class="docutils literal"><span class="pre">b</span></tt> is the distance between a sample and the nearest
+distance (<code class="docutils literal"><span class="pre">a</span></code>) and the mean nearest-cluster distance (<code class="docutils literal"><span class="pre">b</span></code>) for each
+sample.  The Silhouette Coefficient for a sample is <code class="docutils literal"><span class="pre">(b</span> <span class="pre">-</span> <span class="pre">a)</span> <span class="pre">/</span> <span class="pre">max(a,</span>
+<span class="pre">b)</span></code>.  To clarify, <code class="docutils literal"><span class="pre">b</span></code> is the distance between a sample and the nearest
 cluster that the sample is not a part of.
 Note that Silhouette Coefficent is only defined if number of labels
 is 2 &lt;= n_labels &lt;= n_samples - 1.</p>
 <p>This function returns the mean Silhouette Coefficient over all samples.
-To obtain the values for each sample, use <a class="reference internal" href="sklearn.metrics.silhouette_samples.html#sklearn.metrics.silhouette_samples" title="sklearn.metrics.silhouette_samples"><tt class="xref py py-func docutils literal"><span class="pre">silhouette_samples</span></tt></a>.</p>
+To obtain the values for each sample, use <a class="reference internal" href="sklearn.metrics.silhouette_samples.html#sklearn.metrics.silhouette_samples" title="sklearn.metrics.silhouette_samples"><code class="xref py py-func docutils literal"><span class="pre">silhouette_samples</span></code></a>.</p>
 <p>The best value is 1 and the worst value is -1. Values near 0 indicate
 overlapping clusters. Negative values generally indicate that a sample has
 been assigned to the wrong cluster, as a different cluster is more similar.</p>
-<p>Read more in the <a class="reference internal" href="../clustering.html#silhouette-coefficient"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../clustering.html#silhouette-coefficient"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -203,19 +163,19 @@ been assigned to the wrong cluster, as a different cluster is more similar.</p>
 <blockquote>
 <div><p>The metric to use when calculating distance between instances in a
 feature array. If metric is a string, it must be one of the options
-allowed by <a class="reference internal" href="sklearn.metrics.pairwise.pairwise_distances.html#sklearn.metrics.pairwise.pairwise_distances" title="sklearn.metrics.pairwise.pairwise_distances"><tt class="xref py py-func docutils literal"><span class="pre">metrics.pairwise.pairwise_distances</span></tt></a>. If X is the distance
-array itself, use <tt class="docutils literal"><span class="pre">metric=&quot;precomputed&quot;</span></tt>.</p>
+allowed by <a class="reference internal" href="sklearn.metrics.pairwise.pairwise_distances.html#sklearn.metrics.pairwise.pairwise_distances" title="sklearn.metrics.pairwise.pairwise_distances"><code class="xref py py-func docutils literal"><span class="pre">metrics.pairwise.pairwise_distances</span></code></a>. If X is the distance
+array itself, use <code class="docutils literal"><span class="pre">metric=&quot;precomputed&quot;</span></code>.</p>
 </div></blockquote>
 <p><strong>sample_size</strong> : int or None</p>
 <blockquote>
 <div><p>The size of the sample to use when computing the Silhouette Coefficient 
 on a random subset of the data. 
-If <tt class="docutils literal"><span class="pre">sample_size</span> <span class="pre">is</span> <span class="pre">None</span></tt>, no sampling is used.</p>
+If <code class="docutils literal"><span class="pre">sample_size</span> <span class="pre">is</span> <span class="pre">None</span></code>, no sampling is used.</p>
 </div></blockquote>
 <p><strong>random_state</strong> : integer or numpy.RandomState, optional</p>
 <blockquote>
 <div><p>The generator used to randomly select a subset of samples if 
-<tt class="docutils literal"><span class="pre">sample_size</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">None</span></tt>. If an integer is given, it fixes the seed.
+<code class="docutils literal"><span class="pre">sample_size</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">None</span></code>. If an integer is given, it fixes the seed.
 Defaults to the global numpy random number generator.</p>
 </div></blockquote>
 <p><strong>`**kwds`</strong> : optional keyword parameters</p>
@@ -235,43 +195,43 @@ metric dependent. See the scipy docs for usage examples.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r55" rules="none">
+<table class="docutils citation" frame="void" id="r91" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R55]</a></td><td><a class="reference external" href="http://www.sciencedirect.com/science/article/pii/0377042787901257">Peter J. Rousseeuw (1987). &#8220;Silhouettes: a Graphical Aid to the
+<tr><td class="label"><a class="fn-backref" href="#id1">[R91]</a></td><td><a class="reference external" href="http://www.sciencedirect.com/science/article/pii/0377042787901257">Peter J. Rousseeuw (1987). &#8220;Silhouettes: a Graphical Aid to the
 Interpretation and Validation of Cluster Analysis&#8221;. Computational
 and Applied Mathematics 20: 53-65.</a></td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r56" rules="none">
+<table class="docutils citation" frame="void" id="r92" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[R56]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Silhouette_(clustering)">Wikipedia entry on the Silhouette Coefficient</a></td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id2">[R92]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Silhouette_(clustering)">Wikipedia entry on the Silhouette Coefficient</a></td></tr>
 </tbody>
 </table>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-silhouette-score">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.silhouette_score</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-silhouette-score" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Reference: Brendan J. Frey and Delbert Dueck, "Clustering by Passing Messages Between Data Poin..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.silhouette_score</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-silhouette-score" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Reference: Brendan J. Frey and Delbert Dueck, "Clustering by Passing Messages Between Data Poin..."><div class="figure" id="id3">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_affinity_propagation.html"><img alt="../../_images/plot_affinity_propagation1.png" src="../../_images/plot_affinity_propagation1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_affinity_propagation.html#example-cluster-plot-affinity-propagation-py"><em>Demo of affinity propagation clustering algorithm</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_affinity_propagation.html#example-cluster-plot-affinity-propagation-py"><span>Demo of affinity propagation clustering algorithm</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Finds core samples of high density and expands clusters from them."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Finds core samples of high density and expands clusters from them."><div class="figure" id="id4">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_dbscan.html"><img alt="../../_images/plot_dbscan1.png" src="../../_images/plot_dbscan1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_dbscan.html#example-cluster-plot-dbscan-py"><em>Demo of DBSCAN clustering algorithm</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_dbscan.html#example-cluster-plot-dbscan-py"><span>Demo of DBSCAN clustering algorithm</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="In this example we compare the various initialization strategies for K-means in terms of runtim..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="In this example we compare the various initialization strategies for K-means in terms of runtim..."><div class="figure" id="id5">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_kmeans_digits.html"><img alt="../../_images/plot_kmeans_digits1.png" src="../../_images/plot_kmeans_digits1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_digits.html#example-cluster-plot-kmeans-digits-py"><em>A demo of K-Means clustering on the handwritten digits data</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_digits.html#example-cluster-plot-kmeans-digits-py"><span>A demo of K-Means clustering on the handwritten digits data</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Silhouette analysis can be used to study the separation distance between the resulting clusters..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Silhouette analysis can be used to study the separation distance between the resulting clusters..."><div class="figure" id="id6">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_kmeans_silhouette_analysis.html"><img alt="../../_images/plot_kmeans_silhouette_analysis1.png" src="../../_images/plot_kmeans_silhouette_analysis1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_silhouette_analysis.html#example-cluster-plot-kmeans-silhouette-analysis-py"><em>Selecting the number of clusters with silhouette analysis on KMeans clustering</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_silhouette_analysis.html#example-cluster-plot-kmeans-silhouette-analysis-py"><span>Selecting the number of clusters with silhouette analysis on KMeans clustering</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This is an example showing how the scikit-learn can be used to cluster documents by topics usin..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="This is an example showing how the scikit-learn can be used to cluster documents by topics usin..."><div class="figure" id="id7">
 <a class="reference external image-reference" href="./../../auto_examples/text/document_clustering.html"><img alt="../../_images/document_clustering1.png" src="../../_images/document_clustering1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/text/document_clustering.html#example-text-document-clustering-py"><em>Clustering text documents using k-means</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/text/document_clustering.html#example-text-document-clustering-py"><span>Clustering text documents using k-means</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -288,12 +248,8 @@ and Applied Mathematics 20: 53-65.</a></td></tr>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.silhouette_score.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.metrics.normalized_mutual_info_score.html">Previous
-      </a>
-    </div>
     
      </div>
 

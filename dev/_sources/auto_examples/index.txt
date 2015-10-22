@@ -1038,31 +1038,6 @@ Examples concerning the :mod:`sklearn.cluster` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="This example is meant to illustrate situations where k-means will produce unintuitive and possi...">
-
-.. only:: html
-
-  .. figure:: cluster/images/thumb/plot_kmeans_assumptions.png
-    :target: ./cluster/plot_kmeans_assumptions.html
-
-    :ref:`example_cluster_plot_kmeans_assumptions.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   cluster/plot_kmeans_assumptions
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="Reference: Brendan J. Frey and Delbert Dueck, "Clustering by Passing Messages Between Data Poin...">
 
 .. only:: html
@@ -1083,6 +1058,31 @@ Examples concerning the :mod:`sklearn.cluster` module.
    :hidden:
 
    cluster/plot_affinity_propagation
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="This example is meant to illustrate situations where k-means will produce unintuitive and possi...">
+
+.. only:: html
+
+  .. figure:: cluster/images/thumb/plot_kmeans_assumptions.png
+    :target: ./cluster/plot_kmeans_assumptions.html
+
+    :ref:`example_cluster_plot_kmeans_assumptions.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   cluster/plot_kmeans_assumptions
 
 
 
@@ -1463,31 +1463,6 @@ Examples concerning the :mod:`sklearn.cluster` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="This example aims at showing characteristics of different clustering algorithms on datasets tha...">
-
-.. only:: html
-
-  .. figure:: cluster/images/thumb/plot_cluster_comparison.png
-    :target: ./cluster/plot_cluster_comparison.html
-
-    :ref:`example_cluster_plot_cluster_comparison.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   cluster/plot_cluster_comparison
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="The following plots demonstrate the impact of the number of clusters and number of samples on v...">
 
 .. only:: html
@@ -1508,6 +1483,31 @@ Examples concerning the :mod:`sklearn.cluster` module.
    :hidden:
 
    cluster/plot_adjusted_for_chance_measures
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="This example aims at showing characteristics of different clustering algorithms on datasets tha...">
+
+.. only:: html
+
+  .. figure:: cluster/images/thumb/plot_cluster_comparison.png
+    :target: ./cluster/plot_cluster_comparison.html
+
+    :ref:`example_cluster_plot_cluster_comparison.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   cluster/plot_cluster_comparison
 
 
 
@@ -2345,31 +2345,6 @@ Examples concerning the :mod:`sklearn.ensemble` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="Partial dependence plots show the dependence between the target function [1]_ and a set of 'tar...">
-
-.. only:: html
-
-  .. figure:: ensemble/images/thumb/plot_partial_dependence.png
-    :target: ./ensemble/plot_partial_dependence.html
-
-    :ref:`example_ensemble_plot_partial_dependence.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   ensemble/plot_partial_dependence
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="The ``RandomForestClassifier`` is trained using *bootstrap aggregation*, where each new tree is...">
 
 .. only:: html
@@ -2390,6 +2365,31 @@ Examples concerning the :mod:`sklearn.ensemble` module.
    :hidden:
 
    ensemble/plot_ensemble_oob
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="Partial dependence plots show the dependence between the target function [1]_ and a set of 'tar...">
+
+.. only:: html
+
+  .. figure:: ensemble/images/thumb/plot_partial_dependence.png
+    :target: ./ensemble/plot_partial_dependence.html
+
+    :ref:`example_ensemble_plot_partial_dependence.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   ensemble/plot_partial_dependence
 
 
 
@@ -2942,14 +2942,14 @@ Examples concerning the :mod:`sklearn.gaussian_process` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="This example illustrates GPC on XOR data. Compared are a stationary, isotropic kernel (RBF) and...">
+    <div class="thumbnailContainer" tooltip="In this example, we fit a Gaussian Process model onto the diabetes dataset.">
 
 .. only:: html
 
-  .. figure:: gaussian_process/images/thumb/plot_gpc_xor.png
-    :target: ./gaussian_process/plot_gpc_xor.html
+  .. figure:: gaussian_process/images/thumb/gp_diabetes_dataset.png
+    :target: ./gaussian_process/gp_diabetes_dataset.html
 
-    :ref:`example_gaussian_process_plot_gpc_xor.py`
+    :ref:`example_gaussian_process_gp_diabetes_dataset.py`
 
 
 .. raw:: html
@@ -2961,20 +2961,20 @@ Examples concerning the :mod:`sklearn.gaussian_process` module.
 .. toctree::
    :hidden:
 
-   gaussian_process/plot_gpc_xor
+   gaussian_process/gp_diabetes_dataset
 
 
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="This example illustrates the predicted probability of GPC for an isotropic and anisotropic RBF ...">
+    <div class="thumbnailContainer" tooltip="A two-dimensional regression exercise with a post-processing allowing for probabilistic classif...">
 
 .. only:: html
 
-  .. figure:: gaussian_process/images/thumb/plot_gpc_iris.png
-    :target: ./gaussian_process/plot_gpc_iris.html
+  .. figure:: gaussian_process/images/thumb/plot_gp_probabilistic_classification_after_regression.png
+    :target: ./gaussian_process/plot_gp_probabilistic_classification_after_regression.html
 
-    :ref:`example_gaussian_process_plot_gpc_iris.py`
+    :ref:`example_gaussian_process_plot_gp_probabilistic_classification_after_regression.py`
 
 
 .. raw:: html
@@ -2986,20 +2986,20 @@ Examples concerning the :mod:`sklearn.gaussian_process` module.
 .. toctree::
    :hidden:
 
-   gaussian_process/plot_gpc_iris
+   gaussian_process/plot_gp_probabilistic_classification_after_regression
 
 
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="This example illustrates the prior and posterior of a GPR with different kernels. Mean, standar...">
+    <div class="thumbnailContainer" tooltip="A simple one-dimensional regression exercise computed in two different ways:">
 
 .. only:: html
 
-  .. figure:: gaussian_process/images/thumb/plot_gpr_prior_posterior.png
-    :target: ./gaussian_process/plot_gpr_prior_posterior.html
+  .. figure:: gaussian_process/images/thumb/plot_gp_regression.png
+    :target: ./gaussian_process/plot_gp_regression.html
 
-    :ref:`example_gaussian_process_plot_gpr_prior_posterior.py`
+    :ref:`example_gaussian_process_plot_gp_regression.py`
 
 
 .. raw:: html
@@ -3011,157 +3011,7 @@ Examples concerning the :mod:`sklearn.gaussian_process` module.
 .. toctree::
    :hidden:
 
-   gaussian_process/plot_gpr_prior_posterior
-
-
-
-.. raw:: html
-
-    <div class="thumbnailContainer" tooltip="Both kernel ridge regression (KRR) and Gaussian process regression (GPR) learn a target functio...">
-
-.. only:: html
-
-  .. figure:: gaussian_process/images/thumb/plot_compare_gpr_krr.png
-    :target: ./gaussian_process/plot_compare_gpr_krr.html
-
-    :ref:`example_gaussian_process_plot_compare_gpr_krr.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   gaussian_process/plot_compare_gpr_krr
-
-
-
-.. raw:: html
-
-    <div class="thumbnailContainer" tooltip="This example is based on Section 5.4.3 of "Gaussian Processes for Machine Learning" [RW2006]. I...">
-
-.. only:: html
-
-  .. figure:: gaussian_process/images/thumb/plot_gpr_co2.png
-    :target: ./gaussian_process/plot_gpr_co2.html
-
-    :ref:`example_gaussian_process_plot_gpr_co2.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   gaussian_process/plot_gpr_co2
-
-
-
-.. raw:: html
-
-    <div class="thumbnailContainer" tooltip="This example illustrates the predicted probability of GPC for an RBF kernel with different choi...">
-
-.. only:: html
-
-  .. figure:: gaussian_process/images/thumb/plot_gpc.png
-    :target: ./gaussian_process/plot_gpc.html
-
-    :ref:`example_gaussian_process_plot_gpc.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   gaussian_process/plot_gpc
-
-
-
-.. raw:: html
-
-    <div class="thumbnailContainer" tooltip="This example illustrates that GPR with a sum-kernel including a WhiteKernel can estimate the no...">
-
-.. only:: html
-
-  .. figure:: gaussian_process/images/thumb/plot_gpr_noisy.png
-    :target: ./gaussian_process/plot_gpr_noisy.html
-
-    :ref:`example_gaussian_process_plot_gpr_noisy.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   gaussian_process/plot_gpr_noisy
-
-
-
-.. raw:: html
-
-    <div class="thumbnailContainer" tooltip="A two-dimensional classification example showing iso-probability lines for the predicted probab...">
-
-.. only:: html
-
-  .. figure:: gaussian_process/images/thumb/plot_gpc_isoprobability.png
-    :target: ./gaussian_process/plot_gpc_isoprobability.html
-
-    :ref:`example_gaussian_process_plot_gpc_isoprobability.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   gaussian_process/plot_gpc_isoprobability
-
-
-
-.. raw:: html
-
-    <div class="thumbnailContainer" tooltip="A simple one-dimensional regression example computed in two different ways:">
-
-.. only:: html
-
-  .. figure:: gaussian_process/images/thumb/plot_gpr_noisy_targets.png
-    :target: ./gaussian_process/plot_gpr_noisy_targets.html
-
-    :ref:`example_gaussian_process_plot_gpr_noisy_targets.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   gaussian_process/plot_gpr_noisy_targets
+   gaussian_process/plot_gp_regression
 
 
 .. raw:: html
@@ -3208,31 +3058,6 @@ Examples concerning the :mod:`sklearn.linear_model` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="Plot the maximum margin separating hyperplane within a two-class separable dataset using a line...">
-
-.. only:: html
-
-  .. figure:: linear_model/images/thumb/plot_sgd_separating_hyperplane.png
-    :target: ./linear_model/plot_sgd_separating_hyperplane.html
-
-    :ref:`example_linear_model_plot_sgd_separating_hyperplane.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   linear_model/plot_sgd_separating_hyperplane
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="A plot that compares the various convex loss functions supported by :class:`sklearn.linear_mode...">
 
 .. only:: html
@@ -3253,6 +3078,31 @@ Examples concerning the :mod:`sklearn.linear_model` module.
    :hidden:
 
    linear_model/plot_sgd_loss_functions
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="Plot the maximum margin separating hyperplane within a two-class separable dataset using a line...">
+
+.. only:: html
+
+  .. figure:: linear_model/images/thumb/plot_sgd_separating_hyperplane.png
+    :target: ./linear_model/plot_sgd_separating_hyperplane.html
+
+    :ref:`example_linear_model_plot_sgd_separating_hyperplane.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   linear_model/plot_sgd_separating_hyperplane
 
 
 
@@ -3358,31 +3208,6 @@ Examples concerning the :mod:`sklearn.linear_model` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="Computes path on IRIS dataset.">
-
-.. only:: html
-
-  .. figure:: linear_model/images/thumb/plot_logistic_path.png
-    :target: ./linear_model/plot_logistic_path.html
-
-    :ref:`example_linear_model_plot_logistic_path.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   linear_model/plot_logistic_path
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="Show below is a logistic-regression classifiers decision boundaries on the `iris <http://en.wik...">
 
 .. only:: html
@@ -3403,6 +3228,31 @@ Examples concerning the :mod:`sklearn.linear_model` module.
    :hidden:
 
    linear_model/plot_iris_logistic
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="Computes path on IRIS dataset.">
+
+.. only:: html
+
+  .. figure:: linear_model/images/thumb/plot_logistic_path.png
+    :target: ./linear_model/plot_logistic_path.html
+
+    :ref:`example_linear_model_plot_logistic_path.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   linear_model/plot_logistic_path
 
 
 
@@ -3433,31 +3283,6 @@ Examples concerning the :mod:`sklearn.linear_model` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="An example showing how different online solvers perform on the hand-written digits dataset.">
-
-.. only:: html
-
-  .. figure:: linear_model/images/thumb/plot_sgd_comparison.png
-    :target: ./linear_model/plot_sgd_comparison.html
-
-    :ref:`example_linear_model_plot_sgd_comparison.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   linear_model/plot_sgd_comparison
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="Ridge regression is basically minimizing a penalised version of the least-squared function. The...">
 
 .. only:: html
@@ -3478,6 +3303,31 @@ Examples concerning the :mod:`sklearn.linear_model` module.
    :hidden:
 
    linear_model/plot_ols_ridge_variance
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="An example showing how different online solvers perform on the hand-written digits dataset.">
+
+.. only:: html
+
+  .. figure:: linear_model/images/thumb/plot_sgd_comparison.png
+    :target: ./linear_model/plot_sgd_comparison.html
+
+    :ref:`example_linear_model_plot_sgd_comparison.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   linear_model/plot_sgd_comparison
 
 
 
@@ -3608,31 +3458,6 @@ Examples concerning the :mod:`sklearn.linear_model` module.
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="Features 1 and 2 of the diabetes-dataset are fitted and plotted below. It illustrates that alth...">
-
-.. only:: html
-
-  .. figure:: linear_model/images/thumb/plot_ols_3d.png
-    :target: ./linear_model/plot_ols_3d.html
-
-    :ref:`example_linear_model_plot_ols_3d.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   linear_model/plot_ols_3d
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="Computes a Bayesian Ridge Regression on a synthetic dataset.">
 
 .. only:: html
@@ -3653,6 +3478,31 @@ Examples concerning the :mod:`sklearn.linear_model` module.
    :hidden:
 
    linear_model/plot_bayesian_ridge
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="Features 1 and 2 of the diabetes-dataset are fitted and plotted below. It illustrates that alth...">
+
+.. only:: html
+
+  .. figure:: linear_model/images/thumb/plot_ols_3d.png
+    :target: ./linear_model/plot_ols_3d.html
+
+    :ref:`example_linear_model_plot_ols_3d.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   linear_model/plot_ols_3d
 
 
 
@@ -4408,31 +4258,6 @@ Examples concerning model selection, mostly contained in the
 
 .. raw:: html
 
-    <div class="thumbnailContainer" tooltip="On the left side the learning curve of a naive Bayes classifier is shown for the digits dataset...">
-
-.. only:: html
-
-  .. figure:: model_selection/images/thumb/plot_learning_curve.png
-    :target: ./model_selection/plot_learning_curve.html
-
-    :ref:`example_model_selection_plot_learning_curve.py`
-
-
-.. raw:: html
-
-    </div>
-
-
-
-.. toctree::
-   :hidden:
-
-   model_selection/plot_learning_curve
-
-
-
-.. raw:: html
-
     <div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality...">
 
 .. only:: html
@@ -4453,6 +4278,31 @@ Examples concerning model selection, mostly contained in the
    :hidden:
 
    model_selection/plot_roc
+
+
+
+.. raw:: html
+
+    <div class="thumbnailContainer" tooltip="On the left side the learning curve of a naive Bayes classifier is shown for the digits dataset...">
+
+.. only:: html
+
+  .. figure:: model_selection/images/thumb/plot_learning_curve.png
+    :target: ./model_selection/plot_learning_curve.html
+
+    :ref:`example_model_selection_plot_learning_curve.py`
+
+
+.. raw:: html
+
+    </div>
+
+
+
+.. toctree::
+   :hidden:
+
+   model_selection/plot_learning_curve
 
 
 .. raw:: html

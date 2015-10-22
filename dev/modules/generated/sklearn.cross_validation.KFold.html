@@ -37,7 +37,7 @@
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../classes.html" />
     <link rel="next" title="sklearn.cross_validation.LabelKFold" href="sklearn.cross_validation.LabelKFold.html" />
-    <link rel="prev" title="sklearn.covariance.graph_lasso" href="sklearn.covariance.graph_lasso.html" />
+    <link rel="prev" title="sklearn.cluster.bicluster.SpectralCoclustering" href="sklearn.cluster.bicluster.SpectralCoclustering.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="sklearn.covariance.graph_lasso.html"
+        <a href="sklearn.cluster.bicluster.SpectralCoclustering.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.covar...
+        sklearn.clust...
         </span>
             <span class="hiddenrellink">
-            sklearn.covariance.graph_lasso
+            sklearn.cluster.bicluster.SpectralCoclustering
             </span>
         </a>
         </div>
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cross_validation</span></tt>.KFold</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-kfold">Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.KFold</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cross_validation</span></code>.KFold</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-kfold">Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.KFold</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,19 +166,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-cross-validation-kfold">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></tt></a>.KFold<a class="headerlink" href="#sklearn-cross-validation-kfold" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></code></a>.KFold<a class="headerlink" href="#sklearn-cross-validation-kfold" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.cross_validation.KFold">
-<em class="property">class </em><tt class="descclassname">sklearn.cross_validation.</tt><tt class="descname">KFold</tt><big>(</big><em>n</em>, <em>n_folds=3</em>, <em>shuffle=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/cross_validation.py#L256"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.KFold" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.cross_validation.</code><code class="descname">KFold</code><span class="sig-paren">(</span><em>n</em>, <em>n_folds=3</em>, <em>shuffle=False</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cross_validation.py#L254"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.KFold" title="Permalink to this definition">¶</a></dt>
 <dd><p>K-Folds cross validation iterator.</p>
 <p>Provides train/test indices to split data in train test sets. Split
 dataset into k consecutive folds (without shuffling by default).</p>
 <p>Each fold is then used a validation set once while the k - 1 remaining
 fold form the training set.</p>
-<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -207,12 +207,12 @@ shuffling. If None, use default numpy RNG for shuffling.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="docutils">
-<dt><a class="reference internal" href="sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><tt class="xref py py-obj docutils literal"><span class="pre">StratifiedKFold</span></tt></a></dt>
+<dt><a class="reference internal" href="sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><code class="xref py py-obj docutils literal"><span class="pre">StratifiedKFold</span></code></a></dt>
 <dd>take label information into account to avoid building</dd>
 </dl>
-<p><tt class="xref py py-obj docutils literal"><span class="pre">folds</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">classification</span></tt></p>
+<p><code class="xref py py-obj docutils literal"><span class="pre">folds</span></code>, <code class="xref py py-obj docutils literal"><span class="pre">classification</span></code></p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.cross_validation.LabelKFold.html#sklearn.cross_validation.LabelKFold" title="sklearn.cross_validation.LabelKFold"><tt class="xref py py-obj docutils literal"><span class="pre">LabelKFold</span></tt></a></dt>
+<dt><a class="reference internal" href="sklearn.cross_validation.LabelKFold.html#sklearn.cross_validation.LabelKFold" title="sklearn.cross_validation.LabelKFold"><code class="xref py py-obj docutils literal"><span class="pre">LabelKFold</span></code></a></dt>
 <dd>K-fold iterator variant with non-overlapping labels.</dd>
 </dl>
 </div>
@@ -241,18 +241,22 @@ size n // n_folds.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-cross-validation-kfold">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.KFold</span></tt><a class="headerlink" href="#examples-using-sklearn-cross-validation-kfold" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example compares 2 dimensionality reduction strategies:"><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.KFold</span></code><a class="headerlink" href="#examples-using-sklearn-cross-validation-kfold" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example compares 2 dimensionality reduction strategies:"><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_feature_agglomeration_vs_univariate_selection.html"><img alt="../../_images/plot_feature_agglomeration_vs_univariate_selection1.png" src="../../_images/plot_feature_agglomeration_vs_univariate_selection1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_feature_agglomeration_vs_univariate_selection.html#example-cluster-plot-feature-agglomeration-vs-univariate-selection-py"><em>Feature agglomeration vs. univariate selection</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_feature_agglomeration_vs_univariate_selection.html#example-cluster-plot-feature-agglomeration-vs-univariate-selection-py"><span>Feature agglomeration vs. univariate selection</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Out-of-bag (OOB) estimates can be a useful heuristic to estimate the "optimal" number of boosti..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Out-of-bag (OOB) estimates can be a useful heuristic to estimate the "optimal" number of boosti..."><div class="figure" id="id2">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_gradient_boosting_oob.html"><img alt="../../_images/plot_gradient_boosting_oob1.png" src="../../_images/plot_gradient_boosting_oob1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_gradient_boosting_oob.html#example-ensemble-plot-gradient-boosting-oob-py"><em>Gradient Boosting Out-of-Bag estimates</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_gradient_boosting_oob.html#example-ensemble-plot-gradient-boosting-oob-py"><span>Gradient Boosting Out-of-Bag estimates</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A tutorial exercise which uses cross-validation with linear models."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="A tutorial exercise which uses cross-validation with linear models."><div class="figure" id="id3">
 <a class="reference external image-reference" href="./../../auto_examples/exercises/plot_cv_diabetes.html"><img alt="../../_images/plot_cv_diabetes1.png" src="../../_images/plot_cv_diabetes1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/exercises/plot_cv_diabetes.html#example-exercises-plot-cv-diabetes-py"><em>Cross-validation on diabetes Dataset Exercise</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/exercises/plot_cv_diabetes.html#example-exercises-plot-cv-diabetes-py"><span>Cross-validation on diabetes Dataset Exercise</span></a></span></p>
+</div>
+</div><div class="thumbnailContainer" tooltip="In this example, we fit a Gaussian Process model onto the diabetes dataset."><div class="figure" id="id4">
+<a class="reference external image-reference" href="./../../auto_examples/gaussian_process/gp_diabetes_dataset.html"><img alt="../../_images/gp_diabetes_dataset1.png" src="../../_images/gp_diabetes_dataset1.png" /></a>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/gaussian_process/gp_diabetes_dataset.html#example-gaussian-process-gp-diabetes-dataset-py"><span>Gaussian Processes regression: goodness-of-fit on the &#8216;diabetes&#8217; dataset</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -272,7 +276,7 @@ size n // n_folds.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="sklearn.covariance.graph_lasso.html">Previous
+      <a href="sklearn.cluster.bicluster.SpectralCoclustering.html">Previous
       </a>
     </div>
     

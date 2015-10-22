@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.kernel_ridge</span></tt>.KernelRidge</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-kernel-ridge-kernelridge">Examples using <tt class="docutils literal"><span class="pre">sklearn.kernel_ridge.KernelRidge</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.kernel_ridge</span></code>.KernelRidge</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-kernel-ridge-kernelridge">Examples using <code class="docutils literal"><span class="pre">sklearn.kernel_ridge.KernelRidge</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-kernel-ridge-kernelridge">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.kernel_ridge" title="sklearn.kernel_ridge"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.kernel_ridge</span></tt></a>.KernelRidge<a class="headerlink" href="#sklearn-kernel-ridge-kernelridge" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.kernel_ridge" title="sklearn.kernel_ridge"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.kernel_ridge</span></code></a>.KernelRidge<a class="headerlink" href="#sklearn-kernel-ridge-kernelridge" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.kernel_ridge.KernelRidge">
-<em class="property">class </em><tt class="descclassname">sklearn.kernel_ridge.</tt><tt class="descname">KernelRidge</tt><big>(</big><em>alpha=1</em>, <em>kernel='linear'</em>, <em>gamma=None</em>, <em>degree=3</em>, <em>coef0=1</em>, <em>kernel_params=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/kernel_ridge.py#L16"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.kernel_ridge.</code><code class="descname">KernelRidge</code><span class="sig-paren">(</span><em>alpha=1</em>, <em>kernel='linear'</em>, <em>gamma=None</em>, <em>degree=3</em>, <em>coef0=1</em>, <em>kernel_params=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_ridge.py#L16"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge" title="Permalink to this definition">¶</a></dt>
 <dd><p>Kernel ridge regression.</p>
 <p>Kernel ridge regression (KRR) combines ridge regression (linear least
 squares with l2-norm regularization) with the kernel trick. It thus
@@ -189,7 +189,7 @@ and thus slower than SVR, which learns a sparse model for epsilon &gt; 0, at
 prediction-time.</p>
 <p>This estimator has built-in support for multi-variate regression
 (i.e., when y is a 2d-array of shape [n_samples, n_targets]).</p>
-<p>Read more in the <a class="reference internal" href="../kernel_ridge.html#kernel-ridge"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../kernel_ridge.html#kernel-ridge"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -198,7 +198,7 @@ prediction-time.</p>
 <blockquote>
 <div><p>Small positive values of alpha improve the conditioning of the problem
 and reduce the variance of the estimates.  Alpha corresponds to
-<tt class="docutils literal"><span class="pre">(2*C)^-1</span></tt> in other linear models such as LogisticRegression or
+<code class="docutils literal"><span class="pre">(2*C)^-1</span></code> in other linear models such as LogisticRegression or
 LinearSVC. If an array is passed, penalties are assumed to be specific
 to the targets. Hence they must correspond in number.</p>
 </div></blockquote>
@@ -246,9 +246,9 @@ as callable object.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><tt class="xref py py-obj docutils literal"><span class="pre">Ridge</span></tt></dt>
+<dt><code class="xref py py-obj docutils literal"><span class="pre">Ridge</span></code></dt>
 <dd>Linear ridge regression.</dd>
-<dt><tt class="xref py py-obj docutils literal"><span class="pre">SVR</span></tt></dt>
+<dt><code class="xref py py-obj docutils literal"><span class="pre">SVR</span></code></dt>
 <dd>Support Vector Regression implemented using libsvm.</dd>
 </dl>
 </div>
@@ -278,31 +278,22 @@ chapter 14.4.3, pp. 492-493</li>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_ridge.KernelRidge.fit" title="sklearn.kernel_ridge.KernelRidge.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y,&nbsp;sample_weight])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_ridge.KernelRidge.fit" title="sklearn.kernel_ridge.KernelRidge.fit"><code class="xref py py-obj docutils literal"><span class="pre">fit</span></code></a>(X[,&nbsp;y,&nbsp;sample_weight])</td>
 <td>Fit Kernel Ridge regression model</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.kernel_ridge.KernelRidge.get_params" title="sklearn.kernel_ridge.KernelRidge.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_ridge.KernelRidge.predict" title="sklearn.kernel_ridge.KernelRidge.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.kernel_ridge.KernelRidge.predict" title="sklearn.kernel_ridge.KernelRidge.predict"><code class="xref py py-obj docutils literal"><span class="pre">predict</span></code></a>(X)</td>
 <td>Predict using the the kernel ridge model</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.kernel_ridge.KernelRidge.score" title="sklearn.kernel_ridge.KernelRidge.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
-<td>Returns the coefficient of determination R^2 of the prediction.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_ridge.KernelRidge.set_params" title="sklearn.kernel_ridge.KernelRidge.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.kernel_ridge.KernelRidge.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>alpha=1</em>, <em>kernel='linear'</em>, <em>gamma=None</em>, <em>degree=3</em>, <em>coef0=1</em>, <em>kernel_params=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/kernel_ridge.py#L104"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>alpha=1</em>, <em>kernel='linear'</em>, <em>gamma=None</em>, <em>degree=3</em>, <em>coef0=1</em>, <em>kernel_params=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_ridge.py#L104"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.kernel_ridge.KernelRidge.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/kernel_ridge.py#L127"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_ridge.py#L127"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit Kernel Ridge regression model</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -331,7 +322,7 @@ chapter 14.4.3, pp. 492-493</li>
 
 <dl class="method">
 <dt id="sklearn.kernel_ridge.KernelRidge.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -356,7 +347,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.kernel_ridge.KernelRidge.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/kernel_ridge.py#L168"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.predict" title="Permalink to this definition">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_ridge.py#L168"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict using the the kernel ridge model</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -380,7 +371,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.kernel_ridge.KernelRidge.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L325"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.score" title="Permalink to this definition">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
@@ -419,11 +410,11 @@ would get a R^2 score of 0.0.</p>
 
 <dl class="method">
 <dt id="sklearn.kernel_ridge.KernelRidge.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_ridge.KernelRidge.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -438,14 +429,10 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-kernel-ridge-kernelridge">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.kernel_ridge.KernelRidge</span></tt><a class="headerlink" href="#examples-using-sklearn-kernel-ridge-kernelridge" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Both kernel ridge regression (KRR) and SVR learn a non-linear function by employing the kernel ..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.kernel_ridge.KernelRidge</span></code><a class="headerlink" href="#examples-using-sklearn-kernel-ridge-kernelridge" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Both kernel ridge regression (KRR) and SVR learn a non-linear function by employing the kernel ..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_kernel_ridge_regression.html"><img alt="../../_images/plot_kernel_ridge_regression1.png" src="../../_images/plot_kernel_ridge_regression1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/plot_kernel_ridge_regression.html#example-plot-kernel-ridge-regression-py"><em>Comparison of kernel ridge regression and SVR</em></a></p>
-</div>
-</div><div class="thumbnailContainer" tooltip="Both kernel ridge regression (KRR) and Gaussian process regression (GPR) learn a target functio..."><div class="figure">
-<a class="reference external image-reference" href="./../../auto_examples/gaussian_process/plot_compare_gpr_krr.html"><img alt="../../_images/plot_compare_gpr_krr1.png" src="../../_images/plot_compare_gpr_krr1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/gaussian_process/plot_compare_gpr_krr.html#example-gaussian-process-plot-compare-gpr-krr-py"><em>Comparison of kernel ridge and Gaussian process regression</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_kernel_ridge_regression.html#example-plot-kernel-ridge-regression-py"><span>Comparison of kernel ridge regression and SVR</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

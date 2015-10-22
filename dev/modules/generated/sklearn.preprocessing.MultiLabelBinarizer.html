@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.preprocessing.MaxAbsScaler" href="sklearn.preprocessing.MaxAbsScaler.html" />
-    <link rel="prev" title="sklearn.preprocessing.LabelEncoder" href="sklearn.preprocessing.LabelEncoder.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,47 +104,10 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.preprocessing.LabelEncoder.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.prepr...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.preprocessing.LabelEncoder
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.preprocessing</span></tt>.MultiLabelBinarizer</a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.preprocessing</span></code>.MultiLabelBinarizer</a></li>
 </ul>
 
     </div>
@@ -163,13 +123,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-preprocessing-multilabelbinarizer">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.preprocessing" title="sklearn.preprocessing"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.preprocessing</span></tt></a>.MultiLabelBinarizer<a class="headerlink" href="#sklearn-preprocessing-multilabelbinarizer" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.preprocessing" title="sklearn.preprocessing"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.preprocessing</span></code></a>.MultiLabelBinarizer<a class="headerlink" href="#sklearn-preprocessing-multilabelbinarizer" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.preprocessing.MultiLabelBinarizer">
-<em class="property">class </em><tt class="descclassname">sklearn.preprocessing.</tt><tt class="descname">MultiLabelBinarizer</tt><big>(</big><em>classes=None</em>, <em>sparse_output=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/preprocessing/label.py#L625"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.preprocessing.</code><code class="descname">MultiLabelBinarizer</code><span class="sig-paren">(</span><em>classes=None</em>, <em>sparse_output=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/preprocessing/label.py#L636"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform between iterable of iterables and a multilabel format</p>
 <p>Although a list of sets or tuples is a very intuitive format for multilabel
 data, it is unwieldy to process. This transformer converts between this
@@ -221,34 +181,16 @@ or otherwise, the sorted set of classes found when fitting.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.preprocessing.MultiLabelBinarizer.fit" title="sklearn.preprocessing.MultiLabelBinarizer.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(y)</td>
-<td>Fit the label sets binarizer, storing <cite>classes_</cite></td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.preprocessing.MultiLabelBinarizer.fit_transform" title="sklearn.preprocessing.MultiLabelBinarizer.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(y)</td>
-<td>Fit the label sets binarizer and transform the given label sets</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.preprocessing.MultiLabelBinarizer.get_params" title="sklearn.preprocessing.MultiLabelBinarizer.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.preprocessing.MultiLabelBinarizer.inverse_transform" title="sklearn.preprocessing.MultiLabelBinarizer.inverse_transform"><tt class="xref py py-obj docutils literal"><span class="pre">inverse_transform</span></tt></a>(yt)</td>
-<td>Transform the given indicator matrix into label sets</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.preprocessing.MultiLabelBinarizer.set_params" title="sklearn.preprocessing.MultiLabelBinarizer.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.preprocessing.MultiLabelBinarizer.transform" title="sklearn.preprocessing.MultiLabelBinarizer.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(y)</td>
-<td>Transform the given label sets</td>
-</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.preprocessing.MultiLabelBinarizer.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>classes=None</em>, <em>sparse_output=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/preprocessing/label.py#L663"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>classes=None</em>, <em>sparse_output=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/preprocessing/label.py#L674"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.MultiLabelBinarizer.fit">
-<tt class="descname">fit</tt><big>(</big><em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/preprocessing/label.py#L667"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/preprocessing/label.py#L678"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the label sets binarizer, storing <cite>classes_</cite></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -271,7 +213,7 @@ iterated.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.MultiLabelBinarizer.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/preprocessing/label.py#L690"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.fit_transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/preprocessing/label.py#L701"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the label sets binarizer and transform the given label sets</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -298,7 +240,7 @@ iterated.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.MultiLabelBinarizer.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -323,7 +265,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.MultiLabelBinarizer.inverse_transform">
-<tt class="descname">inverse_transform</tt><big>(</big><em>yt</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/preprocessing/label.py#L777"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>yt</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/preprocessing/label.py#L788"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform the given indicator matrix into label sets</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -348,11 +290,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.MultiLabelBinarizer.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -366,7 +308,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.preprocessing.MultiLabelBinarizer.transform">
-<tt class="descname">transform</tt><big>(</big><em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/preprocessing/label.py#L729"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/preprocessing/label.py#L740"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.MultiLabelBinarizer.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform the given label sets</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -407,12 +349,8 @@ iterated.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.preprocessing.MultiLabelBinarizer.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.preprocessing.LabelEncoder.html">Previous
-      </a>
-    </div>
     
      </div>
 

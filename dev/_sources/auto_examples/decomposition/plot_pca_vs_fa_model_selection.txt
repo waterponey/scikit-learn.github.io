@@ -28,37 +28,8 @@ by Thomas P. Minka is also compared.
 
 
 
-
-.. rst-class:: horizontal
-
-
-    *
-
-      .. image:: images/plot_pca_vs_fa_model_selection_001.png
-            :scale: 47
-
-    *
-
-      .. image:: images/plot_pca_vs_fa_model_selection_002.png
-            :scale: 47
-
-
-**Script output**::
-
-  best n_components by PCA CV = 10
-  best n_components by FactorAnalysis CV = 10
-  best n_components by PCA MLE = 10
-  best n_components by PCA CV = 40
-  best n_components by FactorAnalysis CV = 10
-  best n_components by PCA MLE = 38
-
-
-
 **Python source code:** :download:`plot_pca_vs_fa_model_selection.py <plot_pca_vs_fa_model_selection.py>`
 
 .. literalinclude:: plot_pca_vs_fa_model_selection.py
     :lines: 26-
-
-**Total running time of the example:**  54.93 seconds
-( 0 minutes  54.93 seconds)
     

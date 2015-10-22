@@ -36,7 +36,7 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.datasets.clear_data_home" href="sklearn.datasets.clear_data_home.html" />
+    <link rel="next" title="sklearn.dummy.DummyClassifier" href="sklearn.dummy.DummyClassifier.html" />
     <link rel="prev" title="sklearn.cross_validation.permutation_test_score" href="sklearn.cross_validation.permutation_test_score.html" />
   
   
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,7 +147,7 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cross_validation</span></tt>.check_cv</a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cross_validation</span></code>.check_cv</a></li>
 </ul>
 
     </div>
@@ -163,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-cross-validation-check-cv">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></tt></a>.check_cv<a class="headerlink" href="#sklearn-cross-validation-check-cv" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></code></a>.check_cv<a class="headerlink" href="#sklearn-cross-validation-check-cv" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.cross_validation.check_cv">
-<tt class="descclassname">sklearn.cross_validation.</tt><tt class="descname">check_cv</tt><big>(</big><em>cv</em>, <em>X=None</em>, <em>y=None</em>, <em>classifier=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/cross_validation.py#L1626"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.check_cv" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.cross_validation.</code><code class="descname">check_cv</code><span class="sig-paren">(</span><em>cv</em>, <em>X=None</em>, <em>y=None</em>, <em>classifier=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cross_validation.py#L1644"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.check_cv" title="Permalink to this definition">¶</a></dt>
 <dd><p>Input checker utility for building a CV in a user friendly way.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -187,10 +187,10 @@ Possible inputs for cv are:</p>
 <li>An iterable yielding train/test splits.</li>
 </ul>
 </div></blockquote>
-<p>For integer/None inputs, if <tt class="docutils literal"><span class="pre">y</span></tt> is binary or multiclass,
-<a class="reference internal" href="sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><tt class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></tt></a> used. If the estimator is a classifier
-or if <tt class="docutils literal"><span class="pre">y</span></tt> is neither binary nor multiclass, <a class="reference internal" href="sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt></a> is used.</p>
-<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a> for the various
+<p>For integer/None inputs, if <code class="docutils literal"><span class="pre">y</span></code> is binary or multiclass,
+<a class="reference internal" href="sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><code class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></code></a> used. If the estimator is a classifier
+or if <code class="docutils literal"><span class="pre">y</span></code> is neither binary nor multiclass, <a class="reference internal" href="sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><code class="xref py py-class docutils literal"><span class="pre">KFold</span></code></a> is used.</p>
+<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a> for the various
 cross-validation strategies that can be used here.</p>
 </div></blockquote>
 <p><strong>X</strong> : array-like</p>

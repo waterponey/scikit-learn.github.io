@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,11 +163,11 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="segmenting-the-picture-of-lena-in-regions">
 <span id="example-cluster-plot-lena-segmentation-py"></span><h1>Segmenting the picture of Lena in regions<a class="headerlink" href="#segmenting-the-picture-of-lena-in-regions" title="Permalink to this headline">¶</a></h1>
-<p>This example uses <a class="reference internal" href="../../modules/clustering.html#spectral-clustering"><em>Spectral clustering</em></a> on a graph created from
+<p>This example uses <a class="reference internal" href="../../modules/clustering.html#spectral-clustering"><span>Spectral clustering</span></a> on a graph created from
 voxel-to-voxel difference on an image to break this image into multiple
 partly-homogeneous regions.</p>
 <p>This procedure (spectral clustering on an image) is an efficient
@@ -179,13 +179,7 @@ using a kmeans algorithm</li>
 <li>whereas &#8216;discrete&#8217; will iteratively search for the closest partition
 space to the embedding space.</li>
 </ul>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_lena_segmentation_001.png"><img alt="../../_images/plot_lena_segmentation_001.png" src="../../_images/plot_lena_segmentation_001.png" style="width: 235.0px; height: 235.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_lena_segmentation_002.png"><img alt="../../_images/plot_lena_segmentation_002.png" src="../../_images/plot_lena_segmentation_002.png" style="width: 235.0px; height: 235.0px;" /></a>
-</li>
-</ul>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lena_segmentation.py"><tt class="xref download docutils literal"><span class="pre">plot_lena_segmentation.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lena_segmentation.py"><code class="xref download docutils literal"><span class="pre">plot_lena_segmentation.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Gael Varoquaux &lt;gael.varoquaux@normalesup.org&gt;, Brian Cheung</span>
@@ -200,7 +194,7 @@ space to the embedding space.</li>
 <span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="kn">import</span> <span class="n">image</span>
 <span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.cluster.spectral_clustering.html#sklearn.cluster.spectral_clustering"><span class="n">spectral_clustering</span></a>
 
-<span class="n">lena</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">lena</span><span class="p">()</span>
+<span class="n">lena</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/scipy-0.11.0/reference/generated/scipy.misc.lena.html#scipy.misc.lena"><span class="n">sp</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">lena</span></a><span class="p">()</span>
 <span class="c"># Downsample the image by a factor of 4</span>
 <span class="n">lena</span> <span class="o">=</span> <span class="n">lena</span><span class="p">[::</span><span class="mi">2</span><span class="p">,</span> <span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">lena</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">,</span> <span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">lena</span><span class="p">[::</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">lena</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
 <span class="n">lena</span> <span class="o">=</span> <span class="n">lena</span><span class="p">[::</span><span class="mi">2</span><span class="p">,</span> <span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">lena</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">,</span> <span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">lena</span><span class="p">[::</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">lena</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
@@ -243,8 +237,6 @@ space to the embedding space.</li>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  725.65 seconds
-( 12 minutes  5.65 seconds)</p>
 </div>
 
 

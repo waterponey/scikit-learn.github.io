@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="online-learning-of-a-dictionary-of-parts-of-faces">
 <span id="example-cluster-plot-dict-face-patches-py"></span><h1>Online learning of a dictionary of parts of faces<a class="headerlink" href="#online-learning-of-a-dictionary-of-parts-of-faces" title="Permalink to this headline">¶</a></h1>
@@ -180,38 +180,7 @@ clusters are reassigned during the successive calls to
 partial-fit. This is because the number of patches that they represent
 has become too low, and it is better to choose a random new
 cluster.</p>
-<img alt="../../_images/plot_dict_face_patches_001.png" class="align-center" src="../../_images/plot_dict_face_patches_001.png" />
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Learning the dictionary...
-Partial fit of  100 out of 2400
-Partial fit of  200 out of 2400
-[MiniBatchKMeans] Reassigning 16 cluster centers.
-Partial fit of  300 out of 2400
-Partial fit of  400 out of 2400
-Partial fit of  500 out of 2400
-Partial fit of  600 out of 2400
-Partial fit of  700 out of 2400
-Partial fit of  800 out of 2400
-Partial fit of  900 out of 2400
-Partial fit of 1000 out of 2400
-Partial fit of 1100 out of 2400
-Partial fit of 1200 out of 2400
-Partial fit of 1300 out of 2400
-Partial fit of 1400 out of 2400
-Partial fit of 1500 out of 2400
-Partial fit of 1600 out of 2400
-Partial fit of 1700 out of 2400
-Partial fit of 1800 out of 2400
-Partial fit of 1900 out of 2400
-Partial fit of 2000 out of 2400
-Partial fit of 2100 out of 2400
-Partial fit of 2200 out of 2400
-Partial fit of 2300 out of 2400
-Partial fit of 2400 out of 2400
-done in 12.32s.
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_dict_face_patches.py"><tt class="xref download docutils literal"><span class="pre">plot_dict_face_patches.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_dict_face_patches.py"><code class="xref download docutils literal"><span class="pre">plot_dict_face_patches.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">time</span>
@@ -278,8 +247,6 @@ done in 12.32s.
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  18.40 seconds
-( 0 minutes  18.40 seconds)</p>
 </div>
 
 

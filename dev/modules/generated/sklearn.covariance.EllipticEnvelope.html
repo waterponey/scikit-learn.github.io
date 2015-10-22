@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.covariance.GraphLasso" href="sklearn.covariance.GraphLasso.html" />
-    <link rel="prev" title="sklearn.covariance.EmpiricalCovariance" href="sklearn.covariance.EmpiricalCovariance.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.covariance.EmpiricalCovariance.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.covar...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.covariance.EmpiricalCovariance
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.covariance</span></tt>.EllipticEnvelope</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-covariance-ellipticenvelope">Examples using <tt class="docutils literal"><span class="pre">sklearn.covariance.EllipticEnvelope</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.covariance</span></code>.EllipticEnvelope</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-covariance-ellipticenvelope">Examples using <code class="docutils literal"><span class="pre">sklearn.covariance.EllipticEnvelope</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,15 +126,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-covariance-ellipticenvelope">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.covariance" title="sklearn.covariance"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.covariance</span></tt></a>.EllipticEnvelope<a class="headerlink" href="#sklearn-covariance-ellipticenvelope" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.covariance" title="sklearn.covariance"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.covariance</span></code></a>.EllipticEnvelope<a class="headerlink" href="#sklearn-covariance-ellipticenvelope" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.covariance.EllipticEnvelope">
-<em class="property">class </em><tt class="descclassname">sklearn.covariance.</tt><tt class="descname">EllipticEnvelope</tt><big>(</big><em>store_precision=True</em>, <em>assume_centered=False</em>, <em>support_fraction=None</em>, <em>contamination=0.1</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/covariance/outlier_detection.py#L105"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.covariance.</code><code class="descname">EllipticEnvelope</code><span class="sig-paren">(</span><em>store_precision=True</em>, <em>assume_centered=False</em>, <em>support_fraction=None</em>, <em>contamination=0.1</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/covariance/outlier_detection.py#L112"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope" title="Permalink to this definition">¶</a></dt>
 <dd><p>An object for detecting outliers in a Gaussian distributed dataset.</p>
-<p>Read more in the <a class="reference internal" href="../outlier_detection.html#outlier-detection"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../outlier_detection.html#outlier-detection"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -196,7 +156,7 @@ with the FastMCD algorithm without additional treatment.</p>
 <p><strong>support_fraction</strong> : float, 0 &lt; support_fraction &lt; 1</p>
 <blockquote>
 <div><p>The proportion of points to be included in the support of the raw
-MCD estimate. Default is <tt class="docutils literal"><span class="pre">None</span></tt>, which implies that the minimum
+MCD estimate. Default is <code class="docutils literal"><span class="pre">None</span></code>, which implies that the minimum
 value of support_fraction will be used within the algorithm:
 <cite>[n_sample + n_features + 1] / 2</cite>.</p>
 </div></blockquote>
@@ -235,12 +195,12 @@ robust estimates of location and shape.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.covariance.EmpiricalCovariance.html#sklearn.covariance.EmpiricalCovariance" title="sklearn.covariance.EmpiricalCovariance"><tt class="xref py py-obj docutils literal"><span class="pre">EmpiricalCovariance</span></tt></a>, <a class="reference internal" href="sklearn.covariance.MinCovDet.html#sklearn.covariance.MinCovDet" title="sklearn.covariance.MinCovDet"><tt class="xref py py-obj docutils literal"><span class="pre">MinCovDet</span></tt></a></p>
+<p class="last"><a class="reference internal" href="sklearn.covariance.EmpiricalCovariance.html#sklearn.covariance.EmpiricalCovariance" title="sklearn.covariance.EmpiricalCovariance"><code class="xref py py-obj docutils literal"><span class="pre">EmpiricalCovariance</span></code></a>, <a class="reference internal" href="sklearn.covariance.MinCovDet.html#sklearn.covariance.MinCovDet" title="sklearn.covariance.MinCovDet"><code class="xref py py-obj docutils literal"><span class="pre">MinCovDet</span></code></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>Outlier detection from covariance estimation may break or not
 perform well in high-dimensional settings. In particular, one will
-always take care to work with <tt class="docutils literal"><span class="pre">n_samples</span> <span class="pre">&gt;</span> <span class="pre">n_features</span> <span class="pre">**</span> <span class="pre">2</span></tt>.</p>
+always take care to work with <code class="docutils literal"><span class="pre">n_samples</span> <span class="pre">&gt;</span> <span class="pre">n_features</span> <span class="pre">**</span> <span class="pre">2</span></code>.</p>
 <p class="rubric">References</p>
 <table class="docutils footnote" frame="void" id="id1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
@@ -256,49 +216,16 @@ covariance determinant estimator&#8221; Technometrics 41(3), 212 (1999)</td></tr
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.covariance.EllipticEnvelope.correct_covariance" title="sklearn.covariance.EllipticEnvelope.correct_covariance"><tt class="xref py py-obj docutils literal"><span class="pre">correct_covariance</span></tt></a>(data)</td>
-<td>Apply a correction to raw Minimum Covariance Determinant estimates.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.covariance.EllipticEnvelope.decision_function" title="sklearn.covariance.EllipticEnvelope.decision_function"><tt class="xref py py-obj docutils literal"><span class="pre">decision_function</span></tt></a>(X[,&nbsp;raw_values])</td>
-<td>Compute the decision function of the given observations.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.covariance.EllipticEnvelope.error_norm" title="sklearn.covariance.EllipticEnvelope.error_norm"><tt class="xref py py-obj docutils literal"><span class="pre">error_norm</span></tt></a>(comp_cov[,&nbsp;norm,&nbsp;scaling,&nbsp;squared])</td>
-<td>Computes the Mean Squared Error between two covariance estimators.</td>
-</tr>
-<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt>(X[,&nbsp;y])</td>
-<td></td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.covariance.EllipticEnvelope.get_params" title="sklearn.covariance.EllipticEnvelope.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.covariance.EllipticEnvelope.get_precision" title="sklearn.covariance.EllipticEnvelope.get_precision"><tt class="xref py py-obj docutils literal"><span class="pre">get_precision</span></tt></a>()</td>
-<td>Getter for the precision matrix.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.covariance.EllipticEnvelope.mahalanobis" title="sklearn.covariance.EllipticEnvelope.mahalanobis"><tt class="xref py py-obj docutils literal"><span class="pre">mahalanobis</span></tt></a>(observations)</td>
-<td>Computes the squared Mahalanobis distances of given observations.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.covariance.EllipticEnvelope.predict" title="sklearn.covariance.EllipticEnvelope.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
-<td>Outlyingness of observations in X according to the fitted model.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.covariance.EllipticEnvelope.reweight_covariance" title="sklearn.covariance.EllipticEnvelope.reweight_covariance"><tt class="xref py py-obj docutils literal"><span class="pre">reweight_covariance</span></tt></a>(data)</td>
-<td>Re-weight raw Minimum Covariance Determinant estimates.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.covariance.EllipticEnvelope.score" title="sklearn.covariance.EllipticEnvelope.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
-<td>Returns the mean accuracy on the given test data and labels.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.covariance.EllipticEnvelope.set_params" title="sklearn.covariance.EllipticEnvelope.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
-</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.covariance.EllipticEnvelope.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>store_precision=True</em>, <em>assume_centered=False</em>, <em>support_fraction=None</em>, <em>contamination=0.1</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/covariance/outlier_detection.py#L170"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>store_precision=True</em>, <em>assume_centered=False</em>, <em>support_fraction=None</em>, <em>contamination=0.1</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/covariance/outlier_detection.py#L177"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.covariance.EllipticEnvelope.correct_covariance">
-<tt class="descname">correct_covariance</tt><big>(</big><em>data</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/covariance/robust_covariance.py#L640"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.correct_covariance" title="Permalink to this definition">¶</a></dt>
+<code class="descname">correct_covariance</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/covariance/robust_covariance.py#L640"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.correct_covariance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Apply a correction to raw Minimum Covariance Determinant estimates.</p>
 <p>Correction using the empirical correction factor suggested
 by Rousseeuw and Van Driessen in <a class="reference internal" href="sklearn.covariance.MinCovDet.html#rouseeuw1984" id="id2">[Rouseeuw1984]</a>.</p>
@@ -326,7 +253,7 @@ the raw estimates.</p>
 
 <dl class="method">
 <dt id="sklearn.covariance.EllipticEnvelope.decision_function">
-<tt class="descname">decision_function</tt><big>(</big><em>X</em>, <em>raw_values=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/covariance/outlier_detection.py#L42"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.decision_function" title="Permalink to this definition">¶</a></dt>
+<code class="descname">decision_function</code><span class="sig-paren">(</span><em>X</em>, <em>raw_values=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/covariance/outlier_detection.py#L42"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the decision function of the given observations.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -345,7 +272,7 @@ with the others outlier detection tools.</p>
 <blockquote class="last">
 <div><p>The values of the decision function for each observations.
 It is equal to the Mahalanobis distances if <cite>raw_values</cite>
-is True. By default (<tt class="docutils literal"><span class="pre">raw_values=True</span></tt>), it is equal
+is True. By default (<code class="docutils literal"><span class="pre">raw_values=True</span></code>), it is equal
 to the cubic root of the shifted Mahalanobis distances.
 In that case, the threshold for being an outlier is 0, which
 ensures a compatibility with other outlier detection tools
@@ -359,7 +286,7 @@ such as the One-Class SVM.</p>
 
 <dl class="method">
 <dt id="sklearn.covariance.EllipticEnvelope.error_norm">
-<tt class="descname">error_norm</tt><big>(</big><em>comp_cov</em>, <em>norm='frobenius'</em>, <em>scaling=True</em>, <em>squared=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/covariance/empirical_covariance_.py#L213"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.error_norm" title="Permalink to this definition">¶</a></dt>
+<code class="descname">error_norm</code><span class="sig-paren">(</span><em>comp_cov</em>, <em>norm='frobenius'</em>, <em>scaling=True</em>, <em>squared=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/covariance/empirical_covariance_.py#L213"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.error_norm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes the Mean Squared Error between two covariance estimators.
 (In the sense of the Frobenius norm).</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -375,7 +302,7 @@ such as the One-Class SVM.</p>
 <div><p>The type of norm used to compute the error. Available error types:
 - &#8216;frobenius&#8217; (default): sqrt(tr(A^t.A))
 - &#8216;spectral&#8217;: sqrt(max(eigenvalues(A^t.A))
-where A is the error <tt class="docutils literal"><span class="pre">(comp_cov</span> <span class="pre">-</span> <span class="pre">self.covariance_)</span></tt>.</p>
+where A is the error <code class="docutils literal"><span class="pre">(comp_cov</span> <span class="pre">-</span> <span class="pre">self.covariance_)</span></code>.</p>
 </div></blockquote>
 <p><strong>scaling</strong> : bool</p>
 <blockquote>
@@ -400,7 +327,7 @@ If False, the error norm is returned.</p>
 
 <dl class="method">
 <dt id="sklearn.covariance.EllipticEnvelope.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -425,7 +352,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.covariance.EllipticEnvelope.get_precision">
-<tt class="descname">get_precision</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/covariance/empirical_covariance_.py#L140"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.get_precision" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_precision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/covariance/empirical_covariance_.py#L140"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.get_precision" title="Permalink to this definition">¶</a></dt>
 <dd><p>Getter for the precision matrix.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -443,7 +370,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.covariance.EllipticEnvelope.mahalanobis">
-<tt class="descname">mahalanobis</tt><big>(</big><em>observations</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/covariance/empirical_covariance_.py#L265"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.mahalanobis" title="Permalink to this definition">¶</a></dt>
+<code class="descname">mahalanobis</code><span class="sig-paren">(</span><em>observations</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/covariance/empirical_covariance_.py#L265"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.mahalanobis" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes the squared Mahalanobis distances of given observations.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -469,7 +396,7 @@ distribution than the data used in fit.</p>
 
 <dl class="method">
 <dt id="sklearn.covariance.EllipticEnvelope.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/covariance/outlier_detection.py#L77"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.predict" title="Permalink to this definition">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/covariance/outlier_detection.py#L77"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Outlyingness of observations in X according to the fitted model.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -495,7 +422,7 @@ as an outlier according to the fitted model.</p>
 
 <dl class="method">
 <dt id="sklearn.covariance.EllipticEnvelope.reweight_covariance">
-<tt class="descname">reweight_covariance</tt><big>(</big><em>data</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/covariance/robust_covariance.py#L664"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.reweight_covariance" title="Permalink to this definition">¶</a></dt>
+<code class="descname">reweight_covariance</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/covariance/robust_covariance.py#L664"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.reweight_covariance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Re-weight raw Minimum Covariance Determinant estimates.</p>
 <p>Re-weight observations using Rousseeuw&#8217;s method (equivalent to
 deleting outlying observations from the data set before
@@ -533,7 +460,7 @@ the re-weighted robust location and covariance estimates.</p>
 
 <dl class="method">
 <dt id="sklearn.covariance.EllipticEnvelope.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L292"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.score" title="Permalink to this definition">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L285"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -568,11 +495,11 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.covariance.EllipticEnvelope.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.EllipticEnvelope.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -587,14 +514,14 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-covariance-ellipticenvelope">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.covariance.EllipticEnvelope</span></tt><a class="headerlink" href="#examples-using-sklearn-covariance-ellipticenvelope" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example illustrates the need for robust covariance estimation on a real data set. It is us..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.covariance.EllipticEnvelope</span></code><a class="headerlink" href="#examples-using-sklearn-covariance-ellipticenvelope" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example illustrates the need for robust covariance estimation on a real data set. It is us..."><div class="figure" id="id4">
 <a class="reference external image-reference" href="./../../auto_examples/applications/plot_outlier_detection_housing.html"><img alt="../../_images/plot_outlier_detection_housing1.png" src="../../_images/plot_outlier_detection_housing1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/applications/plot_outlier_detection_housing.html#example-applications-plot-outlier-detection-housing-py"><em>Outlier detection on a real data set</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/plot_outlier_detection_housing.html#example-applications-plot-outlier-detection-housing-py"><span>Outlier detection on a real data set</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="When the amount of contamination is known, this example illustrates two different ways of perfo..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="When the amount of contamination is known, this example illustrates two different ways of perfo..."><div class="figure" id="id5">
 <a class="reference external image-reference" href="./../../auto_examples/covariance/plot_outlier_detection.html"><img alt="../../_images/plot_outlier_detection1.png" src="../../_images/plot_outlier_detection1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/covariance/plot_outlier_detection.html#example-covariance-plot-outlier-detection-py"><em>Outlier detection with several methods.</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/covariance/plot_outlier_detection.html#example-covariance-plot-outlier-detection-py"><span>Outlier detection with several methods.</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -611,12 +538,8 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.covariance.EllipticEnvelope.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.covariance.EmpiricalCovariance.html">Previous
-      </a>
-    </div>
     
      </div>
 

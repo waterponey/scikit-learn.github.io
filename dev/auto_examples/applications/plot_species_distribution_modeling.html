@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -166,7 +166,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="species-distribution-modeling">
 <span id="example-applications-plot-species-distribution-modeling-py"></span><h1>Species distribution modeling<a class="headerlink" href="#species-distribution-modeling" title="Permalink to this headline">¶</a></h1>
@@ -201,27 +201,7 @@ S. J. Phillips, R. P. Anderson, R. E. Schapire - Ecological Modelling,
 190:231-259, 2006.</li>
 </ul>
 </div></blockquote>
-<img alt="../../_images/plot_species_distribution_modeling_001.png" class="align-center" src="../../_images/plot_species_distribution_modeling_001.png" />
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>________________________________________________________________________________
-Modeling distribution of species &#39;bradypus variegatus&#39;
- - fit OneClassSVM ... done.
- - plot coastlines from coverage
- - predict species distribution
-
- Area under the ROC curve : 0.868380
-________________________________________________________________________________
-Modeling distribution of species &#39;microryzomys minutus&#39;
- - fit OneClassSVM ... done.
- - plot coastlines from coverage
- - predict species distribution
-
- Area under the ROC curve : 0.993919
-
-time elapsed: 12.61s
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_species_distribution_modeling.py"><tt class="xref download docutils literal"><span class="pre">plot_species_distribution_modeling.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_species_distribution_modeling.py"><code class="xref download docutils literal"><span class="pre">plot_species_distribution_modeling.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Authors: Peter Prettenhofer &lt;peter.prettenhofer@gmail.com&gt;</span>
 <span class="c">#          Jake Vanderplas &lt;vanderplas@astro.washington.edu&gt;</span>
 <span class="c">#</span>
@@ -394,8 +374,6 @@ time elapsed: 12.61s
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  12.61 seconds
-( 0 minutes  12.61 seconds)</p>
 </div>
 </div>
 

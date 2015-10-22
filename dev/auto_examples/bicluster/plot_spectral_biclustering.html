@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,33 +163,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="a-demo-of-the-spectral-biclustering-algorithm">
 <span id="example-bicluster-plot-spectral-biclustering-py"></span><h1>A demo of the Spectral Biclustering algorithm<a class="headerlink" href="#a-demo-of-the-spectral-biclustering-algorithm" title="Permalink to this headline">¶</a></h1>
 <p>This example demonstrates how to generate a checkerboard dataset and
 bicluster it using the Spectral Biclustering algorithm.</p>
-<p>The data is generated with the <tt class="docutils literal"><span class="pre">make_checkerboard</span></tt> function, then
+<p>The data is generated with the <code class="docutils literal"><span class="pre">make_checkerboard</span></code> function, then
 shuffled and passed to the Spectral Biclustering algorithm. The rows
 and columns of the shuffled matrix are rearranged to show the
 biclusters found by the algorithm.</p>
 <p>The outer product of the row and column label vectors shows a
 representation of the checkerboard structure.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_spectral_biclustering_001.png"><img alt="../../_images/plot_spectral_biclustering_001.png" src="../../_images/plot_spectral_biclustering_001.png" style="width: 282.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_spectral_biclustering_002.png"><img alt="../../_images/plot_spectral_biclustering_002.png" src="../../_images/plot_spectral_biclustering_002.png" style="width: 282.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_spectral_biclustering_003.png"><img alt="../../_images/plot_spectral_biclustering_003.png" src="../../_images/plot_spectral_biclustering_003.png" style="width: 282.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_spectral_biclustering_004.png"><img alt="../../_images/plot_spectral_biclustering_004.png" src="../../_images/plot_spectral_biclustering_004.png" style="width: 282.0px; height: 282.0px;" /></a>
-</li>
-</ul>
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>consensus score: 1.0
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_spectral_biclustering.py"><tt class="xref download docutils literal"><span class="pre">plot_spectral_biclustering.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_spectral_biclustering.py"><code class="xref download docutils literal"><span class="pre">plot_spectral_biclustering.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Kemal Eren &lt;kemal@kemaleren.com&gt;</span>
@@ -237,8 +223,6 @@ representation of the checkerboard structure.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.89 seconds
-( 0 minutes  0.89 seconds)</p>
 </div>
 
 

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -186,11 +186,11 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="variational-gaussian-mixture-models">
 <span id="dpgmm-derivation"></span><h1>2.1.3.2.1. Variational Gaussian Mixture Models<a class="headerlink" href="#variational-gaussian-mixture-models" title="Permalink to this headline">¶</a></h1>
-<p>The API is identical to that of the <a class="reference internal" href="generated/sklearn.mixture.GMM.html#sklearn.mixture.GMM" title="sklearn.mixture.GMM"><tt class="xref py py-class docutils literal"><span class="pre">GMM</span></tt></a> class, the main
+<p>The API is identical to that of the <a class="reference internal" href="generated/sklearn.mixture.GMM.html#sklearn.mixture.GMM" title="sklearn.mixture.GMM"><code class="xref py py-class docutils literal"><span class="pre">GMM</span></code></a> class, the main
 difference being that it offers access to precision matrices as well
 as covariance matrices.</p>
 <p>The inference algorithm is the one from the following paper:</p>
@@ -211,9 +211,9 @@ changing/debugging the implementation in the scikit this document is
 not for you.</p>
 <p>The complexity of this implementation is linear in the number of
 mixture components and data points. With regards to the
-dimensionality, it is linear when using <tt class="docutils literal"><span class="pre">spherical</span></tt> or <tt class="docutils literal"><span class="pre">diag</span></tt> and
-quadratic/cubic when using <tt class="docutils literal"><span class="pre">tied</span></tt> or <tt class="docutils literal"><span class="pre">full</span></tt>. For <tt class="docutils literal"><span class="pre">spherical</span></tt> or <tt class="docutils literal"><span class="pre">diag</span></tt>
-it is O(n_states * n_points * dimension) and for <tt class="docutils literal"><span class="pre">tied</span></tt> or <tt class="docutils literal"><span class="pre">full</span></tt> it
+dimensionality, it is linear when using <code class="docutils literal"><span class="pre">spherical</span></code> or <code class="docutils literal"><span class="pre">diag</span></code> and
+quadratic/cubic when using <code class="docutils literal"><span class="pre">tied</span></code> or <code class="docutils literal"><span class="pre">full</span></code>. For <code class="docutils literal"><span class="pre">spherical</span></code> or <code class="docutils literal"><span class="pre">diag</span></code>
+it is O(n_states * n_points * dimension) and for <code class="docutils literal"><span class="pre">tied</span></code> or <code class="docutils literal"><span class="pre">full</span></code> it
 is O(n_states * n_points * dimension^2 + n_states * dimension^3) (it
 is necessary to invert the covariance/precision matrices and compute
 its determinant, hence the cubic term).</p>

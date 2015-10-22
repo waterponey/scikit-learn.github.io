@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.metrics.adjusted_rand_score" href="sklearn.metrics.adjusted_rand_score.html" />
-    <link rel="prev" title="sklearn.metrics.label_ranking_loss" href="sklearn.metrics.label_ranking_loss.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.metrics.label_ranking_loss.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.metri...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.metrics.label_ranking_loss
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.adjusted_mutual_info_score</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-adjusted-mutual-info-score">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.adjusted_mutual_info_score</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.adjusted_mutual_info_score</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-adjusted-mutual-info-score">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.adjusted_mutual_info_score</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,13 +126,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-metrics-adjusted-mutual-info-score">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.adjusted_mutual_info_score<a class="headerlink" href="#sklearn-metrics-adjusted-mutual-info-score" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.adjusted_mutual_info_score<a class="headerlink" href="#sklearn-metrics-adjusted-mutual-info-score" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.adjusted_mutual_info_score">
-<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">adjusted_mutual_info_score</tt><big>(</big><em>labels_true</em>, <em>labels_pred</em>, <em>max_n_classes=5000</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/metrics/cluster/supervised.py#L629"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.adjusted_mutual_info_score" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.metrics.</code><code class="descname">adjusted_mutual_info_score</code><span class="sig-paren">(</span><em>labels_true</em>, <em>labels_pred</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/cluster/supervised.py#L578"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.adjusted_mutual_info_score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adjusted Mutual Information between two clusterings</p>
 <p>Adjusted Mutual Information (AMI) is an adjustment of the Mutual
 Information (MI) score to account for chance. It accounts for the fact that
@@ -185,13 +145,13 @@ For two clusterings <img class="math" src="../../_images/math/73f5e249c88b2b3068
 <p>This metric is independent of the absolute values of the labels:
 a permutation of the class or cluster label values won&#8217;t change the
 score value in any way.</p>
-<p>This metric is furthermore symmetric: switching <tt class="docutils literal"><span class="pre">label_true</span></tt> with
-<tt class="docutils literal"><span class="pre">label_pred</span></tt> will return the same score value. This can be useful to
+<p>This metric is furthermore symmetric: switching <code class="docutils literal"><span class="pre">label_true</span></code> with
+<code class="docutils literal"><span class="pre">label_pred</span></code> will return the same score value. This can be useful to
 measure the agreement of two independent label assignments strategies
 on the same dataset when the real ground truth is not known.</p>
 <p>Be mindful that this function is an order of magnitude slower than other
 metrics, such as the Adjusted Rand Index.</p>
-<p>Read more in the <a class="reference internal" href="../clustering.html#mutual-info-score"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../clustering.html#mutual-info-score"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -203,12 +163,6 @@ metrics, such as the Adjusted Rand Index.</p>
 <p><strong>labels_pred</strong> : array, shape = [n_samples]</p>
 <blockquote>
 <div><p>A clustering of the data into disjoint subsets.</p>
-</div></blockquote>
-<p><strong>max_n_classes: int, optional (default=5000)</strong> :</p>
-<blockquote>
-<div><p>Maximal number of classes handled by the adjusted_rand_score
-metric. Setting it too high can lead to MemoryError or OS
-freeze</p>
 </div></blockquote>
 </td>
 </tr>
@@ -225,25 +179,25 @@ an expected AMI around 0 on average hence can be negative.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.metrics.adjusted_rand_score.html#sklearn.metrics.adjusted_rand_score" title="sklearn.metrics.adjusted_rand_score"><tt class="xref py py-obj docutils literal"><span class="pre">adjusted_rand_score</span></tt></a></dt>
+<dt><a class="reference internal" href="sklearn.metrics.adjusted_rand_score.html#sklearn.metrics.adjusted_rand_score" title="sklearn.metrics.adjusted_rand_score"><code class="xref py py-obj docutils literal"><span class="pre">adjusted_rand_score</span></code></a></dt>
 <dd>Adjusted Rand Index</dd>
-<dt><tt class="xref py py-obj docutils literal"><span class="pre">mutual_information_score</span></tt></dt>
+<dt><code class="xref py py-obj docutils literal"><span class="pre">mutual_information_score</span></code></dt>
 <dd>Mutual Information (not adjusted for chance)</dd>
 </dl>
 </div>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r42" rules="none">
+<table class="docutils citation" frame="void" id="r64" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R42]</a></td><td><a class="reference external" href="http://jmlr.csail.mit.edu/papers/volume11/vinh10a/vinh10a.pdf">Vinh, Epps, and Bailey, (2010). Information Theoretic Measures for
+<tr><td class="label"><a class="fn-backref" href="#id1">[R64]</a></td><td><a class="reference external" href="http://jmlr.csail.mit.edu/papers/volume11/vinh10a/vinh10a.pdf">Vinh, Epps, and Bailey, (2010). Information Theoretic Measures for
 Clusterings Comparison: Variants, Properties, Normalization and
 Correction for Chance, JMLR</a></td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r43" rules="none">
+<table class="docutils citation" frame="void" id="r65" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[R43]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Adjusted_Mutual_Information">Wikipedia entry for the Adjusted Mutual Information</a></td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id2">[R65]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Adjusted_Mutual_Information">Wikipedia entry for the Adjusted Mutual Information</a></td></tr>
 </tbody>
 </table>
 <p class="rubric">Examples</p>
@@ -265,22 +219,22 @@ the assignment is totally in-complete, hence the AMI is null:</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-adjusted-mutual-info-score">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.adjusted_mutual_info_score</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-adjusted-mutual-info-score" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Reference: Brendan J. Frey and Delbert Dueck, "Clustering by Passing Messages Between Data Poin..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.adjusted_mutual_info_score</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-adjusted-mutual-info-score" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Reference: Brendan J. Frey and Delbert Dueck, "Clustering by Passing Messages Between Data Poin..."><div class="figure" id="id3">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_affinity_propagation.html"><img alt="../../_images/plot_affinity_propagation1.png" src="../../_images/plot_affinity_propagation1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_affinity_propagation.html#example-cluster-plot-affinity-propagation-py"><em>Demo of affinity propagation clustering algorithm</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_affinity_propagation.html#example-cluster-plot-affinity-propagation-py"><span>Demo of affinity propagation clustering algorithm</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Finds core samples of high density and expands clusters from them."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Finds core samples of high density and expands clusters from them."><div class="figure" id="id4">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_dbscan.html"><img alt="../../_images/plot_dbscan1.png" src="../../_images/plot_dbscan1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_dbscan.html#example-cluster-plot-dbscan-py"><em>Demo of DBSCAN clustering algorithm</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_dbscan.html#example-cluster-plot-dbscan-py"><span>Demo of DBSCAN clustering algorithm</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="In this example we compare the various initialization strategies for K-means in terms of runtim..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="In this example we compare the various initialization strategies for K-means in terms of runtim..."><div class="figure" id="id5">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_kmeans_digits.html"><img alt="../../_images/plot_kmeans_digits1.png" src="../../_images/plot_kmeans_digits1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_digits.html#example-cluster-plot-kmeans-digits-py"><em>A demo of K-Means clustering on the handwritten digits data</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_digits.html#example-cluster-plot-kmeans-digits-py"><span>A demo of K-Means clustering on the handwritten digits data</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The following plots demonstrate the impact of the number of clusters and number of samples on v..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="The following plots demonstrate the impact of the number of clusters and number of samples on v..."><div class="figure" id="id6">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_adjusted_for_chance_measures.html"><img alt="../../_images/plot_adjusted_for_chance_measures1.png" src="../../_images/plot_adjusted_for_chance_measures1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_adjusted_for_chance_measures.html#example-cluster-plot-adjusted-for-chance-measures-py"><em>Adjustment for chance in clustering performance evaluation</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_adjusted_for_chance_measures.html#example-cluster-plot-adjusted-for-chance-measures-py"><span>Adjustment for chance in clustering performance evaluation</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -297,12 +251,8 @@ the assignment is totally in-complete, hence the AMI is null:</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.adjusted_mutual_info_score.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.metrics.label_ranking_loss.html">Previous
-      </a>
-    </div>
     
      </div>
 

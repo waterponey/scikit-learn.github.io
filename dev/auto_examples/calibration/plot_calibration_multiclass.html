@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="probability-calibration-for-3-class-classification">
 <span id="example-calibration-plot-calibration-multiclass-py"></span><h1>Probability Calibration for 3-class classification<a class="headerlink" href="#probability-calibration-for-3-class-classification" title="Permalink to this headline">¶</a></h1>
@@ -183,19 +183,7 @@ predictions, i.e., moves the probability vectors from the edges of the simplex
 towards the center. This calibration results in a lower log-loss. Note that an
 alternative would have been to increase the number of base estimators which
 would have resulted in a similar decrease in log-loss.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_calibration_multiclass_000.png"><img alt="../../_images/plot_calibration_multiclass_000.png" src="../../_images/plot_calibration_multiclass_000.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_calibration_multiclass_001.png"><img alt="../../_images/plot_calibration_multiclass_001.png" src="../../_images/plot_calibration_multiclass_001.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-</ul>
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Log-loss of
- * uncalibrated classifier trained on 800 datapoints: 1.280
- * classifier trained on 600 datapoints and calibrated on 200 datapoint: 0.534
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_calibration_multiclass.py"><tt class="xref download docutils literal"><span class="pre">plot_calibration_multiclass.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_calibration_multiclass.py"><code class="xref download docutils literal"><span class="pre">plot_calibration_multiclass.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Jan Hendrik Metzen &lt;jhm@informatik.uni-bremen.de&gt;</span>
@@ -343,8 +331,6 @@ would have resulted in a similar decrease in log-loss.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.96 seconds
-( 0 minutes  0.96 seconds)</p>
 </div>
 
 

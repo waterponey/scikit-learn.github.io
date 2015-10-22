@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.decomposition.IncrementalPCA" href="sklearn.decomposition.IncrementalPCA.html" />
-    <link rel="prev" title="sklearn.datasets.make_checkerboard" href="sklearn.datasets.make_checkerboard.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.datasets.make_checkerboard.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.datas...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.datasets.make_checkerboard
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.decomposition</span></tt>.PCA</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-decomposition-pca">Examples using <tt class="docutils literal"><span class="pre">sklearn.decomposition.PCA</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.decomposition</span></code>.PCA</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-decomposition-pca">Examples using <code class="docutils literal"><span class="pre">sklearn.decomposition.PCA</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,13 +126,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-decomposition-pca">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></tt></a>.PCA<a class="headerlink" href="#sklearn-decomposition-pca" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></code></a>.PCA<a class="headerlink" href="#sklearn-decomposition-pca" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.decomposition.PCA">
-<em class="property">class </em><tt class="descclassname">sklearn.decomposition.</tt><tt class="descname">PCA</tt><big>(</big><em>n_components=None</em>, <em>copy=True</em>, <em>whiten=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/decomposition/pca.py#L99"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">PCA</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>copy=True</em>, <em>whiten=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/pca.py#L99"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA" title="Permalink to this definition">¶</a></dt>
 <dd><p>Principal component analysis (PCA)</p>
 <p>Linear dimensionality reduction using Singular Value Decomposition of the
 data and keeping only the most significant singular vectors to project the
@@ -180,9 +140,9 @@ data to a lower dimensional space.</p>
 <p>This implementation uses the scipy.linalg implementation of the singular
 value decomposition. It only works for dense arrays and is not scalable to
 large dimensional data.</p>
-<p>The time complexity of this implementation is <tt class="docutils literal"><span class="pre">O(n</span> <span class="pre">**</span> <span class="pre">3)</span></tt> assuming
+<p>The time complexity of this implementation is <code class="docutils literal"><span class="pre">O(n</span> <span class="pre">**</span> <span class="pre">3)</span></code> assuming
 n ~ n_samples ~ n_features.</p>
-<p>Read more in the <a class="reference internal" href="../decomposition.html#pca"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../decomposition.html#pca"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -195,7 +155,7 @@ if n_components is not set all components are kept:</p>
 </pre></div>
 </div>
 <p>if n_components == &#8216;mle&#8217;, Minka&#8217;s MLE is used to guess the dimension
-if <tt class="docutils literal"><span class="pre">0</span> <span class="pre">&lt;</span> <span class="pre">n_components</span> <span class="pre">&lt;</span> <span class="pre">1</span></tt>, select the number of components such that
+if <code class="docutils literal"><span class="pre">0</span> <span class="pre">&lt;</span> <span class="pre">n_components</span> <span class="pre">&lt;</span> <span class="pre">1</span></code>, select the number of components such that
 the amount of variance that needs to be explained is greater than the
 percentage specified by n_components</p>
 </div></blockquote>
@@ -225,7 +185,7 @@ maximum variance in the data.</p>
 <p><strong>explained_variance_ratio_</strong> : array, [n_components]</p>
 <blockquote>
 <div><p>Percentage of variance explained by each of the selected components.
-If <tt class="docutils literal"><span class="pre">n_components</span></tt> is not set then all components are stored and the
+If <code class="docutils literal"><span class="pre">n_components</span></code> is not set then all components are stored and the
 sum of explained variances is equal to 1.0</p>
 </div></blockquote>
 <p><strong>mean_</strong> : array, [n_features]</p>
@@ -252,7 +212,7 @@ computed the estimated data covariance and score samples.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.decomposition.RandomizedPCA.html#sklearn.decomposition.RandomizedPCA" title="sklearn.decomposition.RandomizedPCA"><tt class="xref py py-obj docutils literal"><span class="pre">RandomizedPCA</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.KernelPCA.html#sklearn.decomposition.KernelPCA" title="sklearn.decomposition.KernelPCA"><tt class="xref py py-obj docutils literal"><span class="pre">KernelPCA</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.SparsePCA.html#sklearn.decomposition.SparsePCA" title="sklearn.decomposition.SparsePCA"><tt class="xref py py-obj docutils literal"><span class="pre">SparsePCA</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.TruncatedSVD.html#sklearn.decomposition.TruncatedSVD" title="sklearn.decomposition.TruncatedSVD"><tt class="xref py py-obj docutils literal"><span class="pre">TruncatedSVD</span></tt></a></p>
+<p class="last"><a class="reference internal" href="sklearn.decomposition.RandomizedPCA.html#sklearn.decomposition.RandomizedPCA" title="sklearn.decomposition.RandomizedPCA"><code class="xref py py-obj docutils literal"><span class="pre">RandomizedPCA</span></code></a>, <a class="reference internal" href="sklearn.decomposition.KernelPCA.html#sklearn.decomposition.KernelPCA" title="sklearn.decomposition.KernelPCA"><code class="xref py py-obj docutils literal"><span class="pre">KernelPCA</span></code></a>, <a class="reference internal" href="sklearn.decomposition.SparsePCA.html#sklearn.decomposition.SparsePCA" title="sklearn.decomposition.SparsePCA"><code class="xref py py-obj docutils literal"><span class="pre">SparsePCA</span></code></a>, <a class="reference internal" href="sklearn.decomposition.TruncatedSVD.html#sklearn.decomposition.TruncatedSVD" title="sklearn.decomposition.TruncatedSVD"><code class="xref py py-obj docutils literal"><span class="pre">TruncatedSVD</span></code></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>For n_components=&#8217;mle&#8217;, this class uses the method of <cite>Thomas P. Minka:
@@ -285,46 +245,16 @@ transform data in a consistent fashion.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.PCA.fit" title="sklearn.decomposition.PCA.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
-<td>Fit the model with X.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.PCA.fit_transform" title="sklearn.decomposition.PCA.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
-<td>Fit the model with X and apply the dimensionality reduction on X.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.PCA.get_covariance" title="sklearn.decomposition.PCA.get_covariance"><tt class="xref py py-obj docutils literal"><span class="pre">get_covariance</span></tt></a>()</td>
-<td>Compute data covariance with the generative model.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.PCA.get_params" title="sklearn.decomposition.PCA.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.PCA.get_precision" title="sklearn.decomposition.PCA.get_precision"><tt class="xref py py-obj docutils literal"><span class="pre">get_precision</span></tt></a>()</td>
-<td>Compute data precision matrix with the generative model.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.PCA.inverse_transform" title="sklearn.decomposition.PCA.inverse_transform"><tt class="xref py py-obj docutils literal"><span class="pre">inverse_transform</span></tt></a>(X)</td>
-<td>Transform data back to its original space, i.e.,</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.PCA.score" title="sklearn.decomposition.PCA.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X[,&nbsp;y])</td>
-<td>Return the average log-likelihood of all samples</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.PCA.score_samples" title="sklearn.decomposition.PCA.score_samples"><tt class="xref py py-obj docutils literal"><span class="pre">score_samples</span></tt></a>(X)</td>
-<td>Return the log-likelihood of each sample</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.PCA.set_params" title="sklearn.decomposition.PCA.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.PCA.transform" title="sklearn.decomposition.PCA.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
-<td>Apply the dimensionality reduction on X.</td>
-</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.decomposition.PCA.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>n_components=None</em>, <em>copy=True</em>, <em>whiten=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/decomposition/pca.py#L205"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=None</em>, <em>copy=True</em>, <em>whiten=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/pca.py#L205"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.decomposition.PCA.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/decomposition/pca.py#L210"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/pca.py#L210"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model with X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -349,7 +279,7 @@ and n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.PCA.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/decomposition/pca.py#L227"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.fit_transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/pca.py#L227"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model with X and apply the dimensionality reduction on X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -371,9 +301,9 @@ and n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.PCA.get_covariance">
-<tt class="descname">get_covariance</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/decomposition/pca.py#L319"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.get_covariance" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_covariance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/pca.py#L319"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.get_covariance" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute data covariance with the generative model.</p>
-<p><tt class="docutils literal"><span class="pre">cov</span> <span class="pre">=</span> <span class="pre">components_.T</span> <span class="pre">*</span> <span class="pre">S**2</span> <span class="pre">*</span> <span class="pre">components_</span> <span class="pre">+</span> <span class="pre">sigma2</span> <span class="pre">*</span> <span class="pre">eye(n_features)</span></tt>
+<p><code class="docutils literal"><span class="pre">cov</span> <span class="pre">=</span> <span class="pre">components_.T</span> <span class="pre">*</span> <span class="pre">S**2</span> <span class="pre">*</span> <span class="pre">components_</span> <span class="pre">+</span> <span class="pre">sigma2</span> <span class="pre">*</span> <span class="pre">eye(n_features)</span></code>
 where  S**2 contains the explained variances.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -391,7 +321,7 @@ where  S**2 contains the explained variances.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.PCA.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -416,7 +346,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.PCA.get_precision">
-<tt class="descname">get_precision</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/decomposition/pca.py#L339"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.get_precision" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_precision</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/pca.py#L339"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.get_precision" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute data precision matrix with the generative model.</p>
 <p>Equals the inverse of the covariance but computed with
 the matrix inversion lemma for efficiency.</p>
@@ -436,7 +366,7 @@ the matrix inversion lemma for efficiency.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.PCA.inverse_transform">
-<tt class="descname">inverse_transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/decomposition/pca.py#L397"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/pca.py#L397"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform data back to its original space, i.e.,
 return an input X_original whose transform would be X</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -459,7 +389,7 @@ and n_components is the number of components.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.PCA.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/decomposition/pca.py#L450"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.score" title="Permalink to this definition">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/pca.py#L450"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the average log-likelihood of all samples</p>
 <p>See. &#8220;Pattern Recognition and Machine Learning&#8221;
 by C. Bishop, 12.2.1 p. 574
@@ -486,7 +416,7 @@ or <a class="reference external" href="http://www.miketipping.com/papers/met-mpp
 
 <dl class="method">
 <dt id="sklearn.decomposition.PCA.score_samples">
-<tt class="descname">score_samples</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/decomposition/pca.py#L421"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.score_samples" title="Permalink to this definition">¶</a></dt>
+<code class="descname">score_samples</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/pca.py#L421"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.score_samples" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the log-likelihood of each sample</p>
 <p>See. &#8220;Pattern Recognition and Machine Learning&#8221;
 by C. Bishop, 12.2.1 p. 574
@@ -513,11 +443,11 @@ or <a class="reference external" href="http://www.miketipping.com/papers/met-mpp
 
 <dl class="method">
 <dt id="sklearn.decomposition.PCA.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -531,7 +461,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.PCA.transform">
-<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/decomposition/pca.py#L370"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/pca.py#L370"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.PCA.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Apply the dimensionality reduction on X.</p>
 <p>X is projected on the first principal components previous extracted
 from a training set.</p>
@@ -556,74 +486,74 @@ and n_features is the number of features.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-decomposition-pca">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.decomposition.PCA</span></tt><a class="headerlink" href="#examples-using-sklearn-decomposition-pca" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="In many real-world examples, there are many ways to extract features from a dataset. Often it i..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.decomposition.PCA</span></code><a class="headerlink" href="#examples-using-sklearn-decomposition-pca" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="In many real-world examples, there are many ways to extract features from a dataset. Often it i..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/./feature_stacker.html"><img alt="../../_images/feature_stacker1.png" src="../../_images/feature_stacker1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/feature_stacker.html#example-feature-stacker-py"><em>Concatenating multiple feature extraction methods</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_stacker.html#example-feature-stacker-py"><span>Concatenating multiple feature extraction methods</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The PCA does an unsupervised dimensionality reduction, while the logistic regression does the p..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="The PCA does an unsupervised dimensionality reduction, while the logistic regression does the p..."><div class="figure" id="id2">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_digits_pipe.html"><img alt="../../_images/plot_digits_pipe1.png" src="../../_images/plot_digits_pipe1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/plot_digits_pipe.html#example-plot-digits-pipe-py"><em>Pipelining: chaining a PCA and a logistic regression</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_digits_pipe.html#example-plot-digits-pipe-py"><span>Pipelining: chaining a PCA and a logistic regression</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example simulates a multi-label document classification problem. The dataset is generated ..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="This example simulates a multi-label document classification problem. The dataset is generated ..."><div class="figure" id="id3">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_multilabel.html"><img alt="../../_images/plot_multilabel1.png" src="../../_images/plot_multilabel1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/plot_multilabel.html#example-plot-multilabel-py"><em>Multilabel classification</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_multilabel.html#example-plot-multilabel-py"><span>Multilabel classification</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An example illustrating the approximation of the feature map of an RBF kernel."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="An example illustrating the approximation of the feature map of an RBF kernel."><div class="figure" id="id4">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_kernel_approximation.html"><img alt="../../_images/plot_kernel_approximation1.png" src="../../_images/plot_kernel_approximation1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/plot_kernel_approximation.html#example-plot-kernel-approximation-py"><em>Explicit feature map approximation for RBF kernels</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_kernel_approximation.html#example-plot-kernel-approximation-py"><span>Explicit feature map approximation for RBF kernels</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="In this example we compare the various initialization strategies for K-means in terms of runtim..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="In this example we compare the various initialization strategies for K-means in terms of runtim..."><div class="figure" id="id5">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_kmeans_digits.html"><img alt="../../_images/plot_kmeans_digits1.png" src="../../_images/plot_kmeans_digits1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_digits.html#example-cluster-plot-kmeans-digits-py"><em>A demo of K-Means clustering on the handwritten digits data</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_digits.html#example-cluster-plot-kmeans-digits-py"><span>A demo of K-Means clustering on the handwritten digits data</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The rows being the samples and the columns being: Sepal Length, Sepal Width, Petal Length  and P..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="The rows being the samples and the columns being: Sepal Length, Sepal Width, Petal Length  and P..."><div class="figure" id="id6">
 <a class="reference external image-reference" href="./../../auto_examples/datasets/plot_iris_dataset.html"><img alt="../../_images/plot_iris_dataset1.png" src="../../_images/plot_iris_dataset1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/datasets/plot_iris_dataset.html#example-datasets-plot-iris-dataset-py"><em>The Iris Dataset</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/datasets/plot_iris_dataset.html#example-datasets-plot-iris-dataset-py"><span>The Iris Dataset</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The Iris dataset represents 3 kind of Iris flowers (Setosa, Versicolour and Virginica) with 4 a..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="The Iris dataset represents 3 kind of Iris flowers (Setosa, Versicolour and Virginica) with 4 a..."><div class="figure" id="id7">
 <a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_pca_vs_lda.html"><img alt="../../_images/plot_pca_vs_lda1.png" src="../../_images/plot_pca_vs_lda1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_vs_lda.html#example-decomposition-plot-pca-vs-lda-py"><em>Comparison of LDA and PCA 2D projection of Iris dataset</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_vs_lda.html#example-decomposition-plot-pca-vs-lda-py"><span>Comparison of LDA and PCA 2D projection of Iris dataset</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="=============== Incremental PCA ==============="><div class="figure">
+</div><div class="thumbnailContainer" tooltip="=============== Incremental PCA ==============="><div class="figure" id="id8">
 <a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_incremental_pca.html"><img alt="../../_images/plot_incremental_pca1.png" src="../../_images/plot_incremental_pca1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/decomposition/plot_incremental_pca.html#example-decomposition-plot-incremental-pca-py"><em>Incremental PCA</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_incremental_pca.html#example-decomposition-plot-incremental-pca-py"><span>Incremental PCA</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Principal Component Analysis applied to the Iris dataset."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Principal Component Analysis applied to the Iris dataset."><div class="figure" id="id9">
 <a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_pca_iris.html"><img alt="../../_images/plot_pca_iris1.png" src="../../_images/plot_pca_iris1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_iris.html#example-decomposition-plot-pca-iris-py"><em>PCA example with Iris Data-set</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_iris.html#example-decomposition-plot-pca-iris-py"><span>PCA example with Iris Data-set</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An example of estimating sources from noisy data."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="An example of estimating sources from noisy data."><div class="figure" id="id10">
 <a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_ica_blind_source_separation.html"><img alt="../../_images/plot_ica_blind_source_separation1.png" src="../../_images/plot_ica_blind_source_separation1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/decomposition/plot_ica_blind_source_separation.html#example-decomposition-plot-ica-blind-source-separation-py"><em>Blind source separation using FastICA</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_ica_blind_source_separation.html#example-decomposition-plot-ica-blind-source-separation-py"><span>Blind source separation using FastICA</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example shows that Kernel PCA is able to find a projection of the data that makes data lin..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="This example shows that Kernel PCA is able to find a projection of the data that makes data lin..."><div class="figure" id="id11">
 <a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_kernel_pca.html"><img alt="../../_images/plot_kernel_pca1.png" src="../../_images/plot_kernel_pca1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/decomposition/plot_kernel_pca.html#example-decomposition-plot-kernel-pca-py"><em>Kernel PCA</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_kernel_pca.html#example-decomposition-plot-kernel-pca-py"><span>Kernel PCA</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example illustrates visually in the feature space a comparison by results using two differ..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="This example illustrates visually in the feature space a comparison by results using two differ..."><div class="figure" id="id12">
 <a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_ica_vs_pca.html"><img alt="../../_images/plot_ica_vs_pca1.png" src="../../_images/plot_ica_vs_pca1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/decomposition/plot_ica_vs_pca.html#example-decomposition-plot-ica-vs-pca-py"><em>FastICA on 2D point clouds</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_ica_vs_pca.html#example-decomposition-plot-ica-vs-pca-py"><span>FastICA on 2D point clouds</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="These figures aid in illustrating how a point cloud can be very flat in one direction--which is..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="These figures aid in illustrating how a point cloud can be very flat in one direction--which is..."><div class="figure" id="id13">
 <a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_pca_3d.html"><img alt="../../_images/plot_pca_3d1.png" src="../../_images/plot_pca_3d1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_3d.html#example-decomposition-plot-pca-3d-py"><em>Principal components analysis (PCA)</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_3d.html#example-decomposition-plot-pca-3d-py"><span>Principal components analysis (PCA)</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Probabilistic PCA and Factor Analysis are probabilistic models. The consequence is that the lik..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Probabilistic PCA and Factor Analysis are probabilistic models. The consequence is that the lik..."><div class="figure" id="id14">
 <a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.html"><img alt="../../_images/plot_pca_vs_fa_model_selection1.png" src="../../_images/plot_pca_vs_fa_model_selection1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.html#example-decomposition-plot-pca-vs-fa-model-selection-py"><em>Model selection with Probabilistic PCA and Factor Analysis (FA)</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.html#example-decomposition-plot-pca-vs-fa-model-selection-py"><span>Model selection with Probabilistic PCA and Factor Analysis (FA)</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An illustration of the metric and non-metric MDS on generated noisy data."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="An illustration of the metric and non-metric MDS on generated noisy data."><div class="figure" id="id15">
 <a class="reference external image-reference" href="./../../auto_examples/manifold/plot_mds.html"><img alt="../../_images/plot_mds1.png" src="../../_images/plot_mds1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/manifold/plot_mds.html#example-manifold-plot-mds-py"><em>Multi-dimensional scaling</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/manifold/plot_mds.html#example-manifold-plot-mds-py"><span>Multi-dimensional scaling</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example shows how kernel density estimation (KDE), a powerful non-parametric density estim..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="This example shows how kernel density estimation (KDE), a powerful non-parametric density estim..."><div class="figure" id="id16">
 <a class="reference external image-reference" href="./../../auto_examples/neighbors/plot_digits_kde_sampling.html"><img alt="../../_images/plot_digits_kde_sampling1.png" src="../../_images/plot_digits_kde_sampling1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/neighbors/plot_digits_kde_sampling.html#example-neighbors-plot-digits-kde-sampling-py"><em>Kernel Density Estimation</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/neighbors/plot_digits_kde_sampling.html#example-neighbors-plot-digits-kde-sampling-py"><span>Kernel Density Estimation</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Shows how to use a function transformer in a pipeline. If you know your dataset's first princip..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Shows how to use a function transformer in a pipeline. If you know your dataset's first princip..."><div class="figure" id="id17">
 <a class="reference external image-reference" href="./../../auto_examples/preprocessing/plot_function_transformer.html"><img alt="../../_images/plot_function_transformer1.png" src="../../_images/plot_function_transformer1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/preprocessing/plot_function_transformer.html#example-preprocessing-plot-function-transformer-py"><em>Using FunctionTransformer to select columns</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/preprocessing/plot_function_transformer.html#example-preprocessing-plot-function-transformer-py"><span>Using FunctionTransformer to select columns</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -640,12 +570,8 @@ and n_features is the number of features.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.decomposition.PCA.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.datasets.make_checkerboard.html">Previous
-      </a>
-    </div>
     
      </div>
 

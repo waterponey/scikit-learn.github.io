@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.cross_validation.KFold" href="sklearn.cross_validation.KFold.html" />
-    <link rel="prev" title="sklearn.covariance.oas" href="sklearn.covariance.oas.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,47 +104,10 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.covariance.oas.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.covar...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.covariance.oas
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.covariance</span></tt>.graph_lasso</a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.covariance</span></code>.graph_lasso</a></li>
 </ul>
 
     </div>
@@ -163,15 +123,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-covariance-graph-lasso">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.covariance" title="sklearn.covariance"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.covariance</span></tt></a>.graph_lasso<a class="headerlink" href="#sklearn-covariance-graph-lasso" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.covariance" title="sklearn.covariance"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.covariance</span></code></a>.graph_lasso<a class="headerlink" href="#sklearn-covariance-graph-lasso" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.covariance.graph_lasso">
-<tt class="descclassname">sklearn.covariance.</tt><tt class="descname">graph_lasso</tt><big>(</big><em>emp_cov</em>, <em>alpha</em>, <em>cov_init=None</em>, <em>mode='cd'</em>, <em>tol=0.0001</em>, <em>enet_tol=0.0001</em>, <em>max_iter=100</em>, <em>verbose=False</em>, <em>return_costs=False</em>, <em>eps=2.2204460492503131e-16</em>, <em>return_n_iter=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/covariance/graph_lasso_.py#L81"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.graph_lasso" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.covariance.</code><code class="descname">graph_lasso</code><span class="sig-paren">(</span><em>emp_cov</em>, <em>alpha</em>, <em>cov_init=None</em>, <em>mode='cd'</em>, <em>tol=0.0001</em>, <em>enet_tol=0.0001</em>, <em>max_iter=100</em>, <em>verbose=False</em>, <em>return_costs=False</em>, <em>eps=2.2204460492503131e-16</em>, <em>return_n_iter=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/covariance/graph_lasso_.py#L81"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.graph_lasso" title="Permalink to this definition">¶</a></dt>
 <dd><p>l1-penalized covariance estimator</p>
-<p>Read more in the <a class="reference internal" href="../covariance.html#sparse-inverse-covariance"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../covariance.html#sparse-inverse-covariance"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -256,7 +216,7 @@ each iteration. Returned only if return_costs is True.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.covariance.GraphLasso.html#sklearn.covariance.GraphLasso" title="sklearn.covariance.GraphLasso"><tt class="xref py py-obj docutils literal"><span class="pre">GraphLasso</span></tt></a>, <a class="reference internal" href="sklearn.covariance.GraphLassoCV.html#sklearn.covariance.GraphLassoCV" title="sklearn.covariance.GraphLassoCV"><tt class="xref py py-obj docutils literal"><span class="pre">GraphLassoCV</span></tt></a></p>
+<p class="last"><a class="reference internal" href="sklearn.covariance.GraphLasso.html#sklearn.covariance.GraphLasso" title="sklearn.covariance.GraphLasso"><code class="xref py py-obj docutils literal"><span class="pre">GraphLasso</span></code></a>, <a class="reference internal" href="sklearn.covariance.GraphLassoCV.html#sklearn.covariance.GraphLassoCV" title="sklearn.covariance.GraphLassoCV"><code class="xref py py-obj docutils literal"><span class="pre">GraphLassoCV</span></code></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>The algorithm employed to solve this problem is the GLasso algorithm,
@@ -280,12 +240,8 @@ diagonal coefficients are not penalized.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.covariance.graph_lasso.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.covariance.oas.html">Previous
-      </a>
-    </div>
     
      </div>
 

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cross_validation</span></tt>.cross_val_score</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-cross-val-score">Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.cross_val_score</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cross_validation</span></code>.cross_val_score</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-cross-val-score">Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.cross_val_score</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,15 +166,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-cross-validation-cross-val-score">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></tt></a>.cross_val_score<a class="headerlink" href="#sklearn-cross-validation-cross-val-score" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></code></a>.cross_val_score<a class="headerlink" href="#sklearn-cross-validation-cross-val-score" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.cross_validation.cross_val_score">
-<tt class="descclassname">sklearn.cross_validation.</tt><tt class="descname">cross_val_score</tt><big>(</big><em>estimator</em>, <em>X</em>, <em>y=None</em>, <em>scoring=None</em>, <em>cv=None</em>, <em>n_jobs=1</em>, <em>verbose=0</em>, <em>fit_params=None</em>, <em>pre_dispatch='2*n_jobs'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/cross_validation.py#L1347"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.cross_val_score" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.cross_validation.</code><code class="descname">cross_val_score</code><span class="sig-paren">(</span><em>estimator</em>, <em>X</em>, <em>y=None</em>, <em>scoring=None</em>, <em>cv=None</em>, <em>n_jobs=1</em>, <em>verbose=0</em>, <em>fit_params=None</em>, <em>pre_dispatch='2*n_jobs'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cross_validation.py#L1362"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.cross_val_score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Evaluate a score by cross-validation</p>
-<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -196,7 +196,7 @@ supervised learning.</p>
 <blockquote>
 <div><p>A string (see model evaluation documentation) or
 a scorer callable object / function with signature
-<tt class="docutils literal"><span class="pre">scorer(estimator,</span> <span class="pre">X,</span> <span class="pre">y)</span></tt>.</p>
+<code class="docutils literal"><span class="pre">scorer(estimator,</span> <span class="pre">X,</span> <span class="pre">y)</span></code>.</p>
 </div></blockquote>
 <p><strong>cv</strong> : int, cross-validation generator or an iterable, optional</p>
 <blockquote>
@@ -210,10 +210,10 @@ Possible inputs for cv are:</p>
 <li>An iterable yielding train/test splits.</li>
 </ul>
 </div></blockquote>
-<p>For integer/None inputs, if <tt class="docutils literal"><span class="pre">y</span></tt> is binary or multiclass,
-<a class="reference internal" href="sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><tt class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></tt></a> used. If the estimator is a classifier
-or if <tt class="docutils literal"><span class="pre">y</span></tt> is neither binary nor multiclass, <a class="reference internal" href="sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt></a> is used.</p>
-<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a> for the various
+<p>For integer/None inputs, if <code class="docutils literal"><span class="pre">y</span></code> is binary or multiclass,
+<a class="reference internal" href="sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><code class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></code></a> used. If the estimator is a classifier
+or if <code class="docutils literal"><span class="pre">y</span></code> is neither binary nor multiclass, <a class="reference internal" href="sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><code class="xref py py-class docutils literal"><span class="pre">KFold</span></code></a> is used.</p>
+<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a> for the various
 cross-validation strategies that can be used here.</p>
 </div></blockquote>
 <p><strong>n_jobs</strong> : integer, optional</p>
@@ -261,30 +261,34 @@ as in &#8216;2*n_jobs&#8217;</li>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-cross-validation-cross-val-score">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.cross_val_score</span></tt><a class="headerlink" href="#examples-using-sklearn-cross-validation-cross-val-score" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example shows that imputing the missing values can give better results than discarding the..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.cross_val_score</span></code><a class="headerlink" href="#examples-using-sklearn-cross-validation-cross-val-score" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example shows that imputing the missing values can give better results than discarding the..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/./missing_values.html"><img alt="../../_images/missing_values1.png" src="../../_images/missing_values1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/missing_values.html#example-missing-values-py"><em>Imputing missing values before building an estimator</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/missing_values.html#example-missing-values-py"><span>Imputing missing values before building an estimator</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Probabilistic PCA and Factor Analysis are probabilistic models. The consequence is that the lik..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Probabilistic PCA and Factor Analysis are probabilistic models. The consequence is that the lik..."><div class="figure" id="id2">
 <a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.html"><img alt="../../_images/plot_pca_vs_fa_model_selection1.png" src="../../_images/plot_pca_vs_fa_model_selection1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.html#example-decomposition-plot-pca-vs-fa-model-selection-py"><em>Model selection with Probabilistic PCA and Factor Analysis (FA)</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_pca_vs_fa_model_selection.html#example-decomposition-plot-pca-vs-fa-model-selection-py"><span>Model selection with Probabilistic PCA and Factor Analysis (FA)</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A tutorial exercise using Cross-validation with an SVM on the Digits dataset."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="A tutorial exercise using Cross-validation with an SVM on the Digits dataset."><div class="figure" id="id3">
 <a class="reference external image-reference" href="./../../auto_examples/exercises/plot_cv_digits.html"><img alt="../../_images/plot_cv_digits1.png" src="../../_images/plot_cv_digits1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/exercises/plot_cv_digits.html#example-exercises-plot-cv-digits-py"><em>Cross-validation on Digits Dataset Exercise</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/exercises/plot_cv_digits.html#example-exercises-plot-cv-digits-py"><span>Cross-validation on Digits Dataset Exercise</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A tutorial exercise which uses cross-validation with linear models."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="A tutorial exercise which uses cross-validation with linear models."><div class="figure" id="id4">
 <a class="reference external image-reference" href="./../../auto_examples/exercises/plot_cv_diabetes.html"><img alt="../../_images/plot_cv_diabetes1.png" src="../../_images/plot_cv_diabetes1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/exercises/plot_cv_diabetes.html#example-exercises-plot-cv-diabetes-py"><em>Cross-validation on diabetes Dataset Exercise</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/exercises/plot_cv_diabetes.html#example-exercises-plot-cv-diabetes-py"><span>Cross-validation on diabetes Dataset Exercise</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example demonstrates the problems of underfitting and overfitting and how we can use linea..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="In this example, we fit a Gaussian Process model onto the diabetes dataset."><div class="figure" id="id5">
+<a class="reference external image-reference" href="./../../auto_examples/gaussian_process/gp_diabetes_dataset.html"><img alt="../../_images/gp_diabetes_dataset1.png" src="../../_images/gp_diabetes_dataset1.png" /></a>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/gaussian_process/gp_diabetes_dataset.html#example-gaussian-process-gp-diabetes-dataset-py"><span>Gaussian Processes regression: goodness-of-fit on the &#8216;diabetes&#8217; dataset</span></a></span></p>
+</div>
+</div><div class="thumbnailContainer" tooltip="This example demonstrates the problems of underfitting and overfitting and how we can use linea..."><div class="figure" id="id6">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_underfitting_overfitting.html"><img alt="../../_images/plot_underfitting_overfitting1.png" src="../../_images/plot_underfitting_overfitting1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_underfitting_overfitting.html#example-model-selection-plot-underfitting-overfitting-py"><em>Underfitting vs. Overfitting</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_underfitting_overfitting.html#example-model-selection-plot-underfitting-overfitting-py"><span>Underfitting vs. Overfitting</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example shows how to perform univariate feature before running a SVC (support vector class..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="This example shows how to perform univariate feature before running a SVC (support vector class..."><div class="figure" id="id7">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_svm_anova.html"><img alt="../../_images/plot_svm_anova1.png" src="../../_images/plot_svm_anova1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_svm_anova.html#example-svm-plot-svm-anova-py"><em>SVM-Anova: SVM with univariate feature selection</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_svm_anova.html#example-svm-plot-svm-anova-py"><span>SVM-Anova: SVM with univariate feature selection</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

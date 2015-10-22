@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="confusion-matrix">
 <span id="example-model-selection-plot-confusion-matrix-py"></span><h1>Confusion matrix<a class="headerlink" href="#confusion-matrix" title="Permalink to this headline">¶</a></h1>
@@ -182,25 +182,8 @@ visual interpretation of which class is being misclassified.</p>
 <p>Here the results are not as good as they could be as our
 choice for the regularization parameter C was not the best.
 In real life applications this parameter is usually chosen
-using <a class="reference internal" href="../../modules/grid_search.html#grid-search"><em>Grid Search: Searching for estimator parameters</em></a>.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_confusion_matrix_001.png"><img alt="../../_images/plot_confusion_matrix_001.png" src="../../_images/plot_confusion_matrix_001.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_confusion_matrix_002.png"><img alt="../../_images/plot_confusion_matrix_002.png" src="../../_images/plot_confusion_matrix_002.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-</ul>
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Confusion matrix, without normalization
-[[13  0  0]
- [ 0 10  6]
- [ 0  0  9]]
-Normalized confusion matrix
-[[ 1.    0.    0.  ]
- [ 0.    0.62  0.38]
- [ 0.    0.    1.  ]]
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_confusion_matrix.py"><tt class="xref download docutils literal"><span class="pre">plot_confusion_matrix.py</span></tt></a></p>
+using <a class="reference internal" href="../../modules/grid_search.html#grid-search"><span>Grid Search: Searching for estimator parameters</span></a>.</p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_confusion_matrix.py"><code class="xref download docutils literal"><span class="pre">plot_confusion_matrix.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -255,8 +238,6 @@ Normalized confusion matrix
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.38 seconds
-( 0 minutes  0.38 seconds)</p>
 </div>
 
 

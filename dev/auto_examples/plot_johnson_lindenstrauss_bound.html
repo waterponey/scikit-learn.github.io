@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -168,7 +168,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="the-johnson-lindenstrauss-bound-for-embedding-with-random-projections">
 <span id="example-plot-johnson-lindenstrauss-bound-py"></span><h1>The Johnson-Lindenstrauss bound for embedding with random projections<a class="headerlink" href="#the-johnson-lindenstrauss-bound-for-embedding-with-random-projections" title="Permalink to this headline">¶</a></h1>
@@ -189,12 +189,12 @@ with shape [n_components, n_features] (or a sparse Achlioptas matrix).</p>
 given by:</p>
 <div class="math">
 <p><img src="../_images/math/8e616d45ff825ef696e70ed1394729f97dc155d3.png" alt="n\_components &gt;= 4 log(n\_samples) / (eps^2 / 2 - eps^3 / 3)"/></p>
-</div><p>The first plot shows that with an increasing number of samples <tt class="docutils literal"><span class="pre">n_samples</span></tt>,
-the minimal number of dimensions <tt class="docutils literal"><span class="pre">n_components</span></tt> increased logarithmically
-in order to guarantee an <tt class="docutils literal"><span class="pre">eps</span></tt>-embedding.</p>
+</div><p>The first plot shows that with an increasing number of samples <code class="docutils literal"><span class="pre">n_samples</span></code>,
+the minimal number of dimensions <code class="docutils literal"><span class="pre">n_components</span></code> increased logarithmically
+in order to guarantee an <code class="docutils literal"><span class="pre">eps</span></code>-embedding.</p>
 <p>The second plot shows that an increase of the admissible
-distortion <tt class="docutils literal"><span class="pre">eps</span></tt> allows to reduce drastically the minimal number of
-dimensions <tt class="docutils literal"><span class="pre">n_components</span></tt> for a given number of samples <tt class="docutils literal"><span class="pre">n_samples</span></tt></p>
+distortion <code class="docutils literal"><span class="pre">eps</span></code> allows to reduce drastically the minimal number of
+dimensions <code class="docutils literal"><span class="pre">n_components</span></code> for a given number of samples <code class="docutils literal"><span class="pre">n_samples</span></code></p>
 </div>
 <div class="section" id="empirical-validation">
 <h2>Empirical validation<a class="headerlink" href="#empirical-validation" title="Permalink to this headline">¶</a></h2>
@@ -203,22 +203,22 @@ text document (TF-IDF word frequencies) dataset:</p>
 <ul class="simple">
 <li>for the digits dataset, some 8x8 gray level pixels data for 500
 handwritten digits pictures are randomly projected to spaces for various
-larger number of dimensions <tt class="docutils literal"><span class="pre">n_components</span></tt>.</li>
+larger number of dimensions <code class="docutils literal"><span class="pre">n_components</span></code>.</li>
 <li>for the 20 newsgroups dataset some 500 documents with 100k
 features in total are projected using a sparse random matrix to smaller
 euclidean spaces with various values for the target number of dimensions
-<tt class="docutils literal"><span class="pre">n_components</span></tt>.</li>
+<code class="docutils literal"><span class="pre">n_components</span></code>.</li>
 </ul>
 <p>The default dataset is the digits dataset. To run the example on the twenty
 newsgroups dataset, pass the &#8211;twenty-newsgroups command line argument to this
 script.</p>
-<p>For each value of <tt class="docutils literal"><span class="pre">n_components</span></tt>, we plot:</p>
+<p>For each value of <code class="docutils literal"><span class="pre">n_components</span></code>, we plot:</p>
 <ul class="simple">
 <li>2D distribution of sample pairs with pairwise distances in original
 and projected spaces as x and y axis respectively.</li>
 <li>1D histogram of the ratio of those distances (projected / original).</li>
 </ul>
-<p>We can see that for low values of <tt class="docutils literal"><span class="pre">n_components</span></tt> the distribution is wide
+<p>We can see that for low values of <code class="docutils literal"><span class="pre">n_components</span></code> the distribution is wide
 with many distorted pairs and a skewed distribution (due to the hard
 limit of zero ratio on the left as distances are always positives)
 while for larger values of n_components the distortion is controlled
@@ -234,38 +234,7 @@ in the input space does not make sense: it does not allow for dimensionality
 reduction in this case.</p>
 <p>On the twenty newsgroups on the other hand the dimensionality can be decreased
 from 56436 down to 10000 while reasonably preserving pairwise distances.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../_images/plot_johnson_lindenstrauss_bound_001.png"><img alt="../_images/plot_johnson_lindenstrauss_bound_001.png" src="../_images/plot_johnson_lindenstrauss_bound_001.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../_images/plot_johnson_lindenstrauss_bound_002.png"><img alt="../_images/plot_johnson_lindenstrauss_bound_002.png" src="../_images/plot_johnson_lindenstrauss_bound_002.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../_images/plot_johnson_lindenstrauss_bound_003.png"><img alt="../_images/plot_johnson_lindenstrauss_bound_003.png" src="../_images/plot_johnson_lindenstrauss_bound_003.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../_images/plot_johnson_lindenstrauss_bound_004.png"><img alt="../_images/plot_johnson_lindenstrauss_bound_004.png" src="../_images/plot_johnson_lindenstrauss_bound_004.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../_images/plot_johnson_lindenstrauss_bound_005.png"><img alt="../_images/plot_johnson_lindenstrauss_bound_005.png" src="../_images/plot_johnson_lindenstrauss_bound_005.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../_images/plot_johnson_lindenstrauss_bound_006.png"><img alt="../_images/plot_johnson_lindenstrauss_bound_006.png" src="../_images/plot_johnson_lindenstrauss_bound_006.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../_images/plot_johnson_lindenstrauss_bound_007.png"><img alt="../_images/plot_johnson_lindenstrauss_bound_007.png" src="../_images/plot_johnson_lindenstrauss_bound_007.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../_images/plot_johnson_lindenstrauss_bound_008.png"><img alt="../_images/plot_johnson_lindenstrauss_bound_008.png" src="../_images/plot_johnson_lindenstrauss_bound_008.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-</ul>
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Embedding 500 samples with dim 64 using various random projections
-Projected 500 samples from 64 to 300 in 0.009s
-Random matrix with size: 0.028MB
-Mean distances rate: 0.96 (0.08)
-Projected 500 samples from 64 to 1000 in 0.025s
-Random matrix with size: 0.097MB
-Mean distances rate: 1.02 (0.05)
-Projected 500 samples from 64 to 10000 in 0.257s
-Random matrix with size: 0.962MB
-Mean distances rate: 0.99 (0.01)
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_johnson_lindenstrauss_bound.py"><tt class="xref download docutils literal"><span class="pre">plot_johnson_lindenstrauss_bound.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_johnson_lindenstrauss_bound.py"><code class="xref download docutils literal"><span class="pre">plot_johnson_lindenstrauss_bound.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">sys</span>
@@ -376,8 +345,6 @@ Mean distances rate: 0.99 (0.01)
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  9.97 seconds
-( 0 minutes  9.97 seconds)</p>
 </div>
 </div>
 

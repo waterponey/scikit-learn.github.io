@@ -37,7 +37,7 @@
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
     <link rel="next" title="Selecting the number of clusters with silhouette analysis on KMeans clustering" href="plot_kmeans_silhouette_analysis.html" />
-    <link rel="prev" title="Adjustment for chance in clustering performance evaluation" href="plot_adjusted_for_chance_measures.html" />
+    <link rel="prev" title="Comparing different clustering algorithms on toy datasets" href="plot_cluster_comparison.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_adjusted_for_chance_measures.html"
+        <a href="plot_cluster_comparison.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Adjustment fo...
+        Comparing dif...
         </span>
             <span class="hiddenrellink">
-            Adjustment for chance in clustering performance evaluation
+            Comparing different clustering algorithms on toy datasets
             </span>
         </a>
         </div>
@@ -163,19 +163,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="comparison-of-the-k-means-and-minibatchkmeans-clustering-algorithms">
 <span id="example-cluster-plot-mini-batch-kmeans-py"></span><h1>Comparison of the K-Means and MiniBatchKMeans clustering algorithms<a class="headerlink" href="#comparison-of-the-k-means-and-minibatchkmeans-clustering-algorithms" title="Permalink to this headline">¶</a></h1>
 <p>We want to compare the performance of the MiniBatchKMeans and KMeans:
 the MiniBatchKMeans is faster, but gives slightly different results (see
-<a class="reference internal" href="../../modules/clustering.html#mini-batch-kmeans"><em>Mini Batch K-Means</em></a>).</p>
+<a class="reference internal" href="../../modules/clustering.html#mini-batch-kmeans"><span>Mini Batch K-Means</span></a>).</p>
 <p>We will cluster a set of data, first with KMeans and then with
 MiniBatchKMeans, and plot the results.
 We will also plot the points that are labelled differently between the two
 algorithms.</p>
-<img alt="../../_images/plot_mini_batch_kmeans_001.png" class="align-center" src="../../_images/plot_mini_batch_kmeans_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_mini_batch_kmeans.py"><tt class="xref download docutils literal"><span class="pre">plot_mini_batch_kmeans.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_mini_batch_kmeans.py"><code class="xref download docutils literal"><span class="pre">plot_mini_batch_kmeans.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">time</span>
@@ -282,8 +281,6 @@ algorithms.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.66 seconds
-( 0 minutes  0.66 seconds)</p>
 </div>
 
 
@@ -301,7 +298,7 @@ algorithms.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_adjusted_for_chance_measures.html">Previous
+      <a href="plot_cluster_comparison.html">Previous
       </a>
     </div>
     

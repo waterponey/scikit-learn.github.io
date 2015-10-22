@@ -24,18 +24,8 @@ error stabilizes.
 
 
 
-
-.. image:: images/plot_ensemble_oob_001.png
-    :align: center
-
-
-
-
 **Python source code:** :download:`plot_ensemble_oob.py <plot_ensemble_oob.py>`
 
 .. literalinclude:: plot_ensemble_oob.py
     :lines: 22-
-
-**Total running time of the example:**  20.65 seconds
-( 0 minutes  20.65 seconds)
     

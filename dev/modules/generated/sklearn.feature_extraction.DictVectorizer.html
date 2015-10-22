@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.feature_extraction.FeatureHasher" href="sklearn.feature_extraction.FeatureHasher.html" />
-    <link rel="prev" title="sklearn.exceptions.UndefinedMetricWarning" href="sklearn.exceptions.UndefinedMetricWarning.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.exceptions.UndefinedMetricWarning.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.excep...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.exceptions.UndefinedMetricWarning
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.feature_extraction</span></tt>.DictVectorizer</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-feature-extraction-dictvectorizer">Examples using <tt class="docutils literal"><span class="pre">sklearn.feature_extraction.DictVectorizer</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.feature_extraction</span></code>.DictVectorizer</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-feature-extraction-dictvectorizer">Examples using <code class="docutils literal"><span class="pre">sklearn.feature_extraction.DictVectorizer</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,13 +126,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-feature-extraction-dictvectorizer">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_extraction" title="sklearn.feature_extraction"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction</span></tt></a>.DictVectorizer<a class="headerlink" href="#sklearn-feature-extraction-dictvectorizer" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_extraction" title="sklearn.feature_extraction"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction</span></code></a>.DictVectorizer<a class="headerlink" href="#sklearn-feature-extraction-dictvectorizer" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.feature_extraction.DictVectorizer">
-<em class="property">class </em><tt class="descclassname">sklearn.feature_extraction.</tt><tt class="descname">DictVectorizer</tt><big>(</big><em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>separator='='</em>, <em>sparse=True</em>, <em>sort=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/feature_extraction/dict_vectorizer.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.feature_extraction.</code><code class="descname">DictVectorizer</code><span class="sig-paren">(</span><em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>separator='='</em>, <em>sparse=True</em>, <em>sort=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/dict_vectorizer.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transforms lists of feature-value mappings to vectors.</p>
 <p>This transformer turns lists of mappings (dict-like objects) of feature
 names to feature values into Numpy arrays or scipy.sparse matrices for use
@@ -184,7 +144,7 @@ a feature &#8220;f&#8221; that can take on the values &#8220;ham&#8221; and &#82
 features in the output, one signifying &#8220;f=ham&#8221;, the other &#8220;f=spam&#8221;.</p>
 <p>Features that do not occur in a sample (mapping) will have a zero value
 in the resulting array/matrix.</p>
-<p>Read more in the <a class="reference internal" href="../feature_extraction.html#dict-feature-extraction"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../feature_extraction.html#dict-feature-extraction"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -206,7 +166,7 @@ True by default.</p>
 </div></blockquote>
 <p><strong>sort: boolean, optional.</strong> :</p>
 <blockquote>
-<div><p>Whether <tt class="docutils literal"><span class="pre">feature_names_</span></tt> and <tt class="docutils literal"><span class="pre">vocabulary_</span></tt> should be sorted when fitting.
+<div><p>Whether <code class="docutils literal"><span class="pre">feature_names_</span></code> and <code class="docutils literal"><span class="pre">vocabulary_</span></code> should be sorted when fitting.
 True by default.</p>
 </div></blockquote>
 </td>
@@ -227,9 +187,9 @@ and &#8220;f=spam&#8221;).</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.feature_extraction.FeatureHasher.html#sklearn.feature_extraction.FeatureHasher" title="sklearn.feature_extraction.FeatureHasher"><tt class="xref py py-obj docutils literal"><span class="pre">FeatureHasher</span></tt></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_extraction.FeatureHasher.html#sklearn.feature_extraction.FeatureHasher" title="sklearn.feature_extraction.FeatureHasher"><code class="xref py py-obj docutils literal"><span class="pre">FeatureHasher</span></code></a></dt>
 <dd>performs vectorization using only a hash function.</dd>
-<dt><a class="reference internal" href="sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="sklearn.preprocessing.OneHotEncoder"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.preprocessing.OneHotEncoder</span></tt></a></dt>
+<dt><a class="reference internal" href="sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="sklearn.preprocessing.OneHotEncoder"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.preprocessing.OneHotEncoder</span></code></a></dt>
 <dd>handles nominal/categorical features encoded as columns of integers.</dd>
 </dl>
 </div>
@@ -254,40 +214,16 @@ and &#8220;f=spam&#8221;).</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_extraction.DictVectorizer.fit" title="sklearn.feature_extraction.DictVectorizer.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
-<td>Learn a list of feature name -&gt; indices mappings.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_extraction.DictVectorizer.fit_transform" title="sklearn.feature_extraction.DictVectorizer.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
-<td>Learn a list of feature name -&gt; indices mappings and transform X.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_extraction.DictVectorizer.get_feature_names" title="sklearn.feature_extraction.DictVectorizer.get_feature_names"><tt class="xref py py-obj docutils literal"><span class="pre">get_feature_names</span></tt></a>()</td>
-<td>Returns a list of feature names, ordered by their indices.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_extraction.DictVectorizer.get_params" title="sklearn.feature_extraction.DictVectorizer.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_extraction.DictVectorizer.inverse_transform" title="sklearn.feature_extraction.DictVectorizer.inverse_transform"><tt class="xref py py-obj docutils literal"><span class="pre">inverse_transform</span></tt></a>(X[,&nbsp;dict_type])</td>
-<td>Transform array or sparse matrix X back to feature mappings.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_extraction.DictVectorizer.restrict" title="sklearn.feature_extraction.DictVectorizer.restrict"><tt class="xref py py-obj docutils literal"><span class="pre">restrict</span></tt></a>(support[,&nbsp;indices])</td>
-<td>Restrict the features to those in support using feature selection.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_extraction.DictVectorizer.set_params" title="sklearn.feature_extraction.DictVectorizer.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_extraction.DictVectorizer.transform" title="sklearn.feature_extraction.DictVectorizer.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X[,&nbsp;y])</td>
-<td>Transform feature-&gt;value dicts to array or sparse matrix.</td>
-</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>separator='='</em>, <em>sparse=True</em>, <em>sort=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/feature_extraction/dict_vectorizer.py#L91"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>separator='='</em>, <em>sparse=True</em>, <em>sort=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/dict_vectorizer.py#L91"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/feature_extraction/dict_vectorizer.py#L98"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/dict_vectorizer.py#L98"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Learn a list of feature name -&gt; indices mappings.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -310,7 +246,7 @@ objects) to feature values (strings or convertible to dtype).</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/feature_extraction/dict_vectorizer.py#L208"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.fit_transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/dict_vectorizer.py#L208"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Learn a list of feature name -&gt; indices mappings and transform X.</p>
 <p>Like fit(X) followed by transform(X), but does not require
 materializing X in memory.</p>
@@ -338,7 +274,7 @@ objects) to feature values (strings or convertible to dtype).</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.get_feature_names">
-<tt class="descname">get_feature_names</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/feature_extraction/dict_vectorizer.py#L308"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.get_feature_names" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_feature_names</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/dict_vectorizer.py#L308"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.get_feature_names" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a list of feature names, ordered by their indices.</p>
 <p>If one-of-K coding is applied to categorical features, this will
 include the constructed feature names but not the original ones.</p>
@@ -346,7 +282,7 @@ include the constructed feature names but not the original ones.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -371,7 +307,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.inverse_transform">
-<tt class="descname">inverse_transform</tt><big>(</big><em>X</em>, <em>dict_type=&lt;type 'dict'&gt;</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/feature_extraction/dict_vectorizer.py#L228"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em>, <em>dict_type=&lt;type 'dict'&gt;</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/dict_vectorizer.py#L228"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform array or sparse matrix X back to feature mappings.</p>
 <p>X must have been produced by this DictVectorizer&#8217;s transform or
 fit_transform method; it may only have passed through transformers
@@ -405,7 +341,7 @@ collections.Mapping API.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.restrict">
-<tt class="descname">restrict</tt><big>(</big><em>support</em>, <em>indices=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/feature_extraction/dict_vectorizer.py#L316"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.restrict" title="Permalink to this definition">¶</a></dt>
+<code class="descname">restrict</code><span class="sig-paren">(</span><em>support</em>, <em>indices=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/dict_vectorizer.py#L316"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.restrict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Restrict the features to those in support using feature selection.</p>
 <p>This function modifies the estimator in-place.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -448,11 +384,11 @@ member of feature selectors).</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -466,7 +402,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.transform">
-<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/feature_extraction/dict_vectorizer.py#L269"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/dict_vectorizer.py#L269"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform feature-&gt;value dicts to array or sparse matrix.</p>
 <p>Named features not encountered during fit or fit_transform will be
 silently ignored.</p>
@@ -495,14 +431,14 @@ objects) to feature values (strings or convertible to dtype).</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-feature-extraction-dictvectorizer">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.feature_extraction.DictVectorizer</span></tt><a class="headerlink" href="#examples-using-sklearn-feature-extraction-dictvectorizer" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Datasets can often contain components of that require different feature extraction and processi..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.feature_extraction.DictVectorizer</span></code><a class="headerlink" href="#examples-using-sklearn-feature-extraction-dictvectorizer" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Datasets can often contain components of that require different feature extraction and processi..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/./hetero_feature_union.html"><img alt="../../_images/hetero_feature_union1.png" src="../../_images/hetero_feature_union1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/hetero_feature_union.html#example-hetero-feature-union-py"><em>Feature Union with Heterogeneous Data Sources</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/hetero_feature_union.html#example-hetero-feature-union-py"><span>Feature Union with Heterogeneous Data Sources</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Compares FeatureHasher and DictVectorizer by using both to vectorize text documents."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Compares FeatureHasher and DictVectorizer by using both to vectorize text documents."><div class="figure" id="id2">
 <a class="reference external image-reference" href="./../../auto_examples/text/hashing_vs_dict_vectorizer.html"><img alt="../../_images/hashing_vs_dict_vectorizer1.png" src="../../_images/hashing_vs_dict_vectorizer1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/text/hashing_vs_dict_vectorizer.html#example-text-hashing-vs-dict-vectorizer-py"><em>FeatureHasher and DictVectorizer Comparison</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/text/hashing_vs_dict_vectorizer.html#example-text-hashing-vs-dict-vectorizer-py"><span>FeatureHasher and DictVectorizer Comparison</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -519,12 +455,8 @@ objects) to feature values (strings or convertible to dtype).</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.feature_extraction.DictVectorizer.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.exceptions.UndefinedMetricWarning.html">Previous
-      </a>
-    </div>
     
      </div>
 

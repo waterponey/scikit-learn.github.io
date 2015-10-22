@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,15 +163,14 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="pipelining-chaining-a-pca-and-a-logistic-regression">
 <span id="example-plot-digits-pipe-py"></span><h1>Pipelining: chaining a PCA and a logistic regression<a class="headerlink" href="#pipelining-chaining-a-pca-and-a-logistic-regression" title="Permalink to this headline">¶</a></h1>
 <p>The PCA does an unsupervised dimensionality reduction, while the logistic
 regression does the prediction.</p>
 <p>We use a GridSearchCV to set the dimensionality of the PCA</p>
-<img alt="../_images/plot_digits_pipe_001.png" class="align-center" src="../_images/plot_digits_pipe_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_digits_pipe.py"><tt class="xref download docutils literal"><span class="pre">plot_digits_pipe.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_digits_pipe.py"><code class="xref download docutils literal"><span class="pre">plot_digits_pipe.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 
@@ -227,8 +226,6 @@ regression does the prediction.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  20.95 seconds
-( 0 minutes  20.95 seconds)</p>
 </div>
 
 

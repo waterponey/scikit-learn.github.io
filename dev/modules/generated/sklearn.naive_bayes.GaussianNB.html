@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.naive_bayes</span></tt>.GaussianNB</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-naive-bayes-gaussiannb">Examples using <tt class="docutils literal"><span class="pre">sklearn.naive_bayes.GaussianNB</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.naive_bayes</span></code>.GaussianNB</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-naive-bayes-gaussiannb">Examples using <code class="docutils literal"><span class="pre">sklearn.naive_bayes.GaussianNB</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,20 +166,20 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-naive-bayes-gaussiannb">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.naive_bayes" title="sklearn.naive_bayes"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.naive_bayes</span></tt></a>.GaussianNB<a class="headerlink" href="#sklearn-naive-bayes-gaussiannb" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.naive_bayes" title="sklearn.naive_bayes"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.naive_bayes</span></code></a>.GaussianNB<a class="headerlink" href="#sklearn-naive-bayes-gaussiannb" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.naive_bayes.GaussianNB">
-<em class="property">class </em><tt class="descclassname">sklearn.naive_bayes.</tt><tt class="descname">GaussianNB</tt><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L106"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.naive_bayes.</code><code class="descname">GaussianNB</code><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L106"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gaussian Naive Bayes (GaussianNB)</p>
 <p>Can perform online updates to model parameters via <cite>partial_fit</cite> method.
 For details on algorithm used to update feature means and variance online,
 see Stanford CS tech report STAN-CS-79-773 by Chan, Golub, and LeVeque:</p>
 <blockquote>
 <div><a class="reference external" href="http://i.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf">http://i.stanford.edu/pub/cstr/reports/cs/tr/79/773/CS-TR-79-773.pdf</a></div></blockquote>
-<p>Read more in the <a class="reference internal" href="../naive_bayes.html#gaussian-naive-bayes"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../naive_bayes.html#gaussian-naive-bayes"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -228,41 +228,32 @@ see Stanford CS tech report STAN-CS-79-773 by Chan, Golub, and LeVeque:</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.fit" title="sklearn.naive_bayes.GaussianNB.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.fit" title="sklearn.naive_bayes.GaussianNB.fit"><code class="xref py py-obj docutils literal"><span class="pre">fit</span></code></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
 <td>Fit Gaussian Naive Bayes according to X, y</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.get_params" title="sklearn.naive_bayes.GaussianNB.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.partial_fit" title="sklearn.naive_bayes.GaussianNB.partial_fit"><tt class="xref py py-obj docutils literal"><span class="pre">partial_fit</span></tt></a>(X,&nbsp;y[,&nbsp;classes,&nbsp;sample_weight])</td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.partial_fit" title="sklearn.naive_bayes.GaussianNB.partial_fit"><code class="xref py py-obj docutils literal"><span class="pre">partial_fit</span></code></a>(X,&nbsp;y[,&nbsp;classes,&nbsp;sample_weight])</td>
 <td>Incremental fit on a batch of samples.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.predict" title="sklearn.naive_bayes.GaussianNB.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.predict" title="sklearn.naive_bayes.GaussianNB.predict"><code class="xref py py-obj docutils literal"><span class="pre">predict</span></code></a>(X)</td>
 <td>Perform classification on an array of test vectors X.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.predict_log_proba" title="sklearn.naive_bayes.GaussianNB.predict_log_proba"><tt class="xref py py-obj docutils literal"><span class="pre">predict_log_proba</span></tt></a>(X)</td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.predict_log_proba" title="sklearn.naive_bayes.GaussianNB.predict_log_proba"><code class="xref py py-obj docutils literal"><span class="pre">predict_log_proba</span></code></a>(X)</td>
 <td>Return log-probability estimates for the test vector X.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.predict_proba" title="sklearn.naive_bayes.GaussianNB.predict_proba"><tt class="xref py py-obj docutils literal"><span class="pre">predict_proba</span></tt></a>(X)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.predict_proba" title="sklearn.naive_bayes.GaussianNB.predict_proba"><code class="xref py py-obj docutils literal"><span class="pre">predict_proba</span></code></a>(X)</td>
 <td>Return probability estimates for the test vector X.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.score" title="sklearn.naive_bayes.GaussianNB.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
-<td>Returns the mean accuracy on the given test data and labels.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.GaussianNB.set_params" title="sklearn.naive_bayes.GaussianNB.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.naive_bayes.GaussianNB.__init__">
-<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>x.__init__(...) initializes x; see help(type(x)) for signature</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.GaussianNB.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L150"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L150"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit Gaussian Naive Bayes according to X, y</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -295,7 +286,7 @@ and n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.GaussianNB.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -320,7 +311,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.GaussianNB.partial_fit">
-<tt class="descname">partial_fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>classes=None</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L249"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.partial_fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">partial_fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>classes=None</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L249"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.partial_fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Incremental fit on a batch of samples.</p>
 <p>This method is expected to be called several times consecutively
 on different chunks of a dataset so as to implement out-of-core
@@ -368,7 +359,7 @@ in subsequent calls.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.GaussianNB.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L52"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.predict" title="Permalink to this definition">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L52"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform classification on an array of test vectors X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -389,7 +380,7 @@ in subsequent calls.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.GaussianNB.predict_log_proba">
-<tt class="descname">predict_log_proba</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L68"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.predict_log_proba" title="Permalink to this definition">¶</a></dt>
+<code class="descname">predict_log_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L68"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.predict_log_proba" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return log-probability estimates for the test vector X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -412,7 +403,7 @@ order, as they appear in the attribute <cite>classes_</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.GaussianNB.predict_proba">
-<tt class="descname">predict_proba</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L88"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.predict_proba" title="Permalink to this definition">¶</a></dt>
+<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L88"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.predict_proba" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return probability estimates for the test vector X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -435,7 +426,7 @@ order, as they appear in the attribute <cite>classes_</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.GaussianNB.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L292"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.score" title="Permalink to this definition">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L285"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -470,11 +461,11 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.GaussianNB.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.GaussianNB.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -489,30 +480,30 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-naive-bayes-gaussiannb">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.naive_bayes.GaussianNB</span></tt><a class="headerlink" href="#examples-using-sklearn-naive-bayes-gaussiannb" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Well calibrated classifiers are probabilistic classifiers for which the output of the predict_p..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.naive_bayes.GaussianNB</span></code><a class="headerlink" href="#examples-using-sklearn-naive-bayes-gaussiannb" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Well calibrated classifiers are probabilistic classifiers for which the output of the predict_p..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/calibration/plot_compare_calibration.html"><img alt="../../_images/plot_compare_calibration1.png" src="../../_images/plot_compare_calibration1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/calibration/plot_compare_calibration.html#example-calibration-plot-compare-calibration-py"><em>Comparison of Calibration of Classifiers</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/calibration/plot_compare_calibration.html#example-calibration-plot-compare-calibration-py"><span>Comparison of Calibration of Classifiers</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="When performing classification one often wants to predict not only the class label, but also th..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="When performing classification one often wants to predict not only the class label, but also th..."><div class="figure" id="id2">
 <a class="reference external image-reference" href="./../../auto_examples/calibration/plot_calibration_curve.html"><img alt="../../_images/plot_calibration_curve1.png" src="../../_images/plot_calibration_curve1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_curve.html#example-calibration-plot-calibration-curve-py"><em>Probability Calibration curves</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_curve.html#example-calibration-plot-calibration-curve-py"><span>Probability Calibration curves</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="When performing classification you often want to predict not only the class label, but also the..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="When performing classification you often want to predict not only the class label, but also the..."><div class="figure" id="id3">
 <a class="reference external image-reference" href="./../../auto_examples/calibration/plot_calibration.html"><img alt="../../_images/plot_calibration1.png" src="../../_images/plot_calibration1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration.html#example-calibration-plot-calibration-py"><em>Probability calibration of classifiers</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration.html#example-calibration-plot-calibration-py"><span>Probability calibration of classifiers</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A comparison of a several classifiers in scikit-learn on synthetic datasets. The point of this ..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="A comparison of a several classifiers in scikit-learn on synthetic datasets. The point of this ..."><div class="figure" id="id4">
 <a class="reference external image-reference" href="./../../auto_examples/classification/plot_classifier_comparison.html"><img alt="../../_images/plot_classifier_comparison1.png" src="../../_images/plot_classifier_comparison1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/classification/plot_classifier_comparison.html#example-classification-plot-classifier-comparison-py"><em>Classifier comparison</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/classification/plot_classifier_comparison.html#example-classification-plot-classifier-comparison-py"><span>Classifier comparison</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Plot the class probabilities of the first sample in a toy dataset predicted by three different ..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Plot the class probabilities of the first sample in a toy dataset predicted by three different ..."><div class="figure" id="id5">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_voting_probas.html"><img alt="../../_images/plot_voting_probas1.png" src="../../_images/plot_voting_probas1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_voting_probas.html#example-ensemble-plot-voting-probas-py"><em>Plot class probabilities calculated by the VotingClassifier</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_voting_probas.html#example-ensemble-plot-voting-probas-py"><span>Plot class probabilities calculated by the VotingClassifier</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="On the left side the learning curve of a naive Bayes classifier is shown for the digits dataset..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="On the left side the learning curve of a naive Bayes classifier is shown for the digits dataset..."><div class="figure" id="id6">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_learning_curve.html"><img alt="../../_images/plot_learning_curve1.png" src="../../_images/plot_learning_curve1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_learning_curve.html#example-model-selection-plot-learning-curve-py"><em>Plotting Learning Curves</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_learning_curve.html#example-model-selection-plot-learning-curve-py"><span>Plotting Learning Curves</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

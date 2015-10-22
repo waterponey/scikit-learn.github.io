@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,19 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="robust-linear-model-estimation-using-ransac">
 <span id="example-linear-model-plot-ransac-py"></span><h1>Robust linear model estimation using RANSAC<a class="headerlink" href="#robust-linear-model-estimation-using-ransac" title="Permalink to this headline">¶</a></h1>
 <p>In this example we see how to robustly fit a linear model to faulty data using
 the RANSAC algorithm.</p>
-<img alt="../../_images/plot_ransac_001.png" class="align-center" src="../../_images/plot_ransac_001.png" />
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Estimated coefficients (true, normal, RANSAC):
-82.1903908408 [ 54.17236387] [ 82.08533159]
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ransac.py"><tt class="xref download docutils literal"><span class="pre">plot_ransac.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ransac.py"><code class="xref download docutils literal"><span class="pre">plot_ransac.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 
@@ -222,8 +216,6 @@ the RANSAC algorithm.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.23 seconds
-( 0 minutes  0.23 seconds)</p>
 </div>
 
 

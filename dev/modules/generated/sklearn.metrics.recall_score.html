@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.metrics.roc_auc_score" href="sklearn.metrics.roc_auc_score.html" />
-    <link rel="prev" title="sklearn.metrics.precision_score" href="sklearn.metrics.precision_score.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.metrics.precision_score.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.metri...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.metrics.precision_score
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.recall_score</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-recall-score">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.recall_score</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.recall_score</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-recall-score">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.recall_score</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,19 +126,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-metrics-recall-score">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.recall_score<a class="headerlink" href="#sklearn-metrics-recall-score" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.recall_score<a class="headerlink" href="#sklearn-metrics-recall-score" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.recall_score">
-<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">recall_score</tt><big>(</big><em>y_true</em>, <em>y_pred</em>, <em>labels=None</em>, <em>pos_label=1</em>, <em>average='binary'</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/metrics/classification.py#L1199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.recall_score" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.metrics.</code><code class="descname">recall_score</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_pred</em>, <em>labels=None</em>, <em>pos_label=1</em>, <em>average='binary'</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/classification.py#L1199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.recall_score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the recall</p>
-<p>The recall is the ratio <tt class="docutils literal"><span class="pre">tp</span> <span class="pre">/</span> <span class="pre">(tp</span> <span class="pre">+</span> <span class="pre">fn)</span></tt> where <tt class="docutils literal"><span class="pre">tp</span></tt> is the number of
-true positives and <tt class="docutils literal"><span class="pre">fn</span></tt> the number of false negatives. The recall is
+<p>The recall is the ratio <code class="docutils literal"><span class="pre">tp</span> <span class="pre">/</span> <span class="pre">(tp</span> <span class="pre">+</span> <span class="pre">fn)</span></code> where <code class="docutils literal"><span class="pre">tp</span></code> is the number of
+true positives and <code class="docutils literal"><span class="pre">fn</span></code> the number of false negatives. The recall is
 intuitively the ability of the classifier to find all the positive samples.</p>
 <p>The best value is 1 and the worst value is 0.</p>
-<p>Read more in the <a class="reference internal" href="../model_evaluation.html#precision-recall-f-measure-metrics"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../model_evaluation.html#precision-recall-f-measure-metrics"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -193,51 +153,51 @@ intuitively the ability of the classifier to find all the positive samples.</p>
 </div></blockquote>
 <p><strong>labels</strong> : list, optional</p>
 <blockquote>
-<div><p>The set of labels to include when <tt class="docutils literal"><span class="pre">average</span> <span class="pre">!=</span> <span class="pre">'binary'</span></tt>, and their
-order if <tt class="docutils literal"><span class="pre">average</span> <span class="pre">is</span> <span class="pre">None</span></tt>. Labels present in the data can be
+<div><p>The set of labels to include when <code class="docutils literal"><span class="pre">average</span> <span class="pre">!=</span> <span class="pre">'binary'</span></code>, and their
+order if <code class="docutils literal"><span class="pre">average</span> <span class="pre">is</span> <span class="pre">None</span></code>. Labels present in the data can be
 excluded, for example to calculate a multiclass average ignoring a
 majority negative class, while labels not present in the data will
 result in 0 components in a macro average. For multilabel targets,
-labels are column indices. By default, all labels in <tt class="docutils literal"><span class="pre">y_true</span></tt> and
-<tt class="docutils literal"><span class="pre">y_pred</span></tt> are used in sorted order.</p>
+labels are column indices. By default, all labels in <code class="docutils literal"><span class="pre">y_true</span></code> and
+<code class="docutils literal"><span class="pre">y_pred</span></code> are used in sorted order.</p>
 </div></blockquote>
 <p><strong>pos_label</strong> : str or int, 1 by default</p>
 <blockquote>
-<div><p>The class to report if <tt class="docutils literal"><span class="pre">average='binary'</span></tt>. Until version 0.18 it is
-necessary to set <tt class="docutils literal"><span class="pre">pos_label=None</span></tt> if seeking to use another averaging
+<div><p>The class to report if <code class="docutils literal"><span class="pre">average='binary'</span></code>. Until version 0.18 it is
+necessary to set <code class="docutils literal"><span class="pre">pos_label=None</span></code> if seeking to use another averaging
 method over binary targets.</p>
 </div></blockquote>
 <p><strong>average</strong> : string, [None, &#8216;binary&#8217; (default), &#8216;micro&#8217;, &#8216;macro&#8217;, &#8216;samples&#8217;,                        &#8216;weighted&#8217;]</p>
 <blockquote>
 <div><p>This parameter is required for multiclass/multilabel targets.
-If <tt class="docutils literal"><span class="pre">None</span></tt>, the scores for each class are returned. Otherwise, this
+If <code class="docutils literal"><span class="pre">None</span></code>, the scores for each class are returned. Otherwise, this
 determines the type of averaging performed on the data:</p>
 <dl class="docutils">
-<dt><tt class="docutils literal"><span class="pre">'binary'</span></tt>:</dt>
-<dd><p class="first last">Only report results for the class specified by <tt class="docutils literal"><span class="pre">pos_label</span></tt>.
-This is applicable only if targets (<tt class="docutils literal"><span class="pre">y_{true,pred}</span></tt>) are binary.</p>
+<dt><code class="docutils literal"><span class="pre">'binary'</span></code>:</dt>
+<dd><p class="first last">Only report results for the class specified by <code class="docutils literal"><span class="pre">pos_label</span></code>.
+This is applicable only if targets (<code class="docutils literal"><span class="pre">y_{true,pred}</span></code>) are binary.</p>
 </dd>
-<dt><tt class="docutils literal"><span class="pre">'micro'</span></tt>:</dt>
+<dt><code class="docutils literal"><span class="pre">'micro'</span></code>:</dt>
 <dd><p class="first last">Calculate metrics globally by counting the total true positives,
 false negatives and false positives.</p>
 </dd>
-<dt><tt class="docutils literal"><span class="pre">'macro'</span></tt>:</dt>
+<dt><code class="docutils literal"><span class="pre">'macro'</span></code>:</dt>
 <dd><p class="first last">Calculate metrics for each label, and find their unweighted
 mean.  This does not take label imbalance into account.</p>
 </dd>
-<dt><tt class="docutils literal"><span class="pre">'weighted'</span></tt>:</dt>
+<dt><code class="docutils literal"><span class="pre">'weighted'</span></code>:</dt>
 <dd><p class="first last">Calculate metrics for each label, and find their average, weighted
 by support (the number of true instances for each label). This
 alters &#8216;macro&#8217; to account for label imbalance; it can result in an
 F-score that is not between precision and recall.</p>
 </dd>
-<dt><tt class="docutils literal"><span class="pre">'samples'</span></tt>:</dt>
+<dt><code class="docutils literal"><span class="pre">'samples'</span></code>:</dt>
 <dd><p class="first last">Calculate metrics for each instance, and find their average (only
 meaningful for multilabel classification where this differs from
-<a class="reference internal" href="sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score" title="sklearn.metrics.accuracy_score"><tt class="xref py py-func docutils literal"><span class="pre">accuracy_score</span></tt></a>).</p>
+<a class="reference internal" href="sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score" title="sklearn.metrics.accuracy_score"><code class="xref py py-func docutils literal"><span class="pre">accuracy_score</span></code></a>).</p>
 </dd>
 </dl>
-<p>Note that if <tt class="docutils literal"><span class="pre">pos_label</span></tt> is given in binary classification with
+<p>Note that if <code class="docutils literal"><span class="pre">pos_label</span></code> is given in binary classification with
 <cite>average != &#8216;binary&#8217;</cite>, only that positive class is reported. This
 behavior is deprecated and will change in version 0.18.</p>
 </div></blockquote>
@@ -273,10 +233,10 @@ average of the recall of each class for the multiclass task.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-recall-score">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.recall_score</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-recall-score" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="When performing classification one often wants to predict not only the class label, but also th..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.recall_score</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-recall-score" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="When performing classification one often wants to predict not only the class label, but also th..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/calibration/plot_calibration_curve.html"><img alt="../../_images/plot_calibration_curve1.png" src="../../_images/plot_calibration_curve1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_curve.html#example-calibration-plot-calibration-curve-py"><em>Probability Calibration curves</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_curve.html#example-calibration-plot-calibration-curve-py"><span>Probability Calibration curves</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -293,12 +253,8 @@ average of the recall of each class for the multiclass task.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.recall_score.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.metrics.precision_score.html">Previous
-      </a>
-    </div>
     
      </div>
 

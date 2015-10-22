@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="comparison-of-kernel-ridge-regression-and-svr">
 <span id="example-plot-kernel-ridge-regression-py"></span><h1>Comparison of kernel ridge regression and SVR<a class="headerlink" href="#comparison-of-kernel-ridge-regression-and-svr" title="Permalink to this headline">¶</a></h1>
@@ -191,23 +191,7 @@ SVR scales better. With regard to prediction time, SVR is faster than
 KRR for all sizes of the training set because of the learned sparse
 solution. Note that the degree of sparsity and thus the prediction time depends
 on the parameters epsilon and C of the SVR.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../_images/plot_kernel_ridge_regression_001.png"><img alt="../_images/plot_kernel_ridge_regression_001.png" src="../_images/plot_kernel_ridge_regression_001.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../_images/plot_kernel_ridge_regression_002.png"><img alt="../_images/plot_kernel_ridge_regression_002.png" src="../_images/plot_kernel_ridge_regression_002.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../_images/plot_kernel_ridge_regression_003.png"><img alt="../_images/plot_kernel_ridge_regression_003.png" src="../_images/plot_kernel_ridge_regression_003.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-</ul>
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>SVR complexity and bandwidth selected and model fitted in 1.570 s
-KRR complexity and bandwidth selected and model fitted in 0.546 s
-Support vector ratio: 0.320
-SVR prediction for 100000 inputs in 0.192 s
-KRR prediction for 100000 inputs in 0.718 s
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_kernel_ridge_regression.py"><tt class="xref download docutils literal"><span class="pre">plot_kernel_ridge_regression.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_kernel_ridge_regression.py"><code class="xref download docutils literal"><span class="pre">plot_kernel_ridge_regression.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Authors: Jan Hendrik Metzen &lt;jhm@informatik.uni-bremen.de&gt;</span>
 <span class="c"># License: BSD 3 clause</span>
 
@@ -347,8 +331,6 @@ KRR prediction for 100000 inputs in 0.718 s
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  80.62 seconds
-( 1 minutes  20.62 seconds)</p>
 </div>
 
 

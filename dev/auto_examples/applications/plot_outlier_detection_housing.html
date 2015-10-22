@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -167,7 +167,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="outlier-detection-on-a-real-data-set">
 <span id="example-applications-plot-outlier-detection-housing-py"></span><h1>Outlier detection on a real data set<a class="headerlink" href="#outlier-detection-on-a-real-data-set" title="Permalink to this headline">¶</a></h1>
@@ -208,13 +208,7 @@ The One-Class SVM is able to capture the real data structure, but the
 difficulty is to adjust its kernel bandwidth parameter so as to obtain
 a good compromise between the shape of the data scatter matrix and the
 risk of over-fitting the data.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_outlier_detection_housing_001.png"><img alt="../../_images/plot_outlier_detection_housing_001.png" src="../../_images/plot_outlier_detection_housing_001.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_outlier_detection_housing_002.png"><img alt="../../_images/plot_outlier_detection_housing_002.png" src="../../_images/plot_outlier_detection_housing_002.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-</ul>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_outlier_detection_housing.py"><tt class="xref download docutils literal"><span class="pre">plot_outlier_detection_housing.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_outlier_detection_housing.py"><code class="xref download docutils literal"><span class="pre">plot_outlier_detection_housing.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Virgile Fritsch &lt;virgile.fritsch@inria.fr&gt;</span>
@@ -302,8 +296,6 @@ risk of over-fitting the data.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  8.86 seconds
-( 0 minutes  8.86 seconds)</p>
 </div>
 </div>
 

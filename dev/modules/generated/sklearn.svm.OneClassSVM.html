@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.svm.l1_min_c" href="sklearn.svm.l1_min_c.html" />
-    <link rel="prev" title="sklearn.svm.NuSVR" href="sklearn.svm.NuSVR.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.svm.NuSVR.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.svm.N...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.svm.NuSVR
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.svm</span></tt>.OneClassSVM</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-svm-oneclasssvm">Examples using <tt class="docutils literal"><span class="pre">sklearn.svm.OneClassSVM</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.svm</span></code>.OneClassSVM</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-svm-oneclasssvm">Examples using <code class="docutils literal"><span class="pre">sklearn.svm.OneClassSVM</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,17 +126,17 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-svm-oneclasssvm">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.svm" title="sklearn.svm"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></tt></a>.OneClassSVM<a class="headerlink" href="#sklearn-svm-oneclasssvm" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.svm" title="sklearn.svm"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></code></a>.OneClassSVM<a class="headerlink" href="#sklearn-svm-oneclasssvm" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.svm.OneClassSVM">
-<em class="property">class </em><tt class="descclassname">sklearn.svm.</tt><tt class="descname">OneClassSVM</tt><big>(</big><em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>tol=0.001</em>, <em>nu=0.5</em>, <em>shrinking=True</em>, <em>cache_size=200</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/svm/classes.py#L906"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.svm.</code><code class="descname">OneClassSVM</code><span class="sig-paren">(</span><em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>tol=0.001</em>, <em>nu=0.5</em>, <em>shrinking=True</em>, <em>cache_size=200</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/svm/classes.py#L906"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM" title="Permalink to this definition">¶</a></dt>
 <dd><p>Unsupervised Outlier Detection.</p>
 <p>Estimate the support of a high-dimensional distribution.</p>
 <p>The implementation is based on libsvm.</p>
-<p>Read more in the <a class="reference internal" href="../svm.html#svm-outlier-detection"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../svm.html#svm-outlier-detection"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -274,31 +234,16 @@ problem). This is only available in the case of a linear kernel.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.svm.OneClassSVM.decision_function" title="sklearn.svm.OneClassSVM.decision_function"><tt class="xref py py-obj docutils literal"><span class="pre">decision_function</span></tt></a>(X)</td>
-<td>Distance of the samples X to the separating hyperplane.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.svm.OneClassSVM.fit" title="sklearn.svm.OneClassSVM.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y,&nbsp;sample_weight])</td>
-<td>Detects the soft boundary of the set of samples X.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.svm.OneClassSVM.get_params" title="sklearn.svm.OneClassSVM.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.svm.OneClassSVM.predict" title="sklearn.svm.OneClassSVM.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
-<td>Perform regression on samples in X.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.svm.OneClassSVM.set_params" title="sklearn.svm.OneClassSVM.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
-</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.svm.OneClassSVM.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>tol=0.001</em>, <em>nu=0.5</em>, <em>shrinking=True</em>, <em>cache_size=200</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/svm/classes.py#L985"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>kernel='rbf'</em>, <em>degree=3</em>, <em>gamma='auto'</em>, <em>coef0=0.0</em>, <em>tol=0.001</em>, <em>nu=0.5</em>, <em>shrinking=True</em>, <em>cache_size=200</em>, <em>verbose=False</em>, <em>max_iter=-1</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/svm/classes.py#L985"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.svm.OneClassSVM.decision_function">
-<tt class="descname">decision_function</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/svm/classes.py#L1022"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.decision_function" title="Permalink to this definition">¶</a></dt>
+<code class="descname">decision_function</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/svm/classes.py#L1022"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Distance of the samples X to the separating hyperplane.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -319,7 +264,7 @@ problem). This is only available in the case of a linear kernel.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.OneClassSVM.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>sample_weight=None</em>, <em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/svm/classes.py#L994"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>sample_weight=None</em>, <em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/svm/classes.py#L994"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Detects the soft boundary of the set of samples X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -351,7 +296,7 @@ force the classifier to put more emphasis on these points.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.OneClassSVM.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -376,7 +321,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.OneClassSVM.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/svm/base.py#L285"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.predict" title="Permalink to this definition">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/svm/base.py#L290"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform regression on samples in X.</p>
 <p>For an one-class model, +1 or -1 is returned.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -399,11 +344,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.OneClassSVM.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.OneClassSVM.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -418,26 +363,26 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-svm-oneclasssvm">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.svm.OneClassSVM</span></tt><a class="headerlink" href="#examples-using-sklearn-svm-oneclasssvm" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example illustrates the need for robust covariance estimation on a real data set. It is us..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.svm.OneClassSVM</span></code><a class="headerlink" href="#examples-using-sklearn-svm-oneclasssvm" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example illustrates the need for robust covariance estimation on a real data set. It is us..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/applications/plot_outlier_detection_housing.html"><img alt="../../_images/plot_outlier_detection_housing1.png" src="../../_images/plot_outlier_detection_housing1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/applications/plot_outlier_detection_housing.html#example-applications-plot-outlier-detection-housing-py"><em>Outlier detection on a real data set</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/plot_outlier_detection_housing.html#example-applications-plot-outlier-detection-housing-py"><span>Outlier detection on a real data set</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Modeling species' geographic distributions is an important problem in conservation biology. In ..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Modeling species' geographic distributions is an important problem in conservation biology. In ..."><div class="figure" id="id2">
 <a class="reference external image-reference" href="./../../auto_examples/applications/plot_species_distribution_modeling.html"><img alt="../../_images/plot_species_distribution_modeling1.png" src="../../_images/plot_species_distribution_modeling1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/applications/plot_species_distribution_modeling.html#example-applications-plot-species-distribution-modeling-py"><em>Species distribution modeling</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/plot_species_distribution_modeling.html#example-applications-plot-species-distribution-modeling-py"><span>Species distribution modeling</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A simple graphical frontend for Libsvm mainly intended for didactic purposes. You can create da..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="A simple graphical frontend for Libsvm mainly intended for didactic purposes. You can create da..."><div class="figure" id="id3">
 <a class="reference external image-reference" href="./../../auto_examples/applications/svm_gui.html"><img alt="../../_images/svm_gui1.png" src="../../_images/svm_gui1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/applications/svm_gui.html#example-applications-svm-gui-py"><em>Libsvm GUI</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/svm_gui.html#example-applications-svm-gui-py"><span>Libsvm GUI</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="When the amount of contamination is known, this example illustrates two different ways of perfo..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="When the amount of contamination is known, this example illustrates two different ways of perfo..."><div class="figure" id="id4">
 <a class="reference external image-reference" href="./../../auto_examples/covariance/plot_outlier_detection.html"><img alt="../../_images/plot_outlier_detection1.png" src="../../_images/plot_outlier_detection1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/covariance/plot_outlier_detection.html#example-covariance-plot-outlier-detection-py"><em>Outlier detection with several methods.</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/covariance/plot_outlier_detection.html#example-covariance-plot-outlier-detection-py"><span>Outlier detection with several methods.</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An example using a one-class SVM for novelty detection."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="An example using a one-class SVM for novelty detection."><div class="figure" id="id5">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_oneclass.html"><img alt="../../_images/plot_oneclass1.png" src="../../_images/plot_oneclass1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_oneclass.html#example-svm-plot-oneclass-py"><em>One-class SVM with non-linear kernel (RBF)</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_oneclass.html#example-svm-plot-oneclass-py"><span>One-class SVM with non-linear kernel (RBF)</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -454,12 +399,8 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.svm.OneClassSVM.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.svm.NuSVR.html">Previous
-      </a>
-    </div>
     
      </div>
 

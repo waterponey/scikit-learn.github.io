@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="face-completion-with-a-multi-output-estimators">
 <span id="example-plot-multioutput-face-completion-py"></span><h1>Face completion with a multi-output estimators<a class="headerlink" href="#face-completion-with-a-multi-output-estimators" title="Permalink to this headline">¶</a></h1>
@@ -172,8 +172,7 @@ The goal is to predict the lower half of a face given its upper half.</p>
 <p>The first column of images shows true faces. The next columns illustrate
 how extremely randomized trees, k nearest neighbors, linear
 regression and ridge regression complete the lower half of those faces.</p>
-<img alt="../_images/plot_multioutput_face_completion_001.png" class="align-center" src="../_images/plot_multioutput_face_completion_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_multioutput_face_completion.py"><tt class="xref download docutils literal"><span class="pre">plot_multioutput_face_completion.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_multioutput_face_completion.py"><code class="xref download docutils literal"><span class="pre">plot_multioutput_face_completion.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -261,8 +260,6 @@ regression and ridge regression complete the lower half of those faces.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  16.40 seconds
-( 0 minutes  16.40 seconds)</p>
 </div>
 
 

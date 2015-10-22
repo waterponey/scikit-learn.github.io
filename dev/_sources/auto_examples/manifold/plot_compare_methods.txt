@@ -23,29 +23,8 @@ manifold-learning algorithms, it does not seeks an isotropic
 representation of the data in the low-dimensional space.
 
 
-
-.. image:: images/plot_compare_methods_001.png
-    :align: center
-
-
-**Script output**::
-
-  standard: 0.18 sec
-  ltsa: 0.44 sec
-  hessian: 0.5 sec
-  modified: 0.42 sec
-  Isomap: 0.9 sec
-  MDS: 23 sec
-  SpectralEmbedding: 0.65 sec
-  t-SNE: 8.4 sec
-
-
-
 **Python source code:** :download:`plot_compare_methods.py <plot_compare_methods.py>`
 
 .. literalinclude:: plot_compare_methods.py
     :lines: 21-
-
-**Total running time of the example:**  35.55 seconds
-( 0 minutes  35.55 seconds)
     

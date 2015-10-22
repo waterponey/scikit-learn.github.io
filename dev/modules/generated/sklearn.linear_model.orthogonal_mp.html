@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.linear_model.orthogonal_mp_gram" href="sklearn.linear_model.orthogonal_mp_gram.html" />
-    <link rel="prev" title="sklearn.linear_model.lasso_stability_path" href="sklearn.linear_model.lasso_stability_path.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,47 +104,10 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.linear_model.lasso_stability_path.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.linea...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.linear_model.lasso_stability_path
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.linear_model</span></tt>.orthogonal_mp</a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.linear_model</span></code>.orthogonal_mp</a></li>
 </ul>
 
     </div>
@@ -163,13 +123,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-linear-model-orthogonal-mp">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.orthogonal_mp<a class="headerlink" href="#sklearn-linear-model-orthogonal-mp" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></code></a>.orthogonal_mp<a class="headerlink" href="#sklearn-linear-model-orthogonal-mp" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.linear_model.orthogonal_mp">
-<tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">orthogonal_mp</tt><big>(</big><em>X</em>, <em>y</em>, <em>n_nonzero_coefs=None</em>, <em>tol=None</em>, <em>precompute=False</em>, <em>copy_X=True</em>, <em>return_path=False</em>, <em>return_n_iter=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/linear_model/omp.py#L269"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.orthogonal_mp" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.linear_model.</code><code class="descname">orthogonal_mp</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>n_nonzero_coefs=None</em>, <em>tol=None</em>, <em>precompute=False</em>, <em>copy_X=True</em>, <em>return_path=False</em>, <em>return_n_iter=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/omp.py#L269"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.orthogonal_mp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Orthogonal Matching Pursuit (OMP)</p>
 <p>Solves n_targets Orthogonal Matching Pursuit problems.
 An instance of the problem has the form:</p>
@@ -178,7 +138,7 @@ An instance of the problem has the form:</p>
 argmin ||y - Xgamma||^2 subject to ||gamma||_0 &lt;= n_{nonzero coefs}</p>
 <p>When parametrized by error using the parameter <cite>tol</cite>:
 argmin ||gamma||_0 subject to ||y - Xgamma||^2 &lt;= tol</p>
-<p>Read more in the <a class="reference internal" href="../linear_model.html#omp"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../linear_model.html#omp"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -241,7 +201,7 @@ of active features.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.linear_model.OrthogonalMatchingPursuit.html#sklearn.linear_model.OrthogonalMatchingPursuit" title="sklearn.linear_model.OrthogonalMatchingPursuit"><tt class="xref py py-obj docutils literal"><span class="pre">OrthogonalMatchingPursuit</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.orthogonal_mp_gram.html#sklearn.linear_model.orthogonal_mp_gram" title="sklearn.linear_model.orthogonal_mp_gram"><tt class="xref py py-obj docutils literal"><span class="pre">orthogonal_mp_gram</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.lars_path.html#sklearn.linear_model.lars_path" title="sklearn.linear_model.lars_path"><tt class="xref py py-obj docutils literal"><span class="pre">lars_path</span></tt></a>, <tt class="xref py py-obj docutils literal"><span class="pre">decomposition.sparse_encode</span></tt></p>
+<p class="last"><a class="reference internal" href="sklearn.linear_model.OrthogonalMatchingPursuit.html#sklearn.linear_model.OrthogonalMatchingPursuit" title="sklearn.linear_model.OrthogonalMatchingPursuit"><code class="xref py py-obj docutils literal"><span class="pre">OrthogonalMatchingPursuit</span></code></a>, <a class="reference internal" href="sklearn.linear_model.orthogonal_mp_gram.html#sklearn.linear_model.orthogonal_mp_gram" title="sklearn.linear_model.orthogonal_mp_gram"><code class="xref py py-obj docutils literal"><span class="pre">orthogonal_mp_gram</span></code></a>, <a class="reference internal" href="sklearn.linear_model.lars_path.html#sklearn.linear_model.lars_path" title="sklearn.linear_model.lars_path"><code class="xref py py-obj docutils literal"><span class="pre">lars_path</span></code></a>, <code class="xref py py-obj docutils literal"><span class="pre">decomposition.sparse_encode</span></code></p>
 </div>
 <p class="rubric">Notes</p>
 <p>Orthogonal matching pursuit was introduced in G. Mallat, Z. Zhang,
@@ -268,12 +228,8 @@ Matching Pursuit Technical Report - CS Technion, April 2008.
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.linear_model.orthogonal_mp.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.linear_model.lasso_stability_path.html">Previous
-      </a>
-    </div>
     
      </div>
 

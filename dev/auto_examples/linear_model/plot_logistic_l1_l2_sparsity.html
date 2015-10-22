@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="l1-penalty-and-sparsity-in-logistic-regression">
 <span id="example-linear-model-plot-logistic-l1-l2-sparsity-py"></span><h1>L1 Penalty and Sparsity in Logistic Regression<a class="headerlink" href="#l1-penalty-and-sparsity-in-logistic-regression" title="Permalink to this headline">¶</a></h1>
@@ -174,26 +174,7 @@ constrain the model more. In the L1 penalty case, this leads to sparser
 solutions.</p>
 <p>We classify 8x8 images of digits into two classes: 0-4 against 5-9.
 The visualization shows coefficients of the models for varying C.</p>
-<img alt="../../_images/plot_logistic_l1_l2_sparsity_001.png" class="align-center" src="../../_images/plot_logistic_l1_l2_sparsity_001.png" />
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>C=100.00
-Sparsity with L1 penalty: 6.25%
-score with L1 penalty: 0.9104
-Sparsity with L2 penalty: 4.69%
-score with L2 penalty: 0.9098
-C=1.00
-Sparsity with L1 penalty: 10.94%
-score with L1 penalty: 0.9098
-Sparsity with L2 penalty: 4.69%
-score with L2 penalty: 0.9093
-C=0.01
-Sparsity with L1 penalty: 85.94%
-score with L1 penalty: 0.8614
-Sparsity with L2 penalty: 4.69%
-score with L2 penalty: 0.8915
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_logistic_l1_l2_sparsity.py"><tt class="xref download docutils literal"><span class="pre">plot_logistic_l1_l2_sparsity.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_logistic_l1_l2_sparsity.py"><code class="xref download docutils literal"><span class="pre">plot_logistic_l1_l2_sparsity.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Authors: Alexandre Gramfort &lt;alexandre.gramfort@inria.fr&gt;</span>
@@ -260,8 +241,6 @@ score with L2 penalty: 0.8915
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.90 seconds
-( 0 minutes  0.90 seconds)</p>
 </div>
 
 

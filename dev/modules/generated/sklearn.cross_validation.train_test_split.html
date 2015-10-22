@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cross_validation</span></tt>.train_test_split</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-train-test-split">Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.train_test_split</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cross_validation</span></code>.train_test_split</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-train-test-split">Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.train_test_split</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,19 +166,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-cross-validation-train-test-split">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></tt></a>.train_test_split<a class="headerlink" href="#sklearn-cross-validation-train-test-split" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></code></a>.train_test_split<a class="headerlink" href="#sklearn-cross-validation-train-test-split" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.cross_validation.train_test_split">
-<tt class="descclassname">sklearn.cross_validation.</tt><tt class="descname">train_test_split</tt><big>(</big><em>*arrays</em>, <em>**options</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/cross_validation.py#L1782"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.train_test_split" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.cross_validation.</code><code class="descname">train_test_split</code><span class="sig-paren">(</span><em>*arrays</em>, <em>**options</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cross_validation.py#L1800"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.train_test_split" title="Permalink to this definition">¶</a></dt>
 <dd><p>Split arrays or matrices into random train and test subsets</p>
 <p>Quick utility that wraps input validation and
-<tt class="docutils literal"><span class="pre">next(iter(ShuffleSplit(n_samples)))</span></tt> and application to input
+<code class="docutils literal"><span class="pre">next(iter(ShuffleSplit(n_samples)))</span></code> and application to input
 data into a single call for splitting (and optionally subsampling)
 data in a oneliner.</p>
-<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -255,62 +255,62 @@ the labels array.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-cross-validation-train-test-split">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.train_test_split</span></tt><a class="headerlink" href="#examples-using-sklearn-cross-validation-train-test-split" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="The dataset used in this example is a preprocessed excerpt of the "Labeled Faces in the Wild", ..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.train_test_split</span></code><a class="headerlink" href="#examples-using-sklearn-cross-validation-train-test-split" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="The dataset used in this example is a preprocessed excerpt of the "Labeled Faces in the Wild", ..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/applications/face_recognition.html"><img alt="../../_images/face_recognition1.png" src="../../_images/face_recognition1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/applications/face_recognition.html#example-applications-face-recognition-py"><em>Faces recognition example using eigenfaces and SVMs</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/face_recognition.html#example-applications-face-recognition-py"><span>Faces recognition example using eigenfaces and SVMs</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="When performing classification one often wants to predict not only the class label, but also th..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="When performing classification one often wants to predict not only the class label, but also th..."><div class="figure" id="id2">
 <a class="reference external image-reference" href="./../../auto_examples/calibration/plot_calibration_curve.html"><img alt="../../_images/plot_calibration_curve1.png" src="../../_images/plot_calibration_curve1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_curve.html#example-calibration-plot-calibration-curve-py"><em>Probability Calibration curves</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_curve.html#example-calibration-plot-calibration-curve-py"><span>Probability Calibration curves</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="When performing classification you often want to predict not only the class label, but also the..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="When performing classification you often want to predict not only the class label, but also the..."><div class="figure" id="id3">
 <a class="reference external image-reference" href="./../../auto_examples/calibration/plot_calibration.html"><img alt="../../_images/plot_calibration1.png" src="../../_images/plot_calibration1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration.html#example-calibration-plot-calibration-py"><em>Probability calibration of classifiers</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration.html#example-calibration-plot-calibration-py"><span>Probability calibration of classifiers</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="A comparison of a several classifiers in scikit-learn on synthetic datasets. The point of this ..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="A comparison of a several classifiers in scikit-learn on synthetic datasets. The point of this ..."><div class="figure" id="id4">
 <a class="reference external image-reference" href="./../../auto_examples/classification/plot_classifier_comparison.html"><img alt="../../_images/plot_classifier_comparison1.png" src="../../_images/plot_classifier_comparison1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/classification/plot_classifier_comparison.html#example-classification-plot-classifier-comparison-py"><em>Classifier comparison</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/classification/plot_classifier_comparison.html#example-classification-plot-classifier-comparison-py"><span>Classifier comparison</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Partial dependence plots show the dependence between the target function [1]_ and a set of 'tar..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Partial dependence plots show the dependence between the target function [1]_ and a set of 'tar..."><div class="figure" id="id5">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_partial_dependence.html"><img alt="../../_images/plot_partial_dependence1.png" src="../../_images/plot_partial_dependence1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_partial_dependence.html#example-ensemble-plot-partial-dependence-py"><em>Partial Dependence Plots</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_partial_dependence.html#example-ensemble-plot-partial-dependence-py"><span>Partial Dependence Plots</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Transform your features into a higher dimensional, sparse space. Then train a linear model on t..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Transform your features into a higher dimensional, sparse space. Then train a linear model on t..."><div class="figure" id="id6">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_feature_transformation.html"><img alt="../../_images/plot_feature_transformation1.png" src="../../_images/plot_feature_transformation1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_feature_transformation.html#example-ensemble-plot-feature-transformation-py"><em>Feature transformations with ensembles of trees</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_feature_transformation.html#example-ensemble-plot-feature-transformation-py"><span>Feature transformations with ensembles of trees</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Out-of-bag (OOB) estimates can be a useful heuristic to estimate the "optimal" number of boosti..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Out-of-bag (OOB) estimates can be a useful heuristic to estimate the "optimal" number of boosti..."><div class="figure" id="id7">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_gradient_boosting_oob.html"><img alt="../../_images/plot_gradient_boosting_oob1.png" src="../../_images/plot_gradient_boosting_oob1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_gradient_boosting_oob.html#example-ensemble-plot-gradient-boosting-oob-py"><em>Gradient Boosting Out-of-Bag estimates</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_gradient_boosting_oob.html#example-ensemble-plot-gradient-boosting-oob-py"><span>Gradient Boosting Out-of-Bag estimates</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An example showing how different online solvers perform on the hand-written digits dataset."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="An example showing how different online solvers perform on the hand-written digits dataset."><div class="figure" id="id8">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_sgd_comparison.html"><img alt="../../_images/plot_sgd_comparison1.png" src="../../_images/plot_sgd_comparison1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_sgd_comparison.html#example-linear-model-plot-sgd-comparison-py"><em>Comparing various online solvers</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_sgd_comparison.html#example-linear-model-plot-sgd-comparison-py"><span>Comparing various online solvers</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Example of confusion matrix usage to evaluate the quality of the output of a classifier on the ..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Example of confusion matrix usage to evaluate the quality of the output of a classifier on the ..."><div class="figure" id="id9">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_confusion_matrix.html"><img alt="../../_images/plot_confusion_matrix1.png" src="../../_images/plot_confusion_matrix1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_confusion_matrix.html#example-model-selection-plot-confusion-matrix-py"><em>Confusion matrix</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_confusion_matrix.html#example-model-selection-plot-confusion-matrix-py"><span>Confusion matrix</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This examples shows how a classifier is optimized by cross-validation, which is done using the ..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="This examples shows how a classifier is optimized by cross-validation, which is done using the ..."><div class="figure" id="id10">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/grid_search_digits.html"><img alt="../../_images/grid_search_digits1.png" src="../../_images/grid_search_digits1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/grid_search_digits.html#example-model-selection-grid-search-digits-py"><em>Parameter estimation using grid search with cross-validation</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/grid_search_digits.html#example-model-selection-grid-search-digits-py"><span>Parameter estimation using grid search with cross-validation</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Example of Precision-Recall metric to evaluate classifier output quality."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Example of Precision-Recall metric to evaluate classifier output quality."><div class="figure" id="id11">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_precision_recall.html"><img alt="../../_images/plot_precision_recall1.png" src="../../_images/plot_precision_recall1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_precision_recall.html#example-model-selection-plot-precision-recall-py"><em>Precision-Recall</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_precision_recall.html#example-model-selection-plot-precision-recall-py"><span>Precision-Recall</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure" id="id12">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_roc.html"><img alt="../../_images/plot_roc1.png" src="../../_images/plot_roc1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc.html#example-model-selection-plot-roc-py"><em>Receiver Operating Characteristic (ROC)</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc.html#example-model-selection-plot-roc-py"><span>Receiver Operating Characteristic (ROC)</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="For greyscale image data where pixel values can be interpreted as degrees of blackness on a whi..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="For greyscale image data where pixel values can be interpreted as degrees of blackness on a whi..."><div class="figure" id="id13">
 <a class="reference external image-reference" href="./../../auto_examples/neural_networks/plot_rbm_logistic_classification.html"><img alt="../../_images/plot_rbm_logistic_classification1.png" src="../../_images/plot_rbm_logistic_classification1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/neural_networks/plot_rbm_logistic_classification.html#example-neural-networks-plot-rbm-logistic-classification-py"><em>Restricted Boltzmann Machine features for digit classification</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/neural_networks/plot_rbm_logistic_classification.html#example-neural-networks-plot-rbm-logistic-classification-py"><span>Restricted Boltzmann Machine features for digit classification</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Shows how to use a function transformer in a pipeline. If you know your dataset's first princip..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="Shows how to use a function transformer in a pipeline. If you know your dataset's first princip..."><div class="figure" id="id14">
 <a class="reference external image-reference" href="./../../auto_examples/preprocessing/plot_function_transformer.html"><img alt="../../_images/plot_function_transformer1.png" src="../../_images/plot_function_transformer1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/preprocessing/plot_function_transformer.html#example-preprocessing-plot-function-transformer-py"><em>Using FunctionTransformer to select columns</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/preprocessing/plot_function_transformer.html#example-preprocessing-plot-function-transformer-py"><span>Using FunctionTransformer to select columns</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

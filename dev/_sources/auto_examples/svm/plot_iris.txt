@@ -38,18 +38,8 @@ kernel and its parameters.
 
 
 
-
-.. image:: images/plot_iris_001.png
-    :align: center
-
-
-
-
 **Python source code:** :download:`plot_iris.py <plot_iris.py>`
 
 .. literalinclude:: plot_iris.py
     :lines: 36-
-
-**Total running time of the example:**  1.04 seconds
-( 0 minutes  1.04 seconds)
     

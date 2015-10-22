@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.datasets.make_sparse_spd_matrix" href="sklearn.datasets.make_sparse_spd_matrix.html" />
-    <link rel="prev" title="sklearn.datasets.make_s_curve" href="sklearn.datasets.make_s_curve.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.datasets.make_s_curve.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.datas...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.datasets.make_s_curve
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.datasets</span></tt>.make_sparse_coded_signal</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-datasets-make-sparse-coded-signal">Examples using <tt class="docutils literal"><span class="pre">sklearn.datasets.make_sparse_coded_signal</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.datasets</span></code>.make_sparse_coded_signal</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-datasets-make-sparse-coded-signal">Examples using <code class="docutils literal"><span class="pre">sklearn.datasets.make_sparse_coded_signal</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,18 +126,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-datasets-make-sparse-coded-signal">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></tt></a>.make_sparse_coded_signal<a class="headerlink" href="#sklearn-datasets-make-sparse-coded-signal" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></code></a>.make_sparse_coded_signal<a class="headerlink" href="#sklearn-datasets-make-sparse-coded-signal" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.datasets.make_sparse_coded_signal">
-<tt class="descclassname">sklearn.datasets.</tt><tt class="descname">make_sparse_coded_signal</tt><big>(</big><em>n_samples</em>, <em>n_components</em>, <em>n_features</em>, <em>n_nonzero_coefs</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/datasets/samples_generator.py#L1037"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.make_sparse_coded_signal" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.datasets.</code><code class="descname">make_sparse_coded_signal</code><span class="sig-paren">(</span><em>n_samples</em>, <em>n_components</em>, <em>n_features</em>, <em>n_nonzero_coefs</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/datasets/samples_generator.py#L1037"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.make_sparse_coded_signal" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate a signal as a sparse combination of dictionary elements.</p>
 <p>Returns a matrix Y = DX, such as D is (n_features, n_components),
 X is (n_components, n_samples) and each column of X has exactly
 n_nonzero_coefs non-zero elements.</p>
-<p>Read more in the <a class="reference internal" href="../../datasets/index.html#sample-generators"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../../datasets/index.html#sample-generators"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -224,10 +184,10 @@ n_nonzero_coefs non-zero items (X).</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-datasets-make-sparse-coded-signal">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.datasets.make_sparse_coded_signal</span></tt><a class="headerlink" href="#examples-using-sklearn-datasets-make-sparse-coded-signal" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Using orthogonal matching pursuit for recovering a sparse signal from a noisy measurement encod..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.datasets.make_sparse_coded_signal</span></code><a class="headerlink" href="#examples-using-sklearn-datasets-make-sparse-coded-signal" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Using orthogonal matching pursuit for recovering a sparse signal from a noisy measurement encod..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_omp.html"><img alt="../../_images/plot_omp1.png" src="../../_images/plot_omp1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_omp.html#example-linear-model-plot-omp-py"><em>Orthogonal Matching Pursuit</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_omp.html#example-linear-model-plot-omp-py"><span>Orthogonal Matching Pursuit</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -244,12 +204,8 @@ n_nonzero_coefs non-zero items (X).</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.datasets.make_sparse_coded_signal.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.datasets.make_s_curve.html">Previous
-      </a>
-    </div>
     
      </div>
 

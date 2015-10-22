@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.calibration.CalibratedClassifierCV" href="sklearn.calibration.CalibratedClassifierCV.html" />
-    <link rel="prev" title="sklearn.neighbors.radius_neighbors_graph" href="sklearn.neighbors.radius_neighbors_graph.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.neighbors.radius_neighbors_graph.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.neigh...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.neighbors.radius_neighbors_graph
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.neural_network</span></tt>.BernoulliRBM</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-neural-network-bernoullirbm">Examples using <tt class="docutils literal"><span class="pre">sklearn.neural_network.BernoulliRBM</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.neural_network</span></code>.BernoulliRBM</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-neural-network-bernoullirbm">Examples using <code class="docutils literal"><span class="pre">sklearn.neural_network.BernoulliRBM</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,21 +126,21 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-neural-network-bernoullirbm">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.neural_network" title="sklearn.neural_network"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.neural_network</span></tt></a>.BernoulliRBM<a class="headerlink" href="#sklearn-neural-network-bernoullirbm" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.neural_network" title="sklearn.neural_network"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.neural_network</span></code></a>.BernoulliRBM<a class="headerlink" href="#sklearn-neural-network-bernoullirbm" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.neural_network.BernoulliRBM">
-<em class="property">class </em><tt class="descclassname">sklearn.neural_network.</tt><tt class="descname">BernoulliRBM</tt><big>(</big><em>n_components=256</em>, <em>learning_rate=0.1</em>, <em>batch_size=10</em>, <em>n_iter=10</em>, <em>verbose=0</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neural_network/rbm.py#L28"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.neural_network.</code><code class="descname">BernoulliRBM</code><span class="sig-paren">(</span><em>n_components=256</em>, <em>learning_rate=0.1</em>, <em>batch_size=10</em>, <em>n_iter=10</em>, <em>verbose=0</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neural_network/rbm.py#L28"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bernoulli Restricted Boltzmann Machine (RBM).</p>
 <p>A Restricted Boltzmann Machine with binary visible units and
 binary hiddens. Parameters are estimated using Stochastic Maximum
 Likelihood (SML), also known as Persistent Contrastive Divergence (PCD)
 [2].</p>
-<p>The time complexity of this implementation is <tt class="docutils literal"><span class="pre">O(d</span> <span class="pre">**</span> <span class="pre">2)</span></tt> assuming
+<p>The time complexity of this implementation is <code class="docutils literal"><span class="pre">O(d</span> <span class="pre">**</span> <span class="pre">2)</span></code> assuming
 d ~ n_features ~ n_components.</p>
-<p>Read more in the <a class="reference internal" href="../neural_networks.html#rbm"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../neural_networks.html#rbm"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -259,40 +219,16 @@ on Machine Learning (ICML) 2008</dd>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neural_network.BernoulliRBM.fit" title="sklearn.neural_network.BernoulliRBM.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
-<td>Fit the model to the data X.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.neural_network.BernoulliRBM.fit_transform" title="sklearn.neural_network.BernoulliRBM.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
-<td>Fit to data, then transform it.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neural_network.BernoulliRBM.get_params" title="sklearn.neural_network.BernoulliRBM.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.neural_network.BernoulliRBM.gibbs" title="sklearn.neural_network.BernoulliRBM.gibbs"><tt class="xref py py-obj docutils literal"><span class="pre">gibbs</span></tt></a>(v)</td>
-<td>Perform one Gibbs sampling step.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neural_network.BernoulliRBM.partial_fit" title="sklearn.neural_network.BernoulliRBM.partial_fit"><tt class="xref py py-obj docutils literal"><span class="pre">partial_fit</span></tt></a>(X[,&nbsp;y])</td>
-<td>Fit the model to the data X which should contain a partial segment of the data.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.neural_network.BernoulliRBM.score_samples" title="sklearn.neural_network.BernoulliRBM.score_samples"><tt class="xref py py-obj docutils literal"><span class="pre">score_samples</span></tt></a>(X)</td>
-<td>Compute the pseudo-likelihood of X.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neural_network.BernoulliRBM.set_params" title="sklearn.neural_network.BernoulliRBM.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.neural_network.BernoulliRBM.transform" title="sklearn.neural_network.BernoulliRBM.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
-<td>Compute the hidden layer activation probabilities, P(h=1|v=X).</td>
-</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.neural_network.BernoulliRBM.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>n_components=256</em>, <em>learning_rate=0.1</em>, <em>batch_size=10</em>, <em>n_iter=10</em>, <em>verbose=0</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neural_network/rbm.py#L100"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=256</em>, <em>learning_rate=0.1</em>, <em>batch_size=10</em>, <em>n_iter=10</em>, <em>verbose=0</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neural_network/rbm.py#L100"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.neural_network.BernoulliRBM.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neural_network/rbm.py#L324"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neural_network/rbm.py#L324"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model to the data X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -316,7 +252,7 @@ on Machine Learning (ICML) 2008</dd>
 
 <dl class="method">
 <dt id="sklearn.neural_network.BernoulliRBM.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L438"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.fit_transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -346,7 +282,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.neural_network.BernoulliRBM.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -371,7 +307,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.neural_network.BernoulliRBM.gibbs">
-<tt class="descname">gibbs</tt><big>(</big><em>v</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neural_network/rbm.py#L201"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.gibbs" title="Permalink to this definition">¶</a></dt>
+<code class="descname">gibbs</code><span class="sig-paren">(</span><em>v</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neural_network/rbm.py#L201"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.gibbs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform one Gibbs sampling step.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -395,7 +331,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.neural_network.BernoulliRBM.partial_fit">
-<tt class="descname">partial_fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neural_network/rbm.py#L222"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.partial_fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">partial_fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neural_network/rbm.py#L222"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.partial_fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model to the data X which should contain a partial
 segment of the data.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -420,7 +356,7 @@ segment of the data.</p>
 
 <dl class="method">
 <dt id="sklearn.neural_network.BernoulliRBM.score_samples">
-<tt class="descname">score_samples</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neural_network/rbm.py#L286"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.score_samples" title="Permalink to this definition">¶</a></dt>
+<code class="descname">score_samples</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neural_network/rbm.py#L286"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.score_samples" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the pseudo-likelihood of X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -448,11 +384,11 @@ returns the log of the logistic function of the difference.</p>
 
 <dl class="method">
 <dt id="sklearn.neural_network.BernoulliRBM.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -466,7 +402,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.neural_network.BernoulliRBM.transform">
-<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neural_network/rbm.py#L109"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neural_network/rbm.py#L109"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neural_network.BernoulliRBM.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the hidden layer activation probabilities, P(h=1|v=X).</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -491,10 +427,10 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-neural-network-bernoullirbm">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.neural_network.BernoulliRBM</span></tt><a class="headerlink" href="#examples-using-sklearn-neural-network-bernoullirbm" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="For greyscale image data where pixel values can be interpreted as degrees of blackness on a whi..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.neural_network.BernoulliRBM</span></code><a class="headerlink" href="#examples-using-sklearn-neural-network-bernoullirbm" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="For greyscale image data where pixel values can be interpreted as degrees of blackness on a whi..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/neural_networks/plot_rbm_logistic_classification.html"><img alt="../../_images/plot_rbm_logistic_classification1.png" src="../../_images/plot_rbm_logistic_classification1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/neural_networks/plot_rbm_logistic_classification.html#example-neural-networks-plot-rbm-logistic-classification-py"><em>Restricted Boltzmann Machine features for digit classification</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/neural_networks/plot_rbm_logistic_classification.html#example-neural-networks-plot-rbm-logistic-classification-py"><span>Restricted Boltzmann Machine features for digit classification</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -511,12 +447,8 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.neural_network.BernoulliRBM.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.neighbors.radius_neighbors_graph.html">Previous
-      </a>
-    </div>
     
      </div>
 

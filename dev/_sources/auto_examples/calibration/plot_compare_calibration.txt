@@ -52,18 +52,8 @@ with different biases per method:
           A. Niculescu-Mizil & R. Caruana, ICML 2005
 
 
-
-.. image:: images/plot_compare_calibration_001.png
-    :align: center
-
-
-
-
 **Python source code:** :download:`plot_compare_calibration.py <plot_compare_calibration.py>`
 
 .. literalinclude:: plot_compare_calibration.py
     :lines: 50-
-
-**Total running time of the example:**  2.57 seconds
-( 0 minutes  2.57 seconds)
     

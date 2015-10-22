@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="two-class-adaboost">
 <span id="example-ensemble-plot-adaboost-twoclass-py"></span><h1>Two-class AdaBoost<a class="headerlink" href="#two-class-adaboost" title="Permalink to this headline">¶</a></h1>
 <p>This example fits an AdaBoosted decision stump on a non-linearly separable
 classification dataset composed of two &#8220;Gaussian quantiles&#8221; clusters
-(see <a class="reference internal" href="../../modules/generated/sklearn.datasets.make_gaussian_quantiles.html#sklearn.datasets.make_gaussian_quantiles" title="sklearn.datasets.make_gaussian_quantiles"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.make_gaussian_quantiles</span></tt></a>) and plots the decision
+(see <a class="reference internal" href="../../modules/generated/sklearn.datasets.make_gaussian_quantiles.html#sklearn.datasets.make_gaussian_quantiles" title="sklearn.datasets.make_gaussian_quantiles"><code class="xref py py-func docutils literal"><span class="pre">sklearn.datasets.make_gaussian_quantiles</span></code></a>) and plots the decision
 boundary and decision scores. The distributions of decision scores are shown
 separately for samples of class A and B. The predicted class label for each
 sample is determined by the sign of the decision score. Samples with decision
@@ -178,8 +178,7 @@ as A. The magnitude of a decision score determines the degree of likeness with
 the predicted class label. Additionally, a new dataset could be constructed
 containing a desired purity of class B, for example, by only selecting samples
 with a decision score above some value.</p>
-<img alt="../../_images/plot_adaboost_twoclass_001.png" class="align-center" src="../../_images/plot_adaboost_twoclass_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_adaboost_twoclass.py"><tt class="xref download docutils literal"><span class="pre">plot_adaboost_twoclass.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_adaboost_twoclass.py"><code class="xref download docutils literal"><span class="pre">plot_adaboost_twoclass.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Noel Dawe &lt;noel.dawe@gmail.com&gt;</span>
@@ -265,8 +264,6 @@ with a decision score above some value.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  8.23 seconds
-( 0 minutes  8.23 seconds)</p>
 </div>
 
 

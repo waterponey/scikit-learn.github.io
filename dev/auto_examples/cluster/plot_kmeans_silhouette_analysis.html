@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="selecting-the-number-of-clusters-with-silhouette-analysis-on-kmeans-clustering">
 <span id="example-cluster-plot-kmeans-silhouette-analysis-py"></span><h1>Selecting the number of clusters with silhouette analysis on KMeans clustering<a class="headerlink" href="#selecting-the-number-of-clusters-with-silhouette-analysis-on-kmeans-clustering" title="Permalink to this headline">¶</a></h1>
@@ -178,38 +178,18 @@ indicates that the sample is on or very close to the decision boundary between
 two neighboring clusters and negative values indicate that those samples might
 have been assigned to the wrong cluster.</p>
 <p>In this example the silhouette analysis is used to choose an optimal value for
-<tt class="docutils literal"><span class="pre">n_clusters</span></tt>. The silhouette plot shows that the <tt class="docutils literal"><span class="pre">n_clusters</span></tt> value of 3, 5
+<code class="docutils literal"><span class="pre">n_clusters</span></code>. The silhouette plot shows that the <code class="docutils literal"><span class="pre">n_clusters</span></code> value of 3, 5
 and 6 are a bad pick for the given data due to the presence of clusters with
 below average silhouette scores and also due to wide fluctuations in the size
 of the silhouette plots. Silhouette analysis is more ambivalent in deciding
 between 2 and 4.</p>
 <p>Also from the thickness of the silhouette plot the cluster size can be
-visualized. The silhouette plot for cluster 0 when <tt class="docutils literal"><span class="pre">n_clusters</span></tt> is equal to
+visualized. The silhouette plot for cluster 0 when <code class="docutils literal"><span class="pre">n_clusters</span></code> is equal to
 2, is bigger in size owing to the grouping of the 3 sub clusters into one big
-cluster. However when the <tt class="docutils literal"><span class="pre">n_clusters</span></tt> is equal to 4, all the plots are more
+cluster. However when the <code class="docutils literal"><span class="pre">n_clusters</span></code> is equal to 4, all the plots are more
 or less of similar thickness and hence are of similar sizes as can be also
 verified from the labelled scatter plot on the right.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_kmeans_silhouette_analysis_001.png"><img alt="../../_images/plot_kmeans_silhouette_analysis_001.png" src="../../_images/plot_kmeans_silhouette_analysis_001.png" style="width: 846.0px; height: 329.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_kmeans_silhouette_analysis_002.png"><img alt="../../_images/plot_kmeans_silhouette_analysis_002.png" src="../../_images/plot_kmeans_silhouette_analysis_002.png" style="width: 846.0px; height: 329.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_kmeans_silhouette_analysis_003.png"><img alt="../../_images/plot_kmeans_silhouette_analysis_003.png" src="../../_images/plot_kmeans_silhouette_analysis_003.png" style="width: 846.0px; height: 329.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_kmeans_silhouette_analysis_004.png"><img alt="../../_images/plot_kmeans_silhouette_analysis_004.png" src="../../_images/plot_kmeans_silhouette_analysis_004.png" style="width: 846.0px; height: 329.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_kmeans_silhouette_analysis_005.png"><img alt="../../_images/plot_kmeans_silhouette_analysis_005.png" src="../../_images/plot_kmeans_silhouette_analysis_005.png" style="width: 846.0px; height: 329.0px;" /></a>
-</li>
-</ul>
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>For n_clusters = 2 The average silhouette_score is : 0.704978749608
-For n_clusters = 3 The average silhouette_score is : 0.588200401213
-For n_clusters = 4 The average silhouette_score is : 0.650518663273
-For n_clusters = 5 The average silhouette_score is : 0.563764690262
-For n_clusters = 6 The average silhouette_score is : 0.450466629437
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_kmeans_silhouette_analysis.py"><tt class="xref download docutils literal"><span class="pre">plot_kmeans_silhouette_analysis.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_kmeans_silhouette_analysis.py"><code class="xref download docutils literal"><span class="pre">plot_kmeans_silhouette_analysis.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.datasets.make_blobs.html#sklearn.datasets.make_blobs"><span class="n">make_blobs</span></a>
@@ -321,8 +301,6 @@ For n_clusters = 6 The average silhouette_score is : 0.450466629437
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  2.74 seconds
-( 0 minutes  2.74 seconds)</p>
 </div>
 
 

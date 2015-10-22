@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="feature-importances-with-forests-of-trees">
 <span id="example-ensemble-plot-forest-importances-py"></span><h1>Feature importances with forests of trees<a class="headerlink" href="#feature-importances-with-forests-of-trees" title="Permalink to this headline">¶</a></h1>
@@ -172,22 +172,7 @@ features on an artificial classification task. The red bars are the feature
 importances of the forest, along with their inter-trees variability.</p>
 <p>As expected, the plot suggests that 3 features are informative, while the
 remaining are not.</p>
-<img alt="../../_images/plot_forest_importances_001.png" class="align-center" src="../../_images/plot_forest_importances_001.png" />
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Feature ranking:
-1. feature 0 (0.250402)
-2. feature 1 (0.231094)
-3. feature 2 (0.148057)
-4. feature 3 (0.055632)
-5. feature 5 (0.054583)
-6. feature 8 (0.054573)
-7. feature 6 (0.052606)
-8. feature 7 (0.051109)
-9. feature 9 (0.051010)
-10. feature 4 (0.050934)
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_forest_importances.py"><tt class="xref download docutils literal"><span class="pre">plot_forest_importances.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_forest_importances.py"><code class="xref download docutils literal"><span class="pre">plot_forest_importances.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -232,8 +217,6 @@ remaining are not.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  1.22 seconds
-( 0 minutes  1.22 seconds)</p>
 </div>
 
 

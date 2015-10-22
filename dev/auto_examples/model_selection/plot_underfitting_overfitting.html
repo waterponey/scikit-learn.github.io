@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="underfitting-vs-overfitting">
 <span id="example-model-selection-plot-underfitting-overfitting-py"></span><h1>Underfitting vs. Overfitting<a class="headerlink" href="#underfitting-vs-overfitting" title="Permalink to this headline">¶</a></h1>
@@ -182,8 +182,7 @@ We evaluate quantitatively <strong>overfitting</strong> / <strong>underfitting</
 cross-validation. We calculate the mean squared error (MSE) on the validation
 set, the higher, the less likely the model generalizes correctly from the
 training data.</p>
-<img alt="../../_images/plot_underfitting_overfitting_001.png" class="align-center" src="../../_images/plot_underfitting_overfitting_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_underfitting_overfitting.py"><tt class="xref download docutils literal"><span class="pre">plot_underfitting_overfitting.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_underfitting_overfitting.py"><code class="xref download docutils literal"><span class="pre">plot_underfitting_overfitting.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -232,8 +231,6 @@ training data.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.35 seconds
-( 0 minutes  0.35 seconds)</p>
 </div>
 
 

@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.neighbors.DistanceMetric" href="sklearn.neighbors.DistanceMetric.html" />
-    <link rel="prev" title="sklearn.neighbors.KDTree" href="sklearn.neighbors.KDTree.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.neighbors.KDTree.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.neigh...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.neighbors.KDTree
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.neighbors</span></tt>.LSHForest</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-neighbors-lshforest">Examples using <tt class="docutils literal"><span class="pre">sklearn.neighbors.LSHForest</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.neighbors</span></code>.LSHForest</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-neighbors-lshforest">Examples using <code class="docutils literal"><span class="pre">sklearn.neighbors.LSHForest</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,13 +126,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-neighbors-lshforest">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.neighbors" title="sklearn.neighbors"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.neighbors</span></tt></a>.LSHForest<a class="headerlink" href="#sklearn-neighbors-lshforest" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.neighbors" title="sklearn.neighbors"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.neighbors</span></code></a>.LSHForest<a class="headerlink" href="#sklearn-neighbors-lshforest" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.neighbors.LSHForest">
-<em class="property">class </em><tt class="descclassname">sklearn.neighbors.</tt><tt class="descname">LSHForest</tt><big>(</big><em>n_estimators=10</em>, <em>radius=1.0</em>, <em>n_candidates=50</em>, <em>n_neighbors=5</em>, <em>min_hash_match=4</em>, <em>radius_cutoff_ratio=0.9</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neighbors/approximate.py#L110"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.neighbors.</code><code class="descname">LSHForest</code><span class="sig-paren">(</span><em>n_estimators=10</em>, <em>radius=1.0</em>, <em>n_candidates=50</em>, <em>n_neighbors=5</em>, <em>min_hash_match=4</em>, <em>radius_cutoff_ratio=0.9</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neighbors/approximate.py#L110"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest" title="Permalink to this definition">¶</a></dt>
 <dd><p>Performs approximate nearest neighbor search using LSH forest.</p>
 <p>LSH Forest: Locality Sensitive Hashing forest [1] is an alternative
 method for vanilla approximate nearest neighbor search methods.
@@ -180,11 +140,11 @@ LSH forest data structure has been implemented using sorted
 arrays and binary search and 32 bit fixed-length hashes.
 Random projection is used as the hash family which approximates
 cosine distance.</p>
-<p>The cosine distance is defined as <tt class="docutils literal"><span class="pre">1</span> <span class="pre">-</span> <span class="pre">cosine_similarity</span></tt>: the lowest
+<p>The cosine distance is defined as <code class="docutils literal"><span class="pre">1</span> <span class="pre">-</span> <span class="pre">cosine_similarity</span></code>: the lowest
 value is 0 (identical point) but it is bounded above by 2 for the farthest
 points. Its value does not depend on the norm of the vector points but
 only on their relative angles.</p>
-<p>Read more in the <a class="reference internal" href="../neighbors.html#approximate-nearest-neighbors"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../neighbors.html#approximate-nearest-neighbors"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -206,7 +166,7 @@ items meet the <cite>min_hash_match</cite> constraint.</p>
 <p><strong>n_neighbors</strong> : int (default = 5)</p>
 <blockquote>
 <div><p>Number of neighbors to be returned from query function when
-it is not provided to the <a class="reference internal" href="#sklearn.neighbors.LSHForest.kneighbors" title="sklearn.neighbors.LSHForest.kneighbors"><tt class="xref py py-meth docutils literal"><span class="pre">kneighbors</span></tt></a> method.</p>
+it is not provided to the <a class="reference internal" href="#sklearn.neighbors.LSHForest.kneighbors" title="sklearn.neighbors.LSHForest.kneighbors"><code class="xref py py-meth docutils literal"><span class="pre">kneighbors</span></code></a> method.</p>
 </div></blockquote>
 <p><strong>radius</strong> : float, optinal (default = 1.0)</p>
 <blockquote>
@@ -234,7 +194,7 @@ by <cite>np.random</cite>.</p>
 <div><p>Hash function g(p,x) for a tree is an array of 32 randomly generated
 float arrays with the same dimenstion as the data set. This array is
 stored in GaussianRandomProjectionHash object and can be obtained
-from <tt class="docutils literal"><span class="pre">components_</span></tt> attribute.</p>
+from <code class="docutils literal"><span class="pre">components_</span></code> attribute.</p>
 </div></blockquote>
 <p><strong>trees_</strong> : array, shape (n_estimators, n_samples)</p>
 <blockquote>
@@ -251,10 +211,10 @@ versions.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r58" rules="none">
+<table class="docutils citation" frame="void" id="r97" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R58]</a></td><td>M. Bawa, T. Condie and P. Ganesan, &#8220;LSH Forest: Self-Tuning
+<tr><td class="label"><a class="fn-backref" href="#id1">[R97]</a></td><td>M. Bawa, T. Condie and P. Ganesan, &#8220;LSH Forest: Self-Tuning
 Indexes for Similarity Search&#8221;, WWW &#8216;05 Proceedings of the
 14th international conference on World Wide Web,  651-660,
 2005.</td></tr>
@@ -289,40 +249,16 @@ Indexes for Similarity Search&#8221;, WWW &#8216;05 Proceedings of the
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neighbors.LSHForest.fit" title="sklearn.neighbors.LSHForest.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
-<td>Fit the LSH forest on the data.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.neighbors.LSHForest.get_params" title="sklearn.neighbors.LSHForest.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neighbors.LSHForest.kneighbors" title="sklearn.neighbors.LSHForest.kneighbors"><tt class="xref py py-obj docutils literal"><span class="pre">kneighbors</span></tt></a>(X[,&nbsp;n_neighbors,&nbsp;return_distance])</td>
-<td>Returns n_neighbors of approximate nearest neighbors.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.neighbors.LSHForest.kneighbors_graph" title="sklearn.neighbors.LSHForest.kneighbors_graph"><tt class="xref py py-obj docutils literal"><span class="pre">kneighbors_graph</span></tt></a>([X,&nbsp;n_neighbors,&nbsp;mode])</td>
-<td>Computes the (weighted) graph of k-Neighbors for points in X</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neighbors.LSHForest.partial_fit" title="sklearn.neighbors.LSHForest.partial_fit"><tt class="xref py py-obj docutils literal"><span class="pre">partial_fit</span></tt></a>(X[,&nbsp;y])</td>
-<td>Inserts new data into the already fitted LSH Forest.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.neighbors.LSHForest.radius_neighbors" title="sklearn.neighbors.LSHForest.radius_neighbors"><tt class="xref py py-obj docutils literal"><span class="pre">radius_neighbors</span></tt></a>(X[,&nbsp;radius,&nbsp;return_distance])</td>
-<td>Finds the neighbors within a given radius of a point or points.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.neighbors.LSHForest.radius_neighbors_graph" title="sklearn.neighbors.LSHForest.radius_neighbors_graph"><tt class="xref py py-obj docutils literal"><span class="pre">radius_neighbors_graph</span></tt></a>([X,&nbsp;radius,&nbsp;mode])</td>
-<td>Computes the (weighted) graph of Neighbors for points in X</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.neighbors.LSHForest.set_params" title="sklearn.neighbors.LSHForest.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
-</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.neighbors.LSHForest.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>n_estimators=10</em>, <em>radius=1.0</em>, <em>n_candidates=50</em>, <em>n_neighbors=5</em>, <em>min_hash_match=4</em>, <em>radius_cutoff_ratio=0.9</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neighbors/approximate.py#L209"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_estimators=10</em>, <em>radius=1.0</em>, <em>n_candidates=50</em>, <em>n_neighbors=5</em>, <em>min_hash_match=4</em>, <em>radius_cutoff_ratio=0.9</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neighbors/approximate.py#L209"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.neighbors.LSHForest.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neighbors/approximate.py#L337"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neighbors/approximate.py#L337"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the LSH forest on the data.</p>
 <p>This creates binary hashes of input data points by getting the
 dot product of input points and hash_function then
@@ -352,7 +288,7 @@ corresponds to a single data point.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.LSHForest.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -377,7 +313,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.LSHForest.kneighbors">
-<tt class="descname">kneighbors</tt><big>(</big><em>X</em>, <em>n_neighbors=None</em>, <em>return_distance=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neighbors/approximate.py#L401"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.kneighbors" title="Permalink to this definition">¶</a></dt>
+<code class="descname">kneighbors</code><span class="sig-paren">(</span><em>X</em>, <em>n_neighbors=None</em>, <em>return_distance=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neighbors/approximate.py#L401"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.kneighbors" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns n_neighbors of approximate nearest neighbors.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -417,7 +353,7 @@ matrix.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.LSHForest.kneighbors_graph">
-<tt class="descname">kneighbors_graph</tt><big>(</big><em>X=None</em>, <em>n_neighbors=None</em>, <em>mode='connectivity'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neighbors/base.py#L420"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.kneighbors_graph" title="Permalink to this definition">¶</a></dt>
+<code class="descname">kneighbors_graph</code><span class="sig-paren">(</span><em>X=None</em>, <em>n_neighbors=None</em>, <em>mode='connectivity'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neighbors/base.py#L438"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.kneighbors_graph" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes the (weighted) graph of k-Neighbors for points in X</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -453,7 +389,7 @@ A[i, j] is assigned the weight of edge that connects i to j.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.neighbors.NearestNeighbors.html#sklearn.neighbors.NearestNeighbors.radius_neighbors_graph" title="sklearn.neighbors.NearestNeighbors.radius_neighbors_graph"><tt class="xref py py-obj docutils literal"><span class="pre">NearestNeighbors.radius_neighbors_graph</span></tt></a></p>
+<p class="last"><a class="reference internal" href="sklearn.neighbors.NearestNeighbors.html#sklearn.neighbors.NearestNeighbors.radius_neighbors_graph" title="sklearn.neighbors.NearestNeighbors.radius_neighbors_graph"><code class="xref py py-obj docutils literal"><span class="pre">NearestNeighbors.radius_neighbors_graph</span></code></a></p>
 </div>
 <p class="rubric">Examples</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
@@ -472,7 +408,7 @@ A[i, j] is assigned the weight of edge that connects i to j.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.LSHForest.partial_fit">
-<tt class="descname">partial_fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neighbors/approximate.py#L509"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.partial_fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">partial_fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neighbors/approximate.py#L509"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.partial_fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Inserts new data into the already fitted LSH Forest.
 Cost is proportional to new total size, so additions
 should be batched.</p>
@@ -492,10 +428,10 @@ should be batched.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.LSHForest.radius_neighbors">
-<tt class="descname">radius_neighbors</tt><big>(</big><em>X</em>, <em>radius=None</em>, <em>return_distance=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neighbors/approximate.py#L450"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.radius_neighbors" title="Permalink to this definition">¶</a></dt>
+<code class="descname">radius_neighbors</code><span class="sig-paren">(</span><em>X</em>, <em>radius=None</em>, <em>return_distance=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neighbors/approximate.py#L450"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.radius_neighbors" title="Permalink to this definition">¶</a></dt>
 <dd><p>Finds the neighbors within a given radius of a point or points.</p>
 <p>Return the indices and distances of some points from the dataset
-lying in a ball with size <tt class="docutils literal"><span class="pre">radius</span></tt> around the points of the query
+lying in a ball with size <code class="docutils literal"><span class="pre">radius</span></code> around the points of the query
 array. Points lying on the boundary are included in the results.</p>
 <p>The result points are <em>not</em> necessarily sorted by distance to their
 query point.</p>
@@ -524,12 +460,12 @@ corresponds to a single query.</p>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>dist</strong> : array, shape (n_samples,) of arrays</p>
 <blockquote>
 <div><p>Each element is an array representing the cosine distances
-to some points found within <tt class="docutils literal"><span class="pre">radius</span></tt> of the respective query.
-Only present if <tt class="docutils literal"><span class="pre">return_distance=True</span></tt>.</p>
+to some points found within <code class="docutils literal"><span class="pre">radius</span></code> of the respective query.
+Only present if <code class="docutils literal"><span class="pre">return_distance=True</span></code>.</p>
 </div></blockquote>
 <p><strong>ind</strong> : array, shape (n_samples,) of arrays</p>
 <blockquote class="last">
-<div><p>Each element is an array of indices for neighbors within <tt class="docutils literal"><span class="pre">radius</span></tt>
+<div><p>Each element is an array of indices for neighbors within <code class="docutils literal"><span class="pre">radius</span></code>
 of the respective query.</p>
 </div></blockquote>
 </td>
@@ -540,7 +476,7 @@ of the respective query.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.LSHForest.radius_neighbors_graph">
-<tt class="descname">radius_neighbors_graph</tt><big>(</big><em>X=None</em>, <em>radius=None</em>, <em>mode='connectivity'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/neighbors/base.py#L648"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.radius_neighbors_graph" title="Permalink to this definition">¶</a></dt>
+<code class="descname">radius_neighbors_graph</code><span class="sig-paren">(</span><em>X=None</em>, <em>radius=None</em>, <em>mode='connectivity'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/neighbors/base.py#L666"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.radius_neighbors_graph" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes the (weighted) graph of Neighbors for points in X</p>
 <p>Neighborhoods are restricted the points at a distance lower than
 radius.</p>
@@ -577,7 +513,7 @@ edges are Euclidean distance between points.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.neighbors.kneighbors_graph.html#sklearn.neighbors.kneighbors_graph" title="sklearn.neighbors.kneighbors_graph"><tt class="xref py py-obj docutils literal"><span class="pre">kneighbors_graph</span></tt></a></p>
+<p class="last"><a class="reference internal" href="sklearn.neighbors.kneighbors_graph.html#sklearn.neighbors.kneighbors_graph" title="sklearn.neighbors.kneighbors_graph"><code class="xref py py-obj docutils literal"><span class="pre">kneighbors_graph</span></code></a></p>
 </div>
 <p class="rubric">Examples</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
@@ -596,11 +532,11 @@ edges are Euclidean distance between points.</p>
 
 <dl class="method">
 <dt id="sklearn.neighbors.LSHForest.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.neighbors.LSHForest.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -615,14 +551,14 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-neighbors-lshforest">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.neighbors.LSHForest</span></tt><a class="headerlink" href="#examples-using-sklearn-neighbors-lshforest" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example demonstrates the behaviour of the accuracy of the nearest neighbor queries of Loca..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.neighbors.LSHForest</span></code><a class="headerlink" href="#examples-using-sklearn-neighbors-lshforest" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example demonstrates the behaviour of the accuracy of the nearest neighbor queries of Loca..."><div class="figure" id="id2">
 <a class="reference external image-reference" href="./../../auto_examples/neighbors/plot_approximate_nearest_neighbors_hyperparameters.html"><img alt="../../_images/plot_approximate_nearest_neighbors_hyperparameters1.png" src="../../_images/plot_approximate_nearest_neighbors_hyperparameters1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/neighbors/plot_approximate_nearest_neighbors_hyperparameters.html#example-neighbors-plot-approximate-nearest-neighbors-hyperparameters-py"><em>Hyper-parameters of Approximate Nearest Neighbors</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/neighbors/plot_approximate_nearest_neighbors_hyperparameters.html#example-neighbors-plot-approximate-nearest-neighbors-hyperparameters-py"><span>Hyper-parameters of Approximate Nearest Neighbors</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example studies the scalability profile of approximate 10-neighbors queries using the LSHF..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="This example studies the scalability profile of approximate 10-neighbors queries using the LSHF..."><div class="figure" id="id3">
 <a class="reference external image-reference" href="./../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.html"><img alt="../../_images/plot_approximate_nearest_neighbors_scalability1.png" src="../../_images/plot_approximate_nearest_neighbors_scalability1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.html#example-neighbors-plot-approximate-nearest-neighbors-scalability-py"><em>Scalability of Approximate Nearest Neighbors</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/neighbors/plot_approximate_nearest_neighbors_scalability.html#example-neighbors-plot-approximate-nearest-neighbors-scalability-py"><span>Scalability of Approximate Nearest Neighbors</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -639,12 +575,8 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.neighbors.LSHForest.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.neighbors.KDTree.html">Previous
-      </a>
-    </div>
     
      </div>
 

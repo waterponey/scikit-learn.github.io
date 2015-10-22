@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="hyper-parameters-of-approximate-nearest-neighbors">
 <span id="example-neighbors-plot-approximate-nearest-neighbors-hyperparameters-py"></span><h1>Hyper-parameters of Approximate Nearest Neighbors<a class="headerlink" href="#hyper-parameters-of-approximate-nearest-neighbors" title="Permalink to this headline">¶</a></h1>
@@ -179,15 +179,9 @@ maintained at three fixed levels (1, 5, 10).</p>
 <p>In the second plot, the number of candidates is fixed at 50. Number of trees
 is varied and the accuracy is plotted against those values. To measure the
 accuracy, the true nearest neighbors are required, therefore
-<a class="reference internal" href="../../modules/generated/sklearn.neighbors.NearestNeighbors.html#sklearn.neighbors.NearestNeighbors" title="sklearn.neighbors.NearestNeighbors"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.NearestNeighbors</span></tt></a> is used to compute the exact
+<a class="reference internal" href="../../modules/generated/sklearn.neighbors.NearestNeighbors.html#sklearn.neighbors.NearestNeighbors" title="sklearn.neighbors.NearestNeighbors"><code class="xref py py-class docutils literal"><span class="pre">sklearn.neighbors.NearestNeighbors</span></code></a> is used to compute the exact
 neighbors.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_approximate_nearest_neighbors_hyperparameters_001.png"><img alt="../../_images/plot_approximate_nearest_neighbors_hyperparameters_001.png" src="../../_images/plot_approximate_nearest_neighbors_hyperparameters_001.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_approximate_nearest_neighbors_hyperparameters_002.png"><img alt="../../_images/plot_approximate_nearest_neighbors_hyperparameters_002.png" src="../../_images/plot_approximate_nearest_neighbors_hyperparameters_002.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-</ul>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_approximate_nearest_neighbors_hyperparameters.py"><tt class="xref download docutils literal"><span class="pre">plot_approximate_nearest_neighbors_hyperparameters.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_approximate_nearest_neighbors_hyperparameters.py"><code class="xref download docutils literal"><span class="pre">plot_approximate_nearest_neighbors_hyperparameters.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
 <span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
@@ -278,7 +272,7 @@ neighbors.</p>
     <span class="n">plt</span><span class="o">.</span><span class="n">errorbar</span><span class="p">(</span><span class="n">n_candidates_values</span><span class="p">,</span> <span class="n">accuracies_c</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:],</span>
                  <span class="n">stds_accuracies</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 
-<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;upper left&#39;</span><span class="p">,</span> <span class="n">prop</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="s">&#39;small&#39;</span><span class="p">))</span>
+<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;upper left&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="s">&#39;small&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylim"><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span></a><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">])</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlim"><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span></a><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">n_candidates_values</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">n_candidates_values</span><span class="p">))</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&quot;Accuracy&quot;</span><span class="p">)</span>
@@ -300,8 +294,6 @@ neighbors.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  58.37 seconds
-( 0 minutes  58.37 seconds)</p>
 </div>
 
 

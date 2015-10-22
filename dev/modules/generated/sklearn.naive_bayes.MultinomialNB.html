@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.naive_bayes</span></tt>.MultinomialNB</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-naive-bayes-multinomialnb">Examples using <tt class="docutils literal"><span class="pre">sklearn.naive_bayes.MultinomialNB</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.naive_bayes</span></code>.MultinomialNB</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-naive-bayes-multinomialnb">Examples using <code class="docutils literal"><span class="pre">sklearn.naive_bayes.MultinomialNB</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,19 +166,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-naive-bayes-multinomialnb">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.naive_bayes" title="sklearn.naive_bayes"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.naive_bayes</span></tt></a>.MultinomialNB<a class="headerlink" href="#sklearn-naive-bayes-multinomialnb" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.naive_bayes" title="sklearn.naive_bayes"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.naive_bayes</span></code></a>.MultinomialNB<a class="headerlink" href="#sklearn-naive-bayes-multinomialnb" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.naive_bayes.MultinomialNB">
-<em class="property">class </em><tt class="descclassname">sklearn.naive_bayes.</tt><tt class="descname">MultinomialNB</tt><big>(</big><em>alpha=1.0</em>, <em>fit_prior=True</em>, <em>class_prior=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L566"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.naive_bayes.</code><code class="descname">MultinomialNB</code><span class="sig-paren">(</span><em>alpha=1.0</em>, <em>fit_prior=True</em>, <em>class_prior=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L566"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB" title="Permalink to this definition">¶</a></dt>
 <dd><p>Naive Bayes classifier for multinomial models</p>
 <p>The multinomial Naive Bayes classifier is suitable for classification with
 discrete features (e.g., word counts for text classification). The
 multinomial distribution normally requires integer feature counts. However,
 in practice, fractional counts such as tf-idf may also work.</p>
-<p>Read more in the <a class="reference internal" href="../naive_bayes.html#multinomial-naive-bayes"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../naive_bayes.html#multinomial-naive-bayes"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -206,17 +206,17 @@ adjusted according to the data.</p>
 </div></blockquote>
 <p><strong>intercept_</strong> : property</p>
 <blockquote>
-<div><p>Mirrors <tt class="docutils literal"><span class="pre">class_log_prior_</span></tt> for interpreting MultinomialNB
+<div><p>Mirrors <code class="docutils literal"><span class="pre">class_log_prior_</span></code> for interpreting MultinomialNB
 as a linear model.</p>
 </div></blockquote>
 <p><strong>feature_log_prob_</strong> : array, shape (n_classes, n_features)</p>
 <blockquote>
 <div><p>Empirical log probability of features
-given a class, <tt class="docutils literal"><span class="pre">P(x_i|y)</span></tt>.</p>
+given a class, <code class="docutils literal"><span class="pre">P(x_i|y)</span></code>.</p>
 </div></blockquote>
 <p><strong>coef_</strong> : property</p>
 <blockquote>
-<div><p>Mirrors <tt class="docutils literal"><span class="pre">feature_log_prob_</span></tt> for interpreting MultinomialNB
+<div><p>Mirrors <code class="docutils literal"><span class="pre">feature_log_prob_</span></code> for interpreting MultinomialNB
 as a linear model.</p>
 </div></blockquote>
 <p><strong>class_count_</strong> : array, shape (n_classes,)</p>
@@ -261,40 +261,31 @@ Information Retrieval. Cambridge University Press, pp. 234-265.
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.fit" title="sklearn.naive_bayes.MultinomialNB.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.fit" title="sklearn.naive_bayes.MultinomialNB.fit"><code class="xref py py-obj docutils literal"><span class="pre">fit</span></code></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
 <td>Fit Naive Bayes classifier according to X, y</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.get_params" title="sklearn.naive_bayes.MultinomialNB.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.partial_fit" title="sklearn.naive_bayes.MultinomialNB.partial_fit"><tt class="xref py py-obj docutils literal"><span class="pre">partial_fit</span></tt></a>(X,&nbsp;y[,&nbsp;classes,&nbsp;sample_weight])</td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.partial_fit" title="sklearn.naive_bayes.MultinomialNB.partial_fit"><code class="xref py py-obj docutils literal"><span class="pre">partial_fit</span></code></a>(X,&nbsp;y[,&nbsp;classes,&nbsp;sample_weight])</td>
 <td>Incremental fit on a batch of samples.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.predict" title="sklearn.naive_bayes.MultinomialNB.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.predict" title="sklearn.naive_bayes.MultinomialNB.predict"><code class="xref py py-obj docutils literal"><span class="pre">predict</span></code></a>(X)</td>
 <td>Perform classification on an array of test vectors X.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.predict_log_proba" title="sklearn.naive_bayes.MultinomialNB.predict_log_proba"><tt class="xref py py-obj docutils literal"><span class="pre">predict_log_proba</span></tt></a>(X)</td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.predict_log_proba" title="sklearn.naive_bayes.MultinomialNB.predict_log_proba"><code class="xref py py-obj docutils literal"><span class="pre">predict_log_proba</span></code></a>(X)</td>
 <td>Return log-probability estimates for the test vector X.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.predict_proba" title="sklearn.naive_bayes.MultinomialNB.predict_proba"><tt class="xref py py-obj docutils literal"><span class="pre">predict_proba</span></tt></a>(X)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.predict_proba" title="sklearn.naive_bayes.MultinomialNB.predict_proba"><code class="xref py py-obj docutils literal"><span class="pre">predict_proba</span></code></a>(X)</td>
 <td>Return probability estimates for the test vector X.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.score" title="sklearn.naive_bayes.MultinomialNB.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
-<td>Returns the mean accuracy on the given test data and labels.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.naive_bayes.MultinomialNB.set_params" title="sklearn.naive_bayes.MultinomialNB.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.naive_bayes.MultinomialNB.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>alpha=1.0</em>, <em>fit_prior=True</em>, <em>class_prior=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L642"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>alpha=1.0</em>, <em>fit_prior=True</em>, <em>class_prior=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L642"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.MultinomialNB.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L502"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L502"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit Naive Bayes classifier according to X, y</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -327,7 +318,7 @@ n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.MultinomialNB.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -352,7 +343,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.MultinomialNB.partial_fit">
-<tt class="descname">partial_fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>classes=None</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L420"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.partial_fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">partial_fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>classes=None</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L420"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.partial_fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Incremental fit on a batch of samples.</p>
 <p>This method is expected to be called several times consecutively
 on different chunks of a dataset so as to implement out-of-core
@@ -399,7 +390,7 @@ in subsequent calls.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.MultinomialNB.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L52"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.predict" title="Permalink to this definition">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L52"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform classification on an array of test vectors X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -420,7 +411,7 @@ in subsequent calls.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.MultinomialNB.predict_log_proba">
-<tt class="descname">predict_log_proba</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L68"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.predict_log_proba" title="Permalink to this definition">¶</a></dt>
+<code class="descname">predict_log_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L68"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.predict_log_proba" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return log-probability estimates for the test vector X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -443,7 +434,7 @@ order, as they appear in the attribute <cite>classes_</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.MultinomialNB.predict_proba">
-<tt class="descname">predict_proba</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/naive_bayes.py#L88"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.predict_proba" title="Permalink to this definition">¶</a></dt>
+<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/naive_bayes.py#L88"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.predict_proba" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return probability estimates for the test vector X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -466,7 +457,7 @@ order, as they appear in the attribute <cite>classes_</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.MultinomialNB.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L292"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.score" title="Permalink to this definition">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L285"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -501,11 +492,11 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.naive_bayes.MultinomialNB.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.naive_bayes.MultinomialNB.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -520,18 +511,18 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-naive-bayes-multinomialnb">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.naive_bayes.MultinomialNB</span></tt><a class="headerlink" href="#examples-using-sklearn-naive-bayes-multinomialnb" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used for classification using an out-of-core..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.naive_bayes.MultinomialNB</span></code><a class="headerlink" href="#examples-using-sklearn-naive-bayes-multinomialnb" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used for classification using an out-of-core..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/applications/plot_out_of_core_classification.html"><img alt="../../_images/plot_out_of_core_classification1.png" src="../../_images/plot_out_of_core_classification1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/applications/plot_out_of_core_classification.html#example-applications-plot-out-of-core-classification-py"><em>Out-of-core classification of text documents</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/plot_out_of_core_classification.html#example-applications-plot-out-of-core-classification-py"><span>Out-of-core classification of text documents</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This is an example showing how the scikit-learn can be used to classify documents by topics usi..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="This is an example showing how the scikit-learn can be used to classify documents by topics usi..."><div class="figure" id="id2">
 <a class="reference external image-reference" href="./../../auto_examples/text/mlcomp_sparse_document_classification.html"><img alt="../../_images/mlcomp_sparse_document_classification1.png" src="../../_images/mlcomp_sparse_document_classification1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/text/mlcomp_sparse_document_classification.html#example-text-mlcomp-sparse-document-classification-py"><em>Classification of text documents: using a MLComp dataset</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/text/mlcomp_sparse_document_classification.html#example-text-mlcomp-sparse-document-classification-py"><span>Classification of text documents: using a MLComp dataset</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used to classify documents by topics using a..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used to classify documents by topics using a..."><div class="figure" id="id3">
 <a class="reference external image-reference" href="./../../auto_examples/text/document_classification_20newsgroups.html"><img alt="../../_images/document_classification_20newsgroups1.png" src="../../_images/document_classification_20newsgroups1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/text/document_classification_20newsgroups.html#example-text-document-classification-20newsgroups-py"><em>Classification of text documents using sparse features</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/text/document_classification_20newsgroups.html#example-text-document-classification-20newsgroups-py"><span>Classification of text documents using sparse features</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

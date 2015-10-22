@@ -25,35 +25,8 @@ expected 0.5 for most of the samples belonging to the middle cluster with
 heterogeneous labels. This results in a significantly improved Brier score.
 
 
-
-.. rst-class:: horizontal
-
-
-    *
-
-      .. image:: images/plot_calibration_001.png
-            :scale: 47
-
-    *
-
-      .. image:: images/plot_calibration_002.png
-            :scale: 47
-
-
-**Script output**::
-
-  Brier scores: (the smaller the better)
-  No calibration: 0.104
-  With isotonic calibration: 0.084
-  With sigmoid calibration: 0.109
-
-
-
 **Python source code:** :download:`plot_calibration.py <plot_calibration.py>`
 
 .. literalinclude:: plot_calibration.py
     :lines: 23-
-
-**Total running time of the example:**  0.72 seconds
-( 0 minutes  0.72 seconds)
     

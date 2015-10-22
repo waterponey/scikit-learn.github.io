@@ -37,7 +37,7 @@
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
     <link rel="next" title="Plot Ridge coefficients as a function of the regularization" href="plot_ridge_path.html" />
-    <link rel="prev" title="SGD: convex loss functions" href="plot_sgd_loss_functions.html" />
+    <link rel="prev" title="SGD: Maximum margin separating hyperplane" href="plot_sgd_separating_hyperplane.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_sgd_loss_functions.html"
+        <a href="plot_sgd_separating_hyperplane.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        SGD: convex l...
+        SGD: Maximum ...
         </span>
             <span class="hiddenrellink">
-            SGD: convex loss functions
+            SGD: Maximum margin separating hyperplane
             </span>
         </a>
         </div>
@@ -163,14 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sgd-weighted-samples">
 <span id="example-linear-model-plot-sgd-weighted-samples-py"></span><h1>SGD: Weighted samples<a class="headerlink" href="#sgd-weighted-samples" title="Permalink to this headline">¶</a></h1>
 <p>Plot decision function of a weighted dataset, where the size of points
 is proportional to its weight.</p>
-<img alt="../../_images/plot_sgd_weighted_samples_001.png" class="align-center" src="../../_images/plot_sgd_weighted_samples_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_sgd_weighted_samples.py"><tt class="xref download docutils literal"><span class="pre">plot_sgd_weighted_samples.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_sgd_weighted_samples.py"><code class="xref download docutils literal"><span class="pre">plot_sgd_weighted_samples.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -213,8 +212,6 @@ is proportional to its weight.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.14 seconds
-( 0 minutes  0.14 seconds)</p>
 </div>
 
 
@@ -232,7 +229,7 @@ is proportional to its weight.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_sgd_loss_functions.html">Previous
+      <a href="plot_sgd_separating_hyperplane.html">Previous
       </a>
     </div>
     

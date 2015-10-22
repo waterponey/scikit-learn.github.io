@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -168,17 +168,17 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="random-projection">
 <span id="id1"></span><h1>4.5. Random Projection<a class="headerlink" href="#random-projection" title="Permalink to this headline">¶</a></h1>
-<p>The <a class="reference internal" href="classes.html#module-sklearn.random_projection" title="sklearn.random_projection"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.random_projection</span></tt></a> module implements a simple and
+<p>The <a class="reference internal" href="classes.html#module-sklearn.random_projection" title="sklearn.random_projection"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.random_projection</span></code></a> module implements a simple and
 computationally efficient way to reduce the dimensionality of the data by
 trading a controlled amount of accuracy (as additional variance) for faster
 processing times and smaller model sizes. This module implements two types of
 unstructured random matrix:
-<a class="reference internal" href="#gaussian-random-matrix"><em>Gaussian random matrix</em></a> and
-<a class="reference internal" href="#sparse-random-matrix"><em>sparse random matrix</em></a>.</p>
+<a class="reference internal" href="#gaussian-random-matrix"><span>Gaussian random matrix</span></a> and
+<a class="reference internal" href="#sparse-random-matrix"><span>sparse random matrix</span></a>.</p>
 <p>The dimensions and distribution of random projections matrices are
 controlled so as to preserve the pairwise distances between any two
 samples of the dataset. Thus random projection is a suitable approximation
@@ -211,7 +211,7 @@ much lower dimension in such a way that distances between the points are
 nearly preserved. The map used for the embedding is at least Lipschitz,
 and can even be taken to be an orthogonal projection.</div></blockquote>
 <p>Knowing only the number of samples, the
-<a class="reference internal" href="generated/sklearn.random_projection.johnson_lindenstrauss_min_dim.html#sklearn.random_projection.johnson_lindenstrauss_min_dim" title="sklearn.random_projection.johnson_lindenstrauss_min_dim"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.random_projection.johnson_lindenstrauss_min_dim</span></tt></a> estimates
+<a class="reference internal" href="generated/sklearn.random_projection.johnson_lindenstrauss_min_dim.html#sklearn.random_projection.johnson_lindenstrauss_min_dim" title="sklearn.random_projection.johnson_lindenstrauss_min_dim"><code class="xref py py-func docutils literal"><span class="pre">sklearn.random_projection.johnson_lindenstrauss_min_dim</span></code></a> estimates
 conservatively the minimal size of the random subspace to guarantee a
 bounded distortion introduced by the random projection:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.random_projection</span> <span class="kn">import</span> <span class="n">johnson_lindenstrauss_min_dim</span>
@@ -224,15 +224,15 @@ bounded distortion introduced by the random projection:</p>
 </pre></div>
 </div>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/plot_johnson_lindenstrauss_bound.html"><img alt="../_images/plot_johnson_lindenstrauss_bound_0011.png" src="../_images/plot_johnson_lindenstrauss_bound_0011.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/plot_johnson_lindenstrauss_bound.html"><img alt="modules/../auto_examples/images/plot_johnson_lindenstrauss_bound_001.png" src="modules/../auto_examples/images/plot_johnson_lindenstrauss_bound_001.png" /></a>
 </div>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/plot_johnson_lindenstrauss_bound.html"><img alt="../_images/plot_johnson_lindenstrauss_bound_0021.png" src="../_images/plot_johnson_lindenstrauss_bound_0021.png" style="width: 600.0px; height: 450.0px;" /></a>
+<a class="reference external image-reference" href="../auto_examples/plot_johnson_lindenstrauss_bound.html"><img alt="modules/../auto_examples/images/plot_johnson_lindenstrauss_bound_002.png" src="modules/../auto_examples/images/plot_johnson_lindenstrauss_bound_002.png" /></a>
 </div>
 <div class="topic">
 <p class="topic-title first">Example:</p>
 <ul class="simple">
-<li>See <a class="reference internal" href="../auto_examples/plot_johnson_lindenstrauss_bound.html#example-plot-johnson-lindenstrauss-bound-py"><em>The Johnson-Lindenstrauss bound for embedding with random projections</em></a>
+<li>See <a class="reference internal" href="../auto_examples/plot_johnson_lindenstrauss_bound.html#example-plot-johnson-lindenstrauss-bound-py"><span>The Johnson-Lindenstrauss bound for embedding with random projections</span></a>
 for a theoretical explication on the Johnson-Lindenstrauss lemma and an
 empirical validation using sparse random matrices.</li>
 </ul>
@@ -247,7 +247,7 @@ empirical validation using sparse random matrices.</li>
 </div>
 <div class="section" id="gaussian-random-projection">
 <span id="gaussian-random-matrix"></span><h2>4.5.2. Gaussian random projection<a class="headerlink" href="#gaussian-random-projection" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="generated/sklearn.random_projection.GaussianRandomProjection.html#sklearn.random_projection.GaussianRandomProjection" title="sklearn.random_projection.GaussianRandomProjection"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.random_projection.GaussianRandomProjection</span></tt></a> reduces the
+<p>The <a class="reference internal" href="generated/sklearn.random_projection.GaussianRandomProjection.html#sklearn.random_projection.GaussianRandomProjection" title="sklearn.random_projection.GaussianRandomProjection"><code class="xref py py-class docutils literal"><span class="pre">sklearn.random_projection.GaussianRandomProjection</span></code></a> reduces the
 dimensionality by projecting the original input space on a randomly generated
 matrix where components are drawn from the following distribution
 <img class="math" src="../_images/math/4b6fc14718fd93134fd32b08a74c8eb41f56f14b.png" alt="N(0, \frac{1}{n_{components}})"/>.</p>
@@ -265,13 +265,13 @@ projection transformer:</p>
 </div>
 <div class="section" id="sparse-random-projection">
 <span id="sparse-random-matrix"></span><h2>4.5.3. Sparse random projection<a class="headerlink" href="#sparse-random-projection" title="Permalink to this headline">¶</a></h2>
-<p>The <a class="reference internal" href="generated/sklearn.random_projection.SparseRandomProjection.html#sklearn.random_projection.SparseRandomProjection" title="sklearn.random_projection.SparseRandomProjection"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.random_projection.SparseRandomProjection</span></tt></a> reduces the
+<p>The <a class="reference internal" href="generated/sklearn.random_projection.SparseRandomProjection.html#sklearn.random_projection.SparseRandomProjection" title="sklearn.random_projection.SparseRandomProjection"><code class="xref py py-class docutils literal"><span class="pre">sklearn.random_projection.SparseRandomProjection</span></code></a> reduces the
 dimensionality by projecting the original input space using a sparse
 random matrix.</p>
 <p>Sparse random matrices are an alternative to dense Gaussian random
 projection matrix that guarantees similar embedding quality while being much
 more memory efficient and allowing faster computation of the projected data.</p>
-<p>If we define <tt class="docutils literal"><span class="pre">s</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">/</span> <span class="pre">density</span></tt>, the elements of the random matrix
+<p>If we define <code class="docutils literal"><span class="pre">s</span> <span class="pre">=</span> <span class="pre">1</span> <span class="pre">/</span> <span class="pre">density</span></code>, the elements of the random matrix
 are drawn from</p>
 <div class="math">
 <p><img src="../_images/math/c5926a04917006dc055a58af642f40f878e4fb49.png" alt="\left\{

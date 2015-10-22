@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,11 +163,11 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="manifold-learning-methods-on-a-severed-sphere">
 <span id="example-manifold-plot-manifold-sphere-py"></span><h1>Manifold Learning methods on a severed sphere<a class="headerlink" href="#manifold-learning-methods-on-a-severed-sphere" title="Permalink to this headline">¶</a></h1>
-<p>An application of the different <a class="reference internal" href="../../modules/manifold.html#manifold"><em>Manifold learning</em></a> techniques
+<p>An application of the different <a class="reference internal" href="../../modules/manifold.html#manifold"><span>Manifold learning</span></a> techniques
 on a spherical data-set. Here one can see the use of
 dimensionality reduction in order to gain some intuition
 regarding the manifold learning methods. Regarding the dataset,
@@ -175,8 +175,8 @@ the poles are cut from the sphere, as well as a thin slice down its
 side. This enables the manifold learning techniques to
 &#8216;spread it open&#8217; whilst projecting it onto two dimensions.</p>
 <p>For a similar example, where the methods are applied to the
-S-curve dataset, see <a class="reference internal" href="plot_compare_methods.html#example-manifold-plot-compare-methods-py"><em>Comparison of Manifold Learning methods</em></a></p>
-<p>Note that the purpose of the <a class="reference internal" href="../../modules/manifold.html#multidimensional-scaling"><em>MDS</em></a> is
+S-curve dataset, see <a class="reference internal" href="plot_compare_methods.html#example-manifold-plot-compare-methods-py"><span>Comparison of Manifold Learning methods</span></a></p>
+<p>Note that the purpose of the <a class="reference internal" href="../../modules/manifold.html#multidimensional-scaling"><span>MDS</span></a> is
 to find a low-dimensional representation of the data (here 2D) in
 which the distances respect well the distances in the original
 high-dimensional space, unlike other manifold-learning algorithms,
@@ -184,19 +184,7 @@ it does not seeks an isotropic representation of the data in
 the low-dimensional space. Here the manifold problem matches fairly
 that of representing a flat map of the Earth, as with
 <a class="reference external" href="http://en.wikipedia.org/wiki/Map_projection">map projection</a></p>
-<img alt="../../_images/plot_manifold_sphere_001.png" class="align-center" src="../../_images/plot_manifold_sphere_001.png" />
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>standard: 0.14 sec
-ltsa: 0.26 sec
-hessian: 0.35 sec
-modified: 0.29 sec
-ISO: 0.5 sec
-MDS: 7.7 sec
-Spectral Embedding: 0.49 sec
-t-SNE: 5.3 sec
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_manifold_sphere.py"><tt class="xref download docutils literal"><span class="pre">plot_manifold_sphere.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_manifold_sphere.py"><code class="xref download docutils literal"><span class="pre">plot_manifold_sphere.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Author: Jaques Grobler &lt;jaques.grobler@inria.fr&gt;</span>
 <span class="c"># License: BSD 3 clause</span>
 
@@ -325,8 +313,6 @@ t-SNE: 5.3 sec
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  15.59 seconds
-( 0 minutes  15.59 seconds)</p>
 </div>
 
 

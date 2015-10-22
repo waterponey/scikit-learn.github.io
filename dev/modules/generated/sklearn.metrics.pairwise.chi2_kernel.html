@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -147,7 +147,7 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics.pairwise</span></tt>.chi2_kernel</a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics.pairwise</span></code>.chi2_kernel</a></li>
 </ul>
 
     </div>
@@ -163,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-metrics-pairwise-chi2-kernel">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics.pairwise" title="sklearn.metrics.pairwise"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics.pairwise</span></tt></a>.chi2_kernel<a class="headerlink" href="#sklearn-metrics-pairwise-chi2-kernel" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics.pairwise" title="sklearn.metrics.pairwise"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics.pairwise</span></code></a>.chi2_kernel<a class="headerlink" href="#sklearn-metrics-pairwise-chi2-kernel" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.pairwise.chi2_kernel">
-<tt class="descclassname">sklearn.metrics.pairwise.</tt><tt class="descname">chi2_kernel</tt><big>(</big><em>X</em>, <em>Y=None</em>, <em>gamma=1.0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/metrics/pairwise.py#L950"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.pairwise.chi2_kernel" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.metrics.pairwise.</code><code class="descname">chi2_kernel</code><span class="sig-paren">(</span><em>X</em>, <em>Y=None</em>, <em>gamma=1.0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/pairwise.py#L950"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.pairwise.chi2_kernel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes the exponential chi-squared kernel X and Y.</p>
 <p>The chi-squared kernel is computed between each pair of rows in X and Y.  X
 and Y have to be non-negative. This kernel is most commonly applied to
@@ -179,7 +179,7 @@ histograms.</p>
 </pre></div>
 </div>
 <p>It can be interpreted as a weighted difference per entry.</p>
-<p>Read more in the <a class="reference internal" href="../metrics.html#chi2-kernel"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../metrics.html#chi2-kernel"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -200,9 +200,9 @@ histograms.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.metrics.pairwise.additive_chi2_kernel.html#sklearn.metrics.pairwise.additive_chi2_kernel" title="sklearn.metrics.pairwise.additive_chi2_kernel"><tt class="xref py py-obj docutils literal"><span class="pre">additive_chi2_kernel</span></tt></a></dt>
+<dt><a class="reference internal" href="sklearn.metrics.pairwise.additive_chi2_kernel.html#sklearn.metrics.pairwise.additive_chi2_kernel" title="sklearn.metrics.pairwise.additive_chi2_kernel"><code class="xref py py-obj docutils literal"><span class="pre">additive_chi2_kernel</span></code></a></dt>
 <dd>The additive version of this kernel</dd>
-<dt><a class="reference internal" href="sklearn.kernel_approximation.AdditiveChi2Sampler.html#sklearn.kernel_approximation.AdditiveChi2Sampler" title="sklearn.kernel_approximation.AdditiveChi2Sampler"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.kernel_approximation.AdditiveChi2Sampler</span></tt></a></dt>
+<dt><a class="reference internal" href="sklearn.kernel_approximation.AdditiveChi2Sampler.html#sklearn.kernel_approximation.AdditiveChi2Sampler" title="sklearn.kernel_approximation.AdditiveChi2Sampler"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.kernel_approximation.AdditiveChi2Sampler</span></code></a></dt>
 <dd>A Fourier approximation to the additive version of this kernel.</dd>
 </dl>
 </div>

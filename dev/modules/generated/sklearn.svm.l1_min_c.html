@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.svm.libsvm.fit" href="sklearn.svm.libsvm.fit.html" />
-    <link rel="prev" title="sklearn.svm.OneClassSVM" href="sklearn.svm.OneClassSVM.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.svm.OneClassSVM.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.svm.O...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.svm.OneClassSVM
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.svm</span></tt>.l1_min_c</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-svm-l1-min-c">Examples using <tt class="docutils literal"><span class="pre">sklearn.svm.l1_min_c</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.svm</span></code>.l1_min_c</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-svm-l1-min-c">Examples using <code class="docutils literal"><span class="pre">sklearn.svm.l1_min_c</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,13 +126,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-svm-l1-min-c">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.svm" title="sklearn.svm"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></tt></a>.l1_min_c<a class="headerlink" href="#sklearn-svm-l1-min-c" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.svm" title="sklearn.svm"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></code></a>.l1_min_c<a class="headerlink" href="#sklearn-svm-l1-min-c" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.svm.l1_min_c">
-<tt class="descclassname">sklearn.svm.</tt><tt class="descname">l1_min_c</tt><big>(</big><em>X</em>, <em>y</em>, <em>loss='squared_hinge'</em>, <em>fit_intercept=True</em>, <em>intercept_scaling=1.0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/svm/bounds.py#L14"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.l1_min_c" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.svm.</code><code class="descname">l1_min_c</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>loss='squared_hinge'</em>, <em>fit_intercept=True</em>, <em>intercept_scaling=1.0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/svm/bounds.py#L14"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.l1_min_c" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the lowest bound for C such that for C in (l1_min_C, infinity)
 the model is guaranteed not to be empty. This applies to l1 penalized
 classifiers, such as LinearSVC with penalty=&#8217;l1&#8217; and
@@ -225,10 +185,10 @@ It must match the fit() method parameter.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-svm-l1-min-c">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.svm.l1_min_c</span></tt><a class="headerlink" href="#examples-using-sklearn-svm-l1-min-c" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Computes path on IRIS dataset."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.svm.l1_min_c</span></code><a class="headerlink" href="#examples-using-sklearn-svm-l1-min-c" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Computes path on IRIS dataset."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_logistic_path.html"><img alt="../../_images/plot_logistic_path1.png" src="../../_images/plot_logistic_path1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_logistic_path.html#example-linear-model-plot-logistic-path-py"><em>Path with L1- Logistic Regression</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_logistic_path.html#example-linear-model-plot-logistic-path-py"><span>Path with L1- Logistic Regression</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -245,12 +205,8 @@ It must match the fit() method parameter.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.svm.l1_min_c.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.svm.OneClassSVM.html">Previous
-      </a>
-    </div>
     
      </div>
 

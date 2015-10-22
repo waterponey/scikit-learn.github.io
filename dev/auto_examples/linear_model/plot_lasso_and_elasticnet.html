@@ -36,7 +36,7 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="Sparsity Example: Fitting only features 1 and 2" href="plot_ols_3d.html" />
+    <link rel="next" title="Bayesian Ridge Regression" href="plot_bayesian_ridge.html" />
     <link rel="prev" title="Lasso on dense and sparse data" href="lasso_dense_vs_sparse_data.html" />
   
   
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,26 +163,14 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="lasso-and-elastic-net-for-sparse-signals">
 <span id="example-linear-model-plot-lasso-and-elasticnet-py"></span><h1>Lasso and Elastic Net for Sparse Signals<a class="headerlink" href="#lasso-and-elastic-net-for-sparse-signals" title="Permalink to this headline">¶</a></h1>
 <p>Estimates Lasso and Elastic-Net regression models on a manually generated
 sparse signal corrupted with an additive noise. Estimated coefficients are
 compared with the ground-truth.</p>
-<img alt="../../_images/plot_lasso_and_elasticnet_001.png" class="align-center" src="../../_images/plot_lasso_and_elasticnet_001.png" />
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Lasso(alpha=0.1, copy_X=True, fit_intercept=True, max_iter=1000,
-   normalize=False, positive=False, precompute=False, random_state=None,
-   selection=&#39;cyclic&#39;, tol=0.0001, warm_start=False)
-r^2 on test data : 0.384710
-ElasticNet(alpha=0.1, copy_X=True, fit_intercept=True, l1_ratio=0.7,
-      max_iter=1000, normalize=False, positive=False, precompute=False,
-      random_state=None, selection=&#39;cyclic&#39;, tol=0.0001, warm_start=False)
-r^2 on test data : 0.240176
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lasso_and_elasticnet.py"><tt class="xref download docutils literal"><span class="pre">plot_lasso_and_elasticnet.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lasso_and_elasticnet.py"><code class="xref download docutils literal"><span class="pre">plot_lasso_and_elasticnet.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -242,8 +230,6 @@ r^2 on test data : 0.240176
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.10 seconds
-( 0 minutes  0.10 seconds)</p>
 </div>
 
 

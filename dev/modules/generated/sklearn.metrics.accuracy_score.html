@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.metrics.auc" href="sklearn.metrics.auc.html" />
-    <link rel="prev" title="sklearn.metrics.get_scorer" href="sklearn.metrics.get_scorer.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.metrics.get_scorer.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.metri...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.metrics.get_scorer
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.accuracy_score</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-accuracy-score">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.accuracy_score</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.accuracy_score</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-accuracy-score">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.accuracy_score</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,18 +126,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-metrics-accuracy-score">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.accuracy_score<a class="headerlink" href="#sklearn-metrics-accuracy-score" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.accuracy_score<a class="headerlink" href="#sklearn-metrics-accuracy-score" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.accuracy_score">
-<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">accuracy_score</tt><big>(</big><em>y_true</em>, <em>y_pred</em>, <em>normalize=True</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/metrics/classification.py#L111"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.accuracy_score" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.metrics.</code><code class="descname">accuracy_score</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_pred</em>, <em>normalize=True</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/classification.py#L112"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.accuracy_score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Accuracy classification score.</p>
 <p>In multilabel classification, this function computes subset accuracy:
 the set of labels predicted for a sample must <em>exactly</em> match the
 corresponding set of labels in y_true.</p>
-<p>Read more in the <a class="reference internal" href="../model_evaluation.html#accuracy-score"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../model_evaluation.html#accuracy-score"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -192,7 +152,7 @@ corresponding set of labels in y_true.</p>
 </div></blockquote>
 <p><strong>normalize</strong> : bool, optional (default=True)</p>
 <blockquote>
-<div><p>If <tt class="docutils literal"><span class="pre">False</span></tt>, return the number of correctly classified samples.
+<div><p>If <code class="docutils literal"><span class="pre">False</span></code>, return the number of correctly classified samples.
 Otherwise, return the fraction of correctly classified samples.</p>
 </div></blockquote>
 <p><strong>sample_weight</strong> : array-like of shape = [n_samples], optional</p>
@@ -203,11 +163,11 @@ Otherwise, return the fraction of correctly classified samples.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>score</strong> : float</p>
 <blockquote class="last">
-<div><p>If <tt class="docutils literal"><span class="pre">normalize</span> <span class="pre">==</span> <span class="pre">True</span></tt>, return the correctly classified samples
+<div><p>If <code class="docutils literal"><span class="pre">normalize</span> <span class="pre">==</span> <span class="pre">True</span></code>, return the correctly classified samples
 (float), else it returns the number of correctly classified samples
 (int).</p>
-<p>The best performance is 1 with <tt class="docutils literal"><span class="pre">normalize</span> <span class="pre">==</span> <span class="pre">True</span></tt> and the number
-of samples with <tt class="docutils literal"><span class="pre">normalize</span> <span class="pre">==</span> <span class="pre">False</span></tt>.</p>
+<p>The best performance is 1 with <code class="docutils literal"><span class="pre">normalize</span> <span class="pre">==</span> <span class="pre">True</span></code> and the number
+of samples with <code class="docutils literal"><span class="pre">normalize</span> <span class="pre">==</span> <span class="pre">False</span></code>.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -215,11 +175,11 @@ of samples with <tt class="docutils literal"><span class="pre">normalize</span> 
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.metrics.jaccard_similarity_score.html#sklearn.metrics.jaccard_similarity_score" title="sklearn.metrics.jaccard_similarity_score"><tt class="xref py py-obj docutils literal"><span class="pre">jaccard_similarity_score</span></tt></a>, <a class="reference internal" href="sklearn.metrics.hamming_loss.html#sklearn.metrics.hamming_loss" title="sklearn.metrics.hamming_loss"><tt class="xref py py-obj docutils literal"><span class="pre">hamming_loss</span></tt></a>, <a class="reference internal" href="sklearn.metrics.zero_one_loss.html#sklearn.metrics.zero_one_loss" title="sklearn.metrics.zero_one_loss"><tt class="xref py py-obj docutils literal"><span class="pre">zero_one_loss</span></tt></a></p>
+<p class="last"><a class="reference internal" href="sklearn.metrics.jaccard_similarity_score.html#sklearn.metrics.jaccard_similarity_score" title="sklearn.metrics.jaccard_similarity_score"><code class="xref py py-obj docutils literal"><span class="pre">jaccard_similarity_score</span></code></a>, <a class="reference internal" href="sklearn.metrics.hamming_loss.html#sklearn.metrics.hamming_loss" title="sklearn.metrics.hamming_loss"><code class="xref py py-obj docutils literal"><span class="pre">hamming_loss</span></code></a>, <a class="reference internal" href="sklearn.metrics.zero_one_loss.html#sklearn.metrics.zero_one_loss" title="sklearn.metrics.zero_one_loss"><code class="xref py py-obj docutils literal"><span class="pre">zero_one_loss</span></code></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>In binary and multiclass classification, this function is equal
-to the <tt class="docutils literal"><span class="pre">jaccard_similarity_score</span></tt> function.</p>
+to the <code class="docutils literal"><span class="pre">jaccard_similarity_score</span></code> function.</p>
 <p class="rubric">Examples</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
@@ -237,18 +197,14 @@ to the <tt class="docutils literal"><span class="pre">jaccard_similarity_score</
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-accuracy-score">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.accuracy_score</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-accuracy-score" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example reproduces Figure 1 of Zhu et al [1] and shows how boosting can improve prediction..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.accuracy_score</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-accuracy-score" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example reproduces Figure 1 of Zhu et al [1] and shows how boosting can improve prediction..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_adaboost_multiclass.html"><img alt="../../_images/plot_adaboost_multiclass1.png" src="../../_images/plot_adaboost_multiclass1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_multiclass.html#example-ensemble-plot-adaboost-multiclass-py"><em>Multi-class AdaBoosted Decision Trees</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_multiclass.html#example-ensemble-plot-adaboost-multiclass-py"><span>Multi-class AdaBoosted Decision Trees</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example illustrates the predicted probability of GPC for an RBF kernel with different choi..."><div class="figure">
-<a class="reference external image-reference" href="./../../auto_examples/gaussian_process/plot_gpc.html"><img alt="../../_images/plot_gpc1.png" src="../../_images/plot_gpc1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/gaussian_process/plot_gpc.html#example-gaussian-process-plot-gpc-py"><em>Probabilistic predictions with Gaussian process classification (GPC)</em></a></p>
-</div>
-</div><div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used to classify documents by topics using a..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used to classify documents by topics using a..."><div class="figure" id="id2">
 <a class="reference external image-reference" href="./../../auto_examples/text/document_classification_20newsgroups.html"><img alt="../../_images/document_classification_20newsgroups1.png" src="../../_images/document_classification_20newsgroups1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/text/document_classification_20newsgroups.html#example-text-document-classification-20newsgroups-py"><em>Classification of text documents using sparse features</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/text/document_classification_20newsgroups.html#example-text-document-classification-20newsgroups-py"><span>Classification of text documents using sparse features</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -265,12 +221,8 @@ to the <tt class="docutils literal"><span class="pre">jaccard_similarity_score</
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.accuracy_score.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.metrics.get_scorer.html">Previous
-      </a>
-    </div>
     
      </div>
 

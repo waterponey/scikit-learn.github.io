@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.gaussian_process.kernels.Kernel" href="sklearn.gaussian_process.kernels.Kernel.html" />
-    <link rel="prev" title="sklearn.gaussian_process.GaussianProcessClassifier" href="sklearn.gaussian_process.GaussianProcessClassifier.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,47 +104,13 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.gaussian_process.GaussianProcessClassifier.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.gauss...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.gaussian_process.GaussianProcessClassifier
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.gaussian_process</span></tt>.GaussianProcess</a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.gaussian_process</span></code>.GaussianProcess</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-gaussian-process-gaussianprocess">Examples using <code class="docutils literal"><span class="pre">sklearn.gaussian_process.GaussianProcess</span></code></a></li>
+</ul>
+</li>
 </ul>
 
     </div>
@@ -163,17 +126,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-gaussian-process-gaussianprocess">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.gaussian_process" title="sklearn.gaussian_process"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.gaussian_process</span></tt></a>.GaussianProcess<a class="headerlink" href="#sklearn-gaussian-process-gaussianprocess" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.gaussian_process" title="sklearn.gaussian_process"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.gaussian_process</span></code></a>.GaussianProcess<a class="headerlink" href="#sklearn-gaussian-process-gaussianprocess" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.gaussian_process.GaussianProcess">
-<em class="property">class </em><tt class="descclassname">sklearn.gaussian_process.</tt><tt class="descname">GaussianProcess</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/gaussian_process/gaussian_process.py#L63"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess" title="Permalink to this definition">¶</a></dt>
-<dd><p>The legacy Gaussian Process model class.</p>
-<p>Note that this class is deprecated and will be removed in 0.20.
-Use the GaussianProcessRegressor instead.</p>
-<p>Read more in the <a class="reference internal" href="../gaussian_process.html#gaussian-process"><em>User Guide</em></a>.</p>
+<em class="property">class </em><code class="descclassname">sklearn.gaussian_process.</code><code class="descname">GaussianProcess</code><span class="sig-paren">(</span><em>regr='constant'</em>, <em>corr='squared_exponential'</em>, <em>beta0=None</em>, <em>storage_mode='full'</em>, <em>verbose=False</em>, <em>theta0=0.1</em>, <em>thetaL=None</em>, <em>thetaU=None</em>, <em>optimizer='fmin_cobyla'</em>, <em>random_start=1</em>, <em>normalize=True</em>, <em>nugget=2.2204460492503131e-15</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/gaussian_process/gaussian_process.py#L59"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Gaussian Process model class.</p>
+<p>Read more in the <a class="reference internal" href="../gaussian_process.html#gaussian-process"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -348,35 +309,16 @@ experiments.  Technometrics, 34(1) 15&#8211;25.</cite>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.gaussian_process.GaussianProcess.fit" title="sklearn.gaussian_process.GaussianProcess.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y)</td>
-<td>The Gaussian Process model fitting method.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.gaussian_process.GaussianProcess.get_params" title="sklearn.gaussian_process.GaussianProcess.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.gaussian_process.GaussianProcess.predict" title="sklearn.gaussian_process.GaussianProcess.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X[,&nbsp;eval_MSE,&nbsp;batch_size])</td>
-<td>This function evaluates the Gaussian Process model at x.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.gaussian_process.GaussianProcess.reduced_likelihood_function" title="sklearn.gaussian_process.GaussianProcess.reduced_likelihood_function"><tt class="xref py py-obj docutils literal"><span class="pre">reduced_likelihood_function</span></tt></a>([theta])</td>
-<td>This function determines the BLUP parameters and evaluates the reduced likelihood function for the given autocorrelation parameters theta.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.gaussian_process.GaussianProcess.score" title="sklearn.gaussian_process.GaussianProcess.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
-<td>Returns the coefficient of determination R^2 of the prediction.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.gaussian_process.GaussianProcess.set_params" title="sklearn.gaussian_process.GaussianProcess.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
-</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.gaussian_process.GaussianProcess.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/utils/deprecation.py#L51"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.__init__" title="Permalink to this definition">¶</a></dt>
-<dd><p>DEPRECATED: GaussianProcess is deprecated and will be removed in 0.20. Use the GaussianProcessRegressor instead.</p>
-</dd></dl>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>regr='constant'</em>, <em>corr='squared_exponential'</em>, <em>beta0=None</em>, <em>storage_mode='full'</em>, <em>verbose=False</em>, <em>theta0=0.1</em>, <em>thetaL=None</em>, <em>thetaU=None</em>, <em>optimizer='fmin_cobyla'</em>, <em>random_start=1</em>, <em>normalize=True</em>, <em>nugget=2.2204460492503131e-15</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/gaussian_process/gaussian_process.py#L223"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.__init__" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.gaussian_process.GaussianProcess.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/gaussian_process/gaussian_process.py#L250"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/gaussian_process/gaussian_process.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>The Gaussian Process model fitting method.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -407,7 +349,7 @@ predictions.</p>
 
 <dl class="method">
 <dt id="sklearn.gaussian_process.GaussianProcess.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -432,7 +374,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.gaussian_process.GaussianProcess.predict">
-<tt class="descname">predict</tt><big>(</big><em>X</em>, <em>eval_MSE=False</em>, <em>batch_size=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/gaussian_process/gaussian_process.py#L385"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.predict" title="Permalink to this definition">¶</a></dt>
+<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em>, <em>eval_MSE=False</em>, <em>batch_size=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/gaussian_process/gaussian_process.py#L378"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function evaluates the Gaussian Process model at x.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -480,7 +422,7 @@ with the Mean Squared Error at x.</p>
 
 <dl class="method">
 <dt id="sklearn.gaussian_process.GaussianProcess.reduced_likelihood_function">
-<tt class="descname">reduced_likelihood_function</tt><big>(</big><em>theta=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/gaussian_process/gaussian_process.py#L538"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.reduced_likelihood_function" title="Permalink to this definition">¶</a></dt>
+<code class="descname">reduced_likelihood_function</code><span class="sig-paren">(</span><em>theta=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/gaussian_process/gaussian_process.py#L531"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.reduced_likelihood_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>This function determines the BLUP parameters and evaluates the reduced
 likelihood function for the given autocorrelation parameters theta.</p>
 <p>Maximizing this function wrt the autocorrelation parameters theta is
@@ -496,7 +438,7 @@ experiments X.</p>
 <div><p>An array containing the autocorrelation parameters at which the
 Gaussian Process model parameters should be determined.
 Default uses the built-in autocorrelation parameters
-(ie <tt class="docutils literal"><span class="pre">theta</span> <span class="pre">=</span> <span class="pre">self.theta_</span></tt>).</p>
+(ie <code class="docutils literal"><span class="pre">theta</span> <span class="pre">=</span> <span class="pre">self.theta_</span></code>).</p>
 </div></blockquote>
 </td>
 </tr>
@@ -542,7 +484,7 @@ Kriging.</p>
 
 <dl class="method">
 <dt id="sklearn.gaussian_process.GaussianProcess.score">
-<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/base.py#L325"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.score" title="Permalink to this definition">¶</a></dt>
+<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
@@ -581,11 +523,11 @@ would get a R^2 score of 0.0.</p>
 
 <dl class="method">
 <dt id="sklearn.gaussian_process.GaussianProcess.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.GaussianProcess.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -599,7 +541,22 @@ component of a nested object.</p>
 
 </dd></dl>
 
-<div class="clearer"></div></div>
+<div class="section" id="examples-using-sklearn-gaussian-process-gaussianprocess">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.gaussian_process.GaussianProcess</span></code><a class="headerlink" href="#examples-using-sklearn-gaussian-process-gaussianprocess" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="In this example, we fit a Gaussian Process model onto the diabetes dataset."><div class="figure" id="id5">
+<a class="reference external image-reference" href="./../../auto_examples/gaussian_process/gp_diabetes_dataset.html"><img alt="../../_images/gp_diabetes_dataset1.png" src="../../_images/gp_diabetes_dataset1.png" /></a>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/gaussian_process/gp_diabetes_dataset.html#example-gaussian-process-gp-diabetes-dataset-py"><span>Gaussian Processes regression: goodness-of-fit on the &#8216;diabetes&#8217; dataset</span></a></span></p>
+</div>
+</div><div class="thumbnailContainer" tooltip="A two-dimensional regression exercise with a post-processing allowing for probabilistic classif..."><div class="figure" id="id6">
+<a class="reference external image-reference" href="./../../auto_examples/gaussian_process/plot_gp_probabilistic_classification_after_regression.html"><img alt="../../_images/plot_gp_probabilistic_classification_after_regression1.png" src="../../_images/plot_gp_probabilistic_classification_after_regression1.png" /></a>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/gaussian_process/plot_gp_probabilistic_classification_after_regression.html#example-gaussian-process-plot-gp-probabilistic-classification-after-regression-py"><span>Gaussian Processes classification example: exploiting the probabilistic output</span></a></span></p>
+</div>
+</div><div class="thumbnailContainer" tooltip="A simple one-dimensional regression exercise computed in two different ways:"><div class="figure" id="id7">
+<a class="reference external image-reference" href="./../../auto_examples/gaussian_process/plot_gp_regression.html"><img alt="../../_images/plot_gp_regression1.png" src="../../_images/plot_gp_regression1.png" /></a>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/gaussian_process/plot_gp_regression.html#example-gaussian-process-plot-gp-regression-py"><span>Gaussian Processes regression: basic introductory example</span></a></span></p>
+</div>
+</div><div class="clearer"></div></div>
+</div>
 
 
           </div>
@@ -613,12 +570,8 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.gaussian_process.GaussianProcess.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.gaussian_process.GaussianProcessClassifier.html">Previous
-      </a>
-    </div>
     
      </div>
 

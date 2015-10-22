@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.metrics.label_ranking_average_precision_score" href="sklearn.metrics.label_ranking_average_precision_score.html" />
-    <link rel="prev" title="sklearn.metrics.r2_score" href="sklearn.metrics.r2_score.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,47 +104,10 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.metrics.r2_score.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.metri...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.metrics.r2_score
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.coverage_error</a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.coverage_error</a></li>
 </ul>
 
     </div>
@@ -163,20 +123,20 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-metrics-coverage-error">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.coverage_error<a class="headerlink" href="#sklearn-metrics-coverage-error" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.coverage_error<a class="headerlink" href="#sklearn-metrics-coverage-error" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.coverage_error">
-<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">coverage_error</tt><big>(</big><em>y_true</em>, <em>y_score</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/metrics/ranking.py#L614"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.coverage_error" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.metrics.</code><code class="descname">coverage_error</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_score</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/ranking.py#L613"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.coverage_error" title="Permalink to this definition">¶</a></dt>
 <dd><p>Coverage error measure</p>
 <p>Compute how far we need to go through the ranked scores to cover all
 true labels. The best value is equal to the average number
-of labels in <tt class="docutils literal"><span class="pre">y_true</span></tt> per sample.</p>
-<p>Ties in <tt class="docutils literal"><span class="pre">y_scores</span></tt> are broken by giving maximal rank that would have
+of labels in <code class="docutils literal"><span class="pre">y_true</span></code> per sample.</p>
+<p>Ties in <code class="docutils literal"><span class="pre">y_scores</span></code> are broken by giving maximal rank that would have
 been assigned to all tied values.</p>
-<p>Read more in the <a class="reference internal" href="../model_evaluation.html#coverage-error"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../model_evaluation.html#coverage-error"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -202,10 +162,10 @@ class, confidence values, or binary decisions.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r161" rules="none">
+<table class="docutils citation" frame="void" id="r69" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R161]</a></td><td>Tsoumakas, G., Katakis, I., &amp; Vlahavas, I. (2010).
+<tr><td class="label"><a class="fn-backref" href="#id1">[R69]</a></td><td>Tsoumakas, G., Katakis, I., &amp; Vlahavas, I. (2010).
 Mining multi-label data. In Data mining and knowledge discovery
 handbook (pp. 667-685). Springer US.</td></tr>
 </tbody>
@@ -226,12 +186,8 @@ handbook (pp. 667-685). Springer US.</td></tr>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.coverage_error.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.metrics.r2_score.html">Previous
-      </a>
-    </div>
     
      </div>
 

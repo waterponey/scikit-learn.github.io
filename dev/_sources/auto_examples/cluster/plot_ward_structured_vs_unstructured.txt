@@ -23,37 +23,8 @@ the manifolds. On the opposite, when opposing connectivity constraints,
 the clusters form a nice parcellation of the swiss roll.
 
 
-
-.. rst-class:: horizontal
-
-
-    *
-
-      .. image:: images/plot_ward_structured_vs_unstructured_001.png
-            :scale: 47
-
-    *
-
-      .. image:: images/plot_ward_structured_vs_unstructured_002.png
-            :scale: 47
-
-
-**Script output**::
-
-  Compute unstructured hierarchical clustering...
-  Elapsed time: 5.19s
-  Number of points: 1500
-  Compute structured hierarchical clustering...
-  Elapsed time: 0.27s
-  Number of points: 1500
-
-
-
 **Python source code:** :download:`plot_ward_structured_vs_unstructured.py <plot_ward_structured_vs_unstructured.py>`
 
 .. literalinclude:: plot_ward_structured_vs_unstructured.py
     :lines: 21-
-
-**Total running time of the example:**  5.64 seconds
-( 0 minutes  5.64 seconds)
     

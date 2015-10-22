@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="kernel-density-estimation">
 <span id="example-neighbors-plot-digits-kde-sampling-py"></span><h1>Kernel Density Estimation<a class="headerlink" href="#kernel-density-estimation" title="Permalink to this headline">¶</a></h1>
@@ -172,12 +172,7 @@ non-parametric density estimation technique, can be used to learn
 a generative model for a dataset.  With this generative model in place,
 new samples can be drawn.  These new samples reflect the underlying model
 of the data.</p>
-<img alt="../../_images/plot_digits_kde_sampling_001.png" class="align-center" src="../../_images/plot_digits_kde_sampling_001.png" />
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>best bandwidth: 3.79269019073
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_digits_kde_sampling.py"><tt class="xref download docutils literal"><span class="pre">plot_digits_kde_sampling.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_digits_kde_sampling.py"><code class="xref download docutils literal"><span class="pre">plot_digits_kde_sampling.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
@@ -230,8 +225,6 @@ of the data.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  15.36 seconds
-( 0 minutes  15.36 seconds)</p>
 </div>
 
 

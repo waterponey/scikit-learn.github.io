@@ -70,32 +70,8 @@ map.
 
 
 
-
-.. rst-class:: horizontal
-
-
-    *
-
-      .. image:: images/plot_rbf_parameters_001.png
-            :scale: 47
-
-    *
-
-      .. image:: images/plot_rbf_parameters_002.png
-            :scale: 47
-
-
-**Script output**::
-
-  The best parameters are {'C': 1.0, 'gamma': 0.10000000000000001} with a score of 0.97
-
-
-
 **Python source code:** :download:`plot_rbf_parameters.py <plot_rbf_parameters.py>`
 
 .. literalinclude:: plot_rbf_parameters.py
     :lines: 68-
-
-**Total running time of the example:**  13.81 seconds
-( 0 minutes  13.81 seconds)
     

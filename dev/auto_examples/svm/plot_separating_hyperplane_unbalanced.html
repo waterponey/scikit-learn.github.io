@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="svm-separating-hyperplane-for-unbalanced-classes">
 <span id="example-svm-plot-separating-hyperplane-unbalanced-py"></span><h1>SVM: Separating hyperplane for unbalanced classes<a class="headerlink" href="#svm-separating-hyperplane-for-unbalanced-classes" title="Permalink to this headline">¶</a></h1>
@@ -174,17 +174,16 @@ are unbalanced.</p>
 unbalanced classes.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p>This example will also work by replacing <tt class="docutils literal"><span class="pre">SVC(kernel=&quot;linear&quot;)</span></tt>
-with <tt class="docutils literal"><span class="pre">SGDClassifier(loss=&quot;hinge&quot;)</span></tt>. Setting the <tt class="docutils literal"><span class="pre">loss</span></tt> parameter
-of the <a class="reference internal" href="../../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier" title="sklearn.linear_model.SGDClassifier"><tt class="xref py py-class docutils literal"><span class="pre">SGDClassifier</span></tt></a> equal to <tt class="docutils literal"><span class="pre">hinge</span></tt> will yield behaviour
+<p>This example will also work by replacing <code class="docutils literal"><span class="pre">SVC(kernel=&quot;linear&quot;)</span></code>
+with <code class="docutils literal"><span class="pre">SGDClassifier(loss=&quot;hinge&quot;)</span></code>. Setting the <code class="docutils literal"><span class="pre">loss</span></code> parameter
+of the <a class="reference internal" href="../../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier" title="sklearn.linear_model.SGDClassifier"><code class="xref py py-class docutils literal"><span class="pre">SGDClassifier</span></code></a> equal to <code class="docutils literal"><span class="pre">hinge</span></code> will yield behaviour
 such as that of a SVC with a linear kernel.</p>
-<p>For example try instead of the <tt class="docutils literal"><span class="pre">SVC</span></tt>:</p>
+<p>For example try instead of the <code class="docutils literal"><span class="pre">SVC</span></code>:</p>
 <div class="last highlight-python"><div class="highlight"><pre><span class="n">clf</span> <span class="o">=</span> <span class="n">SGDClassifier</span><span class="p">(</span><span class="n">n_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
-<img alt="../../_images/plot_separating_hyperplane_unbalanced_001.png" class="align-center" src="../../_images/plot_separating_hyperplane_unbalanced_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_separating_hyperplane_unbalanced.py"><tt class="xref download docutils literal"><span class="pre">plot_separating_hyperplane_unbalanced.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_separating_hyperplane_unbalanced.py"><code class="xref download docutils literal"><span class="pre">plot_separating_hyperplane_unbalanced.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -228,8 +227,6 @@ such as that of a SVC with a linear kernel.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.11 seconds
-( 0 minutes  0.11 seconds)</p>
 </div>
 
 

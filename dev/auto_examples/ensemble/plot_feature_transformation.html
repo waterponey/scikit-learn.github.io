@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="feature-transformations-with-ensembles-of-trees">
 <span id="example-ensemble-plot-feature-transformation-py"></span><h1>Feature transformations with ensembles of trees<a class="headerlink" href="#feature-transformations-with-ensembles-of-trees" title="Permalink to this headline">¶</a></h1>
@@ -179,13 +179,7 @@ and ends up in one leaf per tree. The sample is encoded by setting
 feature values for these leaves to 1 and the other feature values to 0.</p>
 <p>The resulting transformer has then learned a supervised, sparse,
 high-dimensional categorical embedding of the data.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_feature_transformation_001.png"><img alt="../../_images/plot_feature_transformation_001.png" src="../../_images/plot_feature_transformation_001.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_feature_transformation_002.png"><img alt="../../_images/plot_feature_transformation_002.png" src="../../_images/plot_feature_transformation_002.png" style="width: 376.0px; height: 282.0px;" /></a>
-</li>
-</ul>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_feature_transformation.py"><tt class="xref download docutils literal"><span class="pre">plot_feature_transformation.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_feature_transformation.py"><code class="xref download docutils literal"><span class="pre">plot_feature_transformation.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Author: Tim Head &lt;betatim@gmail.com&gt;</span>
 <span class="c">#</span>
 <span class="c"># License: BSD 3 clause</span>
@@ -286,8 +280,6 @@ high-dimensional categorical embedding of the data.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  5.11 seconds
-( 0 minutes  5.11 seconds)</p>
 </div>
 
 

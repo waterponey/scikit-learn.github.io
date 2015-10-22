@@ -37,53 +37,8 @@ Finally, the cosine distance does not separate at all waveform 1 and 2,
 thus the clustering puts them in the same cluster.
 
 
-
-.. rst-class:: horizontal
-
-
-    *
-
-      .. image:: images/plot_agglomerative_clustering_metrics_001.png
-            :scale: 47
-
-    *
-
-      .. image:: images/plot_agglomerative_clustering_metrics_002.png
-            :scale: 47
-
-    *
-
-      .. image:: images/plot_agglomerative_clustering_metrics_003.png
-            :scale: 47
-
-    *
-
-      .. image:: images/plot_agglomerative_clustering_metrics_004.png
-            :scale: 47
-
-    *
-
-      .. image:: images/plot_agglomerative_clustering_metrics_005.png
-            :scale: 47
-
-    *
-
-      .. image:: images/plot_agglomerative_clustering_metrics_006.png
-            :scale: 47
-
-    *
-
-      .. image:: images/plot_agglomerative_clustering_metrics_007.png
-            :scale: 47
-
-
-
-
 **Python source code:** :download:`plot_agglomerative_clustering_metrics.py <plot_agglomerative_clustering_metrics.py>`
 
 .. literalinclude:: plot_agglomerative_clustering_metrics.py
     :lines: 35-
-
-**Total running time of the example:**  1.77 seconds
-( 0 minutes  1.77 seconds)
     

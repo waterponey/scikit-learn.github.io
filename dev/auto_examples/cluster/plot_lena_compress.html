@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,24 +163,14 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="vector-quantization-example">
 <span id="example-cluster-plot-lena-compress-py"></span><h1>Vector Quantization Example<a class="headerlink" href="#vector-quantization-example" title="Permalink to this headline">¶</a></h1>
 <p>The classic image processing example, Lena, an 8-bit grayscale
 bit-depth, 512 x 512 sized image, is used here to illustrate
 how <cite>k</cite>-means is used for vector quantization.</p>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_lena_compress_001.png"><img alt="../../_images/plot_lena_compress_001.png" src="../../_images/plot_lena_compress_001.png" style="width: 141.0px; height: 103.4px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_lena_compress_002.png"><img alt="../../_images/plot_lena_compress_002.png" src="../../_images/plot_lena_compress_002.png" style="width: 141.0px; height: 103.4px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_lena_compress_003.png"><img alt="../../_images/plot_lena_compress_003.png" src="../../_images/plot_lena_compress_003.png" style="width: 141.0px; height: 103.4px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_lena_compress_004.png"><img alt="../../_images/plot_lena_compress_004.png" src="../../_images/plot_lena_compress_004.png" style="width: 141.0px; height: 103.4px;" /></a>
-</li>
-</ul>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lena_compress.py"><tt class="xref download docutils literal"><span class="pre">plot_lena_compress.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lena_compress.py"><code class="xref download docutils literal"><span class="pre">plot_lena_compress.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 
@@ -202,7 +192,7 @@ how <cite>k</cite>-means is used for vector quantization.</p>
 <span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
     <span class="c"># Newer versions of scipy have lena in misc</span>
     <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">misc</span>
-    <span class="n">lena</span> <span class="o">=</span> <span class="n">misc</span><span class="o">.</span><span class="n">lena</span><span class="p">()</span>
+    <span class="n">lena</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/scipy-0.11.0/reference/generated/scipy.misc.lena.html#scipy.misc.lena"><span class="n">misc</span><span class="o">.</span><span class="n">lena</span></a><span class="p">()</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">lena</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>  <span class="c"># We need an (n_sample, n_feature) array</span>
 <span class="n">k_means</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans"><span class="n">cluster</span><span class="o">.</span><span class="n">KMeans</span></a><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">n_clusters</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 <span class="n">k_means</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
@@ -250,8 +240,6 @@ how <cite>k</cite>-means is used for vector quantization.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  3.91 seconds
-( 0 minutes  3.91 seconds)</p>
 </div>
 
 

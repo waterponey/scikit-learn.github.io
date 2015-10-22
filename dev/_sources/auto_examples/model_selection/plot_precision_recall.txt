@@ -76,18 +76,8 @@ matrix as a binary prediction (micro-averaging).
              :func:`sklearn.metrics.f1_score`
 
 
-
-.. image:: images/plot_precision_recall_001.png
-    :align: center
-
-
-
-
 **Python source code:** :download:`plot_precision_recall.py <plot_precision_recall.py>`
 
 .. literalinclude:: plot_precision_recall.py
     :lines: 74-
-
-**Total running time of the example:**  0.40 seconds
-( 0 minutes  0.40 seconds)
     

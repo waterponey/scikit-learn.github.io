@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.metrics.brier_score_loss" href="sklearn.metrics.brier_score_loss.html" />
-    <link rel="prev" title="sklearn.metrics.roc_curve" href="sklearn.metrics.roc_curve.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.metrics.roc_curve.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.metri...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.metrics.roc_curve
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.zero_one_loss</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-zero-one-loss">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.zero_one_loss</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.zero_one_loss</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-zero-one-loss">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.zero_one_loss</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,18 +126,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-metrics-zero-one-loss">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.zero_one_loss<a class="headerlink" href="#sklearn-metrics-zero-one-loss" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.zero_one_loss<a class="headerlink" href="#sklearn-metrics-zero-one-loss" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.zero_one_loss">
-<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">zero_one_loss</tt><big>(</big><em>y_true</em>, <em>y_pred</em>, <em>normalize=True</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/metrics/classification.py#L469"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.zero_one_loss" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">sklearn.metrics.</code><code class="descname">zero_one_loss</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_pred</em>, <em>normalize=True</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/classification.py#L469"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.zero_one_loss" title="Permalink to this definition">¶</a></dt>
 <dd><p>Zero-one classification loss.</p>
-<p>If normalize is <tt class="docutils literal"><span class="pre">True</span></tt>, return the fraction of misclassifications
+<p>If normalize is <code class="docutils literal"><span class="pre">True</span></code>, return the fraction of misclassifications
 (float), else it returns the number of misclassifications (int). The best
 performance is 0.</p>
-<p>Read more in the <a class="reference internal" href="../model_evaluation.html#zero-one-loss"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../model_evaluation.html#zero-one-loss"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -192,7 +152,7 @@ performance is 0.</p>
 </div></blockquote>
 <p><strong>normalize</strong> : bool, optional (default=True)</p>
 <blockquote>
-<div><p>If <tt class="docutils literal"><span class="pre">False</span></tt>, return the number of misclassifications.
+<div><p>If <code class="docutils literal"><span class="pre">False</span></code>, return the number of misclassifications.
 Otherwise, return the fraction of misclassifications.</p>
 </div></blockquote>
 <p><strong>sample_weight</strong> : array-like of shape = [n_samples], optional</p>
@@ -203,7 +163,7 @@ Otherwise, return the fraction of misclassifications.</p>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>loss</strong> : float or int,</p>
 <blockquote class="last">
-<div><p>If <tt class="docutils literal"><span class="pre">normalize</span> <span class="pre">==</span> <span class="pre">True</span></tt>, return the fraction of misclassifications
+<div><p>If <code class="docutils literal"><span class="pre">normalize</span> <span class="pre">==</span> <span class="pre">True</span></code>, return the fraction of misclassifications
 (float), else it returns the number of misclassifications (int).</p>
 </div></blockquote>
 </td>
@@ -212,7 +172,7 @@ Otherwise, return the fraction of misclassifications.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score" title="sklearn.metrics.accuracy_score"><tt class="xref py py-obj docutils literal"><span class="pre">accuracy_score</span></tt></a>, <a class="reference internal" href="sklearn.metrics.hamming_loss.html#sklearn.metrics.hamming_loss" title="sklearn.metrics.hamming_loss"><tt class="xref py py-obj docutils literal"><span class="pre">hamming_loss</span></tt></a>, <a class="reference internal" href="sklearn.metrics.jaccard_similarity_score.html#sklearn.metrics.jaccard_similarity_score" title="sklearn.metrics.jaccard_similarity_score"><tt class="xref py py-obj docutils literal"><span class="pre">jaccard_similarity_score</span></tt></a></p>
+<p class="last"><a class="reference internal" href="sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score" title="sklearn.metrics.accuracy_score"><code class="xref py py-obj docutils literal"><span class="pre">accuracy_score</span></code></a>, <a class="reference internal" href="sklearn.metrics.hamming_loss.html#sklearn.metrics.hamming_loss" title="sklearn.metrics.hamming_loss"><code class="xref py py-obj docutils literal"><span class="pre">hamming_loss</span></code></a>, <a class="reference internal" href="sklearn.metrics.jaccard_similarity_score.html#sklearn.metrics.jaccard_similarity_score" title="sklearn.metrics.jaccard_similarity_score"><code class="xref py py-obj docutils literal"><span class="pre">jaccard_similarity_score</span></code></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>In multilabel classification, the zero_one_loss function corresponds to
@@ -236,10 +196,10 @@ correctly predicted, otherwise the loss for that sample is equal to one.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-zero-one-loss">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.zero_one_loss</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-zero-one-loss" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example is based on Figure 10.2 from Hastie et al 2009 [1] and illustrates the difference ..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.zero_one_loss</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-zero-one-loss" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example is based on Figure 10.2 from Hastie et al 2009 [1] and illustrates the difference ..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_adaboost_hastie_10_2.html"><img alt="../../_images/plot_adaboost_hastie_10_21.png" src="../../_images/plot_adaboost_hastie_10_21.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_hastie_10_2.html#example-ensemble-plot-adaboost-hastie-10-2-py"><em>Discrete versus Real AdaBoost</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_hastie_10_2.html#example-ensemble-plot-adaboost-hastie-10-2-py"><span>Discrete versus Real AdaBoost</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -256,12 +216,8 @@ correctly predicted, otherwise the loss for that sample is equal to one.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.zero_one_loss.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.metrics.roc_curve.html">Previous
-      </a>
-    </div>
     
      </div>
 

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -172,17 +172,17 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="pairwise-metrics-affinities-and-kernels">
 <span id="metrics"></span><h1>4.7. Pairwise metrics, Affinities and Kernels<a class="headerlink" href="#pairwise-metrics-affinities-and-kernels" title="Permalink to this headline">¶</a></h1>
-<p>The <a class="reference internal" href="classes.html#module-sklearn.metrics.pairwise" title="sklearn.metrics.pairwise"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics.pairwise</span></tt></a> submodule implements utilities to evaluate
+<p>The <a class="reference internal" href="classes.html#module-sklearn.metrics.pairwise" title="sklearn.metrics.pairwise"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics.pairwise</span></code></a> submodule implements utilities to evaluate
 pairwise distances or affinity of sets of samples.</p>
 <p>This module contains both distance metrics and kernels. A brief summary is
 given on the two here.</p>
-<p>Distance metrics are functions <tt class="docutils literal"><span class="pre">d(a,</span> <span class="pre">b)</span></tt> such that <tt class="docutils literal"><span class="pre">d(a,</span> <span class="pre">b)</span> <span class="pre">&lt;</span> <span class="pre">d(a,</span> <span class="pre">c)</span></tt>
-if objects <tt class="docutils literal"><span class="pre">a</span></tt> and <tt class="docutils literal"><span class="pre">b</span></tt> are considered &#8220;more similar&#8221; than objects <tt class="docutils literal"><span class="pre">a</span></tt>
-and <tt class="docutils literal"><span class="pre">c</span></tt>. Two objects exactly alike would have a distance of zero.
+<p>Distance metrics are functions <code class="docutils literal"><span class="pre">d(a,</span> <span class="pre">b)</span></code> such that <code class="docutils literal"><span class="pre">d(a,</span> <span class="pre">b)</span> <span class="pre">&lt;</span> <span class="pre">d(a,</span> <span class="pre">c)</span></code>
+if objects <code class="docutils literal"><span class="pre">a</span></code> and <code class="docutils literal"><span class="pre">b</span></code> are considered &#8220;more similar&#8221; than objects <code class="docutils literal"><span class="pre">a</span></code>
+and <code class="docutils literal"><span class="pre">c</span></code>. Two objects exactly alike would have a distance of zero.
 One of the most popular examples is Euclidean distance.
 To be a &#8216;true&#8217; metric, it must obey the following four conditions:</p>
 <div class="highlight-python"><div class="highlight"><pre>1. d(a, b) &gt;= 0, for all a and b
@@ -191,22 +191,22 @@ To be a &#8216;true&#8217; metric, it must obey the following four conditions:</
 4. d(a, c) &lt;= d(a, b) + d(b, c), the triangle inequality
 </pre></div>
 </div>
-<p>Kernels are measures of similarity, i.e. <tt class="docutils literal"><span class="pre">s(a,</span> <span class="pre">b)</span> <span class="pre">&gt;</span> <span class="pre">s(a,</span> <span class="pre">c)</span></tt>
-if objects <tt class="docutils literal"><span class="pre">a</span></tt> and <tt class="docutils literal"><span class="pre">b</span></tt> are considered &#8220;more similar&#8221; than objects
-<tt class="docutils literal"><span class="pre">a</span></tt> and <tt class="docutils literal"><span class="pre">c</span></tt>. A kernel must also be positive semi-definite.</p>
+<p>Kernels are measures of similarity, i.e. <code class="docutils literal"><span class="pre">s(a,</span> <span class="pre">b)</span> <span class="pre">&gt;</span> <span class="pre">s(a,</span> <span class="pre">c)</span></code>
+if objects <code class="docutils literal"><span class="pre">a</span></code> and <code class="docutils literal"><span class="pre">b</span></code> are considered &#8220;more similar&#8221; than objects
+<code class="docutils literal"><span class="pre">a</span></code> and <code class="docutils literal"><span class="pre">c</span></code>. A kernel must also be positive semi-definite.</p>
 <p>There are a number of ways to convert between a distance metric and a
-similarity measure, such as a kernel. Let <tt class="docutils literal"><span class="pre">D</span></tt> be the distance, and <tt class="docutils literal"><span class="pre">S</span></tt> be
+similarity measure, such as a kernel. Let <code class="docutils literal"><span class="pre">D</span></code> be the distance, and <code class="docutils literal"><span class="pre">S</span></code> be
 the kernel:</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><tt class="docutils literal"><span class="pre">S</span> <span class="pre">=</span> <span class="pre">np.exp(-D</span> <span class="pre">*</span> <span class="pre">gamma)</span></tt>, where one heuristic for choosing
-<tt class="docutils literal"><span class="pre">gamma</span></tt> is <tt class="docutils literal"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">num_features</span></tt></li>
-<li><tt class="docutils literal"><span class="pre">S</span> <span class="pre">=</span> <span class="pre">1.</span> <span class="pre">/</span> <span class="pre">(D</span> <span class="pre">/</span> <span class="pre">np.max(D))</span></tt></li>
+<li><code class="docutils literal"><span class="pre">S</span> <span class="pre">=</span> <span class="pre">np.exp(-D</span> <span class="pre">*</span> <span class="pre">gamma)</span></code>, where one heuristic for choosing
+<code class="docutils literal"><span class="pre">gamma</span></code> is <code class="docutils literal"><span class="pre">1</span> <span class="pre">/</span> <span class="pre">num_features</span></code></li>
+<li><code class="docutils literal"><span class="pre">S</span> <span class="pre">=</span> <span class="pre">1.</span> <span class="pre">/</span> <span class="pre">(D</span> <span class="pre">/</span> <span class="pre">np.max(D))</span></code></li>
 </ol>
 </div></blockquote>
 <div class="section" id="cosine-similarity">
 <span id="id1"></span><h2>4.7.1. Cosine similarity<a class="headerlink" href="#cosine-similarity" title="Permalink to this headline">¶</a></h2>
-<p><tt class="xref py py-func docutils literal"><span class="pre">cosine_similarity</span></tt> computes the L2-normalized dot product of vectors.
+<p><code class="xref py py-func docutils literal"><span class="pre">cosine_similarity</span></code> computes the L2-normalized dot product of vectors.
 That is, if <img class="math" src="../_images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/> and <img class="math" src="../_images/math/b124ff74afb0914bb434e8fb849eb56d734412f8.png" alt="y"/> are row vectors,
 their cosine similarity <img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> is defined as:</p>
 <div class="math">
@@ -217,10 +217,10 @@ and their dot product is then the cosine of the angle between the points
 denoted by the vectors.</p>
 <p>This kernel is a popular choice for computing the similarity of documents
 represented as tf-idf vectors.
-<tt class="xref py py-func docutils literal"><span class="pre">cosine_similarity</span></tt> accepts <tt class="docutils literal"><span class="pre">scipy.sparse</span></tt> matrices.
-(Note that the tf-idf functionality in <tt class="docutils literal"><span class="pre">sklearn.feature_extraction.text</span></tt>
-can produce normalized vectors, in which case <tt class="xref py py-func docutils literal"><span class="pre">cosine_similarity</span></tt>
-is equivalent to <a class="reference internal" href="generated/sklearn.metrics.pairwise.linear_kernel.html#sklearn.metrics.pairwise.linear_kernel" title="sklearn.metrics.pairwise.linear_kernel"><tt class="xref py py-func docutils literal"><span class="pre">linear_kernel</span></tt></a>, only slower.)</p>
+<code class="xref py py-func docutils literal"><span class="pre">cosine_similarity</span></code> accepts <code class="docutils literal"><span class="pre">scipy.sparse</span></code> matrices.
+(Note that the tf-idf functionality in <code class="docutils literal"><span class="pre">sklearn.feature_extraction.text</span></code>
+can produce normalized vectors, in which case <code class="xref py py-func docutils literal"><span class="pre">cosine_similarity</span></code>
+is equivalent to <a class="reference internal" href="generated/sklearn.metrics.pairwise.linear_kernel.html#sklearn.metrics.pairwise.linear_kernel" title="sklearn.metrics.pairwise.linear_kernel"><code class="xref py py-func docutils literal"><span class="pre">linear_kernel</span></code></a>, only slower.)</p>
 <div class="topic">
 <p class="topic-title first">References:</p>
 <ul class="simple">
@@ -232,15 +232,15 @@ Information Retrieval. Cambridge University Press.
 </div>
 <div class="section" id="linear-kernel">
 <span id="id2"></span><h2>4.7.2. Linear kernel<a class="headerlink" href="#linear-kernel" title="Permalink to this headline">¶</a></h2>
-<p>The function <a class="reference internal" href="generated/sklearn.metrics.pairwise.linear_kernel.html#sklearn.metrics.pairwise.linear_kernel" title="sklearn.metrics.pairwise.linear_kernel"><tt class="xref py py-func docutils literal"><span class="pre">linear_kernel</span></tt></a> computes the linear kernel, that is, a
-special case of <a class="reference internal" href="generated/sklearn.metrics.pairwise.polynomial_kernel.html#sklearn.metrics.pairwise.polynomial_kernel" title="sklearn.metrics.pairwise.polynomial_kernel"><tt class="xref py py-func docutils literal"><span class="pre">polynomial_kernel</span></tt></a> with <tt class="docutils literal"><span class="pre">degree=1</span></tt> and <tt class="docutils literal"><span class="pre">coef0=0</span></tt> (homogeneous).
-If <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt> are column vectors, their linear kernel is:</p>
+<p>The function <a class="reference internal" href="generated/sklearn.metrics.pairwise.linear_kernel.html#sklearn.metrics.pairwise.linear_kernel" title="sklearn.metrics.pairwise.linear_kernel"><code class="xref py py-func docutils literal"><span class="pre">linear_kernel</span></code></a> computes the linear kernel, that is, a
+special case of <a class="reference internal" href="generated/sklearn.metrics.pairwise.polynomial_kernel.html#sklearn.metrics.pairwise.polynomial_kernel" title="sklearn.metrics.pairwise.polynomial_kernel"><code class="xref py py-func docutils literal"><span class="pre">polynomial_kernel</span></code></a> with <code class="docutils literal"><span class="pre">degree=1</span></code> and <code class="docutils literal"><span class="pre">coef0=0</span></code> (homogeneous).
+If <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">y</span></code> are column vectors, their linear kernel is:</p>
 <div class="math">
 <p><img src="../_images/math/6d91696375ec8db930625a9a4c6b4a4c9c53f10d.png" alt="k(x, y) = x^\top y"/></p>
 </div></div>
 <div class="section" id="polynomial-kernel">
 <span id="id3"></span><h2>4.7.3. Polynomial kernel<a class="headerlink" href="#polynomial-kernel" title="Permalink to this headline">¶</a></h2>
-<p>The function <a class="reference internal" href="generated/sklearn.metrics.pairwise.polynomial_kernel.html#sklearn.metrics.pairwise.polynomial_kernel" title="sklearn.metrics.pairwise.polynomial_kernel"><tt class="xref py py-func docutils literal"><span class="pre">polynomial_kernel</span></tt></a> computes the degree-d polynomial kernel
+<p>The function <a class="reference internal" href="generated/sklearn.metrics.pairwise.polynomial_kernel.html#sklearn.metrics.pairwise.polynomial_kernel" title="sklearn.metrics.pairwise.polynomial_kernel"><code class="xref py py-func docutils literal"><span class="pre">polynomial_kernel</span></code></a> computes the degree-d polynomial kernel
 between two vectors. The polynomial kernel represents the similarity between two
 vectors. Conceptually, the polynomial kernels considers not only the similarity
 between vectors under the same dimension, but also across dimensions. When used
@@ -251,15 +251,15 @@ in machine learning algorithms, this allows to account for feature interaction.<
 </div><p>where:</p>
 <blockquote>
 <div><ul class="simple">
-<li><tt class="docutils literal"><span class="pre">x</span></tt>, <tt class="docutils literal"><span class="pre">y</span></tt> are the input vectors</li>
-<li><tt class="docutils literal"><span class="pre">d</span></tt> is the kernel degree</li>
+<li><code class="docutils literal"><span class="pre">x</span></code>, <code class="docutils literal"><span class="pre">y</span></code> are the input vectors</li>
+<li><code class="docutils literal"><span class="pre">d</span></code> is the kernel degree</li>
 </ul>
 </div></blockquote>
 <p>If <img class="math" src="../_images/math/0ab947efff917018af673e579b1da0b06abe7216.png" alt="c_0 = 0"/> the kernel is said to be homogeneous.</p>
 </div>
 <div class="section" id="sigmoid-kernel">
 <span id="id4"></span><h2>4.7.4. Sigmoid kernel<a class="headerlink" href="#sigmoid-kernel" title="Permalink to this headline">¶</a></h2>
-<p>The function <tt class="xref py py-func docutils literal"><span class="pre">sigmoid_kernel</span></tt> computes the sigmoid kernel between two
+<p>The function <code class="xref py py-func docutils literal"><span class="pre">sigmoid_kernel</span></code> computes the sigmoid kernel between two
 vectors. The sigmoid kernel is also known as hyperbolic tangent, or Multilayer
 Perceptron (because, in the neural network field, it is often used as neuron
 activation function). It is defined as:</p>
@@ -268,7 +268,7 @@ activation function). It is defined as:</p>
 </div><p>where:</p>
 <blockquote>
 <div><ul class="simple">
-<li><tt class="docutils literal"><span class="pre">x</span></tt>, <tt class="docutils literal"><span class="pre">y</span></tt> are the input vectors</li>
+<li><code class="docutils literal"><span class="pre">x</span></code>, <code class="docutils literal"><span class="pre">y</span></code> are the input vectors</li>
 <li><img class="math" src="../_images/math/0ebb67342b546ca42a1c634b1ef03c893c4cdedb.png" alt="\gamma"/> is known as slope</li>
 <li><img class="math" src="../_images/math/e6b1d56bec7ae49bc88ca1e9fda9fc255d7fd716.png" alt="c_0"/> is known as intercept</li>
 </ul>
@@ -276,20 +276,20 @@ activation function). It is defined as:</p>
 </div>
 <div class="section" id="rbf-kernel">
 <span id="id5"></span><h2>4.7.5. RBF kernel<a class="headerlink" href="#rbf-kernel" title="Permalink to this headline">¶</a></h2>
-<p>The function <a class="reference internal" href="generated/sklearn.metrics.pairwise.rbf_kernel.html#sklearn.metrics.pairwise.rbf_kernel" title="sklearn.metrics.pairwise.rbf_kernel"><tt class="xref py py-func docutils literal"><span class="pre">rbf_kernel</span></tt></a> computes the radial basis function (RBF) kernel
+<p>The function <a class="reference internal" href="generated/sklearn.metrics.pairwise.rbf_kernel.html#sklearn.metrics.pairwise.rbf_kernel" title="sklearn.metrics.pairwise.rbf_kernel"><code class="xref py py-func docutils literal"><span class="pre">rbf_kernel</span></code></a> computes the radial basis function (RBF) kernel
 between two vectors. This kernel is defined as:</p>
 <div class="math">
 <p><img src="../_images/math/be86b90721dc7d39d2f4479c4f7094d1a416002b.png" alt="k(x, y) = \exp( -\gamma \| x-y \|^2)"/></p>
-</div><p>where <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt> are the input vectors. If <img class="math" src="../_images/math/4b15c4aa8feb74b435e9b7bca3afad099d18636e.png" alt="\gamma = \sigma^{-2}"/>
+</div><p>where <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">y</span></code> are the input vectors. If <img class="math" src="../_images/math/4b15c4aa8feb74b435e9b7bca3afad099d18636e.png" alt="\gamma = \sigma^{-2}"/>
 the kernel is known as the Gaussian kernel of variance <img class="math" src="../_images/math/93c29bfedc993de115781b4fbb7e3a8b9e8d6b51.png" alt="\sigma^2"/>.</p>
 </div>
 <div class="section" id="laplacian-kernel">
 <span id="id6"></span><h2>4.7.6. Laplacian kernel<a class="headerlink" href="#laplacian-kernel" title="Permalink to this headline">¶</a></h2>
-<p>The function <a class="reference internal" href="generated/sklearn.metrics.pairwise.laplacian_kernel.html#sklearn.metrics.pairwise.laplacian_kernel" title="sklearn.metrics.pairwise.laplacian_kernel"><tt class="xref py py-func docutils literal"><span class="pre">laplacian_kernel</span></tt></a> is a variant on the radial basis
+<p>The function <a class="reference internal" href="generated/sklearn.metrics.pairwise.laplacian_kernel.html#sklearn.metrics.pairwise.laplacian_kernel" title="sklearn.metrics.pairwise.laplacian_kernel"><code class="xref py py-func docutils literal"><span class="pre">laplacian_kernel</span></code></a> is a variant on the radial basis
 function kernel defined as:</p>
 <div class="math">
 <p><img src="../_images/math/d328c5ba4f3813366fd43a1241342bdc14a925a6.png" alt="k(x, y) = \exp( -\gamma \| x-y \|_1)"/></p>
-</div><p>where <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt> are the input vectors and <img class="math" src="../_images/math/8e00f2e60ce43e2776ce0f1aa550dd7429fdd5bc.png" alt="\|x-y\|_1"/> is the
+</div><p>where <code class="docutils literal"><span class="pre">x</span></code> and <code class="docutils literal"><span class="pre">y</span></code> are the input vectors and <img class="math" src="../_images/math/8e00f2e60ce43e2776ce0f1aa550dd7429fdd5bc.png" alt="\|x-y\|_1"/> is the
 Manhattan distance between the input vectors.</p>
 <p>It has proven useful in ML applied to noiseless data.
 See e.g. <a class="reference external" href="http://onlinelibrary.wiley.com/doi/10.1002/qua.24954/abstract/">Machine learning for quantum mechanics in a nutshell</a>.</p>
@@ -298,8 +298,8 @@ See e.g. <a class="reference external" href="http://onlinelibrary.wiley.com/doi/
 <span id="chi2-kernel"></span><h2>4.7.7. Chi-squared kernel<a class="headerlink" href="#chi-squared-kernel" title="Permalink to this headline">¶</a></h2>
 <p>The chi-squared kernel is a very popular choice for training non-linear SVMs in
 computer vision applications.
-It can be computed using <a class="reference internal" href="generated/sklearn.metrics.pairwise.chi2_kernel.html#sklearn.metrics.pairwise.chi2_kernel" title="sklearn.metrics.pairwise.chi2_kernel"><tt class="xref py py-func docutils literal"><span class="pre">chi2_kernel</span></tt></a> and then passed to an
-<a class="reference internal" href="generated/sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.svm.SVC</span></tt></a> with <tt class="docutils literal"><span class="pre">kernel=&quot;precomputed&quot;</span></tt>:</p>
+It can be computed using <a class="reference internal" href="generated/sklearn.metrics.pairwise.chi2_kernel.html#sklearn.metrics.pairwise.chi2_kernel" title="sklearn.metrics.pairwise.chi2_kernel"><code class="xref py py-func docutils literal"><span class="pre">chi2_kernel</span></code></a> and then passed to an
+<a class="reference internal" href="generated/sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><code class="xref py py-class docutils literal"><span class="pre">sklearn.svm.SVC</span></code></a> with <code class="docutils literal"><span class="pre">kernel=&quot;precomputed&quot;</span></code>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.metrics.pairwise</span> <span class="kn">import</span> <span class="n">chi2_kernel</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="o">.</span><span class="mi">2</span><span class="p">,</span> <span class="o">.</span><span class="mi">8</span><span class="p">],</span> <span class="p">[</span><span class="o">.</span><span class="mi">7</span><span class="p">,</span> <span class="o">.</span><span class="mi">3</span><span class="p">]]</span>
@@ -316,7 +316,7 @@ It can be computed using <a class="reference internal" href="generated/sklearn.m
 <span class="go">array([0, 1, 0, 1])</span>
 </pre></div>
 </div>
-<p>It can also be directly used as the <tt class="docutils literal"><span class="pre">kernel</span></tt> argument:</p>
+<p>It can also be directly used as the <code class="docutils literal"><span class="pre">kernel</span></code> argument:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">svm</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="n">chi2_kernel</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">svm</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="go">array([0, 1, 0, 1])</span>

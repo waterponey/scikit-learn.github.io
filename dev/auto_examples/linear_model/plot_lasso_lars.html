@@ -36,8 +36,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="SGD: Maximum margin separating hyperplane" href="plot_sgd_separating_hyperplane.html" />
-    <link rel="prev" title="Gaussian Processes regression: basic introductory example" href="../gaussian_process/plot_gpr_noisy_targets.html" />
+    <link rel="next" title="SGD: convex loss functions" href="plot_sgd_loss_functions.html" />
+    <link rel="prev" title="Gaussian Processes regression: basic introductory example" href="../gaussian_process/plot_gp_regression.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,7 +113,7 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="../gaussian_process/plot_gpr_noisy_targets.html"
+        <a href="../gaussian_process/plot_gp_regression.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="lasso-path-using-lars">
 <span id="example-linear-model-plot-lasso-lars-py"></span><h1>Lasso path using LARS<a class="headerlink" href="#lasso-path-using-lars" title="Permalink to this headline">¶</a></h1>
@@ -171,13 +171,7 @@
 algorithm on the diabetes dataset. Each color represents a different
 feature of the coefficient vector, and this is displayed as a function
 of the regularization parameter.</p>
-<img alt="../../_images/plot_lasso_lars_001.png" class="align-center" src="../../_images/plot_lasso_lars_001.png" />
-<p><strong>Script output</strong>:</p>
-<div class="highlight-python"><div class="highlight"><pre>Computing regularization path using the LARS ...
-.
-</pre></div>
-</div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lasso_lars.py"><tt class="xref download docutils literal"><span class="pre">plot_lasso_lars.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lasso_lars.py"><code class="xref download docutils literal"><span class="pre">plot_lasso_lars.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Fabian Pedregosa &lt;fabian.pedregosa@inria.fr&gt;</span>
@@ -210,8 +204,6 @@ of the regularization parameter.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  0.11 seconds
-( 0 minutes  0.11 seconds)</p>
 </div>
 
 
@@ -229,7 +221,7 @@ of the regularization parameter.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="../gaussian_process/plot_gpr_noisy_targets.html">Previous
+      <a href="../gaussian_process/plot_gp_regression.html">Previous
       </a>
     </div>
     

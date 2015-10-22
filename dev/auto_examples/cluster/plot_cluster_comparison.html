@@ -36,8 +36,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="Adjustment for chance in clustering performance evaluation" href="plot_adjusted_for_chance_measures.html" />
-    <link rel="prev" title="A demo of K-Means clustering on the handwritten digits data" href="plot_kmeans_digits.html" />
+    <link rel="next" title="Comparison of the K-Means and MiniBatchKMeans clustering algorithms" href="plot_mini_batch_kmeans.html" />
+    <link rel="prev" title="Adjustment for chance in clustering performance evaluation" href="plot_adjusted_for_chance_measures.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_kmeans_digits.html"
+        <a href="plot_adjusted_for_chance_measures.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        A demo of K-M...
+        Adjustment fo...
         </span>
             <span class="hiddenrellink">
-            A demo of K-Means clustering on the handwritten digits data
+            Adjustment for chance in clustering performance evaluation
             </span>
         </a>
         </div>
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="comparing-different-clustering-algorithms-on-toy-datasets">
 <span id="example-cluster-plot-cluster-comparison-py"></span><h1>Comparing different clustering algorithms on toy datasets<a class="headerlink" href="#comparing-different-clustering-algorithms-on-toy-datasets" title="Permalink to this headline">¶</a></h1>
@@ -181,8 +181,7 @@ specified. Note that affinity propagation has a tendency to
 create many clusters. Thus in this example its two parameters
 (damping and per-point preference) were set to to mitigate this
 behavior.</p>
-<img alt="../../_images/plot_cluster_comparison_001.png" class="align-center" src="../../_images/plot_cluster_comparison_001.png" />
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_cluster_comparison.py"><tt class="xref download docutils literal"><span class="pre">plot_cluster_comparison.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_cluster_comparison.py"><code class="xref download docutils literal"><span class="pre">plot_cluster_comparison.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">time</span>
@@ -286,8 +285,6 @@ behavior.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  125.18 seconds
-( 2 minutes  5.18 seconds)</p>
 </div>
 
 
@@ -305,7 +302,7 @@ behavior.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_kmeans_digits.html">Previous
+      <a href="plot_adjusted_for_chance_measures.html">Previous
       </a>
     </div>
     

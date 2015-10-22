@@ -35,9 +35,6 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
-    <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.manifold.locally_linear_embedding" href="sklearn.manifold.locally_linear_embedding.html" />
-    <link rel="prev" title="sklearn.manifold.SpectralEmbedding" href="sklearn.manifold.SpectralEmbedding.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +53,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -107,48 +104,11 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
-        <div class="rel">
-    
-
-  <!-- rellinks[1:] is an ugly hack to avoid link to module
-  index -->
-        <div class="rellink">
-        <a href="sklearn.manifold.SpectralEmbedding.html"
-        accesskey="P">Previous
-        <br/>
-        <span class="smallrellink">
-        sklearn.manif...
-        </span>
-            <span class="hiddenrellink">
-            sklearn.manifold.SpectralEmbedding
-            </span>
-        </a>
-        </div>
-
-    <!-- Ad a link to the 'up' page -->
-        <div class="spacer">
-        &nbsp;
-        </div>
-        <div class="rellink">
-        <a href="../classes.html">
-        Up
-        <br/>
-        <span class="smallrellink">
-        API Reference
-        </span>
-            <span class="hiddenrellink">
-            API Reference
-            </span>
-            
-        </a>
-        </div>
-    </div>
-    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.manifold</span></tt>.TSNE</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-manifold-tsne">Examples using <tt class="docutils literal"><span class="pre">sklearn.manifold.TSNE</span></tt></a></li>
+<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.manifold</span></code>.TSNE</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-manifold-tsne">Examples using <code class="docutils literal"><span class="pre">sklearn.manifold.TSNE</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -166,13 +126,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="sklearn-manifold-tsne">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.manifold" title="sklearn.manifold"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.manifold</span></tt></a>.TSNE<a class="headerlink" href="#sklearn-manifold-tsne" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.manifold" title="sklearn.manifold"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.manifold</span></code></a>.TSNE<a class="headerlink" href="#sklearn-manifold-tsne" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.manifold.TSNE">
-<em class="property">class </em><tt class="descclassname">sklearn.manifold.</tt><tt class="descname">TSNE</tt><big>(</big><em>n_components=2</em>, <em>perplexity=30.0</em>, <em>early_exaggeration=4.0</em>, <em>learning_rate=1000.0</em>, <em>n_iter=1000</em>, <em>n_iter_without_progress=30</em>, <em>min_grad_norm=1e-07</em>, <em>metric='euclidean'</em>, <em>init='random'</em>, <em>verbose=0</em>, <em>random_state=None</em>, <em>method='barnes_hut'</em>, <em>angle=0.5</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/manifold/t_sne.py#L496"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.manifold.</code><code class="descname">TSNE</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>perplexity=30.0</em>, <em>early_exaggeration=4.0</em>, <em>learning_rate=1000.0</em>, <em>n_iter=1000</em>, <em>n_iter_without_progress=30</em>, <em>min_grad_norm=1e-07</em>, <em>metric='euclidean'</em>, <em>init='random'</em>, <em>verbose=0</em>, <em>random_state=None</em>, <em>method='barnes_hut'</em>, <em>angle=0.5</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/manifold/t_sne.py#L496"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE" title="Permalink to this definition">¶</a></dt>
 <dd><p>t-distributed Stochastic Neighbor Embedding.</p>
 <p>t-SNE [1] is a tool to visualize high-dimensional data. It converts
 similarities between data points to joint probabilities and tries
@@ -186,7 +146,7 @@ to reduce the number of dimensions to a reasonable amount (e.g. 50)
 if the number of features is very high. This will suppress some
 noise and speed up the computation of pairwise distances between
 samples. For more tips see Laurens van der Maaten&#8217;s FAQ [2].</p>
-<p>Read more in the <a class="reference internal" href="../manifold.html#t-sne"><em>User Guide</em></a>.</p>
+<p>Read more in the <a class="reference internal" href="../manifold.html#t-sne"><span>User Guide</span></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -325,28 +285,16 @@ computation time and angle greater 0.8 has quickly increasing error.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.manifold.TSNE.fit" title="sklearn.manifold.TSNE.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
-<td>Fit X into an embedded space.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.manifold.TSNE.fit_transform" title="sklearn.manifold.TSNE.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
-<td>Fit X into an embedded space and return that transformed output.</td>
-</tr>
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.manifold.TSNE.get_params" title="sklearn.manifold.TSNE.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
-<td>Get parameters for this estimator.</td>
-</tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.manifold.TSNE.set_params" title="sklearn.manifold.TSNE.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
-<td>Set the parameters of this estimator.</td>
-</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.manifold.TSNE.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>n_components=2</em>, <em>perplexity=30.0</em>, <em>early_exaggeration=4.0</em>, <em>learning_rate=1000.0</em>, <em>n_iter=1000</em>, <em>n_iter_without_progress=30</em>, <em>min_grad_norm=1e-07</em>, <em>metric='euclidean'</em>, <em>init='random'</em>, <em>verbose=0</em>, <em>random_state=None</em>, <em>method='barnes_hut'</em>, <em>angle=0.5</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/manifold/t_sne.py#L632"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>perplexity=30.0</em>, <em>early_exaggeration=4.0</em>, <em>learning_rate=1000.0</em>, <em>n_iter=1000</em>, <em>n_iter_without_progress=30</em>, <em>min_grad_norm=1e-07</em>, <em>metric='euclidean'</em>, <em>init='random'</em>, <em>verbose=0</em>, <em>random_state=None</em>, <em>method='barnes_hut'</em>, <em>angle=0.5</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/manifold/t_sne.py#L632"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.manifold.TSNE.fit">
-<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/manifold/t_sne.py#L864"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/manifold/t_sne.py#L864"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit X into an embedded space.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -367,7 +315,7 @@ or &#8216;coo&#8217;.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.TSNE.fit_transform">
-<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/manifold/t_sne.py#L845"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE.fit_transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/manifold/t_sne.py#L845"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit X into an embedded space and return that transformed
 output.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -393,7 +341,7 @@ matrix. Otherwise it contains a sample per row.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.TSNE.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -418,11 +366,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.TSNE.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/5d3bb93/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.TSNE.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
+<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -437,18 +385,18 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-manifold-tsne">
-<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.manifold.TSNE</span></tt><a class="headerlink" href="#examples-using-sklearn-manifold-tsne" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="An illustration of dimensionality reduction on the S-curve dataset with various manifold learni..."><div class="figure">
+<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.manifold.TSNE</span></code><a class="headerlink" href="#examples-using-sklearn-manifold-tsne" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="An illustration of dimensionality reduction on the S-curve dataset with various manifold learni..."><div class="figure" id="id1">
 <a class="reference external image-reference" href="./../../auto_examples/manifold/plot_compare_methods.html"><img alt="../../_images/plot_compare_methods1.png" src="../../_images/plot_compare_methods1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/manifold/plot_compare_methods.html#example-manifold-plot-compare-methods-py"><em>Comparison of Manifold Learning methods</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/manifold/plot_compare_methods.html#example-manifold-plot-compare-methods-py"><span>Comparison of Manifold Learning methods</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An application of the different :ref:`manifold` techniques on a spherical data-set. Here one ca..."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="An application of the different :ref:`manifold` techniques on a spherical data-set. Here one ca..."><div class="figure" id="id2">
 <a class="reference external image-reference" href="./../../auto_examples/manifold/plot_manifold_sphere.html"><img alt="../../_images/plot_manifold_sphere1.png" src="../../_images/plot_manifold_sphere1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/manifold/plot_manifold_sphere.html#example-manifold-plot-manifold-sphere-py"><em>Manifold Learning methods on a severed sphere</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/manifold/plot_manifold_sphere.html#example-manifold-plot-manifold-sphere-py"><span>Manifold Learning methods on a severed sphere</span></a></span></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An illustration of various embeddings on the digits dataset."><div class="figure">
+</div><div class="thumbnailContainer" tooltip="An illustration of various embeddings on the digits dataset."><div class="figure" id="id3">
 <a class="reference external image-reference" href="./../../auto_examples/manifold/plot_lle_digits.html"><img alt="../../_images/plot_lle_digits1.png" src="../../_images/plot_lle_digits1.png" /></a>
-<p class="caption"><a class="reference internal" href="../../auto_examples/manifold/plot_lle_digits.html#example-manifold-plot-lle-digits-py"><em>Manifold learning on handwritten digits: Locally Linear Embedding, Isomap...</em></a></p>
+<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/manifold/plot_lle_digits.html#example-manifold-plot-lle-digits-py"><span>Manifold learning on handwritten digits: Locally Linear Embedding, Isomap...</span></a></span></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -465,12 +413,8 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.manifold.TSNE.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel">
+     <div class="rel rellarge">
     
-    <div class="buttonPrevious">
-      <a href="sklearn.manifold.SpectralEmbedding.html">Previous
-      </a>
-    </div>
     
      </div>
 

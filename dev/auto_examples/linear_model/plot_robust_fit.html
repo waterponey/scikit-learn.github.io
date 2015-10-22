@@ -37,7 +37,7 @@
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
     <link rel="next" title="Automatic Relevance Determination Regression (ARD)" href="plot_ard.html" />
-    <link rel="prev" title="Bayesian Ridge Regression" href="plot_bayesian_ridge.html" />
+    <link rel="prev" title="Sparsity Example: Fitting only features 1 and 2" href="plot_ols_3d.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body>
+  <body role="document">
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_bayesian_ridge.html"
+        <a href="plot_ols_3d.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Bayesian Ridg...
+        Sparsity Exam...
         </span>
             <span class="hiddenrellink">
-            Bayesian Ridge Regression
+            Sparsity Example: Fitting only features 1 and 2
             </span>
         </a>
         </div>
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="robust-linear-estimator-fitting">
 <span id="example-linear-model-plot-robust-fit-py"></span><h1>Robust linear estimator fitting<a class="headerlink" href="#robust-linear-estimator-fitting" title="Permalink to this headline">¶</a></h1>
@@ -184,19 +184,7 @@ the quality of the prediction.</p>
 <li>TheilSen is good for small outliers, both in direction X and y, but has
 a break point above which it performs worst than OLS.</li>
 </ul>
-<ul class="horizontal">
-<li><a class="first reference internal image-reference" href="../../_images/plot_robust_fit_001.png"><img alt="../../_images/plot_robust_fit_001.png" src="../../_images/plot_robust_fit_001.png" style="width: 235.0px; height: 188.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_robust_fit_002.png"><img alt="../../_images/plot_robust_fit_002.png" src="../../_images/plot_robust_fit_002.png" style="width: 235.0px; height: 188.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_robust_fit_003.png"><img alt="../../_images/plot_robust_fit_003.png" src="../../_images/plot_robust_fit_003.png" style="width: 235.0px; height: 188.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_robust_fit_004.png"><img alt="../../_images/plot_robust_fit_004.png" src="../../_images/plot_robust_fit_004.png" style="width: 235.0px; height: 188.0px;" /></a>
-</li>
-<li><a class="first reference internal image-reference" href="../../_images/plot_robust_fit_005.png"><img alt="../../_images/plot_robust_fit_005.png" src="../../_images/plot_robust_fit_005.png" style="width: 235.0px; height: 188.0px;" /></a>
-</li>
-</ul>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_robust_fit.py"><tt class="xref download docutils literal"><span class="pre">plot_robust_fit.py</span></tt></a></p>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_robust_fit.py"><code class="xref download docutils literal"><span class="pre">plot_robust_fit.py</span></code></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 
@@ -258,8 +246,6 @@ a break point above which it performs worst than OLS.</li>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
-<p><strong>Total running time of the example:</strong>  17.37 seconds
-( 0 minutes  17.37 seconds)</p>
 </div>
 
 
@@ -277,7 +263,7 @@ a break point above which it performs worst than OLS.</li>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_bayesian_ridge.html">Previous
+      <a href="plot_ols_3d.html">Previous
       </a>
     </div>
     
