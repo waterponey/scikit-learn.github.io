@@ -78,6 +78,6 @@ data.
 .. literalinclude:: plot_lasso_model_selection.py
     :lines: 44-
 
-**Total running time of the example:**  1.20 seconds
-( 0 minutes  1.20 seconds)
+**Total running time of the example:**  1.18 seconds
+( 0 minutes  1.18 seconds)
     

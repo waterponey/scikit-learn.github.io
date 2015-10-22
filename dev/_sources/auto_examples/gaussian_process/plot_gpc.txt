@@ -54,6 +54,6 @@ hyperparameters used in the first figure by black dots.
 .. literalinclude:: plot_gpc.py
     :lines: 23-
 
-**Total running time of the example:**  7.65 seconds
-( 0 minutes  7.65 seconds)
+**Total running time of the example:**  7.81 seconds
+( 0 minutes  7.81 seconds)
     

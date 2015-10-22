@@ -169,7 +169,7 @@
 <h1><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.gaussian_process.kernels</span></tt>.Exponentiation<a class="headerlink" href="#sklearn-gaussian-process-kernels-exponentiation" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.gaussian_process.kernels.Exponentiation">
-<em class="property">class </em><tt class="descclassname">sklearn.gaussian_process.kernels.</tt><tt class="descname">Exponentiation</tt><big>(</big><em>kernel</em>, <em>exponent</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/9865e9a/sklearn/gaussian_process/kernels.py#L730"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.gaussian_process.kernels.</tt><tt class="descname">Exponentiation</tt><big>(</big><em>kernel</em>, <em>exponent</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/gaussian_process/kernels.py#L730"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Exponentiate kernel by given exponent.</p>
 <p>The resulting kernel is defined as
 k_exp(X, Y) = k(X, Y) ** exponent</p>
@@ -215,7 +215,7 @@ k_exp(X, Y) = k(X, Y) ** exponent</p>
 </table>
 <dl class="method">
 <dt id="sklearn.gaussian_process.kernels.Exponentiation.__init__">
-<tt class="descname">__init__</tt><big>(</big><em>kernel</em>, <em>exponent</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/9865e9a/sklearn/gaussian_process/kernels.py#L745"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>kernel</em>, <em>exponent</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/gaussian_process/kernels.py#L745"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
@@ -238,13 +238,13 @@ k_exp(X, Y) = k(X, Y) ** exponent</p>
 
 <dl class="method">
 <dt id="sklearn.gaussian_process.kernels.Exponentiation.clone_with_theta">
-<tt class="descname">clone_with_theta</tt><big>(</big><em>theta</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/9865e9a/sklearn/gaussian_process/kernels.py#L169"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.clone_with_theta" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">clone_with_theta</tt><big>(</big><em>theta</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/gaussian_process/kernels.py#L169"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.clone_with_theta" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a clone of self with given hyperparameters theta.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.gaussian_process.kernels.Exponentiation.diag">
-<tt class="descname">diag</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/9865e9a/sklearn/gaussian_process/kernels.py#L858"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.diag" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">diag</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/gaussian_process/kernels.py#L858"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.diag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the diagonal of the kernel k(X, X).</p>
 <p>The result of this method is identical to np.diag(self(X)); however,
 it can be evaluated more efficiently since only the diagonal is
@@ -271,7 +271,7 @@ evaluated.</p>
 
 <dl class="method">
 <dt id="sklearn.gaussian_process.kernels.Exponentiation.get_params">
-<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/9865e9a/sklearn/gaussian_process/kernels.py#L749"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/gaussian_process/kernels.py#L749"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters of this kernel.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -302,7 +302,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.gaussian_process.kernels.Exponentiation.is_stationary">
-<tt class="descname">is_stationary</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/9865e9a/sklearn/gaussian_process/kernels.py#L880"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.is_stationary" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">is_stationary</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/gaussian_process/kernels.py#L880"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.is_stationary" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns whether the kernel is stationary.</p>
 </dd></dl>
 
@@ -314,7 +314,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.gaussian_process.kernels.Exponentiation.set_params">
-<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/9865e9a/sklearn/gaussian_process/kernels.py#L132"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/3c988d5/sklearn/gaussian_process/kernels.py#L132"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.gaussian_process.kernels.Exponentiation.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this kernel.</p>
 <p>The method works on simple kernels as well as on nested kernels.
 The latter have parameters of the form <tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt>

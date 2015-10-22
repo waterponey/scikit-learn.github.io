@@ -56,11 +56,11 @@ than just predicting the mean.
 
 **Script output**::
 
-  Time for KRR fitting: 7.832
+  Time for KRR fitting: 7.834
   Time for GPR fitting: 0.201
-  Time for KRR prediction: 0.132
-  Time for GPR prediction: 0.129
-  Time for GPR prediction with standard-deviation: 0.750
+  Time for KRR prediction: 0.130
+  Time for GPR prediction: 0.126
+  Time for GPR prediction with standard-deviation: 0.748
 
 
 

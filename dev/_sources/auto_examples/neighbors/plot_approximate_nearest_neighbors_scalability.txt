@@ -56,10 +56,10 @@ the dimensionality of the data.
 
   Index size: 1000, exact: 0.003s, LSHF: 0.019s, speedup: 0.2, accuracy: 1.00 +/-0.00
   Index size: 2511, exact: 0.007s, LSHF: 0.022s, speedup: 0.3, accuracy: 1.00 +/-0.00
-  Index size: 6309, exact: 0.018s, LSHF: 0.021s, speedup: 0.8, accuracy: 1.00 +/-0.00
-  Index size: 15848, exact: 0.042s, LSHF: 0.023s, speedup: 1.8, accuracy: 1.00 +/-0.00
-  Index size: 39810, exact: 0.170s, LSHF: 0.029s, speedup: 5.9, accuracy: 1.00 +/-0.00
-  Index size: 100000, exact: 0.436s, LSHF: 0.048s, speedup: 9.3, accuracy: 0.94 +/-0.08
+  Index size: 6309, exact: 0.019s, LSHF: 0.021s, speedup: 0.9, accuracy: 1.00 +/-0.00
+  Index size: 15848, exact: 0.043s, LSHF: 0.024s, speedup: 1.8, accuracy: 1.00 +/-0.00
+  Index size: 39810, exact: 0.171s, LSHF: 0.028s, speedup: 6.1, accuracy: 1.00 +/-0.00
+  Index size: 100000, exact: 0.438s, LSHF: 0.046s, speedup: 9.7, accuracy: 0.94 +/-0.08
 
 
 
@@ -68,6 +68,6 @@ the dimensionality of the data.
 .. literalinclude:: plot_approximate_nearest_neighbors_scalability.py
     :lines: 30-
 
-**Total running time of the example:**  23.46 seconds
-( 0 minutes  23.46 seconds)
+**Total running time of the example:**  23.47 seconds
+( 0 minutes  23.47 seconds)
     
