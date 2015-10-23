@@ -37,7 +37,7 @@
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../classes.html" />
     <link rel="next" title="sklearn.ensemble.partial_dependence.plot_partial_dependence" href="sklearn.ensemble.partial_dependence.plot_partial_dependence.html" />
-    <link rel="prev" title="sklearn.dummy.DummyRegressor" href="sklearn.dummy.DummyRegressor.html" />
+    <link rel="prev" title="sklearn.ensemble.VotingClassifier" href="sklearn.ensemble.VotingClassifier.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="sklearn.dummy.DummyRegressor.html"
+        <a href="sklearn.ensemble.VotingClassifier.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.dummy...
+        sklearn.ensemble...
         </span>
             <span class="hiddenrellink">
-            sklearn.dummy.DummyRegressor
+            sklearn.ensemble.VotingClassifier
             </span>
         </a>
         </div>
@@ -147,7 +147,7 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.ensemble.partial_dependence</span></code>.partial_dependence</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.ensemble.partial_dependence</span></tt>.partial_dependence</a></li>
 </ul>
 
     </div>
@@ -163,18 +163,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-ensemble-partial-dependence-partial-dependence">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.ensemble.partial_dependence" title="sklearn.ensemble.partial_dependence"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble.partial_dependence</span></code></a>.partial_dependence<a class="headerlink" href="#sklearn-ensemble-partial-dependence-partial-dependence" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.ensemble.partial_dependence" title="sklearn.ensemble.partial_dependence"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble.partial_dependence</span></tt></a>.partial_dependence<a class="headerlink" href="#sklearn-ensemble-partial-dependence-partial-dependence" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.ensemble.partial_dependence.partial_dependence">
-<code class="descclassname">sklearn.ensemble.partial_dependence.</code><code class="descname">partial_dependence</code><span class="sig-paren">(</span><em>gbrt</em>, <em>target_variables</em>, <em>grid=None</em>, <em>X=None</em>, <em>percentiles=(0.05</em>, <em>0.95)</em>, <em>grid_resolution=100</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/ensemble/partial_dependence.py#L71"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.partial_dependence.partial_dependence" title="Permalink to this definition">¶</a></dt>
-<dd><p>Partial dependence of <code class="docutils literal"><span class="pre">target_variables</span></code>.</p>
+<tt class="descclassname">sklearn.ensemble.partial_dependence.</tt><tt class="descname">partial_dependence</tt><big>(</big><em>gbrt</em>, <em>target_variables</em>, <em>grid=None</em>, <em>X=None</em>, <em>percentiles=(0.05</em>, <em>0.95)</em>, <em>grid_resolution=100</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/ensemble/partial_dependence.py#L71"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.partial_dependence.partial_dependence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Partial dependence of <tt class="docutils literal"><span class="pre">target_variables</span></tt>.</p>
 <p>Partial dependence plots show the dependence between the joint values
-of the <code class="docutils literal"><span class="pre">target_variables</span></code> and the function represented
-by the <code class="docutils literal"><span class="pre">gbrt</span></code>.</p>
-<p>Read more in the <a class="reference internal" href="../ensemble.html#partial-dependence"><span>User Guide</span></a>.</p>
+of the <tt class="docutils literal"><span class="pre">target_variables</span></tt> and the function represented
+by the <tt class="docutils literal"><span class="pre">gbrt</span></tt>.</p>
+<p>Read more in the <a class="reference internal" href="../ensemble.html#partial-dependence"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -190,32 +190,32 @@ computed (size should be smaller than 3 for visual renderings).</p>
 </div></blockquote>
 <p><strong>grid</strong> : array-like, shape=(n_points, len(target_variables))</p>
 <blockquote>
-<div><p>The grid of <code class="docutils literal"><span class="pre">target_variables</span></code> values for which the
-partial dependecy should be evaluated (either <code class="docutils literal"><span class="pre">grid</span></code> or <code class="docutils literal"><span class="pre">X</span></code>
+<div><p>The grid of <tt class="docutils literal"><span class="pre">target_variables</span></tt> values for which the
+partial dependecy should be evaluated (either <tt class="docutils literal"><span class="pre">grid</span></tt> or <tt class="docutils literal"><span class="pre">X</span></tt>
 must be specified).</p>
 </div></blockquote>
 <p><strong>X</strong> : array-like, shape=(n_samples, n_features)</p>
 <blockquote>
-<div><p>The data on which <code class="docutils literal"><span class="pre">gbrt</span></code> was trained. It is used to generate
-a <code class="docutils literal"><span class="pre">grid</span></code> for the <code class="docutils literal"><span class="pre">target_variables</span></code>. The <code class="docutils literal"><span class="pre">grid</span></code> comprises
-<code class="docutils literal"><span class="pre">grid_resolution</span></code> equally spaced points between the two
-<code class="docutils literal"><span class="pre">percentiles</span></code>.</p>
+<div><p>The data on which <tt class="docutils literal"><span class="pre">gbrt</span></tt> was trained. It is used to generate
+a <tt class="docutils literal"><span class="pre">grid</span></tt> for the <tt class="docutils literal"><span class="pre">target_variables</span></tt>. The <tt class="docutils literal"><span class="pre">grid</span></tt> comprises
+<tt class="docutils literal"><span class="pre">grid_resolution</span></tt> equally spaced points between the two
+<tt class="docutils literal"><span class="pre">percentiles</span></tt>.</p>
 </div></blockquote>
 <p><strong>percentiles</strong> : (low, high), default=(0.05, 0.95)</p>
 <blockquote>
 <div><p>The lower and upper percentile used create the extreme values
-for the <code class="docutils literal"><span class="pre">grid</span></code>. Only if <code class="docutils literal"><span class="pre">X</span></code> is not None.</p>
+for the <tt class="docutils literal"><span class="pre">grid</span></tt>. Only if <tt class="docutils literal"><span class="pre">X</span></tt> is not None.</p>
 </div></blockquote>
 <p><strong>grid_resolution</strong> : int, default=100</p>
 <blockquote>
-<div><p>The number of equally spaced points on the <code class="docutils literal"><span class="pre">grid</span></code>.</p>
+<div><p>The number of equally spaced points on the <tt class="docutils literal"><span class="pre">grid</span></tt>.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>pdp</strong> : array, shape=(n_classes, n_points)</p>
 <blockquote>
-<div><p>The partial dependence function evaluated on the <code class="docutils literal"><span class="pre">grid</span></code>.
-For regression and binary classification <code class="docutils literal"><span class="pre">n_classes==1</span></code>.</p>
+<div><p>The partial dependence function evaluated on the <tt class="docutils literal"><span class="pre">grid</span></tt>.
+For regression and binary classification <tt class="docutils literal"><span class="pre">n_classes==1</span></tt>.</p>
 </div></blockquote>
 <p><strong>axes</strong> : seq of ndarray or None</p>
 <blockquote class="last">
@@ -255,7 +255,7 @@ the grid has been given.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="sklearn.dummy.DummyRegressor.html">Previous
+      <a href="sklearn.ensemble.VotingClassifier.html">Previous
       </a>
     </div>
     

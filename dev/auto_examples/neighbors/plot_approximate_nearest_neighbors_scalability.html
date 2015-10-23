@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Simple 1D Ker...
+        Simple 1D Kernel...
         </span>
             <span class="hiddenrellink">
             Simple 1D Kernel Density Estimation
@@ -163,12 +163,12 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="scalability-of-approximate-nearest-neighbors">
 <span id="example-neighbors-plot-approximate-nearest-neighbors-scalability-py"></span><h1>Scalability of Approximate Nearest Neighbors<a class="headerlink" href="#scalability-of-approximate-nearest-neighbors" title="Permalink to this headline">¶</a></h1>
 <p>This example studies the scalability profile of approximate 10-neighbors
-queries using the LSHForest with <code class="docutils literal"><span class="pre">n_estimators=20</span></code> and <code class="docutils literal"><span class="pre">n_candidates=200</span></code>
+queries using the LSHForest with <tt class="docutils literal"><span class="pre">n_estimators=20</span></tt> and <tt class="docutils literal"><span class="pre">n_candidates=200</span></tt>
 when varying the number of samples in the dataset.</p>
 <p>The first plot demonstrates the relationship between query time and index size
 of LSHForest. Query time is compared with the brute force method in exact
@@ -185,7 +185,24 @@ of the indexed data and the parameters of the LSHForest index.</p>
 <p>The precision of approximate queries should decrease slowly with the dataset
 size. The speed of the decrease depends mostly on the LSHForest parameters and
 the dimensionality of the data.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_approximate_nearest_neighbors_scalability.py"><code class="xref download docutils literal"><span class="pre">plot_approximate_nearest_neighbors_scalability.py</span></code></a></p>
+<ul class="horizontal">
+<li><a class="first reference internal image-reference" href="../../_images/plot_approximate_nearest_neighbors_scalability_001.png"><img alt="../../_images/plot_approximate_nearest_neighbors_scalability_001.png" src="../../_images/plot_approximate_nearest_neighbors_scalability_001.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_approximate_nearest_neighbors_scalability_002.png"><img alt="../../_images/plot_approximate_nearest_neighbors_scalability_002.png" src="../../_images/plot_approximate_nearest_neighbors_scalability_002.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_approximate_nearest_neighbors_scalability_003.png"><img alt="../../_images/plot_approximate_nearest_neighbors_scalability_003.png" src="../../_images/plot_approximate_nearest_neighbors_scalability_003.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+</ul>
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Index size: 1000, exact: 0.002s, LSHF: 0.013s, speedup: 0.1, accuracy: 1.00 +/-0.00
+Index size: 2511, exact: 0.004s, LSHF: 0.014s, speedup: 0.3, accuracy: 1.00 +/-0.00
+Index size: 6309, exact: 0.015s, LSHF: 0.024s, speedup: 0.6, accuracy: 1.00 +/-0.00
+Index size: 15848, exact: 0.023s, LSHF: 0.014s, speedup: 1.6, accuracy: 1.00 +/-0.00
+Index size: 39810, exact: 0.055s, LSHF: 0.016s, speedup: 3.4, accuracy: 1.00 +/-0.00
+Index size: 100000, exact: 0.163s, LSHF: 0.023s, speedup: 7.2, accuracy: 0.94 +/-0.08
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_approximate_nearest_neighbors_scalability.py"><tt class="xref download docutils literal"><span class="pre">plot_approximate_nearest_neighbors_scalability.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
 <span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
@@ -285,7 +302,7 @@ the dimensionality of the data.</p>
              <span class="n">fmt</span><span class="o">=</span><span class="s">&#39;o-&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;LSHForest&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">n_samples_values</span><span class="p">,</span> <span class="n">average_times_exact</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s">&#39;b&#39;</span><span class="p">,</span>
          <span class="n">label</span><span class="o">=</span><span class="s">&quot;NearestNeighbors(algorithm=&#39;brute&#39;, metric=&#39;cosine&#39;)&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;upper left&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="s">&#39;small&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;upper left&#39;</span><span class="p">,</span> <span class="n">prop</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="s">&#39;small&#39;</span><span class="p">))</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylim"><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span></a><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&quot;Average query time in seconds&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&quot;n_samples&quot;</span><span class="p">)</span>
@@ -315,6 +332,8 @@ the dimensionality of the data.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  16.55 seconds
+( 0 minutes  16.55 seconds)</p>
 </div>
 
 

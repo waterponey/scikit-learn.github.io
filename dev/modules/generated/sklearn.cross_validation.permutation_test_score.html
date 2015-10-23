@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.cross...
+        sklearn.cross_va...
         </span>
             <span class="hiddenrellink">
             sklearn.cross_validation.cross_val_predict
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cross_validation</span></code>.permutation_test_score</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-permutation-test-score">Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.permutation_test_score</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cross_validation</span></tt>.permutation_test_score</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-permutation-test-score">Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.permutation_test_score</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -166,15 +166,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-cross-validation-permutation-test-score">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></code></a>.permutation_test_score<a class="headerlink" href="#sklearn-cross-validation-permutation-test-score" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></tt></a>.permutation_test_score<a class="headerlink" href="#sklearn-cross-validation-permutation-test-score" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.cross_validation.permutation_test_score">
-<code class="descclassname">sklearn.cross_validation.</code><code class="descname">permutation_test_score</code><span class="sig-paren">(</span><em>estimator</em>, <em>X</em>, <em>y</em>, <em>cv=None</em>, <em>n_permutations=100</em>, <em>n_jobs=1</em>, <em>labels=None</em>, <em>random_state=0</em>, <em>verbose=0</em>, <em>scoring=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cross_validation.py#L1698"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.permutation_test_score" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.cross_validation.</tt><tt class="descname">permutation_test_score</tt><big>(</big><em>estimator</em>, <em>X</em>, <em>y</em>, <em>cv=None</em>, <em>n_permutations=100</em>, <em>n_jobs=1</em>, <em>labels=None</em>, <em>random_state=0</em>, <em>verbose=0</em>, <em>scoring=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cross_validation.py#L1688"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.permutation_test_score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Evaluate the significance of a cross-validated score with permutations</p>
-<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -196,7 +196,7 @@ supervised learning.</p>
 <blockquote>
 <div><p>A string (see model evaluation documentation) or
 a scorer callable object / function with signature
-<code class="docutils literal"><span class="pre">scorer(estimator,</span> <span class="pre">X,</span> <span class="pre">y)</span></code>.</p>
+<tt class="docutils literal"><span class="pre">scorer(estimator,</span> <span class="pre">X,</span> <span class="pre">y)</span></tt>.</p>
 </div></blockquote>
 <p><strong>cv</strong> : int, cross-validation generator or an iterable, optional</p>
 <blockquote>
@@ -210,15 +210,15 @@ Possible inputs for cv are:</p>
 <li>An iterable yielding train/test splits.</li>
 </ul>
 </div></blockquote>
-<p>For integer/None inputs, if <code class="docutils literal"><span class="pre">y</span></code> is binary or multiclass,
-<a class="reference internal" href="sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><code class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></code></a> used. If the estimator is a classifier
-or if <code class="docutils literal"><span class="pre">y</span></code> is neither binary nor multiclass, <a class="reference internal" href="sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><code class="xref py py-class docutils literal"><span class="pre">KFold</span></code></a> is used.</p>
-<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a> for the various
+<p>For integer/None inputs, if <tt class="docutils literal"><span class="pre">y</span></tt> is binary or multiclass,
+<a class="reference internal" href="sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><tt class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></tt></a> used. If the estimator is a classifier
+or if <tt class="docutils literal"><span class="pre">y</span></tt> is neither binary nor multiclass, <a class="reference internal" href="sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt></a> is used.</p>
+<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a> for the various
 cross-validation strategies that can be used here.</p>
 </div></blockquote>
 <p><strong>n_permutations</strong> : integer, optional</p>
 <blockquote>
-<div><p>Number of times to permute <code class="docutils literal"><span class="pre">y</span></code>.</p>
+<div><p>Number of times to permute <tt class="docutils literal"><span class="pre">y</span></tt>.</p>
 </div></blockquote>
 <p><strong>n_jobs</strong> : integer, optional</p>
 <blockquote>
@@ -270,10 +270,10 @@ vol. 11</div></blockquote>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-cross-validation-permutation-test-score">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.permutation_test_score</span></code><a class="headerlink" href="#examples-using-sklearn-cross-validation-permutation-test-score" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="In order to test if a classification score is significative a technique in repeating the classi..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.permutation_test_score</span></tt><a class="headerlink" href="#examples-using-sklearn-cross-validation-permutation-test-score" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="In order to test if a classification score is significative a technique in repeating the classi..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/feature_selection/plot_permutation_test_for_classification.html"><img alt="../../_images/plot_permutation_test_for_classification1.png" src="../../_images/plot_permutation_test_for_classification1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_selection/plot_permutation_test_for_classification.html#example-feature-selection-plot-permutation-test-for-classification-py"><span>Test with permutations the significance of a classification score</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_selection/plot_permutation_test_for_classification.html#example-feature-selection-plot-permutation-test-for-classification-py"><em>Test with permutations the significance of a classification score</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

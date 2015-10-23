@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        SVM Margins E...
+        SVM Margins Exam...
         </span>
             <span class="hiddenrellink">
             SVM Margins Example
@@ -168,31 +168,31 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="scaling-the-regularization-parameter-for-svcs">
 <span id="example-svm-plot-svm-scale-c-py"></span><h1>Scaling the regularization parameter for SVCs<a class="headerlink" href="#scaling-the-regularization-parameter-for-svcs" title="Permalink to this headline">¶</a></h1>
 <p>The following example illustrates the effect of scaling the
-regularization parameter when using <a class="reference internal" href="../../modules/svm.html#svm"><span>Support Vector Machines</span></a> for
-<a class="reference internal" href="../../modules/svm.html#svm-classification"><span>classification</span></a>.
+regularization parameter when using <a class="reference internal" href="../../modules/svm.html#svm"><em>Support Vector Machines</em></a> for
+<a class="reference internal" href="../../modules/svm.html#svm-classification"><em>classification</em></a>.
 For SVC classification, we are interested in a risk minimization for the
 equation:</p>
 <div class="math">
-<p><img src="../../_images/math/88a87ba701d515d4ac8c7458659e4ab62595ccbb.png" alt="C \sum_{i=1, n} \mathcal{L} (f(x_i), y_i) + \Omega (w)"/></p>
+<p><span class="math">C \sum_{i=1, n} \mathcal{L} (f(x_i), y_i) + \Omega (w)</span></p>
 </div><p>where</p>
 <blockquote>
 <div><ul class="simple">
-<li><img class="math" src="../../_images/math/2bcc65482aa8e15cd4c9e9f2542451fb4e971a91.png" alt="C"/> is used to set the amount of regularization</li>
-<li><img class="math" src="../../_images/math/c70c3d6c173306bc262e12d45b1572cc1b0a2d1e.png" alt="\mathcal{L}"/> is a <cite>loss</cite> function of our samples
+<li><span class="math">C</span> is used to set the amount of regularization</li>
+<li><span class="math">\mathcal{L}</span> is a <cite>loss</cite> function of our samples
 and our model parameters.</li>
-<li><img class="math" src="../../_images/math/b39932b8cbb311eeee9815738f6be3757737b2ff.png" alt="\Omega"/> is a <cite>penalty</cite> function of our model parameters</li>
+<li><span class="math">\Omega</span> is a <cite>penalty</cite> function of our model parameters</li>
 </ul>
 </div></blockquote>
 <p>If we consider the loss function to be the individual error per
 sample, then the data-fit term, or the sum of the error for each sample, will
 increase as we add more samples. The penalization term, however, will not
 increase.</p>
-<p>When using, for example, <a class="reference internal" href="../../modules/cross_validation.html#cross-validation"><span>cross validation</span></a>, to
+<p>When using, for example, <a class="reference internal" href="../../modules/cross_validation.html#cross-validation"><em>cross validation</em></a>, to
 set the amount of regularization with <cite>C</cite>, there will be a
 different amount of samples between the main problem and the smaller problems
 within the folds of the cross validation.</p>
@@ -235,7 +235,13 @@ is not scaled.</p>
 behind this is the <cite>l1</cite> case works better on sparse data, while <cite>l2</cite>
 is better suited to the non-sparse case.</p>
 </div>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_svm_scale_c.py"><code class="xref download docutils literal"><span class="pre">plot_svm_scale_c.py</span></code></a></p>
+<ul class="horizontal">
+<li><a class="first reference internal image-reference" href="../../_images/plot_svm_scale_c_000.png"><img alt="../../_images/plot_svm_scale_c_000.png" src="../../_images/plot_svm_scale_c_000.png" style="width: 423.0px; height: 470.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_svm_scale_c_001.png"><img alt="../../_images/plot_svm_scale_c_001.png" src="../../_images/plot_svm_scale_c_001.png" style="width: 423.0px; height: 470.0px;" /></a>
+</li>
+</ul>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_svm_scale_c.py"><tt class="xref download docutils literal"><span class="pre">plot_svm_scale_c.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 
@@ -311,6 +317,8 @@ is better suited to the non-sparse case.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  38.78 seconds
+( 0 minutes  38.78 seconds)</p>
 </div>
 </div>
 

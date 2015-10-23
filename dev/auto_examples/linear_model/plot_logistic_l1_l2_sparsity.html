@@ -36,8 +36,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="Plot multi-class SGD on the iris dataset" href="plot_sgd_iris.html" />
-    <link rel="prev" title="Automatic Relevance Determination Regression (ARD)" href="plot_ard.html" />
+    <link rel="next" title="Automatic Relevance Determination Regression (ARD)" href="plot_ard.html" />
+    <link rel="prev" title="Robust linear estimator fitting" href="plot_robust_fit.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_ard.html"
+        <a href="plot_robust_fit.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Automatic Rel...
+        Robust linear es...
         </span>
             <span class="hiddenrellink">
-            Automatic Relevance Determination Regression (ARD)
+            Robust linear estimator fitting
             </span>
         </a>
         </div>
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="l1-penalty-and-sparsity-in-logistic-regression">
 <span id="example-linear-model-plot-logistic-l1-l2-sparsity-py"></span><h1>L1 Penalty and Sparsity in Logistic Regression<a class="headerlink" href="#l1-penalty-and-sparsity-in-logistic-regression" title="Permalink to this headline">¶</a></h1>
@@ -174,7 +174,26 @@ constrain the model more. In the L1 penalty case, this leads to sparser
 solutions.</p>
 <p>We classify 8x8 images of digits into two classes: 0-4 against 5-9.
 The visualization shows coefficients of the models for varying C.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_logistic_l1_l2_sparsity.py"><code class="xref download docutils literal"><span class="pre">plot_logistic_l1_l2_sparsity.py</span></code></a></p>
+<img alt="../../_images/plot_logistic_l1_l2_sparsity_001.png" class="align-center" src="../../_images/plot_logistic_l1_l2_sparsity_001.png" />
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>C=100.00
+Sparsity with L1 penalty: 6.25%
+score with L1 penalty: 0.9115
+Sparsity with L2 penalty: 4.69%
+score with L2 penalty: 0.9098
+C=1.00
+Sparsity with L1 penalty: 9.38%
+score with L1 penalty: 0.9098
+Sparsity with L2 penalty: 4.69%
+score with L2 penalty: 0.9093
+C=0.01
+Sparsity with L1 penalty: 85.94%
+score with L1 penalty: 0.8620
+Sparsity with L2 penalty: 4.69%
+score with L2 penalty: 0.8915
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_logistic_l1_l2_sparsity.py"><tt class="xref download docutils literal"><span class="pre">plot_logistic_l1_l2_sparsity.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Authors: Alexandre Gramfort &lt;alexandre.gramfort@inria.fr&gt;</span>
@@ -241,6 +260,8 @@ The visualization shows coefficients of the models for varying C.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  0.48 seconds
+( 0 minutes  0.48 seconds)</p>
 </div>
 
 
@@ -258,7 +279,7 @@ The visualization shows coefficients of the models for varying C.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_ard.html">Previous
+      <a href="plot_robust_fit.html">Previous
       </a>
     </div>
     

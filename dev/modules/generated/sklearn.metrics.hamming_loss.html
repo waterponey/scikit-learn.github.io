@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.metrics.hinge_loss" href="sklearn.metrics.hinge_loss.html" />
+    <link rel="prev" title="sklearn.metrics.fbeta_score" href="sklearn.metrics.fbeta_score.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.metrics.fbeta_score.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.metrics....
+        </span>
+            <span class="hiddenrellink">
+            sklearn.metrics.fbeta_score
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.hamming_loss</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-hamming-loss">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.hamming_loss</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.hamming_loss</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-hamming-loss">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.hamming_loss</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,16 +166,16 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-metrics-hamming-loss">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.hamming_loss<a class="headerlink" href="#sklearn-metrics-hamming-loss" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.hamming_loss<a class="headerlink" href="#sklearn-metrics-hamming-loss" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.hamming_loss">
-<code class="descclassname">sklearn.metrics.</code><code class="descname">hamming_loss</code><span class="sig-paren">(</span><em>y_true</em>, <em>y_pred</em>, <em>classes=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/classification.py#L1395"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.hamming_loss" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">hamming_loss</tt><big>(</big><em>y_true</em>, <em>y_pred</em>, <em>classes=None</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/metrics/classification.py#L1395"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.hamming_loss" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the average Hamming loss.</p>
 <p>The Hamming loss is the fraction of labels that are incorrectly predicted.</p>
-<p>Read more in the <a class="reference internal" href="../model_evaluation.html#hamming-loss"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../model_evaluation.html#hamming-loss"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -152,12 +192,16 @@
 <blockquote>
 <div><p>Integer array of labels.</p>
 </div></blockquote>
+<p><strong>sample_weight</strong> : array-like of shape = [n_samples], optional</p>
+<blockquote>
+<div><p>Sample weights.</p>
+</div></blockquote>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>loss</strong> : float or int,</p>
 <blockquote class="last">
-<div><p>Return the average Hamming loss between element of <code class="docutils literal"><span class="pre">y_true</span></code> and
-<code class="docutils literal"><span class="pre">y_pred</span></code>.</p>
+<div><p>Return the average Hamming loss between element of <tt class="docutils literal"><span class="pre">y_true</span></tt> and
+<tt class="docutils literal"><span class="pre">y_pred</span></tt>.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -165,12 +209,12 @@
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score" title="sklearn.metrics.accuracy_score"><code class="xref py py-obj docutils literal"><span class="pre">accuracy_score</span></code></a>, <a class="reference internal" href="sklearn.metrics.jaccard_similarity_score.html#sklearn.metrics.jaccard_similarity_score" title="sklearn.metrics.jaccard_similarity_score"><code class="xref py py-obj docutils literal"><span class="pre">jaccard_similarity_score</span></code></a>, <a class="reference internal" href="sklearn.metrics.zero_one_loss.html#sklearn.metrics.zero_one_loss" title="sklearn.metrics.zero_one_loss"><code class="xref py py-obj docutils literal"><span class="pre">zero_one_loss</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.metrics.accuracy_score.html#sklearn.metrics.accuracy_score" title="sklearn.metrics.accuracy_score"><tt class="xref py py-obj docutils literal"><span class="pre">accuracy_score</span></tt></a>, <a class="reference internal" href="sklearn.metrics.jaccard_similarity_score.html#sklearn.metrics.jaccard_similarity_score" title="sklearn.metrics.jaccard_similarity_score"><tt class="xref py py-obj docutils literal"><span class="pre">jaccard_similarity_score</span></tt></a>, <a class="reference internal" href="sklearn.metrics.zero_one_loss.html#sklearn.metrics.zero_one_loss" title="sklearn.metrics.zero_one_loss"><tt class="xref py py-obj docutils literal"><span class="pre">zero_one_loss</span></tt></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>In multiclass classification, the Hamming loss correspond to the Hamming
-distance between <code class="docutils literal"><span class="pre">y_true</span></code> and <code class="docutils literal"><span class="pre">y_pred</span></code> which is equivalent to the
-subset <code class="docutils literal"><span class="pre">zero_one_loss</span></code> function.</p>
+distance between <tt class="docutils literal"><span class="pre">y_true</span></tt> and <tt class="docutils literal"><span class="pre">y_pred</span></tt> which is equivalent to the
+subset <tt class="docutils literal"><span class="pre">zero_one_loss</span></tt> function.</p>
 <p>In multilabel classification, the Hamming loss is different from the
 subset zero-one loss. The zero-one loss considers the entire set of labels
 for a given sample incorrect if it does entirely match the true set of
@@ -179,18 +223,18 @@ labels.</p>
 <p>The Hamming loss is upperbounded by the subset zero-one loss. When
 normalized over samples, the Hamming loss is always between 0 and 1.</p>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r73" rules="none">
+<table class="docutils citation" frame="void" id="r165" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R73]</a></td><td>Grigorios Tsoumakas, Ioannis Katakis. Multi-Label Classification:
+<tr><td class="label"><a class="fn-backref" href="#id1">[R165]</a></td><td>Grigorios Tsoumakas, Ioannis Katakis. Multi-Label Classification:
 An Overview. International Journal of Data Warehousing &amp; Mining,
 3(3), 1-13, July-September 2007.</td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r74" rules="none">
+<table class="docutils citation" frame="void" id="r166" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[R74]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Hamming_distance">Wikipedia entry on the Hamming distance</a></td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id2">[R166]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Hamming_distance">Wikipedia entry on the Hamming distance</a></td></tr>
 </tbody>
 </table>
 <p class="rubric">Examples</p>
@@ -209,10 +253,10 @@ An Overview. International Journal of Data Warehousing &amp; Mining,
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-hamming-loss">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.hamming_loss</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-hamming-loss" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Demonstrate how model complexity influences both prediction accuracy and computational performa..."><div class="figure" id="id3">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.hamming_loss</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-hamming-loss" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Demonstrate how model complexity influences both prediction accuracy and computational performa..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/applications/plot_model_complexity_influence.html"><img alt="../../_images/plot_model_complexity_influence1.png" src="../../_images/plot_model_complexity_influence1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/plot_model_complexity_influence.html#example-applications-plot-model-complexity-influence-py"><span>Model Complexity Influence</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/applications/plot_model_complexity_influence.html#example-applications-plot-model-complexity-influence-py"><em>Model Complexity Influence</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -229,8 +273,12 @@ An Overview. International Journal of Data Warehousing &amp; Mining,
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.hamming_loss.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.metrics.fbeta_score.html">Previous
+      </a>
+    </div>
     
      </div>
 

@@ -26,8 +26,35 @@ The dataset used for evaluation is a 2D grid of isotropic Gaussian
 clusters widely spaced.
 
 
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_kmeans_stability_low_dim_dense_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_kmeans_stability_low_dim_dense_002.png
+            :scale: 47
+
+
+**Script output**::
+
+  Evaluation of KMeans with k-means++ init
+  Evaluation of KMeans with random init
+  Evaluation of MiniBatchKMeans with k-means++ init
+  Evaluation of MiniBatchKMeans with random init
+
+
+
 **Python source code:** :download:`plot_kmeans_stability_low_dim_dense.py <plot_kmeans_stability_low_dim_dense.py>`
 
 .. literalinclude:: plot_kmeans_stability_low_dim_dense.py
     :lines: 24-
+
+**Total running time of the example:**  4.74 seconds
+( 0 minutes  4.74 seconds)
     

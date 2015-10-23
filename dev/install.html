@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -198,7 +198,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="installing-scikit-learn">
 <span id="installation-instructions"></span><h1>Installing scikit-learn<a class="headerlink" href="#installing-scikit-learn" title="Permalink to this headline">¶</a></h1>
@@ -206,14 +206,14 @@
 <blockquote>
 <div><ul class="simple">
 <li>Install the version of scikit-learn provided by your
-<a class="reference internal" href="#install-by-distribution"><span>operating system or Python distribution</span></a>.
+<a class="reference internal" href="#install-by-distribution"><em>operating system or Python distribution</em></a>.
 This is the quickest option for those who have operating systems that
 distribute scikit-learn.</li>
-<li><a class="reference internal" href="#install-official-release"><span>Install an official release</span></a>. This
+<li><a class="reference internal" href="#install-official-release"><em>Install an official release</em></a>. This
 is the best approach for users who want a stable version number
 and aren&#8217;t concerned about running a slightly older version of
 scikit-learn.</li>
-<li><a class="reference internal" href="#install-bleeding-edge"><span>Install the latest development version</span></a>. This is best for users who want the
+<li><a class="reference internal" href="#install-bleeding-edge"><em>Install the latest development version</em></a>. This is best for users who want the
 latest-and-greatest features and aren&#8217;t afraid of running
 brand-new code.</li>
 </ul>
@@ -221,7 +221,7 @@ brand-new code.</li>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">If you wish to contribute to the project, it&#8217;s recommended you
-<a class="reference internal" href="#install-bleeding-edge"><span>install the latest development version</span></a>.</p>
+<a class="reference internal" href="#install-bleeding-edge"><em>install the latest development version</em></a>.</p>
 </div>
 <div class="section" id="installing-an-official-release">
 <span id="install-official-release"></span><h2>Installing an official release<a class="headerlink" href="#installing-an-official-release" title="Permalink to this headline">¶</a></h2>
@@ -243,7 +243,7 @@ latest stable release:</p>
 <p>If there are no binary packages matching your Python version you might
 to try to install scikit-learn and its dependencies from <a class="reference external" href="http://www.lfd.uci.edu/~gohlke/pythonlibs/#scikit-learn">Christoph Gohlke
 Unofficial Windows installers</a>
-or from a <a class="reference internal" href="#install-by-distribution"><span>Python distribution</span></a> instead.</p>
+or from a <a class="reference internal" href="#install-by-distribution"><em>Python distribution</em></a> instead.</p>
 </div>
 <div class="section" id="mac-osx">
 <h3>Mac OSX<a class="headerlink" href="#mac-osx" title="Permalink to this headline">¶</a></h3>
@@ -323,13 +323,13 @@ release:</p>
 <div class="highlight-python"><div class="highlight"><pre>pip install --user --install-option=&quot;--prefix=&quot; -U scikit-learn
 </pre></div>
 </div>
-<p>The <code class="docutils literal"><span class="pre">--user</span></code> flag asks pip to install scikit-learn in the <code class="docutils literal"><span class="pre">$HOME/.local</span></code>
+<p>The <tt class="docutils literal"><span class="pre">--user</span></tt> flag asks pip to install scikit-learn in the <tt class="docutils literal"><span class="pre">$HOME/.local</span></tt>
 folder therefore not requiring root permission. This flag should make pip
 ignore any old version of scikit-learn previously installed on the system while
 benefiting from system packages for numpy and scipy. Those dependencies can
 be long and complex to build correctly from source.</p>
-<p>The <code class="docutils literal"><span class="pre">--install-option=&quot;--prefix=&quot;</span></code> flag is only required if Python has a
-<code class="docutils literal"><span class="pre">distutils.cfg</span></code> configuration with a predefined <code class="docutils literal"><span class="pre">prefix=</span></code> entry.</p>
+<p>The <tt class="docutils literal"><span class="pre">--install-option=&quot;--prefix=&quot;</span></tt> flag is only required if Python has a
+<tt class="docutils literal"><span class="pre">distutils.cfg</span></tt> configuration with a predefined <tt class="docutils literal"><span class="pre">prefix=</span></tt> entry.</p>
 </div>
 <div class="section" id="from-source-package">
 <h4>From source package<a class="headerlink" href="#from-source-package" title="Permalink to this headline">¶</a></h4>
@@ -346,10 +346,10 @@ python modules. The install command is:</p>
 </div>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">Packages installed with the <code class="docutils literal"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code> command cannot
-be uninstalled nor upgraded by <code class="docutils literal"><span class="pre">pip</span></code> later. To properly uninstall
-scikit-learn in that case it is necessary to delete the <code class="docutils literal"><span class="pre">sklearn</span></code> folder
-from your Python <code class="docutils literal"><span class="pre">site-packages</span></code> directory.</p>
+<p class="last">Packages installed with the <tt class="docutils literal"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></tt> command cannot
+be uninstalled nor upgraded by <tt class="docutils literal"><span class="pre">pip</span></tt> later. To properly uninstall
+scikit-learn in that case it is necessary to delete the <tt class="docutils literal"><span class="pre">sklearn</span></tt> folder
+from your Python <tt class="docutils literal"><span class="pre">site-packages</span></tt> directory.</p>
 </div>
 </div>
 </div>
@@ -365,8 +365,8 @@ dependencies (numpy, scipy) that scikit-learn requires.</p>
 that provide their own version of scikit-learn.</p>
 <div class="section" id="debian-and-derivatives-ubuntu">
 <h3>Debian and derivatives (Ubuntu)<a class="headerlink" href="#debian-and-derivatives-ubuntu" title="Permalink to this headline">¶</a></h3>
-<p>The Debian package is named <code class="docutils literal"><span class="pre">python-sklearn</span></code>
-(formerly <code class="docutils literal"><span class="pre">python-scikits-learn</span></code>)
+<p>The Debian package is named <tt class="docutils literal"><span class="pre">python-sklearn</span></tt>
+(formerly <tt class="docutils literal"><span class="pre">python-scikits-learn</span></tt>)
 and can be installed using the following command:</p>
 <div class="highlight-python"><div class="highlight"><pre>sudo apt-get install python-sklearn
 </pre></div>
@@ -374,7 +374,7 @@ and can be installed using the following command:</p>
 <p>Additionally, backport builds of the most recent release of
 scikit-learn for existing releases of Debian and Ubuntu are available
 from the <a class="reference external" href="http://neuro.debian.net/pkgs/python-sklearn.html">NeuroDebian repository</a> .</p>
-<p>A quick-&#8216;n&#8217;-dirty way of rolling your own <code class="docutils literal"><span class="pre">.deb</span></code> package
+<p>A quick-&#8216;n&#8217;-dirty way of rolling your own <tt class="docutils literal"><span class="pre">.deb</span></tt> package
 is to <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/wiki/Quick-packaging-for-Debian-Ubuntu">use stdeb</a>.</p>
 </div>
 <div class="section" id="python-x-y-for-windows">
@@ -392,26 +392,26 @@ library for Windows, Mac OSX and Linux.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p>To upgrade or uninstall scikit-learn installed with Anaconda
-or <code class="docutils literal"><span class="pre">conda</span></code> you <strong>should not use the pip command</strong>. Instead:</p>
-<p>To upgrade <code class="docutils literal"><span class="pre">scikit-learn</span></code>:</p>
+or <tt class="docutils literal"><span class="pre">conda</span></tt> you <strong>should not use the pip command</strong>. Instead:</p>
+<p>To upgrade <tt class="docutils literal"><span class="pre">scikit-learn</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>conda update scikit-learn
 </pre></div>
 </div>
-<p>To uninstall <code class="docutils literal"><span class="pre">scikit-learn</span></code>:</p>
+<p>To uninstall <tt class="docutils literal"><span class="pre">scikit-learn</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>conda remove scikit-learn
 </pre></div>
 </div>
-<p>Upgrading with <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-U</span> <span class="pre">scikit-learn</span></code> or uninstalling
-<code class="docutils literal"><span class="pre">pip</span> <span class="pre">uninstall</span> <span class="pre">scikit-learn</span></code> is likely fail to properly remove files
-installed by the <code class="docutils literal"><span class="pre">conda</span></code> command.</p>
+<p>Upgrading with <tt class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-U</span> <span class="pre">scikit-learn</span></tt> or uninstalling
+<tt class="docutils literal"><span class="pre">pip</span> <span class="pre">uninstall</span> <span class="pre">scikit-learn</span></tt> is likely fail to properly remove files
+installed by the <tt class="docutils literal"><span class="pre">conda</span></tt> command.</p>
 <p class="last">pip upgrade and uninstall operations only work on packages installed
-via <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span></code>.</p>
+via <tt class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span></tt>.</p>
 </div>
 </div>
 <div class="section" id="macports-for-mac-osx">
 <h3>MacPorts for Mac OSX<a class="headerlink" href="#macports-for-mac-osx" title="Permalink to this headline">¶</a></h3>
-<p>The MacPorts package is named <code class="docutils literal"><span class="pre">py&lt;XY&gt;-scikits-learn</span></code>,
-where <code class="docutils literal"><span class="pre">XY</span></code> denotes the Python version.
+<p>The MacPorts package is named <tt class="docutils literal"><span class="pre">py&lt;XY&gt;-scikits-learn</span></tt>,
+where <tt class="docutils literal"><span class="pre">XY</span></tt> denotes the Python version.
 It can be installed by typing the following
 command:</p>
 <div class="highlight-python"><div class="highlight"><pre>sudo port install py26-scikit-learn
@@ -425,7 +425,7 @@ command:</p>
 <div class="section" id="arch-linux">
 <h3>Arch Linux<a class="headerlink" href="#arch-linux" title="Permalink to this headline">¶</a></h3>
 <p>Arch Linux&#8217;s package is provided through the <a class="reference external" href="https://www.archlinux.org/packages/?q=scikit-learn">official repositories</a> as
-<code class="docutils literal"><span class="pre">python-scikit-learn</span></code> for Python 3 and <code class="docutils literal"><span class="pre">python2-scikit-learn</span></code> for Python 2.
+<tt class="docutils literal"><span class="pre">python-scikit-learn</span></tt> for Python 3 and <tt class="docutils literal"><span class="pre">python2-scikit-learn</span></tt> for Python 2.
 It can be installed by typing the following command:</p>
 <div class="highlight-none"><div class="highlight"><pre># pacman -S python-scikit-learn
 </pre></div>
@@ -444,9 +444,9 @@ It can be installed by typing the following command:</p>
 </div>
 <div class="section" id="fedora">
 <h3>Fedora<a class="headerlink" href="#fedora" title="Permalink to this headline">¶</a></h3>
-<p>The Fedora package is called <code class="docutils literal"><span class="pre">python-scikit-learn</span></code> for the Python 2 version
-and <code class="docutils literal"><span class="pre">python3-scikit-learn</span></code> for the Python 3 version. Both versions can
-be installed using <code class="docutils literal"><span class="pre">yum</span></code>:</p>
+<p>The Fedora package is called <tt class="docutils literal"><span class="pre">python-scikit-learn</span></tt> for the Python 2 version
+and <tt class="docutils literal"><span class="pre">python3-scikit-learn</span></tt> for the Python 3 version. Both versions can
+be installed using <tt class="docutils literal"><span class="pre">yum</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ sudo yum install python-scikit-learn
 </pre></div>
 </div>
@@ -462,8 +462,8 @@ be installed using <code class="docutils literal"><span class="pre">yum</span></
 addition to numpy, scipy and setuptools.</p>
 <p>Picking the right compiler depends on the version of Python (2 or 3)
 and the architecture of the Python interpreter, 32-bit or 64-bit.
-You can check the Python version by running the following in <code class="docutils literal"><span class="pre">cmd</span></code> or
-<code class="docutils literal"><span class="pre">powershell</span></code> console:</p>
+You can check the Python version by running the following in <tt class="docutils literal"><span class="pre">cmd</span></tt> or
+<tt class="docutils literal"><span class="pre">powershell</span></tt> console:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
 </pre></div>
 </div>
@@ -492,8 +492,8 @@ folder:</p>
 <p>For the 64-bit architecture, you either need the full Visual Studio or
 the free Windows SDKs that can be downloaded from the links below.</p>
 <p>The Windows SDKs include the MSVC compilers both for 32 and 64-bit
-architectures. They come as a <code class="docutils literal"><span class="pre">GRMSDKX_EN_DVD.iso</span></code> file that can be mounted
-as a new drive with a <code class="docutils literal"><span class="pre">setup.exe</span></code> installer in it.</p>
+architectures. They come as a <tt class="docutils literal"><span class="pre">GRMSDKX_EN_DVD.iso</span></tt> file that can be mounted
+as a new drive with a <tt class="docutils literal"><span class="pre">setup.exe</span></tt> installer in it.</p>
 <ul class="simple">
 <li>For Python 2 you need SDK <strong>v7.0</strong>: <a class="reference external" href="http://www.microsoft.com/en-us/download/details.aspx?id=18950">MS Windows SDK for Windows 7 and .NET
 Framework 3.5 SP1</a></li>
@@ -501,7 +501,7 @@ Framework 3.5 SP1</a></li>
 Framework 4</a></li>
 </ul>
 <p>Both SDKs can be installed in parallel on the same host. To use the Windows
-SDKs, you need to setup the environment of a <code class="docutils literal"><span class="pre">cmd</span></code> console launched with the
+SDKs, you need to setup the environment of a <tt class="docutils literal"><span class="pre">cmd</span></tt> console launched with the
 following flags (at least for SDK v7.0):</p>
 <div class="highlight-python"><div class="highlight"><pre>cmd /E:ON /V:ON /K
 </pre></div>
@@ -513,23 +513,23 @@ SET MSSdk=1
 &quot;C:\Program Files\Microsoft SDKs\Windows\v7.0\Bin\SetEnv.cmd&quot; /x64 /release
 </pre></div>
 </div>
-<p>Finally you can build scikit-learn in the same <code class="docutils literal"><span class="pre">cmd</span></code> console:</p>
+<p>Finally you can build scikit-learn in the same <tt class="docutils literal"><span class="pre">cmd</span></tt> console:</p>
 <div class="highlight-python"><div class="highlight"><pre>python setup.py install
 </pre></div>
 </div>
-<p>Replace <code class="docutils literal"><span class="pre">v7.0</span></code> by the <code class="docutils literal"><span class="pre">v7.1</span></code> in the above commands to do the same for
+<p>Replace <tt class="docutils literal"><span class="pre">v7.0</span></tt> by the <tt class="docutils literal"><span class="pre">v7.1</span></tt> in the above commands to do the same for
 Python 3 instead of Python 2.</p>
-<p>Replace <code class="docutils literal"><span class="pre">/x64</span></code> by <code class="docutils literal"><span class="pre">/x86</span></code>  to build for 32-bit Python instead of 64-bit
+<p>Replace <tt class="docutils literal"><span class="pre">/x64</span></tt> by <tt class="docutils literal"><span class="pre">/x86</span></tt>  to build for 32-bit Python instead of 64-bit
 Python.</p>
 </div>
 <div class="section" id="building-binary-packages-and-installers">
 <h3>Building binary packages and installers<a class="headerlink" href="#building-binary-packages-and-installers" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal"><span class="pre">.whl</span></code> package and <code class="docutils literal"><span class="pre">.exe</span></code> installers can be built with:</p>
+<p>The <tt class="docutils literal"><span class="pre">.whl</span></tt> package and <tt class="docutils literal"><span class="pre">.exe</span></tt> installers can be built with:</p>
 <div class="highlight-python"><div class="highlight"><pre>pip install wheel
 python setup.py bdist_wheel bdist_wininst -b doc/logos/scikit-learn-logo.bmp
 </pre></div>
 </div>
-<p>The resulting packages are generated in the <code class="docutils literal"><span class="pre">dist/</span></code> folder.</p>
+<p>The resulting packages are generated in the <tt class="docutils literal"><span class="pre">dist/</span></tt> folder.</p>
 </div>
 <div class="section" id="using-an-alternative-compiler">
 <h3>Using an alternative compiler<a class="headerlink" href="#using-an-alternative-compiler" title="Permalink to this headline">¶</a></h3>
@@ -537,17 +537,17 @@ python setup.py bdist_wheel bdist_wininst -b doc/logos/scikit-learn-logo.bmp
 OS) as an alternative to MSVC for 32-bit Python. Not that extensions built with
 mingw32 can be redistributed as reusable packages as they depend on GCC runtime
 libraries typically not installed on end-users environment.</p>
-<p>To force the use of a particular compiler, pass the <code class="docutils literal"><span class="pre">--compiler</span></code> flag to the
+<p>To force the use of a particular compiler, pass the <tt class="docutils literal"><span class="pre">--compiler</span></tt> flag to the
 build step:</p>
 <div class="highlight-python"><div class="highlight"><pre>python setup.py build --compiler=my_compiler install
 </pre></div>
 </div>
-<p>where <code class="docutils literal"><span class="pre">my_compiler</span></code> should be one of <code class="docutils literal"><span class="pre">mingw32</span></code> or <code class="docutils literal"><span class="pre">msvc</span></code>.</p>
+<p>where <tt class="docutils literal"><span class="pre">my_compiler</span></tt> should be one of <tt class="docutils literal"><span class="pre">mingw32</span></tt> or <tt class="docutils literal"><span class="pre">msvc</span></tt>.</p>
 </div>
 </div>
 <div class="section" id="bleeding-edge">
 <span id="install-bleeding-edge"></span><h2>Bleeding Edge<a class="headerlink" href="#bleeding-edge" title="Permalink to this headline">¶</a></h2>
-<p>See section <a class="reference internal" href="developers/contributing.html#git-repo"><span>Retrieving the latest code</span></a> on how to get the development version. Then follow
+<p>See section <a class="reference internal" href="developers/contributing.html#git-repo"><em>Retrieving the latest code</em></a> on how to get the development version. Then follow
 the previous instructions to build from source depending on your platform.</p>
 </div>
 <div class="section" id="testing">
@@ -561,8 +561,8 @@ source directory:</p>
 </pre></div>
 </div>
 <p>Under Windows, it is recommended to use the following command (adjust the path
-to the <code class="docutils literal"><span class="pre">python.exe</span></code> program) as using the <code class="docutils literal"><span class="pre">nosetests.exe</span></code> program can badly
-interact with tests that use <code class="docutils literal"><span class="pre">multiprocessing</span></code>:</p>
+to the <tt class="docutils literal"><span class="pre">python.exe</span></tt> program) as using the <tt class="docutils literal"><span class="pre">nosetests.exe</span></tt> program can badly
+interact with tests that use <tt class="docutils literal"><span class="pre">multiprocessing</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre>C:\Python34\python.exe -c &quot;import nose; nose.main()&quot; -v sklearn
 </pre></div>
 </div>
@@ -573,7 +573,7 @@ OK (SKIP=20)
 </pre></div>
 </div>
 <p>Otherwise, please consider posting an issue into the <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/issues">bug tracker</a> or to the
-<a class="reference internal" href="support.html#mailing-lists"><span>Mailing List</span></a> including the traceback of the individual failures
+<a class="reference internal" href="support.html#mailing-lists"><em>Mailing List</em></a> including the traceback of the individual failures
 and errors.</p>
 </div>
 <div class="section" id="testing-scikit-learn-from-within-the-source-folder">
@@ -596,7 +596,7 @@ source directory:</p>
 <div class="highlight-python"><div class="highlight"><pre>make test
 </pre></div>
 </div>
-<p>You can also install a symlink named <code class="docutils literal"><span class="pre">site-packages/scikit-learn.egg-link</span></code>
+<p>You can also install a symlink named <tt class="docutils literal"><span class="pre">site-packages/scikit-learn.egg-link</span></tt>
 to the development folder of scikit-learn with:</p>
 <div class="highlight-python"><div class="highlight"><pre>pip install --editable .
 </pre></div>

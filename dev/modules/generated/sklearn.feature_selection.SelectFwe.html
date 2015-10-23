@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.feature_selection.RFE" href="sklearn.feature_selection.RFE.html" />
+    <link rel="prev" title="sklearn.feature_selection.SelectFromModel" href="sklearn.feature_selection.SelectFromModel.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.feature_selection.SelectFromModel.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.feature_...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.feature_selection.SelectFromModel
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.feature_selection</span></code>.SelectFwe</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.feature_selection</span></tt>.SelectFwe</a></li>
 </ul>
 
     </div>
@@ -123,15 +163,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-feature-selection-selectfwe">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_selection" title="sklearn.feature_selection"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_selection</span></code></a>.SelectFwe<a class="headerlink" href="#sklearn-feature-selection-selectfwe" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_selection" title="sklearn.feature_selection"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_selection</span></tt></a>.SelectFwe<a class="headerlink" href="#sklearn-feature-selection-selectfwe" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.feature_selection.SelectFwe">
-<em class="property">class </em><code class="descclassname">sklearn.feature_selection.</code><code class="descname">SelectFwe</code><span class="sig-paren">(</span><em>score_func=&lt;function f_classif&gt;</em>, <em>alpha=0.05</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/univariate_selection.py#L584"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.feature_selection.</tt><tt class="descname">SelectFwe</tt><big>(</big><em>score_func=&lt;function f_classif at 0x2b84fa851320&gt;</em>, <em>alpha=0.05</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/univariate_selection.py#L584"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe" title="Permalink to this definition">¶</a></dt>
 <dd><p>Filter: Select the p-values corresponding to Family-wise error rate</p>
-<p>Read more in the <a class="reference internal" href="../feature_selection.html#univariate-feature-selection"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../feature_selection.html#univariate-feature-selection"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -162,21 +202,21 @@
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.feature_selection.f_classif.html#sklearn.feature_selection.f_classif" title="sklearn.feature_selection.f_classif"><code class="xref py py-obj docutils literal"><span class="pre">f_classif</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_selection.f_classif.html#sklearn.feature_selection.f_classif" title="sklearn.feature_selection.f_classif"><tt class="xref py py-obj docutils literal"><span class="pre">f_classif</span></tt></a></dt>
 <dd>ANOVA F-value between labe/feature for classification tasks.</dd>
-<dt><a class="reference internal" href="sklearn.feature_selection.chi2.html#sklearn.feature_selection.chi2" title="sklearn.feature_selection.chi2"><code class="xref py py-obj docutils literal"><span class="pre">chi2</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_selection.chi2.html#sklearn.feature_selection.chi2" title="sklearn.feature_selection.chi2"><tt class="xref py py-obj docutils literal"><span class="pre">chi2</span></tt></a></dt>
 <dd>Chi-squared stats of non-negative features for classification tasks.</dd>
-<dt><a class="reference internal" href="sklearn.feature_selection.f_regression.html#sklearn.feature_selection.f_regression" title="sklearn.feature_selection.f_regression"><code class="xref py py-obj docutils literal"><span class="pre">f_regression</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_selection.f_regression.html#sklearn.feature_selection.f_regression" title="sklearn.feature_selection.f_regression"><tt class="xref py py-obj docutils literal"><span class="pre">f_regression</span></tt></a></dt>
 <dd>F-value between label/feature for regression tasks.</dd>
-<dt><a class="reference internal" href="sklearn.feature_selection.SelectPercentile.html#sklearn.feature_selection.SelectPercentile" title="sklearn.feature_selection.SelectPercentile"><code class="xref py py-obj docutils literal"><span class="pre">SelectPercentile</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_selection.SelectPercentile.html#sklearn.feature_selection.SelectPercentile" title="sklearn.feature_selection.SelectPercentile"><tt class="xref py py-obj docutils literal"><span class="pre">SelectPercentile</span></tt></a></dt>
 <dd>Select features based on percentile of the highest scores.</dd>
-<dt><a class="reference internal" href="sklearn.feature_selection.SelectKBest.html#sklearn.feature_selection.SelectKBest" title="sklearn.feature_selection.SelectKBest"><code class="xref py py-obj docutils literal"><span class="pre">SelectKBest</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_selection.SelectKBest.html#sklearn.feature_selection.SelectKBest" title="sklearn.feature_selection.SelectKBest"><tt class="xref py py-obj docutils literal"><span class="pre">SelectKBest</span></tt></a></dt>
 <dd>Select features based on the k highest scores.</dd>
-<dt><a class="reference internal" href="sklearn.feature_selection.SelectFpr.html#sklearn.feature_selection.SelectFpr" title="sklearn.feature_selection.SelectFpr"><code class="xref py py-obj docutils literal"><span class="pre">SelectFpr</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_selection.SelectFpr.html#sklearn.feature_selection.SelectFpr" title="sklearn.feature_selection.SelectFpr"><tt class="xref py py-obj docutils literal"><span class="pre">SelectFpr</span></tt></a></dt>
 <dd>Select features based on a false positive rate test.</dd>
-<dt><a class="reference internal" href="sklearn.feature_selection.SelectFdr.html#sklearn.feature_selection.SelectFdr" title="sklearn.feature_selection.SelectFdr"><code class="xref py py-obj docutils literal"><span class="pre">SelectFdr</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_selection.SelectFdr.html#sklearn.feature_selection.SelectFdr" title="sklearn.feature_selection.SelectFdr"><tt class="xref py py-obj docutils literal"><span class="pre">SelectFdr</span></tt></a></dt>
 <dd>Select features based on an estimated false discovery rate.</dd>
-<dt><a class="reference internal" href="sklearn.feature_selection.GenericUnivariateSelect.html#sklearn.feature_selection.GenericUnivariateSelect" title="sklearn.feature_selection.GenericUnivariateSelect"><code class="xref py py-obj docutils literal"><span class="pre">GenericUnivariateSelect</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_selection.GenericUnivariateSelect.html#sklearn.feature_selection.GenericUnivariateSelect" title="sklearn.feature_selection.GenericUnivariateSelect"><tt class="xref py py-obj docutils literal"><span class="pre">GenericUnivariateSelect</span></tt></a></dt>
 <dd>Univariate feature selector with configurable mode.</dd>
 </dl>
 </div>
@@ -187,16 +227,37 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFwe.fit" title="sklearn.feature_selection.SelectFwe.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y)</td>
+<td>Run score function on (X, y) and get the appropriate features.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFwe.fit_transform" title="sklearn.feature_selection.SelectFwe.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFwe.get_params" title="sklearn.feature_selection.SelectFwe.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFwe.get_support" title="sklearn.feature_selection.SelectFwe.get_support"><tt class="xref py py-obj docutils literal"><span class="pre">get_support</span></tt></a>([indices])</td>
+<td>Get a mask, or integer index, of the features selected</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFwe.inverse_transform" title="sklearn.feature_selection.SelectFwe.inverse_transform"><tt class="xref py py-obj docutils literal"><span class="pre">inverse_transform</span></tt></a>(X)</td>
+<td>Reverse the transformation operation</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFwe.set_params" title="sklearn.feature_selection.SelectFwe.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.SelectFwe.transform" title="sklearn.feature_selection.SelectFwe.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
+<td>Reduce X to the selected features.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFwe.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>score_func=&lt;function f_classif&gt;</em>, <em>alpha=0.05</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/univariate_selection.py#L618"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>score_func=&lt;function f_classif at 0x2b84fa851320&gt;</em>, <em>alpha=0.05</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/univariate_selection.py#L618"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFwe.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/univariate_selection.py#L305"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/univariate_selection.py#L305"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Run score function on (X, y) and get the appropriate features.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -225,7 +286,7 @@ regression).</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFwe.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L438"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -255,7 +316,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFwe.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -280,7 +341,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFwe.get_support">
-<code class="descname">get_support</code><span class="sig-paren">(</span><em>indices=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/base.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.get_support" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_support</tt><big>(</big><em>indices=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/base.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.get_support" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a mask, or integer index, of the features selected</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -310,7 +371,7 @@ values are indices into the input feature vector.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFwe.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/base.py#L86"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">inverse_transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/base.py#L86"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reverse the transformation operation</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -335,11 +396,11 @@ been removed by <cite>transform</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFwe.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -353,7 +414,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.SelectFwe.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/base.py#L62"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/base.py#L62"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.SelectFwe.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reduce X to the selected features.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -391,8 +452,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.feature_selection.SelectFwe.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.feature_selection.SelectFromModel.html">Previous
+      </a>
+    </div>
     
      </div>
 

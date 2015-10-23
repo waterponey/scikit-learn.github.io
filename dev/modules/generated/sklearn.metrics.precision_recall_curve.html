@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.metrics.precision_recall_fscore_support" href="sklearn.metrics.precision_recall_fscore_support.html" />
+    <link rel="prev" title="sklearn.metrics.matthews_corrcoef" href="sklearn.metrics.matthews_corrcoef.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.metrics.matthews_corrcoef.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.metrics....
+        </span>
+            <span class="hiddenrellink">
+            sklearn.metrics.matthews_corrcoef
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.precision_recall_curve</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-precision-recall-curve">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.precision_recall_curve</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.precision_recall_curve</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-precision-recall-curve">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.precision_recall_curve</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,26 +166,26 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-metrics-precision-recall-curve">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.precision_recall_curve<a class="headerlink" href="#sklearn-metrics-precision-recall-curve" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.precision_recall_curve<a class="headerlink" href="#sklearn-metrics-precision-recall-curve" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.precision_recall_curve">
-<code class="descclassname">sklearn.metrics.</code><code class="descname">precision_recall_curve</code><span class="sig-paren">(</span><em>y_true</em>, <em>probas_pred</em>, <em>pos_label=None</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/ranking.py#L338"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.precision_recall_curve" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">precision_recall_curve</tt><big>(</big><em>y_true</em>, <em>probas_pred</em>, <em>pos_label=None</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/metrics/ranking.py#L338"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.precision_recall_curve" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute precision-recall pairs for different probability thresholds</p>
 <p>Note: this implementation is restricted to the binary classification task.</p>
-<p>The precision is the ratio <code class="docutils literal"><span class="pre">tp</span> <span class="pre">/</span> <span class="pre">(tp</span> <span class="pre">+</span> <span class="pre">fp)</span></code> where <code class="docutils literal"><span class="pre">tp</span></code> is the number of
-true positives and <code class="docutils literal"><span class="pre">fp</span></code> the number of false positives. The precision is
+<p>The precision is the ratio <tt class="docutils literal"><span class="pre">tp</span> <span class="pre">/</span> <span class="pre">(tp</span> <span class="pre">+</span> <span class="pre">fp)</span></tt> where <tt class="docutils literal"><span class="pre">tp</span></tt> is the number of
+true positives and <tt class="docutils literal"><span class="pre">fp</span></tt> the number of false positives. The precision is
 intuitively the ability of the classifier not to label as positive a sample
 that is negative.</p>
-<p>The recall is the ratio <code class="docutils literal"><span class="pre">tp</span> <span class="pre">/</span> <span class="pre">(tp</span> <span class="pre">+</span> <span class="pre">fn)</span></code> where <code class="docutils literal"><span class="pre">tp</span></code> is the number of
-true positives and <code class="docutils literal"><span class="pre">fn</span></code> the number of false negatives. The recall is
+<p>The recall is the ratio <tt class="docutils literal"><span class="pre">tp</span> <span class="pre">/</span> <span class="pre">(tp</span> <span class="pre">+</span> <span class="pre">fn)</span></tt> where <tt class="docutils literal"><span class="pre">tp</span></tt> is the number of
+true positives and <tt class="docutils literal"><span class="pre">fn</span></tt> the number of false negatives. The recall is
 intuitively the ability of the classifier to find all the positive samples.</p>
 <p>The last precision and recall values are 1. and 0. respectively and do not
 have a corresponding threshold.  This ensures that the graph starts on the
 x axis.</p>
-<p>Read more in the <a class="reference internal" href="../model_evaluation.html#precision-recall-f-measure-metrics"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../model_evaluation.html#precision-recall-f-measure-metrics"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -205,14 +245,14 @@ precision and recall.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-precision-recall-curve">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.precision_recall_curve</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-precision-recall-curve" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Given a small number of observations, we want to recover which features of X are relevant to ex..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.precision_recall_curve</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-precision-recall-curve" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Given a small number of observations, we want to recover which features of X are relevant to ex..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_sparse_recovery.html"><img alt="../../_images/plot_sparse_recovery1.png" src="../../_images/plot_sparse_recovery1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_sparse_recovery.html#example-linear-model-plot-sparse-recovery-py"><span>Sparse recovery: feature selection for sparse linear models</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_sparse_recovery.html#example-linear-model-plot-sparse-recovery-py"><em>Sparse recovery: feature selection for sparse linear models</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Example of Precision-Recall metric to evaluate classifier output quality."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="Example of Precision-Recall metric to evaluate classifier output quality."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_precision_recall.html"><img alt="../../_images/plot_precision_recall1.png" src="../../_images/plot_precision_recall1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_precision_recall.html#example-model-selection-plot-precision-recall-py"><span>Precision-Recall</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_precision_recall.html#example-model-selection-plot-precision-recall-py"><em>Precision-Recall</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -229,8 +269,12 @@ precision and recall.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.precision_recall_curve.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.metrics.matthews_corrcoef.html">Previous
+      </a>
+    </div>
     
      </div>
 

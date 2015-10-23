@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Feature agglo...
+        Feature agglomer...
         </span>
             <span class="hiddenrellink">
             Feature agglomeration
@@ -163,14 +163,25 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="demo-of-affinity-propagation-clustering-algorithm">
 <span id="example-cluster-plot-affinity-propagation-py"></span><h1>Demo of affinity propagation clustering algorithm<a class="headerlink" href="#demo-of-affinity-propagation-clustering-algorithm" title="Permalink to this headline">¶</a></h1>
 <p>Reference:
 Brendan J. Frey and Delbert Dueck, &#8220;Clustering by Passing Messages
 Between Data Points&#8221;, Science Feb. 2007</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_affinity_propagation.py"><code class="xref download docutils literal"><span class="pre">plot_affinity_propagation.py</span></code></a></p>
+<img alt="../../_images/plot_affinity_propagation_001.png" class="align-center" src="../../_images/plot_affinity_propagation_001.png" />
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Estimated number of clusters: 3
+Homogeneity: 0.872
+Completeness: 0.872
+V-measure: 0.872
+Adjusted Rand Index: 0.912
+Adjusted Mutual Information: 0.871
+Silhouette Coefficient: 0.753
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_affinity_propagation.py"><tt class="xref download docutils literal"><span class="pre">plot_affinity_propagation.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.cluster.AffinityPropagation.html#sklearn.cluster.AffinityPropagation"><span class="n">AffinityPropagation</span></a>
@@ -225,6 +236,8 @@ Between Data Points&#8221;, Science Feb. 2007</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  0.57 seconds
+( 0 minutes  0.57 seconds)</p>
 </div>
 
 

@@ -38,8 +38,28 @@ problems with the drawback of losing some of its mathematical properties since
 it then works on a random subset.
 
 
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_theilsen_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_theilsen_002.png
+            :scale: 47
+
+
+
+
 **Python source code:** :download:`plot_theilsen.py <plot_theilsen.py>`
 
 .. literalinclude:: plot_theilsen.py
     :lines: 36-
+
+**Total running time of the example:**  2.53 seconds
+( 0 minutes  2.53 seconds)
     

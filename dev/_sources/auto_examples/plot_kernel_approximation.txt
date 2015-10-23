@@ -46,8 +46,28 @@ in :ref:`kernel_approximation`.
 
 
 
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_kernel_approximation_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_kernel_approximation_002.png
+            :scale: 47
+
+
+
+
 **Python source code:** :download:`plot_kernel_approximation.py <plot_kernel_approximation.py>`
 
 .. literalinclude:: plot_kernel_approximation.py
     :lines: 44-
+
+**Total running time of the example:**  2.96 seconds
+( 0 minutes  2.96 seconds)
     

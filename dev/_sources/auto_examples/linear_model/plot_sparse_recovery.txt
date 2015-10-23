@@ -43,8 +43,38 @@ feature selection methods, using the area under curve (AUC) of the
 precision-recall.
 
 
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_sparse_recovery_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_sparse_recovery_002.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_sparse_recovery_003.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_sparse_recovery_004.png
+            :scale: 47
+
+
+
+
 **Python source code:** :download:`plot_sparse_recovery.py <plot_sparse_recovery.py>`
 
 .. literalinclude:: plot_sparse_recovery.py
     :lines: 41-
+
+**Total running time of the example:**  6.53 seconds
+( 0 minutes  6.53 seconds)
     

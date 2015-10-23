@@ -36,8 +36,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="Robust linear estimator fitting" href="plot_robust_fit.html" />
-    <link rel="prev" title="Bayesian Ridge Regression" href="plot_bayesian_ridge.html" />
+    <link rel="next" title="SGD: Penalties" href="plot_sgd_penalties.html" />
+    <link rel="prev" title="Lasso and Elastic Net for Sparse Signals" href="plot_lasso_and_elasticnet.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_bayesian_ridge.html"
+        <a href="plot_lasso_and_elasticnet.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Bayesian Ridg...
+        Lasso and Elasti...
         </span>
             <span class="hiddenrellink">
-            Bayesian Ridge Regression
+            Lasso and Elastic Net for Sparse Signals
             </span>
         </a>
         </div>
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sparsity-example-fitting-only-features-1-and-2">
 <span id="example-linear-model-plot-ols-3d-py"></span><h1>Sparsity Example: Fitting only features 1  and 2<a class="headerlink" href="#sparsity-example-fitting-only-features-1-and-2" title="Permalink to this headline">¶</a></h1>
@@ -171,7 +171,15 @@
 plotted below. It illustrates that although feature 2
 has a strong coefficient on the full model, it does not
 give us much regarding <cite>y</cite> when compared to just feature 1</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ols_3d.py"><code class="xref download docutils literal"><span class="pre">plot_ols_3d.py</span></code></a></p>
+<ul class="horizontal">
+<li><a class="first reference internal image-reference" href="../../_images/plot_ols_3d_001.png"><img alt="../../_images/plot_ols_3d_001.png" src="../../_images/plot_ols_3d_001.png" style="width: 188.0px; height: 141.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_ols_3d_002.png"><img alt="../../_images/plot_ols_3d_002.png" src="../../_images/plot_ols_3d_002.png" style="width: 188.0px; height: 141.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_ols_3d_003.png"><img alt="../../_images/plot_ols_3d_003.png" src="../../_images/plot_ols_3d_003.png" style="width: 188.0px; height: 141.0px;" /></a>
+</li>
+</ul>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ols_3d.py"><tt class="xref download docutils literal"><span class="pre">plot_ols_3d.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 
@@ -234,6 +242,8 @@ give us much regarding <cite>y</cite> when compared to just feature 1</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  0.20 seconds
+( 0 minutes  0.20 seconds)</p>
 </div>
 
 
@@ -251,7 +261,7 @@ give us much regarding <cite>y</cite> when compared to just feature 1</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_bayesian_ridge.html">Previous
+      <a href="plot_lasso_and_elasticnet.html">Previous
       </a>
     </div>
     

@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.metrics.normalized_mutual_info_score" href="sklearn.metrics.normalized_mutual_info_score.html" />
+    <link rel="prev" title="sklearn.metrics.homogeneity_score" href="sklearn.metrics.homogeneity_score.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.metrics.homogeneity_score.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.metrics....
+        </span>
+            <span class="hiddenrellink">
+            sklearn.metrics.homogeneity_score
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.mutual_info_score</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-mutual-info-score">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.mutual_info_score</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.mutual_info_score</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-mutual-info-score">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.mutual_info_score</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,31 +166,31 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-metrics-mutual-info-score">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.mutual_info_score<a class="headerlink" href="#sklearn-metrics-mutual-info-score" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.mutual_info_score<a class="headerlink" href="#sklearn-metrics-mutual-info-score" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.mutual_info_score">
-<code class="descclassname">sklearn.metrics.</code><code class="descname">mutual_info_score</code><span class="sig-paren">(</span><em>labels_true</em>, <em>labels_pred</em>, <em>contingency=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/cluster/supervised.py#L507"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.mutual_info_score" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">mutual_info_score</tt><big>(</big><em>labels_true</em>, <em>labels_pred</em>, <em>contingency=None</em>, <em>max_n_classes=5000</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/metrics/cluster/supervised.py#L551"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.mutual_info_score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mutual Information between two clusterings</p>
 <p>The Mutual Information is a measure of the similarity between two labels of
-the same data. Where <img class="math" src="../../_images/math/c659422e679981e7ee3a7a3bc3a7420a5c0257cb.png" alt="P(i)"/> is the probability of a random sample
-occurring in cluster <img class="math" src="../../_images/math/efa692abc46aba225adbe774bd88586d30d62ab6.png" alt="U_i"/> and <img class="math" src="../../_images/math/7708bff9659d3004788cde7bb74d8019469a289c.png" alt="P'(j)"/> is the probability of a
-random sample occurring in cluster <img class="math" src="../../_images/math/770bbb31758ede291297b7bd4e7b21c2163831ec.png" alt="V_j"/>, the Mutual Information
-between clusterings <img class="math" src="../../_images/math/73f5e249c88b2b3068263480f576b051cb5c4f6e.png" alt="U"/> and <img class="math" src="../../_images/math/c99df7a209495334da442b1ec998abaabfa320d8.png" alt="V"/> is given as:</p>
+the same data. Where <span class="math">P(i)</span> is the probability of a random sample
+occurring in cluster <span class="math">U_i</span> and <span class="math">P'(j)</span> is the probability of a
+random sample occurring in cluster <span class="math">V_j</span>, the Mutual Information
+between clusterings <span class="math">U</span> and <span class="math">V</span> is given as:</p>
 <div class="math">
-<p><img src="../../_images/math/4538c7d3ad3bb7fb14e3db8250fd9e4cce31d23d.png" alt="MI(U,V)=\sum_{i=1}^R \sum_{j=1}^C P(i,j)\log\frac{P(i,j)}{P(i)P'(j)}"/></p>
+<p><span class="math">MI(U,V)=\sum_{i=1}^R \sum_{j=1}^C P(i,j)\log\frac{P(i,j)}{P(i)P'(j)}</span></p>
 </div><p>This is equal to the Kullback-Leibler divergence of the joint distribution
 with the product distribution of the marginals.</p>
 <p>This metric is independent of the absolute values of the labels:
 a permutation of the class or cluster label values won&#8217;t change the
 score value in any way.</p>
-<p>This metric is furthermore symmetric: switching <code class="docutils literal"><span class="pre">label_true</span></code> with
-<code class="docutils literal"><span class="pre">label_pred</span></code> will return the same score value. This can be useful to
+<p>This metric is furthermore symmetric: switching <tt class="docutils literal"><span class="pre">label_true</span></tt> with
+<tt class="docutils literal"><span class="pre">label_pred</span></tt> will return the same score value. This can be useful to
 measure the agreement of two independent label assignments strategies
 on the same dataset when the real ground truth is not known.</p>
-<p>Read more in the <a class="reference internal" href="../clustering.html#mutual-info-score"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../clustering.html#mutual-info-score"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -165,9 +205,15 @@ on the same dataset when the real ground truth is not known.</p>
 </div></blockquote>
 <p><strong>contingency: None or array, shape = [n_classes_true, n_classes_pred]</strong> :</p>
 <blockquote>
-<div><p>A contingency matrix given by the <code class="xref py py-func docutils literal"><span class="pre">contingency_matrix</span></code> function.
-If value is <code class="docutils literal"><span class="pre">None</span></code>, it will be computed, otherwise the given value is
-used, with <code class="docutils literal"><span class="pre">labels_true</span></code> and <code class="docutils literal"><span class="pre">labels_pred</span></code> ignored.</p>
+<div><p>A contingency matrix given by the <tt class="xref py py-func docutils literal"><span class="pre">contingency_matrix</span></tt> function.
+If value is <tt class="docutils literal"><span class="pre">None</span></tt>, it will be computed, otherwise the given value is
+used, with <tt class="docutils literal"><span class="pre">labels_true</span></tt> and <tt class="docutils literal"><span class="pre">labels_pred</span></tt> ignored.</p>
+</div></blockquote>
+<p><strong>max_n_classes: int, optional (default=5000)</strong> :</p>
+<blockquote>
+<div><p>Maximal number of classes handled by the mutual_info_score
+metric. Setting it too high can lead to MemoryError or OS
+freeze</p>
 </div></blockquote>
 </td>
 </tr>
@@ -182,19 +228,19 @@ used, with <code class="docutils literal"><span class="pre">labels_true</span></
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.metrics.adjusted_mutual_info_score.html#sklearn.metrics.adjusted_mutual_info_score" title="sklearn.metrics.adjusted_mutual_info_score"><code class="xref py py-obj docutils literal"><span class="pre">adjusted_mutual_info_score</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.metrics.adjusted_mutual_info_score.html#sklearn.metrics.adjusted_mutual_info_score" title="sklearn.metrics.adjusted_mutual_info_score"><tt class="xref py py-obj docutils literal"><span class="pre">adjusted_mutual_info_score</span></tt></a></dt>
 <dd>Adjusted against chance Mutual Information</dd>
-<dt><a class="reference internal" href="sklearn.metrics.normalized_mutual_info_score.html#sklearn.metrics.normalized_mutual_info_score" title="sklearn.metrics.normalized_mutual_info_score"><code class="xref py py-obj docutils literal"><span class="pre">normalized_mutual_info_score</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.metrics.normalized_mutual_info_score.html#sklearn.metrics.normalized_mutual_info_score" title="sklearn.metrics.normalized_mutual_info_score"><tt class="xref py py-obj docutils literal"><span class="pre">normalized_mutual_info_score</span></tt></a></dt>
 <dd>Normalized Mutual Information</dd>
 </dl>
 </div>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-mutual-info-score">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.mutual_info_score</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-mutual-info-score" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="The following plots demonstrate the impact of the number of clusters and number of samples on v..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.mutual_info_score</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-mutual-info-score" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="The following plots demonstrate the impact of the number of clusters and number of samples on v..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_adjusted_for_chance_measures.html"><img alt="../../_images/plot_adjusted_for_chance_measures1.png" src="../../_images/plot_adjusted_for_chance_measures1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_adjusted_for_chance_measures.html#example-cluster-plot-adjusted-for-chance-measures-py"><span>Adjustment for chance in clustering performance evaluation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_adjusted_for_chance_measures.html#example-cluster-plot-adjusted-for-chance-measures-py"><em>Adjustment for chance in clustering performance evaluation</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -211,8 +257,12 @@ used, with <code class="docutils literal"><span class="pre">labels_true</span></
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.mutual_info_score.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.metrics.homogeneity_score.html">Previous
+      </a>
+    </div>
     
      </div>
 

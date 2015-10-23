@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Normal and Sh...
+        Normal and Shrin...
         </span>
             <span class="hiddenrellink">
             Normal and Shrinkage Linear Discriminant Analysis for classification
@@ -163,17 +163,26 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="plot-classification-probability">
 <span id="example-classification-plot-classification-probability-py"></span><h1>Plot classification probability<a class="headerlink" href="#plot-classification-probability" title="Permalink to this headline">¶</a></h1>
 <p>Plot the classification probability for different classifiers. We use a 3
 class dataset, and we classify it with a Support Vector classifier, L1
 and L2 penalized logistic regression with either a One-Vs-Rest or multinomial
-setting.</p>
+setting, and Gaussian process classification.</p>
 <p>The logistic regression is not a multiclass classifier out of the box. As
 a result it can identify only the first class.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_classification_probability.py"><code class="xref download docutils literal"><span class="pre">plot_classification_probability.py</span></code></a></p>
+<img alt="../../_images/plot_classification_probability_001.png" class="align-center" src="../../_images/plot_classification_probability_001.png" />
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>classif_rate for GPC : 82.666667
+classif_rate for L2 logistic (OvR) : 76.666667
+classif_rate for L1 logistic : 79.333333
+classif_rate for Linear SVC : 82.000000
+classif_rate for L2 logistic (Multinomial) : 82.000000
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_classification_probability.py"><tt class="xref download docutils literal"><span class="pre">plot_classification_probability.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Alexandre Gramfort &lt;alexandre.gramfort@inria.fr&gt;</span>
@@ -184,6 +193,8 @@ a result it can identify only the first class.</p>
 
 <span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression"><span class="n">LogisticRegression</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.gaussian_process</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.gaussian_process.GaussianProcessClassifier.html#sklearn.gaussian_process.GaussianProcessClassifier"><span class="n">GaussianProcessClassifier</span></a>
+<span class="kn">from</span> <span class="nn">sklearn.gaussian_process.kernels</span> <span class="kn">import</span> <a href="../../modules/generated/sklearn.gaussian_process.kernels.RBF.html#sklearn.gaussian_process.kernels.RBF"><span class="n">RBF</span></a>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
 
 <span class="n">iris</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.load_iris.html#sklearn.datasets.load_iris"><span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span></a><span class="p">()</span>
@@ -193,6 +204,7 @@ a result it can identify only the first class.</p>
 <span class="n">n_features</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="n">C</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">kernel</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">*</span> <a href="../../modules/generated/sklearn.gaussian_process.kernels.RBF.html#sklearn.gaussian_process.kernels.RBF"><span class="n">RBF</span></a><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>  <span class="c"># for GPC</span>
 
 <span class="c"># Create different classifiers. The logistic regression cannot do</span>
 <span class="c"># multiclass out of the box.</span>
@@ -201,8 +213,9 @@ a result it can identify only the first class.</p>
                <span class="s">&#39;Linear SVC&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&#39;linear&#39;</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
                                  <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
                <span class="s">&#39;L2 logistic (Multinomial)&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression"><span class="n">LogisticRegression</span></a><span class="p">(</span>
-                <span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s">&#39;lbfgs&#39;</span><span class="p">,</span> <span class="n">multi_class</span><span class="o">=</span><span class="s">&#39;multinomial&#39;</span>
-                <span class="p">)}</span>
+                <span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s">&#39;lbfgs&#39;</span><span class="p">,</span> <span class="n">multi_class</span><span class="o">=</span><span class="s">&#39;multinomial&#39;</span><span class="p">),</span>
+               <span class="s">&#39;GPC&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.gaussian_process.GaussianProcessClassifier.html#sklearn.gaussian_process.GaussianProcessClassifier"><span class="n">GaussianProcessClassifier</span></a><span class="p">(</span><span class="n">kernel</span><span class="p">)</span>
+               <span class="p">}</span>
 
 <span class="n">n_classifiers</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">classifiers</span><span class="p">)</span>
 
@@ -244,6 +257,8 @@ a result it can identify only the first class.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  4.19 seconds
+( 0 minutes  4.19 seconds)</p>
 </div>
 
 

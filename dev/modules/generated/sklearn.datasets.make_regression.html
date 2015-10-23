@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.datasets.make_s_curve" href="sklearn.datasets.make_s_curve.html" />
+    <link rel="prev" title="sklearn.datasets.make_multilabel_classification" href="sklearn.datasets.make_multilabel_classification.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.datasets.make_multilabel_classification.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.datasets...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.datasets.make_multilabel_classification
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.datasets</span></code>.make_regression</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-datasets-make-regression">Examples using <code class="docutils literal"><span class="pre">sklearn.datasets.make_regression</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.datasets</span></tt>.make_regression</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-datasets-make-regression">Examples using <tt class="docutils literal"><span class="pre">sklearn.datasets.make_regression</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,22 +166,22 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-datasets-make-regression">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></code></a>.make_regression<a class="headerlink" href="#sklearn-datasets-make-regression" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></tt></a>.make_regression<a class="headerlink" href="#sklearn-datasets-make-regression" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.datasets.make_regression">
-<code class="descclassname">sklearn.datasets.</code><code class="descname">make_regression</code><span class="sig-paren">(</span><em>n_samples=100</em>, <em>n_features=100</em>, <em>n_informative=10</em>, <em>n_targets=1</em>, <em>bias=0.0</em>, <em>effective_rank=None</em>, <em>tail_strength=0.5</em>, <em>noise=0.0</em>, <em>shuffle=True</em>, <em>coef=False</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/datasets/samples_generator.py#L447"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.make_regression" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.datasets.</tt><tt class="descname">make_regression</tt><big>(</big><em>n_samples=100</em>, <em>n_features=100</em>, <em>n_informative=10</em>, <em>n_targets=1</em>, <em>bias=0.0</em>, <em>effective_rank=None</em>, <em>tail_strength=0.5</em>, <em>noise=0.0</em>, <em>shuffle=True</em>, <em>coef=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/datasets/samples_generator.py#L447"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.make_regression" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate a random regression problem.</p>
 <p>The input set can either be well conditioned (by default) or have a low
-rank-fat tail singular profile. See <a class="reference internal" href="sklearn.datasets.make_low_rank_matrix.html#sklearn.datasets.make_low_rank_matrix" title="sklearn.datasets.make_low_rank_matrix"><code class="xref py py-func docutils literal"><span class="pre">make_low_rank_matrix</span></code></a> for
+rank-fat tail singular profile. See <a class="reference internal" href="sklearn.datasets.make_low_rank_matrix.html#sklearn.datasets.make_low_rank_matrix" title="sklearn.datasets.make_low_rank_matrix"><tt class="xref py py-func docutils literal"><span class="pre">make_low_rank_matrix</span></tt></a> for
 more details.</p>
 <p>The output is generated by applying a (potentially biased) random linear
 regression model with <cite>n_informative</cite> nonzero regressors to the previously
 generated input and some gaussian centered noise with some adjustable
 scale.</p>
-<p>Read more in the <a class="reference internal" href="../../datasets/index.html#sample-generators"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../../datasets/index.html#sample-generators"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -229,18 +269,18 @@ coef is True.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-datasets-make-regression">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.datasets.make_regression</span></code><a class="headerlink" href="#examples-using-sklearn-datasets-make-regression" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This is an example showing the prediction latency of various scikit-learn estimators."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.datasets.make_regression</span></tt><a class="headerlink" href="#examples-using-sklearn-datasets-make-regression" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This is an example showing the prediction latency of various scikit-learn estimators."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/applications/plot_prediction_latency.html"><img alt="../../_images/plot_prediction_latency1.png" src="../../_images/plot_prediction_latency1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/plot_prediction_latency.html#example-applications-plot-prediction-latency-py"><span>Prediction Latency</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/applications/plot_prediction_latency.html#example-applications-plot-prediction-latency-py"><em>Prediction Latency</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="In this example we see how to robustly fit a linear model to faulty data using the RANSAC algor..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="In this example we see how to robustly fit a linear model to faulty data using the RANSAC algor..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_ransac.html"><img alt="../../_images/plot_ransac1.png" src="../../_images/plot_ransac1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_ransac.html#example-linear-model-plot-ransac-py"><span>Robust linear model estimation using RANSAC</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_ransac.html#example-linear-model-plot-ransac-py"><em>Robust linear model estimation using RANSAC</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="We show that linear_model.Lasso provides the same results for dense and sparse data and that in..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="We show that linear_model.Lasso provides the same results for dense and sparse data and that in..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/lasso_dense_vs_sparse_data.html"><img alt="../../_images/lasso_dense_vs_sparse_data1.png" src="../../_images/lasso_dense_vs_sparse_data1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/lasso_dense_vs_sparse_data.html#example-linear-model-lasso-dense-vs-sparse-data-py"><span>Lasso on dense and sparse data</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/lasso_dense_vs_sparse_data.html#example-linear-model-lasso-dense-vs-sparse-data-py"><em>Lasso on dense and sparse data</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -257,8 +297,12 @@ coef is True.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.datasets.make_regression.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.datasets.make_multilabel_classification.html">Previous
+      </a>
+    </div>
     
      </div>
 

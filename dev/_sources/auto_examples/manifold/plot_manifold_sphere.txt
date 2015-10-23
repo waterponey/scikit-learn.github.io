@@ -28,8 +28,29 @@ that of representing a flat map of the Earth, as with
 `map projection <http://en.wikipedia.org/wiki/Map_projection>`_
 
 
+
+.. image:: images/plot_manifold_sphere_001.png
+    :align: center
+
+
+**Script output**::
+
+  standard: 0.095 sec
+  ltsa: 0.24 sec
+  hessian: 0.28 sec
+  modified: 0.23 sec
+  ISO: 0.28 sec
+  MDS: 1.6 sec
+  Spectral Embedding: 0.24 sec
+  t-SNE: 2.5 sec
+
+
+
 **Python source code:** :download:`plot_manifold_sphere.py <plot_manifold_sphere.py>`
 
 .. literalinclude:: plot_manifold_sphere.py
     :lines: 29-
+
+**Total running time of the example:**  5.94 seconds
+( 0 minutes  5.94 seconds)
     

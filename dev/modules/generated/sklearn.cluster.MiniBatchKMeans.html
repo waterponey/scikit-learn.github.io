@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.cluster.MeanShift" href="sklearn.cluster.MeanShift.html" />
+    <link rel="prev" title="sklearn.cluster.KMeans" href="sklearn.cluster.KMeans.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.cluster.KMeans.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.cluster....
+        </span>
+            <span class="hiddenrellink">
+            sklearn.cluster.KMeans
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cluster</span></code>.MiniBatchKMeans</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-cluster-minibatchkmeans">Examples using <code class="docutils literal"><span class="pre">sklearn.cluster.MiniBatchKMeans</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cluster</span></tt>.MiniBatchKMeans</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-cluster-minibatchkmeans">Examples using <tt class="docutils literal"><span class="pre">sklearn.cluster.MiniBatchKMeans</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-cluster-minibatchkmeans">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cluster" title="sklearn.cluster"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></code></a>.MiniBatchKMeans<a class="headerlink" href="#sklearn-cluster-minibatchkmeans" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cluster" title="sklearn.cluster"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></tt></a>.MiniBatchKMeans<a class="headerlink" href="#sklearn-cluster-minibatchkmeans" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.cluster.MiniBatchKMeans">
-<em class="property">class </em><code class="descclassname">sklearn.cluster.</code><code class="descname">MiniBatchKMeans</code><span class="sig-paren">(</span><em>n_clusters=8</em>, <em>init='k-means++'</em>, <em>max_iter=100</em>, <em>batch_size=100</em>, <em>verbose=0</em>, <em>compute_labels=True</em>, <em>random_state=None</em>, <em>tol=0.0</em>, <em>max_no_improvement=10</em>, <em>init_size=None</em>, <em>n_init=3</em>, <em>reassignment_ratio=0.01</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cluster/k_means_.py#L1113"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.cluster.</tt><tt class="descname">MiniBatchKMeans</tt><big>(</big><em>n_clusters=8</em>, <em>init='k-means++'</em>, <em>max_iter=100</em>, <em>batch_size=100</em>, <em>verbose=0</em>, <em>compute_labels=True</em>, <em>random_state=None</em>, <em>tol=0.0</em>, <em>max_no_improvement=10</em>, <em>init_size=None</em>, <em>n_init=3</em>, <em>reassignment_ratio=0.01</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cluster/k_means_.py#L1113"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans" title="Permalink to this definition">¶</a></dt>
 <dd><p>Mini-Batch K-Means clustering</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -192,7 +232,7 @@ and gives the initial centers.</p>
 <blockquote>
 <div><p>Number of random initializations that are tried.
 In contrast to KMeans, the algorithm is only run once, using the
-best of the <code class="docutils literal"><span class="pre">n_init</span></code> initializations as measured by inertia.</p>
+best of the <tt class="docutils literal"><span class="pre">n_init</span></tt> initializations as measured by inertia.</p>
 </div></blockquote>
 <p><strong>compute_labels</strong> : boolean, default=True</p>
 <blockquote>
@@ -247,16 +287,43 @@ neighbor.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.cluster.MiniBatchKMeans.fit" title="sklearn.cluster.MiniBatchKMeans.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
+<td>Compute the centroids on X by chunking it into mini-batches.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.cluster.MiniBatchKMeans.fit_predict" title="sklearn.cluster.MiniBatchKMeans.fit_predict"><tt class="xref py py-obj docutils literal"><span class="pre">fit_predict</span></tt></a>(X[,&nbsp;y])</td>
+<td>Compute cluster centers and predict cluster index for each sample.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.cluster.MiniBatchKMeans.fit_transform" title="sklearn.cluster.MiniBatchKMeans.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Compute clustering and transform X to cluster-distance space.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.cluster.MiniBatchKMeans.get_params" title="sklearn.cluster.MiniBatchKMeans.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.cluster.MiniBatchKMeans.partial_fit" title="sklearn.cluster.MiniBatchKMeans.partial_fit"><tt class="xref py py-obj docutils literal"><span class="pre">partial_fit</span></tt></a>(X[,&nbsp;y])</td>
+<td>Update k means estimate on a single mini-batch X.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.cluster.MiniBatchKMeans.predict" title="sklearn.cluster.MiniBatchKMeans.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<td>Predict the closest cluster each sample in X belongs to.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.cluster.MiniBatchKMeans.score" title="sklearn.cluster.MiniBatchKMeans.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X[,&nbsp;y])</td>
+<td>Opposite of the value of X on the K-means objective.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.cluster.MiniBatchKMeans.set_params" title="sklearn.cluster.MiniBatchKMeans.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.cluster.MiniBatchKMeans.transform" title="sklearn.cluster.MiniBatchKMeans.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Transform X to a cluster-distance space.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.cluster.MiniBatchKMeans.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_clusters=8</em>, <em>init='k-means++'</em>, <em>max_iter=100</em>, <em>batch_size=100</em>, <em>verbose=0</em>, <em>compute_labels=True</em>, <em>random_state=None</em>, <em>tol=0.0</em>, <em>max_no_improvement=10</em>, <em>init_size=None</em>, <em>n_init=3</em>, <em>reassignment_ratio=0.01</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cluster/k_means_.py#L1211"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>n_clusters=8</em>, <em>init='k-means++'</em>, <em>max_iter=100</em>, <em>batch_size=100</em>, <em>verbose=0</em>, <em>compute_labels=True</em>, <em>random_state=None</em>, <em>tol=0.0</em>, <em>max_no_improvement=10</em>, <em>init_size=None</em>, <em>n_init=3</em>, <em>reassignment_ratio=0.01</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cluster/k_means_.py#L1211"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.cluster.MiniBatchKMeans.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cluster/k_means_.py#L1226"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cluster/k_means_.py#L1226"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the centroids on X by chunking it into mini-batches.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -274,7 +341,7 @@ neighbor.</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.MiniBatchKMeans.fit_predict">
-<code class="descname">fit_predict</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cluster/k_means_.py#L824"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.fit_predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_predict</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cluster/k_means_.py#L824"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.fit_predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute cluster centers and predict cluster index for each sample.</p>
 <p>Convenience method; equivalent to calling fit(X) followed by
 predict(X).</p>
@@ -282,14 +349,14 @@ predict(X).</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.MiniBatchKMeans.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cluster/k_means_.py#L832"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cluster/k_means_.py#L832"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute clustering and transform X to cluster-distance space.</p>
 <p>Equivalent to fit(X).transform(X), but more efficiently implemented.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.cluster.MiniBatchKMeans.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -314,7 +381,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.MiniBatchKMeans.partial_fit">
-<code class="descname">partial_fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cluster/k_means_.py#L1388"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.partial_fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">partial_fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cluster/k_means_.py#L1388"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.partial_fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update k means estimate on a single mini-batch X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -332,7 +399,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.MiniBatchKMeans.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cluster/k_means_.py#L1441"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cluster/k_means_.py#L1441"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict the closest cluster each sample in X belongs to.</p>
 <p>In the vector quantization literature, <cite>cluster_centers_</cite> is called
 the code book and each value returned by <cite>predict</cite> is the index of
@@ -359,7 +426,7 @@ the closest code in the code book.</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.MiniBatchKMeans.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cluster/k_means_.py#L893"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cluster/k_means_.py#L893"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Opposite of the value of X on the K-means objective.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -383,11 +450,11 @@ the closest code in the code book.</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.MiniBatchKMeans.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -401,7 +468,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.cluster.MiniBatchKMeans.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cluster/k_means_.py#L844"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cluster/k_means_.py#L844"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.MiniBatchKMeans.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform X to a cluster-distance space.</p>
 <p>In the new space, each dimension is the distance to the cluster
 centers.  Note that even if X is sparse, the array returned by
@@ -429,38 +496,38 @@ centers.  Note that even if X is sparse, the array returned by
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-cluster-minibatchkmeans">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.cluster.MiniBatchKMeans</span></code><a class="headerlink" href="#examples-using-sklearn-cluster-minibatchkmeans" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example demonstrates the Spectral Co-clustering algorithm on the twenty newsgroups dataset..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.cluster.MiniBatchKMeans</span></tt><a class="headerlink" href="#examples-using-sklearn-cluster-minibatchkmeans" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example demonstrates the Spectral Co-clustering algorithm on the twenty newsgroups dataset..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/bicluster/bicluster_newsgroups.html"><img alt="../../_images/bicluster_newsgroups1.png" src="../../_images/bicluster_newsgroups1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/bicluster/bicluster_newsgroups.html#example-bicluster-bicluster-newsgroups-py"><span>Biclustering documents with the Spectral Co-clustering algorithm</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/bicluster/bicluster_newsgroups.html#example-bicluster-bicluster-newsgroups-py"><em>Biclustering documents with the Spectral Co-clustering algorithm</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example uses a large dataset of faces to learn a set of 20 x 20 images patches that consti..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="This example uses a large dataset of faces to learn a set of 20 x 20 images patches that consti..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_dict_face_patches.html"><img alt="../../_images/plot_dict_face_patches1.png" src="../../_images/plot_dict_face_patches1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_dict_face_patches.html#example-cluster-plot-dict-face-patches-py"><span>Online learning of a dictionary of parts of faces</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_dict_face_patches.html#example-cluster-plot-dict-face-patches-py"><em>Online learning of a dictionary of parts of faces</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example compares the timing of Birch (with and without the global clustering step) and Min..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="This example compares the timing of Birch (with and without the global clustering step) and Min..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_birch_vs_minibatchkmeans.html"><img alt="../../_images/plot_birch_vs_minibatchkmeans1.png" src="../../_images/plot_birch_vs_minibatchkmeans1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_birch_vs_minibatchkmeans.html#example-cluster-plot-birch-vs-minibatchkmeans-py"><span>Compare BIRCH and MiniBatchKMeans</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_birch_vs_minibatchkmeans.html#example-cluster-plot-birch-vs-minibatchkmeans-py"><em>Compare BIRCH and MiniBatchKMeans</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Evaluate the ability of k-means initializations strategies to make the algorithm convergence ro..."><div class="figure" id="id4">
+</div><div class="thumbnailContainer" tooltip="Evaluate the ability of k-means initializations strategies to make the algorithm convergence ro..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_kmeans_stability_low_dim_dense.html"><img alt="../../_images/plot_kmeans_stability_low_dim_dense1.png" src="../../_images/plot_kmeans_stability_low_dim_dense1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_stability_low_dim_dense.html#example-cluster-plot-kmeans-stability-low-dim-dense-py"><span>Empirical evaluation of the impact of k-means initialization</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_stability_low_dim_dense.html#example-cluster-plot-kmeans-stability-low-dim-dense-py"><em>Empirical evaluation of the impact of k-means initialization</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example aims at showing characteristics of different clustering algorithms on datasets tha..."><div class="figure" id="id5">
+</div><div class="thumbnailContainer" tooltip="This example aims at showing characteristics of different clustering algorithms on datasets tha..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_cluster_comparison.html"><img alt="../../_images/plot_cluster_comparison1.png" src="../../_images/plot_cluster_comparison1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_cluster_comparison.html#example-cluster-plot-cluster-comparison-py"><span>Comparing different clustering algorithms on toy datasets</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_cluster_comparison.html#example-cluster-plot-cluster-comparison-py"><em>Comparing different clustering algorithms on toy datasets</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="We want to compare the performance of the MiniBatchKMeans and KMeans: the MiniBatchKMeans is fa..."><div class="figure" id="id6">
+</div><div class="thumbnailContainer" tooltip="We want to compare the performance of the MiniBatchKMeans and KMeans: the MiniBatchKMeans is fa..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_mini_batch_kmeans.html"><img alt="../../_images/plot_mini_batch_kmeans1.png" src="../../_images/plot_mini_batch_kmeans1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_mini_batch_kmeans.html#example-cluster-plot-mini-batch-kmeans-py"><span>Comparison of the K-Means and MiniBatchKMeans clustering algorithms</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_mini_batch_kmeans.html#example-cluster-plot-mini-batch-kmeans-py"><em>Comparison of the K-Means and MiniBatchKMeans clustering algorithms</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example applies to :ref:`olivetti_faces` different unsupervised matrix decomposition (dime..."><div class="figure" id="id7">
+</div><div class="thumbnailContainer" tooltip="This example applies to :ref:`olivetti_faces` different unsupervised matrix decomposition (dime..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/decomposition/plot_faces_decomposition.html"><img alt="../../_images/plot_faces_decomposition1.png" src="../../_images/plot_faces_decomposition1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/decomposition/plot_faces_decomposition.html#example-decomposition-plot-faces-decomposition-py"><span>Faces dataset decompositions</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/decomposition/plot_faces_decomposition.html#example-decomposition-plot-faces-decomposition-py"><em>Faces dataset decompositions</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This is an example showing how the scikit-learn can be used to cluster documents by topics usin..."><div class="figure" id="id8">
+</div><div class="thumbnailContainer" tooltip="This is an example showing how the scikit-learn can be used to cluster documents by topics usin..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/text/document_clustering.html"><img alt="../../_images/document_clustering1.png" src="../../_images/document_clustering1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/text/document_clustering.html#example-text-document-clustering-py"><span>Clustering text documents using k-means</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/text/document_clustering.html#example-text-document-clustering-py"><em>Clustering text documents using k-means</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -477,8 +544,12 @@ centers.  Note that even if X is sparse, the array returned by
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.cluster.MiniBatchKMeans.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.cluster.KMeans.html">Previous
+      </a>
+    </div>
     
      </div>
 

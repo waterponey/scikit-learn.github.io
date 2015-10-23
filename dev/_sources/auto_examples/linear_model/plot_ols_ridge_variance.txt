@@ -22,8 +22,28 @@ in the line itself is greatly reduced, in comparison to that
 of the standard linear regression
 
 
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_ols_ridge_variance_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_ols_ridge_variance_002.png
+            :scale: 47
+
+
+
+
 **Python source code:** :download:`plot_ols_ridge_variance.py <plot_ols_ridge_variance.py>`
 
 .. literalinclude:: plot_ols_ridge_variance.py
     :lines: 23-
+
+**Total running time of the example:**  0.27 seconds
+( 0 minutes  0.27 seconds)
     

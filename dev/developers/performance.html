@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Utilities for...
+        Utilities for De...
         </span>
             <span class="hiddenrellink">
             Utilities for Developers
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        Developer’s G...
+        Developer’s Guid...
         </span>
             <span class="hiddenrellink">
             Developer’s Guide
@@ -159,7 +159,7 @@
 <li><a class="reference internal" href="#using-valgrind-callgrind-kcachegrind">Using valgrind / callgrind / kcachegrind</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#multi-core-parallelism-using-joblib-parallel">Multi-core parallelism using <code class="docutils literal"><span class="pre">joblib.Parallel</span></code></a></li>
+<li><a class="reference internal" href="#multi-core-parallelism-using-joblib-parallel">Multi-core parallelism using <tt class="docutils literal"><span class="pre">joblib.Parallel</span></tt></a></li>
 <li><a class="reference internal" href="#a-sample-algorithmic-trick-warm-restarts-for-cross-validation">A sample algorithmic trick: warm restarts for cross validation</a></li>
 </ul>
 </li>
@@ -178,7 +178,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="how-to-optimize-for-speed">
 <span id="performance-howto"></span><h1>How to optimize for speed<a class="headerlink" href="#how-to-optimize-for-speed" title="Permalink to this headline">¶</a></h1>
@@ -195,7 +195,7 @@ implementation optimization.</p>
 implementation details have been rendered irrelevant by the subsequent
 discovery of simple <strong>algorithmic tricks</strong>, or by using another algorithm
 altogether that is better suited to the problem.</p>
-<p class="last">The section <a class="reference internal" href="#warm-restarts"><span>A sample algorithmic trick: warm restarts for cross validation</span></a> gives an example of such a trick.</p>
+<p class="last">The section <a class="reference internal" href="#warm-restarts"><em>A sample algorithmic trick: warm restarts for cross validation</em></a> gives an example of such a trick.</p>
 </div>
 <div class="section" id="python-cython-or-c-c">
 <h2>Python, Cython or C/C++?<a class="headerlink" href="#python-cython-or-c-c" title="Permalink to this headline">¶</a></h2>
@@ -223,20 +223,20 @@ will be reimplemented as a compiled extension module.</li>
 of the same algorithm that is not too big, you can write a
 <strong>Cython wrapper</strong> for it and include a copy of the source code
 of the library in the scikit-learn source tree: this strategy is
-used for the classes <a class="reference internal" href="../modules/generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC" title="sklearn.svm.LinearSVC"><code class="xref py py-class docutils literal"><span class="pre">svm.LinearSVC</span></code></a>, <a class="reference internal" href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><code class="xref py py-class docutils literal"><span class="pre">svm.SVC</span></code></a> and
-<a class="reference internal" href="../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><code class="xref py py-class docutils literal"><span class="pre">linear_model.LogisticRegression</span></code></a> (wrappers for liblinear
+used for the classes <a class="reference internal" href="../modules/generated/sklearn.svm.LinearSVC.html#sklearn.svm.LinearSVC" title="sklearn.svm.LinearSVC"><tt class="xref py py-class docutils literal"><span class="pre">svm.LinearSVC</span></tt></a>, <a class="reference internal" href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><tt class="xref py py-class docutils literal"><span class="pre">svm.SVC</span></tt></a> and
+<a class="reference internal" href="../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><tt class="xref py py-class docutils literal"><span class="pre">linear_model.LogisticRegression</span></tt></a> (wrappers for liblinear
 and libsvm).</li>
 <li>Otherwise, write an optimized version of your Python function using
 <strong>Cython</strong> directly. This strategy is used
-for the <a class="reference internal" href="../modules/generated/sklearn.linear_model.ElasticNet.html#sklearn.linear_model.ElasticNet" title="sklearn.linear_model.ElasticNet"><code class="xref py py-class docutils literal"><span class="pre">linear_model.ElasticNet</span></code></a> and
-<a class="reference internal" href="../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier" title="sklearn.linear_model.SGDClassifier"><code class="xref py py-class docutils literal"><span class="pre">linear_model.SGDClassifier</span></code></a> classes for instance.</li>
+for the <a class="reference internal" href="../modules/generated/sklearn.linear_model.ElasticNet.html#sklearn.linear_model.ElasticNet" title="sklearn.linear_model.ElasticNet"><tt class="xref py py-class docutils literal"><span class="pre">linear_model.ElasticNet</span></tt></a> and
+<a class="reference internal" href="../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier" title="sklearn.linear_model.SGDClassifier"><tt class="xref py py-class docutils literal"><span class="pre">linear_model.SGDClassifier</span></tt></a> classes for instance.</li>
 <li><strong>Move the Python version of the function in the tests</strong> and use
 it to check that the results of the compiled extension are consistent
 with the gold standard, easy to debug Python version.</li>
 <li>Once the code is optimized (not simple bottleneck spottable by
 profiling), check whether it is possible to have <strong>coarse grained
 parallelism</strong> that is amenable to <strong>multi-processing</strong> by using the
-<code class="docutils literal"><span class="pre">joblib.Parallel</span></code> class.</li>
+<tt class="docutils literal"><span class="pre">joblib.Parallel</span></tt> class.</li>
 </ol>
 </div></blockquote>
 <p>When using Cython, include the generated C source code alongside with
@@ -246,15 +246,15 @@ scikit on any machine with Python, Numpy, Scipy and C/C++ compiler.</p>
 <div class="section" id="fast-matrix-multiplications">
 <h2>Fast matrix multiplications<a class="headerlink" href="#fast-matrix-multiplications" title="Permalink to this headline">¶</a></h2>
 <p>Matrix multiplications (matrix-matrix and matrix-vector) are usually handled
-using the NumPy function <code class="docutils literal"><span class="pre">np.dot</span></code>, but in versions of NumPy before 1.7.2
+using the NumPy function <tt class="docutils literal"><span class="pre">np.dot</span></tt>, but in versions of NumPy before 1.7.2
 this function is suboptimal when the inputs are not both in the C (row-major)
 layout; in that case, the inputs may be implicitly copied to obtain the right
 layout. This obviously consumes memory and takes time.</p>
-<p>The function <code class="docutils literal"><span class="pre">fast_dot</span></code> in <code class="docutils literal"><span class="pre">sklearn.utils.extmath</span></code> offers a fast
-replacement for <code class="docutils literal"><span class="pre">np.dot</span></code> that prevents copies from being made in some cases.
-In all other cases, it dispatches to <code class="docutils literal"><span class="pre">np.dot</span></code> and when the NumPy version is
+<p>The function <tt class="docutils literal"><span class="pre">fast_dot</span></tt> in <tt class="docutils literal"><span class="pre">sklearn.utils.extmath</span></tt> offers a fast
+replacement for <tt class="docutils literal"><span class="pre">np.dot</span></tt> that prevents copies from being made in some cases.
+In all other cases, it dispatches to <tt class="docutils literal"><span class="pre">np.dot</span></tt> and when the NumPy version is
 new enough, it is in fact an alias for that function, making it a drop-in
-replacement. Example usage of <code class="docutils literal"><span class="pre">fast_dot</span></code>:</p>
+replacement. Example usage of <tt class="docutils literal"><span class="pre">fast_dot</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.utils.extmath</span> <span class="kn">import</span> <span class="n">fast_dot</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random_sample</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
@@ -265,11 +265,11 @@ replacement. Example usage of <code class="docutils literal"><span class="pre">f
 <p>This function operates optimally on 2-dimensional arrays, both of the same
 dtype, which should be either single or double precision float. If these
 requirements aren&#8217;t met or the BLAS package is not available, the call is
-silently dispatched to <code class="docutils literal"><span class="pre">numpy.dot</span></code>. If you want to be sure when the original
-<code class="docutils literal"><span class="pre">numpy.dot</span></code> has been invoked in a situation where it is suboptimal, you can
+silently dispatched to <tt class="docutils literal"><span class="pre">numpy.dot</span></tt>. If you want to be sure when the original
+<tt class="docutils literal"><span class="pre">numpy.dot</span></tt> has been invoked in a situation where it is suboptimal, you can
 activate the related warning:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">warnings</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.utils.validation</span> <span class="kn">import</span> <span class="n">NonBLASDotWarning</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.exceptions</span> <span class="kn">import</span> <span class="n">NonBLASDotWarning</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">warnings</span><span class="o">.</span><span class="n">simplefilter</span><span class="p">(</span><span class="s">&#39;always&#39;</span><span class="p">,</span> <span class="n">NonBLASDotWarning</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -281,7 +281,7 @@ loads and prepare you data and then use the IPython integrated profiler
 for interactively exploring the relevant part for the code.</p>
 <p>Suppose we want to profile the Non Negative Matrix Factorization module
 of the scikit. Let us setup a new IPython session and load the digits
-dataset and as in the <a class="reference internal" href="../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><span>Recognizing hand-written digits</span></a> example:</p>
+dataset and as in the <a class="reference internal" href="../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><em>Recognizing hand-written digits</em></a> example:</p>
 <div class="highlight-python"><div class="highlight"><pre>In [1]: from sklearn.decomposition import NMF
 
 In [2]: from sklearn.datasets import load_digits
@@ -297,7 +297,7 @@ overhead and save it somewhere for later reference:</p>
 1 loops, best of 3: 1.7 s per loop
 </pre></div>
 </div>
-<p>To have have a look at the overall performance profile using the <code class="docutils literal"><span class="pre">%prun</span></code>
+<p>To have have a look at the overall performance profile using the <tt class="docutils literal"><span class="pre">%prun</span></tt>
 magic command:</p>
 <div class="highlight-python"><div class="highlight"><pre>In [5]: %prun -l nmf.py NMF(n_components=16, tol=1e-2).fit(X)
          14496 function calls in 1.682 CPU seconds
@@ -317,14 +317,14 @@ magic command:</p>
         1    0.000    0.000    1.681    1.681 nmf.py:461(fit)
 </pre></div>
 </div>
-<p>The <code class="docutils literal"><span class="pre">tottime</span></code> column is the most interesting: it gives to total time spent
+<p>The <tt class="docutils literal"><span class="pre">tottime</span></tt> column is the most interesting: it gives to total time spent
 executing the code of a given function ignoring the time spent in executing the
 sub-functions. The real total time (local code + sub-function calls) is given by
-the <code class="docutils literal"><span class="pre">cumtime</span></code> column.</p>
-<p>Note the use of the <code class="docutils literal"><span class="pre">-l</span> <span class="pre">nmf.py</span></code> that restricts the output to lines that
+the <tt class="docutils literal"><span class="pre">cumtime</span></tt> column.</p>
+<p>Note the use of the <tt class="docutils literal"><span class="pre">-l</span> <span class="pre">nmf.py</span></tt> that restricts the output to lines that
 contains the &#8220;nmf.py&#8221; string. This is useful to have a quick look at the hotspot
 of the nmf Python module it-self ignoring anything else.</p>
-<p>Here is the beginning of the output of the same command without the <code class="docutils literal"><span class="pre">-l</span> <span class="pre">nmf.py</span></code>
+<p>Here is the beginning of the output of the same command without the <tt class="docutils literal"><span class="pre">-l</span> <span class="pre">nmf.py</span></tt>
 filter:</p>
 <div class="highlight-python"><div class="highlight"><pre>In [5] %prun NMF(n_components=16, tol=1e-2).fit(X)
          16159 function calls in 1.840 CPU seconds
@@ -358,21 +358,21 @@ improvements</strong> in this particular example (e.g. trying to find operation
 that are both costly and useless to avoid computing then rather than
 trying to optimize their implementation).</p>
 <p>It is however still interesting to check what&#8217;s happening inside the
-<code class="docutils literal"><span class="pre">_nls_subproblem</span></code> function which is the hotspot if we only consider
+<tt class="docutils literal"><span class="pre">_nls_subproblem</span></tt> function which is the hotspot if we only consider
 Python code: it takes around 100% of the cumulated time of the module. In
 order to better understand the profile of this specific function, let
-us install <code class="docutils literal"><span class="pre">line-prof</span></code> and wire it to IPython:</p>
+us install <tt class="docutils literal"><span class="pre">line-prof</span></tt> and wire it to IPython:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ pip install line-profiler
 </pre></div>
 </div>
 <ul>
-<li><p class="first"><strong>Under IPython &lt;= 0.10</strong>, edit <code class="docutils literal"><span class="pre">~/.ipython/ipy_user_conf.py</span></code> and
+<li><p class="first"><strong>Under IPython &lt;= 0.10</strong>, edit <tt class="docutils literal"><span class="pre">~/.ipython/ipy_user_conf.py</span></tt> and
 ensure the following lines are present:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">IPython.ipapi</span>
 <span class="n">ip</span> <span class="o">=</span> <span class="n">IPython</span><span class="o">.</span><span class="n">ipapi</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Towards the end of the file, define the <code class="docutils literal"><span class="pre">%lprun</span></code> magic:</p>
+<p>Towards the end of the file, define the <tt class="docutils literal"><span class="pre">%lprun</span></tt> magic:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">line_profiler</span>
 <span class="n">ip</span><span class="o">.</span><span class="n">expose_magic</span><span class="p">(</span><span class="s">&#39;lprun&#39;</span><span class="p">,</span> <span class="n">line_profiler</span><span class="o">.</span><span class="n">magic_lprun</span><span class="p">)</span>
 </pre></div>
@@ -382,7 +382,7 @@ ensure the following lines are present:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ ipython profile create
 </pre></div>
 </div>
-<p>Then create a file named <code class="docutils literal"><span class="pre">~/.ipython/extensions/line_profiler_ext.py</span></code> with
+<p>Then create a file named <tt class="docutils literal"><span class="pre">~/.ipython/extensions/line_profiler_ext.py</span></tt> with
 the following content:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">line_profiler</span>
 
@@ -390,7 +390,7 @@ the following content:</p>
     <span class="n">ip</span><span class="o">.</span><span class="n">define_magic</span><span class="p">(</span><span class="s">&#39;lprun&#39;</span><span class="p">,</span> <span class="n">line_profiler</span><span class="o">.</span><span class="n">magic_lprun</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Then register it in <code class="docutils literal"><span class="pre">~/.ipython/profile_default/ipython_config.py</span></code>:</p>
+<p>Then register it in <tt class="docutils literal"><span class="pre">~/.ipython/profile_default/ipython_config.py</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">c</span><span class="o">.</span><span class="n">TerminalIPythonApp</span><span class="o">.</span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s">&#39;line_profiler_ext&#39;</span><span class="p">,</span>
 <span class="p">]</span>
@@ -399,7 +399,7 @@ the following content:</p>
 <span class="p">]</span>
 </pre></div>
 </div>
-<p>This will register the <code class="docutils literal"><span class="pre">%lprun</span></code> magic command in the IPython terminal
+<p>This will register the <tt class="docutils literal"><span class="pre">%lprun</span></tt> magic command in the IPython terminal
 application and the other frontends such as qtconsole and notebook.</p>
 </li>
 </ul>
@@ -449,7 +449,7 @@ Line #      Hits         Time  Per Hit   % Time  Line Contents
    ...
 </pre></div>
 </div>
-<p>By looking at the top values of the <code class="docutils literal"><span class="pre">%</span> <span class="pre">Time</span></code> column it is really easy to
+<p>By looking at the top values of the <tt class="docutils literal"><span class="pre">%</span> <span class="pre">Time</span></tt> column it is really easy to
 pin-point the most expensive expressions that would deserve additional care.</p>
 </div>
 <div class="section" id="memory-usage-profiling">
@@ -460,15 +460,15 @@ install the latest version:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ pip install -U memory_profiler
 </pre></div>
 </div>
-<p>Then, setup the magics in a manner similar to <code class="docutils literal"><span class="pre">line_profiler</span></code>.</p>
+<p>Then, setup the magics in a manner similar to <tt class="docutils literal"><span class="pre">line_profiler</span></tt>.</p>
 <ul>
-<li><p class="first"><strong>Under IPython &lt;= 0.10</strong>, edit <code class="docutils literal"><span class="pre">~/.ipython/ipy_user_conf.py</span></code> and
+<li><p class="first"><strong>Under IPython &lt;= 0.10</strong>, edit <tt class="docutils literal"><span class="pre">~/.ipython/ipy_user_conf.py</span></tt> and
 ensure the following lines are present:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">IPython.ipapi</span>
 <span class="n">ip</span> <span class="o">=</span> <span class="n">IPython</span><span class="o">.</span><span class="n">ipapi</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Towards the end of the file, define the <code class="docutils literal"><span class="pre">%memit</span></code> and <code class="docutils literal"><span class="pre">%mprun</span></code> magics:</p>
+<p>Towards the end of the file, define the <tt class="docutils literal"><span class="pre">%memit</span></tt> and <tt class="docutils literal"><span class="pre">%mprun</span></tt> magics:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">memory_profiler</span>
 <span class="n">ip</span><span class="o">.</span><span class="n">expose_magic</span><span class="p">(</span><span class="s">&#39;memit&#39;</span><span class="p">,</span> <span class="n">memory_profiler</span><span class="o">.</span><span class="n">magic_memit</span><span class="p">)</span>
 <span class="n">ip</span><span class="o">.</span><span class="n">expose_magic</span><span class="p">(</span><span class="s">&#39;mprun&#39;</span><span class="p">,</span> <span class="n">memory_profiler</span><span class="o">.</span><span class="n">magic_mprun</span><span class="p">)</span>
@@ -479,7 +479,7 @@ ensure the following lines are present:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ ipython profile create
 </pre></div>
 </div>
-<p>Then create a file named <code class="docutils literal"><span class="pre">~/.ipython/extensions/memory_profiler_ext.py</span></code>
+<p>Then create a file named <tt class="docutils literal"><span class="pre">~/.ipython/extensions/memory_profiler_ext.py</span></tt>
 with the following content:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">memory_profiler</span>
 
@@ -488,7 +488,7 @@ with the following content:</p>
     <span class="n">ip</span><span class="o">.</span><span class="n">define_magic</span><span class="p">(</span><span class="s">&#39;mprun&#39;</span><span class="p">,</span> <span class="n">memory_profiler</span><span class="o">.</span><span class="n">magic_mprun</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Then register it in <code class="docutils literal"><span class="pre">~/.ipython/profile_default/ipython_config.py</span></code>:</p>
+<p>Then register it in <tt class="docutils literal"><span class="pre">~/.ipython/profile_default/ipython_config.py</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">c</span><span class="o">.</span><span class="n">TerminalIPythonApp</span><span class="o">.</span><span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s">&#39;memory_profiler_ext&#39;</span><span class="p">,</span>
 <span class="p">]</span>
@@ -497,14 +497,14 @@ with the following content:</p>
 <span class="p">]</span>
 </pre></div>
 </div>
-<p>This will register the <code class="docutils literal"><span class="pre">%memit</span></code> and <code class="docutils literal"><span class="pre">%mprun</span></code> magic commands in the
+<p>This will register the <tt class="docutils literal"><span class="pre">%memit</span></tt> and <tt class="docutils literal"><span class="pre">%mprun</span></tt> magic commands in the
 IPython terminal application and the other frontends such as qtconsole and
 notebook.</p>
 </li>
 </ul>
-<p><code class="docutils literal"><span class="pre">%mprun</span></code> is useful to examine, line-by-line, the memory usage of key
-functions in your program. It is very similar to <code class="docutils literal"><span class="pre">%lprun</span></code>, discussed in the
-previous section. For example, from the <code class="docutils literal"><span class="pre">memory_profiler</span></code> <code class="docutils literal"><span class="pre">examples</span></code>
+<p><tt class="docutils literal"><span class="pre">%mprun</span></tt> is useful to examine, line-by-line, the memory usage of key
+functions in your program. It is very similar to <tt class="docutils literal"><span class="pre">%lprun</span></tt>, discussed in the
+previous section. For example, from the <tt class="docutils literal"><span class="pre">memory_profiler</span></tt> <tt class="docutils literal"><span class="pre">examples</span></tt>
 directory:</p>
 <div class="highlight-python"><div class="highlight"><pre>In [1] from example import my_func
 
@@ -521,25 +521,25 @@ Line #    Mem usage  Increment   Line Contents
      8     13.61 MB    0.00 MB       return a
 </pre></div>
 </div>
-<p>Another useful magic that <code class="docutils literal"><span class="pre">memory_profiler</span></code> defines is <code class="docutils literal"><span class="pre">%memit</span></code>, which is
-analogous to <code class="docutils literal"><span class="pre">%timeit</span></code>. It can be used as follows:</p>
+<p>Another useful magic that <tt class="docutils literal"><span class="pre">memory_profiler</span></tt> defines is <tt class="docutils literal"><span class="pre">%memit</span></tt>, which is
+analogous to <tt class="docutils literal"><span class="pre">%timeit</span></tt>. It can be used as follows:</p>
 <div class="highlight-python"><div class="highlight"><pre>In [1]: import numpy as np
 
 In [2]: %memit np.zeros(1e7)
 maximum of 3: 76.402344 MB per loop
 </pre></div>
 </div>
-<p>For more details, see the docstrings of the magics, using <code class="docutils literal"><span class="pre">%memit?</span></code> and
-<code class="docutils literal"><span class="pre">%mprun?</span></code>.</p>
+<p>For more details, see the docstrings of the magics, using <tt class="docutils literal"><span class="pre">%memit?</span></tt> and
+<tt class="docutils literal"><span class="pre">%mprun?</span></tt>.</p>
 </div>
 <div class="section" id="performance-tips-for-the-cython-developer">
 <h2>Performance tips for the Cython developer<a class="headerlink" href="#performance-tips-for-the-cython-developer" title="Permalink to this headline">¶</a></h2>
 <p>If profiling of the Python code reveals that the Python interpreter
 overhead is larger by one order of magnitude or more than the cost of the
-actual numerical computation (e.g. <code class="docutils literal"><span class="pre">for</span></code> loops over vector components,
+actual numerical computation (e.g. <tt class="docutils literal"><span class="pre">for</span></tt> loops over vector components,
 nested evaluation of conditional expression, scalar arithmetic...), it
 is probably adequate to extract the hotspot portion of the code as a
-standalone function in a <code class="docutils literal"><span class="pre">.pyx</span></code> file, add static type declarations and
+standalone function in a <tt class="docutils literal"><span class="pre">.pyx</span></tt> file, add static type declarations and
 then use Cython to generate a C program suitable to be compiled as a
 Python extension module.</p>
 <p>The official documentation available at <a class="reference external" href="http://docs.cython.org/">http://docs.cython.org/</a> contains
@@ -571,18 +571,18 @@ compiled extension it-self.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">google-perftools provides a nice &#8216;line by line&#8217; report mode that
-can be triggered with the <code class="docutils literal"><span class="pre">--lines</span></code> option. However this
+can be triggered with the <tt class="docutils literal"><span class="pre">--lines</span></tt> option. However this
 does not seem to work correctly at the time of writing. This
 issue can be tracked on the <a class="reference external" href="https://code.google.com/p/google-perftools/issues/detail?id=326">project issue tracker</a>.</p>
 </div>
 </div>
 <div class="section" id="using-gprof">
 <h3>Using gprof<a class="headerlink" href="#using-gprof" title="Permalink to this headline">¶</a></h3>
-<p>In order to profile compiled Python extensions one could use <code class="docutils literal"><span class="pre">gprof</span></code>
-after having recompiled the project with <code class="docutils literal"><span class="pre">gcc</span> <span class="pre">-pg</span></code> and using the
-<code class="docutils literal"><span class="pre">python-dbg</span></code> variant of the interpreter on debian / ubuntu: however
-this approach requires to also have <code class="docutils literal"><span class="pre">numpy</span></code> and <code class="docutils literal"><span class="pre">scipy</span></code> recompiled
-with <code class="docutils literal"><span class="pre">-pg</span></code> which is rather complicated to get working.</p>
+<p>In order to profile compiled Python extensions one could use <tt class="docutils literal"><span class="pre">gprof</span></tt>
+after having recompiled the project with <tt class="docutils literal"><span class="pre">gcc</span> <span class="pre">-pg</span></tt> and using the
+<tt class="docutils literal"><span class="pre">python-dbg</span></tt> variant of the interpreter on debian / ubuntu: however
+this approach requires to also have <tt class="docutils literal"><span class="pre">numpy</span></tt> and <tt class="docutils literal"><span class="pre">scipy</span></tt> recompiled
+with <tt class="docutils literal"><span class="pre">-pg</span></tt> which is rather complicated to get working.</p>
 <p>Fortunately there exist two alternative profilers that don&#8217;t require you to
 recompile everything.</p>
 </div>
@@ -592,7 +592,7 @@ recompile everything.</p>
 </div>
 </div>
 <div class="section" id="multi-core-parallelism-using-joblib-parallel">
-<h2>Multi-core parallelism using <code class="docutils literal"><span class="pre">joblib.Parallel</span></code><a class="headerlink" href="#multi-core-parallelism-using-joblib-parallel" title="Permalink to this headline">¶</a></h2>
+<h2>Multi-core parallelism using <tt class="docutils literal"><span class="pre">joblib.Parallel</span></tt><a class="headerlink" href="#multi-core-parallelism-using-joblib-parallel" title="Permalink to this headline">¶</a></h2>
 <p>TODO: give a simple teaser example here.</p>
 <p>Checkout the official joblib documentation:</p>
 <ul class="simple">

@@ -24,8 +24,18 @@ example dataset.
 
 
 
+
+.. image:: images/plot_voting_probas_001.png
+    :align: center
+
+
+
+
 **Python source code:** :download:`plot_voting_probas.py <plot_voting_probas.py>`
 
 .. literalinclude:: plot_voting_probas.py
     :lines: 22-
+
+**Total running time of the example:**  0.15 seconds
+( 0 minutes  0.15 seconds)
     

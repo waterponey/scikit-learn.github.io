@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Pipelining: c...
+        Pipelining: chai...
         </span>
             <span class="hiddenrellink">
             Pipelining: chaining a PCA and a logistic regression
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="multilabel-classification">
 <span id="example-plot-multilabel-py"></span><h1>Multilabel classification<a class="headerlink" href="#multilabel-classification" title="Permalink to this headline">¶</a></h1>
@@ -183,14 +183,15 @@ which have already been chosen.  The documents that are assigned to both
 classes are plotted surrounded by two colored circles.</p>
 <p>The classification is performed by projecting to the first two principal
 components found by PCA and CCA for visualisation purposes, followed by using
-the <a class="reference internal" href="../modules/generated/sklearn.multiclass.OneVsRestClassifier.html#sklearn.multiclass.OneVsRestClassifier" title="sklearn.multiclass.OneVsRestClassifier"><code class="xref py py-class docutils literal"><span class="pre">sklearn.multiclass.OneVsRestClassifier</span></code></a> metaclassifier using two
+the <a class="reference internal" href="../modules/generated/sklearn.multiclass.OneVsRestClassifier.html#sklearn.multiclass.OneVsRestClassifier" title="sklearn.multiclass.OneVsRestClassifier"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.multiclass.OneVsRestClassifier</span></tt></a> metaclassifier using two
 SVCs with linear kernels to learn a discriminative model for each class.
 Note that PCA is used to perform an unsupervised dimensionality reduction,
 while CCA is used to perform a supervised one.</p>
 <p>Note: in the plot, &#8220;unlabeled samples&#8221; does not mean that we don&#8217;t know the
 labels (as in semi-supervised learning) but that the samples simply do <em>not</em>
 have a label.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_multilabel.py"><code class="xref download docutils literal"><span class="pre">plot_multilabel.py</span></code></a></p>
+<img alt="../_images/plot_multilabel_001.png" class="align-center" src="../_images/plot_multilabel_001.png" />
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/plot_multilabel.py"><tt class="xref download docutils literal"><span class="pre">plot_multilabel.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -276,6 +277,8 @@ have a label.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  0.36 seconds
+( 0 minutes  0.36 seconds)</p>
 </div>
 
 

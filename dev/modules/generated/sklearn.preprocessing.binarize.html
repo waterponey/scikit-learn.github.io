@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.preprocessing.label_binarize" href="sklearn.preprocessing.label_binarize.html" />
+    <link rel="prev" title="sklearn.preprocessing.add_dummy_feature" href="sklearn.preprocessing.add_dummy_feature.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.preprocessing.add_dummy_feature.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.preproce...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.preprocessing.add_dummy_feature
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.preprocessing</span></code>.binarize</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.preprocessing</span></tt>.binarize</a></li>
 </ul>
 
     </div>
@@ -123,15 +163,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-preprocessing-binarize">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.preprocessing" title="sklearn.preprocessing"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.preprocessing</span></code></a>.binarize<a class="headerlink" href="#sklearn-preprocessing-binarize" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.preprocessing" title="sklearn.preprocessing"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.preprocessing</span></tt></a>.binarize<a class="headerlink" href="#sklearn-preprocessing-binarize" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.preprocessing.binarize">
-<code class="descclassname">sklearn.preprocessing.</code><code class="descname">binarize</code><span class="sig-paren">(</span><em>X</em>, <em>threshold=0.0</em>, <em>copy=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/preprocessing/data.py#L1361"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.binarize" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.preprocessing.</tt><tt class="descname">binarize</tt><big>(</big><em>X</em>, <em>threshold=0.0</em>, <em>copy=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/preprocessing/data.py#L1355"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.preprocessing.binarize" title="Permalink to this definition">¶</a></dt>
 <dd><p>Boolean thresholding of array-like or scipy.sparse matrix</p>
-<p>Read more in the <a class="reference internal" href="../preprocessing.html#preprocessing-binarization"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../preprocessing.html#preprocessing-binarization"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -159,7 +199,7 @@ matrix and if axis is 1).</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.preprocessing.Binarizer.html#sklearn.preprocessing.Binarizer" title="sklearn.preprocessing.Binarizer"><code class="xref py py-class docutils literal"><span class="pre">sklearn.preprocessing.Binarizer</span></code></a>, <code class="xref py py-obj docutils literal"><span class="pre">using</span></code>, <a class="reference internal" href="sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><code class="xref py py-class docutils literal"><span class="pre">sklearn.pipeline.Pipeline</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.preprocessing.Binarizer.html#sklearn.preprocessing.Binarizer" title="sklearn.preprocessing.Binarizer"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.preprocessing.Binarizer</span></tt></a>, <tt class="xref py py-obj docutils literal"><span class="pre">using</span></tt>, <a class="reference internal" href="sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.pipeline.Pipeline</span></tt></a></p>
 </div>
 </dd></dl>
 
@@ -177,8 +217,12 @@ matrix and if axis is 1).</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.preprocessing.binarize.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.preprocessing.add_dummy_feature.html">Previous
+      </a>
+    </div>
     
      </div>
 

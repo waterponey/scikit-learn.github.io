@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.cross...
+        sklearn.cross_va...
         </span>
             <span class="hiddenrellink">
             sklearn.cross_validation.ShuffleSplit
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cross_validation</span></code>.StratifiedKFold</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-stratifiedkfold">Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.StratifiedKFold</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cross_validation</span></tt>.StratifiedKFold</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-stratifiedkfold">Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.StratifiedKFold</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -166,19 +166,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-cross-validation-stratifiedkfold">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></code></a>.StratifiedKFold<a class="headerlink" href="#sklearn-cross-validation-stratifiedkfold" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></tt></a>.StratifiedKFold<a class="headerlink" href="#sklearn-cross-validation-stratifiedkfold" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.cross_validation.StratifiedKFold">
-<em class="property">class </em><code class="descclassname">sklearn.cross_validation.</code><code class="descname">StratifiedKFold</code><span class="sig-paren">(</span><em>y</em>, <em>n_folds=3</em>, <em>shuffle=False</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cross_validation.py#L462"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.StratifiedKFold" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.cross_validation.</tt><tt class="descname">StratifiedKFold</tt><big>(</big><em>y</em>, <em>n_folds=3</em>, <em>shuffle=False</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cross_validation.py#L455"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.StratifiedKFold" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stratified K-Folds cross validation iterator</p>
 <p>Provides train/test indices to split data in train test sets.</p>
 <p>This cross-validation object is a variation of KFold that
 returns stratified folds. The folds are made by preserving
 the percentage of samples for each class.</p>
-<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -208,7 +208,7 @@ shuffling. If None, use default numpy RNG for shuffling.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.cross_validation.LabelKFold.html#sklearn.cross_validation.LabelKFold" title="sklearn.cross_validation.LabelKFold"><code class="xref py py-obj docutils literal"><span class="pre">LabelKFold</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.cross_validation.LabelKFold.html#sklearn.cross_validation.LabelKFold" title="sklearn.cross_validation.LabelKFold"><tt class="xref py py-obj docutils literal"><span class="pre">LabelKFold</span></tt></a></dt>
 <dd>K-fold iterator variant with non-overlapping labels.</dd>
 </dl>
 </div>
@@ -237,22 +237,22 @@ complementary.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-cross-validation-stratifiedkfold">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.StratifiedKFold</span></code><a class="headerlink" href="#examples-using-sklearn-cross-validation-stratifiedkfold" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="A recursive feature elimination example with automatic tuning of the number of features selecte..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.StratifiedKFold</span></tt><a class="headerlink" href="#examples-using-sklearn-cross-validation-stratifiedkfold" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="A recursive feature elimination example with automatic tuning of the number of features selecte..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/feature_selection/plot_rfe_with_cross_validation.html"><img alt="../../_images/plot_rfe_with_cross_validation1.png" src="../../_images/plot_rfe_with_cross_validation1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_selection/plot_rfe_with_cross_validation.html#example-feature-selection-plot-rfe-with-cross-validation-py"><span>Recursive feature elimination with cross-validation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_selection/plot_rfe_with_cross_validation.html#example-feature-selection-plot-rfe-with-cross-validation-py"><em>Recursive feature elimination with cross-validation</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="In order to test if a classification score is significative a technique in repeating the classi..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="In order to test if a classification score is significative a technique in repeating the classi..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/feature_selection/plot_permutation_test_for_classification.html"><img alt="../../_images/plot_permutation_test_for_classification1.png" src="../../_images/plot_permutation_test_for_classification1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_selection/plot_permutation_test_for_classification.html#example-feature-selection-plot-permutation-test-for-classification-py"><span>Test with permutations the significance of a classification score</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_selection/plot_permutation_test_for_classification.html#example-feature-selection-plot-permutation-test-for-classification-py"><em>Test with permutations the significance of a classification score</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Demonstration of Gaussian mixture models for classification."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="Demonstration of Gaussian mixture models for classification."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/mixture/plot_gmm_classifier.html"><img alt="../../_images/plot_gmm_classifier1.png" src="../../_images/plot_gmm_classifier1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm_classifier.html#example-mixture-plot-gmm-classifier-py"><span>GMM classification</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm_classifier.html#example-mixture-plot-gmm-classifier-py"><em>GMM classification</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure" id="id4">
+</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_roc_crossval.html"><img alt="../../_images/plot_roc_crossval1.png" src="../../_images/plot_roc_crossval1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc_crossval.html#example-model-selection-plot-roc-crossval-py"><span>Receiver Operating Characteristic (ROC) with cross validation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc_crossval.html#example-model-selection-plot-roc-crossval-py"><em>Receiver Operating Characteristic (ROC) with cross validation</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

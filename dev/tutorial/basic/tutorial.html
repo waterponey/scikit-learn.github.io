@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        scikit-learn ...
+        scikit-learn Tut...
         </span>
             <span class="hiddenrellink">
             scikit-learn Tutorials
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        scikit-learn ...
+        scikit-learn Tut...
         </span>
             <span class="hiddenrellink">
             scikit-learn Tutorials
@@ -174,7 +174,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="an-introduction-to-machine-learning-with-scikit-learn">
 <span id="introduction"></span><h1>An introduction to machine learning with scikit-learn<a class="headerlink" href="#an-introduction-to-machine-learning-with-scikit-learn" title="Permalink to this headline">¶</a></h1>
@@ -197,7 +197,7 @@ data), is it said to have several attributes or <strong>features</strong>.</p>
 <div><ul>
 <li><p class="first"><a class="reference external" href="http://en.wikipedia.org/wiki/Supervised_learning">supervised learning</a>,
 in which the data comes with additional attributes that we want to predict
-(<a class="reference internal" href="../../supervised_learning.html#supervised-learning"><span>Click here</span></a>
+(<a class="reference internal" href="../../supervised_learning.html#supervised-learning"><em>Click here</em></a>
 to go to the scikit-learn supervised learning page).This problem
 can be either:</p>
 <blockquote>
@@ -229,7 +229,7 @@ or to determine the distribution of data within the input space, known as
 <a class="reference external" href="http://en.wikipedia.org/wiki/Density_estimation">density estimation</a>, or
 to project the data from a high-dimensional space down to two or three
 dimensions for the purpose of <em>visualization</em>
-(<a class="reference internal" href="../../unsupervised_learning.html#unsupervised-learning"><span>Click here</span></a>
+(<a class="reference internal" href="../../unsupervised_learning.html#unsupervised-learning"><em>Click here</em></a>
 to go to the Scikit-Learn unsupervised learning page).</p>
 </li>
 </ul>
@@ -250,8 +250,8 @@ on which we test these properties.</p>
 <a class="reference external" href="http://en.wikipedia.org/wiki/Iris_flower_data_set">iris</a> and <a class="reference external" href="http://archive.ics.uci.edu/ml/datasets/Pen-Based+Recognition+of+Handwritten+Digits">digits</a>
 datasets for classification and the <a class="reference external" href="http://archive.ics.uci.edu/ml/datasets/Housing">boston house prices dataset</a> for regression.</p>
 <p>In the following, we start a Python interpreter from our shell and then
-load the <code class="docutils literal"><span class="pre">iris</span></code> and <code class="docutils literal"><span class="pre">digits</span></code> datasets.  Our notational convention is that
-<code class="docutils literal"><span class="pre">$</span></code> denotes the shell prompt while <code class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></code> denotes the Python
+load the <tt class="docutils literal"><span class="pre">iris</span></tt> and <tt class="docutils literal"><span class="pre">digits</span></tt> datasets.  Our notational convention is that
+<tt class="docutils literal"><span class="pre">$</span></tt> denotes the shell prompt while <tt class="docutils literal"><span class="pre">&gt;&gt;&gt;</span></tt> denotes the Python
 interpreter prompt:</p>
 <div class="highlight-python"><div class="highlight"><pre>$ python
 &gt;&gt;&gt; from sklearn import datasets
@@ -260,12 +260,12 @@ interpreter prompt:</p>
 </pre></div>
 </div>
 <p>A dataset is a dictionary-like object that holds all the data and some
-metadata about the data. This data is stored in the <code class="docutils literal"><span class="pre">.data</span></code> member,
-which is a <code class="docutils literal"><span class="pre">n_samples,</span> <span class="pre">n_features</span></code> array. In the case of supervised
-problem, one or more response variables are stored in the <code class="docutils literal"><span class="pre">.target</span></code> member. More
-details on the different datasets can be found in the <a class="reference internal" href="../../datasets/index.html#datasets"><span>dedicated
-section</span></a>.</p>
-<p>For instance, in the case of the digits dataset, <code class="docutils literal"><span class="pre">digits.data</span></code> gives
+metadata about the data. This data is stored in the <tt class="docutils literal"><span class="pre">.data</span></tt> member,
+which is a <tt class="docutils literal"><span class="pre">n_samples,</span> <span class="pre">n_features</span></tt> array. In the case of supervised
+problem, one or more response variables are stored in the <tt class="docutils literal"><span class="pre">.target</span></tt> member. More
+details on the different datasets can be found in the <a class="reference internal" href="../../datasets/index.html#datasets"><em>dedicated
+section</em></a>.</p>
+<p>For instance, in the case of the digits dataset, <tt class="docutils literal"><span class="pre">digits.data</span></tt> gives
 access to the features that can be used to classify the digits samples:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>  
 <span class="go">[[  0.   0.   5. ...,   0.   0.   0.]</span>
@@ -277,7 +277,7 @@ access to the features that can be used to classify the digits samples:</p>
 <span class="go"> [  0.   0.  10. ...,  12.   1.   0.]]</span>
 </pre></div>
 </div>
-<p>and <code class="docutils literal"><span class="pre">digits.target</span></code> gives the ground truth for the digit dataset, that
+<p>and <tt class="docutils literal"><span class="pre">digits.target</span></tt> gives the ground truth for the digit dataset, that
 is the number corresponding to each digit image that we are trying to
 learn:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">digits</span><span class="o">.</span><span class="n">target</span>
@@ -286,9 +286,9 @@ learn:</p>
 </div>
 <div class="topic">
 <p class="topic-title first">Shape of the data arrays</p>
-<p>The data is always a 2D array, shape <code class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_features)</span></code>, although
+<p>The data is always a 2D array, shape <tt class="docutils literal"><span class="pre">(n_samples,</span> <span class="pre">n_features)</span></tt>, although
 the original data may have had a different shape. In the case of the
-digits, each original sample is an image of shape <code class="docutils literal"><span class="pre">(8,</span> <span class="pre">8)</span></code> and can be
+digits, each original sample is an image of shape <tt class="docutils literal"><span class="pre">(8,</span> <span class="pre">8)</span></tt> and can be
 accessed using:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">digits</span><span class="o">.</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="go">array([[  0.,   0.,   5.,  13.,   9.,   1.,   0.,   0.],</span>
@@ -301,7 +301,7 @@ accessed using:</p>
 <span class="go">       [  0.,   0.,   6.,  13.,  10.,   0.,   0.,   0.]])</span>
 </pre></div>
 </div>
-<p>The <a class="reference internal" href="../../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><span>simple example on this dataset</span></a> illustrates how starting
+<p>The <a class="reference internal" href="../../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><em>simple example on this dataset</em></a> illustrates how starting
 from the original problem one can shape the data for consumption in
 scikit-learn.</p>
 </div>
@@ -314,8 +314,8 @@ possible classes (the digits zero through nine) on which we <em>fit</em> an
 <a class="reference external" href="http://en.wikipedia.org/wiki/Estimator">estimator</a> to be able to <em>predict</em>
 the classes to which unseen samples belong.</p>
 <p>In scikit-learn, an estimator for classification is a Python object that
-implements the methods <code class="docutils literal"><span class="pre">fit(X,</span> <span class="pre">y)</span></code> and <code class="docutils literal"><span class="pre">predict(T)</span></code>.</p>
-<p>An example of an estimator is the class <code class="docutils literal"><span class="pre">sklearn.svm.SVC</span></code> that
+implements the methods <tt class="docutils literal"><span class="pre">fit(X,</span> <span class="pre">y)</span></tt> and <tt class="docutils literal"><span class="pre">predict(T)</span></tt>.</p>
+<p>An example of an estimator is the class <tt class="docutils literal"><span class="pre">sklearn.svm.SVC</span></tt> that
 implements <a class="reference external" href="http://en.wikipedia.org/wiki/Support_vector_machine">support vector classification</a>. The
 constructor of an estimator takes as arguments the parameters of the
 model, but for the time being, we will consider the estimator as a black
@@ -326,17 +326,17 @@ box:</p>
 </div>
 <div class="topic">
 <p class="topic-title first">Choosing the parameters of the model</p>
-<p>In this example we set the value of <code class="docutils literal"><span class="pre">gamma</span></code> manually. It is possible
+<p>In this example we set the value of <tt class="docutils literal"><span class="pre">gamma</span></tt> manually. It is possible
 to automatically find good values for the parameters by using tools
-such as <a class="reference internal" href="../../modules/grid_search.html#grid-search"><span>grid search</span></a> and <a class="reference internal" href="../../modules/cross_validation.html#cross-validation"><span>cross validation</span></a>.</p>
+such as <a class="reference internal" href="../../modules/grid_search.html#grid-search"><em>grid search</em></a> and <a class="reference internal" href="../../modules/cross_validation.html#cross-validation"><em>cross validation</em></a>.</p>
 </div>
-<p>We call our estimator instance <code class="docutils literal"><span class="pre">clf</span></code>, as it is a classifier. It now must
+<p>We call our estimator instance <tt class="docutils literal"><span class="pre">clf</span></tt>, as it is a classifier. It now must
 be fitted to the model, that is, it must <em>learn</em> from the model. This is
-done by passing our training set to the <code class="docutils literal"><span class="pre">fit</span></code> method. As a training
+done by passing our training set to the <tt class="docutils literal"><span class="pre">fit</span></tt> method. As a training
 set, let us use all the images of our dataset apart from the last
-one. We select this training set with the <code class="docutils literal"><span class="pre">[:-1]</span></code> Python syntax,
+one. We select this training set with the <tt class="docutils literal"><span class="pre">[:-1]</span></tt> Python syntax,
 which produces a new array that contains all but
-the last entry of <code class="docutils literal"><span class="pre">digits.data</span></code>:</p>
+the last entry of <tt class="docutils literal"><span class="pre">digits.data</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">data</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">digits</span><span class="o">.</span><span class="n">target</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  
 <span class="go">SVC(C=100.0, cache_size=200, class_weight=None, coef0=0.0,</span>
 <span class="go">  decision_function_shape=None, degree=3, gamma=0.001, kernel=&#39;rbf&#39;,</span>
@@ -345,19 +345,19 @@ the last entry of <code class="docutils literal"><span class="pre">digits.data</
 </pre></div>
 </div>
 <p>Now you can predict new values, in particular, we can ask to the
-classifier what is the digit of our last image in the <code class="docutils literal"><span class="pre">digits</span></code> dataset,
+classifier what is the digit of our last image in the <tt class="docutils literal"><span class="pre">digits</span></tt> dataset,
 which we have not used to train the classifier:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">digits</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">:])</span>
 <span class="go">array([8])</span>
 </pre></div>
 </div>
 <p>The corresponding image is the following:</p>
-<a class="reference external image-reference" href="../../auto_examples/datasets/plot_digits_last_image.html"><img alt="tutorial/basic/../../auto_examples/datasets/images/plot_digits_last_image_001.png" class="align-center" src="tutorial/basic/../../auto_examples/datasets/images/plot_digits_last_image_001.png" /></a>
+<a class="reference external image-reference" href="../../auto_examples/datasets/plot_digits_last_image.html"><img alt="../../_images/plot_digits_last_image_0011.png" class="align-center" src="../../_images/plot_digits_last_image_0011.png" style="width: 150.0px; height: 150.0px;" /></a>
 <p>As you can see, it is a challenging task: the images are of poor
 resolution. Do you agree with the classifier?</p>
 <p>A complete example of this classification problem is available as an
 example that you can run and study:
-<a class="reference internal" href="../../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><span>Recognizing hand-written digits</span></a>.</p>
+<a class="reference internal" href="../../auto_examples/classification/plot_digits_classification.html#example-classification-plot-digits-classification-py"><em>Recognizing hand-written digits</em></a>.</p>
 </div>
 <div class="section" id="model-persistence">
 <h2>Model persistence<a class="headerlink" href="#model-persistence" title="Permalink to this headline">¶</a></h2>
@@ -384,7 +384,7 @@ persistence model, namely <a class="reference external" href="http://docs.python
 </pre></div>
 </div>
 <p>In the specific case of the scikit, it may be more interesting to use
-joblib&#8217;s replacement of pickle (<code class="docutils literal"><span class="pre">joblib.dump</span></code> &amp; <code class="docutils literal"><span class="pre">joblib.load</span></code>),
+joblib&#8217;s replacement of pickle (<tt class="docutils literal"><span class="pre">joblib.dump</span></tt> &amp; <tt class="docutils literal"><span class="pre">joblib.load</span></tt>),
 which is more efficient on big data, but can only pickle to the disk
 and not to a string:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.externals</span> <span class="kn">import</span> <span class="n">joblib</span>
@@ -399,12 +399,12 @@ with:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">joblib.dump returns a list of filenames. Each individual numpy array
-contained in the <code class="docutils literal"><span class="pre">clf</span></code> object is serialized as a separate file on the
+contained in the <tt class="docutils literal"><span class="pre">clf</span></tt> object is serialized as a separate file on the
 filesystem. All files are required in the same folder when reloading the
 model with joblib.load.</p>
 </div>
 <p>Note that pickle has some security and maintainability issues. Please refer to
-section <a class="reference internal" href="../../modules/model_persistence.html#model-persistence"><span>Model persistence</span></a> for more detailed information about model
+section <a class="reference internal" href="../../modules/model_persistence.html#model-persistence"><em>Model persistence</em></a> for more detailed information about model
 persistence with scikit-learn.</p>
 </div>
 <div class="section" id="conventions">
@@ -413,7 +413,7 @@ persistence with scikit-learn.</p>
 predictive.</p>
 <div class="section" id="type-casting">
 <h3>Type casting<a class="headerlink" href="#type-casting" title="Permalink to this headline">¶</a></h3>
-<p>Unless otherwise specified, input will be cast to <code class="docutils literal"><span class="pre">float64</span></code>:</p>
+<p>Unless otherwise specified, input will be cast to <tt class="docutils literal"><span class="pre">float64</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">random_projection</span>
 
@@ -429,9 +429,9 @@ predictive.</p>
 <span class="go">dtype(&#39;float64&#39;)</span>
 </pre></div>
 </div>
-<p>In this example, <code class="docutils literal"><span class="pre">X</span></code> is <code class="docutils literal"><span class="pre">float32</span></code>, which is cast to <code class="docutils literal"><span class="pre">float64</span></code> by
-<code class="docutils literal"><span class="pre">fit_transform(X)</span></code>.</p>
-<p>Regression targets are cast to <code class="docutils literal"><span class="pre">float64</span></code>, classification targets are
+<p>In this example, <tt class="docutils literal"><span class="pre">X</span></tt> is <tt class="docutils literal"><span class="pre">float32</span></tt>, which is cast to <tt class="docutils literal"><span class="pre">float64</span></tt> by
+<tt class="docutils literal"><span class="pre">fit_transform(X)</span></tt>.</p>
+<p>Regression targets are cast to <tt class="docutils literal"><span class="pre">float64</span></tt>, classification targets are
 maintained:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">datasets</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
@@ -456,15 +456,15 @@ maintained:</p>
 <span class="go">[&#39;setosa&#39;, &#39;setosa&#39;, &#39;setosa&#39;]</span>
 </pre></div>
 </div>
-<p>Here, the first <code class="docutils literal"><span class="pre">predict()</span></code> returns an integer array, since <code class="docutils literal"><span class="pre">iris.target</span></code>
-(an integer array) was used in <code class="docutils literal"><span class="pre">fit</span></code>. The second <code class="docutils literal"><span class="pre">predict</span></code> returns a string
-array, since <code class="docutils literal"><span class="pre">iris.target_names</span></code> was for fitting.</p>
+<p>Here, the first <tt class="docutils literal"><span class="pre">predict()</span></tt> returns an integer array, since <tt class="docutils literal"><span class="pre">iris.target</span></tt>
+(an integer array) was used in <tt class="docutils literal"><span class="pre">fit</span></tt>. The second <tt class="docutils literal"><span class="pre">predict</span></tt> returns a string
+array, since <tt class="docutils literal"><span class="pre">iris.target_names</span></tt> was for fitting.</p>
 </div>
 <div class="section" id="refitting-and-updating-parameters">
 <h3>Refitting and updating parameters<a class="headerlink" href="#refitting-and-updating-parameters" title="Permalink to this headline">¶</a></h3>
 <p>Hyper-parameters of an estimator can be updated after it has been constructed
-via the <a class="reference internal" href="../../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.set_params" title="sklearn.pipeline.Pipeline.set_params"><code class="xref py py-func docutils literal"><span class="pre">sklearn.pipeline.Pipeline.set_params</span></code></a> method. Calling <code class="docutils literal"><span class="pre">fit()</span></code>
-more than once will overwrite what was learned by any previous <code class="docutils literal"><span class="pre">fit()</span></code>:</p>
+via the <a class="reference internal" href="../../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline.set_params" title="sklearn.pipeline.Pipeline.set_params"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.pipeline.Pipeline.set_params</span></tt></a> method. Calling <tt class="docutils literal"><span class="pre">fit()</span></tt>
+more than once will overwrite what was learned by any previous <tt class="docutils literal"><span class="pre">fit()</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
 
@@ -491,8 +491,8 @@ more than once will overwrite what was learned by any previous <code class="docu
 <span class="go">array([0, 0, 0, 1, 0])</span>
 </pre></div>
 </div>
-<p>Here, the default kernel <code class="docutils literal"><span class="pre">rbf</span></code> is first changed to <code class="docutils literal"><span class="pre">linear</span></code> after the
-estimator has been constructed via <code class="docutils literal"><span class="pre">SVC()</span></code>, and changed back to <code class="docutils literal"><span class="pre">rbf</span></code> to
+<p>Here, the default kernel <tt class="docutils literal"><span class="pre">rbf</span></tt> is first changed to <tt class="docutils literal"><span class="pre">linear</span></tt> after the
+estimator has been constructed via <tt class="docutils literal"><span class="pre">SVC()</span></tt>, and changed back to <tt class="docutils literal"><span class="pre">rbf</span></tt> to
 refit the estimator and to make a second prediction.</p>
 </div>
 </div>

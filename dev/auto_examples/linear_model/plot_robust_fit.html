@@ -36,8 +36,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="Automatic Relevance Determination Regression (ARD)" href="plot_ard.html" />
-    <link rel="prev" title="Sparsity Example: Fitting only features 1 and 2" href="plot_ols_3d.html" />
+    <link rel="next" title="L1 Penalty and Sparsity in Logistic Regression" href="plot_logistic_l1_l2_sparsity.html" />
+    <link rel="prev" title="Bayesian Ridge Regression" href="plot_bayesian_ridge.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_ols_3d.html"
+        <a href="plot_bayesian_ridge.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Sparsity Exam...
+        Bayesian Ridge R...
         </span>
             <span class="hiddenrellink">
-            Sparsity Example: Fitting only features 1 and 2
+            Bayesian Ridge Regression
             </span>
         </a>
         </div>
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="robust-linear-estimator-fitting">
 <span id="example-linear-model-plot-robust-fit-py"></span><h1>Robust linear estimator fitting<a class="headerlink" href="#robust-linear-estimator-fitting" title="Permalink to this headline">¶</a></h1>
@@ -184,7 +184,7 @@ the quality of the prediction.</p>
 <li>TheilSen is good for small outliers, both in direction X and y, but has
 a break point above which it performs worst than OLS.</li>
 </ul>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_robust_fit.py"><code class="xref download docutils literal"><span class="pre">plot_robust_fit.py</span></code></a></p>
+<p class="horizontal"><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_robust_fit.py"><tt class="xref download docutils literal"><span class="pre">plot_robust_fit.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 
@@ -218,34 +218,38 @@ a break point above which it performs worst than OLS.</li>
 <span class="n">estimators</span> <span class="o">=</span> <span class="p">[(</span><span class="s">&#39;OLS&#39;</span><span class="p">,</span> <a href="../../modules/generated/sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression"><span class="n">linear_model</span><span class="o">.</span><span class="n">LinearRegression</span></a><span class="p">()),</span>
               <span class="p">(</span><span class="s">&#39;Theil-Sen&#39;</span><span class="p">,</span> <a href="../../modules/generated/sklearn.linear_model.TheilSenRegressor.html#sklearn.linear_model.TheilSenRegressor"><span class="n">linear_model</span><span class="o">.</span><span class="n">TheilSenRegressor</span></a><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)),</span>
               <span class="p">(</span><span class="s">&#39;RANSAC&#39;</span><span class="p">,</span> <a href="../../modules/generated/sklearn.linear_model.RANSACRegressor.html#sklearn.linear_model.RANSACRegressor"><span class="n">linear_model</span><span class="o">.</span><span class="n">RANSACRegressor</span></a><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)),</span> <span class="p">]</span>
-
+<span class="n">colors</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;OLS&#39;</span><span class="p">:</span> <span class="s">&#39;turquoise&#39;</span><span class="p">,</span> <span class="s">&#39;Theil-Sen&#39;</span><span class="p">:</span> <span class="s">&#39;gold&#39;</span><span class="p">,</span> <span class="s">&#39;RANSAC&#39;</span><span class="p">:</span> <span class="s">&#39;lightgreen&#39;</span><span class="p">}</span>
+<span class="n">linestyle</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;OLS&#39;</span><span class="p">:</span> <span class="s">&#39;-&#39;</span><span class="p">,</span> <span class="s">&#39;Theil-Sen&#39;</span><span class="p">:</span> <span class="s">&#39;-.&#39;</span><span class="p">,</span> <span class="s">&#39;RANSAC&#39;</span><span class="p">:</span> <span class="s">&#39;--&#39;</span><span class="p">}</span>
+<span class="n">lw</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="n">x_plot</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">X</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
-
 <span class="k">for</span> <span class="n">title</span><span class="p">,</span> <span class="n">this_X</span><span class="p">,</span> <span class="n">this_y</span> <span class="ow">in</span> <span class="p">[</span>
-        <span class="p">(</span><span class="s">&#39;Modeling errors only&#39;</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span>
-        <span class="p">(</span><span class="s">&#39;Corrupt X, small deviants&#39;</span><span class="p">,</span> <span class="n">X_errors</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span>
-        <span class="p">(</span><span class="s">&#39;Corrupt y, small deviants&#39;</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y_errors</span><span class="p">),</span>
-        <span class="p">(</span><span class="s">&#39;Corrupt X, large deviants&#39;</span><span class="p">,</span> <span class="n">X_errors_large</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span>
-        <span class="p">(</span><span class="s">&#39;Corrupt y, large deviants&#39;</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y_errors_large</span><span class="p">)]:</span>
+        <span class="p">(</span><span class="s">&#39;Modeling Errors Only&#39;</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span>
+        <span class="p">(</span><span class="s">&#39;Corrupt X, Small Deviants&#39;</span><span class="p">,</span> <span class="n">X_errors</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span>
+        <span class="p">(</span><span class="s">&#39;Corrupt y, Small Deviants&#39;</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y_errors</span><span class="p">),</span>
+        <span class="p">(</span><span class="s">&#39;Corrupt X, Large Deviants&#39;</span><span class="p">,</span> <span class="n">X_errors_large</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span>
+        <span class="p">(</span><span class="s">&#39;Corrupt y, Large Deviants&#39;</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y_errors_large</span><span class="p">)]:</span>
     <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">this_X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">this_y</span><span class="p">,</span> <span class="s">&#39;k+&#39;</span><span class="p">)</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">this_X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">this_y</span><span class="p">,</span> <span class="s">&#39;b+&#39;</span><span class="p">)</span>
 
     <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">estimator</span> <span class="ow">in</span> <span class="n">estimators</span><span class="p">:</span>
         <span class="n">model</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline"><span class="n">make_pipeline</span></a><span class="p">(</span><a href="../../modules/generated/sklearn.preprocessing.PolynomialFeatures.html#sklearn.preprocessing.PolynomialFeatures"><span class="n">PolynomialFeatures</span></a><span class="p">(</span><span class="mi">3</span><span class="p">),</span> <span class="n">estimator</span><span class="p">)</span>
         <span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">this_X</span><span class="p">,</span> <span class="n">this_y</span><span class="p">)</span>
         <span class="n">mse</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.metrics.mean_squared_error.html#sklearn.metrics.mean_squared_error"><span class="n">metrics</span><span class="o">.</span><span class="n">mean_squared_error</span></a><span class="p">(</span><span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="n">y_test</span><span class="p">)</span>
         <span class="n">y_plot</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">x_plot</span><span class="p">[:,</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/arrays.indexing.html#numpy.newaxis"><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span></a><span class="p">])</span>
-        <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">x_plot</span><span class="p">,</span> <span class="n">y_plot</span><span class="p">,</span>
-                 <span class="n">label</span><span class="o">=</span><span class="s">&#39;</span><span class="si">%s</span><span class="s">: error = </span><span class="si">%.3f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">mse</span><span class="p">))</span>
+        <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">x_plot</span><span class="p">,</span> <span class="n">y_plot</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">name</span><span class="p">],</span> <span class="n">linestyle</span><span class="o">=</span><span class="n">linestyle</span><span class="p">[</span><span class="n">name</span><span class="p">],</span>
+                 <span class="n">linewidth</span><span class="o">=</span><span class="n">lw</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;</span><span class="si">%s</span><span class="s">: error = </span><span class="si">%.3f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">mse</span><span class="p">))</span>
 
-    <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;best&#39;</span><span class="p">,</span> <span class="n">frameon</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
-               <span class="n">title</span><span class="o">=</span><span class="s">&#39;Error: mean absolute deviation</span><span class="se">\n</span><span class="s"> to non corrupt data&#39;</span><span class="p">)</span>
+    <span class="n">legend_title</span> <span class="o">=</span> <span class="s">&#39;Error of Mean</span><span class="se">\n</span><span class="s">Absolute Deviation</span><span class="se">\n</span><span class="s">to Non-corrupt Data&#39;</span>
+    <span class="n">legend</span> <span class="o">=</span> <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;upper right&#39;</span><span class="p">,</span> <span class="n">frameon</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">legend_title</span><span class="p">,</span>
+                        <span class="n">fontsize</span><span class="o">=</span><span class="s">&#39;x-small&#39;</span><span class="p">)</span>
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlim"><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span></a><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mf">10.2</span><span class="p">)</span>
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylim"><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span></a><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mf">10.2</span><span class="p">)</span>
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="n">title</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  0.00 seconds
+( 0 minutes  0.00 seconds)</p>
 </div>
 
 
@@ -263,7 +267,7 @@ a break point above which it performs worst than OLS.</li>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_ols_3d.html">Previous
+      <a href="plot_bayesian_ridge.html">Previous
       </a>
     </div>
     

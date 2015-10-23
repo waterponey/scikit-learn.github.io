@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Robust covari...
+        Robust covarianc...
         </span>
             <span class="hiddenrellink">
             Robust covariance estimation and Mahalanobis distances relevance
@@ -168,7 +168,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="robust-vs-empirical-covariance-estimate">
 <span id="example-covariance-plot-robust-vs-empirical-covariance-py"></span><h1>Robust vs Empirical covariance estimate<a class="headerlink" href="#robust-vs-empirical-covariance-estimate" title="Permalink to this headline">¶</a></h1>
@@ -181,9 +181,9 @@ resistant to &#8220;erroneous&#8221; observations in the data set.</p>
 <p>The Minimum Covariance Determinant estimator is a robust, high-breakdown point
 (i.e. it can be used to estimate the covariance matrix of highly contaminated
 datasets, up to
-<img class="math" src="../../_images/math/1b6d1bfe6128c39a78cf9d03ce2b8c383af766f3.png" alt="\frac{n_\text{samples} - n_\text{features}-1}{2}"/> outliers) estimator of
+<span class="math">\frac{n_\text{samples} - n_\text{features}-1}{2}</span> outliers) estimator of
 covariance. The idea is to find
-<img class="math" src="../../_images/math/fc01155981c5427ca134c16d49045303cd94fb1d.png" alt="\frac{n_\text{samples} + n_\text{features}+1}{2}"/>
+<span class="math">\frac{n_\text{samples} + n_\text{features}+1}{2}</span>
 observations whose empirical covariance has the smallest determinant, yielding
 a &#8220;pure&#8221; subset of observations from which to compute standards estimates of
 location and covariance. After a correction step aiming at compensating the
@@ -201,7 +201,7 @@ distributed data sets:</p>
 <li>The mean and the empirical covariance of the full dataset, which break
 down as soon as there are outliers in the data set</li>
 <li>The robust MCD, that has a low error provided
-<img class="math" src="../../_images/math/37902c51e25e9d0c4c2e966e50b252f82cfa60e1.png" alt="n_\text{samples} &gt; 5n_\text{features}"/></li>
+<span class="math">n_\text{samples} &gt; 5n_\text{features}</span></li>
 <li>The mean and the empirical covariance of the observations that are known
 to be good ones. This can be considered as a &#8220;perfect&#8221; MCD estimation,
 so one can trust our implementation by comparing to this case.</li>
@@ -231,7 +231,8 @@ estimation in signal processing: A tutorial-style treatment of
 fundamental concepts. IEEE Signal Processing Magazine 29(4), 61-80.</td></tr>
 </tbody>
 </table>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_robust_vs_empirical_covariance.py"><code class="xref download docutils literal"><span class="pre">plot_robust_vs_empirical_covariance.py</span></code></a></p>
+<img alt="../../_images/plot_robust_vs_empirical_covariance_001.png" class="align-center" src="../../_images/plot_robust_vs_empirical_covariance_001.png" />
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_robust_vs_empirical_covariance.py"><tt class="xref download docutils literal"><span class="pre">plot_robust_vs_empirical_covariance.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -332,6 +333,8 @@ fundamental concepts. IEEE Signal Processing Magazine 29(4), 61-80.</td></tr>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  3.26 seconds
+( 0 minutes  3.26 seconds)</p>
 </div>
 </div>
 

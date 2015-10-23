@@ -17,8 +17,23 @@ Here, we demonstrate this on a toy dataset, where one single datapoint
 is a large outlier.
 
 
+
+.. image:: images/plot_robust_scaling_001.png
+    :align: center
+
+
+**Script output**::
+
+  Testset accuracy using standard scaler: 0.545
+  Testset accuracy using robust scaler:   0.700
+
+
+
 **Python source code:** :download:`plot_robust_scaling.py <plot_robust_scaling.py>`
 
 .. literalinclude:: plot_robust_scaling.py
     :lines: 18-
+
+**Total running time of the example:**  0.49 seconds
+( 0 minutes  0.49 seconds)
     

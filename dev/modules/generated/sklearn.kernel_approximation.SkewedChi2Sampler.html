@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.kerne...
+        sklearn.kernel_a...
         </span>
             <span class="hiddenrellink">
             sklearn.kernel_approximation.RBFSampler
@@ -147,7 +147,7 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.kernel_approximation</span></code>.SkewedChi2Sampler</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.kernel_approximation</span></tt>.SkewedChi2Sampler</a></li>
 </ul>
 
     </div>
@@ -163,16 +163,16 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-kernel-approximation-skewedchi2sampler">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.kernel_approximation" title="sklearn.kernel_approximation"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.kernel_approximation</span></code></a>.SkewedChi2Sampler<a class="headerlink" href="#sklearn-kernel-approximation-skewedchi2sampler" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.kernel_approximation" title="sklearn.kernel_approximation"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.kernel_approximation</span></tt></a>.SkewedChi2Sampler<a class="headerlink" href="#sklearn-kernel-approximation-skewedchi2sampler" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.kernel_approximation.SkewedChi2Sampler">
-<em class="property">class </em><code class="descclassname">sklearn.kernel_approximation.</code><code class="descname">SkewedChi2Sampler</code><span class="sig-paren">(</span><em>skewedness=1.0</em>, <em>n_components=100</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_approximation.py#L112"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.kernel_approximation.</tt><tt class="descname">SkewedChi2Sampler</tt><big>(</big><em>skewedness=1.0</em>, <em>n_components=100</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/kernel_approximation.py#L112"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Approximates feature map of the &#8220;skewed chi-squared&#8221; kernel by Monte
 Carlo approximation of its Fourier transform.</p>
-<p>Read more in the <a class="reference internal" href="../kernel_approximation.html#skewed-chi-kernel-approx"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../kernel_approximation.html#skewed-chi-kernel-approx"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -198,9 +198,9 @@ if RandomState instance, random_state is the random number generator.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.kernel_approximation.AdditiveChi2Sampler.html#sklearn.kernel_approximation.AdditiveChi2Sampler" title="sklearn.kernel_approximation.AdditiveChi2Sampler"><code class="xref py py-obj docutils literal"><span class="pre">AdditiveChi2Sampler</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.kernel_approximation.AdditiveChi2Sampler.html#sklearn.kernel_approximation.AdditiveChi2Sampler" title="sklearn.kernel_approximation.AdditiveChi2Sampler"><tt class="xref py py-obj docutils literal"><span class="pre">AdditiveChi2Sampler</span></tt></a></dt>
 <dd>A different approach for approximating an additive variant of the chi squared kernel.</dd>
-<dt><a class="reference internal" href="sklearn.metrics.pairwise.chi2_kernel.html#sklearn.metrics.pairwise.chi2_kernel" title="sklearn.metrics.pairwise.chi2_kernel"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.metrics.pairwise.chi2_kernel</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.metrics.pairwise.chi2_kernel.html#sklearn.metrics.pairwise.chi2_kernel" title="sklearn.metrics.pairwise.chi2_kernel"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.metrics.pairwise.chi2_kernel</span></tt></a></dt>
 <dd>The exact chi squared kernel.</dd>
 </dl>
 </div>
@@ -214,22 +214,31 @@ Kernels&#8221; by Fuxin Li, Catalin Ionescu and Cristian Sminchisescu.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_approximation.SkewedChi2Sampler.fit" title="sklearn.kernel_approximation.SkewedChi2Sampler.fit"><code class="xref py py-obj docutils literal"><span class="pre">fit</span></code></a>(X[,&nbsp;y])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_approximation.SkewedChi2Sampler.fit" title="sklearn.kernel_approximation.SkewedChi2Sampler.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
 <td>Fit the model with X.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.kernel_approximation.SkewedChi2Sampler.transform" title="sklearn.kernel_approximation.SkewedChi2Sampler.transform"><code class="xref py py-obj docutils literal"><span class="pre">transform</span></code></a>(X[,&nbsp;y])</td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.kernel_approximation.SkewedChi2Sampler.fit_transform" title="sklearn.kernel_approximation.SkewedChi2Sampler.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_approximation.SkewedChi2Sampler.get_params" title="sklearn.kernel_approximation.SkewedChi2Sampler.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.kernel_approximation.SkewedChi2Sampler.set_params" title="sklearn.kernel_approximation.SkewedChi2Sampler.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_approximation.SkewedChi2Sampler.transform" title="sklearn.kernel_approximation.SkewedChi2Sampler.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X[,&nbsp;y])</td>
 <td>Apply the approximate feature map to X.</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.kernel_approximation.SkewedChi2Sampler.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>skewedness=1.0</em>, <em>n_components=100</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_approximation.py#L144"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>skewedness=1.0</em>, <em>n_components=100</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/kernel_approximation.py#L144"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.kernel_approximation.SkewedChi2Sampler.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_approximation.py#L149"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/kernel_approximation.py#L149"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model with X.</p>
 <p>Samples random projection according to n_features.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -255,7 +264,7 @@ and n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.kernel_approximation.SkewedChi2Sampler.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L438"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -285,7 +294,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.kernel_approximation.SkewedChi2Sampler.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -310,11 +319,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.kernel_approximation.SkewedChi2Sampler.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -328,7 +337,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.kernel_approximation.SkewedChi2Sampler.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_approximation.py#L177"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/kernel_approximation.py#L177"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.SkewedChi2Sampler.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Apply the approximate feature map to X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

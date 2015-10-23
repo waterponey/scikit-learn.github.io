@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="3.2.4.3.3. sklearn.ensemble.ExtraTreesClassifier" href="sklearn.ensemble.ExtraTreesClassifier.html" />
+    <link rel="prev" title="sklearn.ensemble.BaggingClassifier" href="sklearn.ensemble.BaggingClassifier.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.ensemble.BaggingClassifier.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.ensemble...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.ensemble.BaggingClassifier
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.ensemble</span></code>.BaggingRegressor</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-ensemble-baggingregressor">Examples using <code class="docutils literal"><span class="pre">sklearn.ensemble.BaggingRegressor</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.ensemble</span></tt>.BaggingRegressor</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-ensemble-baggingregressor">Examples using <tt class="docutils literal"><span class="pre">sklearn.ensemble.BaggingRegressor</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-ensemble-baggingregressor">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.ensemble" title="sklearn.ensemble"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble</span></code></a>.BaggingRegressor<a class="headerlink" href="#sklearn-ensemble-baggingregressor" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.ensemble" title="sklearn.ensemble"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble</span></tt></a>.BaggingRegressor<a class="headerlink" href="#sklearn-ensemble-baggingregressor" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.ensemble.BaggingRegressor">
-<em class="property">class </em><code class="descclassname">sklearn.ensemble.</code><code class="descname">BaggingRegressor</code><span class="sig-paren">(</span><em>base_estimator=None</em>, <em>n_estimators=10</em>, <em>max_samples=1.0</em>, <em>max_features=1.0</em>, <em>bootstrap=True</em>, <em>bootstrap_features=False</em>, <em>oob_score=False</em>, <em>warm_start=False</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/ensemble/bagging.py#L727"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.ensemble.</tt><tt class="descname">BaggingRegressor</tt><big>(</big><em>base_estimator=None</em>, <em>n_estimators=10</em>, <em>max_samples=1.0</em>, <em>max_features=1.0</em>, <em>bootstrap=True</em>, <em>bootstrap_features=False</em>, <em>oob_score=False</em>, <em>warm_start=False</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>verbose=0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/ensemble/bagging.py#L719"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor" title="Permalink to this definition">¶</a></dt>
 <dd><p>A Bagging regressor.</p>
 <p>A Bagging regressor is an ensemble meta-estimator that fits base
 regressors each on random subsets of the original dataset and then
@@ -143,13 +183,13 @@ tree), by introducing randomization into its construction procedure and
 then making an ensemble out of it.</p>
 <p>This algorithm encompasses several works from the literature. When random
 subsets of the dataset are drawn as random subsets of the samples, then
-this algorithm is known as Pasting <a class="reference internal" href="#r37" id="id1">[R37]</a>. If samples are drawn with
-replacement, then the method is known as Bagging <a class="reference internal" href="#r38" id="id2">[R38]</a>. When random subsets
+this algorithm is known as Pasting <a class="reference internal" href="#r129" id="id1">[R129]</a>. If samples are drawn with
+replacement, then the method is known as Bagging <a class="reference internal" href="#r130" id="id2">[R130]</a>. When random subsets
 of the dataset are drawn as random subsets of the features, then the method
-is known as Random Subspaces <a class="reference internal" href="#r39" id="id3">[R39]</a>. Finally, when base estimators are built
+is known as Random Subspaces <a class="reference internal" href="#r131" id="id3">[R131]</a>. Finally, when base estimators are built
 on subsets of both samples and features, then the method is known as
-Random Patches <a class="reference internal" href="#r40" id="id4">[R40]</a>.</p>
-<p>Read more in the <a class="reference internal" href="../ensemble.html#bagging"><span>User Guide</span></a>.</p>
+Random Patches <a class="reference internal" href="#r132" id="id4">[R132]</a>.</p>
+<p>Read more in the <a class="reference internal" href="../ensemble.html#bagging"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -251,32 +291,32 @@ was never left out during the bootstrap. In this case,
 </tbody>
 </table>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r37" rules="none">
+<table class="docutils citation" frame="void" id="r129" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label">[R37]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id5">2</a>)</em> L. Breiman, &#8220;Pasting small votes for classification in large
+<tr><td class="label">[R129]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id5">2</a>)</em> L. Breiman, &#8220;Pasting small votes for classification in large
 databases and on-line&#8221;, Machine Learning, 36(1), 85-103, 1999.</td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r38" rules="none">
+<table class="docutils citation" frame="void" id="r130" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label">[R38]</td><td><em>(<a class="fn-backref" href="#id2">1</a>, <a class="fn-backref" href="#id6">2</a>)</em> L. Breiman, &#8220;Bagging predictors&#8221;, Machine Learning, 24(2), 123-140,
+<tr><td class="label">[R130]</td><td><em>(<a class="fn-backref" href="#id2">1</a>, <a class="fn-backref" href="#id6">2</a>)</em> L. Breiman, &#8220;Bagging predictors&#8221;, Machine Learning, 24(2), 123-140,
 1996.</td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r39" rules="none">
+<table class="docutils citation" frame="void" id="r131" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label">[R39]</td><td><em>(<a class="fn-backref" href="#id3">1</a>, <a class="fn-backref" href="#id7">2</a>)</em> T. Ho, &#8220;The random subspace method for constructing decision
+<tr><td class="label">[R131]</td><td><em>(<a class="fn-backref" href="#id3">1</a>, <a class="fn-backref" href="#id7">2</a>)</em> T. Ho, &#8220;The random subspace method for constructing decision
 forests&#8221;, Pattern Analysis and Machine Intelligence, 20(8), 832-844,
 1998.</td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r40" rules="none">
+<table class="docutils citation" frame="void" id="r132" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label">[R40]</td><td><em>(<a class="fn-backref" href="#id4">1</a>, <a class="fn-backref" href="#id8">2</a>)</em> G. Louppe and P. Geurts, &#8220;Ensembles on Random Patches&#8221;, Machine
+<tr><td class="label">[R132]</td><td><em>(<a class="fn-backref" href="#id4">1</a>, <a class="fn-backref" href="#id8">2</a>)</em> G. Louppe and P. Geurts, &#8220;Ensembles on Random Patches&#8221;, Machine
 Learning and Knowledge Discovery in Databases, 346-361, 2012.</td></tr>
 </tbody>
 </table>
@@ -287,16 +327,31 @@ Learning and Knowledge Discovery in Databases, 346-361, 2012.</td></tr>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.ensemble.BaggingRegressor.fit" title="sklearn.ensemble.BaggingRegressor.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Build a Bagging ensemble of estimators from the training    set (X, y).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.ensemble.BaggingRegressor.get_params" title="sklearn.ensemble.BaggingRegressor.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.ensemble.BaggingRegressor.predict" title="sklearn.ensemble.BaggingRegressor.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<td>Predict regression target for X.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.ensemble.BaggingRegressor.score" title="sklearn.ensemble.BaggingRegressor.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Returns the coefficient of determination R^2 of the prediction.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.ensemble.BaggingRegressor.set_params" title="sklearn.ensemble.BaggingRegressor.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.ensemble.BaggingRegressor.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>base_estimator=None</em>, <em>n_estimators=10</em>, <em>max_samples=1.0</em>, <em>max_features=1.0</em>, <em>bootstrap=True</em>, <em>bootstrap_features=False</em>, <em>oob_score=False</em>, <em>warm_start=False</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/ensemble/bagging.py#L834"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>base_estimator=None</em>, <em>n_estimators=10</em>, <em>max_samples=1.0</em>, <em>max_features=1.0</em>, <em>bootstrap=True</em>, <em>bootstrap_features=False</em>, <em>oob_score=False</em>, <em>warm_start=False</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>verbose=0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/ensemble/bagging.py#L826"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.ensemble.BaggingRegressor.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/ensemble/bagging.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/ensemble/bagging.py#L228"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.fit" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Build a Bagging ensemble of estimators from the training</dt>
 <dd>set (X, y).</dd>
@@ -335,7 +390,7 @@ sample weighting.</p>
 
 <dl class="method">
 <dt id="sklearn.ensemble.BaggingRegressor.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -360,7 +415,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.ensemble.BaggingRegressor.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/ensemble/bagging.py#L859"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/ensemble/bagging.py#L851"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict regression target for X.</p>
 <p>The predicted regression target of an input sample is computed as the
 mean predicted regression targets of the estimators in the ensemble.</p>
@@ -387,7 +442,7 @@ they are supported by the base estimator.</p>
 
 <dl class="method">
 <dt id="sklearn.ensemble.BaggingRegressor.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L325"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
@@ -426,11 +481,11 @@ would get a R^2 score of 0.0.</p>
 
 <dl class="method">
 <dt id="sklearn.ensemble.BaggingRegressor.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.BaggingRegressor.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -445,10 +500,10 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-ensemble-baggingregressor">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.ensemble.BaggingRegressor</span></code><a class="headerlink" href="#examples-using-sklearn-ensemble-baggingregressor" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example illustrates and compares the bias-variance decomposition of the expected mean squa..."><div class="figure" id="id9">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.ensemble.BaggingRegressor</span></tt><a class="headerlink" href="#examples-using-sklearn-ensemble-baggingregressor" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example illustrates and compares the bias-variance decomposition of the expected mean squa..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_bias_variance.html"><img alt="../../_images/plot_bias_variance1.png" src="../../_images/plot_bias_variance1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_bias_variance.html#example-ensemble-plot-bias-variance-py"><span>Single estimator versus bagging: bias-variance decomposition</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_bias_variance.html#example-ensemble-plot-bias-variance-py"><em>Single estimator versus bagging: bias-variance decomposition</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -465,8 +520,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.ensemble.BaggingRegressor.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.ensemble.BaggingClassifier.html">Previous
+      </a>
+    </div>
     
      </div>
 

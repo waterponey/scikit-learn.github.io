@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.metrics.average_precision_score" href="sklearn.metrics.average_precision_score.html" />
+    <link rel="prev" title="sklearn.metrics.accuracy_score" href="sklearn.metrics.accuracy_score.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.metrics.accuracy_score.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.metrics....
+        </span>
+            <span class="hiddenrellink">
+            sklearn.metrics.accuracy_score
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.auc</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-auc">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.auc</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.auc</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-auc">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.auc</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,16 +166,16 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-metrics-auc">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.auc<a class="headerlink" href="#sklearn-metrics-auc" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.auc<a class="headerlink" href="#sklearn-metrics-auc" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.auc">
-<code class="descclassname">sklearn.metrics.</code><code class="descname">auc</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>reorder=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/ranking.py#L39"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.auc" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">auc</tt><big>(</big><em>x</em>, <em>y</em>, <em>reorder=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/metrics/ranking.py#L39"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.auc" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute Area Under the Curve (AUC) using the trapezoidal rule</p>
 <p>This is a general function, given points on a curve.  For computing the
-area under the ROC-curve, see <a class="reference internal" href="sklearn.metrics.roc_auc_score.html#sklearn.metrics.roc_auc_score" title="sklearn.metrics.roc_auc_score"><code class="xref py py-func docutils literal"><span class="pre">roc_auc_score</span></code></a>.</p>
+area under the ROC-curve, see <a class="reference internal" href="sklearn.metrics.roc_auc_score.html#sklearn.metrics.roc_auc_score" title="sklearn.metrics.roc_auc_score"><tt class="xref py py-func docutils literal"><span class="pre">roc_auc_score</span></tt></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -163,9 +203,9 @@ an ROC curve. If the curve is non-ascending, the result will be wrong.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.metrics.roc_auc_score.html#sklearn.metrics.roc_auc_score" title="sklearn.metrics.roc_auc_score"><code class="xref py py-obj docutils literal"><span class="pre">roc_auc_score</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.metrics.roc_auc_score.html#sklearn.metrics.roc_auc_score" title="sklearn.metrics.roc_auc_score"><tt class="xref py py-obj docutils literal"><span class="pre">roc_auc_score</span></tt></a></dt>
 <dd>Computes the area under the ROC curve</dd>
-<dt><a class="reference internal" href="sklearn.metrics.precision_recall_curve.html#sklearn.metrics.precision_recall_curve" title="sklearn.metrics.precision_recall_curve"><code class="xref py py-obj docutils literal"><span class="pre">precision_recall_curve</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.metrics.precision_recall_curve.html#sklearn.metrics.precision_recall_curve" title="sklearn.metrics.precision_recall_curve"><tt class="xref py py-obj docutils literal"><span class="pre">precision_recall_curve</span></tt></a></dt>
 <dd>Compute precision-recall pairs for different probability thresholds</dd>
 </dl>
 </div>
@@ -182,22 +222,22 @@ an ROC curve. If the curve is non-ascending, the result will be wrong.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-auc">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.auc</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-auc" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Modeling species' geographic distributions is an important problem in conservation biology. In ..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.auc</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-auc" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Modeling species' geographic distributions is an important problem in conservation biology. In ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/applications/plot_species_distribution_modeling.html"><img alt="../../_images/plot_species_distribution_modeling1.png" src="../../_images/plot_species_distribution_modeling1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/plot_species_distribution_modeling.html#example-applications-plot-species-distribution-modeling-py"><span>Species distribution modeling</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/applications/plot_species_distribution_modeling.html#example-applications-plot-species-distribution-modeling-py"><em>Species distribution modeling</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Given a small number of observations, we want to recover which features of X are relevant to ex..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="Given a small number of observations, we want to recover which features of X are relevant to ex..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_sparse_recovery.html"><img alt="../../_images/plot_sparse_recovery1.png" src="../../_images/plot_sparse_recovery1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_sparse_recovery.html#example-linear-model-plot-sparse-recovery-py"><span>Sparse recovery: feature selection for sparse linear models</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_sparse_recovery.html#example-linear-model-plot-sparse-recovery-py"><em>Sparse recovery: feature selection for sparse linear models</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_roc_crossval.html"><img alt="../../_images/plot_roc_crossval1.png" src="../../_images/plot_roc_crossval1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc_crossval.html#example-model-selection-plot-roc-crossval-py"><span>Receiver Operating Characteristic (ROC) with cross validation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc_crossval.html#example-model-selection-plot-roc-crossval-py"><em>Receiver Operating Characteristic (ROC) with cross validation</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure" id="id4">
+</div><div class="thumbnailContainer" tooltip="Example of Receiver Operating Characteristic (ROC) metric to evaluate classifier output quality..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/model_selection/plot_roc.html"><img alt="../../_images/plot_roc1.png" src="../../_images/plot_roc1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc.html#example-model-selection-plot-roc-py"><span>Receiver Operating Characteristic (ROC)</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/model_selection/plot_roc.html#example-model-selection-plot-roc-py"><em>Receiver Operating Characteristic (ROC)</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -214,8 +254,12 @@ an ROC curve. If the curve is non-ascending, the result will be wrong.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.auc.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.metrics.accuracy_score.html">Previous
+      </a>
+    </div>
     
      </div>
 

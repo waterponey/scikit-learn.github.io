@@ -28,8 +28,39 @@ using :ref:`grid_search`.
 
 
 
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_confusion_matrix_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_confusion_matrix_002.png
+            :scale: 47
+
+
+**Script output**::
+
+  Confusion matrix, without normalization
+  [[13  0  0]
+   [ 0 10  6]
+   [ 0  0  9]]
+  Normalized confusion matrix
+  [[ 1.    0.    0.  ]
+   [ 0.    0.62  0.38]
+   [ 0.    0.    1.  ]]
+
+
+
 **Python source code:** :download:`plot_confusion_matrix.py <plot_confusion_matrix.py>`
 
 .. literalinclude:: plot_confusion_matrix.py
     :lines: 26-
+
+**Total running time of the example:**  0.29 seconds
+( 0 minutes  0.29 seconds)
     

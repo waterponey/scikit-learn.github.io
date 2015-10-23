@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        6. Strategies...
+        6. Strategies to...
         </span>
             <span class="hiddenrellink">
             6. Strategies to scale computationally: bigger data
@@ -181,7 +181,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="computational-performance">
 <span id="id1"></span><h1>7. Computational Performance<a class="headerlink" href="#computational-performance" title="Permalink to this headline">¶</a></h1>
@@ -227,23 +227,26 @@ linear algebra libraries optimizations etc.). Here we see on a setting
 with few features that independently of estimator choice the bulk mode is
 always faster, and for some of them by 1 to 2 orders of magnitude:</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="atomic_prediction_latency" src="modules/../auto_examples/applications/images/plot_prediction_latency_001.png" /></a></strong></p><p class="centered">
-<strong><a class="reference external" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="bulk_prediction_latency" src="modules/../auto_examples/applications/images/plot_prediction_latency_002.png" /></a></strong></p><p>To benchmark different estimators for your case you can simply change the
-<code class="docutils literal"><span class="pre">n_features</span></code> parameter in this example:
-<a class="reference internal" href="../auto_examples/applications/plot_prediction_latency.html#example-applications-plot-prediction-latency-py"><span>Prediction Latency</span></a>. This should give
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="atomic_prediction_latency" src="../_images/plot_prediction_latency_0011.png" style="width: 800.0px; height: 480.0px;" /></a>
+</strong></p><p class="centered">
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="bulk_prediction_latency" src="../_images/plot_prediction_latency_0021.png" style="width: 800.0px; height: 480.0px;" /></a>
+</strong></p><p>To benchmark different estimators for your case you can simply change the
+<tt class="docutils literal"><span class="pre">n_features</span></tt> parameter in this example:
+<a class="reference internal" href="../auto_examples/applications/plot_prediction_latency.html#example-applications-plot-prediction-latency-py"><em>Prediction Latency</em></a>. This should give
 you an estimate of the order of magnitude of the prediction latency.</p>
 </div>
 <div class="section" id="influence-of-the-number-of-features">
 <h3>7.1.2. Influence of the Number of Features<a class="headerlink" href="#influence-of-the-number-of-features" title="Permalink to this headline">¶</a></h3>
 <p>Obviously when the number of features increases so does the memory
-consumption of each example. Indeed, for a matrix of <img class="math" src="../_images/math/2de38926392ba23abeac75effc66c37a5f5be5fd.png" alt="M"/> instances
-with <img class="math" src="../_images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> features, the space complexity is in <img class="math" src="../_images/math/9d35315304282a8e3aecf0ddd0425b046af4fef7.png" alt="O(NM)"/>.
+consumption of each example. Indeed, for a matrix of <span class="math">M</span> instances
+with <span class="math">N</span> features, the space complexity is in <span class="math">O(NM)</span>.
 From a computing perspective it also means that the number of basic operations
 (e.g., multiplications for vector-matrix products in linear models) increases
 too. Here is a graph of the evolution of the prediction latency with the
 number of features:</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="influence_of_n_features_on_latency" src="modules/../auto_examples/applications/images/plot_prediction_latency_003.png" /></a></strong></p><p>Overall you can expect the prediction time to increase at least linearly with
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="influence_of_n_features_on_latency" src="../_images/plot_prediction_latency_0031.png" style="width: 800.0px; height: 480.0px;" /></a>
+</strong></p><p>Overall you can expect the prediction time to increase at least linearly with
 the number of features (non-linear cases can happen depending on the global
 memory footprint and estimator).</p>
 </div>
@@ -275,7 +278,7 @@ with many CPUs and an optimized BLAS implementation.</p>
 than 90% you can probably benefit from sparse formats. Check Scipy&#8217;s sparse
 matrix formats <a class="reference external" href="http://docs.scipy.org/doc/scipy/reference/sparse.html">documentation</a>
 for more information on how to build (or convert your data to) sparse matrix
-formats. Most of the time the <code class="docutils literal"><span class="pre">CSR</span></code> and <code class="docutils literal"><span class="pre">CSC</span></code> formats work best.</p>
+formats. Most of the time the <tt class="docutils literal"><span class="pre">CSR</span></tt> and <tt class="docutils literal"><span class="pre">CSC</span></tt> formats work best.</p>
 </div>
 <div class="section" id="influence-of-the-model-complexity">
 <h3>7.1.4. Influence of the Model Complexity<a class="headerlink" href="#influence-of-the-model-complexity" title="Permalink to this headline">¶</a></h3>
@@ -284,38 +287,41 @@ latency are supposed to increase. Increasing predictive power is usually
 interesting, but for many applications we would better not increase
 prediction latency too much. We will now review this idea for different
 families of supervised models.</p>
-<p>For <a class="reference internal" href="classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></code></a> (e.g. Lasso, ElasticNet,
+<p>For <a class="reference internal" href="classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a> (e.g. Lasso, ElasticNet,
 SGDClassifier/Regressor, Ridge &amp; RidgeClassifier,
 PassiveAgressiveClassifier/Regressor, LinearSVC, LogisticRegression...) the
 decision function that is applied at prediction time is the same (a dot product)
 , so latency should be equivalent.</p>
 <p>Here is an example using
-<code class="xref py py-class docutils literal"><span class="pre">sklearn.linear_model.stochastic_gradient.SGDClassifier</span></code> with the
-<code class="docutils literal"><span class="pre">elasticnet</span></code> penalty. The regularization strength is globally controlled by
-the <code class="docutils literal"><span class="pre">alpha</span></code> parameter. With a sufficiently high <code class="docutils literal"><span class="pre">alpha</span></code>,
-one can then increase the <code class="docutils literal"><span class="pre">l1_ratio</span></code> parameter of <code class="docutils literal"><span class="pre">elasticnet</span></code> to
+<tt class="xref py py-class docutils literal"><span class="pre">sklearn.linear_model.stochastic_gradient.SGDClassifier</span></tt> with the
+<tt class="docutils literal"><span class="pre">elasticnet</span></tt> penalty. The regularization strength is globally controlled by
+the <tt class="docutils literal"><span class="pre">alpha</span></tt> parameter. With a sufficiently high <tt class="docutils literal"><span class="pre">alpha</span></tt>,
+one can then increase the <tt class="docutils literal"><span class="pre">l1_ratio</span></tt> parameter of <tt class="docutils literal"><span class="pre">elasticnet</span></tt> to
 enforce various levels of sparsity in the model coefficients. Higher sparsity
 here is interpreted as less model complexity as we need fewer coefficients to
 describe it fully. Of course sparsity influences in turn the prediction time
 as the sparse dot-product takes time roughly proportional to the number of
 non-zero coefficients.</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="en_model_complexity" src="modules/../auto_examples/applications/images/plot_model_complexity_influence_001.png" /></a></strong></p><p>For the <a class="reference internal" href="classes.html#module-sklearn.svm" title="sklearn.svm"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></code></a> family of algorithms with a non-linear kernel,
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="en_model_complexity" src="../_images/plot_model_complexity_influence_0011.png" style="width: 960.0px; height: 480.0px;" /></a>
+</strong></p><p>For the <a class="reference internal" href="classes.html#module-sklearn.svm" title="sklearn.svm"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></tt></a> family of algorithms with a non-linear kernel,
 the latency is tied to the number of support vectors (the fewer the faster).
 Latency and throughput should (asymptotically) grow linearly with the number
 of support vectors in a SVC or SVR model. The kernel will also influence the
 latency as it is used to compute the projection of the input vector once per
-support vector. In the following graph the <code class="docutils literal"><span class="pre">nu</span></code> parameter of
-<code class="xref py py-class docutils literal"><span class="pre">sklearn.svm.classes.NuSVR</span></code> was used to influence the number of
+support vector. In the following graph the <tt class="docutils literal"><span class="pre">nu</span></tt> parameter of
+<tt class="xref py py-class docutils literal"><span class="pre">sklearn.svm.classes.NuSVR</span></tt> was used to influence the number of
 support vectors.</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="nusvr_model_complexity" src="modules/../auto_examples/applications/images/plot_model_complexity_influence_002.png" /></a></strong></p><p>For <a class="reference internal" href="classes.html#module-sklearn.ensemble" title="sklearn.ensemble"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble</span></code></a> of trees (e.g. RandomForest, GBT,
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="nusvr_model_complexity" src="../_images/plot_model_complexity_influence_0021.png" style="width: 960.0px; height: 480.0px;" /></a>
+</strong></p><p>For <a class="reference internal" href="classes.html#module-sklearn.ensemble" title="sklearn.ensemble"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble</span></tt></a> of trees (e.g. RandomForest, GBT,
 ExtraTrees etc) the number of trees and their depth play the most
 important role. Latency and throughput should scale linearly with the number
-of trees. In this case we used directly the <code class="docutils literal"><span class="pre">n_estimators</span></code> parameter of
-<code class="xref py py-class docutils literal"><span class="pre">sklearn.ensemble.gradient_boosting.GradientBoostingRegressor</span></code>.</p>
+of trees. In this case we used directly the <tt class="docutils literal"><span class="pre">n_estimators</span></tt> parameter of
+<tt class="xref py py-class docutils literal"><span class="pre">sklearn.ensemble.gradient_boosting.GradientBoostingRegressor</span></tt>.</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="gbt_model_complexity" src="modules/../auto_examples/applications/images/plot_model_complexity_influence_003.png" /></a></strong></p><p>In any case be warned that decreasing model complexity can hurt accuracy as
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_model_complexity_influence.html"><img alt="gbt_model_complexity" src="../_images/plot_model_complexity_influence_0031.png" style="width: 960.0px; height: 480.0px;" /></a>
+</strong></p><p>In any case be warned that decreasing model complexity can hurt accuracy as
 mentioned above. For instance a non-linearly separable problem can be handled
 with a speedy linear model but prediction power will very likely suffer in
 the process.</p>
@@ -334,7 +340,8 @@ the chosen model.</p>
 <blockquote>
 <div></div></blockquote>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/applications/plot_out_of_core_classification.html"><img alt="prediction_time" src="modules/../auto_examples/applications/images/plot_out_of_core_classification_004.png" /></a></strong></p><p>In many cases it is thus recommended to carefully time and profile your
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_out_of_core_classification.html"><img alt="prediction_time" src="../_images/plot_out_of_core_classification_0041.png" style="width: 640.0px; height: 480.0px;" /></a>
+</strong></p><p>In many cases it is thus recommended to carefully time and profile your
 feature extraction code as it may be a good place to start optimizing when
 your overall latency is too slow for your application.</p>
 </div>
@@ -344,10 +351,11 @@ your overall latency is too slow for your application.</p>
 <p>Another important metric to care about when sizing production systems is the
 throughput i.e. the number of predictions you can make in a given amount of
 time. Here is a benchmark from the
-<a class="reference internal" href="../auto_examples/applications/plot_prediction_latency.html#example-applications-plot-prediction-latency-py"><span>Prediction Latency</span></a> example that measures
+<a class="reference internal" href="../auto_examples/applications/plot_prediction_latency.html#example-applications-plot-prediction-latency-py"><em>Prediction Latency</em></a> example that measures
 this quantity for a number of estimators on synthetic data:</p>
 <p class="centered">
-<strong><a class="reference external" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="throughput_benchmark" src="modules/../auto_examples/applications/images/plot_prediction_latency_004.png" /></a></strong></p><p>These throughputs are achieved on a single process. An obvious way to
+<strong><a class="reference external image-reference" href="../auto_examples/applications/plot_prediction_latency.html"><img alt="throughput_benchmark" src="../_images/plot_prediction_latency_0041.png" style="width: 800.0px; height: 480.0px;" /></a>
+</strong></p><p>These throughputs are achieved on a single process. An obvious way to
 increase the throughput of your application is to spawn additional instances
 (usually processes in Python because of the
 <a class="reference external" href="https://wiki.python.org/moin/GlobalInterpreterLock">GIL</a>) that share the
@@ -365,9 +373,9 @@ Basically, you ought to make sure that Numpy is built using an optimized <a clas
 <a class="reference external" href="http://en.wikipedia.org/wiki/LAPACK">LAPACK</a> library.</p>
 <p>Not all models benefit from optimized BLAS and Lapack implementations. For
 instance models based on (randomized) decision trees typically do not rely on
-BLAS calls in their inner loops, nor do kernel SVMs (<code class="docutils literal"><span class="pre">SVC</span></code>, <code class="docutils literal"><span class="pre">SVR</span></code>,
-<code class="docutils literal"><span class="pre">NuSVC</span></code>, <code class="docutils literal"><span class="pre">NuSVR</span></code>).  On the other hand a linear model implemented with a
-BLAS DGEMM call (via <code class="docutils literal"><span class="pre">numpy.dot</span></code>) will typically benefit hugely from a tuned
+BLAS calls in their inner loops, nor do kernel SVMs (<tt class="docutils literal"><span class="pre">SVC</span></tt>, <tt class="docutils literal"><span class="pre">SVR</span></tt>,
+<tt class="docutils literal"><span class="pre">NuSVC</span></tt>, <tt class="docutils literal"><span class="pre">NuSVR</span></tt>).  On the other hand a linear model implemented with a
+BLAS DGEMM call (via <tt class="docutils literal"><span class="pre">numpy.dot</span></tt>) will typically benefit hugely from a tuned
 BLAS implementation and lead to orders of magnitude speedup over a
 non-optimized BLAS.</p>
 <p>You can display the BLAS / LAPACK implementation used by your NumPy / SciPy /
@@ -395,17 +403,17 @@ Debian / Ubuntu.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p>Multithreaded BLAS libraries sometimes conflict with Python&#8217;s
-<code class="docutils literal"><span class="pre">multiprocessing</span></code> module, which is used by e.g. <code class="docutils literal"><span class="pre">GridSearchCV</span></code> and
-most other estimators that take an <code class="docutils literal"><span class="pre">n_jobs</span></code> argument (with the exception
-of <code class="docutils literal"><span class="pre">SGDClassifier</span></code>, <code class="docutils literal"><span class="pre">SGDRegressor</span></code>, <code class="docutils literal"><span class="pre">Perceptron</span></code>,
-<code class="docutils literal"><span class="pre">PassiveAggressiveClassifier</span></code> and tree-based methods such as random
+<tt class="docutils literal"><span class="pre">multiprocessing</span></tt> module, which is used by e.g. <tt class="docutils literal"><span class="pre">GridSearchCV</span></tt> and
+most other estimators that take an <tt class="docutils literal"><span class="pre">n_jobs</span></tt> argument (with the exception
+of <tt class="docutils literal"><span class="pre">SGDClassifier</span></tt>, <tt class="docutils literal"><span class="pre">SGDRegressor</span></tt>, <tt class="docutils literal"><span class="pre">Perceptron</span></tt>,
+<tt class="docutils literal"><span class="pre">PassiveAggressiveClassifier</span></tt> and tree-based methods such as random
 forests). This is true of Apple&#8217;s Accelerate and OpenBLAS when built with
 OpenMP support.</p>
 <p>Besides scikit-learn, NumPy and SciPy also use BLAS internally, as
 explained earlier.</p>
-<p class="last">If you experience hanging subprocesses with <code class="docutils literal"><span class="pre">n_jobs&gt;1</span></code> or <code class="docutils literal"><span class="pre">n_jobs=-1</span></code>,
-make sure you have a single-threaded BLAS library, or set <code class="docutils literal"><span class="pre">n_jobs=1</span></code>,
-or upgrade to Python 3.4 which has a new version of <code class="docutils literal"><span class="pre">multiprocessing</span></code>
+<p class="last">If you experience hanging subprocesses with <tt class="docutils literal"><span class="pre">n_jobs&gt;1</span></tt> or <tt class="docutils literal"><span class="pre">n_jobs=-1</span></tt>,
+make sure you have a single-threaded BLAS library, or set <tt class="docutils literal"><span class="pre">n_jobs=1</span></tt>,
+or upgrade to Python 3.4 which has a new version of <tt class="docutils literal"><span class="pre">multiprocessing</span></tt>
 that should be immune to this problem.</p>
 </div>
 </div>
@@ -415,16 +423,16 @@ that should be immune to this problem.</p>
 In this context it means that we want to control the model sparsity (i.e. the
 number of non-zero coordinates in the model vectors). It is generally a good
 idea to combine model sparsity with sparse input data representation.</p>
-<p>Here is sample code that illustrates the use of the <code class="docutils literal"><span class="pre">sparsify()</span></code> method:</p>
+<p>Here is sample code that illustrates the use of the <tt class="docutils literal"><span class="pre">sparsify()</span></tt> method:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">clf</span> <span class="o">=</span> <span class="n">SGDRegressor</span><span class="p">(</span><span class="n">penalty</span><span class="o">=</span><span class="s">&#39;elasticnet&#39;</span><span class="p">,</span> <span class="n">l1_ratio</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span><span class="o">.</span><span class="n">sparsify</span><span class="p">()</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>In this example we prefer the <code class="docutils literal"><span class="pre">elasticnet</span></code> penalty as it is often a good
+<p>In this example we prefer the <tt class="docutils literal"><span class="pre">elasticnet</span></tt> penalty as it is often a good
 compromise between model compactness and prediction power. One can also
-further tune the <code class="docutils literal"><span class="pre">l1_ratio</span></code> parameter (in combination with the
-regularization strength <code class="docutils literal"><span class="pre">alpha</span></code>) to control this tradeoff.</p>
+further tune the <tt class="docutils literal"><span class="pre">l1_ratio</span></tt> parameter (in combination with the
+regularization strength <tt class="docutils literal"><span class="pre">alpha</span></tt>) to control this tradeoff.</p>
 <p>A typical <a class="reference external" href="https://github.com/scikit-learn/scikit-learn/tree/master/benchmarks/bench_sparsify.py">benchmark</a>
 on synthetic data yields a &gt;30% decrease in latency when both the model and
 input are sparse (with 0.000024 and 0.027400 non-zero coefficients ratio
@@ -448,7 +456,7 @@ if the raw data come from a database, it can make it possible to write simpler
 and faster queries or reduce I/O usage by making the queries return lighter
 records.
 At the moment, reshaping needs to be performed manually in scikit-learn.
-In the case of sparse input (particularly in <code class="docutils literal"><span class="pre">CSR</span></code> format), it is generally
+In the case of sparse input (particularly in <tt class="docutils literal"><span class="pre">CSR</span></tt> format), it is generally
 sufficient to not generate the relevant features, leaving their columns empty.</p>
 </div>
 <div class="section" id="links">

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -163,14 +163,29 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="cross-validation-on-diabetes-dataset-exercise">
 <span id="example-exercises-plot-cv-diabetes-py"></span><h1>Cross-validation on diabetes Dataset Exercise<a class="headerlink" href="#cross-validation-on-diabetes-dataset-exercise" title="Permalink to this headline">¶</a></h1>
 <p>A tutorial exercise which uses cross-validation with linear models.</p>
-<p>This exercise is used in the <a class="reference internal" href="../../tutorial/statistical_inference/model_selection.html#cv-estimators-tut"><span>Cross-validated estimators</span></a> part of the
-<a class="reference internal" href="../../tutorial/statistical_inference/model_selection.html#model-selection-tut"><span>Model selection: choosing estimators and their parameters</span></a> section of the <a class="reference internal" href="../../tutorial/statistical_inference/index.html#stat-learn-tut-index"><span>A tutorial on statistical-learning for scientific data processing</span></a>.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_cv_diabetes.py"><code class="xref download docutils literal"><span class="pre">plot_cv_diabetes.py</span></code></a></p>
+<p>This exercise is used in the <a class="reference internal" href="../../tutorial/statistical_inference/model_selection.html#cv-estimators-tut"><em>Cross-validated estimators</em></a> part of the
+<a class="reference internal" href="../../tutorial/statistical_inference/model_selection.html#model-selection-tut"><em>Model selection: choosing estimators and their parameters</em></a> section of the <a class="reference internal" href="../../tutorial/statistical_inference/index.html#stat-learn-tut-index"><em>A tutorial on statistical-learning for scientific data processing</em></a>.</p>
+<img alt="../../_images/plot_cv_diabetes_001.png" class="align-center" src="../../_images/plot_cv_diabetes_001.png" />
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Answer to the bonus question: how much can you trust the selection of alpha?
+
+Alpha parameters maximising the generalization score on different
+subsets of the data:
+[fold 0] alpha: 0.10405, score: 0.53573
+[fold 1] alpha: 0.05968, score: 0.16278
+[fold 2] alpha: 0.10405, score: 0.44437
+
+Answer: Not very much since we obtained different alphas for different
+subsets of the data and moreover, the scores for these alphas differ
+quite substantially.
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_cv_diabetes.py"><tt class="xref download docutils literal"><span class="pre">plot_cv_diabetes.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">print_function</span>
 <span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
@@ -234,6 +249,8 @@
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  0.43 seconds
+( 0 minutes  0.43 seconds)</p>
 </div>
 
 

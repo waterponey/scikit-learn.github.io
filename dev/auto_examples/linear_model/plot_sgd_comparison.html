@@ -37,7 +37,7 @@
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
     <link rel="next" title="Logit function" href="plot_logistic.html" />
-    <link rel="prev" title="Ordinary Least Squares and Ridge Regression Variance" href="plot_ols_ridge_variance.html" />
+    <link rel="prev" title="Robust linear model estimation using RANSAC" href="plot_ransac.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_ols_ridge_variance.html"
+        <a href="plot_ransac.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Ordinary Leas...
+        Robust linear mo...
         </span>
             <span class="hiddenrellink">
-            Ordinary Least Squares and Ridge Regression Variance
+            Robust linear model estimation using RANSAC
             </span>
         </a>
         </div>
@@ -163,13 +163,23 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="comparing-various-online-solvers">
 <span id="example-linear-model-plot-sgd-comparison-py"></span><h1>Comparing various online solvers<a class="headerlink" href="#comparing-various-online-solvers" title="Permalink to this headline">¶</a></h1>
 <p>An example showing how different online solvers perform
 on the hand-written digits dataset.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_sgd_comparison.py"><code class="xref download docutils literal"><span class="pre">plot_sgd_comparison.py</span></code></a></p>
+<img alt="../../_images/plot_sgd_comparison_001.png" class="align-center" src="../../_images/plot_sgd_comparison_001.png" />
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>training SGD
+training ASGD
+training Perceptron
+training Passive-Aggressive I
+training Passive-Aggressive II
+training SAG
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_sgd_comparison.py"><tt class="xref download docutils literal"><span class="pre">plot_sgd_comparison.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Author: Rob Zinkov &lt;rob at zinkov dot com&gt;</span>
 <span class="c"># License: BSD 3 clause</span>
 
@@ -221,6 +231,8 @@ on the hand-written digits dataset.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  7.31 seconds
+( 0 minutes  7.31 seconds)</p>
 </div>
 
 
@@ -238,7 +250,7 @@ on the hand-written digits dataset.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_ols_ridge_variance.html">Previous
+      <a href="plot_ransac.html">Previous
       </a>
     </div>
     

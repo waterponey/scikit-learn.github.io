@@ -8,7 +8,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
   
-    <title>sklearn.linear_model.OrthogonalMatchingPursuitCV &mdash; scikit-learn 0.18.dev0 documentation</title>
+    <title>3.2.4.1.8. sklearn.linear_model.OrthogonalMatchingPursuitCV &mdash; scikit-learn 0.18.dev0 documentation</title>
   <!-- htmltitle is before nature.css - we use this hack to load bootstrap first -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../../_static/css/bootstrap.min.css" media="screen" />
@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.linear_model.PassiveAggressiveClassifier" href="sklearn.linear_model.PassiveAggressiveClassifier.html" />
+    <link rel="prev" title="sklearn.linear_model.OrthogonalMatchingPursuit" href="sklearn.linear_model.OrthogonalMatchingPursuit.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.linear_model.OrthogonalMatchingPursuit.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.linear_m...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.linear_model.OrthogonalMatchingPursuit
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.linear_model</span></code>.OrthogonalMatchingPursuitCV</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-linear-model-orthogonalmatchingpursuitcv">Examples using <code class="docutils literal"><span class="pre">sklearn.linear_model.OrthogonalMatchingPursuitCV</span></code></a></li>
+<li><a class="reference internal" href="#">3.2.4.1.8. <tt class="docutils literal"><span class="pre">sklearn.linear_model</span></tt>.OrthogonalMatchingPursuitCV</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-linear-model-orthogonalmatchingpursuitcv">3.2.4.1.8.1. Examples using <tt class="docutils literal"><span class="pre">sklearn.linear_model.OrthogonalMatchingPursuitCV</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-linear-model-orthogonalmatchingpursuitcv">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></code></a>.OrthogonalMatchingPursuitCV<a class="headerlink" href="#sklearn-linear-model-orthogonalmatchingpursuitcv" title="Permalink to this headline">¶</a></h1>
+<h1>3.2.4.1.8. <a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.OrthogonalMatchingPursuitCV<a class="headerlink" href="#sklearn-linear-model-orthogonalmatchingpursuitcv" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.linear_model.OrthogonalMatchingPursuitCV">
-<em class="property">class </em><code class="descclassname">sklearn.linear_model.</code><code class="descname">OrthogonalMatchingPursuitCV</code><span class="sig-paren">(</span><em>copy=True</em>, <em>fit_intercept=True</em>, <em>normalize=True</em>, <em>max_iter=None</em>, <em>cv=None</em>, <em>n_jobs=1</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/omp.py#L736"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">OrthogonalMatchingPursuitCV</tt><big>(</big><em>copy=True</em>, <em>fit_intercept=True</em>, <em>normalize=True</em>, <em>max_iter=None</em>, <em>cv=None</em>, <em>n_jobs=1</em>, <em>verbose=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/omp.py#L736"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV" title="Permalink to this definition">¶</a></dt>
 <dd><p>Cross-validated Orthogonal Matching Pursuit model (OMP)</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -157,7 +197,7 @@ to false, no intercept will be used in calculations
 <p><strong>max_iter</strong> : integer, optional</p>
 <blockquote>
 <div><p>Maximum numbers of iterations to perform, therefore maximum features
-to include. 10% of <code class="docutils literal"><span class="pre">n_features</span></code> but at least 5 if available.</p>
+to include. 10% of <tt class="docutils literal"><span class="pre">n_features</span></tt> but at least 5 if available.</p>
 </div></blockquote>
 <p><strong>cv</strong> : int, cross-validation generator or an iterable, optional</p>
 <blockquote>
@@ -171,13 +211,13 @@ Possible inputs for cv are:</p>
 <li>An iterable yielding train/test splits.</li>
 </ul>
 </div></blockquote>
-<p>For integer/None inputs, <code class="xref py py-class docutils literal"><span class="pre">KFold</span></code> is used.</p>
-<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a> for the various
+<p>For integer/None inputs, <tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt> is used.</p>
+<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a> for the various
 cross-validation strategies that can be used here.</p>
 </div></blockquote>
 <p><strong>n_jobs</strong> : integer, optional</p>
 <blockquote>
-<div><p>Number of CPUs to use during the cross validation. If <code class="docutils literal"><span class="pre">-1</span></code>, use
+<div><p>Number of CPUs to use during the cross validation. If <tt class="docutils literal"><span class="pre">-1</span></tt>, use
 all the CPUs</p>
 </div></blockquote>
 <p><strong>verbose</strong> : boolean or integer, optional</p>
@@ -211,7 +251,7 @@ the best hyperparameters got by cross-validating across all folds.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.linear_model.orthogonal_mp.html#sklearn.linear_model.orthogonal_mp" title="sklearn.linear_model.orthogonal_mp"><code class="xref py py-obj docutils literal"><span class="pre">orthogonal_mp</span></code></a>, <a class="reference internal" href="sklearn.linear_model.orthogonal_mp_gram.html#sklearn.linear_model.orthogonal_mp_gram" title="sklearn.linear_model.orthogonal_mp_gram"><code class="xref py py-obj docutils literal"><span class="pre">orthogonal_mp_gram</span></code></a>, <a class="reference internal" href="sklearn.linear_model.lars_path.html#sklearn.linear_model.lars_path" title="sklearn.linear_model.lars_path"><code class="xref py py-obj docutils literal"><span class="pre">lars_path</span></code></a>, <a class="reference internal" href="sklearn.linear_model.Lars.html#sklearn.linear_model.Lars" title="sklearn.linear_model.Lars"><code class="xref py py-obj docutils literal"><span class="pre">Lars</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LassoLars.html#sklearn.linear_model.LassoLars" title="sklearn.linear_model.LassoLars"><code class="xref py py-obj docutils literal"><span class="pre">LassoLars</span></code></a>, <a class="reference internal" href="sklearn.linear_model.OrthogonalMatchingPursuit.html#sklearn.linear_model.OrthogonalMatchingPursuit" title="sklearn.linear_model.OrthogonalMatchingPursuit"><code class="xref py py-obj docutils literal"><span class="pre">OrthogonalMatchingPursuit</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LarsCV.html#sklearn.linear_model.LarsCV" title="sklearn.linear_model.LarsCV"><code class="xref py py-obj docutils literal"><span class="pre">LarsCV</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LassoLarsCV.html#sklearn.linear_model.LassoLarsCV" title="sklearn.linear_model.LassoLarsCV"><code class="xref py py-obj docutils literal"><span class="pre">LassoLarsCV</span></code></a>, <code class="xref py py-obj docutils literal"><span class="pre">decomposition.sparse_encode</span></code></p>
+<p class="last"><a class="reference internal" href="sklearn.linear_model.orthogonal_mp.html#sklearn.linear_model.orthogonal_mp" title="sklearn.linear_model.orthogonal_mp"><tt class="xref py py-obj docutils literal"><span class="pre">orthogonal_mp</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.orthogonal_mp_gram.html#sklearn.linear_model.orthogonal_mp_gram" title="sklearn.linear_model.orthogonal_mp_gram"><tt class="xref py py-obj docutils literal"><span class="pre">orthogonal_mp_gram</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.lars_path.html#sklearn.linear_model.lars_path" title="sklearn.linear_model.lars_path"><tt class="xref py py-obj docutils literal"><span class="pre">lars_path</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.Lars.html#sklearn.linear_model.Lars" title="sklearn.linear_model.Lars"><tt class="xref py py-obj docutils literal"><span class="pre">Lars</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoLars.html#sklearn.linear_model.LassoLars" title="sklearn.linear_model.LassoLars"><tt class="xref py py-obj docutils literal"><span class="pre">LassoLars</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.OrthogonalMatchingPursuit.html#sklearn.linear_model.OrthogonalMatchingPursuit" title="sklearn.linear_model.OrthogonalMatchingPursuit"><tt class="xref py py-obj docutils literal"><span class="pre">OrthogonalMatchingPursuit</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LarsCV.html#sklearn.linear_model.LarsCV" title="sklearn.linear_model.LarsCV"><tt class="xref py py-obj docutils literal"><span class="pre">LarsCV</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoLarsCV.html#sklearn.linear_model.LassoLarsCV" title="sklearn.linear_model.LassoLarsCV"><tt class="xref py py-obj docutils literal"><span class="pre">LassoLarsCV</span></tt></a>, <tt class="xref py py-obj docutils literal"><span class="pre">decomposition.sparse_encode</span></tt></p>
 </div>
 <p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
@@ -220,16 +260,34 @@ the best hyperparameters got by cross-validating across all folds.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.decision_function" title="sklearn.linear_model.OrthogonalMatchingPursuitCV.decision_function"><tt class="xref py py-obj docutils literal"><span class="pre">decision_function</span></tt></a>(*args,&nbsp;**kwargs)</td>
+<td>DEPRECATED:  and will be removed in 0.19.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.fit" title="sklearn.linear_model.OrthogonalMatchingPursuitCV.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y)</td>
+<td>Fit the model using X, y as training data.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.get_params" title="sklearn.linear_model.OrthogonalMatchingPursuitCV.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.predict" title="sklearn.linear_model.OrthogonalMatchingPursuitCV.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<td>Predict using the linear model</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.score" title="sklearn.linear_model.OrthogonalMatchingPursuitCV.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Returns the coefficient of determination R^2 of the prediction.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.set_params" title="sklearn.linear_model.OrthogonalMatchingPursuitCV.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.linear_model.OrthogonalMatchingPursuitCV.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>copy=True</em>, <em>fit_intercept=True</em>, <em>normalize=True</em>, <em>max_iter=None</em>, <em>cv=None</em>, <em>n_jobs=1</em>, <em>verbose=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/omp.py#L809"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>copy=True</em>, <em>fit_intercept=True</em>, <em>normalize=True</em>, <em>max_iter=None</em>, <em>cv=None</em>, <em>n_jobs=1</em>, <em>verbose=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/omp.py#L809"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.OrthogonalMatchingPursuitCV.decision_function">
-<code class="descname">decision_function</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.decision_function" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decision_function</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/utils/deprecation.py#L69"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>DEPRECATED:  and will be removed in 0.19.</p>
 <p>Decision function of the linear model.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -254,7 +312,7 @@ the best hyperparameters got by cross-validating across all folds.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.OrthogonalMatchingPursuitCV.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/omp.py#L819"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/omp.py#L819"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model using X, y as training data.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -282,7 +340,7 @@ the best hyperparameters got by cross-validating across all folds.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.OrthogonalMatchingPursuitCV.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -307,7 +365,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.OrthogonalMatchingPursuitCV.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/base.py#L186"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/base.py#L188"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict using the linear model</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -331,7 +389,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.OrthogonalMatchingPursuitCV.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L325"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
@@ -370,11 +428,11 @@ would get a R^2 score of 0.0.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.OrthogonalMatchingPursuitCV.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.OrthogonalMatchingPursuitCV.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -389,10 +447,10 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-linear-model-orthogonalmatchingpursuitcv">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.linear_model.OrthogonalMatchingPursuitCV</span></code><a class="headerlink" href="#examples-using-sklearn-linear-model-orthogonalmatchingpursuitcv" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Using orthogonal matching pursuit for recovering a sparse signal from a noisy measurement encod..."><div class="figure" id="id1">
+<h2>3.2.4.1.8.1. Examples using <tt class="docutils literal"><span class="pre">sklearn.linear_model.OrthogonalMatchingPursuitCV</span></tt><a class="headerlink" href="#examples-using-sklearn-linear-model-orthogonalmatchingpursuitcv" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Using orthogonal matching pursuit for recovering a sparse signal from a noisy measurement encod..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_omp.html"><img alt="../../_images/plot_omp1.png" src="../../_images/plot_omp1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_omp.html#example-linear-model-plot-omp-py"><span>Orthogonal Matching Pursuit</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_omp.html#example-linear-model-plot-omp-py"><em>Orthogonal Matching Pursuit</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -409,8 +467,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.linear_model.OrthogonalMatchingPursuitCV.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.linear_model.OrthogonalMatchingPursuit.html">Previous
+      </a>
+    </div>
     
      </div>
 

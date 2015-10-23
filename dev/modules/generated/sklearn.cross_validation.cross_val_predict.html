@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.cross...
+        sklearn.cross_va...
         </span>
             <span class="hiddenrellink">
             sklearn.cross_validation.cross_val_score
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cross_validation</span></code>.cross_val_predict</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-cross-val-predict">Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.cross_val_predict</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cross_validation</span></tt>.cross_val_predict</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-cross-validation-cross-val-predict">Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.cross_val_predict</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -166,15 +166,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-cross-validation-cross-val-predict">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></code></a>.cross_val_predict<a class="headerlink" href="#sklearn-cross-validation-cross-val-predict" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cross_validation" title="sklearn.cross_validation"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cross_validation</span></tt></a>.cross_val_predict<a class="headerlink" href="#sklearn-cross-validation-cross-val-predict" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.cross_validation.cross_val_predict">
-<code class="descclassname">sklearn.cross_validation.</code><code class="descname">cross_val_predict</code><span class="sig-paren">(</span><em>estimator</em>, <em>X</em>, <em>y=None</em>, <em>cv=None</em>, <em>n_jobs=1</em>, <em>verbose=0</em>, <em>fit_params=None</em>, <em>pre_dispatch='2*n_jobs'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cross_validation.py#L1193"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.cross_val_predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.cross_validation.</tt><tt class="descname">cross_val_predict</tt><big>(</big><em>estimator</em>, <em>X</em>, <em>y=None</em>, <em>cv=None</em>, <em>n_jobs=1</em>, <em>verbose=0</em>, <em>fit_params=None</em>, <em>pre_dispatch='2*n_jobs'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cross_validation.py#L1186"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cross_validation.cross_val_predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate cross-validated estimates for each input data point</p>
-<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -204,10 +204,10 @@ Possible inputs for cv are:</p>
 <li>An iterable yielding train/test splits.</li>
 </ul>
 </div></blockquote>
-<p>For integer/None inputs, if <code class="docutils literal"><span class="pre">y</span></code> is binary or multiclass,
-<a class="reference internal" href="sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><code class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></code></a> used. If the estimator is a classifier
-or if <code class="docutils literal"><span class="pre">y</span></code> is neither binary nor multiclass, <a class="reference internal" href="sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><code class="xref py py-class docutils literal"><span class="pre">KFold</span></code></a> is used.</p>
-<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><span>User Guide</span></a> for the various
+<p>For integer/None inputs, if <tt class="docutils literal"><span class="pre">y</span></tt> is binary or multiclass,
+<a class="reference internal" href="sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold" title="sklearn.cross_validation.StratifiedKFold"><tt class="xref py py-class docutils literal"><span class="pre">StratifiedKFold</span></tt></a> used. If the estimator is a classifier
+or if <tt class="docutils literal"><span class="pre">y</span></tt> is neither binary nor multiclass, <a class="reference internal" href="sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold" title="sklearn.cross_validation.KFold"><tt class="xref py py-class docutils literal"><span class="pre">KFold</span></tt></a> is used.</p>
+<p>Refer <a class="reference internal" href="../cross_validation.html#cross-validation"><em>User Guide</em></a> for the various
 cross-validation strategies that can be used here.</p>
 </div></blockquote>
 <p><strong>n_jobs</strong> : integer, optional</p>
@@ -255,10 +255,10 @@ as in &#8216;2*n_jobs&#8217;</li>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-cross-validation-cross-val-predict">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.cross_validation.cross_val_predict</span></code><a class="headerlink" href="#examples-using-sklearn-cross-validation-cross-val-predict" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="This example shows how to use `cross_val_predict` to visualize prediction errors."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.cross_validation.cross_val_predict</span></tt><a class="headerlink" href="#examples-using-sklearn-cross-validation-cross-val-predict" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="This example shows how to use `cross_val_predict` to visualize prediction errors."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_cv_predict.html"><img alt="../../_images/plot_cv_predict1.png" src="../../_images/plot_cv_predict1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_cv_predict.html#example-plot-cv-predict-py"><span>Plotting Cross-Validated Predictions</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_cv_predict.html#example-plot-cv-predict-py"><em>Plotting Cross-Validated Predictions</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

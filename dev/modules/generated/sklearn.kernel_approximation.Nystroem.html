@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.kerne...
+        sklearn.kernel_a...
         </span>
             <span class="hiddenrellink">
             sklearn.kernel_approximation.AdditiveChi2Sampler
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.kernel_approximation</span></code>.Nystroem</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-kernel-approximation-nystroem">Examples using <code class="docutils literal"><span class="pre">sklearn.kernel_approximation.Nystroem</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.kernel_approximation</span></tt>.Nystroem</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-kernel-approximation-nystroem">Examples using <tt class="docutils literal"><span class="pre">sklearn.kernel_approximation.Nystroem</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -166,17 +166,17 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-kernel-approximation-nystroem">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.kernel_approximation" title="sklearn.kernel_approximation"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.kernel_approximation</span></code></a>.Nystroem<a class="headerlink" href="#sklearn-kernel-approximation-nystroem" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.kernel_approximation" title="sklearn.kernel_approximation"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.kernel_approximation</span></tt></a>.Nystroem<a class="headerlink" href="#sklearn-kernel-approximation-nystroem" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.kernel_approximation.Nystroem">
-<em class="property">class </em><code class="descclassname">sklearn.kernel_approximation.</code><code class="descname">Nystroem</code><span class="sig-paren">(</span><em>kernel='rbf'</em>, <em>gamma=None</em>, <em>coef0=1</em>, <em>degree=3</em>, <em>kernel_params=None</em>, <em>n_components=100</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_approximation.py#L361"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.kernel_approximation.</tt><tt class="descname">Nystroem</tt><big>(</big><em>kernel='rbf'</em>, <em>gamma=None</em>, <em>coef0=1</em>, <em>degree=3</em>, <em>kernel_params=None</em>, <em>n_components=100</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/kernel_approximation.py#L361"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem" title="Permalink to this definition">¶</a></dt>
 <dd><p>Approximate a kernel map using a subset of the training data.</p>
 <p>Constructs an approximate feature map for an arbitrary kernel
 using a subset of the data as basis.</p>
-<p>Read more in the <a class="reference internal" href="../kernel_approximation.html#nystroem-kernel-approx"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../kernel_approximation.html#nystroem-kernel-approx"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -226,12 +226,12 @@ if RandomState instance, random_state is the random number generator.</p>
 </div></blockquote>
 <p><strong>component_indices_</strong> : array, shape (n_components)</p>
 <blockquote>
-<div><p>Indices of <code class="docutils literal"><span class="pre">components_</span></code> in the training set.</p>
+<div><p>Indices of <tt class="docutils literal"><span class="pre">components_</span></tt> in the training set.</p>
 </div></blockquote>
 <p><strong>normalization_</strong> : array, shape (n_components, n_components)</p>
 <blockquote class="last">
 <div><p>Normalization matrix needed for embedding.
-Square root of the kernel matrix on <code class="docutils literal"><span class="pre">components_</span></code>.</p>
+Square root of the kernel matrix on <tt class="docutils literal"><span class="pre">components_</span></tt>.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -240,9 +240,9 @@ Square root of the kernel matrix on <code class="docutils literal"><span class="
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.kernel_approximation.RBFSampler.html#sklearn.kernel_approximation.RBFSampler" title="sklearn.kernel_approximation.RBFSampler"><code class="xref py py-obj docutils literal"><span class="pre">RBFSampler</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.kernel_approximation.RBFSampler.html#sklearn.kernel_approximation.RBFSampler" title="sklearn.kernel_approximation.RBFSampler"><tt class="xref py py-obj docutils literal"><span class="pre">RBFSampler</span></tt></a></dt>
 <dd>An approximation to the RBF kernel using random Fourier features.</dd>
-<dt><a class="reference internal" href="sklearn.metrics.pairwise.kernel_metrics.html#sklearn.metrics.pairwise.kernel_metrics" title="sklearn.metrics.pairwise.kernel_metrics"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.metrics.pairwise.kernel_metrics</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.metrics.pairwise.kernel_metrics.html#sklearn.metrics.pairwise.kernel_metrics" title="sklearn.metrics.pairwise.kernel_metrics"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.metrics.pairwise.kernel_metrics</span></tt></a></dt>
 <dd>List of built-in kernels.</dd>
 </dl>
 </div>
@@ -263,22 +263,31 @@ Advances in Neural Information Processing Systems 2012</li>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_approximation.Nystroem.fit" title="sklearn.kernel_approximation.Nystroem.fit"><code class="xref py py-obj docutils literal"><span class="pre">fit</span></code></a>(X[,&nbsp;y])</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_approximation.Nystroem.fit" title="sklearn.kernel_approximation.Nystroem.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
 <td>Fit estimator to data.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.kernel_approximation.Nystroem.transform" title="sklearn.kernel_approximation.Nystroem.transform"><code class="xref py py-obj docutils literal"><span class="pre">transform</span></code></a>(X)</td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.kernel_approximation.Nystroem.fit_transform" title="sklearn.kernel_approximation.Nystroem.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_approximation.Nystroem.get_params" title="sklearn.kernel_approximation.Nystroem.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.kernel_approximation.Nystroem.set_params" title="sklearn.kernel_approximation.Nystroem.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.kernel_approximation.Nystroem.transform" title="sklearn.kernel_approximation.Nystroem.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
 <td>Apply feature map to X.</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.kernel_approximation.Nystroem.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>kernel='rbf'</em>, <em>gamma=None</em>, <em>coef0=1</em>, <em>degree=3</em>, <em>kernel_params=None</em>, <em>n_components=100</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_approximation.py#L434"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>kernel='rbf'</em>, <em>gamma=None</em>, <em>coef0=1</em>, <em>degree=3</em>, <em>kernel_params=None</em>, <em>n_components=100</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/kernel_approximation.py#L434"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.kernel_approximation.Nystroem.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_approximation.py#L444"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/kernel_approximation.py#L444"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit estimator to data.</p>
 <p>Samples a subset of training points, computes kernel
 on these and computes normalization matrix.</p>
@@ -298,7 +307,7 @@ on these and computes normalization matrix.</p>
 
 <dl class="method">
 <dt id="sklearn.kernel_approximation.Nystroem.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L438"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -328,7 +337,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.kernel_approximation.Nystroem.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -353,11 +362,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.kernel_approximation.Nystroem.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -371,7 +380,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.kernel_approximation.Nystroem.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/kernel_approximation.py#L486"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/kernel_approximation.py#L486"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.kernel_approximation.Nystroem.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Apply feature map to X.</p>
 <p>Computes an approximate feature map using the kernel
 between some training points and X.</p>
@@ -398,10 +407,10 @@ between some training points and X.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-kernel-approximation-nystroem">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.kernel_approximation.Nystroem</span></code><a class="headerlink" href="#examples-using-sklearn-kernel-approximation-nystroem" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="An example illustrating the approximation of the feature map of an RBF kernel."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.kernel_approximation.Nystroem</span></tt><a class="headerlink" href="#examples-using-sklearn-kernel-approximation-nystroem" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="An example illustrating the approximation of the feature map of an RBF kernel."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_kernel_approximation.html"><img alt="../../_images/plot_kernel_approximation1.png" src="../../_images/plot_kernel_approximation1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_kernel_approximation.html#example-plot-kernel-approximation-py"><span>Explicit feature map approximation for RBF kernels</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_kernel_approximation.html#example-plot-kernel-approximation-py"><em>Explicit feature map approximation for RBF kernels</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

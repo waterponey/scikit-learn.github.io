@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.datasets.make_low_rank_matrix" href="sklearn.datasets.make_low_rank_matrix.html" />
+    <link rel="prev" title="sklearn.datasets.make_gaussian_quantiles" href="sklearn.datasets.make_gaussian_quantiles.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.datasets.make_gaussian_quantiles.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.datasets...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.datasets.make_gaussian_quantiles
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.datasets</span></code>.make_hastie_10_2</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-datasets-make-hastie-10-2">Examples using <code class="docutils literal"><span class="pre">sklearn.datasets.make_hastie_10_2</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.datasets</span></tt>.make_hastie_10_2</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-datasets-make-hastie-10-2">Examples using <tt class="docutils literal"><span class="pre">sklearn.datasets.make_hastie_10_2</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,21 +166,21 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-datasets-make-hastie-10-2">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></code></a>.make_hastie_10_2<a class="headerlink" href="#sklearn-datasets-make-hastie-10-2" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></tt></a>.make_hastie_10_2<a class="headerlink" href="#sklearn-datasets-make-hastie-10-2" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.datasets.make_hastie_10_2">
-<code class="descclassname">sklearn.datasets.</code><code class="descname">make_hastie_10_2</code><span class="sig-paren">(</span><em>n_samples=12000</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/datasets/samples_generator.py#L398"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.make_hastie_10_2" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.datasets.</tt><tt class="descname">make_hastie_10_2</tt><big>(</big><em>n_samples=12000</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/datasets/samples_generator.py#L398"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.make_hastie_10_2" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generates data for binary classification used in
 Hastie et al. 2009, Example 10.2.</p>
 <p>The ten features are standard independent Gaussian and
-the target <code class="docutils literal"><span class="pre">y</span></code> is defined by:</p>
+the target <tt class="docutils literal"><span class="pre">y</span></tt> is defined by:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">9.34</span> <span class="k">else</span> <span class="o">-</span><span class="mi">1</span>
 </pre></div>
 </div>
-<p>Read more in the <a class="reference internal" href="../../datasets/index.html#sample-generators"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../../datasets/index.html#sample-generators"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -173,29 +213,29 @@ by <cite>np.random</cite>.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.datasets.make_gaussian_quantiles.html#sklearn.datasets.make_gaussian_quantiles" title="sklearn.datasets.make_gaussian_quantiles"><code class="xref py py-obj docutils literal"><span class="pre">make_gaussian_quantiles</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.datasets.make_gaussian_quantiles.html#sklearn.datasets.make_gaussian_quantiles" title="sklearn.datasets.make_gaussian_quantiles"><tt class="xref py py-obj docutils literal"><span class="pre">make_gaussian_quantiles</span></tt></a></dt>
 <dd>a generalization of this dataset approach</dd>
 </dl>
 </div>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r26" rules="none">
+<table class="docutils citation" frame="void" id="r118" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R26]</a></td><td>T. Hastie, R. Tibshirani and J. Friedman, &#8220;Elements of Statistical
+<tr><td class="label"><a class="fn-backref" href="#id1">[R118]</a></td><td>T. Hastie, R. Tibshirani and J. Friedman, &#8220;Elements of Statistical
 Learning Ed. 2&#8221;, Springer, 2009.</td></tr>
 </tbody>
 </table>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-datasets-make-hastie-10-2">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.datasets.make_hastie_10_2</span></code><a class="headerlink" href="#examples-using-sklearn-datasets-make-hastie-10-2" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Illustration of the effect of different regularization strategies for Gradient Boosting. The ex..."><div class="figure" id="id2">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.datasets.make_hastie_10_2</span></tt><a class="headerlink" href="#examples-using-sklearn-datasets-make-hastie-10-2" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Illustration of the effect of different regularization strategies for Gradient Boosting. The ex..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_gradient_boosting_regularization.html"><img alt="../../_images/plot_gradient_boosting_regularization1.png" src="../../_images/plot_gradient_boosting_regularization1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_gradient_boosting_regularization.html#example-ensemble-plot-gradient-boosting-regularization-py"><span>Gradient Boosting regularization</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_gradient_boosting_regularization.html#example-ensemble-plot-gradient-boosting-regularization-py"><em>Gradient Boosting regularization</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example is based on Figure 10.2 from Hastie et al 2009 [1] and illustrates the difference ..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="This example is based on Figure 10.2 from Hastie et al 2009 [1] and illustrates the difference ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_adaboost_hastie_10_2.html"><img alt="../../_images/plot_adaboost_hastie_10_21.png" src="../../_images/plot_adaboost_hastie_10_21.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_hastie_10_2.html#example-ensemble-plot-adaboost-hastie-10-2-py"><span>Discrete versus Real AdaBoost</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_hastie_10_2.html#example-ensemble-plot-adaboost-hastie-10-2-py"><em>Discrete versus Real AdaBoost</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -212,8 +252,12 @@ Learning Ed. 2&#8221;, Springer, 2009.</td></tr>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.datasets.make_hastie_10_2.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.datasets.make_gaussian_quantiles.html">Previous
+      </a>
+    </div>
     
      </div>
 

@@ -35,8 +35,41 @@ solution. Note that the degree of sparsity and thus the prediction time depends
 on the parameters epsilon and C of the SVR.
 
 
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_kernel_ridge_regression_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_kernel_ridge_regression_002.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_kernel_ridge_regression_003.png
+            :scale: 47
+
+
+**Script output**::
+
+  SVR complexity and bandwidth selected and model fitted in 0.905 s
+  KRR complexity and bandwidth selected and model fitted in 0.238 s
+  Support vector ratio: 0.320
+  SVR prediction for 100000 inputs in 0.107 s
+  KRR prediction for 100000 inputs in 0.359 s
+
+
+
 **Python source code:** :download:`plot_kernel_ridge_regression.py <plot_kernel_ridge_regression.py>`
 
 .. literalinclude:: plot_kernel_ridge_regression.py
     :lines: 33-
+
+**Total running time of the example:**  204.15 seconds
+( 3 minutes  24.15 seconds)
     

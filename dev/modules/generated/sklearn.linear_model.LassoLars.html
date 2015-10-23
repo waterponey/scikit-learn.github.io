@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="3.2.4.1.4. sklearn.linear_model.LassoLarsCV" href="sklearn.linear_model.LassoLarsCV.html" />
+    <link rel="prev" title="3.2.4.1.3. sklearn.linear_model.LassoCV" href="sklearn.linear_model.LassoCV.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.linear_model.LassoCV.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        3.2.4.1.3. sklea...
+        </span>
+            <span class="hiddenrellink">
+            3.2.4.1.3. sklearn.linear_model.LassoCV
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.linear_model</span></code>.LassoLars</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.linear_model</span></tt>.LassoLars</a></li>
 </ul>
 
     </div>
@@ -123,20 +163,20 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-linear-model-lassolars">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></code></a>.LassoLars<a class="headerlink" href="#sklearn-linear-model-lassolars" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.LassoLars<a class="headerlink" href="#sklearn-linear-model-lassolars" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.linear_model.LassoLars">
-<em class="property">class </em><code class="descclassname">sklearn.linear_model.</code><code class="descname">LassoLars</code><span class="sig-paren">(</span><em>alpha=1.0</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>max_iter=500</em>, <em>eps=2.2204460492503131e-16</em>, <em>copy_X=True</em>, <em>fit_path=True</em>, <em>positive=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/least_angle.py#L702"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">LassoLars</tt><big>(</big><em>alpha=1.0</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>max_iter=500</em>, <em>eps=2.2204460492503131e-16</em>, <em>copy_X=True</em>, <em>fit_path=True</em>, <em>positive=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/least_angle.py#L702"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars" title="Permalink to this definition">¶</a></dt>
 <dd><p>Lasso model fit with Least Angle Regression a.k.a. Lars</p>
 <p>It is a Linear Model trained with an L1 prior as regularizer.</p>
 <p>The optimization objective for Lasso is:</p>
 <div class="highlight-python"><div class="highlight"><pre>(1 / (2 * n_samples)) * ||y - Xw||^2_2 + alpha * ||w||_1
 </pre></div>
 </div>
-<p>Read more in the <a class="reference internal" href="../linear_model.html#least-angle-regression"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../linear_model.html#least-angle-regression"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -144,9 +184,9 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>alpha</strong> : float</p>
 <blockquote>
 <div><p>Constant that multiplies the penalty term. Defaults to 1.0.
-<code class="docutils literal"><span class="pre">alpha</span> <span class="pre">=</span> <span class="pre">0</span></code> is equivalent to an ordinary least square, solved
-by <a class="reference internal" href="sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression" title="sklearn.linear_model.LinearRegression"><code class="xref py py-class docutils literal"><span class="pre">LinearRegression</span></code></a>. For numerical reasons, using
-<code class="docutils literal"><span class="pre">alpha</span> <span class="pre">=</span> <span class="pre">0</span></code> with the LassoLars object is not advised and you
+<tt class="docutils literal"><span class="pre">alpha</span> <span class="pre">=</span> <span class="pre">0</span></tt> is equivalent to an ordinary least square, solved
+by <a class="reference internal" href="sklearn.linear_model.LinearRegression.html#sklearn.linear_model.LinearRegression" title="sklearn.linear_model.LinearRegression"><tt class="xref py py-class docutils literal"><span class="pre">LinearRegression</span></tt></a>. For numerical reasons, using
+<tt class="docutils literal"><span class="pre">alpha</span> <span class="pre">=</span> <span class="pre">0</span></tt> with the LassoLars object is not advised and you
 should prefer the LinearRegression object.</p>
 </div></blockquote>
 <p><strong>fit_intercept</strong> : boolean</p>
@@ -161,8 +201,8 @@ to false, no intercept will be used in calculations
 remove fit_intercept which is set True by default.
 Under the positive restriction the model coefficients will not converge
 to the ordinary-least-squares solution for small values of alpha.
-Only coeffiencts up to the smallest alpha value (<code class="docutils literal"><span class="pre">alphas_[alphas_</span> <span class="pre">&gt;</span>
-<span class="pre">0.].min()</span></code> when fit_path=True) reached by the stepwise Lars-Lasso
+Only coeffiencts up to the smallest alpha value (<tt class="docutils literal"><span class="pre">alphas_[alphas_</span> <span class="pre">&gt;</span>
+<span class="pre">0.].min()</span></tt> when fit_path=True) reached by the stepwise Lars-Lasso
 algorithm are typically in congruence with the solution of the
 coordinate descent Lasso estimator.</p>
 </div></blockquote>
@@ -181,7 +221,7 @@ coordinate descent Lasso estimator.</p>
 <p><strong>precompute</strong> : True | False | &#8216;auto&#8217; | array-like</p>
 <blockquote>
 <div><p>Whether to use a precomputed Gram matrix to speed up
-calculations. If set to <code class="docutils literal"><span class="pre">'auto'</span></code> let us decide. The Gram
+calculations. If set to <tt class="docutils literal"><span class="pre">'auto'</span></tt> let us decide. The Gram
 matrix can also be passed as argument.</p>
 </div></blockquote>
 <p><strong>max_iter</strong> : integer, optional</p>
@@ -192,22 +232,22 @@ matrix can also be passed as argument.</p>
 <blockquote>
 <div><p>The machine-precision regularization in the computation of the
 Cholesky diagonal factors. Increase this for very ill-conditioned
-systems. Unlike the <code class="docutils literal"><span class="pre">tol</span></code> parameter in some iterative
+systems. Unlike the <tt class="docutils literal"><span class="pre">tol</span></tt> parameter in some iterative
 optimization-based algorithms, this parameter does not control
 the tolerance of the optimization.</p>
 </div></blockquote>
 <p><strong>fit_path</strong> : boolean</p>
 <blockquote>
-<div><p>If <code class="docutils literal"><span class="pre">True</span></code> the full path is stored in the <code class="docutils literal"><span class="pre">coef_path_</span></code> attribute.
+<div><p>If <tt class="docutils literal"><span class="pre">True</span></tt> the full path is stored in the <tt class="docutils literal"><span class="pre">coef_path_</span></tt> attribute.
 If you compute the solution for a large problem or many targets,
-setting <code class="docutils literal"><span class="pre">fit_path</span></code> to <code class="docutils literal"><span class="pre">False</span></code> will lead to a speedup, especially
+setting <tt class="docutils literal"><span class="pre">fit_path</span></tt> to <tt class="docutils literal"><span class="pre">False</span></tt> will lead to a speedup, especially
 with a small alpha.</p>
 </div></blockquote>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><p class="first"><strong>alphas_</strong> : array, shape (n_alphas + 1,) | list of n_targets such arrays</p>
 <blockquote>
-<div><p>Maximum of covariances (in absolute value) at each iteration.         <code class="docutils literal"><span class="pre">n_alphas</span></code> is either <code class="docutils literal"><span class="pre">max_iter</span></code>, <code class="docutils literal"><span class="pre">n_features</span></code>, or the number of         nodes in the path with correlation greater than <code class="docutils literal"><span class="pre">alpha</span></code>, whichever         is smaller.</p>
+<div><p>Maximum of covariances (in absolute value) at each iteration.         <tt class="docutils literal"><span class="pre">n_alphas</span></tt> is either <tt class="docutils literal"><span class="pre">max_iter</span></tt>, <tt class="docutils literal"><span class="pre">n_features</span></tt>, or the number of         nodes in the path with correlation greater than <tt class="docutils literal"><span class="pre">alpha</span></tt>, whichever         is smaller.</p>
 </div></blockquote>
 <p><strong>active_</strong> : list, length = n_alphas | list of n_targets such lists</p>
 <blockquote>
@@ -217,7 +257,7 @@ with a small alpha.</p>
 <blockquote>
 <div><p>If a list is passed it&#8217;s expected to be one of n_targets such arrays.
 The varying values of the coefficients along the path. It is not
-present if the <code class="docutils literal"><span class="pre">fit_path</span></code> parameter is <code class="docutils literal"><span class="pre">False</span></code>.</p>
+present if the <tt class="docutils literal"><span class="pre">fit_path</span></tt> parameter is <tt class="docutils literal"><span class="pre">False</span></tt>.</p>
 </div></blockquote>
 <p><strong>coef_</strong> : array, shape (n_features,) or (n_targets, n_features)</p>
 <blockquote>
@@ -238,7 +278,7 @@ grid of alphas for each target.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.linear_model.lars_path.html#sklearn.linear_model.lars_path" title="sklearn.linear_model.lars_path"><code class="xref py py-obj docutils literal"><span class="pre">lars_path</span></code></a>, <a class="reference internal" href="sklearn.linear_model.lasso_path.html#sklearn.linear_model.lasso_path" title="sklearn.linear_model.lasso_path"><code class="xref py py-obj docutils literal"><span class="pre">lasso_path</span></code></a>, <a class="reference internal" href="sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><code class="xref py py-obj docutils literal"><span class="pre">Lasso</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LassoCV.html#sklearn.linear_model.LassoCV" title="sklearn.linear_model.LassoCV"><code class="xref py py-obj docutils literal"><span class="pre">LassoCV</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LassoLarsCV.html#sklearn.linear_model.LassoLarsCV" title="sklearn.linear_model.LassoLarsCV"><code class="xref py py-obj docutils literal"><span class="pre">LassoLarsCV</span></code></a>, <a class="reference internal" href="sklearn.decomposition.sparse_encode.html#sklearn.decomposition.sparse_encode" title="sklearn.decomposition.sparse_encode"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.decomposition.sparse_encode</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.linear_model.lars_path.html#sklearn.linear_model.lars_path" title="sklearn.linear_model.lars_path"><tt class="xref py py-obj docutils literal"><span class="pre">lars_path</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.lasso_path.html#sklearn.linear_model.lasso_path" title="sklearn.linear_model.lasso_path"><tt class="xref py py-obj docutils literal"><span class="pre">lasso_path</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><tt class="xref py py-obj docutils literal"><span class="pre">Lasso</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoCV.html#sklearn.linear_model.LassoCV" title="sklearn.linear_model.LassoCV"><tt class="xref py py-obj docutils literal"><span class="pre">LassoCV</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoLarsCV.html#sklearn.linear_model.LassoLarsCV" title="sklearn.linear_model.LassoLarsCV"><tt class="xref py py-obj docutils literal"><span class="pre">LassoLarsCV</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.sparse_encode.html#sklearn.decomposition.sparse_encode" title="sklearn.decomposition.sparse_encode"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.decomposition.sparse_encode</span></tt></a></p>
 </div>
 <p class="rubric">Examples</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">linear_model</span>
@@ -259,16 +299,34 @@ grid of alphas for each target.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.LassoLars.decision_function" title="sklearn.linear_model.LassoLars.decision_function"><tt class="xref py py-obj docutils literal"><span class="pre">decision_function</span></tt></a>(*args,&nbsp;**kwargs)</td>
+<td>DEPRECATED:  and will be removed in 0.19.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.LassoLars.fit" title="sklearn.linear_model.LassoLars.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y[,&nbsp;Xy])</td>
+<td>Fit the model using X, y as training data.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.LassoLars.get_params" title="sklearn.linear_model.LassoLars.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.LassoLars.predict" title="sklearn.linear_model.LassoLars.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<td>Predict using the linear model</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.LassoLars.score" title="sklearn.linear_model.LassoLars.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Returns the coefficient of determination R^2 of the prediction.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.LassoLars.set_params" title="sklearn.linear_model.LassoLars.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.linear_model.LassoLars.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>alpha=1.0</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>max_iter=500</em>, <em>eps=2.2204460492503131e-16</em>, <em>copy_X=True</em>, <em>fit_path=True</em>, <em>positive=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/least_angle.py#L816"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>alpha=1.0</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>max_iter=500</em>, <em>eps=2.2204460492503131e-16</em>, <em>copy_X=True</em>, <em>fit_path=True</em>, <em>positive=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/least_angle.py#L816"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LassoLars.decision_function">
-<code class="descname">decision_function</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.decision_function" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decision_function</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/utils/deprecation.py#L69"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>DEPRECATED:  and will be removed in 0.19.</p>
 <p>Decision function of the linear model.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -293,7 +351,7 @@ grid of alphas for each target.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LassoLars.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>Xy=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/least_angle.py#L607"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>Xy=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/least_angle.py#L607"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model using X, y as training data.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -326,7 +384,7 @@ only when the Gram matrix is precomputed.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LassoLars.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -351,7 +409,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LassoLars.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/base.py#L186"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/base.py#L188"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict using the linear model</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -375,7 +433,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LassoLars.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L325"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the coefficient of determination R^2 of the prediction.</p>
 <p>The coefficient R^2 is defined as (1 - u/v), where u is the regression
 sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual
@@ -414,11 +472,11 @@ would get a R^2 score of 0.0.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.LassoLars.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.LassoLars.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -446,8 +504,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.linear_model.LassoLars.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.linear_model.LassoCV.html">Previous
+      </a>
+    </div>
     
      </div>
 

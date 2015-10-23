@@ -1,0 +1,59 @@
+
+
+.. _example_gaussian_process_plot_gpc.py:
+
+
+====================================================================
+Probabilistic predictions with Gaussian process classification (GPC)
+====================================================================
+
+This example illustrates the predicted probability of GPC for an RBF kernel
+with different choices of the hyperparameters. The first figure shows the
+predicted probability of GPC with arbitrarily chosen hyperparameters and with
+the hyperparameters corresponding to the maximum log-marginal-likelihood (LML).
+
+While the hyperparameters chosen by optimizing LML have a considerable larger
+LML, they perform slightly worse according to the log-loss on test data. The
+figure shows that this is because they exhibit a steep change of the class
+probabilities at the class boundaries (which is good) but have predicted
+probabilities close to 0.5 far away from the class boundaries (which is bad)
+This undesirable effect is caused by the Laplace approximation used
+internally by GPC.
+
+The second figure shows the log-marginal-likelihood for different choices of
+the kernel's hyperparameters, highlighting the two choices of the
+hyperparameters used in the first figure by black dots.
+
+
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_gpc_000.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_gpc_001.png
+            :scale: 47
+
+
+**Script output**::
+
+  Log Marginal Likelihood (initial): -17.598
+  Log Marginal Likelihood (optimized): -3.875
+  Accuracy: 1.000 (initial) 1.000 (optimized)
+  Log-loss: 0.214 (initial) 0.319 (optimized)
+
+
+
+**Python source code:** :download:`plot_gpc.py <plot_gpc.py>`
+
+.. literalinclude:: plot_gpc.py
+    :lines: 23-
+
+**Total running time of the example:**  4.50 seconds
+( 0 minutes  4.50 seconds)
+    

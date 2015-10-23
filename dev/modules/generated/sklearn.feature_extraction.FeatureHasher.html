@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.feature_extraction.image.img_to_graph" href="sklearn.feature_extraction.image.img_to_graph.html" />
+    <link rel="prev" title="sklearn.feature_extraction.DictVectorizer" href="sklearn.feature_extraction.DictVectorizer.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.feature_extraction.DictVectorizer.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.feature_...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.feature_extraction.DictVectorizer
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.feature_extraction</span></code>.FeatureHasher</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-feature-extraction-featurehasher">Examples using <code class="docutils literal"><span class="pre">sklearn.feature_extraction.FeatureHasher</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.feature_extraction</span></tt>.FeatureHasher</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-feature-extraction-featurehasher">Examples using <tt class="docutils literal"><span class="pre">sklearn.feature_extraction.FeatureHasher</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-feature-extraction-featurehasher">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_extraction" title="sklearn.feature_extraction"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction</span></code></a>.FeatureHasher<a class="headerlink" href="#sklearn-feature-extraction-featurehasher" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_extraction" title="sklearn.feature_extraction"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction</span></tt></a>.FeatureHasher<a class="headerlink" href="#sklearn-feature-extraction-featurehasher" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.feature_extraction.FeatureHasher">
-<em class="property">class </em><code class="descclassname">sklearn.feature_extraction.</code><code class="descname">FeatureHasher</code><span class="sig-paren">(</span><em>n_features=1048576</em>, <em>input_type='dict'</em>, <em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>non_negative=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/hashing.py#L18"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.feature_extraction.</tt><tt class="descname">FeatureHasher</tt><big>(</big><em>n_features=1048576</em>, <em>input_type='dict'</em>, <em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>non_negative=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_extraction/hashing.py#L18"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher" title="Permalink to this definition">¶</a></dt>
 <dd><p>Implements feature hashing, aka the hashing trick.</p>
 <p>This class turns sequences of symbolic feature names (strings) into
 scipy.sparse matrices, using a hash function to compute the matrix column
@@ -145,7 +185,7 @@ Feature values must be (finite) numbers.</p>
 CountVectorizer, intended for large-scale (online) learning and situations
 where memory is tight, e.g. when running prediction code on embedded
 devices.</p>
-<p>Read more in the <a class="reference internal" href="../feature_extraction.html#feature-hashing"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../feature_extraction.html#feature-hashing"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -187,9 +227,9 @@ When False, output values will have expected value zero.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.feature_extraction.DictVectorizer.html#sklearn.feature_extraction.DictVectorizer" title="sklearn.feature_extraction.DictVectorizer"><code class="xref py py-obj docutils literal"><span class="pre">DictVectorizer</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.feature_extraction.DictVectorizer.html#sklearn.feature_extraction.DictVectorizer" title="sklearn.feature_extraction.DictVectorizer"><tt class="xref py py-obj docutils literal"><span class="pre">DictVectorizer</span></tt></a></dt>
 <dd>vectorizes string-valued features using a hash table.</dd>
-<dt><a class="reference internal" href="sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="sklearn.preprocessing.OneHotEncoder"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.preprocessing.OneHotEncoder</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.preprocessing.OneHotEncoder.html#sklearn.preprocessing.OneHotEncoder" title="sklearn.preprocessing.OneHotEncoder"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.preprocessing.OneHotEncoder</span></tt></a></dt>
 <dd>handles nominal/categorical features encoded as columns of integers.</dd>
 </dl>
 </div>
@@ -210,16 +250,31 @@ When False, output values will have expected value zero.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_extraction.FeatureHasher.fit" title="sklearn.feature_extraction.FeatureHasher.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>([X,&nbsp;y])</td>
+<td>No-op.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_extraction.FeatureHasher.fit_transform" title="sklearn.feature_extraction.FeatureHasher.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_extraction.FeatureHasher.get_params" title="sklearn.feature_extraction.FeatureHasher.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_extraction.FeatureHasher.set_params" title="sklearn.feature_extraction.FeatureHasher.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_extraction.FeatureHasher.transform" title="sklearn.feature_extraction.FeatureHasher.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(raw_X[,&nbsp;y])</td>
+<td>Transform a sequence of instances to a scipy.sparse matrix.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.feature_extraction.FeatureHasher.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_features=1048576</em>, <em>input_type='dict'</em>, <em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>non_negative=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/hashing.py#L79"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>n_features=1048576</em>, <em>input_type='dict'</em>, <em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>non_negative=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_extraction/hashing.py#L79"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.FeatureHasher.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X=None</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/hashing.py#L102"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X=None</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_extraction/hashing.py#L102"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>No-op.</p>
 <p>This method doesn&#8217;t do anything. It exists purely for compatibility
 with the scikit-learn transformer API.</p>
@@ -235,7 +290,7 @@ with the scikit-learn transformer API.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.FeatureHasher.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L438"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -265,7 +320,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.FeatureHasher.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -290,11 +345,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.FeatureHasher.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -308,7 +363,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.FeatureHasher.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>raw_X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_extraction/hashing.py#L117"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>raw_X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_extraction/hashing.py#L117"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.FeatureHasher.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform a sequence of instances to a scipy.sparse matrix.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -338,10 +393,10 @@ of a generator; n_samples is determined on the fly.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-feature-extraction-featurehasher">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.feature_extraction.FeatureHasher</span></code><a class="headerlink" href="#examples-using-sklearn-feature-extraction-featurehasher" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Compares FeatureHasher and DictVectorizer by using both to vectorize text documents."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.feature_extraction.FeatureHasher</span></tt><a class="headerlink" href="#examples-using-sklearn-feature-extraction-featurehasher" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Compares FeatureHasher and DictVectorizer by using both to vectorize text documents."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/text/hashing_vs_dict_vectorizer.html"><img alt="../../_images/hashing_vs_dict_vectorizer1.png" src="../../_images/hashing_vs_dict_vectorizer1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/text/hashing_vs_dict_vectorizer.html#example-text-hashing-vs-dict-vectorizer-py"><span>FeatureHasher and DictVectorizer Comparison</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/text/hashing_vs_dict_vectorizer.html#example-text-hashing-vs-dict-vectorizer-py"><em>FeatureHasher and DictVectorizer Comparison</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -358,8 +413,12 @@ of a generator; n_samples is determined on the fly.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.feature_extraction.FeatureHasher.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.feature_extraction.DictVectorizer.html">Previous
+      </a>
+    </div>
     
      </div>
 

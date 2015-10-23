@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Faces dataset...
+        Faces dataset de...
         </span>
             <span class="hiddenrellink">
             Faces dataset decompositions
@@ -163,12 +163,12 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="image-denoising-using-dictionary-learning">
 <span id="example-decomposition-plot-image-denoising-py"></span><h1>Image denoising using dictionary learning<a class="headerlink" href="#image-denoising-using-dictionary-learning" title="Permalink to this headline">¶</a></h1>
 <p>An example comparing the effect of reconstructing noisy fragments
-of the Lena image using firstly online <a class="reference internal" href="../../modules/decomposition.html#dictionarylearning"><span>Dictionary Learning</span></a> and
+of the Lena image using firstly online <a class="reference internal" href="../../modules/decomposition.html#dictionarylearning"><em>Dictionary Learning</em></a> and
 various transform methods.</p>
 <p>The dictionary is fitted on the distorted left half of the image, and
 subsequently used to reconstruct the right half. Note that even better
@@ -178,17 +178,53 @@ available.</p>
 <p>A common practice for evaluating the results of image denoising is by looking
 at the difference between the reconstruction and the original image. If the
 reconstruction is perfect this will look like Gaussian noise.</p>
-<p>It can be seen from the plots that the results of <a class="reference internal" href="../../modules/linear_model.html#omp"><span>Orthogonal Matching Pursuit (OMP)</span></a> with two
+<p>It can be seen from the plots that the results of <a class="reference internal" href="../../modules/linear_model.html#omp"><em>Orthogonal Matching Pursuit (OMP)</em></a> with two
 non-zero coefficients is a bit less biased than when keeping only one
 (the edges look less prominent). It is in addition closer from the ground
 truth in Frobenius norm.</p>
-<p>The result of <a class="reference internal" href="../../modules/linear_model.html#least-angle-regression"><span>Least Angle Regression</span></a> is much more strongly biased: the
+<p>The result of <a class="reference internal" href="../../modules/linear_model.html#least-angle-regression"><em>Least Angle Regression</em></a> is much more strongly biased: the
 difference is reminiscent of the local intensity value of the original image.</p>
 <p>Thresholding is clearly not useful for denoising, but it is here to show that
 it can produce a suggestive output with very high speed, and thus be useful
 for other tasks such as object classification, where performance is not
 necessarily related to visualisation.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_image_denoising.py"><code class="xref download docutils literal"><span class="pre">plot_image_denoising.py</span></code></a></p>
+<ul class="horizontal">
+<li><a class="first reference internal image-reference" href="../../_images/plot_image_denoising_001.png"><img alt="../../_images/plot_image_denoising_001.png" src="../../_images/plot_image_denoising_001.png" style="width: 197.4px; height: 188.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_image_denoising_002.png"><img alt="../../_images/plot_image_denoising_002.png" src="../../_images/plot_image_denoising_002.png" style="width: 235.0px; height: 155.1px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_image_denoising_003.png"><img alt="../../_images/plot_image_denoising_003.png" src="../../_images/plot_image_denoising_003.png" style="width: 235.0px; height: 155.1px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_image_denoising_004.png"><img alt="../../_images/plot_image_denoising_004.png" src="../../_images/plot_image_denoising_004.png" style="width: 235.0px; height: 155.1px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_image_denoising_005.png"><img alt="../../_images/plot_image_denoising_005.png" src="../../_images/plot_image_denoising_005.png" style="width: 235.0px; height: 155.1px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_image_denoising_006.png"><img alt="../../_images/plot_image_denoising_006.png" src="../../_images/plot_image_denoising_006.png" style="width: 235.0px; height: 155.1px;" /></a>
+</li>
+</ul>
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Distorting image...
+Extracting reference patches...
+done in 0.02s.
+Learning the dictionary...
+done in 7.54s.
+Extracting noisy patches...
+done in 0.01s.
+Orthogonal Matching Pursuit
+1 atom...
+done in 3.27s.
+Orthogonal Matching Pursuit
+2 atoms...
+done in 6.86s.
+Least-angle regression
+5 atoms...
+done in 38.31s.
+Thresholding
+ alpha=0.1...
+done in 0.68s.
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_image_denoising.py"><tt class="xref download docutils literal"><span class="pre">plot_image_denoising.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
@@ -321,6 +357,8 @@ necessarily related to visualisation.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  62.90 seconds
+( 1 minutes  2.90 seconds)</p>
 </div>
 
 

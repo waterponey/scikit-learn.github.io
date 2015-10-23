@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.metri...
+        sklearn.metrics....
         </span>
             <span class="hiddenrellink">
             sklearn.metrics.pairwise.distance_metrics
@@ -147,7 +147,7 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics.pairwise</span></code>.euclidean_distances</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics.pairwise</span></tt>.euclidean_distances</a></li>
 </ul>
 
     </div>
@@ -163,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-metrics-pairwise-euclidean-distances">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics.pairwise" title="sklearn.metrics.pairwise"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics.pairwise</span></code></a>.euclidean_distances<a class="headerlink" href="#sklearn-metrics-pairwise-euclidean-distances" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics.pairwise" title="sklearn.metrics.pairwise"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics.pairwise</span></tt></a>.euclidean_distances<a class="headerlink" href="#sklearn-metrics-pairwise-euclidean-distances" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.pairwise.euclidean_distances">
-<code class="descclassname">sklearn.metrics.pairwise.</code><code class="descname">euclidean_distances</code><span class="sig-paren">(</span><em>X</em>, <em>Y=None</em>, <em>Y_norm_squared=None</em>, <em>squared=False</em>, <em>X_norm_squared=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/pairwise.py#L148"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.pairwise.euclidean_distances" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.pairwise.</tt><tt class="descname">euclidean_distances</tt><big>(</big><em>X</em>, <em>Y=None</em>, <em>Y_norm_squared=None</em>, <em>squared=False</em>, <em>X_norm_squared=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/metrics/pairwise.py#L148"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.pairwise.euclidean_distances" title="Permalink to this definition">¶</a></dt>
 <dd><p>Considering the rows of X (and Y=X) as vectors, compute the
 distance matrix between each pair of vectors.</p>
 <p>For efficiency reasons, the euclidean distance between a pair of row
@@ -183,8 +183,8 @@ Second, if one argument varies but the other remains unchanged, then
 <cite>dot(x, x)</cite> and/or <cite>dot(y, y)</cite> can be pre-computed.</p>
 <p>However, this is not the most precise way of doing this computation, and
 the distance matrix returned by this function may not be exactly
-symmetric as required by, e.g., <code class="docutils literal"><span class="pre">scipy.spatial.distance</span></code> functions.</p>
-<p>Read more in the <a class="reference internal" href="../metrics.html#metrics"><span>User Guide</span></a>.</p>
+symmetric as required by, e.g., <tt class="docutils literal"><span class="pre">scipy.spatial.distance</span></tt> functions.</p>
+<p>Read more in the <a class="reference internal" href="../metrics.html#metrics"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -194,7 +194,7 @@ symmetric as required by, e.g., <code class="docutils literal"><span class="pre"
 <p><strong>Y_norm_squared</strong> : array-like, shape (n_samples_2, ), optional</p>
 <blockquote>
 <div><p>Pre-computed dot-products of vectors in Y (e.g.,
-<code class="docutils literal"><span class="pre">(Y**2).sum(axis=1)</span></code>)</p>
+<tt class="docutils literal"><span class="pre">(Y**2).sum(axis=1)</span></tt>)</p>
 </div></blockquote>
 <p><strong>squared</strong> : boolean, optional</p>
 <blockquote>
@@ -203,7 +203,7 @@ symmetric as required by, e.g., <code class="docutils literal"><span class="pre"
 <p><strong>X_norm_squared</strong> : array-like, shape = [n_samples_1], optional</p>
 <blockquote>
 <div><p>Pre-computed dot-products of vectors in X (e.g.,
-<code class="docutils literal"><span class="pre">(X**2).sum(axis=1)</span></code>)</p>
+<tt class="docutils literal"><span class="pre">(X**2).sum(axis=1)</span></tt>)</p>
 </div></blockquote>
 </td>
 </tr>
@@ -215,7 +215,7 @@ symmetric as required by, e.g., <code class="docutils literal"><span class="pre"
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><code class="xref py py-obj docutils literal"><span class="pre">paired_distances</span></code></dt>
+<dt><tt class="xref py py-obj docutils literal"><span class="pre">paired_distances</span></tt></dt>
 <dd>distances betweens pairs of elements of X and Y.</dd>
 </dl>
 </div>

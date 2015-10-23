@@ -36,8 +36,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="Polynomial interpolation" href="plot_polynomial_interpolation.html" />
-    <link rel="prev" title="Plot Ridge coefficients as a function of the regularization" href="plot_ridge_path.html" />
+    <link rel="next" title="Comparing various online solvers" href="plot_sgd_comparison.html" />
+    <link rel="prev" title="Polynomial interpolation" href="plot_polynomial_interpolation.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_ridge_path.html"
+        <a href="plot_polynomial_interpolation.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Plot Ridge co...
+        Polynomial inter...
         </span>
             <span class="hiddenrellink">
-            Plot Ridge coefficients as a function of the regularization
+            Polynomial interpolation
             </span>
         </a>
         </div>
@@ -163,13 +163,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="robust-linear-model-estimation-using-ransac">
 <span id="example-linear-model-plot-ransac-py"></span><h1>Robust linear model estimation using RANSAC<a class="headerlink" href="#robust-linear-model-estimation-using-ransac" title="Permalink to this headline">¶</a></h1>
 <p>In this example we see how to robustly fit a linear model to faulty data using
 the RANSAC algorithm.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ransac.py"><code class="xref download docutils literal"><span class="pre">plot_ransac.py</span></code></a></p>
+<img alt="../../_images/plot_ransac_001.png" class="align-center" src="../../_images/plot_ransac_001.png" />
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Estimated coefficients (true, normal, RANSAC):
+82.1903908408 [ 54.17236387] [ 82.08533159]
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ransac.py"><tt class="xref download docutils literal"><span class="pre">plot_ransac.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 
@@ -208,14 +214,21 @@ the RANSAC algorithm.</p>
 <span class="k">print</span><span class="p">(</span><span class="s">&quot;Estimated coefficients (true, normal, RANSAC):&quot;</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">coef</span><span class="p">,</span> <span class="n">model</span><span class="o">.</span><span class="n">coef_</span><span class="p">,</span> <span class="n">model_ransac</span><span class="o">.</span><span class="n">estimator_</span><span class="o">.</span><span class="n">coef_</span><span class="p">)</span>
 
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">inlier_mask</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">inlier_mask</span><span class="p">],</span> <span class="s">&#39;.g&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;Inliers&#39;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">outlier_mask</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">outlier_mask</span><span class="p">],</span> <span class="s">&#39;.r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;Outliers&#39;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">line_X</span><span class="p">,</span> <span class="n">line_y</span><span class="p">,</span> <span class="s">&#39;-k&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;Linear regressor&#39;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">line_X</span><span class="p">,</span> <span class="n">line_y_ransac</span><span class="p">,</span> <span class="s">&#39;-b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;RANSAC regressor&#39;</span><span class="p">)</span>
+<span class="n">lw</span> <span class="o">=</span> <span class="mi">2</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">inlier_mask</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">inlier_mask</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;yellowgreen&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">&#39;.&#39;</span><span class="p">,</span>
+            <span class="n">label</span><span class="o">=</span><span class="s">&#39;Inliers&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">outlier_mask</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">outlier_mask</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;gold&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">&#39;.&#39;</span><span class="p">,</span>
+            <span class="n">label</span><span class="o">=</span><span class="s">&#39;Outliers&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">line_X</span><span class="p">,</span> <span class="n">line_y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;navy&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">&#39;-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="n">lw</span><span class="p">,</span>
+         <span class="n">label</span><span class="o">=</span><span class="s">&#39;Linear regressor&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">line_X</span><span class="p">,</span> <span class="n">line_y_ransac</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;cornflowerblue&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">&#39;-&#39;</span><span class="p">,</span>
+         <span class="n">linewidth</span><span class="o">=</span><span class="n">lw</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;RANSAC regressor&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;lower right&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  0.12 seconds
+( 0 minutes  0.12 seconds)</p>
 </div>
 
 
@@ -233,7 +246,7 @@ the RANSAC algorithm.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_ridge_path.html">Previous
+      <a href="plot_polynomial_interpolation.html">Previous
       </a>
     </div>
     

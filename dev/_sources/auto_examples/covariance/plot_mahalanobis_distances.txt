@@ -57,8 +57,18 @@ are represented in the boxplot, as Wilson and Hilferty suggest [2]
 
 
 
+
+.. image:: images/plot_mahalanobis_distances_001.png
+    :align: center
+
+
+
+
 **Python source code:** :download:`plot_mahalanobis_distances.py <plot_mahalanobis_distances.py>`
 
 .. literalinclude:: plot_mahalanobis_distances.py
     :lines: 55-
+
+**Total running time of the example:**  0.31 seconds
+( 0 minutes  0.31 seconds)
     

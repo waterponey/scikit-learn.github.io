@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.utils.estimator_checks.check_estimator" href="sklearn.utils.estimator_checks.check_estimator.html" />
+    <link rel="prev" title="sklearn.tree.export_graphviz" href="sklearn.tree.export_graphviz.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.tree.export_graphviz.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.tree.exp...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.tree.export_graphviz
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.utils</span></code>.check_random_state</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-utils-check-random-state">Examples using <code class="docutils literal"><span class="pre">sklearn.utils.check_random_state</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.utils</span></tt>.check_random_state</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-utils-check-random-state">Examples using <tt class="docutils literal"><span class="pre">sklearn.utils.check_random_state</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-utils-check-random-state">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.utils" title="sklearn.utils"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.utils</span></code></a>.check_random_state<a class="headerlink" href="#sklearn-utils-check-random-state" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.utils" title="sklearn.utils"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.utils</span></tt></a>.check_random_state<a class="headerlink" href="#sklearn-utils-check-random-state" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.utils.check_random_state">
-<code class="descclassname">sklearn.utils.</code><code class="descname">check_random_state</code><span class="sig-paren">(</span><em>seed</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/utils/validation.py#L554"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.utils.check_random_state" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.utils.</tt><tt class="descname">check_random_state</tt><big>(</big><em>seed</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/utils/validation.py#L567"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.utils.check_random_state" title="Permalink to this definition">¶</a></dt>
 <dd><p>Turn seed into a np.random.RandomState instance</p>
 <p>If seed is None, return the RandomState singleton used by np.random.
 If seed is an int, return a new RandomState instance seeded with seed.
@@ -141,26 +181,26 @@ Otherwise raise ValueError.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-utils-check-random-state">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.utils.check_random_state</span></code><a class="headerlink" href="#examples-using-sklearn-utils-check-random-state" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="An illustration of the isotonic regression on generated data. The isotonic regression finds a n..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.utils.check_random_state</span></tt><a class="headerlink" href="#examples-using-sklearn-utils-check-random-state" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="An illustration of the isotonic regression on generated data. The isotonic regression finds a n..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_isotonic_regression.html"><img alt="../../_images/plot_isotonic_regression1.png" src="../../_images/plot_isotonic_regression1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_isotonic_regression.html#example-plot-isotonic-regression-py"><span>Isotonic Regression</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_isotonic_regression.html#example-plot-isotonic-regression-py"><em>Isotonic Regression</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example shows the use of multi-output estimator to complete images. The goal is to predict..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="This example shows the use of multi-output estimator to complete images. The goal is to predict..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_multioutput_face_completion.html"><img alt="../../_images/plot_multioutput_face_completion1.png" src="../../_images/plot_multioutput_face_completion1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_multioutput_face_completion.html#example-plot-multioutput-face-completion-py"><span>Face completion with a multi-output estimators</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_multioutput_face_completion.html#example-plot-multioutput-face-completion-py"><em>Face completion with a multi-output estimators</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Evaluate the ability of k-means initializations strategies to make the algorithm convergence ro..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="Evaluate the ability of k-means initializations strategies to make the algorithm convergence ro..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_kmeans_stability_low_dim_dense.html"><img alt="../../_images/plot_kmeans_stability_low_dim_dense1.png" src="../../_images/plot_kmeans_stability_low_dim_dense1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_stability_low_dim_dense.html#example-cluster-plot-kmeans-stability-low-dim-dense-py"><span>Empirical evaluation of the impact of k-means initialization</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_stability_low_dim_dense.html#example-cluster-plot-kmeans-stability-low-dim-dense-py"><em>Empirical evaluation of the impact of k-means initialization</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An application of the different :ref:`manifold` techniques on a spherical data-set. Here one ca..."><div class="figure" id="id4">
+</div><div class="thumbnailContainer" tooltip="An application of the different :ref:`manifold` techniques on a spherical data-set. Here one ca..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/manifold/plot_manifold_sphere.html"><img alt="../../_images/plot_manifold_sphere1.png" src="../../_images/plot_manifold_sphere1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/manifold/plot_manifold_sphere.html#example-manifold-plot-manifold-sphere-py"><span>Manifold Learning methods on a severed sphere</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/manifold/plot_manifold_sphere.html#example-manifold-plot-manifold-sphere-py"><em>Manifold Learning methods on a severed sphere</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The following example illustrates the effect of scaling the regularization parameter when using..."><div class="figure" id="id5">
+</div><div class="thumbnailContainer" tooltip="The following example illustrates the effect of scaling the regularization parameter when using..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_svm_scale_c.html"><img alt="../../_images/plot_svm_scale_c1.png" src="../../_images/plot_svm_scale_c1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_svm_scale_c.html#example-svm-plot-svm-scale-c-py"><span>Scaling the regularization parameter for SVCs</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_svm_scale_c.html#example-svm-plot-svm-scale-c-py"><em>Scaling the regularization parameter for SVCs</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -177,8 +217,12 @@ Otherwise raise ValueError.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.utils.check_random_state.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.tree.export_graphviz.html">Previous
+      </a>
+    </div>
     
      </div>
 

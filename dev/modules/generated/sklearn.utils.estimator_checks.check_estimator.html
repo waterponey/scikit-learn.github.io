@@ -37,7 +37,7 @@
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../classes.html" />
     <link rel="next" title="sklearn.utils.resample" href="sklearn.utils.resample.html" />
-    <link rel="prev" title="sklearn.svm.libsvm.cross_validation" href="sklearn.svm.libsvm.cross_validation.html" />
+    <link rel="prev" title="sklearn.utils.check_random_state" href="sklearn.utils.check_random_state.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="sklearn.svm.libsvm.cross_validation.html"
+        <a href="sklearn.utils.check_random_state.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.svm.l...
+        sklearn.utils.ch...
         </span>
             <span class="hiddenrellink">
-            sklearn.svm.libsvm.cross_validation
+            sklearn.utils.check_random_state
             </span>
         </a>
         </div>
@@ -147,7 +147,7 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.utils.estimator_checks</span></code>.check_estimator</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.utils.estimator_checks</span></tt>.check_estimator</a></li>
 </ul>
 
     </div>
@@ -163,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-utils-estimator-checks-check-estimator">
-<h1><code class="xref py py-mod docutils literal"><span class="pre">sklearn.utils.estimator_checks</span></code>.check_estimator<a class="headerlink" href="#sklearn-utils-estimator-checks-check-estimator" title="Permalink to this headline">¶</a></h1>
+<h1><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.utils.estimator_checks</span></tt>.check_estimator<a class="headerlink" href="#sklearn-utils-estimator-checks-check-estimator" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.utils.estimator_checks.check_estimator">
-<code class="descclassname">sklearn.utils.estimator_checks.</code><code class="descname">check_estimator</code><span class="sig-paren">(</span><em>Estimator</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/utils/estimator_checks.py#L196"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.utils.estimator_checks.check_estimator" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.utils.estimator_checks.</tt><tt class="descname">check_estimator</tt><big>(</big><em>Estimator</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/utils/estimator_checks.py#L219"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.utils.estimator_checks.check_estimator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Check if estimator adheres to sklearn conventions.</p>
 <p>This estimator will run an extensive test-suite for input validation,
 shapes, etc.
@@ -182,7 +182,7 @@ from sklearn.base.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>Estimator</strong> : class</p>
 <blockquote class="last">
-<div><p>Class to check.</p>
+<div><p>Class to check. Estimator is a class object (not an instance).</p>
 </div></blockquote>
 </td>
 </tr>
@@ -207,7 +207,7 @@ from sklearn.base.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="sklearn.svm.libsvm.cross_validation.html">Previous
+      <a href="sklearn.utils.check_random_state.html">Previous
       </a>
     </div>
     

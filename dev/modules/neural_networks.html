@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        2.8. Density ...
+        2.8. Density Est...
         </span>
             <span class="hiddenrellink">
             2.8. Density Estimation
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        2. Unsupervis...
+        2. Unsupervised ...
         </span>
             <span class="hiddenrellink">
             2. Unsupervised learning
@@ -171,7 +171,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="neural-network-models-unsupervised">
 <span id="neural-network"></span><h1>2.9. Neural network models (unsupervised)<a class="headerlink" href="#neural-network-models-unsupervised" title="Permalink to this headline">¶</a></h1>
@@ -182,24 +182,24 @@ based on a probabilistic model. The features extracted by an RBM or a hierarchy
 of RBMs often give good results when fed into a linear classifier such as a
 linear SVM or a perceptron.</p>
 <p>The model makes assumptions regarding the distribution of inputs. At the moment,
-scikit-learn only provides <a class="reference internal" href="generated/sklearn.neural_network.BernoulliRBM.html#sklearn.neural_network.BernoulliRBM" title="sklearn.neural_network.BernoulliRBM"><code class="xref py py-class docutils literal"><span class="pre">BernoulliRBM</span></code></a>, which assumes the inputs are
+scikit-learn only provides <a class="reference internal" href="generated/sklearn.neural_network.BernoulliRBM.html#sklearn.neural_network.BernoulliRBM" title="sklearn.neural_network.BernoulliRBM"><tt class="xref py py-class docutils literal"><span class="pre">BernoulliRBM</span></tt></a>, which assumes the inputs are
 either binary values or values between 0 and 1, each encoding the probability
 that the specific feature would be turned on.</p>
 <p>The RBM tries to maximize the likelihood of the data using a particular
-graphical model. The parameter learning algorithm used (<a class="reference internal" href="#sml"><span>Stochastic
-Maximum Likelihood</span></a>) prevents the representations from straying far
+graphical model. The parameter learning algorithm used (<a class="reference internal" href="#sml"><em>Stochastic
+Maximum Likelihood</em></a>) prevents the representations from straying far
 from the input data, which makes them capture interesting regularities, but
 makes the model less useful for small datasets, and usually not useful for
 density estimation.</p>
 <p>The method gained popularity for initializing deep neural networks with the
 weights of independent RBMs. This method is known as unsupervised pre-training.</p>
 <div class="figure align-center">
-<a class="reference external image-reference" href="../auto_examples/neural_networks/plot_rbm_logistic_classification.html"><img alt="modules/../auto_examples/neural_networks/images/plot_rbm_logistic_classification_001.png" src="modules/../auto_examples/neural_networks/images/plot_rbm_logistic_classification_001.png" /></a>
+<a class="reference external image-reference" href="../auto_examples/neural_networks/plot_rbm_logistic_classification.html"><img alt="../_images/plot_rbm_logistic_classification_0011.png" src="../_images/plot_rbm_logistic_classification_0011.png" style="width: 420.0px; height: 400.0px;" /></a>
 </div>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/neural_networks/plot_rbm_logistic_classification.html#example-neural-networks-plot-rbm-logistic-classification-py"><span>Restricted Boltzmann Machine features for digit classification</span></a></li>
+<li><a class="reference internal" href="../auto_examples/neural_networks/plot_rbm_logistic_classification.html#example-neural-networks-plot-rbm-logistic-classification-py"><em>Restricted Boltzmann Machine features for digit classification</em></a></li>
 </ul>
 </div>
 <div class="section" id="graphical-model-and-parametrization">
@@ -212,25 +212,25 @@ weights of the connections, as well as one intercept (bias) term for each
 visible and hidden unit, ommited from the image for simplicity.</p>
 <p>The energy function measures the quality of a joint assignment:</p>
 <div class="math">
-<p><img src="../_images/math/14022777bcd4f1efe5389ef6f4f3a76ff95cc6ed.png" alt="E(\mathbf{v}, \mathbf{h}) = \sum_i \sum_j w_{ij}v_ih_j + \sum_i b_iv_i
-  + \sum_j c_jh_j"/></p>
-</div><p>In the formula above, <img class="math" src="../_images/math/dd6a0c79ee7e76c8e6f1310a5d171d5b3848b685.png" alt="\mathbf{b}"/> and <img class="math" src="../_images/math/c20b076757f2c84dbfba8d79beeb264442324609.png" alt="\mathbf{c}"/> are the
+<p><span class="math">E(\mathbf{v}, \mathbf{h}) = \sum_i \sum_j w_{ij}v_ih_j + \sum_i b_iv_i
+  + \sum_j c_jh_j</span></p>
+</div><p>In the formula above, <span class="math">\mathbf{b}</span> and <span class="math">\mathbf{c}</span> are the
 intercept vectors for the visible and hidden layers, respectively. The
 joint probability of the model is defined in terms of the energy:</p>
 <div class="math">
-<p><img src="../_images/math/7a25fd8f8c271eb8d4111de5ac72044c7ae10b31.png" alt="P(\mathbf{v}, \mathbf{h}) = \frac{e^{-E(\mathbf{v}, \mathbf{h})}}{Z}"/></p>
+<p><span class="math">P(\mathbf{v}, \mathbf{h}) = \frac{e^{-E(\mathbf{v}, \mathbf{h})}}{Z}</span></p>
 </div><p>The word <em>restricted</em> refers to the bipartite structure of the model, which
 prohibits direct interaction between hidden units, or between visible units.
 This means that the following conditional independencies are assumed:</p>
 <div class="math">
-<p><img src="../_images/math/ce9d9ed4403f4ae56fde107c0d49755ff7b333c1.png" alt="h_i \bot h_j | \mathbf{v} \\
-v_i \bot v_j | \mathbf{h}"/></p>
+<p><span class="math">h_i \bot h_j | \mathbf{v} \\
+v_i \bot v_j | \mathbf{h}</span></p>
 </div><p>The bipartite structure allows for the use of efficient block Gibbs sampling for
 inference.</p>
 </div>
 <div class="section" id="bernoulli-restricted-boltzmann-machines">
 <h3>2.9.1.2. Bernoulli Restricted Boltzmann machines<a class="headerlink" href="#bernoulli-restricted-boltzmann-machines" title="Permalink to this headline">¶</a></h3>
-<p>In the <a class="reference internal" href="generated/sklearn.neural_network.BernoulliRBM.html#sklearn.neural_network.BernoulliRBM" title="sklearn.neural_network.BernoulliRBM"><code class="xref py py-class docutils literal"><span class="pre">BernoulliRBM</span></code></a>, all units are binary stochastic units. This
+<p>In the <a class="reference internal" href="generated/sklearn.neural_network.BernoulliRBM.html#sklearn.neural_network.BernoulliRBM" title="sklearn.neural_network.BernoulliRBM"><tt class="xref py py-class docutils literal"><span class="pre">BernoulliRBM</span></tt></a>, all units are binary stochastic units. This
 means that the input data should either be binary, or real-valued between 0 and
 1 signifying the probability that the visible unit would turn on or off. This
 is a good model for character recognition, where the interest is on which
@@ -240,20 +240,20 @@ take the same values.</p>
 <p>The conditional probability distribution of each unit is given by the
 logistic sigmoid activation function of the input it receives:</p>
 <div class="math">
-<p><img src="../_images/math/c00101721e617799d0a33df0fc692cabc456044e.png" alt="P(v_i=1|\mathbf{h}) = \sigma(\sum_j w_{ij}h_j + b_i) \\
-P(h_i=1|\mathbf{v}) = \sigma(\sum_i w_{ij}v_i + c_j)"/></p>
-</div><p>where <img class="math" src="../_images/math/2298cf1485084afe72757a9c8483af49a138d81f.png" alt="\sigma"/> is the logistic sigmoid function:</p>
+<p><span class="math">P(v_i=1|\mathbf{h}) = \sigma(\sum_j w_{ij}h_j + b_i) \\
+P(h_i=1|\mathbf{v}) = \sigma(\sum_i w_{ij}v_i + c_j)</span></p>
+</div><p>where <span class="math">\sigma</span> is the logistic sigmoid function:</p>
 <div class="math">
-<p><img src="../_images/math/b151bd661258307a578723e769366bbe27f4d43e.png" alt="\sigma(x) = \frac{1}{1 + e^{-x}}"/></p>
+<p><span class="math">\sigma(x) = \frac{1}{1 + e^{-x}}</span></p>
 </div></div>
 <div class="section" id="stochastic-maximum-likelihood-learning">
 <span id="sml"></span><h3>2.9.1.3. Stochastic Maximum Likelihood learning<a class="headerlink" href="#stochastic-maximum-likelihood-learning" title="Permalink to this headline">¶</a></h3>
-<p>The training algorithm implemented in <a class="reference internal" href="generated/sklearn.neural_network.BernoulliRBM.html#sklearn.neural_network.BernoulliRBM" title="sklearn.neural_network.BernoulliRBM"><code class="xref py py-class docutils literal"><span class="pre">BernoulliRBM</span></code></a> is known as
+<p>The training algorithm implemented in <a class="reference internal" href="generated/sklearn.neural_network.BernoulliRBM.html#sklearn.neural_network.BernoulliRBM" title="sklearn.neural_network.BernoulliRBM"><tt class="xref py py-class docutils literal"><span class="pre">BernoulliRBM</span></tt></a> is known as
 Stochastic Maximum Likelihood (SML) or Persistent Contrastive Divergence
 (PCD). Optimizing maximum likelihood directly is infeasible because of
 the form of the data likelihood:</p>
 <div class="math">
-<p><img src="../_images/math/f8afca83661dfb09c017881fb7253c825b3f0bf5.png" alt="\log P(v) = \log \sum_h e^{-E(v, h)} - \log \sum_{x, y} e^{-E(x, y)}"/></p>
+<p><span class="math">\log P(v) = \log \sum_h e^{-E(v, h)} - \log \sum_{x, y} e^{-E(x, y)}</span></p>
 </div><p>For simplicity the equation above is written for a single training example.
 The gradient with respect to the weights is formed of two terms corresponding to
 the ones above. They are usually known as the positive gradient and the negative
@@ -265,17 +265,17 @@ the bipartite structure of RBMs, it can be computed efficiently. The
 negative gradient, however, is intractable. Its goal is to lower the energy of
 joint states that the model prefers, therefore making it stay true to the data.
 It can be approximated by Markov chain Monte Carlo using block Gibbs sampling by
-iteratively sampling each of <img class="math" src="../_images/math/0e22076955898e6c9bb38aa079135195c24dc81e.png" alt="v"/> and <img class="math" src="../_images/math/cbb80ad77aa7a5e227d5a46bc44d235284106cfc.png" alt="h"/> given the other, until the
+iteratively sampling each of <span class="math">v</span> and <span class="math">h</span> given the other, until the
 chain mixes. Samples generated in this way are sometimes refered as fantasy
 particles. This is inefficient and it is difficult to determine whether the
 Markov chain mixes.</p>
 <p>The Contrastive Divergence method suggests to stop the chain after a small
-number of iterations, <img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/>, usually even 1. This method is fast and has
+number of iterations, <span class="math">k</span>, usually even 1. This method is fast and has
 low variance, but the samples are far from the model distribution.</p>
 <p>Persistent Contrastive Divergence addresses this. Instead of starting a new
 chain each time the gradient is needed, and performing only one Gibbs sampling
 step, in PCD we keep a number of chains (fantasy particles) that are updated
-<img class="math" src="../_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/> Gibbs steps after each weight update. This allows the particles to
+<span class="math">k</span> Gibbs steps after each weight update. This allows the particles to
 explore the space more thoroughly.</p>
 <div class="topic">
 <p class="topic-title first">References:</p>

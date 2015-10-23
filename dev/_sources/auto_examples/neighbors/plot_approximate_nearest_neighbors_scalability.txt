@@ -32,8 +32,42 @@ the dimensionality of the data.
 
 
 
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_approximate_nearest_neighbors_scalability_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_approximate_nearest_neighbors_scalability_002.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_approximate_nearest_neighbors_scalability_003.png
+            :scale: 47
+
+
+**Script output**::
+
+  Index size: 1000, exact: 0.002s, LSHF: 0.013s, speedup: 0.1, accuracy: 1.00 +/-0.00
+  Index size: 2511, exact: 0.004s, LSHF: 0.014s, speedup: 0.3, accuracy: 1.00 +/-0.00
+  Index size: 6309, exact: 0.015s, LSHF: 0.024s, speedup: 0.6, accuracy: 1.00 +/-0.00
+  Index size: 15848, exact: 0.023s, LSHF: 0.014s, speedup: 1.6, accuracy: 1.00 +/-0.00
+  Index size: 39810, exact: 0.055s, LSHF: 0.016s, speedup: 3.4, accuracy: 1.00 +/-0.00
+  Index size: 100000, exact: 0.163s, LSHF: 0.023s, speedup: 7.2, accuracy: 0.94 +/-0.08
+
+
+
 **Python source code:** :download:`plot_approximate_nearest_neighbors_scalability.py <plot_approximate_nearest_neighbors_scalability.py>`
 
 .. literalinclude:: plot_approximate_nearest_neighbors_scalability.py
     :lines: 30-
+
+**Total running time of the example:**  16.55 seconds
+( 0 minutes  16.55 seconds)
     

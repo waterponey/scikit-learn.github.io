@@ -36,7 +36,7 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="API Reference" href="../classes.html" />
-    <link rel="next" title="sklearn.feature_extraction.image.img_to_graph" href="sklearn.feature_extraction.image.img_to_graph.html" />
+    <link rel="next" title="sklearn.exceptions.NotFittedError" href="sklearn.exceptions.NotFittedError.html" />
     <link rel="prev" title="sklearn.ensemble.partial_dependence.partial_dependence" href="sklearn.ensemble.partial_dependence.partial_dependence.html" />
   
   
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.ensem...
+        sklearn.ensemble...
         </span>
             <span class="hiddenrellink">
             sklearn.ensemble.partial_dependence.partial_dependence
@@ -147,8 +147,8 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.ensemble.partial_dependence</span></code>.plot_partial_dependence</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-ensemble-partial-dependence-plot-partial-dependence">Examples using <code class="docutils literal"><span class="pre">sklearn.ensemble.partial_dependence.plot_partial_dependence</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.ensemble.partial_dependence</span></tt>.plot_partial_dependence</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-ensemble-partial-dependence-plot-partial-dependence">Examples using <tt class="docutils literal"><span class="pre">sklearn.ensemble.partial_dependence.plot_partial_dependence</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -166,18 +166,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-ensemble-partial-dependence-plot-partial-dependence">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.ensemble.partial_dependence" title="sklearn.ensemble.partial_dependence"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble.partial_dependence</span></code></a>.plot_partial_dependence<a class="headerlink" href="#sklearn-ensemble-partial-dependence-plot-partial-dependence" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.ensemble.partial_dependence" title="sklearn.ensemble.partial_dependence"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.ensemble.partial_dependence</span></tt></a>.plot_partial_dependence<a class="headerlink" href="#sklearn-ensemble-partial-dependence-plot-partial-dependence" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.ensemble.partial_dependence.plot_partial_dependence">
-<code class="descclassname">sklearn.ensemble.partial_dependence.</code><code class="descname">plot_partial_dependence</code><span class="sig-paren">(</span><em>gbrt</em>, <em>X</em>, <em>features</em>, <em>feature_names=None</em>, <em>label=None</em>, <em>n_cols=3</em>, <em>grid_resolution=100</em>, <em>percentiles=(0.05</em>, <em>0.95)</em>, <em>n_jobs=1</em>, <em>verbose=0</em>, <em>ax=None</em>, <em>line_kw=None</em>, <em>contour_kw=None</em>, <em>**fig_kw</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/ensemble/partial_dependence.py#L167"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.partial_dependence.plot_partial_dependence" title="Permalink to this definition">¶</a></dt>
-<dd><p>Partial dependence plots for <code class="docutils literal"><span class="pre">features</span></code>.</p>
-<p>The <code class="docutils literal"><span class="pre">len(features)</span></code> plots are arranged in a grid with <code class="docutils literal"><span class="pre">n_cols</span></code>
+<tt class="descclassname">sklearn.ensemble.partial_dependence.</tt><tt class="descname">plot_partial_dependence</tt><big>(</big><em>gbrt</em>, <em>X</em>, <em>features</em>, <em>feature_names=None</em>, <em>label=None</em>, <em>n_cols=3</em>, <em>grid_resolution=100</em>, <em>percentiles=(0.05</em>, <em>0.95)</em>, <em>n_jobs=1</em>, <em>verbose=0</em>, <em>ax=None</em>, <em>line_kw=None</em>, <em>contour_kw=None</em>, <em>**fig_kw</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/ensemble/partial_dependence.py#L167"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.ensemble.partial_dependence.plot_partial_dependence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Partial dependence plots for <tt class="docutils literal"><span class="pre">features</span></tt>.</p>
+<p>The <tt class="docutils literal"><span class="pre">len(features)</span></tt> plots are arranged in a grid with <tt class="docutils literal"><span class="pre">n_cols</span></tt>
 columns. Two-way partial dependence plots are plotted as contour
 plots.</p>
-<p>Read more in the <a class="reference internal" href="../ensemble.html#partial-dependence"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../ensemble.html#partial-dependence"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -188,7 +188,7 @@ plots.</p>
 </div></blockquote>
 <p><strong>X</strong> : array-like, shape=(n_samples, n_features)</p>
 <blockquote>
-<div><p>The data on which <code class="docutils literal"><span class="pre">gbrt</span></code> was trained.</p>
+<div><p>The data on which <tt class="docutils literal"><span class="pre">gbrt</span></tt> was trained.</p>
 </div></blockquote>
 <p><strong>features</strong> : seq of tuples or ints</p>
 <blockquote>
@@ -204,7 +204,7 @@ the name of the feature with index i.</p>
 <p><strong>label</strong> : object</p>
 <blockquote>
 <div><p>The class label for which the PDPs should be computed.
-Only if gbrt is a multi-class model. Must be in <code class="docutils literal"><span class="pre">gbrt.classes_</span></code>.</p>
+Only if gbrt is a multi-class model. Must be in <tt class="docutils literal"><span class="pre">gbrt.classes_</span></tt>.</p>
 </div></blockquote>
 <p><strong>n_cols</strong> : int</p>
 <blockquote>
@@ -234,12 +234,12 @@ Defaults to 1.</p>
 </div></blockquote>
 <p><strong>line_kw</strong> : dict</p>
 <blockquote>
-<div><p>Dict with keywords passed to the <code class="docutils literal"><span class="pre">pylab.plot</span></code> call.
+<div><p>Dict with keywords passed to the <tt class="docutils literal"><span class="pre">pylab.plot</span></tt> call.
 For one-way partial dependence plots.</p>
 </div></blockquote>
 <p><strong>contour_kw</strong> : dict</p>
 <blockquote>
-<div><p>Dict with keywords passed to the <code class="docutils literal"><span class="pre">pylab.plot</span></code> call.
+<div><p>Dict with keywords passed to the <tt class="docutils literal"><span class="pre">pylab.plot</span></tt> call.
 For two-way partial dependence plots.</p>
 </div></blockquote>
 <p><strong>fig_kw</strong> : dict</p>
@@ -274,10 +274,10 @@ included here.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-ensemble-partial-dependence-plot-partial-dependence">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.ensemble.partial_dependence.plot_partial_dependence</span></code><a class="headerlink" href="#examples-using-sklearn-ensemble-partial-dependence-plot-partial-dependence" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Partial dependence plots show the dependence between the target function [1]_ and a set of 'tar..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.ensemble.partial_dependence.plot_partial_dependence</span></tt><a class="headerlink" href="#examples-using-sklearn-ensemble-partial-dependence-plot-partial-dependence" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Partial dependence plots show the dependence between the target function [1]_ and a set of 'tar..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_partial_dependence.html"><img alt="../../_images/plot_partial_dependence1.png" src="../../_images/plot_partial_dependence1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_partial_dependence.html#example-ensemble-plot-partial-dependence-py"><span>Partial Dependence Plots</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_partial_dependence.html#example-ensemble-plot-partial-dependence-py"><em>Partial Dependence Plots</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>

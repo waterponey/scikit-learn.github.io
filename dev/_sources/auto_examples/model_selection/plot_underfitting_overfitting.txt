@@ -24,8 +24,18 @@ set, the higher, the less likely the model generalizes correctly from the
 training data.
 
 
+
+.. image:: images/plot_underfitting_overfitting_001.png
+    :align: center
+
+
+
+
 **Python source code:** :download:`plot_underfitting_overfitting.py <plot_underfitting_overfitting.py>`
 
 .. literalinclude:: plot_underfitting_overfitting.py
     :lines: 22-
+
+**Total running time of the example:**  0.39 seconds
+( 0 minutes  0.39 seconds)
     

@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.metrics.v_measure_score" href="sklearn.metrics.v_measure_score.html" />
+    <link rel="prev" title="sklearn.metrics.silhouette_score" href="sklearn.metrics.silhouette_score.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.metrics.silhouette_score.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.metrics....
+        </span>
+            <span class="hiddenrellink">
+            sklearn.metrics.silhouette_score
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.silhouette_samples</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-metrics-silhouette-samples">Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.silhouette_samples</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.silhouette_samples</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-metrics-silhouette-samples">Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.silhouette_samples</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-metrics-silhouette-samples">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.silhouette_samples<a class="headerlink" href="#sklearn-metrics-silhouette-samples" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.silhouette_samples<a class="headerlink" href="#sklearn-metrics-silhouette-samples" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.silhouette_samples">
-<code class="descclassname">sklearn.metrics.</code><code class="descname">silhouette_samples</code><span class="sig-paren">(</span><em>X</em>, <em>labels</em>, <em>metric='euclidean'</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/cluster/unsupervised.py#L98"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.silhouette_samples" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">silhouette_samples</tt><big>(</big><em>X</em>, <em>labels</em>, <em>metric='euclidean'</em>, <em>**kwds</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/metrics/cluster/unsupervised.py#L98"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.silhouette_samples" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the Silhouette Coefficient for each sample.</p>
 <p>The Silhouette Coefficient is a measure of how well samples are clustered
 with samples that are similar to themselves. Clustering models with a high
@@ -140,15 +180,15 @@ Silhouette Coefficient are said to be dense, where samples in the same
 cluster are similar to each other, and well separated, where samples in
 different clusters are not very similar to each other.</p>
 <p>The Silhouette Coefficient is calculated using the mean intra-cluster
-distance (<code class="docutils literal"><span class="pre">a</span></code>) and the mean nearest-cluster distance (<code class="docutils literal"><span class="pre">b</span></code>) for each
-sample.  The Silhouette Coefficient for a sample is <code class="docutils literal"><span class="pre">(b</span> <span class="pre">-</span> <span class="pre">a)</span> <span class="pre">/</span> <span class="pre">max(a,</span>
-<span class="pre">b)</span></code>.
+distance (<tt class="docutils literal"><span class="pre">a</span></tt>) and the mean nearest-cluster distance (<tt class="docutils literal"><span class="pre">b</span></tt>) for each
+sample.  The Silhouette Coefficient for a sample is <tt class="docutils literal"><span class="pre">(b</span> <span class="pre">-</span> <span class="pre">a)</span> <span class="pre">/</span> <span class="pre">max(a,</span>
+<span class="pre">b)</span></tt>.
 Note that Silhouette Coefficent is only defined if number of labels
 is 2 &lt;= n_labels &lt;= n_samples - 1.</p>
 <p>This function returns the Silhouette Coefficient for each sample.</p>
 <p>The best value is 1 and the worst value is -1. Values near 0 indicate
 overlapping clusters.</p>
-<p>Read more in the <a class="reference internal" href="../clustering.html#silhouette-coefficient"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../clustering.html#silhouette-coefficient"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -165,13 +205,13 @@ overlapping clusters.</p>
 <blockquote>
 <div><p>The metric to use when calculating distance between instances in a
 feature array. If metric is a string, it must be one of the options
-allowed by <a class="reference internal" href="sklearn.metrics.pairwise.pairwise_distances.html#sklearn.metrics.pairwise.pairwise_distances" title="sklearn.metrics.pairwise.pairwise_distances"><code class="xref py py-func docutils literal"><span class="pre">sklearn.metrics.pairwise.pairwise_distances</span></code></a>. If X is
+allowed by <a class="reference internal" href="sklearn.metrics.pairwise.pairwise_distances.html#sklearn.metrics.pairwise.pairwise_distances" title="sklearn.metrics.pairwise.pairwise_distances"><tt class="xref py py-func docutils literal"><span class="pre">sklearn.metrics.pairwise.pairwise_distances</span></tt></a>. If X is
 the distance array itself, use &#8220;precomputed&#8221; as the metric.</p>
 </div></blockquote>
 <p><strong>`**kwds`</strong> : optional keyword parameters</p>
 <blockquote>
 <div><p>Any further parameters are passed directly to the distance function.
-If using a <code class="docutils literal"><span class="pre">scipy.spatial.distance</span></code> metric, the parameters are still
+If using a <tt class="docutils literal"><span class="pre">scipy.spatial.distance</span></tt> metric, the parameters are still
 metric dependent. See the scipy docs for usage examples.</p>
 </div></blockquote>
 </td>
@@ -185,27 +225,27 @@ metric dependent. See the scipy docs for usage examples.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r89" rules="none">
+<table class="docutils citation" frame="void" id="r181" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R89]</a></td><td><a class="reference external" href="http://www.sciencedirect.com/science/article/pii/0377042787901257">Peter J. Rousseeuw (1987). &#8220;Silhouettes: a Graphical Aid to the
+<tr><td class="label"><a class="fn-backref" href="#id1">[R181]</a></td><td><a class="reference external" href="http://www.sciencedirect.com/science/article/pii/0377042787901257">Peter J. Rousseeuw (1987). &#8220;Silhouettes: a Graphical Aid to the
 Interpretation and Validation of Cluster Analysis&#8221;. Computational
 and Applied Mathematics 20: 53-65.</a></td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r90" rules="none">
+<table class="docutils citation" frame="void" id="r182" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[R90]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Silhouette_(clustering)">Wikipedia entry on the Silhouette Coefficient</a></td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id2">[R182]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Silhouette_(clustering)">Wikipedia entry on the Silhouette Coefficient</a></td></tr>
 </tbody>
 </table>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-metrics-silhouette-samples">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.metrics.silhouette_samples</span></code><a class="headerlink" href="#examples-using-sklearn-metrics-silhouette-samples" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Silhouette analysis can be used to study the separation distance between the resulting clusters..."><div class="figure" id="id3">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.metrics.silhouette_samples</span></tt><a class="headerlink" href="#examples-using-sklearn-metrics-silhouette-samples" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Silhouette analysis can be used to study the separation distance between the resulting clusters..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/cluster/plot_kmeans_silhouette_analysis.html"><img alt="../../_images/plot_kmeans_silhouette_analysis1.png" src="../../_images/plot_kmeans_silhouette_analysis1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_silhouette_analysis.html#example-cluster-plot-kmeans-silhouette-analysis-py"><span>Selecting the number of clusters with silhouette analysis on KMeans clustering</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/cluster/plot_kmeans_silhouette_analysis.html#example-cluster-plot-kmeans-silhouette-analysis-py"><em>Selecting the number of clusters with silhouette analysis on KMeans clustering</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -222,8 +262,12 @@ and Applied Mathematics 20: 53-65.</a></td></tr>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.silhouette_samples.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.metrics.silhouette_score.html">Previous
+      </a>
+    </div>
     
      </div>
 

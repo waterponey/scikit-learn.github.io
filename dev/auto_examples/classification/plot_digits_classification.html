@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Probability C...
+        Probability Cali...
         </span>
             <span class="hiddenrellink">
             Probability Calibration for 3-class classification
@@ -163,15 +163,50 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="recognizing-hand-written-digits">
 <span id="example-classification-plot-digits-classification-py"></span><h1>Recognizing hand-written digits<a class="headerlink" href="#recognizing-hand-written-digits" title="Permalink to this headline">¶</a></h1>
 <p>An example showing how the scikit-learn can be used to recognize images of
 hand-written digits.</p>
 <p>This example is commented in the
-<a class="reference internal" href="../../tutorial/basic/tutorial.html#introduction"><span>tutorial section of the user manual</span></a>.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_digits_classification.py"><code class="xref download docutils literal"><span class="pre">plot_digits_classification.py</span></code></a></p>
+<a class="reference internal" href="../../tutorial/basic/tutorial.html#introduction"><em>tutorial section of the user manual</em></a>.</p>
+<img alt="../../_images/plot_digits_classification_001.png" class="align-center" src="../../_images/plot_digits_classification_001.png" />
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Classification report for classifier SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape=None, degree=3, gamma=0.001, kernel=&#39;rbf&#39;,
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False):
+             precision    recall  f1-score   support
+
+          0       1.00      0.99      0.99        88
+          1       0.99      0.97      0.98        91
+          2       0.99      0.99      0.99        86
+          3       0.98      0.87      0.92        91
+          4       0.99      0.96      0.97        92
+          5       0.95      0.97      0.96        91
+          6       0.99      0.99      0.99        91
+          7       0.96      0.99      0.97        89
+          8       0.94      1.00      0.97        88
+          9       0.93      0.98      0.95        92
+
+avg / total       0.97      0.97      0.97       899
+
+
+Confusion matrix:
+[[87  0  0  0  1  0  0  0  0  0]
+ [ 0 88  1  0  0  0  0  0  1  1]
+ [ 0  0 85  1  0  0  0  0  0  0]
+ [ 0  0  0 79  0  3  0  4  5  0]
+ [ 0  0  0  0 88  0  0  0  0  4]
+ [ 0  0  0  0  0 88  1  0  0  2]
+ [ 0  1  0  0  0  0 90  0  0  0]
+ [ 0  0  0  0  0  1  0 88  0  0]
+ [ 0  0  0  0  0  0  0  0 88  0]
+ [ 0  0  0  1  0  1  0  0  0 90]]
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_digits_classification.py"><tt class="xref download docutils literal"><span class="pre">plot_digits_classification.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Gael Varoquaux &lt;gael dot varoquaux at normalesup dot org&gt;</span>
@@ -228,6 +263,8 @@ hand-written digits.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  0.65 seconds
+( 0 minutes  0.65 seconds)</p>
 </div>
 
 

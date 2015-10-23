@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        4. Dataset tr...
+        4. Dataset trans...
         </span>
             <span class="hiddenrellink">
             4. Dataset transformations
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        4. Dataset tr...
+        4. Dataset trans...
         </span>
             <span class="hiddenrellink">
             4. Dataset transformations
@@ -174,29 +174,29 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="pipeline-and-featureunion-combining-estimators">
 <span id="combining-estimators"></span><h1>4.1. Pipeline and FeatureUnion: combining estimators<a class="headerlink" href="#pipeline-and-featureunion-combining-estimators" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="pipeline-chaining-estimators">
 <span id="pipeline"></span><h2>4.1.1. Pipeline: chaining estimators<a class="headerlink" href="#pipeline-chaining-estimators" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><code class="xref py py-class docutils literal"><span class="pre">Pipeline</span></code></a> can be used to chain multiple estimators
+<p><a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><tt class="xref py py-class docutils literal"><span class="pre">Pipeline</span></tt></a> can be used to chain multiple estimators
 into one. This is useful as there is often a fixed sequence
 of steps in processing the data, for example feature selection, normalization
-and classification. <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><code class="xref py py-class docutils literal"><span class="pre">Pipeline</span></code></a> serves two purposes here:</p>
+and classification. <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><tt class="xref py py-class docutils literal"><span class="pre">Pipeline</span></tt></a> serves two purposes here:</p>
 <blockquote>
-<div><p><strong>Convenience</strong>: You only have to call <code class="docutils literal"><span class="pre">fit</span></code> and <code class="docutils literal"><span class="pre">predict</span></code> once on your
+<div><p><strong>Convenience</strong>: You only have to call <tt class="docutils literal"><span class="pre">fit</span></tt> and <tt class="docutils literal"><span class="pre">predict</span></tt> once on your
 data to fit a whole sequence of estimators.</p>
-<p><strong>Joint parameter selection</strong>: You can <a class="reference internal" href="grid_search.html#grid-search"><span>grid search</span></a>
+<p><strong>Joint parameter selection</strong>: You can <a class="reference internal" href="grid_search.html#grid-search"><em>grid search</em></a>
 over parameters of all estimators in the pipeline at once.</p>
 </div></blockquote>
 <p>All estimators in a pipeline, except the last one, must be transformers
-(i.e. must have a <code class="docutils literal"><span class="pre">transform</span></code> method).
+(i.e. must have a <tt class="docutils literal"><span class="pre">transform</span></tt> method).
 The last estimator may be any type (transformer, classifier, etc.).</p>
 <div class="section" id="usage">
 <h3>4.1.1.1. Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
-<p>The <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><code class="xref py py-class docutils literal"><span class="pre">Pipeline</span></code></a> is build using a list of <code class="docutils literal"><span class="pre">(key,</span> <span class="pre">value)</span></code> pairs, where
-the <code class="docutils literal"><span class="pre">key</span></code> a string containing the name you want to give this step and <code class="docutils literal"><span class="pre">value</span></code>
+<p>The <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><tt class="xref py py-class docutils literal"><span class="pre">Pipeline</span></tt></a> is build using a list of <tt class="docutils literal"><span class="pre">(key,</span> <span class="pre">value)</span></tt> pairs, where
+the <tt class="docutils literal"><span class="pre">key</span></tt> a string containing the name you want to give this step and <tt class="docutils literal"><span class="pre">value</span></tt>
 is an estimator object:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
@@ -211,7 +211,7 @@ is an estimator object:</p>
 <span class="go">    shrinking=True, tol=0.001, verbose=False))])</span>
 </pre></div>
 </div>
-<p>The utility function <a class="reference internal" href="generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline"><code class="xref py py-func docutils literal"><span class="pre">make_pipeline</span></code></a> is a shorthand
+<p>The utility function <a class="reference internal" href="generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline" title="sklearn.pipeline.make_pipeline"><tt class="xref py py-func docutils literal"><span class="pre">make_pipeline</span></tt></a> is a shorthand
 for constructing pipelines;
 it takes a variable number of estimators and returns a pipeline,
 filling in the names automatically:</p>
@@ -225,18 +225,18 @@ filling in the names automatically:</p>
 <span class="go">                                                fit_prior=True))])</span>
 </pre></div>
 </div>
-<p>The estimators of a pipeline are stored as a list in the <code class="docutils literal"><span class="pre">steps</span></code> attribute:</p>
+<p>The estimators of a pipeline are stored as a list in the <tt class="docutils literal"><span class="pre">steps</span></tt> attribute:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="go">(&#39;reduce_dim&#39;, PCA(copy=True, n_components=None, whiten=False))</span>
 </pre></div>
 </div>
-<p>and as a <code class="docutils literal"><span class="pre">dict</span></code> in <code class="docutils literal"><span class="pre">named_steps</span></code>:</p>
+<p>and as a <tt class="docutils literal"><span class="pre">dict</span></tt> in <tt class="docutils literal"><span class="pre">named_steps</span></tt>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s">&#39;reduce_dim&#39;</span><span class="p">]</span>
 <span class="go">PCA(copy=True, n_components=None, whiten=False)</span>
 </pre></div>
 </div>
 <p>Parameters of the estimators in the pipeline can be accessed using the
-<code class="docutils literal"><span class="pre">&lt;estimator&gt;__&lt;parameter&gt;</span></code> syntax:</p>
+<tt class="docutils literal"><span class="pre">&lt;estimator&gt;__&lt;parameter&gt;</span></tt> syntax:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="n">svm__C</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> 
 <span class="go">Pipeline(steps=[(&#39;reduce_dim&#39;, PCA(copy=True, n_components=None,</span>
 <span class="go">    whiten=False)), (&#39;svm&#39;, SVC(C=10, cache_size=200, class_weight=None,</span>
@@ -255,52 +255,52 @@ filling in the names automatically:</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/feature_selection/feature_selection_pipeline.html#example-feature-selection-feature-selection-pipeline-py"><span>Pipeline Anova SVM</span></a></li>
-<li><a class="reference internal" href="../auto_examples/model_selection/grid_search_text_feature_extraction.html#example-model-selection-grid-search-text-feature-extraction-py"><span>Sample pipeline for text feature extraction and evaluation</span></a></li>
-<li><a class="reference internal" href="../auto_examples/plot_digits_pipe.html#example-plot-digits-pipe-py"><span>Pipelining: chaining a PCA and a logistic regression</span></a></li>
-<li><a class="reference internal" href="../auto_examples/plot_kernel_approximation.html#example-plot-kernel-approximation-py"><span>Explicit feature map approximation for RBF kernels</span></a></li>
-<li><a class="reference internal" href="../auto_examples/svm/plot_svm_anova.html#example-svm-plot-svm-anova-py"><span>SVM-Anova: SVM with univariate feature selection</span></a></li>
+<li><a class="reference internal" href="../auto_examples/feature_selection/feature_selection_pipeline.html#example-feature-selection-feature-selection-pipeline-py"><em>Pipeline Anova SVM</em></a></li>
+<li><a class="reference internal" href="../auto_examples/model_selection/grid_search_text_feature_extraction.html#example-model-selection-grid-search-text-feature-extraction-py"><em>Sample pipeline for text feature extraction and evaluation</em></a></li>
+<li><a class="reference internal" href="../auto_examples/plot_digits_pipe.html#example-plot-digits-pipe-py"><em>Pipelining: chaining a PCA and a logistic regression</em></a></li>
+<li><a class="reference internal" href="../auto_examples/plot_kernel_approximation.html#example-plot-kernel-approximation-py"><em>Explicit feature map approximation for RBF kernels</em></a></li>
+<li><a class="reference internal" href="../auto_examples/svm/plot_svm_anova.html#example-svm-plot-svm-anova-py"><em>SVM-Anova: SVM with univariate feature selection</em></a></li>
 </ul>
 </div>
 <div class="topic">
 <p class="topic-title first">See also:</p>
 <ul class="simple">
-<li><a class="reference internal" href="grid_search.html#grid-search"><span>Grid Search: Searching for estimator parameters</span></a></li>
+<li><a class="reference internal" href="grid_search.html#grid-search"><em>Grid Search: Searching for estimator parameters</em></a></li>
 </ul>
 </div>
 </div>
 <div class="section" id="notes">
 <h3>4.1.1.2. Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h3>
-<p>Calling <code class="docutils literal"><span class="pre">fit</span></code> on the pipeline is the same as calling <code class="docutils literal"><span class="pre">fit</span></code> on
-each estimator in turn, <code class="docutils literal"><span class="pre">transform</span></code> the input and pass it on to the next step.
+<p>Calling <tt class="docutils literal"><span class="pre">fit</span></tt> on the pipeline is the same as calling <tt class="docutils literal"><span class="pre">fit</span></tt> on
+each estimator in turn, <tt class="docutils literal"><span class="pre">transform</span></tt> the input and pass it on to the next step.
 The pipeline has all the methods that the last estimator in the pipeline has,
-i.e. if the last estimator is a classifier, the <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><code class="xref py py-class docutils literal"><span class="pre">Pipeline</span></code></a> can be used
+i.e. if the last estimator is a classifier, the <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><tt class="xref py py-class docutils literal"><span class="pre">Pipeline</span></tt></a> can be used
 as a classifier. If the last estimator is a transformer, again, so is the
 pipeline.</p>
 </div>
 </div>
 <div class="section" id="featureunion-composite-feature-spaces">
 <span id="feature-union"></span><h2>4.1.2. FeatureUnion: composite feature spaces<a class="headerlink" href="#featureunion-composite-feature-spaces" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><code class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></code></a> combines several transformer objects into a new
-transformer that combines their output. A <a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><code class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></code></a> takes
+<p><a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><tt class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></tt></a> combines several transformer objects into a new
+transformer that combines their output. A <a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><tt class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></tt></a> takes
 a list of transformer objects. During fitting, each of these
 is fit to the data independently. For transforming data, the
 transformers are applied in parallel, and the sample vectors they output
 are concatenated end-to-end into larger vectors.</p>
-<p><a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><code class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></code></a> serves the same purposes as <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><code class="xref py py-class docutils literal"><span class="pre">Pipeline</span></code></a> -
+<p><a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><tt class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></tt></a> serves the same purposes as <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><tt class="xref py py-class docutils literal"><span class="pre">Pipeline</span></tt></a> -
 convenience and joint parameter estimation and validation.</p>
-<p><a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><code class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></code></a> and <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><code class="xref py py-class docutils literal"><span class="pre">Pipeline</span></code></a> can be combined to
+<p><a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><tt class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></tt></a> and <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><tt class="xref py py-class docutils literal"><span class="pre">Pipeline</span></tt></a> can be combined to
 create complex models.</p>
-<p>(A <a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><code class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></code></a> has no way of checking whether two transformers
+<p>(A <a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><tt class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></tt></a> has no way of checking whether two transformers
 might produce identical features. It only produces a union when the
 feature sets are disjoint, and making sure they are is the caller&#8217;s
 responsibility.)</p>
 <div class="section" id="id1">
 <h3>4.1.2.1. Usage<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>A <a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><code class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></code></a> is built using a list of <code class="docutils literal"><span class="pre">(key,</span> <span class="pre">value)</span></code> pairs,
-where the <code class="docutils literal"><span class="pre">key</span></code> is the name you want to give to a given transformation
+<p>A <a class="reference internal" href="generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion" title="sklearn.pipeline.FeatureUnion"><tt class="xref py py-class docutils literal"><span class="pre">FeatureUnion</span></tt></a> is built using a list of <tt class="docutils literal"><span class="pre">(key,</span> <span class="pre">value)</span></tt> pairs,
+where the <tt class="docutils literal"><span class="pre">key</span></tt> is the name you want to give to a given transformation
 (an arbitrary string; it only serves as an identifier)
-and <code class="docutils literal"><span class="pre">value</span></code> is an estimator object:</p>
+and <tt class="docutils literal"><span class="pre">value</span></tt> is an estimator object:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">FeatureUnion</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">KernelPCA</span>
@@ -311,17 +311,17 @@ and <code class="docutils literal"><span class="pre">value</span></code> is an e
 <span class="go">    n_components=None, whiten=False)), (&#39;kernel_pca&#39;, KernelPCA(alpha=1.0,</span>
 <span class="go">    coef0=1, degree=3, eigen_solver=&#39;auto&#39;, fit_inverse_transform=False,</span>
 <span class="go">    gamma=None, kernel=&#39;linear&#39;, kernel_params=None, max_iter=None,</span>
-<span class="go">    n_components=None, remove_zero_eig=False, tol=0))],</span>
+<span class="go">    n_components=None, random_state=None, remove_zero_eig=False, tol=0))],</span>
 <span class="go">    transformer_weights=None)</span>
 </pre></div>
 </div>
 <p>Like pipelines, feature unions have a shorthand constructor called
-<a class="reference internal" href="generated/sklearn.pipeline.make_union.html#sklearn.pipeline.make_union" title="sklearn.pipeline.make_union"><code class="xref py py-func docutils literal"><span class="pre">make_union</span></code></a> that does not require explicit naming of the components.</p>
+<a class="reference internal" href="generated/sklearn.pipeline.make_union.html#sklearn.pipeline.make_union" title="sklearn.pipeline.make_union"><tt class="xref py py-func docutils literal"><span class="pre">make_union</span></tt></a> that does not require explicit naming of the components.</p>
 <div class="topic">
 <p class="topic-title first">Examples:</p>
 <ul class="simple">
-<li><a class="reference internal" href="../auto_examples/feature_stacker.html#example-feature-stacker-py"><span>Concatenating multiple feature extraction methods</span></a></li>
-<li><a class="reference internal" href="../auto_examples/hetero_feature_union.html#example-hetero-feature-union-py"><span>Feature Union with Heterogeneous Data Sources</span></a></li>
+<li><a class="reference internal" href="../auto_examples/feature_stacker.html#example-feature-stacker-py"><em>Concatenating multiple feature extraction methods</em></a></li>
+<li><a class="reference internal" href="../auto_examples/hetero_feature_union.html#example-hetero-feature-union-py"><em>Feature Union with Heterogeneous Data Sources</em></a></li>
 </ul>
 </div>
 </div>

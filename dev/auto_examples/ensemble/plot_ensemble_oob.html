@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Gradient Boos...
+        Gradient Boostin...
         </span>
             <span class="hiddenrellink">
             Gradient Boosting regularization
@@ -163,19 +163,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="oob-errors-for-random-forests">
 <span id="example-ensemble-plot-ensemble-oob-py"></span><h1>OOB Errors for Random Forests<a class="headerlink" href="#oob-errors-for-random-forests" title="Permalink to this headline">¶</a></h1>
-<p>The <code class="docutils literal"><span class="pre">RandomForestClassifier</span></code> is trained using <em>bootstrap aggregation</em>, where
+<p>The <tt class="docutils literal"><span class="pre">RandomForestClassifier</span></tt> is trained using <em>bootstrap aggregation</em>, where
 each new tree is fit from a bootstrap sample of the training observations
-<img class="math" src="../../_images/math/b5c431d1ae18b076ecc008f3084eb2b02591b5e9.png" alt="z_i = (x_i, y_i)"/>. The <em>out-of-bag</em> (OOB) error is the average error for
-each <img class="math" src="../../_images/math/0c9b8c78a7a049eca8f2168d0691afc6a65a9dad.png" alt="z_i"/> calculated using predictions from the trees that do not
-contain <img class="math" src="../../_images/math/0c9b8c78a7a049eca8f2168d0691afc6a65a9dad.png" alt="z_i"/> in their respective bootstrap sample. This allows the
-<code class="docutils literal"><span class="pre">RandomForestClassifier</span></code> to be fit and validated whilst being trained [1].</p>
+<span class="math">z_i = (x_i, y_i)</span>. The <em>out-of-bag</em> (OOB) error is the average error for
+each <span class="math">z_i</span> calculated using predictions from the trees that do not
+contain <span class="math">z_i</span> in their respective bootstrap sample. This allows the
+<tt class="docutils literal"><span class="pre">RandomForestClassifier</span></tt> to be fit and validated whilst being trained [1].</p>
 <p>The example below demonstrates how the OOB error can be measured at the
 addition of each new tree during training. The resulting plot allows a
-practitioner to approximate a suitable value of <code class="docutils literal"><span class="pre">n_estimators</span></code> at which the
+practitioner to approximate a suitable value of <tt class="docutils literal"><span class="pre">n_estimators</span></tt> at which the
 error stabilizes.</p>
 <table class="docutils footnote" frame="void" id="id1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
@@ -184,7 +184,8 @@ error stabilizes.</p>
 Learning Ed. 2&#8221;, p592-593, Springer, 2009.</td></tr>
 </tbody>
 </table>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ensemble_oob.py"><code class="xref download docutils literal"><span class="pre">plot_ensemble_oob.py</span></code></a></p>
+<img alt="../../_images/plot_ensemble_oob_001.png" class="align-center" src="../../_images/plot_ensemble_oob_001.png" />
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ensemble_oob.py"><tt class="xref download docutils literal"><span class="pre">plot_ensemble_oob.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
 
 <span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
@@ -252,6 +253,8 @@ Learning Ed. 2&#8221;, p592-593, Springer, 2009.</td></tr>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  13.50 seconds
+( 0 minutes  13.50 seconds)</p>
 </div>
 
 

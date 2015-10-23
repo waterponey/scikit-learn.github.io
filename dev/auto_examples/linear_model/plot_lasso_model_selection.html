@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Lasso and Ela...
+        Lasso and Elasti...
         </span>
             <span class="hiddenrellink">
             Lasso and Elastic Net
@@ -163,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="lasso-model-selection-cross-validation-aic-bic">
 <span id="example-linear-model-plot-lasso-model-selection-py"></span><h1>Lasso model selection: Cross-Validation / AIC / BIC<a class="headerlink" href="#lasso-model-selection-cross-validation-aic-bic" title="Permalink to this headline">¶</a></h1>
 <p>Use the Akaike information criterion (AIC), the Bayes Information
 criterion (BIC) and cross-validation to select an optimal value
-of the regularization parameter alpha of the <a class="reference internal" href="../../modules/linear_model.html#lasso"><span>Lasso</span></a> estimator.</p>
+of the regularization parameter alpha of the <a class="reference internal" href="../../modules/linear_model.html#lasso"><em>Lasso</em></a> estimator.</p>
 <p>Results obtained with LassoLarsIC are based on AIC/BIC criteria.</p>
 <p>Information-criterion based model selection is very fast, but it
 relies on a proper estimation of degrees of freedom, are
@@ -199,7 +199,20 @@ illustrates why nested-cross validation is necessary when trying to
 evaluate the performance of a method for which a parameter is chosen by
 cross-validation: this choice of parameter may not be optimal for unseen
 data.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lasso_model_selection.py"><code class="xref download docutils literal"><span class="pre">plot_lasso_model_selection.py</span></code></a></p>
+<ul class="horizontal">
+<li><a class="first reference internal image-reference" href="../../_images/plot_lasso_model_selection_001.png"><img alt="../../_images/plot_lasso_model_selection_001.png" src="../../_images/plot_lasso_model_selection_001.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lasso_model_selection_002.png"><img alt="../../_images/plot_lasso_model_selection_002.png" src="../../_images/plot_lasso_model_selection_002.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lasso_model_selection_003.png"><img alt="../../_images/plot_lasso_model_selection_003.png" src="../../_images/plot_lasso_model_selection_003.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+</ul>
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Computing regularization path using the coordinate descent lasso...
+Computing regularization path using the Lars lasso...
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lasso_model_selection.py"><tt class="xref download docutils literal"><span class="pre">plot_lasso_model_selection.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Olivier Grisel, Gael Varoquaux, Alexandre Gramfort</span>
@@ -314,6 +327,8 @@ data.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  0.74 seconds
+( 0 minutes  0.74 seconds)</p>
 </div>
 
 

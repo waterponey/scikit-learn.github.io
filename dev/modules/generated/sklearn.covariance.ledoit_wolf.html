@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.covariance.shrunk_covariance" href="sklearn.covariance.shrunk_covariance.html" />
+    <link rel="prev" title="sklearn.covariance.empirical_covariance" href="sklearn.covariance.empirical_covariance.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.covariance.empirical_covariance.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.covarian...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.covariance.empirical_covariance
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.covariance</span></code>.ledoit_wolf</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-covariance-ledoit-wolf">Examples using <code class="docutils literal"><span class="pre">sklearn.covariance.ledoit_wolf</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.covariance</span></tt>.ledoit_wolf</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-covariance-ledoit-wolf">Examples using <tt class="docutils literal"><span class="pre">sklearn.covariance.ledoit_wolf</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,15 +166,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-covariance-ledoit-wolf">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.covariance" title="sklearn.covariance"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.covariance</span></code></a>.ledoit_wolf<a class="headerlink" href="#sklearn-covariance-ledoit-wolf" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.covariance" title="sklearn.covariance"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.covariance</span></tt></a>.ledoit_wolf<a class="headerlink" href="#sklearn-covariance-ledoit-wolf" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.covariance.ledoit_wolf">
-<code class="descclassname">sklearn.covariance.</code><code class="descname">ledoit_wolf</code><span class="sig-paren">(</span><em>X</em>, <em>assume_centered=False</em>, <em>block_size=1000</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/covariance/shrunk_covariance_.py#L241"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.ledoit_wolf" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.covariance.</tt><tt class="descname">ledoit_wolf</tt><big>(</big><em>X</em>, <em>assume_centered=False</em>, <em>block_size=1000</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/covariance/shrunk_covariance_.py#L241"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.covariance.ledoit_wolf" title="Permalink to this definition">¶</a></dt>
 <dd><p>Estimates the shrunk Ledoit-Wolf covariance matrix.</p>
-<p>Read more in the <a class="reference internal" href="../covariance.html#shrunk-covariance"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../covariance.html#shrunk-covariance"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -183,10 +223,10 @@ of the shrunk estimate.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-covariance-ledoit-wolf">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.covariance.ledoit_wolf</span></code><a class="headerlink" href="#examples-using-sklearn-covariance-ledoit-wolf" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Using the GraphLasso estimator to learn a covariance and sparse precision from a small number o..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.covariance.ledoit_wolf</span></tt><a class="headerlink" href="#examples-using-sklearn-covariance-ledoit-wolf" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Using the GraphLasso estimator to learn a covariance and sparse precision from a small number o..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/covariance/plot_sparse_cov.html"><img alt="../../_images/plot_sparse_cov1.png" src="../../_images/plot_sparse_cov1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/covariance/plot_sparse_cov.html#example-covariance-plot-sparse-cov-py"><span>Sparse inverse covariance estimation</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/covariance/plot_sparse_cov.html#example-covariance-plot-sparse-cov-py"><em>Sparse inverse covariance estimation</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -203,8 +243,12 @@ of the shrunk estimate.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.covariance.ledoit_wolf.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.covariance.empirical_covariance.html">Previous
+      </a>
+    </div>
     
      </div>
 

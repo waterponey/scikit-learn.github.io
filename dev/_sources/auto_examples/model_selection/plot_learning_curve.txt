@@ -18,8 +18,28 @@ the maximum and the validation score could be increased with more training
 samples.
 
 
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_learning_curve_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_learning_curve_002.png
+            :scale: 47
+
+
+
+
 **Python source code:** :download:`plot_learning_curve.py <plot_learning_curve.py>`
 
 .. literalinclude:: plot_learning_curve.py
     :lines: 16-
+
+**Total running time of the example:**  11.30 seconds
+( 0 minutes  11.30 seconds)
     

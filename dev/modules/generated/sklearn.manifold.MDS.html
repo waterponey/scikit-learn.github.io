@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.manifold.SpectralEmbedding" href="sklearn.manifold.SpectralEmbedding.html" />
+    <link rel="prev" title="sklearn.manifold.Isomap" href="sklearn.manifold.Isomap.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.manifold.Isomap.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.manifold...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.manifold.Isomap
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.manifold</span></code>.MDS</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-manifold-mds">Examples using <code class="docutils literal"><span class="pre">sklearn.manifold.MDS</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.manifold</span></tt>.MDS</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-manifold-mds">Examples using <tt class="docutils literal"><span class="pre">sklearn.manifold.MDS</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,15 +166,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-manifold-mds">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.manifold" title="sklearn.manifold"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.manifold</span></code></a>.MDS<a class="headerlink" href="#sklearn-manifold-mds" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.manifold" title="sklearn.manifold"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.manifold</span></tt></a>.MDS<a class="headerlink" href="#sklearn-manifold-mds" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.manifold.MDS">
-<em class="property">class </em><code class="descclassname">sklearn.manifold.</code><code class="descname">MDS</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>metric=True</em>, <em>n_init=4</em>, <em>max_iter=300</em>, <em>verbose=0</em>, <em>eps=0.001</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>dissimilarity='euclidean'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/manifold/mds.py#L274"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.manifold.</tt><tt class="descname">MDS</tt><big>(</big><em>n_components=2</em>, <em>metric=True</em>, <em>n_init=4</em>, <em>max_iter=300</em>, <em>verbose=0</em>, <em>eps=0.001</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>dissimilarity='euclidean'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/manifold/mds.py#L274"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS" title="Permalink to this definition">¶</a></dt>
 <dd><p>Multidimensional scaling</p>
-<p>Read more in the <a class="reference internal" href="../manifold.html#multidimensional-scaling"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../manifold.html#multidimensional-scaling"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -217,16 +257,28 @@ hypothesis&#8221; Kruskal, J. Psychometrika, 29, (1964)</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.manifold.MDS.fit" title="sklearn.manifold.MDS.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y,&nbsp;init])</td>
+<td>Computes the position of the points in the embedding space</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.manifold.MDS.fit_transform" title="sklearn.manifold.MDS.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y,&nbsp;init])</td>
+<td>Fit the data from X, and returns the embedded coordinates</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.manifold.MDS.get_params" title="sklearn.manifold.MDS.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.manifold.MDS.set_params" title="sklearn.manifold.MDS.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.manifold.MDS.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=2</em>, <em>metric=True</em>, <em>n_init=4</em>, <em>max_iter=300</em>, <em>verbose=0</em>, <em>eps=0.001</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>dissimilarity='euclidean'</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/manifold/mds.py#L345"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>n_components=2</em>, <em>metric=True</em>, <em>n_init=4</em>, <em>max_iter=300</em>, <em>verbose=0</em>, <em>eps=0.001</em>, <em>n_jobs=1</em>, <em>random_state=None</em>, <em>dissimilarity='euclidean'</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/manifold/mds.py#L345"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.manifold.MDS.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>init=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/manifold/mds.py#L362"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>init=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/manifold/mds.py#L362"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes the position of the points in the embedding space</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -249,7 +301,7 @@ if ndarray, initialize the SMACOF algorithm with this array.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.MDS.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>init=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/manifold/mds.py#L379"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>init=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/manifold/mds.py#L379"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the data from X, and returns the embedded coordinates</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -272,7 +324,7 @@ if ndarray, initialize the SMACOF algorithm with this array.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.MDS.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -297,11 +349,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.manifold.MDS.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.manifold.MDS.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -316,22 +368,22 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-manifold-mds">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.manifold.MDS</span></code><a class="headerlink" href="#examples-using-sklearn-manifold-mds" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="An illustration of the metric and non-metric MDS on generated noisy data."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.manifold.MDS</span></tt><a class="headerlink" href="#examples-using-sklearn-manifold-mds" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="An illustration of the metric and non-metric MDS on generated noisy data."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/manifold/plot_mds.html"><img alt="../../_images/plot_mds1.png" src="../../_images/plot_mds1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/manifold/plot_mds.html#example-manifold-plot-mds-py"><span>Multi-dimensional scaling</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/manifold/plot_mds.html#example-manifold-plot-mds-py"><em>Multi-dimensional scaling</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An illustration of dimensionality reduction on the S-curve dataset with various manifold learni..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="An illustration of dimensionality reduction on the S-curve dataset with various manifold learni..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/manifold/plot_compare_methods.html"><img alt="../../_images/plot_compare_methods1.png" src="../../_images/plot_compare_methods1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/manifold/plot_compare_methods.html#example-manifold-plot-compare-methods-py"><span>Comparison of Manifold Learning methods</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/manifold/plot_compare_methods.html#example-manifold-plot-compare-methods-py"><em>Comparison of Manifold Learning methods</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An application of the different :ref:`manifold` techniques on a spherical data-set. Here one ca..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="An application of the different :ref:`manifold` techniques on a spherical data-set. Here one ca..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/manifold/plot_manifold_sphere.html"><img alt="../../_images/plot_manifold_sphere1.png" src="../../_images/plot_manifold_sphere1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/manifold/plot_manifold_sphere.html#example-manifold-plot-manifold-sphere-py"><span>Manifold Learning methods on a severed sphere</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/manifold/plot_manifold_sphere.html#example-manifold-plot-manifold-sphere-py"><em>Manifold Learning methods on a severed sphere</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="An illustration of various embeddings on the digits dataset."><div class="figure" id="id4">
+</div><div class="thumbnailContainer" tooltip="An illustration of various embeddings on the digits dataset."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/manifold/plot_lle_digits.html"><img alt="../../_images/plot_lle_digits1.png" src="../../_images/plot_lle_digits1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/manifold/plot_lle_digits.html#example-manifold-plot-lle-digits-py"><span>Manifold learning on handwritten digits: Locally Linear Embedding, Isomap...</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/manifold/plot_lle_digits.html#example-manifold-plot-lle-digits-py"><em>Manifold learning on handwritten digits: Locally Linear Embedding, Isomap...</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -348,8 +400,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.manifold.MDS.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.manifold.Isomap.html">Previous
+      </a>
+    </div>
     
      </div>
 

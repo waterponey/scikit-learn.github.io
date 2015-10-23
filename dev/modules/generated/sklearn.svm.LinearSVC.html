@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.svm.NuSVC" href="sklearn.svm.NuSVC.html" />
+    <link rel="prev" title="sklearn.svm.SVC" href="sklearn.svm.SVC.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.svm.SVC.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.svm.SVC
+        </span>
+            <span class="hiddenrellink">
+            sklearn.svm.SVC
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.svm</span></code>.LinearSVC</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-svm-linearsvc">Examples using <code class="docutils literal"><span class="pre">sklearn.svm.LinearSVC</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.svm</span></tt>.LinearSVC</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-svm-linearsvc">Examples using <tt class="docutils literal"><span class="pre">sklearn.svm.LinearSVC</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-svm-linearsvc">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.svm" title="sklearn.svm"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></code></a>.LinearSVC<a class="headerlink" href="#sklearn-svm-linearsvc" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.svm" title="sklearn.svm"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.svm</span></tt></a>.LinearSVC<a class="headerlink" href="#sklearn-svm-linearsvc" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.svm.LinearSVC">
-<em class="property">class </em><code class="descclassname">sklearn.svm.</code><code class="descname">LinearSVC</code><span class="sig-paren">(</span><em>penalty='l2'</em>, <em>loss='squared_hinge'</em>, <em>dual=True</em>, <em>tol=0.0001</em>, <em>C=1.0</em>, <em>multi_class='ovr'</em>, <em>fit_intercept=True</em>, <em>intercept_scaling=1</em>, <em>class_weight=None</em>, <em>verbose=0</em>, <em>random_state=None</em>, <em>max_iter=1000</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/svm/classes.py#L14"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.svm.</tt><tt class="descname">LinearSVC</tt><big>(</big><em>penalty='l2'</em>, <em>loss='squared_hinge'</em>, <em>dual=True</em>, <em>tol=0.0001</em>, <em>C=1.0</em>, <em>multi_class='ovr'</em>, <em>fit_intercept=True</em>, <em>intercept_scaling=1</em>, <em>class_weight=None</em>, <em>verbose=0</em>, <em>random_state=None</em>, <em>max_iter=1000</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/svm/classes.py#L14"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC" title="Permalink to this definition">¶</a></dt>
 <dd><p>Linear Support Vector Classification.</p>
 <p>Similar to SVC with parameter kernel=&#8217;linear&#8217;, but implemented in terms of
 liblinear rather than libsvm, so it has more flexibility in the choice of
@@ -140,7 +180,7 @@ penalties and loss functions and should scale better to large numbers of
 samples.</p>
 <p>This class supports both dense and sparse input and the multiclass support
 is handled according to a one-vs-the-rest scheme.</p>
-<p>Read more in the <a class="reference internal" href="../svm.html#svm-classification"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../svm.html#svm-classification"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -207,7 +247,7 @@ SVC. If not given, all classes are supposed to have
 weight one.
 The &#8220;balanced&#8221; mode uses the values of y to automatically adjust
 weights inversely proportional to class frequencies in the input data
-as <code class="docutils literal"><span class="pre">n_samples</span> <span class="pre">/</span> <span class="pre">(n_classes</span> <span class="pre">*</span> <span class="pre">np.bincount(y))</span></code></p>
+as <tt class="docutils literal"><span class="pre">n_samples</span> <span class="pre">/</span> <span class="pre">(n_classes</span> <span class="pre">*</span> <span class="pre">np.bincount(y))</span></tt></p>
 </div></blockquote>
 <p><strong>verbose</strong> : int, (default=0)</p>
 <blockquote>
@@ -247,9 +287,9 @@ follows the internal memory layout of liblinear.</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><code class="xref py py-obj docutils literal"><span class="pre">SVC</span></code></a></dt>
-<dd>Implementation of Support Vector Machine classifier using libsvm: the kernel can be non-linear but its SMO algorithm does not scale to large number of samples as LinearSVC does. Furthermore SVC multi-class mode is implemented using one vs one scheme while LinearSVC uses one vs the rest. It is possible to implement one vs the rest with SVC by using the <a class="reference internal" href="sklearn.multiclass.OneVsRestClassifier.html#sklearn.multiclass.OneVsRestClassifier" title="sklearn.multiclass.OneVsRestClassifier"><code class="xref py py-class docutils literal"><span class="pre">sklearn.multiclass.OneVsRestClassifier</span></code></a> wrapper. Finally SVC can fit dense data without memory copy if the input is C-contiguous. Sparse data will still incur memory copy though.</dd>
-<dt><a class="reference internal" href="sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier" title="sklearn.linear_model.SGDClassifier"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.linear_model.SGDClassifier</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><tt class="xref py py-obj docutils literal"><span class="pre">SVC</span></tt></a></dt>
+<dd>Implementation of Support Vector Machine classifier using libsvm: the kernel can be non-linear but its SMO algorithm does not scale to large number of samples as LinearSVC does. Furthermore SVC multi-class mode is implemented using one vs one scheme while LinearSVC uses one vs the rest. It is possible to implement one vs the rest with SVC by using the <a class="reference internal" href="sklearn.multiclass.OneVsRestClassifier.html#sklearn.multiclass.OneVsRestClassifier" title="sklearn.multiclass.OneVsRestClassifier"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.multiclass.OneVsRestClassifier</span></tt></a> wrapper. Finally SVC can fit dense data without memory copy if the input is C-contiguous. Sparse data will still incur memory copy though.</dd>
+<dt><a class="reference internal" href="sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier" title="sklearn.linear_model.SGDClassifier"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.linear_model.SGDClassifier</span></tt></a></dt>
 <dd>SGDClassifier can optimize the same cost function as LinearSVC by adjusting the penalty and loss parameters. In addition it requires less memory, allows incremental (online) learning, and implements various loss functions and regularization regimes.</dd>
 </dl>
 </div>
@@ -257,11 +297,11 @@ follows the internal memory layout of liblinear.</p>
 <p>The underlying C implementation uses a random number generator to
 select features when fitting the model. It is thus not uncommon
 to have slightly different results for the same input data. If
-that happens, try with a smaller <code class="docutils literal"><span class="pre">tol</span></code> parameter.</p>
+that happens, try with a smaller <tt class="docutils literal"><span class="pre">tol</span></tt> parameter.</p>
 <p>The underlying implementation (liblinear) uses a sparse internal
 representation for the data that will incur a memory copy.</p>
 <p>Predict output may not match that of standalone liblinear in certain
-cases. See <a class="reference internal" href="../linear_model.html#liblinear-differences"><span>differences from liblinear</span></a>
+cases. See <a class="reference internal" href="../linear_model.html#liblinear-differences"><em>differences from liblinear</em></a>
 in the narrative documentation.</p>
 <p><strong>References:</strong>
 <a class="reference external" href="http://www.csie.ntu.edu.tw/~cjlin/liblinear/">LIBLINEAR: A Library for Large Linear Classification</a></p>
@@ -272,16 +312,46 @@ in the narrative documentation.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.svm.LinearSVC.decision_function" title="sklearn.svm.LinearSVC.decision_function"><tt class="xref py py-obj docutils literal"><span class="pre">decision_function</span></tt></a>(X)</td>
+<td>Predict confidence scores for samples.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.svm.LinearSVC.densify" title="sklearn.svm.LinearSVC.densify"><tt class="xref py py-obj docutils literal"><span class="pre">densify</span></tt></a>()</td>
+<td>Convert coefficient matrix to dense array format.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.svm.LinearSVC.fit" title="sklearn.svm.LinearSVC.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y)</td>
+<td>Fit the model according to the given training data.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.svm.LinearSVC.fit_transform" title="sklearn.svm.LinearSVC.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.svm.LinearSVC.get_params" title="sklearn.svm.LinearSVC.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.svm.LinearSVC.predict" title="sklearn.svm.LinearSVC.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<td>Predict class labels for samples in X.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.svm.LinearSVC.score" title="sklearn.svm.LinearSVC.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Returns the mean accuracy on the given test data and labels.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.svm.LinearSVC.set_params" title="sklearn.svm.LinearSVC.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.svm.LinearSVC.sparsify" title="sklearn.svm.LinearSVC.sparsify"><tt class="xref py py-obj docutils literal"><span class="pre">sparsify</span></tt></a>()</td>
+<td>Convert coefficient matrix to sparse format.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.svm.LinearSVC.transform" title="sklearn.svm.LinearSVC.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(*args,&nbsp;**kwargs)</td>
+<td>DEPRECATED: Support to use estimators as feature selectors will be removed in version 0.19.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.svm.LinearSVC.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>penalty='l2'</em>, <em>loss='squared_hinge'</em>, <em>dual=True</em>, <em>tol=0.0001</em>, <em>C=1.0</em>, <em>multi_class='ovr'</em>, <em>fit_intercept=True</em>, <em>intercept_scaling=1</em>, <em>class_weight=None</em>, <em>verbose=0</em>, <em>random_state=None</em>, <em>max_iter=1000</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/svm/classes.py#L151"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>penalty='l2'</em>, <em>loss='squared_hinge'</em>, <em>dual=True</em>, <em>tol=0.0001</em>, <em>C=1.0</em>, <em>multi_class='ovr'</em>, <em>fit_intercept=True</em>, <em>intercept_scaling=1</em>, <em>class_weight=None</em>, <em>verbose=0</em>, <em>random_state=None</em>, <em>max_iter=1000</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/svm/classes.py#L151"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.svm.LinearSVC.decision_function">
-<code class="descname">decision_function</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/base.py#L221"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.decision_function" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">decision_function</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/base.py#L223"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.decision_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict confidence scores for samples.</p>
 <p>The confidence score for a sample is the signed distance of that
 sample to the hyperplane.</p>
@@ -309,10 +379,10 @@ class would be predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.LinearSVC.densify">
-<code class="descname">densify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/base.py#L300"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.densify" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">densify</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/base.py#L302"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.densify" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert coefficient matrix to dense array format.</p>
-<p>Converts the <code class="docutils literal"><span class="pre">coef_</span></code> member (back) to a numpy.ndarray. This is the
-default format of <code class="docutils literal"><span class="pre">coef_</span></code> and is required for fitting, so calling
+<p>Converts the <tt class="docutils literal"><span class="pre">coef_</span></tt> member (back) to a numpy.ndarray. This is the
+default format of <tt class="docutils literal"><span class="pre">coef_</span></tt> and is required for fitting, so calling
 this method is only required on models that have previously been
 sparsified; otherwise, it is a no-op.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -327,7 +397,7 @@ sparsified; otherwise, it is a no-op.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.LinearSVC.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/svm/classes.py#L168"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/svm/classes.py#L168"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model according to the given training data.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -356,7 +426,7 @@ n_features is the number of features.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.LinearSVC.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L438"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -386,7 +456,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.LinearSVC.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -411,7 +481,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.LinearSVC.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/base.py#L254"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/base.py#L256"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict class labels for samples in X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -435,7 +505,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.LinearSVC.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L285"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L292"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -470,11 +540,11 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.LinearSVC.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -488,12 +558,12 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.LinearSVC.sparsify">
-<code class="descname">sparsify</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/base.py#L318"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.sparsify" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">sparsify</tt><big>(</big><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/base.py#L320"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.sparsify" title="Permalink to this definition">¶</a></dt>
 <dd><p>Convert coefficient matrix to sparse format.</p>
-<p>Converts the <code class="docutils literal"><span class="pre">coef_</span></code> member to a scipy.sparse matrix, which for
+<p>Converts the <tt class="docutils literal"><span class="pre">coef_</span></tt> member to a scipy.sparse matrix, which for
 L1-regularized models can be much more memory- and storage-efficient
 than the usual numpy.ndarray representation.</p>
-<p>The <code class="docutils literal"><span class="pre">intercept_</span></code> member is not converted.</p>
+<p>The <tt class="docutils literal"><span class="pre">intercept_</span></tt> member is not converted.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -503,10 +573,10 @@ than the usual numpy.ndarray representation.</p>
 </tbody>
 </table>
 <p class="rubric">Notes</p>
-<p>For non-sparse models, i.e. when there are not many zeros in <code class="docutils literal"><span class="pre">coef_</span></code>,
+<p>For non-sparse models, i.e. when there are not many zeros in <tt class="docutils literal"><span class="pre">coef_</span></tt>,
 this may actually <em>increase</em> memory usage, so use this method with
 care. A rule of thumb is that the number of zero elements, which can
-be computed with <code class="docutils literal"><span class="pre">(coef_</span> <span class="pre">==</span> <span class="pre">0).sum()</span></code>, must be more than 50% for this
+be computed with <tt class="docutils literal"><span class="pre">(coef_</span> <span class="pre">==</span> <span class="pre">0).sum()</span></tt>, must be more than 50% for this
 to provide significant benefits.</p>
 <p>After calling this method, further fitting with the partial_fit
 method (if any) will not work until you call densify.</p>
@@ -514,12 +584,12 @@ method (if any) will not work until you call densify.</p>
 
 <dl class="method">
 <dt id="sklearn.svm.LinearSVC.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/utils/deprecation.py#L69"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.svm.LinearSVC.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>DEPRECATED: Support to use estimators as feature selectors will be removed in version 0.19. Use SelectFromModel instead.</p>
 <p>Reduce X to its most important features.</p>
 <blockquote>
-<div>Uses <code class="docutils literal"><span class="pre">coef_</span></code> or <code class="docutils literal"><span class="pre">feature_importances_</span></code> to determine the most
-important features.  For models with a <code class="docutils literal"><span class="pre">coef_</span></code> for each class, the
+<div>Uses <tt class="docutils literal"><span class="pre">coef_</span></tt> or <tt class="docutils literal"><span class="pre">feature_importances_</span></tt> to determine the most
+important features.  For models with a <tt class="docutils literal"><span class="pre">coef_</span></tt> for each class, the
 absolute sum over the classes is used.</div></blockquote>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -537,7 +607,7 @@ importance is greater or equal are kept while the others are
 discarded. If &#8220;median&#8221; (resp. &#8220;mean&#8221;), then the threshold value is
 the median (resp. the mean) of the feature importances. A scaling
 factor (e.g., &#8220;1.25*mean&#8221;) may also be used. If None and if
-available, the object attribute <code class="docutils literal"><span class="pre">threshold</span></code> is used. Otherwise,
+available, the object attribute <tt class="docutils literal"><span class="pre">threshold</span></tt> is used. Otherwise,
 &#8220;mean&#8221; is used by default.</p>
 </dd>
 </dl>
@@ -557,30 +627,30 @@ available, the object attribute <code class="docutils literal"><span class="pre"
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-svm-linearsvc">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.svm.LinearSVC</span></code><a class="headerlink" href="#examples-using-sklearn-svm-linearsvc" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="An example illustrating the approximation of the feature map of an RBF kernel."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.svm.LinearSVC</span></tt><a class="headerlink" href="#examples-using-sklearn-svm-linearsvc" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="An example illustrating the approximation of the feature map of an RBF kernel."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/./plot_kernel_approximation.html"><img alt="../../_images/plot_kernel_approximation1.png" src="../../_images/plot_kernel_approximation1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/plot_kernel_approximation.html#example-plot-kernel-approximation-py"><span>Explicit feature map approximation for RBF kernels</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/plot_kernel_approximation.html#example-plot-kernel-approximation-py"><em>Explicit feature map approximation for RBF kernels</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Well calibrated classifiers are probabilistic classifiers for which the output of the predict_p..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="Well calibrated classifiers are probabilistic classifiers for which the output of the predict_p..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/calibration/plot_compare_calibration.html"><img alt="../../_images/plot_compare_calibration1.png" src="../../_images/plot_compare_calibration1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/calibration/plot_compare_calibration.html#example-calibration-plot-compare-calibration-py"><span>Comparison of Calibration of Classifiers</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/calibration/plot_compare_calibration.html#example-calibration-plot-compare-calibration-py"><em>Comparison of Calibration of Classifiers</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="When performing classification one often wants to predict not only the class label, but also th..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="When performing classification one often wants to predict not only the class label, but also th..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/calibration/plot_calibration_curve.html"><img alt="../../_images/plot_calibration_curve1.png" src="../../_images/plot_calibration_curve1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_curve.html#example-calibration-plot-calibration-curve-py"><span>Probability Calibration curves</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/calibration/plot_calibration_curve.html#example-calibration-plot-calibration-curve-py"><em>Probability Calibration curves</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Comparison of different linear SVM classifiers on a 2D projection of the iris dataset. We only ..."><div class="figure" id="id4">
+</div><div class="thumbnailContainer" tooltip="Comparison of different linear SVM classifiers on a 2D projection of the iris dataset. We only ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_iris.html"><img alt="../../_images/plot_iris2.png" src="../../_images/plot_iris2.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_iris.html#example-svm-plot-iris-py"><span>Plot different SVM classifiers in the iris dataset</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_iris.html#example-svm-plot-iris-py"><em>Plot different SVM classifiers in the iris dataset</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="The following example illustrates the effect of scaling the regularization parameter when using..."><div class="figure" id="id5">
+</div><div class="thumbnailContainer" tooltip="The following example illustrates the effect of scaling the regularization parameter when using..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/svm/plot_svm_scale_c.html"><img alt="../../_images/plot_svm_scale_c1.png" src="../../_images/plot_svm_scale_c1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/svm/plot_svm_scale_c.html#example-svm-plot-svm-scale-c-py"><span>Scaling the regularization parameter for SVCs</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/svm/plot_svm_scale_c.html#example-svm-plot-svm-scale-c-py"><em>Scaling the regularization parameter for SVCs</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used to classify documents by topics using a..."><div class="figure" id="id6">
+</div><div class="thumbnailContainer" tooltip="This is an example showing how scikit-learn can be used to classify documents by topics using a..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/text/document_classification_20newsgroups.html"><img alt="../../_images/document_classification_20newsgroups1.png" src="../../_images/document_classification_20newsgroups1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/text/document_classification_20newsgroups.html#example-text-document-classification-20newsgroups-py"><span>Classification of text documents using sparse features</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/text/document_classification_20newsgroups.html#example-text-document-classification-20newsgroups-py"><em>Classification of text documents using sparse features</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -597,8 +667,12 @@ available, the object attribute <code class="docutils literal"><span class="pre"
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.svm.LinearSVC.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.svm.SVC.html">Previous
+      </a>
+    </div>
     
      </div>
 

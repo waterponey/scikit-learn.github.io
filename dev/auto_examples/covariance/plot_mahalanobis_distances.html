@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Shrinkage cov...
+        Shrinkage covari...
         </span>
             <span class="hiddenrellink">
             Shrinkage covariance estimation: LedoitWolf vs OAS and max-likelihood
@@ -163,19 +163,19 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="robust-covariance-estimation-and-mahalanobis-distances-relevance">
 <span id="example-covariance-plot-mahalanobis-distances-py"></span><h1>Robust covariance estimation and Mahalanobis distances relevance<a class="headerlink" href="#robust-covariance-estimation-and-mahalanobis-distances-relevance" title="Permalink to this headline">¶</a></h1>
 <p>An example to show covariance estimation with the Mahalanobis
 distances on Gaussian distributed data.</p>
 <p>For Gaussian distributed data, the distance of an observation
-<img class="math" src="../../_images/math/33dfc32d00ebd5c5791c824010a155d9e5630b6f.png" alt="x_i"/> to the mode of the distribution can be computed using its
-Mahalanobis distance: <img class="math" src="../../_images/math/f2f07f15055990c760c0ab754000b97bed50c917.png" alt="d_{(\mu,\Sigma)}(x_i)^2 = (x_i -
-\mu)'\Sigma^{-1}(x_i - \mu)"/> where <img class="math" src="../../_images/math/126e84ba38f7dece5f0ad64e929b9588b20f6440.png" alt="\mu"/> and <img class="math" src="../../_images/math/19ac15bf260b22dcb61a1042c60259e4b0bfbd64.png" alt="\Sigma"/> are
+<span class="math">x_i</span> to the mode of the distribution can be computed using its
+Mahalanobis distance: <span class="math">d_{(\mu,\Sigma)}(x_i)^2 = (x_i -
+\mu)'\Sigma^{-1}(x_i - \mu)</span> where <span class="math">\mu</span> and <span class="math">\Sigma</span> are
 the location and the covariance of the underlying Gaussian
 distribution.</p>
-<p>In practice, <img class="math" src="../../_images/math/126e84ba38f7dece5f0ad64e929b9588b20f6440.png" alt="\mu"/> and <img class="math" src="../../_images/math/19ac15bf260b22dcb61a1042c60259e4b0bfbd64.png" alt="\Sigma"/> are replaced by some
+<p>In practice, <span class="math">\mu</span> and <span class="math">\Sigma</span> are replaced by some
 estimates.  The usual covariance maximum likelihood estimate is very
 sensitive to the presence of outliers in the data set and therefor,
 the corresponding Mahalanobis distances are. One would better have to
@@ -186,9 +186,9 @@ organisation of the observations.</p>
 <p>The Minimum Covariance Determinant estimator is a robust,
 high-breakdown point (i.e. it can be used to estimate the covariance
 matrix of highly contaminated datasets, up to
-<img class="math" src="../../_images/math/e3c673d681b61952ea1bd482aaef51fe9f7dcd21.png" alt="\frac{n_\text{samples}-n_\text{features}-1}{2}"/> outliers)
+<span class="math">\frac{n_\text{samples}-n_\text{features}-1}{2}</span> outliers)
 estimator of covariance. The idea is to find
-<img class="math" src="../../_images/math/a0911f10b2c581d0e1ef3237c082e1ca9a773b7c.png" alt="\frac{n_\text{samples}+n_\text{features}+1}{2}"/>
+<span class="math">\frac{n_\text{samples}+n_\text{features}+1}{2}</span>
 observations whose empirical covariance has the smallest determinant,
 yielding a &#8220;pure&#8221; subset of observations from which to compute
 standards estimates of location and covariance.</p>
@@ -210,7 +210,8 @@ are represented in the boxplot, as Wilson and Hilferty suggest [2]</p>
 <dd>Proceedings of the National Academy of Sciences of the United States
 of America, 17, 684-688.</dd>
 </dl>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_mahalanobis_distances.py"><code class="xref download docutils literal"><span class="pre">plot_mahalanobis_distances.py</span></code></a></p>
+<img alt="../../_images/plot_mahalanobis_distances_001.png" class="align-center" src="../../_images/plot_mahalanobis_distances_001.png" />
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_mahalanobis_distances.py"><tt class="xref download docutils literal"><span class="pre">plot_mahalanobis_distances.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -303,6 +304,8 @@ of America, 17, 684-688.</dd>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  0.31 seconds
+( 0 minutes  0.31 seconds)</p>
 </div>
 
 

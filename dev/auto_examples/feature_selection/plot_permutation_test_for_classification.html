@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Feature selec...
+        Feature selectio...
         </span>
             <span class="hiddenrellink">
             Feature selection using SelectFromModel and LassoCV
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="test-with-permutations-the-significance-of-a-classification-score">
 <span id="example-feature-selection-plot-permutation-test-for-classification-py"></span><h1>Test with permutations the significance of a classification score<a class="headerlink" href="#test-with-permutations-the-significance-of-a-classification-score" title="Permalink to this headline">¶</a></h1>
@@ -172,7 +172,12 @@ in repeating the classification procedure after randomizing, permuting,
 the labels. The p-value is then given by the percentage of runs for
 which the score obtained is greater than the classification score
 obtained in the first place.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_permutation_test_for_classification.py"><code class="xref download docutils literal"><span class="pre">plot_permutation_test_for_classification.py</span></code></a></p>
+<img alt="../../_images/plot_permutation_test_for_classification_001.png" class="align-center" src="../../_images/plot_permutation_test_for_classification_001.png" />
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Classification score 0.513333333333 (pvalue : 0.00990099009901)
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_permutation_test_for_classification.py"><tt class="xref download docutils literal"><span class="pre">plot_permutation_test_for_classification.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="c"># Author:  Alexandre Gramfort &lt;alexandre.gramfort@inria.fr&gt;</span>
 <span class="c"># License: BSD 3 clause</span>
 
@@ -229,6 +234,8 @@ obtained in the first place.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  8.24 seconds
+( 0 minutes  8.24 seconds)</p>
 </div>
 
 

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        OOB Errors fo...
+        OOB Errors for R...
         </span>
             <span class="hiddenrellink">
             OOB Errors for Random Forests
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="partial-dependence-plots">
 <span id="example-ensemble-plot-partial-dependence-py"></span><h1>Partial Dependence Plots<a class="headerlink" href="#partial-dependence-plots" title="Permalink to this headline">¶</a></h1>
@@ -173,9 +173,9 @@ values of all other features (the complement features). Due to the limits
 of human perception the size of the target feature set must be small (usually,
 one or two) thus the target features are usually chosen among the most
 important features
-(see <a class="reference internal" href="../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor.feature_importances_" title="sklearn.ensemble.GradientBoostingRegressor.feature_importances_"><code class="xref py py-attr docutils literal"><span class="pre">feature_importances_</span></code></a>).</p>
+(see <a class="reference internal" href="../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor.feature_importances_" title="sklearn.ensemble.GradientBoostingRegressor.feature_importances_"><tt class="xref py py-attr docutils literal"><span class="pre">feature_importances_</span></tt></a>).</p>
 <p>This example shows how to obtain partial dependence plots from a
-<a class="reference internal" href="../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor" title="sklearn.ensemble.GradientBoostingRegressor"><code class="xref py py-class docutils literal"><span class="pre">GradientBoostingRegressor</span></code></a> trained on the California
+<a class="reference internal" href="../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor" title="sklearn.ensemble.GradientBoostingRegressor"><tt class="xref py py-class docutils literal"><span class="pre">GradientBoostingRegressor</span></tt></a> trained on the California
 housing dataset. The example is taken from <a class="reference internal" href="../../modules/ensemble.html#htf2009" id="id2">[HTF2009]</a>.</p>
 <p>The plot shows four one-way and one two-way partial dependence plots.
 The target variables for the one-way PDP are:
@@ -211,7 +211,23 @@ on age.</p>
 the link function.</td></tr>
 </tbody>
 </table>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_partial_dependence.py"><code class="xref download docutils literal"><span class="pre">plot_partial_dependence.py</span></code></a></p>
+<ul class="horizontal">
+<li><a class="first reference internal image-reference" href="../../_images/plot_partial_dependence_001.png"><img alt="../../_images/plot_partial_dependence_001.png" src="../../_images/plot_partial_dependence_001.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_partial_dependence_002.png"><img alt="../../_images/plot_partial_dependence_002.png" src="../../_images/plot_partial_dependence_002.png" style="width: 376.0px; height: 282.0px;" /></a>
+</li>
+</ul>
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>________________________________________________________________________________
+Training GBRT...
+done.
+________________________________________________________________________________
+Convenience plot with ``partial_dependence_plots``
+________________________________________________________________________________
+Custom 3d plot via ``partial_dependence``
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_partial_dependence.py"><tt class="xref download docutils literal"><span class="pre">plot_partial_dependence.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -279,6 +295,8 @@ the link function.</td></tr>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  4.39 seconds
+( 0 minutes  4.39 seconds)</p>
 </div>
 
 

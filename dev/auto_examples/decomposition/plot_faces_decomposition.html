@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Model selecti...
+        Model selection ...
         </span>
             <span class="hiddenrellink">
             Model selection with Probabilistic PCA and Factor Analysis (FA)
@@ -163,15 +163,53 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="faces-dataset-decompositions">
 <span id="example-decomposition-plot-faces-decomposition-py"></span><h1>Faces dataset decompositions<a class="headerlink" href="#faces-dataset-decompositions" title="Permalink to this headline">¶</a></h1>
-<p>This example applies to <a class="reference internal" href="../../datasets/olivetti_faces.html#olivetti-faces"><span>The Olivetti faces dataset</span></a> different unsupervised
+<p>This example applies to <a class="reference internal" href="../../datasets/olivetti_faces.html#olivetti-faces"><em>The Olivetti faces dataset</em></a> different unsupervised
 matrix decomposition (dimension reduction) methods from the module
-<a class="reference internal" href="../../modules/classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></code></a> (see the documentation chapter
-<a class="reference internal" href="../../modules/decomposition.html#decompositions"><span>Decomposing signals in components (matrix factorization problems)</span></a>) .</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_faces_decomposition.py"><code class="xref download docutils literal"><span class="pre">plot_faces_decomposition.py</span></code></a></p>
+<a class="reference internal" href="../../modules/classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></tt></a> (see the documentation chapter
+<a class="reference internal" href="../../modules/decomposition.html#decompositions"><em>Decomposing signals in components (matrix factorization problems)</em></a>) .</p>
+<ul class="horizontal">
+<li><a class="first reference internal image-reference" href="../../_images/plot_faces_decomposition_001.png"><img alt="../../_images/plot_faces_decomposition_001.png" src="../../_images/plot_faces_decomposition_001.png" style="width: 282.0px; height: 211.97px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_faces_decomposition_002.png"><img alt="../../_images/plot_faces_decomposition_002.png" src="../../_images/plot_faces_decomposition_002.png" style="width: 282.0px; height: 211.97px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_faces_decomposition_003.png"><img alt="../../_images/plot_faces_decomposition_003.png" src="../../_images/plot_faces_decomposition_003.png" style="width: 282.0px; height: 211.97px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_faces_decomposition_004.png"><img alt="../../_images/plot_faces_decomposition_004.png" src="../../_images/plot_faces_decomposition_004.png" style="width: 282.0px; height: 211.97px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_faces_decomposition_005.png"><img alt="../../_images/plot_faces_decomposition_005.png" src="../../_images/plot_faces_decomposition_005.png" style="width: 282.0px; height: 211.97px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_faces_decomposition_006.png"><img alt="../../_images/plot_faces_decomposition_006.png" src="../../_images/plot_faces_decomposition_006.png" style="width: 282.0px; height: 211.97px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_faces_decomposition_007.png"><img alt="../../_images/plot_faces_decomposition_007.png" src="../../_images/plot_faces_decomposition_007.png" style="width: 282.0px; height: 211.97px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_faces_decomposition_008.png"><img alt="../../_images/plot_faces_decomposition_008.png" src="../../_images/plot_faces_decomposition_008.png" style="width: 94.0px; height: 105.75px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_faces_decomposition_009.png"><img alt="../../_images/plot_faces_decomposition_009.png" src="../../_images/plot_faces_decomposition_009.png" style="width: 282.0px; height: 211.97px;" /></a>
+</li>
+</ul>
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>Dataset consists of 400 faces
+Extracting the top 6 Eigenfaces - RandomizedPCA...
+done in 0.262s
+Extracting the top 6 Non-negative components - NMF...
+done in 1.914s
+Extracting the top 6 Independent components - FastICA...
+done in 2.610s
+Extracting the top 6 Sparse comp. - MiniBatchSparsePCA...
+done in 1.641s
+Extracting the top 6 MiniBatchDictionaryLearning...
+done in 1.325s
+Extracting the top 6 Cluster centers - MiniBatchKMeans...
+done in 0.319s
+Extracting the top 6 Factor Analysis components - FA...
+done in 0.779s
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_faces_decomposition.py"><tt class="xref download docutils literal"><span class="pre">plot_faces_decomposition.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Authors: Vlad Niculae, Alexandre Gramfort</span>
@@ -295,6 +333,8 @@ matrix decomposition (dimension reduction) methods from the module
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  11.53 seconds
+( 0 minutes  11.53 seconds)</p>
 </div>
 
 

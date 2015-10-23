@@ -34,8 +34,51 @@ or less of similar thickness and hence are of similar sizes as can be also
 verified from the labelled scatter plot on the right.
 
 
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_kmeans_silhouette_analysis_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_kmeans_silhouette_analysis_002.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_kmeans_silhouette_analysis_003.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_kmeans_silhouette_analysis_004.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_kmeans_silhouette_analysis_005.png
+            :scale: 47
+
+
+**Script output**::
+
+  For n_clusters = 2 The average silhouette_score is : 0.704978749608
+  For n_clusters = 3 The average silhouette_score is : 0.588200401213
+  For n_clusters = 4 The average silhouette_score is : 0.650518663273
+  For n_clusters = 5 The average silhouette_score is : 0.563764690262
+  For n_clusters = 6 The average silhouette_score is : 0.450466629437
+
+
+
 **Python source code:** :download:`plot_kmeans_silhouette_analysis.py <plot_kmeans_silhouette_analysis.py>`
 
 .. literalinclude:: plot_kmeans_silhouette_analysis.py
     :lines: 32-
+
+**Total running time of the example:**  2.18 seconds
+( 0 minutes  2.18 seconds)
     

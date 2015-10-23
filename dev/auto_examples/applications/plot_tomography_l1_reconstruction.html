@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Outlier detec...
+        Outlier detectio...
         </span>
             <span class="hiddenrellink">
             Outlier detection on a real data set
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="compressive-sensing-tomography-reconstruction-with-l1-prior-lasso">
 <span id="example-applications-plot-tomography-l1-reconstruction-py"></span><h1>Compressive sensing: tomography reconstruction with L1 prior (Lasso)<a class="headerlink" href="#compressive-sensing-tomography-reconstruction-with-l1-prior-lasso" title="Permalink to this headline">¶</a></h1>
@@ -172,29 +172,30 @@ projections, acquired along different angles. Such a dataset is acquired in
 <strong>computed tomography</strong> (CT).</p>
 <p>Without any prior information on the sample, the number of projections
 required to reconstruct the image is of the order of the linear size
-<code class="docutils literal"><span class="pre">l</span></code> of the image (in pixels). For simplicity we consider here a sparse
+<tt class="docutils literal"><span class="pre">l</span></tt> of the image (in pixels). For simplicity we consider here a sparse
 image, where only pixels on the boundary of objects have a non-zero
 value. Such data could correspond for example to a cellular material.
 Note however that most images are sparse in a different basis, such as
-the Haar wavelets. Only <code class="docutils literal"><span class="pre">l/7</span></code> projections are acquired, therefore it is
+the Haar wavelets. Only <tt class="docutils literal"><span class="pre">l/7</span></tt> projections are acquired, therefore it is
 necessary to use prior information available on the sample (its
 sparsity): this is an example of <strong>compressive sensing</strong>.</p>
 <p>The tomography projection operation is a linear transformation. In
 addition to the data-fidelity term corresponding to a linear regression,
 we penalize the L1 norm of the image to account for its sparsity. The
-resulting optimization problem is called the <a class="reference internal" href="../../modules/linear_model.html#lasso"><span>Lasso</span></a>. We use the
-class <a class="reference internal" href="../../modules/generated/sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><code class="xref py py-class docutils literal"><span class="pre">sklearn.linear_model.Lasso</span></code></a>, that uses the coordinate descent
+resulting optimization problem is called the <a class="reference internal" href="../../modules/linear_model.html#lasso"><em>Lasso</em></a>. We use the
+class <a class="reference internal" href="../../modules/generated/sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.linear_model.Lasso</span></tt></a>, that uses the coordinate descent
 algorithm. Importantly, this implementation is more computationally efficient
 on a sparse matrix, than the projection operator used here.</p>
 <p>The reconstruction with L1 penalization gives a result with zero error
 (all pixels are successfully labeled with 0 or 1), even if noise was
 added to the projections. In comparison, an L2 penalization
-(<a class="reference internal" href="../../modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge" title="sklearn.linear_model.Ridge"><code class="xref py py-class docutils literal"><span class="pre">sklearn.linear_model.Ridge</span></code></a>) produces a large number of labeling
+(<a class="reference internal" href="../../modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge" title="sklearn.linear_model.Ridge"><tt class="xref py py-class docutils literal"><span class="pre">sklearn.linear_model.Ridge</span></tt></a>) produces a large number of labeling
 errors for the pixels. Important artifacts are observed on the
 reconstructed image, contrary to the L1 penalization. Note in particular
 the circular artifact separating the pixels in the corners, that have
 contributed to fewer projections than the central disk.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_tomography_l1_reconstruction.py"><code class="xref download docutils literal"><span class="pre">plot_tomography_l1_reconstruction.py</span></code></a></p>
+<img alt="../../_images/plot_tomography_l1_reconstruction_001.png" class="align-center" src="../../_images/plot_tomography_l1_reconstruction_001.png" />
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_tomography_l1_reconstruction.py"><tt class="xref download docutils literal"><span class="pre">plot_tomography_l1_reconstruction.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Emmanuelle Gouillart &lt;emmanuelle.gouillart@nsup.org&gt;</span>
@@ -309,6 +310,8 @@ contributed to fewer projections than the central disk.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  10.10 seconds
+( 0 minutes  10.10 seconds)</p>
 </div>
 
 

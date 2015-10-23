@@ -36,8 +36,8 @@
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
     <link rel="up" title="Examples" href="../index.html" />
-    <link rel="next" title="L1 Penalty and Sparsity in Logistic Regression" href="plot_logistic_l1_l2_sparsity.html" />
-    <link rel="prev" title="Robust linear estimator fitting" href="plot_robust_fit.html" />
+    <link rel="next" title="Plot multi-class SGD on the iris dataset" href="plot_sgd_iris.html" />
+    <link rel="prev" title="L1 Penalty and Sparsity in Logistic Regression" href="plot_logistic_l1_l2_sparsity.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -113,14 +113,14 @@
   <!-- rellinks[1:] is an ugly hack to avoid link to module
   index -->
         <div class="rellink">
-        <a href="plot_robust_fit.html"
+        <a href="plot_logistic_l1_l2_sparsity.html"
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Robust linear...
+        L1 Penalty and S...
         </span>
             <span class="hiddenrellink">
-            Robust linear estimator fitting
+            L1 Penalty and Sparsity in Logistic Regression
             </span>
         </a>
         </div>
@@ -163,19 +163,27 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="automatic-relevance-determination-regression-ard">
 <span id="example-linear-model-plot-ard-py"></span><h1>Automatic Relevance Determination Regression (ARD)<a class="headerlink" href="#automatic-relevance-determination-regression-ard" title="Permalink to this headline">¶</a></h1>
 <p>Fit regression model with Bayesian Ridge Regression.</p>
-<p>See <a class="reference internal" href="../../modules/linear_model.html#bayesian-ridge-regression"><span>Bayesian Ridge Regression</span></a> for more information on the regressor.</p>
+<p>See <a class="reference internal" href="../../modules/linear_model.html#bayesian-ridge-regression"><em>Bayesian Ridge Regression</em></a> for more information on the regressor.</p>
 <p>Compared to the OLS (ordinary least squares) estimator, the coefficient
 weights are slightly shifted toward zeros, which stabilises them.</p>
 <p>The histogram of the estimated weights is very peaked, as a sparsity-inducing
 prior is implied on the weights.</p>
 <p>The estimation of the model is done by iteratively maximizing the
 marginal log-likelihood of the observations.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ard.py"><code class="xref download docutils literal"><span class="pre">plot_ard.py</span></code></a></p>
+<ul class="horizontal">
+<li><a class="first reference internal image-reference" href="../../_images/plot_ard_001.png"><img alt="../../_images/plot_ard_001.png" src="../../_images/plot_ard_001.png" style="width: 282.0px; height: 235.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_ard_002.png"><img alt="../../_images/plot_ard_002.png" src="../../_images/plot_ard_002.png" style="width: 282.0px; height: 235.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_ard_003.png"><img alt="../../_images/plot_ard_003.png" src="../../_images/plot_ard_003.png" style="width: 282.0px; height: 235.0px;" /></a>
+</li>
+</ul>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_ard.py"><tt class="xref download docutils literal"><span class="pre">plot_ard.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -218,30 +226,34 @@ marginal log-likelihood of the observations.</p>
 <span class="c"># weights</span>
 <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s">&quot;Weights of the model&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">,</span> <span class="s">&#39;b-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;ARD estimate&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">ols</span><span class="o">.</span><span class="n">coef_</span><span class="p">,</span> <span class="s">&#39;r--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;OLS estimate&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="s">&#39;g-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;Ground truth&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;darkblue&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">&#39;-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+         <span class="n">label</span><span class="o">=</span><span class="s">&quot;ARD estimate&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">ols</span><span class="o">.</span><span class="n">coef_</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;yellowgreen&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">&#39;:&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+         <span class="n">label</span><span class="o">=</span><span class="s">&quot;OLS estimate&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;orange&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">&#39;-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;Ground truth&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&quot;Features&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&quot;Values of the weights&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
 <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s">&quot;Histogram of the weights&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist"><span class="n">plt</span><span class="o">.</span><span class="n">hist</span></a><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">n_features</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="n">relevant_features</span><span class="p">],</span> <span class="mi">5</span> <span class="o">*</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.ones.html#numpy.ones"><span class="n">np</span><span class="o">.</span><span class="n">ones</span></a><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">relevant_features</span><span class="p">)),</span>
-         <span class="s">&#39;ro&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;Relevant features&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.hist"><span class="n">plt</span><span class="o">.</span><span class="n">hist</span></a><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="n">n_features</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;navy&#39;</span><span class="p">,</span> <span class="n">log</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">coef_</span><span class="p">[</span><span class="n">relevant_features</span><span class="p">],</span> <span class="mi">5</span> <span class="o">*</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.ones.html#numpy.ones"><span class="n">np</span><span class="o">.</span><span class="n">ones</span></a><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">relevant_features</span><span class="p">)),</span>
+            <span class="n">color</span><span class="o">=</span><span class="s">&#39;gold&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s">&#39;o&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;Relevant features&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&quot;Features&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&quot;Values of the weights&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
 <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s">&quot;Marginal log-likelihood&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">scores_</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">clf</span><span class="o">.</span><span class="n">scores_</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;navy&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&quot;Score&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&quot;Iterations&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  0.41 seconds
+( 0 minutes  0.41 seconds)</p>
 </div>
 
 
@@ -259,7 +271,7 @@ marginal log-likelihood of the observations.</p>
      <div class="rel">
     
     <div class="buttonPrevious">
-      <a href="plot_robust_fit.html">Previous
+      <a href="plot_logistic_l1_l2_sparsity.html">Previous
       </a>
     </div>
     

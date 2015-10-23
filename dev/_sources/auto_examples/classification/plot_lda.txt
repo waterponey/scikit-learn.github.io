@@ -10,8 +10,18 @@ Normal and Shrinkage Linear Discriminant Analysis for classification
 Shows how shrinkage improves classification.
 
 
+
+.. image:: images/plot_lda_001.png
+    :align: center
+
+
+
+
 **Python source code:** :download:`plot_lda.py <plot_lda.py>`
 
 .. literalinclude:: plot_lda.py
     :lines: 8-
+
+**Total running time of the example:**  7.32 seconds
+( 0 minutes  7.32 seconds)
     

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Agglomerative...
+        Agglomerative cl...
         </span>
             <span class="hiddenrellink">
             Agglomerative clustering with and without structure
@@ -163,11 +163,11 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="segmenting-the-picture-of-lena-in-regions">
 <span id="example-cluster-plot-lena-segmentation-py"></span><h1>Segmenting the picture of Lena in regions<a class="headerlink" href="#segmenting-the-picture-of-lena-in-regions" title="Permalink to this headline">¶</a></h1>
-<p>This example uses <a class="reference internal" href="../../modules/clustering.html#spectral-clustering"><span>Spectral clustering</span></a> on a graph created from
+<p>This example uses <a class="reference internal" href="../../modules/clustering.html#spectral-clustering"><em>Spectral clustering</em></a> on a graph created from
 voxel-to-voxel difference on an image to break this image into multiple
 partly-homogeneous regions.</p>
 <p>This procedure (spectral clustering on an image) is an efficient
@@ -179,7 +179,13 @@ using a kmeans algorithm</li>
 <li>whereas &#8216;discrete&#8217; will iteratively search for the closest partition
 space to the embedding space.</li>
 </ul>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lena_segmentation.py"><code class="xref download docutils literal"><span class="pre">plot_lena_segmentation.py</span></code></a></p>
+<ul class="horizontal">
+<li><a class="first reference internal image-reference" href="../../_images/plot_lena_segmentation_001.png"><img alt="../../_images/plot_lena_segmentation_001.png" src="../../_images/plot_lena_segmentation_001.png" style="width: 235.0px; height: 235.0px;" /></a>
+</li>
+<li><a class="first reference internal image-reference" href="../../_images/plot_lena_segmentation_002.png"><img alt="../../_images/plot_lena_segmentation_002.png" src="../../_images/plot_lena_segmentation_002.png" style="width: 235.0px; height: 235.0px;" /></a>
+</li>
+</ul>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lena_segmentation.py"><tt class="xref download docutils literal"><span class="pre">plot_lena_segmentation.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="c"># Author: Gael Varoquaux &lt;gael.varoquaux@normalesup.org&gt;, Brian Cheung</span>
@@ -237,6 +243,8 @@ space to the embedding space.</li>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  267.29 seconds
+( 4 minutes  27.29 seconds)</p>
 </div>
 
 

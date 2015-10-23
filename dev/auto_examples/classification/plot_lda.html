@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Recognizing h...
+        Recognizing hand...
         </span>
             <span class="hiddenrellink">
             Recognizing hand-written digits
@@ -163,12 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="normal-and-shrinkage-linear-discriminant-analysis-for-classification">
 <span id="example-classification-plot-lda-py"></span><h1>Normal and Shrinkage Linear Discriminant Analysis for classification<a class="headerlink" href="#normal-and-shrinkage-linear-discriminant-analysis-for-classification" title="Permalink to this headline">¶</a></h1>
 <p>Shows how shrinkage improves classification.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lda.py"><code class="xref download docutils literal"><span class="pre">plot_lda.py</span></code></a></p>
+<img alt="../../_images/plot_lda_001.png" class="align-center" src="../../_images/plot_lda_001.png" />
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lda.py"><tt class="xref download docutils literal"><span class="pre">plot_lda.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -221,9 +222,9 @@
 <span class="n">features_samples_ratio</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.array.html#numpy.array"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">(</span><span class="n">n_features_range</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_train</span>
 
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">features_samples_ratio</span><span class="p">,</span> <span class="n">acc_clf1</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
-         <span class="n">label</span><span class="o">=</span><span class="s">&quot;Linear Discriminant Analysis with shrinkage&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;r&#39;</span><span class="p">)</span>
+         <span class="n">label</span><span class="o">=</span><span class="s">&quot;Linear Discriminant Analysis with shrinkage&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;navy&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">features_samples_ratio</span><span class="p">,</span> <span class="n">acc_clf2</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
-         <span class="n">label</span><span class="o">=</span><span class="s">&quot;Linear Discriminant Analysis&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;g&#39;</span><span class="p">)</span>
+         <span class="n">label</span><span class="o">=</span><span class="s">&quot;Linear Discriminant Analysis&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;gold&#39;</span><span class="p">)</span>
 
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&#39;n_features / n_samples&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&#39;Classification accuracy&#39;</span><span class="p">)</span>
@@ -234,6 +235,8 @@
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  7.32 seconds
+( 0 minutes  7.32 seconds)</p>
 </div>
 
 

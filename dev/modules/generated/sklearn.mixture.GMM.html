@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.mixture.DPGMM" href="sklearn.mixture.DPGMM.html" />
+    <link rel="prev" title="sklearn.metrics.pairwise_distances_argmin_min" href="sklearn.metrics.pairwise_distances_argmin_min.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.metrics.pairwise_distances_argmin_min.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.metrics....
+        </span>
+            <span class="hiddenrellink">
+            sklearn.metrics.pairwise_distances_argmin_min
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.mixture</span></code>.GMM</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-mixture-gmm">Examples using <code class="docutils literal"><span class="pre">sklearn.mixture.GMM</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.mixture</span></tt>.GMM</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-mixture-gmm">Examples using <tt class="docutils literal"><span class="pre">sklearn.mixture.GMM</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,20 +166,20 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-mixture-gmm">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.mixture" title="sklearn.mixture"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.mixture</span></code></a>.GMM<a class="headerlink" href="#sklearn-mixture-gmm" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.mixture" title="sklearn.mixture"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.mixture</span></tt></a>.GMM<a class="headerlink" href="#sklearn-mixture-gmm" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.mixture.GMM">
-<em class="property">class </em><code class="descclassname">sklearn.mixture.</code><code class="descname">GMM</code><span class="sig-paren">(</span><em>n_components=1</em>, <em>covariance_type='diag'</em>, <em>random_state=None</em>, <em>thresh=None</em>, <em>tol=0.001</em>, <em>min_covar=0.001</em>, <em>n_iter=100</em>, <em>n_init=1</em>, <em>params='wmc'</em>, <em>init_params='wmc'</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/mixture/gmm.py#L115"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.mixture.</tt><tt class="descname">GMM</tt><big>(</big><em>n_components=1</em>, <em>covariance_type='diag'</em>, <em>random_state=None</em>, <em>tol=0.001</em>, <em>min_covar=0.001</em>, <em>n_iter=100</em>, <em>n_init=1</em>, <em>params='wmc'</em>, <em>init_params='wmc'</em>, <em>verbose=0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/mixture/gmm.py#L115"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM" title="Permalink to this definition">¶</a></dt>
 <dd><p>Gaussian Mixture Model</p>
 <p>Representation of a Gaussian mixture model probability distribution.
 This class allows for easy evaluation of, sampling from, and
 maximum-likelihood estimation of the parameters of a GMM distribution.</p>
 <p>Initializes parameters such that every mixture component has zero
 mean and identity covariance.</p>
-<p>Read more in the <a class="reference internal" href="../mixture.html#gmm"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../mixture.html#gmm"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -226,9 +266,9 @@ depends on <cite>covariance_type</cite>:</p>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
 <dl class="last docutils">
-<dt><a class="reference internal" href="sklearn.mixture.DPGMM.html#sklearn.mixture.DPGMM" title="sklearn.mixture.DPGMM"><code class="xref py py-obj docutils literal"><span class="pre">DPGMM</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.mixture.DPGMM.html#sklearn.mixture.DPGMM" title="sklearn.mixture.DPGMM"><tt class="xref py py-obj docutils literal"><span class="pre">DPGMM</span></tt></a></dt>
 <dd>Infinite gaussian mixture model, using the dirichlet process, fit with a variational algorithm</dd>
-<dt><a class="reference internal" href="sklearn.mixture.VBGMM.html#sklearn.mixture.VBGMM" title="sklearn.mixture.VBGMM"><code class="xref py py-obj docutils literal"><span class="pre">VBGMM</span></code></a></dt>
+<dt><a class="reference internal" href="sklearn.mixture.VBGMM.html#sklearn.mixture.VBGMM" title="sklearn.mixture.VBGMM"><tt class="xref py py-obj docutils literal"><span class="pre">VBGMM</span></tt></a></dt>
 <dd>Finite gaussian mixture model fit with a variational algorithm, better for situations where there might be too little data to get a good estimate of the covariance matrix.</dd>
 </dl>
 </div>
@@ -244,7 +284,7 @@ depends on <cite>covariance_type</cite>:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">obs</span><span class="p">)</span> 
 <span class="go">GMM(covariance_type=&#39;diag&#39;, init_params=&#39;wmc&#39;, min_covar=0.001,</span>
 <span class="go">        n_components=2, n_init=1, n_iter=100, params=&#39;wmc&#39;,</span>
-<span class="go">        random_state=None, thresh=None, tol=0.001, verbose=0)</span>
+<span class="go">        random_state=None, tol=0.001, verbose=0)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">weights_</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="go">array([ 0.75,  0.25])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">means_</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
@@ -262,7 +302,7 @@ depends on <cite>covariance_type</cite>:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">g</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="mi">20</span> <span class="o">*</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">+</span>  <span class="mi">20</span> <span class="o">*</span> <span class="p">[[</span><span class="mi">10</span><span class="p">]])</span> 
 <span class="go">GMM(covariance_type=&#39;diag&#39;, init_params=&#39;wmc&#39;, min_covar=0.001,</span>
 <span class="go">        n_components=2, n_init=1, n_iter=100, params=&#39;wmc&#39;,</span>
-<span class="go">        random_state=None, thresh=None, tol=0.001, verbose=0)</span>
+<span class="go">        random_state=None, tol=0.001, verbose=0)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">g</span><span class="o">.</span><span class="n">weights_</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="go">array([ 0.5,  0.5])</span>
 </pre></div>
@@ -274,16 +314,49 @@ depends on <cite>covariance_type</cite>:</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.mixture.GMM.aic" title="sklearn.mixture.GMM.aic"><tt class="xref py py-obj docutils literal"><span class="pre">aic</span></tt></a>(X)</td>
+<td>Akaike information criterion for the current model fit</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.mixture.GMM.bic" title="sklearn.mixture.GMM.bic"><tt class="xref py py-obj docutils literal"><span class="pre">bic</span></tt></a>(X)</td>
+<td>Bayesian information criterion for the current model fit</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.mixture.GMM.fit" title="sklearn.mixture.GMM.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
+<td>Estimate model parameters with the EM algorithm.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.mixture.GMM.fit_predict" title="sklearn.mixture.GMM.fit_predict"><tt class="xref py py-obj docutils literal"><span class="pre">fit_predict</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit and then predict labels for data.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.mixture.GMM.get_params" title="sklearn.mixture.GMM.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.mixture.GMM.predict" title="sklearn.mixture.GMM.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
+<td>Predict label for data.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.mixture.GMM.predict_proba" title="sklearn.mixture.GMM.predict_proba"><tt class="xref py py-obj docutils literal"><span class="pre">predict_proba</span></tt></a>(X)</td>
+<td>Predict posterior probability of data under each Gaussian in the model.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.mixture.GMM.sample" title="sklearn.mixture.GMM.sample"><tt class="xref py py-obj docutils literal"><span class="pre">sample</span></tt></a>([n_samples,&nbsp;random_state])</td>
+<td>Generate random samples from the model.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.mixture.GMM.score" title="sklearn.mixture.GMM.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X[,&nbsp;y])</td>
+<td>Compute the log probability under the model.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.mixture.GMM.score_samples" title="sklearn.mixture.GMM.score_samples"><tt class="xref py py-obj docutils literal"><span class="pre">score_samples</span></tt></a>(X)</td>
+<td>Return the per-sample likelihood of the data under the model.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.mixture.GMM.set_params" title="sklearn.mixture.GMM.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.mixture.GMM.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>n_components=1</em>, <em>covariance_type='diag'</em>, <em>random_state=None</em>, <em>thresh=None</em>, <em>tol=0.001</em>, <em>min_covar=0.001</em>, <em>n_iter=100</em>, <em>n_init=1</em>, <em>params='wmc'</em>, <em>init_params='wmc'</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/mixture/gmm.py#L238"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>n_components=1</em>, <em>covariance_type='diag'</em>, <em>random_state=None</em>, <em>tol=0.001</em>, <em>min_covar=0.001</em>, <em>n_iter=100</em>, <em>n_init=1</em>, <em>params='wmc'</em>, <em>init_params='wmc'</em>, <em>verbose=0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/mixture/gmm.py#L238"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.mixture.GMM.aic">
-<code class="descname">aic</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/mixture/gmm.py#L645"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.aic" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">aic</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/mixture/gmm.py#L634"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.aic" title="Permalink to this definition">¶</a></dt>
 <dd><p>Akaike information criterion for the current model fit
 and the proposed data</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -300,7 +373,7 @@ and the proposed data</p>
 
 <dl class="method">
 <dt id="sklearn.mixture.GMM.bic">
-<code class="descname">bic</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/mixture/gmm.py#L630"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.bic" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">bic</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/mixture/gmm.py#L619"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.bic" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bayesian information criterion for the current model fit
 and the proposed data</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -317,7 +390,7 @@ and the proposed data</p>
 
 <dl class="method">
 <dt id="sklearn.mixture.GMM.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/mixture/gmm.py#L576"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/mixture/gmm.py#L565"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Estimate model parameters with the EM algorithm.</p>
 <p>A initialization step is performed before entering the
 expectation-maximization (EM) algorithm. If you want to avoid
@@ -344,7 +417,7 @@ corresponds to a single data point.</p>
 
 <dl class="method">
 <dt id="sklearn.mixture.GMM.fit_predict">
-<code class="descname">fit_predict</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/mixture/gmm.py#L426"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.fit_predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_predict</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/mixture/gmm.py#L421"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.fit_predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit and then predict labels for data.</p>
 <p>Warning: due to the final maximization step in the EM algorithm,
 with low iterations the prediction may not be 100% accurate</p>
@@ -362,7 +435,7 @@ with low iterations the prediction may not be 100% accurate</p>
 
 <dl class="method">
 <dt id="sklearn.mixture.GMM.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -387,7 +460,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.mixture.GMM.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/mixture/gmm.py#L353"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/mixture/gmm.py#L348"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict label for data.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -403,7 +476,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.mixture.GMM.predict_proba">
-<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/mixture/gmm.py#L367"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.predict_proba" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict_proba</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/mixture/gmm.py#L362"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.predict_proba" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict posterior probability of data under each Gaussian
 in the model.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -426,7 +499,7 @@ in the model.</p>
 
 <dl class="method">
 <dt id="sklearn.mixture.GMM.sample">
-<code class="descname">sample</code><span class="sig-paren">(</span><em>n_samples=1</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/mixture/gmm.py#L384"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.sample" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">sample</tt><big>(</big><em>n_samples=1</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/mixture/gmm.py#L379"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.sample" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate random samples from the model.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -450,7 +523,7 @@ in the model.</p>
 
 <dl class="method">
 <dt id="sklearn.mixture.GMM.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/mixture/gmm.py#L336"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/mixture/gmm.py#L331"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the log probability under the model.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -475,7 +548,7 @@ corresponds to a single data point.</p>
 
 <dl class="method">
 <dt id="sklearn.mixture.GMM.score_samples">
-<code class="descname">score_samples</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/mixture/gmm.py#L297"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.score_samples" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score_samples</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/mixture/gmm.py#L292"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.score_samples" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the per-sample likelihood of the data under the model.</p>
 <p>Compute the log probability of X under the model and
 return the posterior distribution (responsibilities) of each
@@ -508,11 +581,11 @@ observation</p>
 
 <dl class="method">
 <dt id="sklearn.mixture.GMM.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.mixture.GMM.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -527,26 +600,26 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-mixture-gmm">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.mixture.GMM</span></code><a class="headerlink" href="#examples-using-sklearn-mixture-gmm" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Plot the density estimation of a mixture of two Gaussians. Data is generated from two Gaussians..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.mixture.GMM</span></tt><a class="headerlink" href="#examples-using-sklearn-mixture-gmm" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Plot the density estimation of a mixture of two Gaussians. Data is generated from two Gaussians..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/mixture/plot_gmm_pdf.html"><img alt="../../_images/plot_gmm_pdf1.png" src="../../_images/plot_gmm_pdf1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm_pdf.html#example-mixture-plot-gmm-pdf-py"><span>Density Estimation for a mixture of Gaussians</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm_pdf.html#example-mixture-plot-gmm-pdf-py"><em>Density Estimation for a mixture of Gaussians</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Plot the confidence ellipsoids of a mixture of two Gaussians with EM and variational Dirichlet ..."><div class="figure" id="id2">
+</div><div class="thumbnailContainer" tooltip="Plot the confidence ellipsoids of a mixture of two Gaussians with EM and variational Dirichlet ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/mixture/plot_gmm.html"><img alt="../../_images/plot_gmm1.png" src="../../_images/plot_gmm1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm.html#example-mixture-plot-gmm-py"><span>Gaussian Mixture Model Ellipsoids</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm.html#example-mixture-plot-gmm-py"><em>Gaussian Mixture Model Ellipsoids</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example highlights the advantages of the Dirichlet Process: complexity control and dealing..."><div class="figure" id="id3">
+</div><div class="thumbnailContainer" tooltip="This example highlights the advantages of the Dirichlet Process: complexity control and dealing..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/mixture/plot_gmm_sin.html"><img alt="../../_images/plot_gmm_sin1.png" src="../../_images/plot_gmm_sin1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm_sin.html#example-mixture-plot-gmm-sin-py"><span>Gaussian Mixture Model Sine Curve</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm_sin.html#example-mixture-plot-gmm-sin-py"><em>Gaussian Mixture Model Sine Curve</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example shows that model selection can be performed with Gaussian Mixture Models using inf..."><div class="figure" id="id4">
+</div><div class="thumbnailContainer" tooltip="This example shows that model selection can be performed with Gaussian Mixture Models using inf..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/mixture/plot_gmm_selection.html"><img alt="../../_images/plot_gmm_selection1.png" src="../../_images/plot_gmm_selection1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm_selection.html#example-mixture-plot-gmm-selection-py"><span>Gaussian Mixture Model Selection</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm_selection.html#example-mixture-plot-gmm-selection-py"><em>Gaussian Mixture Model Selection</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Demonstration of Gaussian mixture models for classification."><div class="figure" id="id5">
+</div><div class="thumbnailContainer" tooltip="Demonstration of Gaussian mixture models for classification."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/mixture/plot_gmm_classifier.html"><img alt="../../_images/plot_gmm_classifier1.png" src="../../_images/plot_gmm_classifier1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm_classifier.html#example-mixture-plot-gmm-classifier-py"><span>GMM classification</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/mixture/plot_gmm_classifier.html#example-mixture-plot-gmm-classifier-py"><em>GMM classification</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -563,8 +636,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.mixture.GMM.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.metrics.pairwise_distances_argmin_min.html">Previous
+      </a>
+    </div>
     
      </div>
 

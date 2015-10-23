@@ -94,8 +94,71 @@ from 56436 down to 10000 while reasonably preserving pairwise distances.
 
 
 
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_johnson_lindenstrauss_bound_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_johnson_lindenstrauss_bound_002.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_johnson_lindenstrauss_bound_003.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_johnson_lindenstrauss_bound_004.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_johnson_lindenstrauss_bound_005.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_johnson_lindenstrauss_bound_006.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_johnson_lindenstrauss_bound_007.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_johnson_lindenstrauss_bound_008.png
+            :scale: 47
+
+
+**Script output**::
+
+  Embedding 500 samples with dim 64 using various random projections
+  Projected 500 samples from 64 to 300 in 0.006s
+  Random matrix with size: 0.029MB
+  Mean distances rate: 1.03 (0.08)
+  Projected 500 samples from 64 to 1000 in 0.014s
+  Random matrix with size: 0.096MB
+  Mean distances rate: 1.01 (0.05)
+  Projected 500 samples from 64 to 10000 in 0.136s
+  Random matrix with size: 0.962MB
+  Mean distances rate: 1.00 (0.02)
+
+
+
 **Python source code:** :download:`plot_johnson_lindenstrauss_bound.py <plot_johnson_lindenstrauss_bound.py>`
 
 .. literalinclude:: plot_johnson_lindenstrauss_bound.py
     :lines: 92-
+
+**Total running time of the example:**  10.98 seconds
+( 0 minutes  10.98 seconds)
     

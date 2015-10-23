@@ -1,0 +1,50 @@
+
+
+.. _example_gaussian_process_plot_gpr_noisy_targets.py:
+
+
+=========================================================
+Gaussian Processes regression: basic introductory example
+=========================================================
+
+A simple one-dimensional regression example computed in two different ways:
+
+1. A noise-free case
+2. A noisy case with known noise-level per datapoint
+
+In both cases, the kernel's parameters are estimated using the maximum
+likelihood principle.
+
+The figures illustrate the interpolating property of the Gaussian Process
+model as well as its probabilistic nature in the form of a pointwise 95%
+confidence interval.
+
+Note that the parameter ``alpha`` is applied as a Tikhonov
+regularization of the assumed covariance between the training points.
+
+
+
+.. rst-class:: horizontal
+
+
+    *
+
+      .. image:: images/plot_gpr_noisy_targets_001.png
+            :scale: 47
+
+    *
+
+      .. image:: images/plot_gpr_noisy_targets_002.png
+            :scale: 47
+
+
+
+
+**Python source code:** :download:`plot_gpr_noisy_targets.py <plot_gpr_noisy_targets.py>`
+
+.. literalinclude:: plot_gpr_noisy_targets.py
+    :lines: 21-
+
+**Total running time of the example:**  0.52 seconds
+( 0 minutes  0.52 seconds)
+    

@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.linear_model.lasso_stability_path" href="sklearn.linear_model.lasso_stability_path.html" />
+    <link rel="prev" title="sklearn.linear_model.lars_path" href="sklearn.linear_model.lars_path.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.linear_model.lars_path.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.linear_m...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.linear_model.lars_path
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.linear_model</span></code>.lasso_path</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-linear-model-lasso-path">Examples using <code class="docutils literal"><span class="pre">sklearn.linear_model.lasso_path</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.linear_model</span></tt>.lasso_path</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-linear-model-lasso-path">Examples using <tt class="docutils literal"><span class="pre">sklearn.linear_model.lasso_path</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-linear-model-lasso-path">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></code></a>.lasso_path<a class="headerlink" href="#sklearn-linear-model-lasso-path" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.lasso_path<a class="headerlink" href="#sklearn-linear-model-lasso-path" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.linear_model.lasso_path">
-<code class="descclassname">sklearn.linear_model.</code><code class="descname">lasso_path</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>eps=0.001</em>, <em>n_alphas=100</em>, <em>alphas=None</em>, <em>precompute='auto'</em>, <em>Xy=None</em>, <em>copy_X=True</em>, <em>coef_init=None</em>, <em>verbose=False</em>, <em>return_n_iter=False</em>, <em>positive=False</em>, <em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/coordinate_descent.py#L115"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.lasso_path" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">lasso_path</tt><big>(</big><em>X</em>, <em>y</em>, <em>eps=0.001</em>, <em>n_alphas=100</em>, <em>alphas=None</em>, <em>precompute='auto'</em>, <em>Xy=None</em>, <em>copy_X=True</em>, <em>coef_init=None</em>, <em>verbose=False</em>, <em>return_n_iter=False</em>, <em>positive=False</em>, <em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/coordinate_descent.py#L115"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.lasso_path" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute Lasso path with coordinate descent</p>
 <p>The Lasso optimization function varies for mono and multi-outputs.</p>
 <p>For mono-output tasks it is:</p>
@@ -148,7 +188,7 @@
 </pre></div>
 </div>
 <p>i.e. the sum of norm of each row.</p>
-<p>Read more in the <a class="reference internal" href="../linear_model.html#lasso"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../linear_model.html#lasso"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -156,7 +196,7 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>X</strong> : {array-like, sparse matrix}, shape (n_samples, n_features)</p>
 <blockquote>
 <div><p>Training data. Pass directly as Fortran-contiguous data to avoid
-unnecessary memory duplication. If <code class="docutils literal"><span class="pre">y</span></code> is mono-output then <code class="docutils literal"><span class="pre">X</span></code>
+unnecessary memory duplication. If <tt class="docutils literal"><span class="pre">y</span></tt> is mono-output then <tt class="docutils literal"><span class="pre">X</span></tt>
 can be sparse.</p>
 </div></blockquote>
 <p><strong>y</strong> : ndarray, shape (n_samples,), or (n_samples, n_outputs)</p>
@@ -165,8 +205,8 @@ can be sparse.</p>
 </div></blockquote>
 <p><strong>eps</strong> : float, optional</p>
 <blockquote>
-<div><p>Length of the path. <code class="docutils literal"><span class="pre">eps=1e-3</span></code> means that
-<code class="docutils literal"><span class="pre">alpha_min</span> <span class="pre">/</span> <span class="pre">alpha_max</span> <span class="pre">=</span> <span class="pre">1e-3</span></code></p>
+<div><p>Length of the path. <tt class="docutils literal"><span class="pre">eps=1e-3</span></tt> means that
+<tt class="docutils literal"><span class="pre">alpha_min</span> <span class="pre">/</span> <span class="pre">alpha_max</span> <span class="pre">=</span> <span class="pre">1e-3</span></tt></p>
 </div></blockquote>
 <p><strong>n_alphas</strong> : int, optional</p>
 <blockquote>
@@ -175,12 +215,12 @@ can be sparse.</p>
 <p><strong>alphas</strong> : ndarray, optional</p>
 <blockquote>
 <div><p>List of alphas where to compute the models.
-If <code class="docutils literal"><span class="pre">None</span></code> alphas are set automatically</p>
+If <tt class="docutils literal"><span class="pre">None</span></tt> alphas are set automatically</p>
 </div></blockquote>
 <p><strong>precompute</strong> : True | False | &#8216;auto&#8217; | array-like</p>
 <blockquote>
 <div><p>Whether to use a precomputed Gram matrix to speed up
-calculations. If set to <code class="docutils literal"><span class="pre">'auto'</span></code> let us decide. The Gram
+calculations. If set to <tt class="docutils literal"><span class="pre">'auto'</span></tt> let us decide. The Gram
 matrix can also be passed as argument.</p>
 </div></blockquote>
 <p><strong>Xy</strong> : array-like, optional</p>
@@ -190,7 +230,7 @@ only when the Gram matrix is precomputed.</p>
 </div></blockquote>
 <p><strong>copy_X</strong> : boolean, optional, default True</p>
 <blockquote>
-<div><p>If <code class="docutils literal"><span class="pre">True</span></code>, X will be copied; else, it may be overwritten.</p>
+<div><p>If <tt class="docutils literal"><span class="pre">True</span></tt>, X will be copied; else, it may be overwritten.</p>
 </div></blockquote>
 <p><strong>coef_init</strong> : array, shape (n_features, ) | None</p>
 <blockquote>
@@ -237,7 +277,7 @@ reach the specified tolerance for each alpha.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.linear_model.lars_path.html#sklearn.linear_model.lars_path" title="sklearn.linear_model.lars_path"><code class="xref py py-obj docutils literal"><span class="pre">lars_path</span></code></a>, <a class="reference internal" href="sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><code class="xref py py-obj docutils literal"><span class="pre">Lasso</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LassoLars.html#sklearn.linear_model.LassoLars" title="sklearn.linear_model.LassoLars"><code class="xref py py-obj docutils literal"><span class="pre">LassoLars</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LassoCV.html#sklearn.linear_model.LassoCV" title="sklearn.linear_model.LassoCV"><code class="xref py py-obj docutils literal"><span class="pre">LassoCV</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LassoLarsCV.html#sklearn.linear_model.LassoLarsCV" title="sklearn.linear_model.LassoLarsCV"><code class="xref py py-obj docutils literal"><span class="pre">LassoLarsCV</span></code></a>, <a class="reference internal" href="sklearn.decomposition.sparse_encode.html#sklearn.decomposition.sparse_encode" title="sklearn.decomposition.sparse_encode"><code class="xref py py-obj docutils literal"><span class="pre">sklearn.decomposition.sparse_encode</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.linear_model.lars_path.html#sklearn.linear_model.lars_path" title="sklearn.linear_model.lars_path"><tt class="xref py py-obj docutils literal"><span class="pre">lars_path</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso" title="sklearn.linear_model.Lasso"><tt class="xref py py-obj docutils literal"><span class="pre">Lasso</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoLars.html#sklearn.linear_model.LassoLars" title="sklearn.linear_model.LassoLars"><tt class="xref py py-obj docutils literal"><span class="pre">LassoLars</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoCV.html#sklearn.linear_model.LassoCV" title="sklearn.linear_model.LassoCV"><tt class="xref py py-obj docutils literal"><span class="pre">LassoCV</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LassoLarsCV.html#sklearn.linear_model.LassoLarsCV" title="sklearn.linear_model.LassoLarsCV"><tt class="xref py py-obj docutils literal"><span class="pre">LassoLarsCV</span></tt></a>, <a class="reference internal" href="sklearn.decomposition.sparse_encode.html#sklearn.decomposition.sparse_encode" title="sklearn.decomposition.sparse_encode"><tt class="xref py py-obj docutils literal"><span class="pre">sklearn.decomposition.sparse_encode</span></tt></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>See examples/linear_model/plot_lasso_coordinate_descent_path.py
@@ -274,10 +314,10 @@ values output by lars_path</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-linear-model-lasso-path">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.linear_model.lasso_path</span></code><a class="headerlink" href="#examples-using-sklearn-linear-model-lasso-path" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Lasso and elastic net (L1 and L2 penalisation) implemented using a coordinate descent."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.linear_model.lasso_path</span></tt><a class="headerlink" href="#examples-using-sklearn-linear-model-lasso-path" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Lasso and elastic net (L1 and L2 penalisation) implemented using a coordinate descent."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_lasso_coordinate_descent_path.html"><img alt="../../_images/plot_lasso_coordinate_descent_path1.png" src="../../_images/plot_lasso_coordinate_descent_path1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_lasso_coordinate_descent_path.html#example-linear-model-plot-lasso-coordinate-descent-path-py"><span>Lasso and Elastic Net</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_lasso_coordinate_descent_path.html#example-linear-model-plot-lasso-coordinate-descent-path-py"><em>Lasso and Elastic Net</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -294,8 +334,12 @@ values output by lars_path</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.linear_model.lasso_path.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.linear_model.lars_path.html">Previous
+      </a>
+    </div>
     
      </div>
 

@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.datasets.make_spd_matrix" href="sklearn.datasets.make_spd_matrix.html" />
+    <link rel="prev" title="sklearn.datasets.make_sparse_spd_matrix" href="sklearn.datasets.make_sparse_spd_matrix.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.datasets.make_sparse_spd_matrix.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.datasets...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.datasets.make_sparse_spd_matrix
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.datasets</span></code>.make_sparse_uncorrelated</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.datasets</span></tt>.make_sparse_uncorrelated</a></li>
 </ul>
 
     </div>
@@ -123,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-datasets-make-sparse-uncorrelated">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></code></a>.make_sparse_uncorrelated<a class="headerlink" href="#sklearn-datasets-make-sparse-uncorrelated" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></tt></a>.make_sparse_uncorrelated<a class="headerlink" href="#sklearn-datasets-make-sparse-uncorrelated" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.datasets.make_sparse_uncorrelated">
-<code class="descclassname">sklearn.datasets.</code><code class="descname">make_sparse_uncorrelated</code><span class="sig-paren">(</span><em>n_samples=100</em>, <em>n_features=10</em>, <em>random_state=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/datasets/samples_generator.py#L1097"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.make_sparse_uncorrelated" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.datasets.</tt><tt class="descname">make_sparse_uncorrelated</tt><big>(</big><em>n_samples=100</em>, <em>n_features=10</em>, <em>random_state=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/datasets/samples_generator.py#L1097"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.make_sparse_uncorrelated" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate a random regression problem with sparse uncorrelated design</p>
 <p>This dataset is described in Celeux et al [1]. as:</p>
 <div class="highlight-python"><div class="highlight"><pre>X ~ N(0, 1)
@@ -138,7 +178,7 @@ y(X) = X[:, 0] + 2 * X[:, 1] - 2 * X[:, 2] - 1.5 * X[:, 3]
 </div>
 <p>Only the first 4 features are informative. The remaining features are
 useless.</p>
-<p>Read more in the <a class="reference internal" href="../../datasets/index.html#sample-generators"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../../datasets/index.html#sample-generators"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -173,10 +213,10 @@ by <cite>np.random</cite>.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r27" rules="none">
+<table class="docutils citation" frame="void" id="r119" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R27]</a></td><td>G. Celeux, M. El Anbari, J.-M. Marin, C. P. Robert,
+<tr><td class="label"><a class="fn-backref" href="#id1">[R119]</a></td><td>G. Celeux, M. El Anbari, J.-M. Marin, C. P. Robert,
 &#8220;Regularization in regression: comparing Bayesian and frequentist
 methods in a poorly informative situation&#8221;, 2009.</td></tr>
 </tbody>
@@ -197,8 +237,12 @@ methods in a poorly informative situation&#8221;, 2009.</td></tr>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.datasets.make_sparse_uncorrelated.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.datasets.make_sparse_spd_matrix.html">Previous
+      </a>
+    </div>
     
      </div>
 

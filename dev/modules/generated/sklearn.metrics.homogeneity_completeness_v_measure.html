@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.metrics.homogeneity_score" href="sklearn.metrics.homogeneity_score.html" />
+    <link rel="prev" title="sklearn.metrics.completeness_score" href="sklearn.metrics.completeness_score.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.metrics.completeness_score.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.metrics....
+        </span>
+            <span class="hiddenrellink">
+            sklearn.metrics.completeness_score
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.metrics</span></code>.homogeneity_completeness_v_measure</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.metrics</span></tt>.homogeneity_completeness_v_measure</a></li>
 </ul>
 
     </div>
@@ -123,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-metrics-homogeneity-completeness-v-measure">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></code></a>.homogeneity_completeness_v_measure<a class="headerlink" href="#sklearn-metrics-homogeneity-completeness-v-measure" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.metrics" title="sklearn.metrics"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics</span></tt></a>.homogeneity_completeness_v_measure<a class="headerlink" href="#sklearn-metrics-homogeneity-completeness-v-measure" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.metrics.homogeneity_completeness_v_measure">
-<code class="descclassname">sklearn.metrics.</code><code class="descname">homogeneity_completeness_v_measure</code><span class="sig-paren">(</span><em>labels_true</em>, <em>labels_pred</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/metrics/cluster/supervised.py#L195"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.homogeneity_completeness_v_measure" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.metrics.</tt><tt class="descname">homogeneity_completeness_v_measure</tt><big>(</big><em>labels_true</em>, <em>labels_pred</em>, <em>max_n_classes=5000</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/metrics/cluster/supervised.py#L214"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.metrics.homogeneity_completeness_v_measure" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the homogeneity and completeness and V-Measure scores at once</p>
 <p>Those metrics are based on normalized conditional entropy measures of
 the clustering labeling to evaluate given the knowledge of a Ground
@@ -143,10 +183,10 @@ being desirable.</p>
 <p>Those 3 metrics are independent of the absolute values of the labels:
 a permutation of the class or cluster label values won&#8217;t change the
 score values in any way.</p>
-<p>V-Measure is furthermore symmetric: swapping <code class="docutils literal"><span class="pre">labels_true</span></code> and
-<code class="docutils literal"><span class="pre">label_pred</span></code> will give the same score. This does not hold for
+<p>V-Measure is furthermore symmetric: swapping <tt class="docutils literal"><span class="pre">labels_true</span></tt> and
+<tt class="docutils literal"><span class="pre">label_pred</span></tt> will give the same score. This does not hold for
 homogeneity and completeness.</p>
-<p>Read more in the <a class="reference internal" href="../clustering.html#homogeneity-completeness"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../clustering.html#homogeneity-completeness"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -158,6 +198,12 @@ homogeneity and completeness.</p>
 <p><strong>labels_pred</strong> : array, shape = [n_samples]</p>
 <blockquote>
 <div><p>cluster labels to evaluate</p>
+</div></blockquote>
+<p><strong>max_n_classes: int, optional (default=5000)</strong> :</p>
+<blockquote>
+<div><p>Maximal number of classes handled by the adjusted_rand_score
+metric. Setting it too high can lead to MemoryError or OS
+freeze</p>
 </div></blockquote>
 </td>
 </tr>
@@ -179,7 +225,7 @@ homogeneity and completeness.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.metrics.homogeneity_score.html#sklearn.metrics.homogeneity_score" title="sklearn.metrics.homogeneity_score"><code class="xref py py-obj docutils literal"><span class="pre">homogeneity_score</span></code></a>, <a class="reference internal" href="sklearn.metrics.completeness_score.html#sklearn.metrics.completeness_score" title="sklearn.metrics.completeness_score"><code class="xref py py-obj docutils literal"><span class="pre">completeness_score</span></code></a>, <a class="reference internal" href="sklearn.metrics.v_measure_score.html#sklearn.metrics.v_measure_score" title="sklearn.metrics.v_measure_score"><code class="xref py py-obj docutils literal"><span class="pre">v_measure_score</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.metrics.homogeneity_score.html#sklearn.metrics.homogeneity_score" title="sklearn.metrics.homogeneity_score"><tt class="xref py py-obj docutils literal"><span class="pre">homogeneity_score</span></tt></a>, <a class="reference internal" href="sklearn.metrics.completeness_score.html#sklearn.metrics.completeness_score" title="sklearn.metrics.completeness_score"><tt class="xref py py-obj docutils literal"><span class="pre">completeness_score</span></tt></a>, <a class="reference internal" href="sklearn.metrics.v_measure_score.html#sklearn.metrics.v_measure_score" title="sklearn.metrics.v_measure_score"><tt class="xref py py-obj docutils literal"><span class="pre">v_measure_score</span></tt></a></p>
 </div>
 </dd></dl>
 
@@ -197,8 +243,12 @@ homogeneity and completeness.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.metrics.homogeneity_completeness_v_measure.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.metrics.completeness_score.html">Previous
+      </a>
+    </div>
     
      </div>
 

@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Gradient Boos...
+        Gradient Boostin...
         </span>
             <span class="hiddenrellink">
             Gradient Boosting Out-of-Bag estimates
@@ -163,7 +163,7 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="plot-the-decision-surfaces-of-ensembles-of-trees-on-the-iris-dataset">
 <span id="example-ensemble-plot-forest-iris-py"></span><h1>Plot the decision surfaces of ensembles of trees on the iris dataset<a class="headerlink" href="#plot-the-decision-surfaces-of-ensembles-of-trees-on-the-iris-dataset" title="Permalink to this headline">¶</a></h1>
@@ -188,15 +188,31 @@ the average score does not improve).</p>
 <p>See the console&#8217;s output for further details about each model.</p>
 <p>In this example you might try to:</p>
 <ol class="arabic simple">
-<li>vary the <code class="docutils literal"><span class="pre">max_depth</span></code> for the <code class="docutils literal"><span class="pre">DecisionTreeClassifier</span></code> and
-<code class="docutils literal"><span class="pre">AdaBoostClassifier</span></code>, perhaps try <code class="docutils literal"><span class="pre">max_depth=3</span></code> for the
-<code class="docutils literal"><span class="pre">DecisionTreeClassifier</span></code> or <code class="docutils literal"><span class="pre">max_depth=None</span></code> for <code class="docutils literal"><span class="pre">AdaBoostClassifier</span></code></li>
-<li>vary <code class="docutils literal"><span class="pre">n_estimators</span></code></li>
+<li>vary the <tt class="docutils literal"><span class="pre">max_depth</span></tt> for the <tt class="docutils literal"><span class="pre">DecisionTreeClassifier</span></tt> and
+<tt class="docutils literal"><span class="pre">AdaBoostClassifier</span></tt>, perhaps try <tt class="docutils literal"><span class="pre">max_depth=3</span></tt> for the
+<tt class="docutils literal"><span class="pre">DecisionTreeClassifier</span></tt> or <tt class="docutils literal"><span class="pre">max_depth=None</span></tt> for <tt class="docutils literal"><span class="pre">AdaBoostClassifier</span></tt></li>
+<li>vary <tt class="docutils literal"><span class="pre">n_estimators</span></tt></li>
 </ol>
 <p>It is worth noting that RandomForests and ExtraTrees can be fitted in parallel
 on many cores as each tree is built independently of the others. AdaBoost&#8217;s
 samples are built sequentially and so do not use multiple cores.</p>
-<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_forest_iris.py"><code class="xref download docutils literal"><span class="pre">plot_forest_iris.py</span></code></a></p>
+<img alt="../../_images/plot_forest_iris_001.png" class="align-center" src="../../_images/plot_forest_iris_001.png" />
+<p><strong>Script output</strong>:</p>
+<div class="highlight-python"><div class="highlight"><pre>DecisionTree with features [0, 1] has a score of 0.926666666667
+RandomForest with 30 estimators with features [0, 1] has a score of 0.926666666667
+ExtraTrees with 30 estimators with features [0, 1] has a score of 0.926666666667
+AdaBoost with 30 estimators with features [0, 1] has a score of 0.84
+DecisionTree with features [0, 2] has a score of 0.993333333333
+RandomForest with 30 estimators with features [0, 2] has a score of 0.993333333333
+ExtraTrees with 30 estimators with features [0, 2] has a score of 0.993333333333
+AdaBoost with 30 estimators with features [0, 2] has a score of 0.993333333333
+DecisionTree with features [2, 3] has a score of 0.993333333333
+RandomForest with 30 estimators with features [2, 3] has a score of 0.993333333333
+ExtraTrees with 30 estimators with features [2, 3] has a score of 0.993333333333
+AdaBoost with 30 estimators with features [2, 3] has a score of 0.993333333333
+</pre></div>
+</div>
+<p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_forest_iris.py"><tt class="xref download docutils literal"><span class="pre">plot_forest_iris.py</span></tt></a></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="k">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
@@ -311,6 +327,8 @@ samples are built sequentially and so do not use multiple cores.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>
+<p><strong>Total running time of the example:</strong>  7.07 seconds
+( 0 minutes  7.07 seconds)</p>
 </div>
 
 

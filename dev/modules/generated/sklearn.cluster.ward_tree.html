@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.cluster.affinity_propagation" href="sklearn.cluster.affinity_propagation.html" />
+    <link rel="prev" title="sklearn.cluster.k_means" href="sklearn.cluster.k_means.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.cluster.k_means.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.cluster....
+        </span>
+            <span class="hiddenrellink">
+            sklearn.cluster.k_means
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.cluster</span></code>.ward_tree</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.cluster</span></tt>.ward_tree</a></li>
 </ul>
 
     </div>
@@ -123,20 +163,20 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-cluster-ward-tree">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.cluster" title="sklearn.cluster"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></code></a>.ward_tree<a class="headerlink" href="#sklearn-cluster-ward-tree" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.cluster" title="sklearn.cluster"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></tt></a>.ward_tree<a class="headerlink" href="#sklearn-cluster-ward-tree" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.cluster.ward_tree">
-<code class="descclassname">sklearn.cluster.</code><code class="descname">ward_tree</code><span class="sig-paren">(</span><em>X</em>, <em>connectivity=None</em>, <em>n_components=None</em>, <em>n_clusters=None</em>, <em>return_distance=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/cluster/hierarchical.py#L89"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.ward_tree" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.cluster.</tt><tt class="descname">ward_tree</tt><big>(</big><em>X</em>, <em>connectivity=None</em>, <em>n_clusters=None</em>, <em>return_distance=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/cluster/hierarchical.py#L88"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.cluster.ward_tree" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ward clustering based on a Feature matrix.</p>
 <p>Recursively merges the pair of clusters that minimally increases
 within-cluster variance.</p>
 <p>The inertia matrix uses a Heapq-based representation.</p>
 <p>This is the structured version, that takes into account some topological
 structure between samples.</p>
-<p>Read more in the <a class="reference internal" href="../clustering.html#hierarchical-clustering"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../clustering.html#hierarchical-clustering"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -151,13 +191,6 @@ structure between samples.</p>
 following a given structure of the data. The matrix is assumed to
 be symmetric and only the upper triangular half is used.
 Default is None, i.e, the Ward algorithm is unstructured.</p>
-</div></blockquote>
-<p><strong>n_components</strong> : int (optional)</p>
-<blockquote>
-<div><p>Number of connected components. If None the number of connected
-components is estimated from the connectivity matrix.
-NOTE: This parameter is now directly determined directly
-from the connectivity matrix and will be removed in 0.18</p>
 </div></blockquote>
 <p><strong>n_clusters</strong> : int (optional)</p>
 <blockquote>
@@ -205,18 +238,18 @@ the nodes <cite>children[i, 1]</cite> and <cite>children[i, 2]</cite>. If the no
 leaves of the tree, then <cite>distances[i]</cite> is their unweighted euclidean
 distance. Distances are updated in the following way
 (from scipy.hierarchy.linkage):</p>
-<p>The new entry <img class="math" src="../../_images/math/97b17ba426e816881f89900ee53da726840e79e7.png" alt="d(u,v)"/> is computed as follows,</p>
+<p>The new entry <span class="math">d(u,v)</span> is computed as follows,</p>
 <div class="math">
-<p><img src="../../_images/math/aee98367dcd43a9677b3447ee9c5853812db77f8.png" alt="d(u,v) = \sqrt{\frac{|v|+|s|}
+<p><span class="math">d(u,v) = \sqrt{\frac{|v|+|s|}
                     {T}d(v,s)^2
              + \frac{|v|+|t|}
                     {T}d(v,t)^2
              - \frac{|v|}
-                    {T}d(s,t)^2}"/></p>
-</div><p>where <img class="math" src="../../_images/math/e5fc41b391867da81606413e3389c7efc73abaf0.png" alt="u"/> is the newly joined cluster consisting of
-clusters <img class="math" src="../../_images/math/6859317dd1b439cef34131bcd4bafee8393444e0.png" alt="s"/> and <img class="math" src="../../_images/math/ef9270877405055756d345facd044e4ab297f858.png" alt="t"/>, <img class="math" src="../../_images/math/0e22076955898e6c9bb38aa079135195c24dc81e.png" alt="v"/> is an unused
-cluster in the forest, <img class="math" src="../../_images/math/5c35be80517ffef4a33d6d5d72e68bbdbd0aab1b.png" alt="T=|v|+|s|+|t|"/>, and
-<img class="math" src="../../_images/math/24ebde4aa6565bb26051379bbc4bc07867b22c0d.png" alt="|*|"/> is the cardinality of its argument. This is also
+                    {T}d(s,t)^2}</span></p>
+</div><p>where <span class="math">u</span> is the newly joined cluster consisting of
+clusters <span class="math">s</span> and <span class="math">t</span>, <span class="math">v</span> is an unused
+cluster in the forest, <span class="math">T=|v|+|s|+|t|</span>, and
+<span class="math">|*|</span> is the cardinality of its argument. This is also
 known as the incremental algorithm.</p>
 </div></blockquote>
 </td>
@@ -239,8 +272,12 @@ known as the incremental algorithm.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.cluster.ward_tree.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.cluster.k_means.html">Previous
+      </a>
+    </div>
     
      </div>
 

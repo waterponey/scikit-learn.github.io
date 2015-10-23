@@ -56,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.multi...
+        sklearn.multicla...
         </span>
             <span class="hiddenrellink">
             sklearn.multiclass.OneVsOneClassifier
@@ -147,7 +147,7 @@
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.multiclass</span></code>.OutputCodeClassifier</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.multiclass</span></tt>.OutputCodeClassifier</a></li>
 </ul>
 
     </div>
@@ -163,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-multiclass-outputcodeclassifier">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.multiclass" title="sklearn.multiclass"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.multiclass</span></code></a>.OutputCodeClassifier<a class="headerlink" href="#sklearn-multiclass-outputcodeclassifier" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.multiclass" title="sklearn.multiclass"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.multiclass</span></tt></a>.OutputCodeClassifier<a class="headerlink" href="#sklearn-multiclass-outputcodeclassifier" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.multiclass.OutputCodeClassifier">
-<em class="property">class </em><code class="descclassname">sklearn.multiclass.</code><code class="descname">OutputCodeClassifier</code><span class="sig-paren">(</span><em>estimator</em>, <em>code_size=1.5</em>, <em>random_state=None</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/multiclass.py#L504"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.multiclass.</tt><tt class="descname">OutputCodeClassifier</tt><big>(</big><em>estimator</em>, <em>code_size=1.5</em>, <em>random_state=None</em>, <em>n_jobs=1</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/multiclass.py#L504"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier" title="Permalink to this definition">¶</a></dt>
 <dd><p>(Error-Correcting) Output-Code multiclass strategy</p>
 <p>Output-code based strategies consist in representing each class with a
 binary code (an array of 0s and 1s). At fitting time, one binary
@@ -179,7 +179,7 @@ closest to the points is chosen. The main advantage of these strategies is
 that the number of classifiers used can be controlled by the user, either
 for compressing the model (0 &lt; code_size &lt; 1) or for making the model more
 robust to errors (code_size &gt; 1). See the documentation for more details.</p>
-<p>Read more in the <a class="reference internal" href="../multiclass.html#ecoc"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../multiclass.html#ecoc"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -227,29 +227,29 @@ used. Thus for n_jobs = -2, all CPUs but one are used.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r94" rules="none">
+<table class="docutils citation" frame="void" id="r186" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R94]</a></td><td>&#8220;Solving multiclass learning problems via error-correcting output
+<tr><td class="label"><a class="fn-backref" href="#id1">[R186]</a></td><td>&#8220;Solving multiclass learning problems via error-correcting output
 codes&#8221;,
 Dietterich T., Bakiri G.,
 Journal of Artificial Intelligence Research 2,
 1995.</td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r95" rules="none">
+<table class="docutils citation" frame="void" id="r187" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[R95]</a></td><td>&#8220;The error coding method and PICTs&#8221;,
+<tr><td class="label"><a class="fn-backref" href="#id2">[R187]</a></td><td>&#8220;The error coding method and PICTs&#8221;,
 James G., Hastie T.,
 Journal of Computational and Graphical statistics 7,
 1998.</td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r96" rules="none">
+<table class="docutils citation" frame="void" id="r188" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[R96]</a></td><td>&#8220;The Elements of Statistical Learning&#8221;,
+<tr><td class="label"><a class="fn-backref" href="#id3">[R188]</a></td><td>&#8220;The Elements of Statistical Learning&#8221;,
 Hastie T., Tibshirani R., Friedman J., page 606 (second-edition)
 2008.</td></tr>
 </tbody>
@@ -261,22 +261,31 @@ Hastie T., Tibshirani R., Friedman J., page 606 (second-edition)
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#sklearn.multiclass.OutputCodeClassifier.fit" title="sklearn.multiclass.OutputCodeClassifier.fit"><code class="xref py py-obj docutils literal"><span class="pre">fit</span></code></a>(X,&nbsp;y)</td>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.multiclass.OutputCodeClassifier.fit" title="sklearn.multiclass.OutputCodeClassifier.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y)</td>
 <td>Fit underlying estimators.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#sklearn.multiclass.OutputCodeClassifier.predict" title="sklearn.multiclass.OutputCodeClassifier.predict"><code class="xref py py-obj docutils literal"><span class="pre">predict</span></code></a>(X)</td>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.multiclass.OutputCodeClassifier.get_params" title="sklearn.multiclass.OutputCodeClassifier.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.multiclass.OutputCodeClassifier.predict" title="sklearn.multiclass.OutputCodeClassifier.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X)</td>
 <td>Predict multi-class targets using underlying estimators.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.multiclass.OutputCodeClassifier.score" title="sklearn.multiclass.OutputCodeClassifier.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Returns the mean accuracy on the given test data and labels.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.multiclass.OutputCodeClassifier.set_params" title="sklearn.multiclass.OutputCodeClassifier.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
 </tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.multiclass.OutputCodeClassifier.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>estimator</em>, <em>code_size=1.5</em>, <em>random_state=None</em>, <em>n_jobs=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/multiclass.py#L570"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>estimator</em>, <em>code_size=1.5</em>, <em>random_state=None</em>, <em>n_jobs=1</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/multiclass.py#L570"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.multiclass.OutputCodeClassifier.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/multiclass.py#L576"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/multiclass.py#L576"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit underlying estimators.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -301,7 +310,7 @@ Hastie T., Tibshirani R., Friedman J., page 606 (second-edition)
 
 <dl class="method">
 <dt id="sklearn.multiclass.OutputCodeClassifier.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -326,7 +335,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.multiclass.OutputCodeClassifier.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/multiclass.py#L623"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/multiclass.py#L623"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict multi-class targets using underlying estimators.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -350,7 +359,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.multiclass.OutputCodeClassifier.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L285"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L292"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -385,11 +394,11 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.multiclass.OutputCodeClassifier.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.multiclass.OutputCodeClassifier.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

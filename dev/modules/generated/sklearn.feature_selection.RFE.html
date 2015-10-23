@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.feature_selection.RFECV" href="sklearn.feature_selection.RFECV.html" />
+    <link rel="prev" title="sklearn.feature_selection.SelectFwe" href="sklearn.feature_selection.SelectFwe.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.feature_selection.SelectFwe.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.feature_...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.feature_selection.SelectFwe
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.feature_selection</span></code>.RFE</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-feature-selection-rfe">Examples using <code class="docutils literal"><span class="pre">sklearn.feature_selection.RFE</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.feature_selection</span></tt>.RFE</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-feature-selection-rfe">Examples using <tt class="docutils literal"><span class="pre">sklearn.feature_selection.RFE</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-feature-selection-rfe">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_selection" title="sklearn.feature_selection"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_selection</span></code></a>.RFE<a class="headerlink" href="#sklearn-feature-selection-rfe" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.feature_selection" title="sklearn.feature_selection"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_selection</span></tt></a>.RFE<a class="headerlink" href="#sklearn-feature-selection-rfe" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.feature_selection.RFE">
-<em class="property">class </em><code class="descclassname">sklearn.feature_selection.</code><code class="descname">RFE</code><span class="sig-paren">(</span><em>estimator</em>, <em>n_features_to_select=None</em>, <em>step=1</em>, <em>estimator_params=None</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/rfe.py#L23"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.feature_selection.</tt><tt class="descname">RFE</tt><big>(</big><em>estimator</em>, <em>n_features_to_select=None</em>, <em>step=1</em>, <em>verbose=0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/rfe.py#L23"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE" title="Permalink to this definition">¶</a></dt>
 <dd><p>Feature ranking with recursive feature elimination.</p>
 <p>Given an external estimator that assigns weights to features (e.g., the
 coefficients of a linear model), the goal of recursive feature elimination
@@ -142,7 +182,7 @@ features and weights are assigned to each one of them. Then, features whose
 absolute weights are the smallest are pruned from the current set features.
 That procedure is recursively repeated on the pruned set until the desired
 number of features to select is eventually reached.</p>
-<p>Read more in the <a class="reference internal" href="../feature_selection.html#rfe"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../feature_selection.html#rfe"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -168,12 +208,6 @@ number of features to remove at each iteration.
 If within (0.0, 1.0), then <cite>step</cite> corresponds to the percentage
 (rounded down) of features to remove at each iteration.</p>
 </div></blockquote>
-<p><strong>estimator_params</strong> : dict</p>
-<blockquote>
-<div><p>Parameters for the external estimator.
-This attribute is deprecated as of version 0.16 and will be removed in
-0.18. Use estimator initialisation or set_params method instead.</p>
-</div></blockquote>
 <p><strong>verbose</strong> : int, default=0</p>
 <blockquote>
 <div><p>Controls verbosity of output.</p>
@@ -190,7 +224,7 @@ This attribute is deprecated as of version 0.16 and will be removed in
 </div></blockquote>
 <p><strong>ranking_</strong> : array of shape [n_features]</p>
 <blockquote>
-<div><p>The feature ranking, such that <code class="docutils literal"><span class="pre">ranking_[i]</span></code> corresponds to the
+<div><p>The feature ranking, such that <tt class="docutils literal"><span class="pre">ranking_[i]</span></tt> corresponds to the
 ranking position of the i-th feature. Selected (i.e., estimated
 best) features are assigned rank 1.</p>
 </div></blockquote>
@@ -203,10 +237,10 @@ best) features are assigned rank 1.</p>
 </tbody>
 </table>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r47" rules="none">
+<table class="docutils citation" frame="void" id="r139" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[R47]</a></td><td>Guyon, I., Weston, J., Barnhill, S., &amp; Vapnik, V., &#8220;Gene selection
+<tr><td class="label"><a class="fn-backref" href="#id1">[R139]</a></td><td>Guyon, I., Weston, J., Barnhill, S., &amp; Vapnik, V., &#8220;Gene selection
 for cancer classification using support vector machines&#8221;,
 Mach. Learn., 46(1-3), 389&#8211;422, 2002.</td></tr>
 </tbody>
@@ -235,16 +269,52 @@ features in the Friedman #1 dataset.</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><tt class="xref py py-obj docutils literal"><span class="pre">decision_function</span></tt>(*args,&nbsp;**kwargs)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.RFE.fit" title="sklearn.feature_selection.RFE.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y)</td>
+<td>Fit the RFE model and then the underlying estimator on the selected    features.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.RFE.fit_transform" title="sklearn.feature_selection.RFE.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.RFE.get_params" title="sklearn.feature_selection.RFE.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.RFE.get_support" title="sklearn.feature_selection.RFE.get_support"><tt class="xref py py-obj docutils literal"><span class="pre">get_support</span></tt></a>([indices])</td>
+<td>Get a mask, or integer index, of the features selected</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.RFE.inverse_transform" title="sklearn.feature_selection.RFE.inverse_transform"><tt class="xref py py-obj docutils literal"><span class="pre">inverse_transform</span></tt></a>(X)</td>
+<td>Reverse the transformation operation</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.RFE.predict" title="sklearn.feature_selection.RFE.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(*args,&nbsp;**kwargs)</td>
+<td>Reduce X to the selected features and then predict using the    underlying estimator.</td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">predict_log_proba</span></tt>(*args,&nbsp;**kwargs)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><tt class="xref py py-obj docutils literal"><span class="pre">predict_proba</span></tt>(*args,&nbsp;**kwargs)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.RFE.score" title="sklearn.feature_selection.RFE.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(*args,&nbsp;**kwargs)</td>
+<td>Reduce X to the selected features and then return the score of the    underlying estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.feature_selection.RFE.set_params" title="sklearn.feature_selection.RFE.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.feature_selection.RFE.transform" title="sklearn.feature_selection.RFE.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
+<td>Reduce X to the selected features.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.feature_selection.RFE.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>estimator</em>, <em>n_features_to_select=None</em>, <em>step=1</em>, <em>estimator_params=None</em>, <em>verbose=0</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/rfe.py#L107"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>estimator</em>, <em>n_features_to_select=None</em>, <em>step=1</em>, <em>verbose=0</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/rfe.py#L102"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFE.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/rfe.py#L119"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/rfe.py#L113"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.fit" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Fit the RFE model and then the underlying estimator on the selected</dt>
 <dd>features.</dd>
@@ -269,7 +339,7 @@ features in the Friedman #1 dataset.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFE.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L438"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -299,7 +369,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFE.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -324,7 +394,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFE.get_support">
-<code class="descname">get_support</code><span class="sig-paren">(</span><em>indices=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/base.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.get_support" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_support</tt><big>(</big><em>indices=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/base.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.get_support" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a mask, or integer index, of the features selected</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -354,7 +424,7 @@ values are indices into the input feature vector.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFE.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/base.py#L86"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">inverse_transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/base.py#L86"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reverse the transformation operation</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -377,9 +447,9 @@ been removed by <cite>transform</cite>.</p>
 </table>
 </dd></dl>
 
-<dl class="method">
+<dl class="staticmethod">
 <dt id="sklearn.feature_selection.RFE.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.predict" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><tt class="descname">predict</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.predict" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Reduce X to the selected features and then predict using the</dt>
 <dd>underlying estimator.</dd>
@@ -404,9 +474,9 @@ been removed by <cite>transform</cite>.</p>
 </table>
 </dd></dl>
 
-<dl class="method">
+<dl class="staticmethod">
 <dt id="sklearn.feature_selection.RFE.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.score" title="Permalink to this definition">¶</a></dt>
+<em class="property">static </em><tt class="descname">score</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/utils/metaestimators.py#L37"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.score" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="docutils">
 <dt>Reduce X to the selected features and then return the score of the</dt>
 <dd>underlying estimator.</dd>
@@ -431,11 +501,11 @@ been removed by <cite>transform</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFE.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -449,7 +519,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_selection.RFE.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/feature_selection/base.py#L62"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/feature_selection/base.py#L62"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_selection.RFE.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Reduce X to the selected features.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -474,10 +544,10 @@ component of a nested object.</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-feature-selection-rfe">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.feature_selection.RFE</span></code><a class="headerlink" href="#examples-using-sklearn-feature-selection-rfe" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="A recursive feature elimination example showing the relevance of pixels in a digit classificati..."><div class="figure" id="id2">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.feature_selection.RFE</span></tt><a class="headerlink" href="#examples-using-sklearn-feature-selection-rfe" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="A recursive feature elimination example showing the relevance of pixels in a digit classificati..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/feature_selection/plot_rfe_digits.html"><img alt="../../_images/plot_rfe_digits1.png" src="../../_images/plot_rfe_digits1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/feature_selection/plot_rfe_digits.html#example-feature-selection-plot-rfe-digits-py"><span>Recursive feature elimination</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/feature_selection/plot_rfe_digits.html#example-feature-selection-plot-rfe-digits-py"><em>Recursive feature elimination</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -494,8 +564,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.feature_selection.RFE.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.feature_selection.SelectFwe.html">Previous
+      </a>
+    </div>
     
      </div>
 

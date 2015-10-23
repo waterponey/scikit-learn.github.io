@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.datasets.make_blobs" href="sklearn.datasets.make_blobs.html" />
+    <link rel="prev" title="sklearn.datasets.load_svmlight_files" href="sklearn.datasets.load_svmlight_files.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.datasets.load_svmlight_files.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.datasets...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.datasets.load_svmlight_files
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.datasets</span></code>.dump_svmlight_file</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-datasets-dump-svmlight-file">Examples using <code class="docutils literal"><span class="pre">sklearn.datasets.dump_svmlight_file</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.datasets</span></tt>.dump_svmlight_file</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-datasets-dump-svmlight-file">Examples using <tt class="docutils literal"><span class="pre">sklearn.datasets.dump_svmlight_file</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,13 +166,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-datasets-dump-svmlight-file">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></code></a>.dump_svmlight_file<a class="headerlink" href="#sklearn-datasets-dump-svmlight-file" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.datasets" title="sklearn.datasets"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.datasets</span></tt></a>.dump_svmlight_file<a class="headerlink" href="#sklearn-datasets-dump-svmlight-file" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="sklearn.datasets.dump_svmlight_file">
-<code class="descclassname">sklearn.datasets.</code><code class="descname">dump_svmlight_file</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>f</em>, <em>zero_based=True</em>, <em>comment=None</em>, <em>query_id=None</em>, <em>multilabel=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/datasets/svmlight_format.py#L328"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.dump_svmlight_file" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">sklearn.datasets.</tt><tt class="descname">dump_svmlight_file</tt><big>(</big><em>X</em>, <em>y</em>, <em>f</em>, <em>zero_based=True</em>, <em>comment=None</em>, <em>query_id=None</em>, <em>multilabel=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/datasets/svmlight_format.py#L328"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.datasets.dump_svmlight_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dump the dataset in svmlight / libsvm file format.</p>
 <p>This format is a text-based format, with one sample per line. It does
 not store zero valued features hence is suitable for sparse dataset.</p>
@@ -189,10 +229,10 @@ format).</p>
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-datasets-dump-svmlight-file">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.datasets.dump_svmlight_file</span></code><a class="headerlink" href="#examples-using-sklearn-datasets-dump-svmlight-file" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="A simple graphical frontend for Libsvm mainly intended for didactic purposes. You can create da..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.datasets.dump_svmlight_file</span></tt><a class="headerlink" href="#examples-using-sklearn-datasets-dump-svmlight-file" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="A simple graphical frontend for Libsvm mainly intended for didactic purposes. You can create da..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/applications/svm_gui.html"><img alt="../../_images/svm_gui1.png" src="../../_images/svm_gui1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/applications/svm_gui.html#example-applications-svm-gui-py"><span>Libsvm GUI</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/applications/svm_gui.html#example-applications-svm-gui-py"><em>Libsvm GUI</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -209,8 +249,12 @@ format).</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.datasets.dump_svmlight_file.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.datasets.load_svmlight_files.html">Previous
+      </a>
+    </div>
     
      </div>
 

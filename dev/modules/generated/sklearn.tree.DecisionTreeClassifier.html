@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.tree.DecisionTreeRegressor" href="sklearn.tree.DecisionTreeRegressor.html" />
+    <link rel="prev" title="sklearn.svm.libsvm.cross_validation" href="sklearn.svm.libsvm.cross_validation.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.svm.libsvm.cross_validation.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.svm.libs...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.svm.libsvm.cross_validation
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.tree</span></code>.DecisionTreeClassifier</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-tree-decisiontreeclassifier">Examples using <code class="docutils literal"><span class="pre">sklearn.tree.DecisionTreeClassifier</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.tree</span></tt>.DecisionTreeClassifier</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-tree-decisiontreeclassifier">Examples using <tt class="docutils literal"><span class="pre">sklearn.tree.DecisionTreeClassifier</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,15 +166,15 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-tree-decisiontreeclassifier">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.tree" title="sklearn.tree"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.tree</span></code></a>.DecisionTreeClassifier<a class="headerlink" href="#sklearn-tree-decisiontreeclassifier" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.tree" title="sklearn.tree"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.tree</span></tt></a>.DecisionTreeClassifier<a class="headerlink" href="#sklearn-tree-decisiontreeclassifier" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.tree.DecisionTreeClassifier">
-<em class="property">class </em><code class="descclassname">sklearn.tree.</code><code class="descname">DecisionTreeClassifier</code><span class="sig-paren">(</span><em>criterion='gini'</em>, <em>splitter='best'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features=None</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em>, <em>class_weight=None</em>, <em>presort=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/tree/tree.py#L481"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.tree.</tt><tt class="descname">DecisionTreeClassifier</tt><big>(</big><em>criterion='gini'</em>, <em>splitter='best'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features=None</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em>, <em>class_weight=None</em>, <em>presort=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/tree/tree.py#L505"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier" title="Permalink to this definition">¶</a></dt>
 <dd><p>A decision tree classifier.</p>
-<p>Read more in the <a class="reference internal" href="../tree.html#tree"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../tree.html#tree"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -168,14 +208,14 @@ split.</li>
 </dl>
 <p>Note: the search for a split does not stop until at least one
 valid partition of the node samples is found, even if it requires to
-effectively inspect more than <code class="docutils literal"><span class="pre">max_features</span></code> features.</p>
+effectively inspect more than <tt class="docutils literal"><span class="pre">max_features</span></tt> features.</p>
 </div></blockquote>
 <p><strong>max_depth</strong> : int or None, optional (default=None)</p>
 <blockquote>
 <div><p>The maximum depth of the tree. If None, then nodes are expanded until
 all leaves are pure or until all leaves contain less than
 min_samples_split samples.
-Ignored if <code class="docutils literal"><span class="pre">max_leaf_nodes</span></code> is not None.</p>
+Ignored if <tt class="docutils literal"><span class="pre">max_leaf_nodes</span></tt> is not None.</p>
 </div></blockquote>
 <p><strong>min_samples_split</strong> : int, optional (default=2)</p>
 <blockquote>
@@ -192,23 +232,23 @@ leaf node.</p>
 </div></blockquote>
 <p><strong>max_leaf_nodes</strong> : int or None, optional (default=None)</p>
 <blockquote>
-<div><p>Grow a tree with <code class="docutils literal"><span class="pre">max_leaf_nodes</span></code> in best-first fashion.
+<div><p>Grow a tree with <tt class="docutils literal"><span class="pre">max_leaf_nodes</span></tt> in best-first fashion.
 Best nodes are defined as relative reduction in impurity.
 If None then unlimited number of leaf nodes.
-If not None then <code class="docutils literal"><span class="pre">max_depth</span></code> will be ignored.</p>
+If not None then <tt class="docutils literal"><span class="pre">max_depth</span></tt> will be ignored.</p>
 </div></blockquote>
 <p><strong>class_weight</strong> : dict, list of dicts, &#8220;balanced&#8221; or None, optional</p>
 <blockquote>
 <div><blockquote>
 <div><p>(default=None)</p>
 </div></blockquote>
-<p>Weights associated with classes in the form <code class="docutils literal"><span class="pre">{class_label:</span> <span class="pre">weight}</span></code>.
+<p>Weights associated with classes in the form <tt class="docutils literal"><span class="pre">{class_label:</span> <span class="pre">weight}</span></tt>.
 If not given, all classes are supposed to have weight one. For
 multi-output problems, a list of dicts can be provided in the same
 order as the columns of y.</p>
 <p>The &#8220;balanced&#8221; mode uses the values of y to automatically adjust
 weights inversely proportional to class frequencies in the input data
-as <code class="docutils literal"><span class="pre">n_samples</span> <span class="pre">/</span> <span class="pre">(n_classes</span> <span class="pre">*</span> <span class="pre">np.bincount(y))</span></code></p>
+as <tt class="docutils literal"><span class="pre">n_samples</span> <span class="pre">/</span> <span class="pre">(n_classes</span> <span class="pre">*</span> <span class="pre">np.bincount(y))</span></tt></p>
 <p>For multi-output, the weights of each column of y will be multiplied.</p>
 <p>Note that these weights will be multiplied with sample_weight (passed
 through the fit method) if sample_weight is specified.</p>
@@ -240,7 +280,7 @@ or a list of arrays of class labels (multi-output problem).</p>
 <div><p>The feature importances. The higher, the more important the
 feature. The importance of a feature is computed as the (normalized)
 total reduction of the criterion brought by that feature.  It is also
-known as the Gini importance <a class="reference internal" href="#r105" id="id1">[R105]</a>.</p>
+known as the Gini importance <a class="reference internal" href="#r197" id="id1">[R197]</a>.</p>
 </div></blockquote>
 <p><strong>max_features_</strong> : int,</p>
 <blockquote>
@@ -254,11 +294,11 @@ output (for multi-output problems).</p>
 </div></blockquote>
 <p><strong>n_features_</strong> : int</p>
 <blockquote>
-<div><p>The number of features when <code class="docutils literal"><span class="pre">fit</span></code> is performed.</p>
+<div><p>The number of features when <tt class="docutils literal"><span class="pre">fit</span></tt> is performed.</p>
 </div></blockquote>
 <p><strong>n_outputs_</strong> : int</p>
 <blockquote>
-<div><p>The number of outputs when <code class="docutils literal"><span class="pre">fit</span></code> is performed.</p>
+<div><p>The number of outputs when <tt class="docutils literal"><span class="pre">fit</span></tt> is performed.</p>
 </div></blockquote>
 <p><strong>tree_</strong> : Tree object</p>
 <blockquote class="last">
@@ -270,39 +310,39 @@ output (for multi-output problems).</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.tree.DecisionTreeRegressor.html#sklearn.tree.DecisionTreeRegressor" title="sklearn.tree.DecisionTreeRegressor"><code class="xref py py-obj docutils literal"><span class="pre">DecisionTreeRegressor</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.tree.DecisionTreeRegressor.html#sklearn.tree.DecisionTreeRegressor" title="sklearn.tree.DecisionTreeRegressor"><tt class="xref py py-obj docutils literal"><span class="pre">DecisionTreeRegressor</span></tt></a></p>
 </div>
 <p class="rubric">References</p>
-<table class="docutils citation" frame="void" id="r102" rules="none">
+<table class="docutils citation" frame="void" id="r194" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[R102]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Decision_tree_learning">http://en.wikipedia.org/wiki/Decision_tree_learning</a></td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id2">[R194]</a></td><td><a class="reference external" href="http://en.wikipedia.org/wiki/Decision_tree_learning">http://en.wikipedia.org/wiki/Decision_tree_learning</a></td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r103" rules="none">
+<table class="docutils citation" frame="void" id="r195" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[R103]</a></td><td>L. Breiman, J. Friedman, R. Olshen, and C. Stone, &#8220;Classification
+<tr><td class="label"><a class="fn-backref" href="#id3">[R195]</a></td><td>L. Breiman, J. Friedman, R. Olshen, and C. Stone, &#8220;Classification
 and Regression Trees&#8221;, Wadsworth, Belmont, CA, 1984.</td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r104" rules="none">
+<table class="docutils citation" frame="void" id="r196" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id4">[R104]</a></td><td>T. Hastie, R. Tibshirani and J. Friedman. &#8220;Elements of Statistical
+<tr><td class="label"><a class="fn-backref" href="#id4">[R196]</a></td><td>T. Hastie, R. Tibshirani and J. Friedman. &#8220;Elements of Statistical
 Learning&#8221;, Springer, 2009.</td></tr>
 </tbody>
 </table>
-<table class="docutils citation" frame="void" id="r105" rules="none">
+<table class="docutils citation" frame="void" id="r197" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label">[R105]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id5">2</a>)</em> L. Breiman, and A. Cutler, &#8220;Random Forests&#8221;,
+<tr><td class="label">[R197]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id5">2</a>)</em> L. Breiman, and A. Cutler, &#8220;Random Forests&#8221;,
 <a class="reference external" href="http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm">http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm</a></td></tr>
 </tbody>
 </table>
 <p class="rubric">Examples</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
@@ -320,16 +360,49 @@ Learning&#8221;, Springer, 2009.</td></tr>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.tree.DecisionTreeClassifier.apply" title="sklearn.tree.DecisionTreeClassifier.apply"><tt class="xref py py-obj docutils literal"><span class="pre">apply</span></tt></a>(X[,&nbsp;check_input])</td>
+<td>Returns the index of the leaf that each sample is predicted as.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.tree.DecisionTreeClassifier.decision_path" title="sklearn.tree.DecisionTreeClassifier.decision_path"><tt class="xref py py-obj docutils literal"><span class="pre">decision_path</span></tt></a>(X[,&nbsp;check_input])</td>
+<td>Return the decision path in the tree</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.tree.DecisionTreeClassifier.fit" title="sklearn.tree.DecisionTreeClassifier.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight,&nbsp;check_input,&nbsp;...])</td>
+<td>Build a decision tree from the training set (X, y).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.tree.DecisionTreeClassifier.fit_transform" title="sklearn.tree.DecisionTreeClassifier.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.tree.DecisionTreeClassifier.get_params" title="sklearn.tree.DecisionTreeClassifier.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.tree.DecisionTreeClassifier.predict" title="sklearn.tree.DecisionTreeClassifier.predict"><tt class="xref py py-obj docutils literal"><span class="pre">predict</span></tt></a>(X[,&nbsp;check_input])</td>
+<td>Predict class or regression value for X.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.tree.DecisionTreeClassifier.predict_log_proba" title="sklearn.tree.DecisionTreeClassifier.predict_log_proba"><tt class="xref py py-obj docutils literal"><span class="pre">predict_log_proba</span></tt></a>(X)</td>
+<td>Predict class log-probabilities of the input samples X.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.tree.DecisionTreeClassifier.predict_proba" title="sklearn.tree.DecisionTreeClassifier.predict_proba"><tt class="xref py py-obj docutils literal"><span class="pre">predict_proba</span></tt></a>(X[,&nbsp;check_input])</td>
+<td>Predict class probabilities of the input samples X.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.tree.DecisionTreeClassifier.score" title="sklearn.tree.DecisionTreeClassifier.score"><tt class="xref py py-obj docutils literal"><span class="pre">score</span></tt></a>(X,&nbsp;y[,&nbsp;sample_weight])</td>
+<td>Returns the mean accuracy on the given test data and labels.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.tree.DecisionTreeClassifier.set_params" title="sklearn.tree.DecisionTreeClassifier.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.tree.DecisionTreeClassifier.transform" title="sklearn.tree.DecisionTreeClassifier.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(*args,&nbsp;**kwargs)</td>
+<td>DEPRECATED: Support to use estimators as feature selectors will be removed in version 0.19.</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>criterion='gini'</em>, <em>splitter='best'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features=None</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em>, <em>class_weight=None</em>, <em>presort=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/tree/tree.py#L623"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>criterion='gini'</em>, <em>splitter='best'</em>, <em>max_depth=None</em>, <em>min_samples_split=2</em>, <em>min_samples_leaf=1</em>, <em>min_weight_fraction_leaf=0.0</em>, <em>max_features=None</em>, <em>random_state=None</em>, <em>max_leaf_nodes=None</em>, <em>class_weight=None</em>, <em>presort=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/tree/tree.py#L647"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.apply">
-<code class="descname">apply</code><span class="sig-paren">(</span><em>X</em>, <em>check_input=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/tree/tree.py#L432"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.apply" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">apply</tt><big>(</big><em>X</em>, <em>check_input=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/tree/tree.py#L432"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.apply" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the index of the leaf that each sample is predicted as.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -338,8 +411,8 @@ Learning&#8221;, Springer, 2009.</td></tr>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>X</strong> : array_like or sparse matrix, shape = [n_samples, n_features]</p>
 <blockquote>
 <div><p>The input samples. Internally, it will be converted to
-<code class="docutils literal"><span class="pre">dtype=np.float32</span></code> and if a sparse matrix is provided
-to a sparse <code class="docutils literal"><span class="pre">csr_matrix</span></code>.</p>
+<tt class="docutils literal"><span class="pre">dtype=np.float32</span></tt> and if a sparse matrix is provided
+to a sparse <tt class="docutils literal"><span class="pre">csr_matrix</span></tt>.</p>
 </div></blockquote>
 <p><strong>check_input</strong> : boolean, (default=True)</p>
 <blockquote>
@@ -352,8 +425,40 @@ Don&#8217;t use this parameter unless you know what you do.</p>
 <blockquote class="last">
 <div><p>For each datapoint x in X, return the index of the leaf x
 ends up in. Leaves are numbered within
-<code class="docutils literal"><span class="pre">[0;</span> <span class="pre">self.tree_.node_count)</span></code>, possibly with gaps in the
+<tt class="docutils literal"><span class="pre">[0;</span> <span class="pre">self.tree_.node_count)</span></tt>, possibly with gaps in the
 numbering.</p>
+</div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sklearn.tree.DecisionTreeClassifier.decision_path">
+<tt class="descname">decision_path</tt><big>(</big><em>X</em>, <em>check_input=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/tree/tree.py#L458"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.decision_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the decision path in the tree</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>X</strong> : array_like or sparse matrix, shape = [n_samples, n_features]</p>
+<blockquote>
+<div><p>The input samples. Internally, it will be converted to
+<tt class="docutils literal"><span class="pre">dtype=np.float32</span></tt> and if a sparse matrix is provided
+to a sparse <tt class="docutils literal"><span class="pre">csr_matrix</span></tt>.</p>
+</div></blockquote>
+<p><strong>check_input</strong> : boolean, (default=True)</p>
+<blockquote>
+<div><p>Allow to bypass several input checking.
+Don&#8217;t use this parameter unless you know what you do.</p>
+</div></blockquote>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>indicator</strong> : sparse csr array, shape = [n_samples, n_nodes]</p>
+<blockquote class="last">
+<div><p>Return a node indicator matrix where non zero elements
+indicates that the samples goes through the nodes.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -363,7 +468,7 @@ numbering.</p>
 
 <dl class="attribute">
 <dt id="sklearn.tree.DecisionTreeClassifier.feature_importances_">
-<code class="descname">feature_importances_</code><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.feature_importances_" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">feature_importances_</tt><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.feature_importances_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the feature importances.</p>
 <p>The importance of a feature is computed as the (normalized) total
 reduction of the criterion brought by that feature.
@@ -380,7 +485,7 @@ It is also known as the Gini importance.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em>, <em>check_input=True</em>, <em>X_idx_sorted=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/tree/tree.py#L113"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em>, <em>check_input=True</em>, <em>X_idx_sorted=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/tree/tree.py#L112"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Build a decision tree from the training set (X, y).</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -389,14 +494,14 @@ It is also known as the Gini importance.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>X</strong> : array-like or sparse matrix, shape = [n_samples, n_features]</p>
 <blockquote>
 <div><p>The training input samples. Internally, it will be converted to
-<code class="docutils literal"><span class="pre">dtype=np.float32</span></code> and if a sparse matrix is provided
-to a sparse <code class="docutils literal"><span class="pre">csc_matrix</span></code>.</p>
+<tt class="docutils literal"><span class="pre">dtype=np.float32</span></tt> and if a sparse matrix is provided
+to a sparse <tt class="docutils literal"><span class="pre">csc_matrix</span></tt>.</p>
 </div></blockquote>
 <p><strong>y</strong> : array-like, shape = [n_samples] or [n_samples, n_outputs]</p>
 <blockquote>
 <div><p>The target values (class labels in classification, real numbers in
-regression). In the regression case, use <code class="docutils literal"><span class="pre">dtype=np.float64</span></code> and
-<code class="docutils literal"><span class="pre">order='C'</span></code> for maximum efficiency.</p>
+regression). In the regression case, use <tt class="docutils literal"><span class="pre">dtype=np.float64</span></tt> and
+<tt class="docutils literal"><span class="pre">order='C'</span></tt> for maximum efficiency.</p>
 </div></blockquote>
 <p><strong>sample_weight</strong> : array-like, shape = [n_samples] or None</p>
 <blockquote>
@@ -432,7 +537,7 @@ Don&#8217;t use this parameter unless you know what to do.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L438"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -462,7 +567,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -487,7 +592,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.predict">
-<code class="descname">predict</code><span class="sig-paren">(</span><em>X</em>, <em>check_input=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/tree/tree.py#L381"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict</tt><big>(</big><em>X</em>, <em>check_input=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/tree/tree.py#L381"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict class or regression value for X.</p>
 <p>For a classification model, the predicted class for each sample in X is
 returned. For a regression model, the predicted value based on X is
@@ -499,8 +604,8 @@ returned.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>X</strong> : array-like or sparse matrix of shape = [n_samples, n_features]</p>
 <blockquote>
 <div><p>The input samples. Internally, it will be converted to
-<code class="docutils literal"><span class="pre">dtype=np.float32</span></code> and if a sparse matrix is provided
-to a sparse <code class="docutils literal"><span class="pre">csr_matrix</span></code>.</p>
+<tt class="docutils literal"><span class="pre">dtype=np.float32</span></tt> and if a sparse matrix is provided
+to a sparse <tt class="docutils literal"><span class="pre">csr_matrix</span></tt>.</p>
 </div></blockquote>
 <p><strong>check_input</strong> : boolean, (default=True)</p>
 <blockquote>
@@ -521,7 +626,7 @@ Don&#8217;t use this parameter unless you know what you do.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.predict_log_proba">
-<code class="descname">predict_log_proba</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/tree/tree.py#L695"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict_log_proba" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict_log_proba</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/tree/tree.py#L719"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict_log_proba" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict class log-probabilities of the input samples X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -530,8 +635,8 @@ Don&#8217;t use this parameter unless you know what you do.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>X</strong> : array-like or sparse matrix of shape = [n_samples, n_features]</p>
 <blockquote>
 <div><p>The input samples. Internally, it will be converted to
-<code class="docutils literal"><span class="pre">dtype=np.float32</span></code> and if a sparse matrix is provided
-to a sparse <code class="docutils literal"><span class="pre">csr_matrix</span></code>.</p>
+<tt class="docutils literal"><span class="pre">dtype=np.float32</span></tt> and if a sparse matrix is provided
+to a sparse <tt class="docutils literal"><span class="pre">csr_matrix</span></tt>.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -549,7 +654,7 @@ classes corresponds to that in the attribute <cite>classes_</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.predict_proba">
-<code class="descname">predict_proba</code><span class="sig-paren">(</span><em>X</em>, <em>check_input=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/tree/tree.py#L648"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict_proba" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">predict_proba</tt><big>(</big><em>X</em>, <em>check_input=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/tree/tree.py#L672"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.predict_proba" title="Permalink to this definition">¶</a></dt>
 <dd><p>Predict class probabilities of the input samples X.</p>
 <p>The predicted class probability is the fraction of samples of the same
 class in a leaf.</p>
@@ -565,8 +670,8 @@ Don&#8217;t use this parameter unless you know what you do.</dd>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>X</strong> : array-like or sparse matrix of shape = [n_samples, n_features]</p>
 <blockquote>
 <div><p>The input samples. Internally, it will be converted to
-<code class="docutils literal"><span class="pre">dtype=np.float32</span></code> and if a sparse matrix is provided
-to a sparse <code class="docutils literal"><span class="pre">csr_matrix</span></code>.</p>
+<tt class="docutils literal"><span class="pre">dtype=np.float32</span></tt> and if a sparse matrix is provided
+to a sparse <tt class="docutils literal"><span class="pre">csr_matrix</span></tt>.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -584,7 +689,7 @@ classes corresponds to that in the attribute <cite>classes_</cite>.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.score">
-<code class="descname">score</code><span class="sig-paren">(</span><em>X</em>, <em>y</em>, <em>sample_weight=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L285"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.score" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">score</tt><big>(</big><em>X</em>, <em>y</em>, <em>sample_weight=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L292"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the mean accuracy on the given test data and labels.</p>
 <p>In multi-label classification, this is the subset accuracy
 which is a harsh metric since you require for each sample that
@@ -619,11 +724,11 @@ each label set be correctly predicted.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -637,12 +742,12 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.tree.DecisionTreeClassifier.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/utils/__init__.py#L92"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/utils/deprecation.py#L69"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.tree.DecisionTreeClassifier.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>DEPRECATED: Support to use estimators as feature selectors will be removed in version 0.19. Use SelectFromModel instead.</p>
 <p>Reduce X to its most important features.</p>
 <blockquote>
-<div>Uses <code class="docutils literal"><span class="pre">coef_</span></code> or <code class="docutils literal"><span class="pre">feature_importances_</span></code> to determine the most
-important features.  For models with a <code class="docutils literal"><span class="pre">coef_</span></code> for each class, the
+<div>Uses <tt class="docutils literal"><span class="pre">coef_</span></tt> or <tt class="docutils literal"><span class="pre">feature_importances_</span></tt> to determine the most
+important features.  For models with a <tt class="docutils literal"><span class="pre">coef_</span></tt> for each class, the
 absolute sum over the classes is used.</div></blockquote>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -660,7 +765,7 @@ importance is greater or equal are kept while the others are
 discarded. If &#8220;median&#8221; (resp. &#8220;mean&#8221;), then the threshold value is
 the median (resp. the mean) of the feature importances. A scaling
 factor (e.g., &#8220;1.25*mean&#8221;) may also be used. If None and if
-available, the object attribute <code class="docutils literal"><span class="pre">threshold</span></code> is used. Otherwise,
+available, the object attribute <tt class="docutils literal"><span class="pre">threshold</span></tt> is used. Otherwise,
 &#8220;mean&#8221; is used by default.</p>
 </dd>
 </dl>
@@ -680,34 +785,38 @@ available, the object attribute <code class="docutils literal"><span class="pre"
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-tree-decisiontreeclassifier">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.tree.DecisionTreeClassifier</span></code><a class="headerlink" href="#examples-using-sklearn-tree-decisiontreeclassifier" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="A comparison of a several classifiers in scikit-learn on synthetic datasets. The point of this ..."><div class="figure" id="id6">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.tree.DecisionTreeClassifier</span></tt><a class="headerlink" href="#examples-using-sklearn-tree-decisiontreeclassifier" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="A comparison of a several classifiers in scikit-learn on synthetic datasets. The point of this ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/classification/plot_classifier_comparison.html"><img alt="../../_images/plot_classifier_comparison1.png" src="../../_images/plot_classifier_comparison1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/classification/plot_classifier_comparison.html#example-classification-plot-classifier-comparison-py"><span>Classifier comparison</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/classification/plot_classifier_comparison.html#example-classification-plot-classifier-comparison-py"><em>Classifier comparison</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Plot the decision boundaries of a `VotingClassifier` for two features of the Iris dataset."><div class="figure" id="id7">
+</div><div class="thumbnailContainer" tooltip="Plot the decision boundaries of a `VotingClassifier` for two features of the Iris dataset."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_voting_decision_regions.html"><img alt="../../_images/plot_voting_decision_regions1.png" src="../../_images/plot_voting_decision_regions1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_voting_decision_regions.html#example-ensemble-plot-voting-decision-regions-py"><span>Plot the decision boundaries of a VotingClassifier</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_voting_decision_regions.html#example-ensemble-plot-voting-decision-regions-py"><em>Plot the decision boundaries of a VotingClassifier</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example fits an AdaBoosted decision stump on a non-linearly separable classification datas..."><div class="figure" id="id8">
+</div><div class="thumbnailContainer" tooltip="This example fits an AdaBoosted decision stump on a non-linearly separable classification datas..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_adaboost_twoclass.html"><img alt="../../_images/plot_adaboost_twoclass1.png" src="../../_images/plot_adaboost_twoclass1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_twoclass.html#example-ensemble-plot-adaboost-twoclass-py"><span>Two-class AdaBoost</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_twoclass.html#example-ensemble-plot-adaboost-twoclass-py"><em>Two-class AdaBoost</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example is based on Figure 10.2 from Hastie et al 2009 [1] and illustrates the difference ..."><div class="figure" id="id9">
+</div><div class="thumbnailContainer" tooltip="This example is based on Figure 10.2 from Hastie et al 2009 [1] and illustrates the difference ..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_adaboost_hastie_10_2.html"><img alt="../../_images/plot_adaboost_hastie_10_21.png" src="../../_images/plot_adaboost_hastie_10_21.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_hastie_10_2.html#example-ensemble-plot-adaboost-hastie-10-2-py"><span>Discrete versus Real AdaBoost</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_hastie_10_2.html#example-ensemble-plot-adaboost-hastie-10-2-py"><em>Discrete versus Real AdaBoost</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="This example reproduces Figure 1 of Zhu et al [1] and shows how boosting can improve prediction..."><div class="figure" id="id10">
+</div><div class="thumbnailContainer" tooltip="This example reproduces Figure 1 of Zhu et al [1] and shows how boosting can improve prediction..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_adaboost_multiclass.html"><img alt="../../_images/plot_adaboost_multiclass1.png" src="../../_images/plot_adaboost_multiclass1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_multiclass.html#example-ensemble-plot-adaboost-multiclass-py"><span>Multi-class AdaBoosted Decision Trees</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_adaboost_multiclass.html#example-ensemble-plot-adaboost-multiclass-py"><em>Multi-class AdaBoosted Decision Trees</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Plot the decision surfaces of forests of randomized trees trained on pairs of features of the i..."><div class="figure" id="id11">
+</div><div class="thumbnailContainer" tooltip="Plot the decision surfaces of forests of randomized trees trained on pairs of features of the i..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/ensemble/plot_forest_iris.html"><img alt="../../_images/plot_forest_iris1.png" src="../../_images/plot_forest_iris1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/ensemble/plot_forest_iris.html#example-ensemble-plot-forest-iris-py"><span>Plot the decision surfaces of ensembles of trees on the iris dataset</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/ensemble/plot_forest_iris.html#example-ensemble-plot-forest-iris-py"><em>Plot the decision surfaces of ensembles of trees on the iris dataset</em></a></p>
 </div>
-</div><div class="thumbnailContainer" tooltip="Plot the decision surface of a decision tree trained on pairs of features of the iris dataset."><div class="figure" id="id12">
+</div><div class="thumbnailContainer" tooltip="Plot the decision surface of a decision tree trained on pairs of features of the iris dataset."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/tree/plot_iris.html"><img alt="../../_images/plot_iris3.png" src="../../_images/plot_iris3.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/tree/plot_iris.html#example-tree-plot-iris-py"><span>Plot the decision surface of a decision tree on the iris dataset</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/tree/plot_iris.html#example-tree-plot-iris-py"><em>Plot the decision surface of a decision tree on the iris dataset</em></a></p>
+</div>
+</div><div class="thumbnailContainer" tooltip="The decision tree structure can be analysed to gain further insight on the relation between the..."><div class="figure">
+<a class="reference external image-reference" href="./../../auto_examples/tree/unveil_tree_structure.html"><img alt="../../_images/unveil_tree_structure1.png" src="../../_images/unveil_tree_structure1.png" /></a>
+<p class="caption"><a class="reference internal" href="../../auto_examples/tree/unveil_tree_structure.html#example-tree-unveil-tree-structure-py"><em>Understanding the decision tree structure</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -724,8 +833,12 @@ available, the object attribute <code class="docutils literal"><span class="pre"
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.tree.DecisionTreeClassifier.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.svm.libsvm.cross_validation.html">Previous
+      </a>
+    </div>
     
      </div>
 

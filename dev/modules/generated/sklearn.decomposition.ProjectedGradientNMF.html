@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.decomposition.RandomizedPCA" href="sklearn.decomposition.RandomizedPCA.html" />
+    <link rel="prev" title="sklearn.decomposition.IncrementalPCA" href="sklearn.decomposition.IncrementalPCA.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,10 +107,47 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.decomposition.IncrementalPCA.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.decompos...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.decomposition.IncrementalPCA
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.decomposition</span></code>.ProjectedGradientNMF</a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.decomposition</span></tt>.ProjectedGradientNMF</a></li>
 </ul>
 
     </div>
@@ -123,13 +163,13 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-decomposition-projectedgradientnmf">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></code></a>.ProjectedGradientNMF<a class="headerlink" href="#sklearn-decomposition-projectedgradientnmf" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.decomposition" title="sklearn.decomposition"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.decomposition</span></tt></a>.ProjectedGradientNMF<a class="headerlink" href="#sklearn-decomposition-projectedgradientnmf" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.decomposition.ProjectedGradientNMF">
-<em class="property">class </em><code class="descclassname">sklearn.decomposition.</code><code class="descname">ProjectedGradientNMF</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/nmf.py#L1066"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.decomposition.</tt><tt class="descname">ProjectedGradientNMF</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/decomposition/nmf.py#L1066"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF" title="Permalink to this definition">¶</a></dt>
 <dd><p class="rubric">Methods</p>
 <table border="1" class="longtable docutils">
 <colgroup>
@@ -137,17 +177,32 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.ProjectedGradientNMF.fit" title="sklearn.decomposition.ProjectedGradientNMF.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X[,&nbsp;y])</td>
+<td>Learn a NMF model for the data X.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.ProjectedGradientNMF.fit_transform" title="sklearn.decomposition.ProjectedGradientNMF.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y,&nbsp;W,&nbsp;H])</td>
+<td>Learn a NMF model for the data X and returns the transformed data.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.ProjectedGradientNMF.get_params" title="sklearn.decomposition.ProjectedGradientNMF.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.decomposition.ProjectedGradientNMF.set_params" title="sklearn.decomposition.ProjectedGradientNMF.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.decomposition.ProjectedGradientNMF.transform" title="sklearn.decomposition.ProjectedGradientNMF.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
+<td>Transform the data X according to the fitted NMF model</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.decomposition.ProjectedGradientNMF.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/utils/__init__.py#L74"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/utils/deprecation.py#L51"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>DEPRECATED: It will be removed in release 0.19. Use NMF instead.&#8217;pg&#8217; solver is still available until release 0.19.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.decomposition.ProjectedGradientNMF.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/nmf.py#L1007"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/decomposition/nmf.py#L1007"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Learn a NMF model for the data X.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -178,7 +233,7 @@
 
 <dl class="method">
 <dt id="sklearn.decomposition.ProjectedGradientNMF.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>W=None</em>, <em>H=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/nmf.py#L954"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>W=None</em>, <em>H=None</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/decomposition/nmf.py#L954"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Learn a NMF model for the data X and returns the transformed data.</p>
 <p>This is more efficient than calling fit followed by transform.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -221,7 +276,7 @@
 
 <dl class="method">
 <dt id="sklearn.decomposition.ProjectedGradientNMF.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -246,11 +301,11 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.ProjectedGradientNMF.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -264,7 +319,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.decomposition.ProjectedGradientNMF.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/decomposition/nmf.py#L1030"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/decomposition/nmf.py#L1030"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.decomposition.ProjectedGradientNMF.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform the data X according to the fitted NMF model</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -308,8 +363,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.decomposition.ProjectedGradientNMF.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.decomposition.IncrementalPCA.html">Previous
+      </a>
+    </div>
     
      </div>
 

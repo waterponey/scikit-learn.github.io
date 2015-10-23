@@ -35,6 +35,9 @@
     <link rel="shortcut icon" href="../../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../../about.html" />
     <link rel="top" title="scikit-learn 0.18.dev0 documentation" href="../../index.html" />
+    <link rel="up" title="API Reference" href="../classes.html" />
+    <link rel="next" title="sklearn.linear_model.RandomizedLogisticRegression" href="sklearn.linear_model.RandomizedLogisticRegression.html" />
+    <link rel="prev" title="sklearn.linear_model.Perceptron" href="sklearn.linear_model.Perceptron.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -53,7 +56,7 @@
   </script>
 
   </head>
-  <body role="document">
+  <body>
 
 <div class="header-wrapper">
     <div class="header">
@@ -104,11 +107,48 @@
 <div class="content-wrapper">
     <div class="sphinxsidebar">
     <div class="sphinxsidebarwrapper">
+        <div class="rel">
+    
+
+  <!-- rellinks[1:] is an ugly hack to avoid link to module
+  index -->
+        <div class="rellink">
+        <a href="sklearn.linear_model.Perceptron.html"
+        accesskey="P">Previous
+        <br/>
+        <span class="smallrellink">
+        sklearn.linear_m...
+        </span>
+            <span class="hiddenrellink">
+            sklearn.linear_model.Perceptron
+            </span>
+        </a>
+        </div>
+
+    <!-- Ad a link to the 'up' page -->
+        <div class="spacer">
+        &nbsp;
+        </div>
+        <div class="rellink">
+        <a href="../classes.html">
+        Up
+        <br/>
+        <span class="smallrellink">
+        API Reference
+        </span>
+            <span class="hiddenrellink">
+            API Reference
+            </span>
+            
+        </a>
+        </div>
+    </div>
+    
       <p class="doc-version">This documentation is for scikit-learn <strong>version 0.18.dev0</strong> &mdash; <a href="http://scikit-learn.org/stable/support.html#documentation-resources">Other versions</a></p>
     <p class="citing">If you use the software, please consider <a href="../../about.html#citing-scikit-learn">citing scikit-learn</a>.</p>
     <ul>
-<li><a class="reference internal" href="#"><code class="docutils literal"><span class="pre">sklearn.linear_model</span></code>.RandomizedLasso</a><ul>
-<li><a class="reference internal" href="#examples-using-sklearn-linear-model-randomizedlasso">Examples using <code class="docutils literal"><span class="pre">sklearn.linear_model.RandomizedLasso</span></code></a></li>
+<li><a class="reference internal" href="#"><tt class="docutils literal"><span class="pre">sklearn.linear_model</span></tt>.RandomizedLasso</a><ul>
+<li><a class="reference internal" href="#examples-using-sklearn-linear-model-randomizedlasso">Examples using <tt class="docutils literal"><span class="pre">sklearn.linear_model.RandomizedLasso</span></tt></a></li>
 </ul>
 </li>
 </ul>
@@ -126,18 +166,18 @@
             
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body" role="main">
+          <div class="body">
             
   <div class="section" id="sklearn-linear-model-randomizedlasso">
-<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></code></a>.RandomizedLasso<a class="headerlink" href="#sklearn-linear-model-randomizedlasso" title="Permalink to this headline">¶</a></h1>
+<h1><a class="reference internal" href="../classes.html#module-sklearn.linear_model" title="sklearn.linear_model"><tt class="xref py py-mod docutils literal"><span class="pre">sklearn.linear_model</span></tt></a>.RandomizedLasso<a class="headerlink" href="#sklearn-linear-model-randomizedlasso" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.linear_model.RandomizedLasso">
-<em class="property">class </em><code class="descclassname">sklearn.linear_model.</code><code class="descname">RandomizedLasso</code><span class="sig-paren">(</span><em>alpha='aic'</em>, <em>scaling=0.5</em>, <em>sample_fraction=0.75</em>, <em>n_resampling=200</em>, <em>selection_threshold=0.25</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>max_iter=500</em>, <em>eps=2.2204460492503131e-16</em>, <em>random_state=None</em>, <em>n_jobs=1</em>, <em>pre_dispatch='3*n_jobs'</em>, <em>memory=Memory(cachedir=None)</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/randomized_l1.py#L187"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">sklearn.linear_model.</tt><tt class="descname">RandomizedLasso</tt><big>(</big><em>alpha='aic'</em>, <em>scaling=0.5</em>, <em>sample_fraction=0.75</em>, <em>n_resampling=200</em>, <em>selection_threshold=0.25</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>max_iter=500</em>, <em>eps=2.2204460492503131e-16</em>, <em>random_state=None</em>, <em>n_jobs=1</em>, <em>pre_dispatch='3*n_jobs'</em>, <em>memory=Memory(cachedir=None)</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/randomized_l1.py#L188"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso" title="Permalink to this definition">¶</a></dt>
 <dd><p>Randomized Lasso.</p>
 <p>Randomized Lasso works by resampling the train data and computing
 a Lasso on each resampling. In short, the features selected more
 often are good features. It is also known as stability selection.</p>
-<p>Read more in the <a class="reference internal" href="../feature_selection.html#randomized-l1"><span>User Guide</span></a>.</p>
+<p>Read more in the <a class="reference internal" href="../feature_selection.html#randomized-l1"><em>User Guide</em></a>.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -242,7 +282,7 @@ If a string is given, it is the path to the caching directory.</p>
 </div></blockquote>
 <p><strong>all_scores_</strong> : array, shape = [n_features, n_reg_parameter]</p>
 <blockquote class="last">
-<div><p>Feature scores between 0 and 1 for all values of the regularization         parameter. The reference article suggests <code class="docutils literal"><span class="pre">scores_</span></code> is the max of         <code class="docutils literal"><span class="pre">all_scores_</span></code>.</p>
+<div><p>Feature scores between 0 and 1 for all values of the regularization         parameter. The reference article suggests <tt class="docutils literal"><span class="pre">scores_</span></tt> is the max of         <tt class="docutils literal"><span class="pre">all_scores_</span></tt>.</p>
 </div></blockquote>
 </td>
 </tr>
@@ -250,7 +290,7 @@ If a string is given, it is the path to the caching directory.</p>
 </table>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last"><a class="reference internal" href="sklearn.linear_model.RandomizedLogisticRegression.html#sklearn.linear_model.RandomizedLogisticRegression" title="sklearn.linear_model.RandomizedLogisticRegression"><code class="xref py py-obj docutils literal"><span class="pre">RandomizedLogisticRegression</span></code></a>, <a class="reference internal" href="sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><code class="xref py py-obj docutils literal"><span class="pre">LogisticRegression</span></code></a></p>
+<p class="last"><a class="reference internal" href="sklearn.linear_model.RandomizedLogisticRegression.html#sklearn.linear_model.RandomizedLogisticRegression" title="sklearn.linear_model.RandomizedLogisticRegression"><tt class="xref py py-obj docutils literal"><span class="pre">RandomizedLogisticRegression</span></tt></a>, <a class="reference internal" href="sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression" title="sklearn.linear_model.LogisticRegression"><tt class="xref py py-obj docutils literal"><span class="pre">LogisticRegression</span></tt></a></p>
 </div>
 <p class="rubric">Notes</p>
 <p>See examples/linear_model/plot_sparse_recovery.py for an example.</p>
@@ -272,16 +312,37 @@ DOI: 10.1111/j.1467-9868.2010.00740.x</p>
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLasso.fit" title="sklearn.linear_model.RandomizedLasso.fit"><tt class="xref py py-obj docutils literal"><span class="pre">fit</span></tt></a>(X,&nbsp;y)</td>
+<td>Fit the model using X, y as training data.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLasso.fit_transform" title="sklearn.linear_model.RandomizedLasso.fit_transform"><tt class="xref py py-obj docutils literal"><span class="pre">fit_transform</span></tt></a>(X[,&nbsp;y])</td>
+<td>Fit to data, then transform it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLasso.get_params" title="sklearn.linear_model.RandomizedLasso.get_params"><tt class="xref py py-obj docutils literal"><span class="pre">get_params</span></tt></a>([deep])</td>
+<td>Get parameters for this estimator.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLasso.get_support" title="sklearn.linear_model.RandomizedLasso.get_support"><tt class="xref py py-obj docutils literal"><span class="pre">get_support</span></tt></a>([indices])</td>
+<td>Return a mask, or list, of the features/indices selected.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLasso.inverse_transform" title="sklearn.linear_model.RandomizedLasso.inverse_transform"><tt class="xref py py-obj docutils literal"><span class="pre">inverse_transform</span></tt></a>(X)</td>
+<td>Transform a new matrix using the selected features</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLasso.set_params" title="sklearn.linear_model.RandomizedLasso.set_params"><tt class="xref py py-obj docutils literal"><span class="pre">set_params</span></tt></a>(**params)</td>
+<td>Set the parameters of this estimator.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#sklearn.linear_model.RandomizedLasso.transform" title="sklearn.linear_model.RandomizedLasso.transform"><tt class="xref py py-obj docutils literal"><span class="pre">transform</span></tt></a>(X)</td>
+<td>Transform a new matrix using the selected features</td>
+</tr>
 </tbody>
 </table>
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLasso.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>alpha='aic'</em>, <em>scaling=0.5</em>, <em>sample_fraction=0.75</em>, <em>n_resampling=200</em>, <em>selection_threshold=0.25</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>max_iter=500</em>, <em>eps=2.2204460492503131e-16</em>, <em>random_state=None</em>, <em>n_jobs=1</em>, <em>pre_dispatch='3*n_jobs'</em>, <em>memory=Memory(cachedir=None)</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/randomized_l1.py#L305"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.__init__" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__init__</tt><big>(</big><em>alpha='aic'</em>, <em>scaling=0.5</em>, <em>sample_fraction=0.75</em>, <em>n_resampling=200</em>, <em>selection_threshold=0.25</em>, <em>fit_intercept=True</em>, <em>verbose=False</em>, <em>normalize=True</em>, <em>precompute='auto'</em>, <em>max_iter=500</em>, <em>eps=2.2204460492503131e-16</em>, <em>random_state=None</em>, <em>n_jobs=1</em>, <em>pre_dispatch='3*n_jobs'</em>, <em>memory=Memory(cachedir=None)</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/randomized_l1.py#L306"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLasso.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/randomized_l1.py#L75"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.fit" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit</tt><big>(</big><em>X</em>, <em>y</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/randomized_l1.py#L76"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit the model using X, y as training data.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -309,7 +370,7 @@ DOI: 10.1111/j.1467-9868.2010.00740.x</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLasso.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em>, <em>**fit_params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L431"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.fit_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">fit_transform</tt><big>(</big><em>X</em>, <em>y=None</em>, <em>**fit_params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L438"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Fit to data, then transform it.</p>
 <p>Fits transformer to X and y with optional parameters fit_params
 and returns a transformed version of X.</p>
@@ -339,7 +400,7 @@ and returns a transformed version of X.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLasso.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.get_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_params</tt><big>(</big><em>deep=True</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L206"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -364,23 +425,23 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLasso.get_support">
-<code class="descname">get_support</code><span class="sig-paren">(</span><em>indices=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/randomized_l1.py#L124"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.get_support" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">get_support</tt><big>(</big><em>indices=False</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/randomized_l1.py#L125"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.get_support" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a mask, or list, of the features/indices selected.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLasso.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/randomized_l1.py#L141"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">inverse_transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/randomized_l1.py#L142"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform a new matrix using the selected features</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLasso.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.set_params" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">set_params</tt><big>(</big><em>**params</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/base.py#L243"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
-<code class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></code> so that it&#8217;s possible to update each
+<tt class="docutils literal"><span class="pre">&lt;component&gt;__&lt;parameter&gt;</span></tt> so that it&#8217;s possible to update each
 component of a nested object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -394,17 +455,17 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.linear_model.RandomizedLasso.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/d08b00e/sklearn/linear_model/randomized_l1.py#L133"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.transform" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">transform</tt><big>(</big><em>X</em><big>)</big><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/593dbcc/sklearn/linear_model/randomized_l1.py#L134"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.linear_model.RandomizedLasso.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform a new matrix using the selected features</p>
 </dd></dl>
 
 </dd></dl>
 
 <div class="section" id="examples-using-sklearn-linear-model-randomizedlasso">
-<h2>Examples using <code class="docutils literal"><span class="pre">sklearn.linear_model.RandomizedLasso</span></code><a class="headerlink" href="#examples-using-sklearn-linear-model-randomizedlasso" title="Permalink to this headline">¶</a></h2>
-<div class="thumbnailContainer" tooltip="Given a small number of observations, we want to recover which features of X are relevant to ex..."><div class="figure" id="id1">
+<h2>Examples using <tt class="docutils literal"><span class="pre">sklearn.linear_model.RandomizedLasso</span></tt><a class="headerlink" href="#examples-using-sklearn-linear-model-randomizedlasso" title="Permalink to this headline">¶</a></h2>
+<div class="thumbnailContainer" tooltip="Given a small number of observations, we want to recover which features of X are relevant to ex..."><div class="figure">
 <a class="reference external image-reference" href="./../../auto_examples/linear_model/plot_sparse_recovery.html"><img alt="../../_images/plot_sparse_recovery1.png" src="../../_images/plot_sparse_recovery1.png" /></a>
-<p class="caption"><span class="caption-text"><a class="reference internal" href="../../auto_examples/linear_model/plot_sparse_recovery.html#example-linear-model-plot-sparse-recovery-py"><span>Sparse recovery: feature selection for sparse linear models</span></a></span></p>
+<p class="caption"><a class="reference internal" href="../../auto_examples/linear_model/plot_sparse_recovery.html#example-linear-model-plot-sparse-recovery-py"><em>Sparse recovery: feature selection for sparse linear models</em></a></p>
 </div>
 </div><div class="clearer"></div></div>
 </div>
@@ -421,8 +482,12 @@ component of a nested object.</p>
         &copy; 2010 - 2014, scikit-learn developers (BSD License).
       <a href="../../_sources/modules/generated/sklearn.linear_model.RandomizedLasso.txt" rel="nofollow">Show this page source</a>
     </div>
-     <div class="rel rellarge">
+     <div class="rel">
     
+    <div class="buttonPrevious">
+      <a href="sklearn.linear_model.Perceptron.html">Previous
+      </a>
+    </div>
     
      </div>
 
